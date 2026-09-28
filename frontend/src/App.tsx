@@ -3,6 +3,8 @@ import HomePage from "./pages/HomePage";
 import LessonsPage from "./pages/LessonsPage";
 import VocabularyPage from "./pages/VocabularyPage";
 import VocabularyDetailPage from "./pages/VocabularyDetailPage";
+import GrammarPage from "./pages/GrammarPage";
+import GrammarDetailPage from "./pages/GrammarDetailPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
@@ -13,7 +15,9 @@ export default function App() {
       <Route path="/n5/lessons" element={<LessonsPage />} />
       <Route path="/n5/lessons/:lessonId" element={<VocabularyPage />} />
       <Route path="/n5/lessons/:lessonId/vocabulary" element={<VocabularyPage />} />
+      <Route path="/n5/lessons/:lessonId/grammar" element={<GrammarPage />} />
       <Route path="/vocabulary/:id" element={<VocabularyDetailPage />} />
+      <Route path="/grammar/:id" element={<GrammarDetailPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
