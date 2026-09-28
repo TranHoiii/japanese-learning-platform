@@ -1,0 +1,1817 @@
+[
+  {
+    "kanji": "一",
+    "hanViet": "NHẤT",
+    "onyomi": "イチ, イツ",
+    "kunyomi": "ひと, ひとつ",
+    "meaning": "Một (Số 1)",
+    "strokeCount": 1,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e00.svg",
+    "mnemonic": "Nét gạch ngang biểu thị số một.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "一つ",
+        "reading": "ひとつ",
+        "meaning": "Một cái",
+        "exampleSentence": "一つください。"
+      },
+      {
+        "word": "一人",
+        "reading": "ひとり",
+        "meaning": "Một người",
+        "exampleSentence": "一人で行きます。"
+      },
+      {
+        "word": "一日",
+        "reading": "ついたち",
+        "meaning": "Mùng 1",
+        "exampleSentence": "四月一日です。"
+      }
+    ]
+  },
+  {
+    "kanji": "二",
+    "hanViet": "NHỊ",
+    "onyomi": "ニ, ジ",
+    "kunyomi": "ふた, ふたつ",
+    "meaning": "Hai (Số 2)",
+    "strokeCount": 2,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e8c.svg",
+    "mnemonic": "Hai nét ngang biểu thị số hai.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "二つ",
+        "reading": "ふたつ",
+        "meaning": "Hai cái",
+        "exampleSentence": "二つ買いました。"
+      },
+      {
+        "word": "二人",
+        "reading": "ふたり",
+        "meaning": "Hai người",
+        "exampleSentence": "二人で行きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "三",
+    "hanViet": "TAM",
+    "onyomi": "サン",
+    "kunyomi": "み, みっつ",
+    "meaning": "Ba (Số 3)",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e09.svg",
+    "mnemonic": "Ba nét ngang biểu thị số ba.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "三つ",
+        "reading": "みっつ",
+        "meaning": "Ba cái",
+        "exampleSentence": "三つあります。"
+      },
+      {
+        "word": "三人",
+        "reading": "さんにん",
+        "meaning": "Ba người",
+        "exampleSentence": "三人います。"
+      }
+    ]
+  },
+  {
+    "kanji": "四",
+    "hanViet": "TỨ",
+    "onyomi": "シ",
+    "kunyomi": "よ, よっつ, よん",
+    "meaning": "Bốn (Số 4)",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/056db.svg",
+    "mnemonic": "Hình vuông chứa nét gấp số 4.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "四つ",
+        "reading": "よっつ",
+        "meaning": "Bốn cái",
+        "exampleSentence": "四つあります。"
+      },
+      {
+        "word": "四月",
+        "reading": "しがつ",
+        "meaning": "Tháng 4",
+        "exampleSentence": "四月です。"
+      }
+    ]
+  },
+  {
+    "kanji": "五",
+    "hanViet": "NGŨ",
+    "onyomi": "ゴ",
+    "kunyomi": "いつ, いつつ",
+    "meaning": "Năm (Số 5)",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e94.svg",
+    "mnemonic": "Năm ngón tay đan vào nhau.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "五つ",
+        "reading": "いつつ",
+        "meaning": "Năm cái",
+        "exampleSentence": "五つあります。"
+      },
+      {
+        "word": "五月",
+        "reading": "ごがつ",
+        "meaning": "Tháng 5",
+        "exampleSentence": "五月です。"
+      }
+    ]
+  },
+  {
+    "kanji": "六",
+    "hanViet": "LỤC",
+    "onyomi": "ロク",
+    "kunyomi": "む, むっつ",
+    "meaning": "Sáu (Số 6)",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/056ed.svg",
+    "mnemonic": "Bộ đầu kết hợp hai chân phẩy.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "六つ",
+        "reading": "むっつ",
+        "meaning": "Sáu cái",
+        "exampleSentence": "六つあります。"
+      },
+      {
+        "word": "六日",
+        "reading": "むいか",
+        "meaning": "Ngày mùng 6",
+        "exampleSentence": "六日に行きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "七",
+    "hanViet": "THẤT",
+    "onyomi": "シチ",
+    "kunyomi": "なな, ななつ",
+    "meaning": "Bảy (Số 7)",
+    "strokeCount": 2,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e03.svg",
+    "mnemonic": "Số 7 đảo ngược.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "七つ",
+        "reading": "ななつ",
+        "meaning": "Bảy cái",
+        "exampleSentence": "七つあります。"
+      },
+      {
+        "word": "七日",
+        "reading": "なのか",
+        "meaning": "Ngày mùng 7",
+        "exampleSentence": "七日です。"
+      }
+    ]
+  },
+  {
+    "kanji": "八",
+    "hanViet": "BÁT",
+    "onyomi": "ハチ",
+    "kunyomi": "や, やっつ",
+    "meaning": "Tám (Số 8)",
+    "strokeCount": 2,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0516b.svg",
+    "mnemonic": "Hai nét xòe hai bên.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "八つ",
+        "reading": "やっつ",
+        "meaning": "Tám cái",
+        "exampleSentence": "八つあります。"
+      },
+      {
+        "word": "八日",
+        "reading": "ようか",
+        "meaning": "Ngày mùng 8",
+        "exampleSentence": "八日です。"
+      }
+    ]
+  },
+  {
+    "kanji": "九",
+    "hanViet": "CỬU",
+    "onyomi": "キュウ, ク",
+    "kunyomi": "ここの, ここのつ",
+    "meaning": "Chín (Số 9)",
+    "strokeCount": 2,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e5d.svg",
+    "mnemonic": "Nét móc cong tượng trưng cho 9.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "九つ",
+        "reading": "ここのつ",
+        "meaning": "Chín cái",
+        "exampleSentence": "九つあります。"
+      },
+      {
+        "word": "九月",
+        "reading": "くがつ",
+        "meaning": "Tháng 9",
+        "exampleSentence": "九月です。"
+      }
+    ]
+  },
+  {
+    "kanji": "十",
+    "hanViet": "THẬP",
+    "onyomi": "ジュウ, ジッ",
+    "kunyomi": "とお, と",
+    "meaning": "Mười (Số 10)",
+    "strokeCount": 2,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05341.svg",
+    "mnemonic": "Hình chữ thập trọn vẹn số 10.",
+    "lessons": [
+      1
+    ],
+    "compounds": [
+      {
+        "word": "十",
+        "reading": "とお",
+        "meaning": "Mười cái",
+        "exampleSentence": "十数えます。"
+      },
+      {
+        "word": "十日",
+        "reading": "とおか",
+        "meaning": "Ngày mùng 10",
+        "exampleSentence": "十日です。"
+      }
+    ]
+  },
+  {
+    "kanji": "百",
+    "hanViet": "BÁCH",
+    "onyomi": "ヒャク, ビャク",
+    "kunyomi": "",
+    "meaning": "Trăm (100)",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0767e.svg",
+    "mnemonic": "Nét ngang trên chữ Bạch.",
+    "lessons": [
+      2
+    ],
+    "compounds": [
+      {
+        "word": "三百",
+        "reading": "さんびゃく",
+        "meaning": "Ba trăm",
+        "exampleSentence": "三百円です。"
+      }
+    ]
+  },
+  {
+    "kanji": "千",
+    "hanViet": "THIÊN",
+    "onyomi": "セン, ゼン",
+    "kunyomi": "ち",
+    "meaning": "Nghìn (1.000)",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05343.svg",
+    "mnemonic": "Chữ Thập phẩy trên.",
+    "lessons": [
+      2
+    ],
+    "compounds": [
+      {
+        "word": "千円",
+        "reading": "せんえん",
+        "meaning": "Một nghìn yên",
+        "exampleSentence": "千円です。"
+      }
+    ]
+  },
+  {
+    "kanji": "万",
+    "hanViet": "VẠN",
+    "onyomi": "マン, バン",
+    "kunyomi": "",
+    "meaning": "Vạn (10.000)",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e07.svg",
+    "mnemonic": "Khung bao quanh mười ngàn.",
+    "lessons": [
+      2
+    ],
+    "compounds": [
+      {
+        "word": "一万円",
+        "reading": "いちまんえん",
+        "meaning": "Mười nghìn yên",
+        "exampleSentence": "一万円払います。"
+      }
+    ]
+  },
+  {
+    "kanji": "円",
+    "hanViet": "YÊN",
+    "onyomi": "エン",
+    "kunyomi": "まるい",
+    "meaning": "Yên Nhật / Tròn",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05686.svg",
+    "mnemonic": "Đồng tiền xu tròn.",
+    "lessons": [
+      2
+    ],
+    "compounds": [
+      {
+        "word": "百円",
+        "reading": "ひゃくえん",
+        "meaning": "Một trăm yên",
+        "exampleSentence": "百円です。"
+      }
+    ]
+  },
+  {
+    "kanji": "口",
+    "hanViet": "KHẨU",
+    "onyomi": "コウ, ク",
+    "kunyomi": "くち",
+    "meaning": "Miệng / Cổng",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/053e3.svg",
+    "mnemonic": "Hình chiếc miệng mở ô vuông.",
+    "lessons": [
+      2,
+      12
+    ],
+    "compounds": [
+      {
+        "word": "入口",
+        "reading": "いりぐち",
+        "meaning": "Lối vào",
+        "exampleSentence": "入口はこちらです。"
+      },
+      {
+        "word": "出口",
+        "reading": "でぐち",
+        "meaning": "Lối ra",
+        "exampleSentence": "出口を探します。"
+      }
+    ]
+  },
+  {
+    "kanji": "目",
+    "hanViet": "MỤC",
+    "onyomi": "モク",
+    "kunyomi": "め",
+    "meaning": "Mắt",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/076ee.svg",
+    "mnemonic": "Hình con mắt.",
+    "lessons": [
+      2,
+      12
+    ],
+    "compounds": [
+      {
+        "word": "目",
+        "reading": "め",
+        "meaning": "Mắt",
+        "exampleSentence": "目が大きいです。"
+      },
+      {
+        "word": "目的",
+        "reading": "もくてき",
+        "meaning": "Mục đích",
+        "exampleSentence": "目的は何ですか。"
+      }
+    ]
+  },
+  {
+    "kanji": "日",
+    "hanViet": "NHẬT",
+    "onyomi": "ニチ, ジツ",
+    "kunyomi": "ひ, -び",
+    "meaning": "Ngày / Mặt trời",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/065e5.svg",
+    "mnemonic": "Hình mặt trời.",
+    "lessons": [
+      3
+    ],
+    "compounds": [
+      {
+        "word": "日本",
+        "reading": "にほん",
+        "meaning": "Nhật Bản",
+        "exampleSentence": "日本が好きです。"
+      },
+      {
+        "word": "日曜日",
+        "reading": "にちようび",
+        "meaning": "Chủ nhật",
+        "exampleSentence": "日曜日は休みです。"
+      }
+    ]
+  },
+  {
+    "kanji": "月",
+    "hanViet": "NGUYỆT",
+    "onyomi": "ゲツ, ガツ",
+    "kunyomi": "つき",
+    "meaning": "Tháng / Mặt trăng",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06708.svg",
+    "mnemonic": "Mặt trăng lưỡi liềm.",
+    "lessons": [
+      3
+    ],
+    "compounds": [
+      {
+        "word": "月曜日",
+        "reading": "げつようび",
+        "meaning": "Thứ hai",
+        "exampleSentence": "月曜日です。"
+      },
+      {
+        "word": "今月",
+        "reading": "こんげつ",
+        "meaning": "Tháng này",
+        "exampleSentence": "今月は忙しいです。"
+      }
+    ]
+  },
+  {
+    "kanji": "火",
+    "hanViet": "HỎA",
+    "onyomi": "カ",
+    "kunyomi": "ひ",
+    "meaning": "Lửa",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0706b.svg",
+    "mnemonic": "Ngọn lửa bùng cháy.",
+    "lessons": [
+      3
+    ],
+    "compounds": [
+      {
+        "word": "火曜日",
+        "reading": "かようび",
+        "meaning": "Thứ ba",
+        "exampleSentence": "火曜日です。"
+      },
+      {
+        "word": "火事",
+        "reading": "かじ",
+        "meaning": "Hỏa hoạn",
+        "exampleSentence": "火事です。"
+      }
+    ]
+  },
+  {
+    "kanji": "水",
+    "hanViet": "THỦY",
+    "onyomi": "スイ",
+    "kunyomi": "みず",
+    "meaning": "Nước",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06c34.svg",
+    "mnemonic": "Dòng nước chảy.",
+    "lessons": [
+      3
+    ],
+    "compounds": [
+      {
+        "word": "水曜日",
+        "reading": "すいようび",
+        "meaning": "Thứ tư",
+        "exampleSentence": "水曜日です。"
+      },
+      {
+        "word": "水",
+        "reading": "みず",
+        "meaning": "Nước",
+        "exampleSentence": "水を飲みます。"
+      }
+    ]
+  },
+  {
+    "kanji": "木",
+    "hanViet": "MỘC",
+    "onyomi": "モク, ボク",
+    "kunyomi": "き",
+    "meaning": "Cây / Gỗ",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06728.svg",
+    "mnemonic": "Hình dáng cây gỗ.",
+    "lessons": [
+      3
+    ],
+    "compounds": [
+      {
+        "word": "木曜日",
+        "reading": "もくようび",
+        "meaning": "Thứ năm",
+        "exampleSentence": "木曜日です。"
+      },
+      {
+        "word": "木",
+        "reading": "き",
+        "meaning": "Cây",
+        "exampleSentence": "木があります。"
+      }
+    ]
+  },
+  {
+    "kanji": "金",
+    "hanViet": "KIM",
+    "onyomi": "キン",
+    "kunyomi": "かね",
+    "meaning": "Vàng / Tiền",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/091d1.svg",
+    "mnemonic": "Quặng vàng dưới đất.",
+    "lessons": [
+      3
+    ],
+    "compounds": [
+      {
+        "word": "金曜日",
+        "reading": "きんようび",
+        "meaning": "Thứ sáu",
+        "exampleSentence": "金曜日です。"
+      },
+      {
+        "word": "お金",
+        "reading": "おかね",
+        "meaning": "Tiền",
+        "exampleSentence": "お金を払います。"
+      }
+    ]
+  },
+  {
+    "kanji": "土",
+    "hanViet": "THỔ",
+    "onyomi": "ド, ト",
+    "kunyomi": "つち",
+    "meaning": "Đất",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0571f.svg",
+    "mnemonic": "Đất cát mầm cây.",
+    "lessons": [
+      3
+    ],
+    "compounds": [
+      {
+        "word": "土曜日",
+        "reading": "どようび",
+        "meaning": "Thứ bảy",
+        "exampleSentence": "土曜日です。"
+      },
+      {
+        "word": "土",
+        "reading": "つち",
+        "meaning": "Đất",
+        "exampleSentence": "土をいじります。"
+      }
+    ]
+  },
+  {
+    "kanji": "曜",
+    "hanViet": "DIỆU",
+    "onyomi": "ヨウ",
+    "kunyomi": "",
+    "meaning": "Thứ trong tuần",
+    "strokeCount": 18,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/066dc.svg",
+    "mnemonic": "Mặt trời rực rỡ các thứ.",
+    "lessons": [
+      3
+    ],
+    "compounds": [
+      {
+        "word": "曜日",
+        "reading": "ようび",
+        "meaning": "Thứ",
+        "exampleSentence": "何曜日ですか。"
+      }
+    ]
+  },
+  {
+    "kanji": "時",
+    "hanViet": "THỜI",
+    "onyomi": "ジ",
+    "kunyomi": "とき",
+    "meaning": "Thời gian / Giờ",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06642.svg",
+    "mnemonic": "Mặt trời đo thời gian.",
+    "lessons": [
+      4
+    ],
+    "compounds": [
+      {
+        "word": "時間",
+        "reading": "じかん",
+        "meaning": "Thời gian",
+        "exampleSentence": "時間があります。"
+      },
+      {
+        "word": "時計",
+        "reading": "とけい",
+        "meaning": "Đồng hồ",
+        "exampleSentence": "時計を見ます。"
+      }
+    ]
+  },
+  {
+    "kanji": "分",
+    "hanViet": "PHÂN",
+    "onyomi": "フン, ブン, プン",
+    "kunyomi": "わ.かる",
+    "meaning": "Phút / Chia / Hiểu",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05206.svg",
+    "mnemonic": "Dùng dao chia phần.",
+    "lessons": [
+      4
+    ],
+    "compounds": [
+      {
+        "word": "五分",
+        "reading": "ごふん",
+        "meaning": "5 phút",
+        "exampleSentence": "五分待って。"
+      },
+      {
+        "word": "分かる",
+        "reading": "わかる",
+        "meaning": "Hiểu",
+        "exampleSentence": "分かります。"
+      }
+    ]
+  },
+  {
+    "kanji": "半",
+    "hanViet": "BÁN",
+    "onyomi": "ハン",
+    "kunyomi": "なか.ば",
+    "meaning": "Nửa / Rưỡi",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0534a.svg",
+    "mnemonic": "Cắt nửa rưỡi.",
+    "lessons": [
+      4
+    ],
+    "compounds": [
+      {
+        "word": "七時半",
+        "reading": "しちじはん",
+        "meaning": "7 rưỡi",
+        "exampleSentence": "七時半です。"
+      },
+      {
+        "word": "半分",
+        "reading": "はんぶん",
+        "meaning": "Một nửa",
+        "exampleSentence": "半分あげます。"
+      }
+    ]
+  },
+  {
+    "kanji": "午",
+    "hanViet": "NGỌ",
+    "onyomi": "ゴ",
+    "kunyomi": "",
+    "meaning": "Giờ ngọ (Trưa)",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05348.svg",
+    "mnemonic": "Giữa trưa nắng.",
+    "lessons": [
+      4
+    ],
+    "compounds": [
+      {
+        "word": "午前",
+        "reading": "ごぜん",
+        "meaning": "Sáng (AM)",
+        "exampleSentence": "午前九時です。"
+      },
+      {
+        "word": "午後",
+        "reading": "ごご",
+        "meaning": "Chiều (PM)",
+        "exampleSentence": "午後五時です。"
+      }
+    ]
+  },
+  {
+    "kanji": "前",
+    "hanViet": "TIỀN",
+    "onyomi": "ゼン",
+    "kunyomi": "まえ",
+    "meaning": "Trước",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0540d.svg",
+    "mnemonic": "Tiến về phía trước.",
+    "lessons": [
+      4,
+      5
+    ],
+    "compounds": [
+      {
+        "word": "名前",
+        "reading": "なまえ",
+        "meaning": "Tên",
+        "exampleSentence": "名前を書きます。"
+      },
+      {
+        "word": "駅前",
+        "reading": "えきまえ",
+        "meaning": "Trước ga",
+        "exampleSentence": "駅前です。"
+      }
+    ]
+  },
+  {
+    "kanji": "後",
+    "hanViet": "HẬU",
+    "onyomi": "ゴ, コウ",
+    "kunyomi": "うし.ろ, あと",
+    "meaning": "Sau",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05f8c.svg",
+    "mnemonic": "Lùi lại sau.",
+    "lessons": [
+      4,
+      5
+    ],
+    "compounds": [
+      {
+        "word": "後ろ",
+        "reading": "うしろ",
+        "meaning": "Phía sau",
+        "exampleSentence": "後ろを見ます。"
+      },
+      {
+        "word": "後で",
+        "reading": "あとで",
+        "meaning": "Lát nữa",
+        "exampleSentence": "後でね。"
+      }
+    ]
+  },
+  {
+    "kanji": "毎",
+    "hanViet": "MỖI",
+    "onyomi": "マイ",
+    "kunyomi": "",
+    "meaning": "Mỗi / Hàng",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06ce1.svg",
+    "mnemonic": "Mỗi ngày mẹ chăm sóc.",
+    "lessons": [
+      4
+    ],
+    "compounds": [
+      {
+        "word": "毎日",
+        "reading": "まいにち",
+        "meaning": "Hàng ngày",
+        "exampleSentence": "毎日勉強します。"
+      },
+      {
+        "word": "毎朝",
+        "reading": "まいあさ",
+        "meaning": "Mỗi sáng",
+        "exampleSentence": "毎朝起きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "何",
+    "hanViet": "HÀ",
+    "onyomi": "カ",
+    "kunyomi": "なに, なん",
+    "meaning": "Cái gì",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04f55.svg",
+    "mnemonic": "Người hỏi xem là gì.",
+    "lessons": [
+      4
+    ],
+    "compounds": [
+      {
+        "word": "何",
+        "reading": "なに",
+        "meaning": "Cái gì",
+        "exampleSentence": "何ですか。"
+      },
+      {
+        "word": "何時",
+        "reading": "なんじ",
+        "meaning": "Mấy giờ",
+        "exampleSentence": "何時ですか。"
+      }
+    ]
+  },
+  {
+    "kanji": "上",
+    "hanViet": "THƯỢNG",
+    "onyomi": "ジョウ",
+    "kunyomi": "うえ",
+    "meaning": "Trên / Lên",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e0a.svg",
+    "mnemonic": "Chỉ hướng lên.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "上",
+        "reading": "うえ",
+        "meaning": "Phía trên",
+        "exampleSentence": "机の上です。"
+      },
+      {
+        "word": "上手",
+        "reading": "じょうず",
+        "meaning": "Giỏi",
+        "exampleSentence": "上手ですね。"
+      }
+    ]
+  },
+  {
+    "kanji": "下",
+    "hanViet": "HẠ",
+    "onyomi": "カ, ゲ",
+    "kunyomi": "した",
+    "meaning": "Dưới / Xuống",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e0b.svg",
+    "mnemonic": "Chỉ hướng xuống.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "下",
+        "reading": "した",
+        "meaning": "Phía dưới",
+        "exampleSentence": "椅子の下です。"
+      },
+      {
+        "word": "下手",
+        "reading": "へた",
+        "meaning": "Kém",
+        "exampleSentence": "下手です。"
+      }
+    ]
+  },
+  {
+    "kanji": "中",
+    "hanViet": "TRUNG",
+    "onyomi": "チュウ",
+    "kunyomi": "なか",
+    "meaning": "Trong / Giữa",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e2d.svg",
+    "mnemonic": "Xuyên qua giữa.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "中",
+        "reading": "なか",
+        "meaning": "Bên trong",
+        "exampleSentence": "箱の中です。"
+      },
+      {
+        "word": "中国",
+        "reading": "ちゅうごく",
+        "meaning": "Trung Quốc",
+        "exampleSentence": "中国です。"
+      }
+    ]
+  },
+  {
+    "kanji": "外",
+    "hanViet": "NGOẠI",
+    "onyomi": "ガイ",
+    "kunyomi": "そと",
+    "meaning": "Bên ngoài",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05916.svg",
+    "mnemonic": "Ra ngoài buổi tối.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "外",
+        "reading": "そと",
+        "meaning": "Bên ngoài",
+        "exampleSentence": "外です。"
+      },
+      {
+        "word": "外国人",
+        "reading": "がいこくじん",
+        "meaning": "Người nước ngoài",
+        "exampleSentence": "外国人です。"
+      }
+    ]
+  },
+  {
+    "kanji": "右",
+    "hanViet": "HỮU",
+    "onyomi": "ウ",
+    "kunyomi": "みぎ",
+    "meaning": "Bên phải",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/053f3.svg",
+    "mnemonic": "Tay phải ăn cơm.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "右",
+        "reading": "みぎ",
+        "meaning": "Bên phải",
+        "exampleSentence": "右です。"
+      }
+    ]
+  },
+  {
+    "kanji": "左",
+    "hanViet": "TẢ",
+    "onyomi": "サ",
+    "kunyomi": "ひだり",
+    "meaning": "Bên trái",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05de6.svg",
+    "mnemonic": "Tay trái làm việc.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "左",
+        "reading": "ひだり",
+        "meaning": "Bên trái",
+        "exampleSentence": "左です。"
+      }
+    ]
+  },
+  {
+    "kanji": "北",
+    "hanViet": "BẮC",
+    "onyomi": "ホク",
+    "kunyomi": "きた",
+    "meaning": "Phía Bắc",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05317.svg",
+    "mnemonic": "Hai người quay về hướng Bắc.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "北",
+        "reading": "きた",
+        "meaning": "Hướng Bắc",
+        "exampleSentence": "北に行きます。"
+      },
+      {
+        "word": "北海道",
+        "reading": "ほっかいどう",
+        "meaning": "Hokkaido",
+        "exampleSentence": "北海道です。"
+      }
+    ]
+  },
+  {
+    "kanji": "南",
+    "hanViet": "NAM",
+    "onyomi": "ナン",
+    "kunyomi": "みなみ",
+    "meaning": "Phía Nam",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05357.svg",
+    "mnemonic": "Căn nhà ấm áp hướng Nam.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "南",
+        "reading": "みなみ",
+        "meaning": "Hướng Nam",
+        "exampleSentence": "南の島です。"
+      }
+    ]
+  },
+  {
+    "kanji": "東",
+    "hanViet": "ĐÔNG",
+    "onyomi": "トウ",
+    "kunyomi": "ひがし",
+    "meaning": "Phía Đông",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06771.svg",
+    "mnemonic": "Mặt trời mọc hướng Đông.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "東",
+        "reading": "ひがし",
+        "meaning": "Hướng Đông",
+        "exampleSentence": "東です。"
+      },
+      {
+        "word": "東京",
+        "reading": "とうきょう",
+        "meaning": "Tokyo",
+        "exampleSentence": "東京に行きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "西",
+    "hanViet": "TÂY",
+    "onyomi": "セイ, サイ",
+    "kunyomi": "にし",
+    "meaning": "Phía Tây",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0897f.svg",
+    "mnemonic": "Chim về tổ hướng Tây.",
+    "lessons": [
+      5
+    ],
+    "compounds": [
+      {
+        "word": "西",
+        "reading": "にし",
+        "meaning": "Hướng Tây",
+        "exampleSentence": "西です。"
+      }
+    ]
+  },
+  {
+    "kanji": "行",
+    "hanViet": "HÀNH",
+    "onyomi": "コウ, ギョウ",
+    "kunyomi": "い.く, ゆ.く, おこな.う",
+    "meaning": "Đi / Tổ chức",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0884c.svg",
+    "mnemonic": "Hình bước chân đi trên đường.",
+    "lessons": [
+      6,
+      11
+    ],
+    "compounds": [
+      {
+        "word": "行く",
+        "reading": "いく",
+        "meaning": "Đi",
+        "exampleSentence": "学校へ行きます。"
+      },
+      {
+        "word": "旅行",
+        "reading": "りょこう",
+        "meaning": "Du lịch",
+        "exampleSentence": "旅行に行きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "来",
+    "hanViet": "LAI",
+    "onyomi": "ライ",
+    "kunyomi": "く.る, き.たる",
+    "meaning": "Đến / Tới",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06765.svg",
+    "mnemonic": "Cây sinh ngọn đến từ xa.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "来る",
+        "reading": "くる",
+        "meaning": "Đến",
+        "exampleSentence": "友達が来ます。"
+      },
+      {
+        "word": "来年",
+        "reading": "らいねん",
+        "meaning": "Năm sau",
+        "exampleSentence": "来年日本へ行きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "出",
+    "hanViet": "XUẤT",
+    "onyomi": "シュツ",
+    "kunyomi": "で.る, だ.す",
+    "meaning": "Ra / Rời khỏi",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05fa4.svg",
+    "mnemonic": "Hai ngọn núi chồng lên nhau nhô ra.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "出る",
+        "reading": "でる",
+        "meaning": "Đi ra",
+        "exampleSentence": "家を出ます。"
+      },
+      {
+        "word": "出口",
+        "reading": "でぐち",
+        "meaning": "Lối ra",
+        "exampleSentence": "出口です。"
+      }
+    ]
+  },
+  {
+    "kanji": "入",
+    "hanViet": "NHẬP",
+    "onyomi": "ニュウ",
+    "kunyomi": "はい.る, い.れる",
+    "meaning": "Vào / Cho vào",
+    "strokeCount": 2,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05165.svg",
+    "mnemonic": "Bước vào cổng cửa.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "入る",
+        "reading": "はいる",
+        "meaning": "Đi vào",
+        "exampleSentence": "お風呂に入ります。"
+      },
+      {
+        "word": "入口",
+        "reading": "いりぐち",
+        "meaning": "Lối vào",
+        "exampleSentence": "入口です。"
+      }
+    ]
+  },
+  {
+    "kanji": "帰",
+    "hanViet": "QUY",
+    "onyomi": "キ",
+    "kunyomi": "かえ.る, かえ.す",
+    "meaning": "Về / Trở về",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05e30.svg",
+    "mnemonic": "Quét dọn nhà cửa chờ trở về.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "帰る",
+        "reading": "かえる",
+        "meaning": "Trở về",
+        "exampleSentence": "うちへ帰ります。"
+      },
+      {
+        "word": "帰国",
+        "reading": "きこく",
+        "meaning": "Về nước",
+        "exampleSentence": "来月帰国します。"
+      }
+    ]
+  },
+  {
+    "kanji": "飲",
+    "hanViet": "ẨM",
+    "onyomi": "イン",
+    "kunyomi": "の.む",
+    "meaning": "Uống",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/098f2.svg",
+    "mnemonic": "Há miệng ăn uống.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "飲む",
+        "reading": "のむ",
+        "meaning": "Uống",
+        "exampleSentence": "水を飲みます。"
+      },
+      {
+        "word": "飲み物",
+        "reading": "のみもの",
+        "meaning": "Đồ uống",
+        "exampleSentence": "飲み物を買います。"
+      }
+    ]
+  },
+  {
+    "kanji": "食",
+    "hanViet": "THỰC",
+    "onyomi": "ショク",
+    "kunyomi": "た.べる, く.う",
+    "meaning": "Ăn / Món ăn",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/098df.svg",
+    "mnemonic": "Mái nhà có thức ăn bên dưới.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "食べる",
+        "reading": "たべる",
+        "meaning": "Ăn",
+        "exampleSentence": "ご飯を食べます。"
+      },
+      {
+        "word": "食堂",
+        "reading": "しょくどう",
+        "meaning": "Nhà ăn",
+        "exampleSentence": "食堂で行きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "見",
+    "hanViet": "KIẾN",
+    "onyomi": "ケン",
+    "kunyomi": "み.る, み.える",
+    "meaning": "Nhìn / Xem",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/086c7.svg",
+    "mnemonic": "Con mắt trên đôi chân đứng nhìn.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "見る",
+        "reading": "みる",
+        "meaning": "Xem, nhìn",
+        "exampleSentence": "テレビを見ます。"
+      },
+      {
+        "word": "見学",
+        "reading": "けんがく",
+        "meaning": "Tham quan học hỏi",
+        "exampleSentence": "工場を見学します。"
+      }
+    ]
+  },
+  {
+    "kanji": "聞",
+    "hanViet": "VĂN",
+    "onyomi": "ブン, モン",
+    "kunyomi": "き.く, き.こえる",
+    "meaning": "Nghe / Hỏi",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0805e.svg",
+    "mnemonic": "Ghé tai vào cánh cổng nghe ngóng.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "聞く",
+        "reading": "きく",
+        "meaning": "Nghe",
+        "exampleSentence": "音楽を聞きます。"
+      },
+      {
+        "word": "新聞",
+        "reading": "しんぶん",
+        "meaning": "Tờ báo",
+        "exampleSentence": "新聞を読みます。"
+      }
+    ]
+  },
+  {
+    "kanji": "読",
+    "hanViet": "ĐỘC",
+    "onyomi": "ドク",
+    "kunyomi": "よ.む",
+    "meaning": "Đọc",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08aa0.svg",
+    "mnemonic": "Lời nói phát ra khi đọc sách.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "読む",
+        "reading": "よむ",
+        "meaning": "Đọc",
+        "exampleSentence": "本を読みます。"
+      },
+      {
+        "word": "読書",
+        "reading": "どくしょ",
+        "meaning": "Đọc sách",
+        "exampleSentence": "趣味は読書です。"
+      }
+    ]
+  },
+  {
+    "kanji": "書",
+    "hanViet": "THƯ",
+    "onyomi": "ショ",
+    "kunyomi": "か.く",
+    "meaning": "Viết / Sách",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/066f8.svg",
+    "mnemonic": "Tay cầm bút viết chữ.",
+    "lessons": [
+      6
+    ],
+    "compounds": [
+      {
+        "word": "書く",
+        "reading": "かく",
+        "meaning": "Viết",
+        "exampleSentence": "手紙を書きます。"
+      },
+      {
+        "word": "図書館",
+        "reading": "としょかん",
+        "meaning": "Thư viện",
+        "exampleSentence": "図書館で行きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "話",
+    "hanViet": "THOẠI",
+    "onyomi": "ワ",
+    "kunyomi": "はな.す, はなし",
+    "meaning": "Nói chuyện / Câu chuyện",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08a71.svg",
+    "mnemonic": "Dùng ngôn ngữ phát ra từ lưỡi nói chuyện.",
+    "lessons": [
+      7,
+      16
+    ],
+    "compounds": [
+      {
+        "word": "話す",
+        "reading": "はなす",
+        "meaning": "Nói chuyện",
+        "exampleSentence": "日本語で話します。"
+      },
+      {
+        "word": "電話",
+        "reading": "でんわ",
+        "meaning": "Điện thoại",
+        "exampleSentence": "電話をかけます。"
+      }
+    ]
+  },
+  {
+    "kanji": "買",
+    "hanViet": "MÃI",
+    "onyomi": "バイ",
+    "kunyomi": "か.う",
+    "meaning": "Mua",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08act.svg",
+    "mnemonic": "Dùng tiền sò (bộ bối) để mua hàng.",
+    "lessons": [
+      7
+    ],
+    "compounds": [
+      {
+        "word": "買う",
+        "reading": "かう",
+        "meaning": "Mua",
+        "exampleSentence": "服を買います。"
+      },
+      {
+        "word": "買い物",
+        "reading": "かいもの",
+        "meaning": "Mua sắm",
+        "exampleSentence": "買い物に行きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "起",
+    "hanViet": "KHỞI",
+    "onyomi": "キ",
+    "kunyomi": "お.きる, お.こす",
+    "meaning": "Thức dậy / Khởi hành",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08d77.svg",
+    "mnemonic": "Chạy vội vã bật dậy.",
+    "lessons": [
+      7
+    ],
+    "compounds": [
+      {
+        "word": "起きる",
+        "reading": "おきる",
+        "meaning": "Thức dậy",
+        "exampleSentence": "六時に起きれます。"
+      }
+    ]
+  },
+  {
+    "kanji": "寝",
+    "hanViet": "TẨM",
+    "onyomi": "シン",
+    "kunyomi": "ね.る, ね.かす",
+    "meaning": "Ngủ",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05bed.svg",
+    "mnemonic": "Nằm trên giường dưới mái nhà ngủ.",
+    "lessons": [
+      7
+    ],
+    "compounds": [
+      {
+        "word": "寝る",
+        "reading": "ねる",
+        "meaning": "Ngủ",
+        "exampleSentence": "十一時に寝ます。"
+      }
+    ]
+  },
+  {
+    "kanji": "休",
+    "hanViet": "HƯU",
+    "onyomi": "キュウ",
+    "kunyomi": "やす.む, やす.み",
+    "meaning": "Nghỉ ngơi",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04f11.svg",
+    "mnemonic": "Con người tựa vào gốc cây nghỉ ngơi.",
+    "lessons": [
+      7
+    ],
+    "compounds": [
+      {
+        "word": "休む",
+        "reading": "やすむ",
+        "meaning": "Nghỉ ngơi",
+        "exampleSentence": "会社を休む。"
+      },
+      {
+        "word": "休み",
+        "reading": "やすみ",
+        "meaning": "Ngày nghỉ",
+        "exampleSentence": "明日は休みです。"
+      }
+    ]
+  },
+  {
+    "kanji": "走",
+    "hanViet": "TẨU",
+    "onyomi": "ソウ",
+    "kunyomi": "はし.る",
+    "meaning": "Chạy",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08d70.svg",
+    "mnemonic": "Vung tay chân vội vã chạy.",
+    "lessons": [
+      7
+    ],
+    "compounds": [
+      {
+        "word": "走る",
+        "reading": "はしる",
+        "meaning": "Chạy",
+        "exampleSentence": "公園を走ります。"
+      }
+    ]
+  },
+  {
+    "kanji": "立",
+    "hanViet": "LẬP",
+    "onyomi": "リツ",
+    "kunyomi": "た.つ, た.てる",
+    "meaning": "Đứng / Thành lập",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07acb.svg",
+    "mnemonic": "Con người đứng vững trên mặt đất.",
+    "lessons": [
+      7
+    ],
+    "compounds": [
+      {
+        "word": "立つ",
+        "reading": "たつ",
+        "meaning": "Đứng",
+        "exampleSentence": "ここに立ってください。"
+      }
+    ]
+  },
+  {
+    "kanji": "働",
+    "hanViet": "ĐỘNG",
+    "onyomi": "ドウ",
+    "kunyomi": "はたら.く",
+    "meaning": "Làm việc",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/058cd.svg",
+    "mnemonic": "Con người dùng sức lực để lao động.",
+    "lessons": [
+      7
+    ],
+    "compounds": [
+      {
+        "word": "働く",
+        "reading": "はたらく",
+        "meaning": "Làm việc",
+        "exampleSentence": "銀行で働きます。"
+      }
+    ]
+  },
+  {
+    "kanji": "男",
+    "hanViet": "NAM",
+    "onyomi": "ダン, ナン",
+    "kunyomi": "おとこ",
+    "meaning": "Đàn ông / Nam giới",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07537.svg",
+    "mnemonic": "Dùng sức lực làm việc trên đồng ruộng.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "男の人",
+        "reading": "おとこのひと",
+        "meaning": "Người đàn ông",
+        "exampleSentence": "男の人がいます。"
+      }
+    ]
+  },
+  {
+    "kanji": "女",
+    "hanViet": "NỮ",
+    "onyomi": "ジョ, ニョ",
+    "kunyomi": "おんな, め",
+    "meaning": "Phụ nữ / Nữ giới",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05973.svg",
+    "mnemonic": "Hình dáng người phụ nữ mềm mại.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "女の人",
+        "reading": "おんなのひと",
+        "meaning": "Người phụ nữ",
+        "exampleSentence": "女の人と話します。"
+      }
+    ]
+  },
+  {
+    "kanji": "子",
+    "hanViet": "TỬ",
+    "onyomi": "シ, ス",
+    "kunyomi": "こ",
+    "meaning": "Con cái / Trẻ em",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05b50.svg",
+    "mnemonic": "Đứa trẻ giơ hai tay nhỏ.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "子供",
+        "reading": "こども",
+        "meaning": "Trẻ em",
+        "exampleSentence": "子供が遊んでいます。"
+      }
+    ]
+  },
+  {
+    "kanji": "父",
+    "hanViet": "PHỤ",
+    "onyomi": "フ",
+    "kunyomi": "ちち, とう",
+    "meaning": "Bố",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07236.svg",
+    "mnemonic": "Người cha giơ roi nghiêm khắc dạy con.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "父",
+        "reading": "ちち",
+        "meaning": "Bố (mình)",
+        "exampleSentence": "父は医者です。"
+      },
+      {
+        "word": "お父さん",
+        "reading": "おとうさん",
+        "meaning": "Bố (người khác)",
+        "exampleSentence": "お父さんはお元気ですか。"
+      }
+    ]
+  },
+  {
+    "kanji": "母",
+    "hanViet": "MẪU",
+    "onyomi": "ボ",
+    "kunyomi": "はは, かあ",
+    "meaning": "Mẹ",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06f4d.svg",
+    "mnemonic": "Người mẹ cho con bú với tình thương.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "母",
+        "reading": "はは",
+        "meaning": "Mẹ (mình)",
+        "exampleSentence": "母に電話します。"
+      },
+      {
+        "word": "お母さん",
+        "reading": "おかあさん",
+        "meaning": "Mẹ (người khác)",
+        "exampleSentence": "お母さんは優しいです。"
+      }
+    ]
+  },
+  {
+    "kanji": "友",
+    "hanViet": "HỮU",
+    "onyomi": "ユウ",
+    "kunyomi": "とも",
+    "meaning": "Bạn bè",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/053cb.svg",
+    "mnemonic": "Hai bàn tay nắm lấy nhau thể hiện tình bạn.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "友達",
+        "reading": "ともだち",
+        "meaning": "Bạn bè",
+        "exampleSentence": "友達と遊んでいます。"
+      }
+    ]
+  },
+  {
+    "kanji": "私",
+    "hanViet": "TƯ",
+    "onyomi": "シ",
+    "kunyomi": "わたし, わたくし",
+    "meaning": "Tôi / Cá nhân",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/079c1.svg",
+    "mnemonic": "Lúa gạo thu hoạch về cho cá nhân.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "私",
+        "reading": "わたし",
+        "meaning": "Tôi",
+        "exampleSentence": "私は学生です。"
+      }
+    ]
+  },
+  {
+    "kanji": "人",
+    "hanViet": "NHÂN",
+    "onyomi": "ジン, ニン",
+    "kunyomi": "ひと",
+    "meaning": "Người",
+    "strokeCount": 2,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04eba.svg",
+    "mnemonic": "Hình hai chân người nương tựa vào nhau.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "人",
+        "reading": "ひと",
+        "meaning": "Người",
+        "exampleSentence": "あの人は誰ですか。"
+      },
+      {
+        "word": "日本人",
+        "reading": "にほんじん",
+        "meaning": "Người Nhật",
+        "exampleSentence": "私は日本人ではありません。"
+      }
+    ]
+  },
+  {
+    "kanji": "語",
+    "hanViet": "NGỮ",
+    "onyomi": "ゴ",
+    "kunyomi": "かた.る",
+    "meaning": "Ngôn ngữ / Tiếng",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08a9e.svg",
+    "mnemonic": "Dùng lời nói phát ra ngôn ngữ.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "日本語",
+        "reading": "にほんご",
+        "meaning": "Tiếng Nhật",
+        "exampleSentence": "日本語を勉強します。"
+      },
+      {
+        "word": "英語",
+        "reading": "えいご",
+        "meaning": "Tiếng Anh",
+        "exampleSentence": "英語が話せます。"
+      }
+    ]
+  },
+  {
+    "kanji": "本",
+    "hanViet": "BẢN",
+    "onyomi": "ホン",
+    "kunyomi": "もと",
+    "meaning": "Sách / Nguồn gốc",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0672c.svg",
+    "mnemonic": "Gốc cây có gạch đánh dấu bên dưới.",
+    "lessons": [
+      8
+    ],
+    "compounds": [
+      {
+        "word": "本",
+        "reading": "ほん",
+        "meaning": "Sách",
+        "exampleSentence": "本を読みます。"
+      },
+      {
+        "word": "日本",
+        "reading": "にほん",
+        "meaning": "Nhật Bản",
+        "exampleSentence": "日本です。"
+      }
+    ]
+  }
+]
