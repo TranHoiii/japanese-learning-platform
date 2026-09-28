@@ -1,0 +1,3691 @@
+{
+  "levelCode": "N5",
+  "levelName": "N5",
+  "levelDescription": "Trình độ N5 - Nhập môn tiếng Nhật",
+  "lessons": [
+    {
+      "lessonNumber": 1,
+      "title": "Bài 01",
+      "grammars": [
+        {
+          "pattern": "～は～です",
+          "meaning": "N1 là N2 (câu khẳng định giới thiệu tên, nghề, quốc tịch).",
+          "usage": "N1は N2です。",
+          "explanation": "「N1」: Chủ ngữ (người, vật).\n「は」: Trợ từ, đọc “wa”, xác định chủ đề.\n「N2」: Danh từ (tên, nghề, quốc tịch).\n「です」: Đuôi câu lịch sự, khẳng định.",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "私は 田中です。",
+              "furigana": null,
+              "translation": "Tôi là Tanaka.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "あの人は 医者です。",
+              "furigana": null,
+              "translation": "Người kia là bác sĩ.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～は～じゃありません",
+          "meaning": "N1 không phải là N2 (câu phủ định).",
+          "usage": "N1は N2じゃありません。",
+          "explanation": "「じゃありません」: Là thể phủ định của 「です」.\nTrong văn viết hoặc tình huống trang trọng hơn có thể dùng 「ではありません」.",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "山田さんは 医者じゃありません。",
+              "furigana": null,
+              "translation": "Anh Yamada không phải là bác sĩ.",
+              "explanation": null,
+              "sortOrder": 1
+            }
+          ]
+        },
+        {
+          "pattern": "～は～ですか",
+          "meaning": "hỏi xác nhận.",
+          "usage": "N1は N2ですか。",
+          "explanation": "「か」: Trợ từ nghi vấn, được thêm vào cuối câu khẳng định để tạo thành câu",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "A： あなたは 日本人ですか。",
+              "furigana": null,
+              "translation": "Bạn là người Nhật phải không?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "B： はい、日本人です。／いいえ、日本人じゃありません。",
+              "furigana": null,
+              "translation": "Vâng, tôi là người Nhật./ Không, tôi không phải người Nhật.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～は～ですか",
+          "meaning": "N là ai/vị nào?",
+          "usage": null,
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "A： あの人は だれですか。",
+              "furigana": null,
+              "translation": "Người kia là ai?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "B： 田中さんです。",
+              "furigana": null,
+              "translation": "Là anh Tanaka ạ.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "A： あの方は どなたですか。",
+              "furigana": null,
+              "translation": "Vị kia là vị nào vậy?",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "B： 小林先生です。",
+              "furigana": null,
+              "translation": "Là cô giáo Kobayashi ạ.",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "Nは だれ／どなたですか。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "pattern": "～の～（Trực thuộc）",
+          "meaning": "N2 trực thuộc N1 (cụm danh từ)",
+          "usage": "N1の N2",
+          "explanation": "「の」: Trợ từ mang nghĩa \"của\", \"thuộc về\".",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "私は IMCの 社員です。",
+              "furigana": null,
+              "translation": "Tôi là nhân viên của công ty IMC.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "KOSEIセンターの 先生です。",
+              "furigana": null,
+              "translation": "Thầy, cô giáo của trung tâm Kosei.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～も～です",
+          "meaning": "N1 cũng là N2 (Chỉ sự tương đồng)",
+          "usage": "N1も N2です。",
+          "explanation": "「も」: Trợ từ có nghĩa là \"cũng\".",
+          "notes": null,
+          "sortOrder": 6,
+          "examples": [
+            {
+              "japanese": "田中さんは 医者です。私も 医者です。",
+              "furigana": null,
+              "translation": "Anh Tanaka là bác sĩ. Tôi cũng là bác sĩ.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "これは 日本語の本です。あれも 日本語の本です。",
+              "furigana": null,
+              "translation": "Đây là sách tiếng Nhật. Kia cũng là sách tiếng Nhật.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～は～歳です",
+          "meaning": "Giới thiệu tuổi của N",
+          "usage": "Nは～歳です。",
+          "explanation": "「歳」: Hậu tố chỉ tuổi.\nCách đọc số tuổi có một vài trường hợp đặc biệt (1, 8, 10, 20 tuổi).",
+          "notes": null,
+          "sortOrder": 7,
+          "examples": [
+            {
+              "japanese": "Khi hỏi tuổi, dùng 「何歳ですか」 hoặc lịch sự hơn là 「おいくつですか」.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A: あなたは おいくつですか。",
+              "furigana": null,
+              "translation": "Bạn bao nhiêu tuổi vậy?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B: １８歳です。",
+              "furigana": null,
+              "translation": "18 tuổi.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 2,
+      "title": "Bài 02",
+      "grammars": [
+        {
+          "pattern": "これ／それ／あれは Nです",
+          "meaning": "Cái này / Cái đó / Cái kia là N.",
+          "usage": "これ／それ／あれ は N です。",
+          "explanation": "「これ」: Cái này (vật ở gần người nói).\n「それ」: Cái đó (vật ở gần người nghe).\n「あれ」: Cái kia (vật ở xa cả hai người).",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "これは 雑誌です。",
+              "furigana": null,
+              "translation": "Đây là tạp chí.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "それは 何ですか。",
+              "furigana": null,
+              "translation": "Đó là cái gì vậy?",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～は～ですか、～ですか",
+          "meaning": "Đây là dạng câu hỏi yêu cầu người trả lời lựa chọn một trong hai (hoặc nhiều",
+          "usage": "～は A ですか、B ですか。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "Khi trả lời, ta sẽ chọn một phương án chứ không dùng 「はい」 hay 「いいえ」.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A： これは 「９」ですか、「７」ですか。",
+              "furigana": null,
+              "translation": "Đây là số \"9\" hay số \"7\" vậy?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B： 「９」です。",
+              "furigana": null,
+              "translation": "Là số \"9\"",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "～の～ (Nội dung)",
+          "meaning": "nội dung hoặc thể loại cho danh từ N2.",
+          "usage": "N1のN2",
+          "explanation": "Trợ từ 「の」 được dùng để nối hai danh từ, trong đó danh từ N1 bổ nghĩa, làm rõ",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "Khi đặt câu hỏi sử dụng「何のNですか。」",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A： これは 何の 雑誌ですか。",
+              "furigana": null,
+              "translation": "Đây là tạp chí gì vậy?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B： コンピューターの 雑誌です。",
+              "furigana": null,
+              "translation": "Là tạp chí máy tính.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "～の～ (Sở hữu)",
+          "meaning": "N2 của N1.",
+          "usage": "N sau「の」 có thể được loại bỏ để tránh việc lặp lại từ.\nN1のN2",
+          "explanation": "Trợ từ 「の」 dùng để chỉ sự sở hữu. N2 thuộc về N1.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "Khi đặt câu hỏi sử dụng「だれのNですか。」",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A： これは だれの 雑誌ですか。",
+              "furigana": null,
+              "translation": "Đây là tạp chí của ai vậy?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B： 私の 雑誌です。／私のです。",
+              "furigana": null,
+              "translation": "Là tạp chí của tôi./Là của tôi.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "この／その／あのNは～です",
+          "meaning": "Danh từ N này / đó / kia thì...",
+          "usage": "この／その／あのNは～です。",
+          "explanation": "「この／その／あの」là các từ chỉ định, phải đi kèm với một danh từ.\n「このＮ」: N này (gần người nói).\n「そのＮ」: N đó (gần người nghe).\n「あのＮ」: N kia (xa cả hai người).",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "A： これは だれの 雑誌ですか。",
+              "furigana": null,
+              "translation": "Đây là tạp chí của ai vậy?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "B： その 雑誌は 私のです。",
+              "furigana": null,
+              "translation": "Cuốn tạp chí đó là của tôi.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 3,
+      "title": "Bài 03",
+      "grammars": [
+        {
+          "pattern": "ここ／そこ／あそこは〜です",
+          "meaning": "Đây / Đó / Kia là (địa điểm) N.",
+          "usage": "ここ／そこ／あそこはN (địa điểm) です。",
+          "explanation": "「ここ」: Đây, chỗ này (phạm vi người nói đang ở). Dạng lịch sự: 「こちら」\n「そこ」: Đó, chỗ đó (phạm vi người nghe). Dạng lịch sự: 「そちら」\n「あそこ」: Kia, chỗ kia (nơi ở xa cả hai). Dạng lịch sự: 「あちら」\n「どこ」: Dùng để đặt câu hỏi ở đâu. Dạng lịch sự: 「どちら」",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "ここは 教室です。",
+              "furigana": null,
+              "translation": "Đây là phòng học.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "そこは 受付です。",
+              "furigana": null,
+              "translation": "Đó là quầy lễ tân.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Nはここ／そこ／あそこです",
+          "meaning": "Dùng khi muốn nói về vị trí của một người, vật hoặc một địa điểm cụ thể.",
+          "usage": null,
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "ミラーさんは あそこです。",
+              "furigana": null,
+              "translation": "Anh Miller ở đằng kia.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A： トイレは どこですか。",
+              "furigana": null,
+              "translation": "Nhà vệ sinh ở đâu vậy?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B： あそこです。",
+              "furigana": null,
+              "translation": "Ở đằng kia ạ.",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "Nは ここ／そこ／あそこです。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "pattern": "お国／会社 は～です",
+          "meaning": "Nước của bạn là nước nào? / Công ty (tên) là...",
+          "usage": null,
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "どちら là dạng nghi vấn từ lịch sự của どこ (ở đâu), được dùng để hỏi về quốc",
+              "furigana": null,
+              "translation": "gia, công ty, trường học... một cách lịch sự.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A： あなたの 会社は どちら／どこですか。",
+              "furigana": null,
+              "translation": "Công ty của bạn ở đâu vậy?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B： KOSEIです。",
+              "furigana": null,
+              "translation": "Là công ty Kosei ạ.",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "お国／会社は どちら／どこですか。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "pattern": "～の～ (Xuất xứ)",
+          "meaning": "nguồn gốc, xuất xứ của một món đồ.",
+          "usage": "これは (Nước/Công ty) の N (sản phẩm) です。",
+          "explanation": "Trợ từ 「の」 trong trường hợp này không chỉ mang nghĩa sở hữu mà còn chỉ rõ",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "これは 日本の 車です。",
+              "furigana": null,
+              "translation": "Đây là xe hơi của Nhật.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "あれは どこの コンピューターですか。",
+              "furigana": null,
+              "translation": "Kia là máy tính của hãng nào vậy?",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～は ～円です",
+          "meaning": "(Vật) có giá là ~ Yên.",
+          "usage": null,
+          "explanation": "「円」: Đơn vị tiền tệ của Nhật (Yên).\n「Vật」 は「Số tiền」円です。",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "Để hỏi giá tiền, ta dùng nghi vấn từ 「いくら」.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "この かばんは 8,500円です。",
+              "furigana": null,
+              "translation": "Cái cặp này giá 8,500 Yên.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "この 時計は いくらですか。",
+              "furigana": null,
+              "translation": "Cái đồng hồ này giá bao nhiêu?",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 4,
+      "title": "Bài 04",
+      "grammars": [
+        {
+          "pattern": "〜時〜分です",
+          "meaning": "thời điểm.",
+          "usage": "～時～分です。",
+          "explanation": "Dùng để nói về thời gian cụ thể tại thời điểm nói.\n「時」: Giờ.\n「分」: Phút. (分 sẽ thay đổi giữa ふん và ぷん tùy theo số đứng trước nó).\nCó thể sử dụng thêm「午前」(a.m)／「午後」(p.m) trước thời gian để làm rõ mốc",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "今 午前 ９時半です。",
+              "furigana": null,
+              "translation": "Bây giờ là 9 rưỡi sáng.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "今 １時 ２５分です。",
+              "furigana": null,
+              "translation": "Bây giờ là 1 giờ 25 phút.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～は～曜日です",
+          "meaning": "(Ngày) là thứ ~",
+          "usage": null,
+          "explanation": "Dùng để nói về thứ trong tuần.\n「Ngày」は ～曜日です。",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "Nghi vấn từ để hỏi là 何曜日",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "今日は 土曜日です。",
+              "furigana": null,
+              "translation": "Hôm nay là thứ Bảy.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "明日は 何曜日ですか。",
+              "furigana": null,
+              "translation": "Ngày mai là thứ mấy?",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "～は 〜時から 〜時までです",
+          "meaning": "một nơi nào đó.",
+          "usage": null,
+          "explanation": "「から」: Bắt đầu từ...\n「まで」: Kết thúc tại...\nMẫu câu này dùng cho danh từ, thường để chỉ giờ làm việc, giờ hoạt động của",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "銀行は 午前 ９時から 午後 ３時までです。",
+              "furigana": null,
+              "translation": "Ngân hàng (mở cửa) từ 9 giờ sáng đến 3 giờ chiều.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "Nは「Thời gian」から「Thời gian」までです。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "〜時に ～ます",
+          "meaning": "phút, ngày, tháng, năm) để chỉ thời điểm mà hành động diễn ra.",
+          "usage": null,
+          "explanation": "Trợ từ 「に」 được dùng sau danh từ chỉ mốc thời gian có con số cụ thể (giờ,\n「Thời gian」に Vます。",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "毎朝、６時に 起きます。",
+              "furigana": null,
+              "translation": "Mỗi sáng tôi thức dậy vào lúc 6 giờ.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "７月 １日に 日本へ 行きました。",
+              "furigana": null,
+              "translation": "Tôi đã đi Nhật vào ngày 1 tháng 7.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "〜時から 〜時まで ～ます",
+          "meaning": "một khoảng thời gian có điểm bắt đầu và kết thúc rõ ràng.",
+          "usage": null,
+          "explanation": "Mẫu câu này dùng cho động từ, diễn tả một hành động diễn ra liên tục trong\n「Thời gian」から「Thời gian」まで Vます。",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "昨日、８時から １０時まで 勉強しました。",
+              "furigana": null,
+              "translation": "Hôm qua tôi đã học từ 8 giờ đến 10 giờ.",
+              "explanation": null,
+              "sortOrder": 1
+            }
+          ]
+        },
+        {
+          "pattern": "Chia động từ",
+          "meaning": "Quá khứ Hiện tại Tương lai",
+          "usage": "Đuôi ～ます là đuôi của động từ ở thể lịch sự. Được chia ở các dạng\nKhẳng định Vました\nVます\nPhủ định Vませんでした\nVません",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 6,
+          "examples": [
+            {
+              "japanese": "（おきました）",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "（おきます）",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "（おきませんでした）",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "（おきません）",
+              "furigana": null,
+              "translation": "Trạng từ",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "thời gian 一昨日、昨日、今朝",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "今日、毎日",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 6
+            },
+            {
+              "japanese": "明日、明後日",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 5,
+      "title": "Bài 05",
+      "grammars": [
+        {
+          "pattern": "Nへ 行きます",
+          "meaning": "phương hướng của hành động di chuyển.",
+          "usage": null,
+          "explanation": "Trợ từ 「へ」 (đọc là え) được dùng sau danh từ chỉ địa điểm, có tác dụng chỉ",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "行きます: đi (rời xa vị trí người nói).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "来ます: đến (tiến lại gần vị trí người nói).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "帰ります: về (nhà, quê hương, công ty - những nơi mình thuộc về).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "明日、スーパーへ 行きます。",
+              "furigana": null,
+              "translation": "Ngày mai tôi sẽ đi siêu thị.",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "彼は 来月、ベトナムへ 来ます。",
+              "furigana": null,
+              "translation": "Tháng sau anh ấy sẽ đến Việt Nam.",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "N(địa điểm)へ 行きます／来ます／帰ります。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "pattern": "Nで 行きます",
+          "meaning": "cách thức thực hiện hành động.",
+          "usage": null,
+          "explanation": "Trợ từ 「で」 được dùng sau danh từ chỉ phương tiện hoặc công cụ để diễn tả\n• Lưu ý: Khi đi bộ, ta dùng 歩いてvà không có trợ từ で.\n• Hỏi phương tiện di chuyển: 「何で」 văn nói thường sử dụng「何で」",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "電車で 会社へ 行きます。",
+              "furigana": null,
+              "translation": "Tôi đi làm bằng tàu điện.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "駅から 歩いて 帰りました。",
+              "furigana": null,
+              "translation": "Tôi đã đi bộ từ nhà ga về.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "N(phương tiện)で 行きます／来ます／帰ります。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "Nと〜",
+          "meaning": "với chủ ngữ.",
+          "usage": "N(người/động vật) と Vます。",
+          "explanation": "Trợ từ 「と」 được dùng để chỉ người (hoặc động vật) cùng thực hiện hành động\nLưu ý: Khi làm hành động một mình, ta dùng 一人で.",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "先週、家族と 日本へ 来ました。",
+              "furigana": null,
+              "translation": "Tuần trước tôi đã đến Nhật Bản cùng với gia đình.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "一人で 映画館へ 行きます。",
+              "furigana": null,
+              "translation": "Tôi đi đến rạp chiếu phim một mình.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "「Thời gian cụ thể」に 行きます",
+          "meaning": "phút, ngày, tháng, năm) để chỉ thời điểm mà hành động diễn ra.",
+          "usage": null,
+          "explanation": "Trợ từ 「に」 được dùng sau danh từ chỉ mốc thời gian có con số cụ thể (giờ,\n• Hỏi thời điểm xảy ra hành độ có thể dùng 「何時（に）」hoặc「いつ」\n「Thời gian」に Vます。",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "１２月 ２０日に 国へ 帰ります。",
+              "furigana": null,
+              "translation": "Tôi sẽ về nước vào ngày 20 tháng 12.",
+              "explanation": null,
+              "sortOrder": 1
+            }
+          ]
+        },
+        {
+          "pattern": "誕生日は 〜月〜日です",
+          "meaning": "Đây là mẫu câu dùng để nói ngày sinh nhật của mình hoặc của người khác.",
+          "usage": "誕生日は ～月～日です。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "Để hỏi sinh nhật, ta dùng nghi vấn từ 「いつ」 (khi nào) hoặc 「何月何日」(ngày",
+              "furigana": null,
+              "translation": "mấy tháng mấy).",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "私の 誕生日は １０月 ２０日です。",
+              "furigana": null,
+              "translation": "Sinh nhật của tôi là ngày 20 tháng 10.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "田中さんの 誕生日は いつですか。",
+              "furigana": null,
+              "translation": "Sinh nhật của anh Tanaka là khi nào?",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 6,
+      "title": "Bài 06",
+      "grammars": [
+        {
+          "pattern": "～を ～ます",
+          "meaning": "V (hành động) tác động lên N (đối tượng).",
+          "usage": "N(đối tượng)を Vます。",
+          "explanation": "Trợ từ 「を」dùng sau danh từ để chỉ đó là đối tượng trực tiếp của hành động.",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "何を しますか",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "Nghi vấn từ 「何を」 được dùng để hỏi \"cái gì?\".",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "毎日、新聞を 読みます。",
+              "furigana": null,
+              "translation": "Hàng ngày tôi đọc báo.",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "A: 昨日、何を しましたか。",
+              "furigana": null,
+              "translation": "Hôm qua bạn đã làm gì?",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "B: サッカーを しました。",
+              "furigana": null,
+              "translation": "Tôi đã chơi bóng đá.",
+              "explanation": null,
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "pattern": "「Địa điểm」で ～ます",
+          "meaning": "Làm V tại địa điểm N.",
+          "usage": "N(địa điểm)で Vます。",
+          "explanation": "Trợ từ 「で」 đứng sau danh từ chỉ địa điểm để diễn tả nơi hành động xảy ra.",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "Phân biệt: で (nơi xảy ra hành động) khác với に (nơi tồn tại) và へ (phương",
+              "furigana": null,
+              "translation": "hướng di chuyển).",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "駅で 新聞を 買います。",
+              "furigana": null,
+              "translation": "Tôi mua báo ở nhà ga.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "図書館で 本を 借りました。",
+              "furigana": null,
+              "translation": "Tôi đã mượn sách ở thư viện.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "～ませんか",
+          "meaning": "Đây là một cách nói dùng để mời hoặc rủ rê ai đó làm gì cùng mình một cách",
+          "usage": "Ⅴます ＋ ませんか。",
+          "explanation": "lịch sự. Cách mời này thể hiện sự tôn trọng ý kiến của người nghe, không mang",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "一緒に 昼ごはんを 食べませんか。",
+              "furigana": null,
+              "translation": "Cùng ăn trưa không?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "明日、一緒に テニスを しませんか。",
+              "furigana": null,
+              "translation": "Ngày mai cùng chơi tennis không?",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～ましょう",
+          "meaning": "Cùng làm V nào! / Hãy cùng làm V!",
+          "usage": "(Ví dụ: 休みましょう - Chúng ta nghỉ ngơi thôi!)\nⅤます ＋ ましょう。",
+          "explanation": "• Cách dùng 1: Dùng để chủ động đề nghị, rủ rê ai đó làm gì cùng mình.\n• Cách dùng 2: Dùng để hưởng ứng, đồng ý với lời mời Vませんか.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "A: 一緒に 映画を 見ませんか。",
+              "furigana": null,
+              "translation": "Cùng đi xem phim không?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "B: ええ、いいですね。見ましょう。",
+              "furigana": null,
+              "translation": "Ồ, hay đấy. Cùng xem nào!",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "ちょっと 休みましょう。",
+              "furigana": null,
+              "translation": "Chúng ta hãy nghỉ một chút nào.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 7,
+      "title": "Bài 07",
+      "grammars": [
+        {
+          "pattern": "「Công cụ」で ～ます",
+          "meaning": "tiện để thực hiện một hành động. Nó có thể là một vật cụ thể hoặc một ngôn",
+          "usage": "N(công cụ/phương tiện/ngôn ngữ)で Vます。",
+          "explanation": "Trợ từ 「で」 tiếp tục được dùng để chỉ phương pháp, cách thức hoặc phương",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "はしで ごはんを 食べます。",
+              "furigana": null,
+              "translation": "Tôi ăn cơm bằng đũa.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "日本語で レポートを 書きます。",
+              "furigana": null,
+              "translation": "Tôi viết báo cáo bằng tiếng Nhật.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "「Ngôn ngữ」で 何ですか",
+          "meaning": "\"...\" trong (ngôn ngữ) là gì?",
+          "usage": null,
+          "explanation": "Dùng để hỏi nghĩa của một từ hoặc một cụm từ trong một ngôn ngữ khác.",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "A： 「ありがとう」は 英語で 何ですか。",
+              "furigana": null,
+              "translation": "“Arigatou” trong tiếng Anh là gì?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "B： 「Thank you」です。",
+              "furigana": null,
+              "translation": "Là “Thank you”.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "”Từ/câu”は「Ngôn ngữ」で 何ですか。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "〜を あげます",
+          "meaning": "(Người cho) cho/tặng (Vật) cho (Người nhận).",
+          "usage": "N(cho)は N(nhận)に 「Vật」を あげます。",
+          "explanation": "Trợ từ 「に」 đứng sau người nhận.\nLưu ý: Không dùng あげます khi người nhận là bản thân mình (私).",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "あげます: Cho, tặng. Dùng khi chủ ngữ (người nói hoặc người khác) cho ai đó",
+              "furigana": null,
+              "translation": "một thứ gì.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "私は 木村さんに 花を あげました。",
+              "furigana": null,
+              "translation": "Tôi đã tặng hoa cho chị Kimura.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "父は 母に プレゼントを あげます。",
+              "furigana": null,
+              "translation": "Bố tôi tặng quà cho mẹ tôi.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "〜を もらいます",
+          "meaning": "(Người nhận) nhận (Vật) từ (Người cho).",
+          "usage": "N(nhận) は N(cho)に 「Vật」を もらいます。",
+          "explanation": "Trợ từ 「に」 đứng sau người cho. (Trong một số trường hợp, から cũng có thể",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "もらいます: Nhận. Dùng khi chủ ngữ nhận được một thứ gì đó từ người khác.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "được dùng thay cho に, đặc biệt khi người cho là một tổ chức).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "私は 山田さんに プレゼントを もらいました。",
+              "furigana": null,
+              "translation": "Tôi đã nhận được quà từ anh Yamada.",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "姉は 会社から お土産を もらいました。",
+              "furigana": null,
+              "translation": "Chị tôi đã nhận được quà từ công ty.",
+              "explanation": null,
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "pattern": "もう ～ました",
+          "meaning": "mạnh rằng hành động đã được hoàn thành.",
+          "usage": "Trả lời khẳng định: はい、もうVました。 (Vâng, đã làm rồi.)\nもう Vました。",
+          "explanation": "「もう」 có nghĩa là \"đã... rồi\", được đặt ở đầu câu hoặc trước động từ để nhấn",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "Trả lời phủ định: いいえ、まだです。 (Chưa, tôi vẫn chưa làm.)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A: もう 昼ごはんを 食べましたか。",
+              "furigana": null,
+              "translation": "Bạn đã ăn trưa chưa?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B: はい、もう食べました。／いいえ、まだです。これから食べます。",
+              "furigana": null,
+              "translation": "Vâng, tôi ăn rồi./Chưa. Bây giờ tôi sẽ ăn.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 8,
+      "title": "Bài 08",
+      "grammars": [
+        {
+          "pattern": "Dạng khẳng định của A",
+          "meaning": "Núi Phú Sĩ thì cao.",
+          "usage": "Với tính từ đuôi い, ta giữ nguyên い và cộng với です.\nVới tính từ đuôi な, ta bỏ な và cộng với です.",
+          "explanation": "Dùng để miêu tả tính chất, trạng thái của một danh từ.\nCó thể sử dụng phó từ mức độ とても (rất) để gia tăng mức độ của A\n• Nは Aいです。\n• Nは Aなです。",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "富士山は 高いです。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "奈良は とても 静かです。",
+              "furigana": null,
+              "translation": "Thành phố Nara thì rất yên tĩnh.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Dạng phủ định của của A",
+          "meaning": "N thì không (có tính chất) A. (Câu phủ định).",
+          "usage": "Với tính từ đuôi い, ta bỏ い ở cuối và thay bằng くないです.\nVới tính từ đuôi な, ta giữ nguyên và cộng với じゃありません.",
+          "explanation": "Dùng để phủ định tính chất, trạng thái của danh từ.\n• いいです (tốt/được) -> Phủ định là よくないです.\nCó thể sử dụng phó từ mức độ あまり (không…lắm) để giảm mức độ của A\n• Nは Aい (い) + くないです。\n• Nは Aな + じゃありません。",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "この 本は あまり おもしろくないです。",
+              "furigana": null,
+              "translation": "Quyển sách này không thú vị lắm.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "あそこは にぎやかじゃありません。",
+              "furigana": null,
+              "translation": "Chỗ kia không náo nhiệt.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Tính từ bổ nghĩa",
+          "meaning": "cho Danh từ",
+          "usage": null,
+          "explanation": "• AいN\n• Aな＋なN",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "Tính từ đuôi い được đặt ngay trước danh từ.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "Tính từ đuôi な phải thêm な vào sau rồi mới đến danh từ.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "これは 古いカメラです。",
+              "furigana": null,
+              "translation": "Đây là một chiếc máy ảnh cũ.",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "サントスさんは 親切な人です。",
+              "furigana": null,
+              "translation": "Anh Santos là một người tốt bụng.",
+              "explanation": null,
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "pattern": "～どう／～どんな",
+          "meaning": "～どう／～どんな",
+          "usage": null,
+          "explanation": "• N thì thế nào?\n• Là N như thế nào?\n• Nは どうですか。\n• どんなNですか。",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "どうですか: Hỏi về đánh giá, cảm nhận chung về một chủ đề.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "どんな: Hỏi về đặc điểm để phân loại, mô tả một danh từ. (どんな + danh từ).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "さくらは どうですか。",
+              "furigana": null,
+              "translation": "Hoa anh đào như thế nào?",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "さくらは どんな花ですか。",
+              "furigana": null,
+              "translation": "Hoa anh đào là loài hoa như thế nào?",
+              "explanation": null,
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "pattern": "そして～／が～",
+          "meaning": "そして～／が～",
+          "usage": null,
+          "explanation": "Dùng để liệt kê tính từ cùng chủ ngữ.\n• N thì A1. Hơn nữa lại còn A2.\n• N thì A1, nhưng A2.\n• Nは A１。そして、Ａ２\n• Ｎは Ａ１が、Ａ２",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "この本は おもしろいです。そして、 安いです。",
+              "furigana": null,
+              "translation": "Cuốn sách này hay. Hơn nữa lại còn rẻ nữa.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "私の 部屋は きれいですが、小さいです。",
+              "furigana": null,
+              "translation": "Phòng của tôi đẹp nhưng nhỏ.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 9,
+      "title": "Bài 09",
+      "grammars": [
+        {
+          "pattern": "～は ～が 好き／嫌いです",
+          "meaning": "N1 thích/ghét N2.",
+          "usage": "N1(người)は N2(đối tượng)が 好きです／嫌いです。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "好きです: Thích (tính từ đuôi な).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "嫌い です: Ghét (tính từ đuôi な).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "Trong mẫu câu này, đối tượng của sự thích/ghét được chỉ ra bằng trợ từ 「が」",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "chứ không phải 「を」.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "私は スポーツが 好きです。",
+              "furigana": null,
+              "translation": "Tôi thích thể thao.",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "カリナさんは カラオケが 嫌いです。",
+              "furigana": null,
+              "translation": "Chị Karina ghét karaoke.",
+              "explanation": null,
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "pattern": "～は～が上手です／下手です",
+          "meaning": "N1 giỏi/kém về việc N2.",
+          "usage": "N1(người)は N2(đối tượng)が 上手です／下手です。",
+          "explanation": "Lưu ý: 上手です không dùng để nói về bản thân một cách khiêm tốn. Khi đó, ta",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "上手です: Giỏi (tính từ đuôi な).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "下手です: Kém (tính từ đuôi な).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "Tương tự 好き／嫌い, đối tượng của việc giỏi/kém cũng đi với trợ từ 「が」.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "dùng 得意です.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "マリアさんは 料理が 上手です。",
+              "furigana": null,
+              "translation": "Chị Maria nấu ăn giỏi.",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "私は テニスが 下手です。",
+              "furigana": null,
+              "translation": "Tôi chơi tennis kém.",
+              "explanation": null,
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "pattern": "～は ～が わかります",
+          "meaning": "N1 hiểu N2.",
+          "usage": "N1(người)は N2(sự vật/việc)が わかります。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "わかります: Hiểu (động từ).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "Đối tượng của sự thấu hiểu (điều mình hiểu) cũng được đi kèm với trợ từ 「が」.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "Các phó từ chỉ mức độ: よく (rất)／だいたい (đại khái)／少し (một chút)／あまり",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "(không…lắm)／ぜんぜん (hoàn toàn không)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "私は 日本語が 少し わかります。",
+              "furigana": null,
+              "translation": "Tôi hiểu một chút tiếng Nhật.",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "山田さんは 漢字が よく わかります。",
+              "furigana": null,
+              "translation": "Anh Yamada hiểu rất rõ chữ Hán.",
+              "explanation": null,
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "pattern": "～は ～が あります",
+          "meaning": "N1 có N2.",
+          "usage": "N1(người)は N2(vật sở hữu)が あります",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "あります: Có (dùng cho sự sở hữu hoặc tồn tại của đồ vật).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "Danh từ chỉ vật sở hữu cũng đi với trợ từ 「が」.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "Các phó từ chỉ số lượng: たくさん (rất nhiều)／少し (một chút)／あまり",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "(không…lắm)／ぜんぜん (hoàn toàn không)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "私は 車が あります。",
+              "furigana": null,
+              "translation": "Tôi có xe hơi.",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "お金が ありますか。",
+              "furigana": null,
+              "translation": "Bạn có tiền không?",
+              "explanation": null,
+              "sortOrder": 6
+            }
+          ]
+        },
+        {
+          "pattern": "～から、～ (Lý do)",
+          "meaning": "lý do cho mệnh đề thứ hai.",
+          "usage": null,
+          "explanation": "「から」 được đặt ở cuối mệnh đề thứ nhất để chỉ mệnh đề đó là nguyên nhân,\nTừ để hỏi: どうして（Tại sao?）\n「Mệnh đề 1(Lý do)」から、「Mệnh đề 2(Kết quả)」",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "時間が ありませんから、新聞を 読みません。",
+              "furigana": null,
+              "translation": "Vì không có thời gian nên tôi không đọc báo.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A: どうして 昨日 早く 帰りましたか。",
+              "furigana": null,
+              "translation": "Tại sao hôm qua bạn về sớm vậy?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B: 用事が ありましたから。",
+              "furigana": null,
+              "translation": "Vì tôi có việc bận.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 10,
+      "title": "Bài 10",
+      "grammars": [
+        {
+          "pattern": "～に～があります",
+          "meaning": "Ở địa điểm N1 có N2 (vật)",
+          "usage": "N1(địa điểm)に N2(vật)が あります",
+          "explanation": "「に」: Chỉ nơi chốn, không phải 「は」, vì nhấn mạnh vị trí tồn tại.\n「N2」: Vật thể (bàn, sách…).\n「あります」: Thể hiện sự tồn tại.",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "部屋に テレビが あります。",
+              "furigana": null,
+              "translation": "Trong phòng có tivi.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "公園に 木が あります。",
+              "furigana": null,
+              "translation": "Trong công viên có cây.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～に～がいます",
+          "meaning": "Ở địa điểm N1 có N2 (người/động vật)",
+          "usage": "N1(địa điểm)に N2(người/động vật)が います",
+          "explanation": "「に」: Chỉ nơi chốn.\n「N２」: Người hoặc động vật.\n「います」: Thể hiện sự tồn tại.\n「だれが いますか」：có ai? ｜「何が いますか」：có con gì?",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "庭に 猫が います。",
+              "furigana": null,
+              "translation": "Trong vườn có mèo.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "部屋に 田中さんが います。",
+              "furigana": null,
+              "translation": "Trong phòng có anh Tanaka.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～の～に～があります",
+          "meaning": "Ở N2 của N1 có N3(người/động vật)",
+          "usage": "～の～に～がいます\nN1の N2(từ chỉ vị trí)に N3が あります／います",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "Các từ chỉ vị trí thường dùng : 上 (trên), 下 (dưới), 前 (trước), 後ろ (sau), 右",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "(phải), 左 (trái), 中 (trong), 外 (ngoài), 隣 (bên cạnh), 近く (gần), 間 (giữa)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "机の 上に 写真が あります。",
+              "furigana": null,
+              "translation": "Trên mặt bàn có tấm ảnh.",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "銀行は スーパーと 郵便局の 間に あります。",
+              "furigana": null,
+              "translation": "Ngân hàng ở giữa siêu thị và bưu điện.",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "公園の 近くに 大学が あります。",
+              "furigana": null,
+              "translation": "Gần công viên có một trường đại học.",
+              "explanation": null,
+              "sortOrder": 5
+            }
+          ]
+        },
+        {
+          "pattern": "～は ～に あります",
+          "meaning": "nói muốn thông báo vị trí của nó. Do đó, đối tượng được đưa lên làm chủ đề",
+          "usage": "～は ～に います\nN１(Vật/Người)は N２(Địa điểm)に あります／います。",
+          "explanation": "Mẫu câu này được dùng khi đối tượng (vật/người) đã được biết đến và người",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "của câu bằng trợ từ 「は」.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "私の かばんは 車の 中に あります。",
+              "furigana": null,
+              "translation": "Cái cặp của tôi thì ở trong xe ô tô.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "佐藤さんは 事務所に います。",
+              "furigana": null,
+              "translation": "Chị Sato thì ở văn phòng.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 11,
+      "title": "Bài 11",
+      "grammars": [
+        {
+          "pattern": "Lượng từ",
+          "meaning": "Cấu trúc chung của lượng từ là Số đếm + Đơn vị đếm. Mỗi loại danh từ khác",
+          "usage": "Vật nhỏ (quả, đồ ăn...): ～つ (hệ đếm thuần Nhật): ひとつ, ふたつ, みっつ...\nGiờ: ～時 : いちじ, にじ, さんじ...\nNgười: ～人: ひとり, ふたり, さんにん...",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "ケーキが ２つ あります。",
+              "furigana": null,
+              "translation": "Có 2 cái bánh kem.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "学生が ２人 います。",
+              "furigana": null,
+              "translation": "Có 2 học sinh.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Khoảng thời gian",
+          "meaning": "Các từ chỉ khoảng thời gian thường đi với các động từ chỉ hành động hoặc",
+          "usage": null,
+          "explanation": "Dùng để diễn tả một hành động hoặc trạng thái kéo dài",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "trạng thái kéo dài như: かかります (mất), います (ở), 勉強します (học), 待ちます",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "(chờ), 寝ます (ngủ)…",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "１時間 勉強します。",
+              "furigana": null,
+              "translation": "Tôi học 1 tiếng.",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "私は 日本に ３年 います。",
+              "furigana": null,
+              "translation": "Tôi ở Nhật 3 năm.",
+              "explanation": null,
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "pattern": "〜に～回 Vます",
+          "meaning": "Trong một khoảng thời gian V mấy lần. (Diễn tả tần suất).",
+          "usage": null,
+          "explanation": "「～に」: Trợ từ chỉ khoảng thời gian.\n「～回 」: Lượng từ chỉ số lần (１回: 1 lần, ２回: 2 lần...).\n「 Vます」: Động từ ở thể lịch sự.\n「Khoảng thời gian」に ～回 Vます。",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "１週間に ３回 プールへ 行きます。",
+              "furigana": null,
+              "translation": "Một tuần tôi đi bơi 3 lần.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "１か月に ２回 映画を 見ます。",
+              "furigana": null,
+              "translation": "Một tháng tôi xem phim 2 lần.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "(Khoảng thời gian) Vます",
+          "meaning": "Chú ý: Cần phân biệt rõ với hành động xảy ra tại một mốc thời gian cụ thể, vốn",
+          "usage": null,
+          "explanation": "Mẫu câu này không dùng trợ từ 「に」 sau khoảng thời gian.\nTừ để hỏi: 「どのくらい」：bao lâu\n「Khoảng thời gian」Vます。",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "bắt buộc phải có 「に」 (ví dụ: ６時に 起きます - Thức dậy vào lúc 6 giờ).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A: どのくらい 日本語を 勉強しますか。",
+              "furigana": null,
+              "translation": "Bạn học tiếng Nhật trong bao lâu?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B: １時間 勉強します。",
+              "furigana": null,
+              "translation": "Tôi học trong 1 tiếng.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 12,
+      "title": "Bài 12",
+      "grammars": [
+        {
+          "pattern": "Dạng quá khứ của",
+          "meaning": "Danh từ và Tính từ",
+          "usage": "Với Danh từ và Tính từ đuôi な, đổi です thành でした.\nVới Tính từ đuôi い, bỏ い ở cuối và thay bằng かったです.\nN / Aな でした。 | Aい (い) かったです。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "昨日は 雨でした。",
+              "furigana": null,
+              "translation": "Hôm qua trời mưa.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "先週、町は とても 静かでした。",
+              "furigana": null,
+              "translation": "Tuần trước, thành phố rất yên tĩnh.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "旅行は とても 楽しかったです。",
+              "furigana": null,
+              "translation": "Chuyến du lịch đã rất vui.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "Dạng quá khứ phủ định của",
+          "meaning": "Danh từ và Tính từ",
+          "usage": "Với Danh từ và Tính từ đuôi な, đổi じゃありません thành じゃありませんでした.\nVới Tính từ đuôi い, đổi đuôi い thành くなかったです.\nN / Aな じゃありませんでした。\nAい (い) くなかったです。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "パーティーは 日曜日じゃありませんでした。",
+              "furigana": null,
+              "translation": "Bữa tiệc không phải là ngày Chủ nhật.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "試験は 全然 簡単じゃありませんでした。",
+              "furigana": null,
+              "translation": "Bài kiểm tra chẳng dễ tý nào.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "昨日は あまり 暑くなかったです。",
+              "furigana": null,
+              "translation": "Hôm qua không nóng lắm.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "So sánh hơn",
+          "meaning": "sánh (N2).",
+          "usage": "N1は N2より Aです。",
+          "explanation": "Mẫu câu này dùng để so sánh hai đối tượng, trong đó N1 có mức độ của tính\nchất A cao hơn N2. Trợ từ 「より」 được dùng để chỉ đối tượng được mang ra so",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "ベトナムは 日本より 暑いです。",
+              "furigana": null,
+              "translation": "Việt Nam thì nóng hơn Nhật Bản.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "この かばんは その かばんより 大きいです。",
+              "furigana": null,
+              "translation": "Cái cặp này thì to hơn cái cặp đó.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "So sánh giữa hai đối tượng",
+          "meaning": "Giữa N1 và N2 cái nào ... hơn?",
+          "usage": "Câu trả lời dùng ～のほう để chỉ ra phía được chọn.\nTrường hợp cả 2 cùng A sử dụng mẫu: どちらも Aです。\nN1と N2と どちらが Aですか。\n→ N1/N2のほうが Aです。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "どちら có nghĩa là \"cái nào/phía nào\".",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "A: スポーツで、サッカーと 野球と どちらが おもしろいですか。",
+              "furigana": null,
+              "translation": "Trong thể thao, giữa bóng đá và bóng chày, môn nào thú vị hơn?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "B: サッカーの ほうが おもしろいです。",
+              "furigana": null,
+              "translation": "Bóng đá thú vị hơn.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "So sánh hơn nhất",
+          "meaning": "Tuỳ thuộc vào đối tượng hỏi để đưa ra từ để hỏi phù hợp.",
+          "usage": "N(phạm vi) ［の中］で～が いちばんAですか。\n→ N(đối tượng)が いちばんAです。",
+          "explanation": "「いちばん」 có nghĩa là \"nhất\". 「で」 là trợ từ chỉ phạm vi so sánh.",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "A: 家族で だれが いちばん 背が 高いですか。",
+              "furigana": null,
+              "translation": "Trong gia đình, ai cao nhất?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "B: 兄が いちばん 背が 高いです。",
+              "furigana": null,
+              "translation": "Anh trai tôi cao nhất.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 13,
+      "title": "Bài 13",
+      "grammars": [
+        {
+          "pattern": "〜が 欲しいです",
+          "meaning": "Muốn có N.",
+          "usage": null,
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "本が 欲しいです。",
+              "furigana": null,
+              "translation": "Tôi muốn có sách.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "何が 欲しいですか。",
+              "furigana": null,
+              "translation": "Bạn muốn cái gì thế?",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "Nが 欲しいです。",
+              "furigana": null,
+              "translation": "Diễn tả mong muốn của bản thân.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "〜たいです",
+          "meaning": "Diễn tả mong muốn của bản thân.",
+          "usage": "Vます(ます) ＋たい です。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "Ⅴたい được coi như một tính từ đuôi い.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "日本へ 行きたいです。",
+              "furigana": null,
+              "translation": "Tôi muốn đi Nhật Bản.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "寿司を 食べたくないです。",
+              "furigana": null,
+              "translation": "Tôi không muốn ăn sushi.",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "Mục đích di chuyển",
+          "meaning": "Diễn tả mục đích của các hành động di chuyển tới địa điểm N",
+          "usage": "N(Địa điểm)へ Vます／Nに 行きます／ 来ます",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "北海道へ スキーに 行きます。",
+              "furigana": null,
+              "translation": "Tôi đi Hokkaido để trượt tuyết.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "日本へ 日本語の 勉強／日本語を 勉強しに 来ました。",
+              "furigana": null,
+              "translation": "Tôi đã tới Nhật để học tiếng Nhật.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 14,
+      "title": "Bài 14",
+      "grammars": [
+        {
+          "pattern": "〜ましょうか",
+          "meaning": "Để tôi làm V nhé? (Đề xuất giúp đỡ ai).",
+          "usage": "Vます(ます) ＋ましょうか。",
+          "explanation": "「ましょうか」: Đề xuất lịch sự.",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "A： 荷物を 持ちましょうか。",
+              "furigana": null,
+              "translation": "Tôi cầm hành lý giúp nhé?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "B： はい、お願いします。",
+              "furigana": null,
+              "translation": "Vâng, làm ơn ạ.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "NHÓM ĐỘNG TỪ",
+          "meaning": "NHÓM Đặc điểm Ví dụ",
+          "usage": "NHÓM 1 ～iます\n～eます\n～iます\n～します\n～きます",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "かきます (viết)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "あいます (gặp)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "とります (chụp)",
+              "furigana": null,
+              "translation": "NHÓM 2",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "たべます (ăn)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "ねます (ngủ)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "かります (vay, mượn)",
+              "furigana": null,
+              "translation": "NHÓM 3",
+              "explanation": null,
+              "sortOrder": 6
+            },
+            {
+              "japanese": "Nします",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 7
+            },
+            {
+              "japanese": "べんきょうします (học)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 8
+            },
+            {
+              "japanese": "けっこんします (kết hôn)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 9
+            },
+            {
+              "japanese": "きます (tới)",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 10
+            }
+          ]
+        },
+        {
+          "pattern": "ĐỘNG TỪ THỂ て",
+          "meaning": "NHÓM CÁCH CHIA Ví dụ",
+          "usage": "～い／ち／ります→～って\n～み／び／にます→～んで\n～きます→～いて\n～ぎます→～いで\n～します→～して\nNHÓM 2 ～ます→～て\n～します→～して\n～きます→～きて",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "行きます→行って",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "まちます→まって",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "よびます→よんで",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "かきます→かいて",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "およぎます→およいで",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "はなします→はなして",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 6
+            },
+            {
+              "japanese": "たべます→たべて",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 7
+            },
+            {
+              "japanese": "かります→かりて",
+              "furigana": null,
+              "translation": "NHÓM 3",
+              "explanation": null,
+              "sortOrder": 8
+            },
+            {
+              "japanese": "べんきょうします→べんきょうして",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 9
+            },
+            {
+              "japanese": "きます→きて",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 10
+            }
+          ]
+        },
+        {
+          "pattern": "〜て ください",
+          "meaning": "Đưa ra một yêu cầu lịch sự.",
+          "usage": "Vて ください。",
+          "explanation": "Có thể dùng đối với các trường hợp có vai vế cao hơn mình.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "窓を 開けて ください。",
+              "furigana": null,
+              "translation": "Hãy mở cửa sổ ra đi ạ.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "ドアを 閉めて ください。",
+              "furigana": null,
+              "translation": "Hãy đóng cửa vào ạ.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "〜て います",
+          "meaning": "Diễn tả trạng thái đang diễn ra của Động từ.",
+          "usage": "Vて います。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "テレビを 見て います。",
+              "furigana": null,
+              "translation": "Tôi đang xem tivi.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "本を 読んで います。",
+              "furigana": null,
+              "translation": "Tôi đang đọc sách.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 15,
+      "title": "Bài 15",
+      "grammars": [
+        {
+          "pattern": "〜てもいいですか",
+          "meaning": "Xin phép để làm gì đó.",
+          "usage": "Cho phép làm gì đó sử dụng: 「～てもいいです。」\nVてもいいですか。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "写真を 撮っても いいですか。",
+              "furigana": null,
+              "translation": "Có được chụp ảnh không?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "ここに 座ってても いいですか。",
+              "furigana": null,
+              "translation": "Có được ngồi đây không?",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "〜てはいけません",
+          "meaning": "Không được V (cấm chỉ)",
+          "usage": "Vてはいけません。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "タバコを 吸っては いけません。",
+              "furigana": null,
+              "translation": "Không được hút thuốc lá.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "ここで 写真を 撮っては いけません。",
+              "furigana": null,
+              "translation": "Không được chụp ảnh ở đây đây.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "〜て います",
+          "meaning": "Đang ở trạng thái V (kết quả kéo dài).",
+          "usage": "Vて います。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "結婚して います。",
+              "furigana": null,
+              "translation": "Tôi đã kết hôn.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "彼を 知って います。",
+              "furigana": null,
+              "translation": "Tôi biết anh ta.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 16,
+      "title": "Bài 16",
+      "grammars": [
+        {
+          "pattern": "V1て、V2て、～",
+          "meaning": "V1, V2, rồi Vn (liệt kê)",
+          "usage": "V1て、V2て、(それから) Vn",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "起きて、シャワーを 浴びて、朝ご飯を 食べます。",
+              "furigana": null,
+              "translation": "Tôi thức dậy, tắm, rồi ăn sáng.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "帰って、テレビを 見て、寝ます。",
+              "furigana": null,
+              "translation": "Về nhà, xem TV rồi đi ngủ.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "V1てから、V2",
+          "meaning": "Thực hiện V2 sau khi V1 (V1 đóng vai trò như một mốc thời gian)",
+          "usage": "V1てから、V2。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "ご飯を 食べてから、勉強します。",
+              "furigana": null,
+              "translation": "Tôi học ngay sau khi ăn cơm xong.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "帰ってから、テレビを 見ました。",
+              "furigana": null,
+              "translation": "Ngay sau khi về tôi đã xem TV.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "N1は N2が Aです",
+          "meaning": "N1 thì có N2 (có đặc tính) A",
+          "usage": "N1は N2が Aです。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "この店は 食べ物が おいしいです。",
+              "furigana": null,
+              "translation": "Quán ăn này đồ ăn ngon.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "日本は 冬が 寒いです。",
+              "furigana": null,
+              "translation": "Nhật Bản có mùa đông lạnh.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Liệt kê tính từ",
+          "meaning": "A1 và A2 (liệt kê tính chất)",
+          "usage": null,
+          "explanation": "• Aいいくて A2\n• Aなで A2\nDùng để liệt kê các tính chất hoặc có thể dùng để giải thích nguyên nhân.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "りんごが 甘くて、おいしいです。",
+              "furigana": null,
+              "translation": "Táo ngọt và ngon.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "日本は 静かで、安全です。",
+              "furigana": null,
+              "translation": "Nhật Bản yên tĩnh và an toàn.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Liệt kê mệnh đề Danh từ",
+          "meaning": "Là N, và…",
+          "usage": "Nで、～。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "私は 学生で、忙しいです。",
+              "furigana": null,
+              "translation": "Tôi là học sinh và (nên) bận rộn.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "子供で、まだ 小さいです。",
+              "furigana": null,
+              "translation": "Là trẻ con và vẫn còn nhỏ.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 17,
+      "title": "Bài 17",
+      "grammars": [
+        {
+          "pattern": "ĐỘNG TỪ THỂ ない",
+          "meaning": "NHÓM CÁCH CHIA Ví dụ",
+          "usage": "～iます→～aない\n～います→～わない\nNHÓM 2 ～ます→～ない\n～します→～しない\n～きます→～こない",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "あります→ない",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "まちます→またない",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "よびます→よばない",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "かきます→かかない",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "およぎます→およがない",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "はなします→はなさない",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 6
+            },
+            {
+              "japanese": "たべます→たべない",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 7
+            },
+            {
+              "japanese": "かります→かりない",
+              "furigana": null,
+              "translation": "NHÓM 3",
+              "explanation": null,
+              "sortOrder": 8
+            },
+            {
+              "japanese": "べんきょうします→べんきょうしない",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 9
+            },
+            {
+              "japanese": "きます→こない",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 10
+            }
+          ]
+        },
+        {
+          "pattern": "Vないで ください",
+          "meaning": "Đừng làm V.",
+          "usage": "Vないで ください。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "ここで タバコを 吸わないで ください。",
+              "furigana": null,
+              "translation": "Đừng hút thuốc ở đây.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "部屋に 入らないで ください。",
+              "furigana": null,
+              "translation": "Đừng vào phòng.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Vなければなりません",
+          "meaning": "Phải làm V.",
+          "usage": "Vない(い) ＋ければ なりません。",
+          "explanation": "「Ⅴなければ」: Nếu không làm V (điều kiện).\n「なりません」: Biểu thị nghĩa vụ, không làm thì không được. Thường dùng",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "毎日 勉強しなければ なりません。",
+              "furigana": null,
+              "translation": "Tôi phải học mỗi ngày.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "早く 行かなければ なりません。",
+              "furigana": null,
+              "translation": "Tôi phải đi sớm.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Vなくても いいです",
+          "meaning": "Không cần làm V",
+          "usage": "Vない(い) ＋くても いいです。",
+          "explanation": "「Vなくても」: Dù không làm V.\n「いいです」: Không vấn đề gì, cho phép không làm.\nDùng để giảm nhẹ nghĩa vụ hoặc cho phép tự do lựa chọn.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "宿題を しなくても いいです。",
+              "furigana": null,
+              "translation": "Không cần làm bài tập cũng được.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "今日 来なくても いいです。",
+              "furigana": null,
+              "translation": "Hôm nay không cần đến cũng được.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "N は ～ Vます",
+          "meaning": "Cá thì tôi ăn, nhưng thịt thì không.",
+          "usage": "Nは Vます",
+          "explanation": "「 Nは」: Thay 「を」, nhấn mạnh tân ngữ hoặc so sánh với thứ khác.",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "魚は 食べますが、肉は 食べません。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "コーヒーは 飲みますが、紅茶は 飲みません。",
+              "furigana": null,
+              "translation": "Cà phê thì tôi uống, nhưng hồng trà thì không.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "〜までにV",
+          "meaning": "Hoàn thành V trước thời điểm N.",
+          "usage": "N(thời điểm)までに V。",
+          "explanation": "「までに」: Nhấn mạnh hành động V phải xong trước hoặc vào thời điểm N.\n「Ｎ」: Danh từ chỉ thời gian （６時、来週…） hoặc sự kiện (会議、旅行…).",
+          "notes": null,
+          "sortOrder": 6,
+          "examples": [
+            {
+              "japanese": "6時までに 宿題を 出します。",
+              "furigana": null,
+              "translation": "Tôi sẽ nộp bài tập trước 6 giờ.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "来週までに レポートを 書きます。",
+              "furigana": null,
+              "translation": "Tôi sẽ viết báo cáo trước tuần sau.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 18,
+      "title": "Bài 18",
+      "grammars": [
+        {
+          "pattern": "ĐỘNG TỪ THỂ る",
+          "meaning": "NHÓM CÁCH CHIA Ví dụ",
+          "usage": "NHÓM 1 ～iます→～u\nNHÓM 2 ～ます→～る\n～します→～する\n～きます→～くる",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "まちます→まつ",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "よびます→よぶ",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "かきます→かく",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "およぎます→およぐ",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "はなします→はなす",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "たべます→たべる",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 6
+            },
+            {
+              "japanese": "かります→かりる",
+              "furigana": null,
+              "translation": "NHÓM 3",
+              "explanation": null,
+              "sortOrder": 7
+            },
+            {
+              "japanese": "べんきょうします→べんきょうする",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 8
+            },
+            {
+              "japanese": "きます→くる",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 9
+            }
+          ]
+        },
+        {
+          "pattern": "N／Vることが できます",
+          "meaning": "Dùng trong ngữ cảnh nói về khả năng cá nhân, hoặc điều kiện cho phép.",
+          "usage": "N／Vることが できます",
+          "explanation": "Có thể làm N/V\n「Vる」: Danh từ hóa động từ bằng cách thêm こと vào sau thể từ điển.\n「N」: Danh từ chỉ kỹ năng hoặc hành động (日本語、ピアノ…).\n「できます」: Biểu thị khả năng hoặc sự cho phép.",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "日本語が できます。",
+              "furigana": null,
+              "translation": "Tôi có thể sử dụng tiếng Nhật.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "泳ぐことが できます。",
+              "furigana": null,
+              "translation": "Tôi có thể bơi.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "趣味は N／Vること です",
+          "meaning": "Sở thích là N/làm V",
+          "usage": "趣味は N／Vることです。",
+          "explanation": "「趣味は」: Chỉ sở thích cá nhân.\n「Vること」: Danh từ hóa hành động V.\nDùng để trả lời câu hỏi về sở thích hoặc mô tả thói quen.",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "趣味は 映画を 見ることです。",
+              "furigana": null,
+              "translation": "Sở thích của tôi là xem phim.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "趣味は 旅行することです。",
+              "furigana": null,
+              "translation": "Sở thích của tôi là đi du lịch.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Vる／Nの 前に、 V2",
+          "meaning": "Trước khi làm V1/N, làm V2.",
+          "usage": "Vる／N の 前に V2",
+          "explanation": "「の 前に」: Chỉ thời điểm trước một hành động hoặc sự kiện.\n「Ⅴる」: Thể từ điển, chỉ hành động sắp xảy ra.\n「Ｎ」: Danh từ chỉ sự kiện hoặc thời điểm (食事、試験…).\nDùng để diễn tả trình tự hành động hoặc chuẩn bị.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "寝る 前に、 本を 読みます。",
+              "furigana": null,
+              "translation": "Trước khi đi ngủ, tôi đọc sách.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "試験の 前に、 勉強します。",
+              "furigana": null,
+              "translation": "Tôi học trước kỳ thi.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "（thời gian）前に、 Vました",
+          "meaning": "Đã làm V cách đây ~.",
+          "usage": "（thời gian) 前に Vました。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "３年前に、日本に来ました。",
+              "furigana": null,
+              "translation": "Tôi đã sang Nhật cách đây 3 năm.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "母は 1時間前に でかけました。",
+              "furigana": null,
+              "translation": "Mẹ đã ra ngoài cách đây 1 tiếng.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "なかなか",
+          "meaning": "Không dễ dàng, mãi mà không",
+          "usage": "なかなか Vません。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 6,
+          "examples": [
+            {
+              "japanese": "なかなか かんじを覚えることが できません。",
+              "furigana": null,
+              "translation": "Mãi mà không nhớ được chữ Hán.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "なかなか バスが来ません。",
+              "furigana": null,
+              "translation": "Xe bus mãi mà không đến.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "ぜひ",
+          "meaning": "Rất, nhất định,… (mong muốn, yêu cầu)",
+          "usage": "ぜひ Vたい／Vてください／Vましょう。\nたいです、Vてください、Vましょう để nhấn mạnh mong muốn, yêu cầu đó.",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 7,
+          "examples": [
+            {
+              "japanese": "ぜひ 日本に 行きたいです。",
+              "furigana": null,
+              "translation": "Tôi rất muốn đi Nhật.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "明日パーティーがありますから、ぜひ 来てくださいね。",
+              "furigana": null,
+              "translation": "Ngày mai có bữa tiệc nên bạn nhất định đến nhé.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 19,
+      "title": "Bài 19",
+      "grammars": [
+        {
+          "pattern": "ĐỘNG TỪ THỂ た",
+          "meaning": "NHÓM CÁCH CHIA Ví dụ",
+          "usage": "～い／ち／ります→～った\n～み／び／にます→～んだ\n～きます→～いた\n～ぎます→～いだ\n～します→～した\nNHÓM 2 ～ます→～た\n～します→～した\n～きます→～きた",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "行きます→行った",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "まちます→まった",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "よびます→よんだ",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "かきます→かいた",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "およぎます→およいだ",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "はなします→はなした",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 6
+            },
+            {
+              "japanese": "たべます→たべた",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 7
+            },
+            {
+              "japanese": "かります→かりた",
+              "furigana": null,
+              "translation": "NHÓM 3",
+              "explanation": null,
+              "sortOrder": 8
+            },
+            {
+              "japanese": "べんきょうします→べんきょうした",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 9
+            },
+            {
+              "japanese": "きます→きた",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 10
+            }
+          ]
+        },
+        {
+          "pattern": "Vたことが あります",
+          "meaning": "Đã từng/chưa từng làm V.",
+          "usage": "Vたことが あります／ありません。",
+          "explanation": "「Ⅴた」: Thể quá khứ của động từ, chỉ hành động đã xảy ra.\n「ことがあります」: Nhấn mạnh trải nghiệm trong quá khứ, không quan tâm đến",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "日本へ 行ったことが あります。",
+              "furigana": null,
+              "translation": "Tôi đã từng đi tới Nhật Bản.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "寿司を 食べたことが ありません。",
+              "furigana": null,
+              "translation": "Tôi chưa từng ăn sushi.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Vたり、Vたり します",
+          "meaning": "Làm V1, V2…",
+          "usage": "Vたり、Vたり します。",
+          "explanation": "「Ⅴたり」: Thể quá khứ (Ｖた＋り), nêu một số hành động tiêu biểu, không nhất\n「します」: Kết thúc câu, thể hiện hành động chung.",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "休みの 日に 音楽を 聴いたり、映画を 見たり します。",
+              "furigana": null,
+              "translation": "Vào ngày nghỉ, tôi nghe nhạc, xem phim…",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "週末に 買い物を したり、散歩を したり します。",
+              "furigana": null,
+              "translation": "Vào cuối tuần, tôi mua sắm, đi dạo…",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～なります",
+          "meaning": "Trở thành N/trở nên A.",
+          "usage": "Nに／Aい (い) く／Aなに なります。",
+          "explanation": "「なります」: Chỉ sự thay đổi trạng thái hoặc vai trò.\nDùng để mô tả sự thay đổi về trạng thái, nghề nghiệp, hoặc đặc điểm.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "医者に なります。",
+              "furigana": null,
+              "translation": "Tôi sẽ trở thành bác sĩ.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "天気が 寒く なりました。",
+              "furigana": null,
+              "translation": "Thời tiết trở nên lạnh.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "部屋が 静かに なりました。",
+              "furigana": null,
+              "translation": "Căn phòng trở nên yên tĩnh.",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "Ａい: Bỏ い, thêm く (高い → 高く). ｜ Ａな／Ｎ: Thêm に (静か → 静かに).",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 20,
+      "title": "Bài 20",
+      "grammars": [
+        {
+          "pattern": "Thể thông thường",
+          "meaning": "LOẠI TỪ CÁCH CHIA",
+          "usage": "～です\n～じゃありません\n～でした\n～じゃありませんでした\n→ ～だ\n→ ～じゃない\n→ ～だった\n→ ～じゃなかった\n～ます\n～ません\n～ました\n～ませんでした\n→ Vる\n→ Vない\n→ Vた\n→ Vなかった\n～です\n～いくないです\n～いかったです\n～いくなかったです\n→ ～です\n→ ～いくないです\n→ ～いかったです\n→ ～いくなかったです",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "TÍNH TỪ な",
+              "furigana": null,
+              "translation": "ĐỘNG TỪ",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "TÍNH TỪ い",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Thể thông thường",
+          "meaning": "Thể thông thường",
+          "usage": null,
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "毎日、本を 読む。",
+              "furigana": null,
+              "translation": "Mỗi ngày, tôi đều đọc sách.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "テレビを 見ない。",
+              "furigana": null,
+              "translation": "Tôi không xem tivi.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "この ケーキ、美味しい。",
+              "furigana": null,
+              "translation": "Cái bánh này ngon.",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "今日、あまり 暑くない。",
+              "furigana": null,
+              "translation": "Hôm nay không nóng lắm.",
+              "explanation": null,
+              "sortOrder": 4
+            },
+            {
+              "japanese": "この 町、静かだ。",
+              "furigana": null,
+              "translation": "Thị trấn này yên tĩnh.",
+              "explanation": null,
+              "sortOrder": 5
+            },
+            {
+              "japanese": "学生じゃない。",
+              "furigana": null,
+              "translation": "Tôi không phải là học sinh.",
+              "explanation": null,
+              "sortOrder": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 21,
+      "title": "Bài 21",
+      "grammars": [
+        {
+          "pattern": "～と 思います",
+          "meaning": "Tôi nghĩ rằng…",
+          "usage": "Hay được sử dụng cùng:「～について」về ~ (chủ đề…)",
+          "explanation": "「Thể thông thường」 と 思います。\n「～と思います」: Biểu thị suy nghĩ hoặc dự đoán của người nói, thường mang",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "明日、雨が 降ると 思います。",
+              "furigana": null,
+              "translation": "Tôi nghĩ ngày mai sẽ mưa.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "この 映画、面白いと 思います。",
+              "furigana": null,
+              "translation": "Tôi nghĩ bộ phim này thú vị.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "Câu hỏi: 「何だと 思いますか？」／「どう 思いますか？」",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "～と言います",
+          "meaning": "Nói rằng…",
+          "usage": null,
+          "explanation": "「”Nguyên văn”」\n「Thể thông thường」\n「～と言います」: Trích dẫn lời nói/suy nghĩ của người khác hoặc mình.",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "田中さんは 「明日、来ます」 と 言いました。",
+              "furigana": null,
+              "translation": "Anh Tanaka nói rằng “Ngày mai tôi sẽ đến”.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "田中さんは 明日 来ると 言いました。",
+              "furigana": null,
+              "translation": "Anh Tanaka bảo mai sẽ đến.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "と 言います。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "～でしょう？",
+          "meaning": "… đúng không?",
+          "usage": "N／Aなだ",
+          "explanation": "「Thể thông thường」でしょう？\n「でしょう？」: Hỏi để xác nhận hoặc mời người nghe đồng tình.",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "このレストラン、美味しいでしょう？",
+              "furigana": null,
+              "translation": "Nhà hàng này ngon, đúng không?",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "彼、学生でしょう？",
+              "furigana": null,
+              "translation": "Anh ấy là học sinh, đúng không?",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 22,
+      "title": "Bài 22",
+      "grammars": [
+        {
+          "pattern": "Mệnh đề bổ nghĩa",
+          "meaning": "VThể thông thường",
+          "usage": "Nの ＋N\nAい／Aな\nMệnh đề bổ nghĩa có V chia ở thể thường, Aな、Aい、Nの",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "私は 日本語を 勉強する 人です。",
+              "furigana": null,
+              "translation": "Tôi là một người học tiếng Nhật.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "山田さんが 読んで いる 本は 私が 買った 本です。",
+              "furigana": null,
+              "translation": "Cuốn sách mà Yamada đang đọc là cuốn sách tôi mua.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "Chủ ngữ của mệnh đề bổ nghĩa đi với trợ từ 「が」.",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            }
+          ]
+        },
+        {
+          "pattern": "Vる「時間／約束／用事」が",
+          "meaning": "Có thời gian/ lời hứa/ việc để làm V",
+          "usage": "Vる「時間／約束／用事」が あります",
+          "explanation": "「時間」: Chỉ thời gian rảnh để làm V.\n「約束」: Chỉ cam kết hoặc hẹn làm V.\n「用事」: Chỉ công việc hoặc nhiệm vụ liên quan đến V.",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "旅行する 時間が あります。",
+              "furigana": "あります",
+              "translation": "Tôi có thời gian để đi du lịch.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "友達に 会う 約束が あります。",
+              "furigana": null,
+              "translation": "Tôi có hẹn gặp bạn.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 23,
+      "title": "Bài 23",
+      "grammars": [
+        {
+          "pattern": "～とき",
+          "meaning": "Mệnh đề sau mô tả hành động/trạng thái xảy ra đồng thời.",
+          "usage": "Vる/Vない ＋とき、～。",
+          "explanation": "「とき」: Chỉ thời điểm hoặc tình huống của hành động.",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "学校へ 行く とき、バスを 使います。",
+              "furigana": null,
+              "translation": "Khi đi học, tôi đi xe buýt.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "忙しくない とき、映画を 見ます。",
+              "furigana": null,
+              "translation": "Khi không bận, tôi xem phim.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～とき",
+          "meaning": "Mô tả trạng thái hoặc đặc điểm tại một thời điểm.",
+          "usage": "Aい/ Aな/Ｎの ＋とき、～。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "天気が いい とき、散歩します。",
+              "furigana": null,
+              "translation": "Khi thời tiết đẹp, tôi đi dạo.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "学生の とき、勉強が あまり 好きじゃありませんでした。",
+              "furigana": null,
+              "translation": "Khi còn là học sinh, tôi chẳng thích học hành mấy.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Vるとき／Vたとき",
+          "meaning": "V thực hiện đồng thời hoặc ngay sau sự kiện.",
+          "usage": "Vる/Vた ＋とき、～。",
+          "explanation": "「 Ⅴるとき」: Hành động V chưa xảy ra tại thời điểm nói, nhấn mạnh hành động\n「Ⅴたとき」: Hành động V đã hoàn thành trước thời điểm, nhấn mạnh hành",
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "教室を 出る とき、電気を 消して ください。",
+              "furigana": null,
+              "translation": "Khi ra khỏi lớp, hãy tắt điện. (tắt điện trước, ra khỏi lớp sau)",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "教室を 出た とき、ドアを 閉めて ください。",
+              "furigana": null,
+              "translation": "Khi ra khỏi lớp, hãy đóng cửa. (ra khỏi lớp trước, đóng cửa sau)",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～と",
+          "meaning": "Hễ nhấn nút thì cửa sẽ mở.",
+          "usage": "Vると、～。",
+          "explanation": "「と」: Chỉ kết quả tất yếu sau hành động V.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "ボタンを 押すと、ドアが 開きます。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "夜 遅く 寝ると、朝 起きることが できません。",
+              "furigana": null,
+              "translation": "Cứ ngủ muộn là sáng không dậy được.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 24,
+      "title": "Bài 24",
+      "grammars": [
+        {
+          "pattern": "～を くれます",
+          "meaning": "Ai đó cho tôi…",
+          "usage": null,
+          "explanation": "「くれます」: Chỉ hành động người khác cho mình thứ gì.\n「は」(「が」 không nhấn mạnh chủ ngữ)",
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "友達は 本を くれました。",
+              "furigana": null,
+              "translation": "Bạn tôi cho tôi cuốn sách.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "母が お菓子を くれます。",
+              "furigana": null,
+              "translation": "Mẹ cho tôi bánh kẹo.",
+              "explanation": null,
+              "sortOrder": 2
+            },
+            {
+              "japanese": "N(người)は／が N(vật)を くれます。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 3
+            },
+            {
+              "japanese": "Đối tượng nhận mặc định là bản thân nên chủ ngữ có thể dùng「が」thay cho",
+              "furigana": null,
+              "translation": "Nhấn mạnh sự cho, mang sắc thái thân mật.",
+              "explanation": null,
+              "sortOrder": 4
+            }
+          ]
+        },
+        {
+          "pattern": "～て もらいます",
+          "meaning": "Nhận được hành động V từ ai đó.",
+          "usage": "N(người)に/から Vて もらいます。",
+          "explanation": "「もらいます」: Nhấn mạnh người nói nhận lợi ích/hành động.\n「に」: Người thực hiện; 「から」: Nguồn (ít dùng hơn).",
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "先生に 日本語を 教えて もらいました。",
+              "furigana": null,
+              "translation": "Tôi được thầy dạy tiếng Nhật.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "友達に 荷物を 持って もらいます。",
+              "furigana": null,
+              "translation": "Tôi nhờ bạn mang hành lý.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～て くれます",
+          "meaning": "Ai đó làm V cho tôi.",
+          "usage": "N(người) が Vて くれます。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "友達が 宿題を 手伝って くれました。",
+              "furigana": null,
+              "translation": "Bạn tôi giúp tôi làm bài tập.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "姉が 料理を 作って くれます。",
+              "furigana": null,
+              "translation": "Chị tôi nấu ăn cho tôi.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "～て あげます",
+          "meaning": "Làm V cho ai đó (người nói thực hiện).",
+          "usage": "N(người) に Vて あげます。",
+          "explanation": "「あげます」: Người nói làm V để giúp người khác.\n「に」: Đi kèm với người nhận lợi ích.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "子供に 本を 読んで あげます。",
+              "furigana": null,
+              "translation": "Tôi đọc sách cho con.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "友達に 写真を 送って あげました。",
+              "furigana": null,
+              "translation": "Tôi gửi ảnh cho bạn.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonNumber": 25,
+      "title": "Bài 25",
+      "grammars": [
+        {
+          "pattern": "～たら、～",
+          "meaning": "Nếu có tiền thì tôi muốn đi du lịch.",
+          "usage": "Vた/Aいかった/Aなだった/Ｎだった + ら、～",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 1,
+          "examples": [
+            {
+              "japanese": "お金が あったら、旅行に 行きたいです。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "天気が よかったら、散歩しませんか。",
+              "furigana": null,
+              "translation": "Nếu thời tiết đẹp, thì mình đi dạo nhé.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Vたら、～",
+          "meaning": "Khi/sau khi V, thì…",
+          "usage": "V １たら、V２。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 2,
+          "examples": [
+            {
+              "japanese": "家に 帰ったら、ご飯を 食べます。",
+              "furigana": null,
+              "translation": "Khi về nhà, tôi ăn cơm.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "宿題を 終わらせたら、テレビを 見ました。",
+              "furigana": null,
+              "translation": "Sau khi làm bài tập, tôi xem tivi.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Vても、～",
+          "meaning": "Cho dù có thời gian thì tôi vẫn sẽ không xem bộ phim này.",
+          "usage": "Vても、～。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 3,
+          "examples": [
+            {
+              "japanese": "雨が 降っても、選択します。",
+              "furigana": null,
+              "translation": "Dù mưa tôi vẫn sẽ giặt quần áo.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "時間が あっても、この 映画を 見ません。",
+              "furigana": null,
+              "translation": "Dù làm V, thì vẫn… (điều kiện ngược).",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Aい くても、～",
+          "meaning": "Dù A, thì vẫn…",
+          "usage": "Aいくても、～。\nĐộng từ thể ない có thể sử dụng mẫu cấu trúc này như một tính từ Aい",
+          "explanation": "Dùng để nói về sự bất chấp đặc điểm.",
+          "notes": null,
+          "sortOrder": 4,
+          "examples": [
+            {
+              "japanese": "忙しくても、友達に 会います。",
+              "furigana": null,
+              "translation": "Dù bận rộn, tôi vẫn gặp bạn.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "パソコンが なくても、働くことが できます。",
+              "furigana": null,
+              "translation": "Cho dù không có máy tính tôi vẫn có thể làm được việc.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Aなでも、～",
+          "meaning": "Dù A, thì vẫn…",
+          "usage": "Aなでも、～。",
+          "explanation": "Dùng để nói về sự bất chấp đặc điểm.",
+          "notes": null,
+          "sortOrder": 5,
+          "examples": [
+            {
+              "japanese": "好きでも、これを 買いません。",
+              "furigana": null,
+              "translation": "Dù thích nhưng tôi vẫn sẽ không mua cái này.",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "便利でも、使わない。",
+              "furigana": null,
+              "translation": "Dù tiện lợi, nhưng tôi vẫn không dùng.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        },
+        {
+          "pattern": "Nでも、～",
+          "meaning": "Dù là trẻ con, cũng sẽ hiểu câu hỏi này.",
+          "usage": "Ｎ +でも、～。",
+          "explanation": null,
+          "notes": null,
+          "sortOrder": 6,
+          "examples": [
+            {
+              "japanese": "子供でも、この 問題が わかります。",
+              "furigana": null,
+              "translation": "Ví dụ trong tài liệu",
+              "explanation": null,
+              "sortOrder": 1
+            },
+            {
+              "japanese": "学生でも、この 仕事が できる。",
+              "furigana": null,
+              "translation": "Dù là học sinh, cũng sẽ làm được công việc này.",
+              "explanation": null,
+              "sortOrder": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

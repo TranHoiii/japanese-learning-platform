@@ -1,6 +1,8 @@
 package com.japanese.learning.lesson.controller;
 
 import com.japanese.learning.common.response.ApiResponse;
+import com.japanese.learning.grammar.dto.GrammarResponse;
+import com.japanese.learning.grammar.service.GrammarService;
 import com.japanese.learning.lesson.dto.LessonResponse;
 import com.japanese.learning.lesson.service.LessonService;
 import com.japanese.learning.vocabulary.dto.VocabularyResponse;
@@ -23,6 +25,7 @@ public class LessonController {
 
     private final LessonService lessonService;
     private final VocabularyService vocabularyService;
+    private final GrammarService grammarService;
 
     @GetMapping("/{lessonId}")
     public ApiResponse<LessonResponse> getById(@PathVariable @Positive Long lessonId) {
@@ -32,5 +35,10 @@ public class LessonController {
     @GetMapping("/{lessonId}/vocabularies")
     public ApiResponse<List<VocabularyResponse>> getVocabulariesByLessonId(@PathVariable @Positive Long lessonId) {
         return ApiResponse.success("Lấy danh sách từ vựng thành công", vocabularyService.getByLessonId(lessonId));
+    }
+
+    @GetMapping("/{lessonId}/grammars")
+    public ApiResponse<List<GrammarResponse>> getGrammarsByLessonId(@PathVariable @Positive Long lessonId) {
+        return ApiResponse.success("Lấy danh sách ngữ pháp thành công", grammarService.getByLessonId(lessonId));
     }
 }

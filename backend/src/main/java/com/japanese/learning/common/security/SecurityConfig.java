@@ -27,6 +27,7 @@ public class SecurityConfig {
             "/api/v1/levels/**",
             "/api/v1/lessons/**",
             "/api/v1/vocabularies/**",
+            "/api/v1/grammars/**",
             "/swagger-ui.html",
             "/swagger-ui/**",
             "/v3/api-docs/**"
