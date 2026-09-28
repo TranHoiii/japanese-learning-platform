@@ -1,0 +1,6475 @@
+{
+  "levelCode": "N5",
+  "levelName": "N5",
+  "levelDescription": "Trình độ N5 - Nhập môn tiếng Nhật",
+  "lessons": [
+    {
+      "lessonNumber": 1,
+      "title": "Bài 01",
+      "vocabularies": [
+        {
+          "hiragana": "わたし",
+          "kanji": "私",
+          "hanViet": "TƯ",
+          "meaning": "Tôi"
+        },
+        {
+          "hiragana": "あなた",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bạn (ngôi thứ 2 số ít)"
+        },
+        {
+          "hiragana": "あの ひと",
+          "kanji": "あの人",
+          "hanViet": "NHÂN",
+          "meaning": "Người kia"
+        },
+        {
+          "hiragana": "あの かた",
+          "kanji": "あの方",
+          "hanViet": "PHƯƠNG",
+          "meaning": "Vị kia (lịch sự)"
+        },
+        {
+          "hiragana": "～さん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hậu tố thêm vào sau tên người"
+        },
+        {
+          "hiragana": "～ちゃん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hậu tố thường thêm vào sau tên của bé gái thay cho 「～さん」"
+        },
+        {
+          "hiragana": "～じん",
+          "kanji": "～人",
+          "hanViet": "NHÂN",
+          "meaning": "Người (của nước nào đó)~ VD:アメリカじん: người Mỹ"
+        },
+        {
+          "hiragana": "せんせい",
+          "kanji": "先生",
+          "hanViet": "TIÊN SINH",
+          "meaning": "Thầy/ cô (không dùng khi nói về nghề nghiệp giáo viên)"
+        },
+        {
+          "hiragana": "きょうし",
+          "kanji": "教師",
+          "hanViet": "GIÁO SƯ",
+          "meaning": "Giáo viên"
+        },
+        {
+          "hiragana": "がくせい",
+          "kanji": "学生",
+          "hanViet": "HỌC SINH",
+          "meaning": "Học sinh, sinh viên"
+        },
+        {
+          "hiragana": "かいしゃいん",
+          "kanji": "会社員",
+          "hanViet": "HỘI XÃ VIÊN",
+          "meaning": "Nhân viên công ty"
+        },
+        {
+          "hiragana": "しゃいん",
+          "kanji": "社員",
+          "hanViet": "XÃ VIÊN",
+          "meaning": "Nhân viên công ty ~ (thường dùng khi đi kèm với tên công ty) VD:「IMCのしゃいん」"
+        },
+        {
+          "hiragana": "ぎんこういん",
+          "kanji": "銀行員",
+          "hanViet": "NGÂN HÀNH VIÊN",
+          "meaning": "Nhân viên ngân hàng"
+        },
+        {
+          "hiragana": "いしゃ",
+          "kanji": "医者",
+          "hanViet": "Y GIẢ",
+          "meaning": "Bác sĩ"
+        },
+        {
+          "hiragana": "けんきゅうしゃ",
+          "kanji": "研究者",
+          "hanViet": "NGHIÊN CỨU GIẢ",
+          "meaning": "Nhà nghiên cứu"
+        },
+        {
+          "hiragana": "だいがく",
+          "kanji": "大学",
+          "hanViet": "ĐẠI HỌC",
+          "meaning": "Đại học, trường đại học"
+        },
+        {
+          "hiragana": "びょういん",
+          "kanji": "病院",
+          "hanViet": "BỆNH VIỆN",
+          "meaning": "Bệnh viện"
+        },
+        {
+          "hiragana": "だれ（どなた）",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ai 「どなた」: vị nào- là cách nói lịch sự của「だれ」"
+        },
+        {
+          "hiragana": "～さい",
+          "kanji": "～ 歳",
+          "hanViet": "TUẾ",
+          "meaning": "~ Tuổi"
+        },
+        {
+          "hiragana": "なんさい (おいくつ)",
+          "kanji": "何歳",
+          "hanViet": "HÀ TUẾ",
+          "meaning": "Mấy tuổi, bao nhiêu tuổi, 「おいくつ」 là cách nói lịch sự của 「なんさい」"
+        },
+        {
+          "hiragana": "はい",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vâng, dạ, đúng"
+        },
+        {
+          "hiragana": "いいえ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Không"
+        },
+        {
+          "hiragana": "はじめまして。",
+          "kanji": "初めまして。",
+          "hanViet": "SƠ",
+          "meaning": "Rất hân hạnh được gặp bạn."
+        },
+        {
+          "hiragana": "～から きました。",
+          "kanji": "～から来ました。",
+          "hanViet": "LAI",
+          "meaning": "(Tôi) đến từ ~."
+        },
+        {
+          "hiragana": "［どうぞ］よろしく [おねがいします]。",
+          "kanji": "［どうぞ］よろしく [お願いします]。",
+          "hanViet": "NGUYỆN",
+          "meaning": "Rất mong được sự giúp đỡ/ Rất vui được làm quen với bạn."
+        },
+        {
+          "hiragana": "しつれいですが",
+          "kanji": "失礼ですが",
+          "hanViet": "THẤT LỄ",
+          "meaning": "Xin lỗi (dùng khi muốn hỏi ai đó về thông tin gì)"
+        },
+        {
+          "hiragana": "おなまえは？",
+          "kanji": "お名前は？",
+          "hanViet": "DANH TIỀN",
+          "meaning": "Tên bạn là gì?"
+        },
+        {
+          "hiragana": "こちらは～さんです。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đây là anh/chị/ông/bà ~."
+        },
+        {
+          "hiragana": "アメリカ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Mỹ"
+        },
+        {
+          "hiragana": "イギリス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Anh"
+        },
+        {
+          "hiragana": "インド",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ấn Độ"
+        },
+        {
+          "hiragana": "インドネシア",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Indonesia"
+        },
+        {
+          "hiragana": "かんこく",
+          "kanji": "韓国",
+          "hanViet": "HÀN QUỐC",
+          "meaning": "Hàn Quốc"
+        },
+        {
+          "hiragana": "タイ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thái Lan"
+        },
+        {
+          "hiragana": "ちゅうごく",
+          "kanji": "中国",
+          "hanViet": "TRUNG QUỐC",
+          "meaning": "Trung Quốc"
+        },
+        {
+          "hiragana": "ドイツ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đức"
+        },
+        {
+          "hiragana": "にほん",
+          "kanji": "日本",
+          "hanViet": "NHẬT BẢN",
+          "meaning": "Nhật Bản"
+        },
+        {
+          "hiragana": "ブラジル",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Braxin"
+        },
+        {
+          "hiragana": "IMC／ パワーでんき／ ブラジルエアー",
+          "kanji": "電気",
+          "hanViet": "ĐIỆN KHÍ",
+          "meaning": "Tên các công ty (giả tưởng)"
+        },
+        {
+          "hiragana": "AKC",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một tổ chức (giả tưởng)"
+        },
+        {
+          "hiragana": "こうべびょういん",
+          "kanji": "神戸病院",
+          "hanViet": "THẦN HỘ BỆNH VIỆN",
+          "meaning": "Tên một bệnh viện (giả tưởng)"
+        },
+        {
+          "hiragana": "さくらだいがく／ ふじだいがく",
+          "kanji": "さくら大学／ 富士大学",
+          "hanViet": "ĐẠI HỌC/ PHÚ SĨ ĐẠI HỌC",
+          "meaning": "Tên trường Đại học (giả tưởng) Tên trường Đại học (giả tưởng)"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 2,
+      "title": "Bài 02",
+      "vocabularies": [
+        {
+          "hiragana": "これ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái này"
+        },
+        {
+          "hiragana": "それ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái đó"
+        },
+        {
+          "hiragana": "あれ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái kia"
+        },
+        {
+          "hiragana": "この～",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái ~ này"
+        },
+        {
+          "hiragana": "その～",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái ~ đó"
+        },
+        {
+          "hiragana": "あの～",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái ~ kia"
+        },
+        {
+          "hiragana": "ほん",
+          "kanji": "本",
+          "hanViet": "BẢN",
+          "meaning": "Sách"
+        },
+        {
+          "hiragana": "じしょ",
+          "kanji": "辞書",
+          "hanViet": "TỪ THƯ",
+          "meaning": "Từ điển"
+        },
+        {
+          "hiragana": "ざっし",
+          "kanji": "雑誌",
+          "hanViet": "TẠP CHÍ",
+          "meaning": "Tạp chí"
+        },
+        {
+          "hiragana": "しんぶん",
+          "kanji": "新聞",
+          "hanViet": "TÂN VĂN",
+          "meaning": "Báo"
+        },
+        {
+          "hiragana": "ノート",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vở"
+        },
+        {
+          "hiragana": "てちょう",
+          "kanji": "手帳",
+          "hanViet": "THỦ TRƯỚNG",
+          "meaning": "Sổ tay"
+        },
+        {
+          "hiragana": "めいし",
+          "kanji": "名刺",
+          "hanViet": "DANH THÍCH",
+          "meaning": "Danh thiếp"
+        },
+        {
+          "hiragana": "カード",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thẻ"
+        },
+        {
+          "hiragana": "えんぴつ",
+          "kanji": "鉛筆",
+          "hanViet": "DUYÊN BÚT",
+          "meaning": "Bút chì"
+        },
+        {
+          "hiragana": "ボールペン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bút bi"
+        },
+        {
+          "hiragana": "シャープペンシル",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bút chì kim"
+        },
+        {
+          "hiragana": "かぎ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chìa khóa"
+        },
+        {
+          "hiragana": "とけい",
+          "kanji": "時計",
+          "hanViet": "THỜI KẾ",
+          "meaning": "Đồng hồ"
+        },
+        {
+          "hiragana": "かさ",
+          "kanji": "傘",
+          "hanViet": "TÁN",
+          "meaning": "Cái ô"
+        },
+        {
+          "hiragana": "かばん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cặp, túi xách"
+        },
+        {
+          "hiragana": "CD",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đĩa CD"
+        },
+        {
+          "hiragana": "テレビ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tivi"
+        },
+        {
+          "hiragana": "ラジオ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đài radio"
+        },
+        {
+          "hiragana": "カメラ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Máy ảnh"
+        },
+        {
+          "hiragana": "コンピューター",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Máy vi tính"
+        },
+        {
+          "hiragana": "くるま",
+          "kanji": "車",
+          "hanViet": "XA",
+          "meaning": "Ô tô"
+        },
+        {
+          "hiragana": "つくえ",
+          "kanji": "机",
+          "hanViet": "KỶ",
+          "meaning": "Bàn"
+        },
+        {
+          "hiragana": "いす",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ghế"
+        },
+        {
+          "hiragana": "チョコレート",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Sô cô la"
+        },
+        {
+          "hiragana": "コーヒー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cà phê"
+        },
+        {
+          "hiragana": "[お]みやげ",
+          "kanji": "お土産",
+          "hanViet": "THỔ SẢN",
+          "meaning": "Quà lưu niệm"
+        },
+        {
+          "hiragana": "えいご",
+          "kanji": "英語",
+          "hanViet": "ANH NGỮ",
+          "meaning": "Tiếng Anh"
+        },
+        {
+          "hiragana": "にほんご",
+          "kanji": "日本語",
+          "hanViet": "NHẬT BẢN NGỮ",
+          "meaning": "Tiếng Nhật"
+        },
+        {
+          "hiragana": "～ご",
+          "kanji": "～語",
+          "hanViet": "NGỮ",
+          "meaning": "Tiếng ~"
+        },
+        {
+          "hiragana": "なん",
+          "kanji": "何",
+          "hanViet": "HÀ",
+          "meaning": "Cái gì"
+        },
+        {
+          "hiragana": "そう",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đúng, phải"
+        },
+        {
+          "hiragana": "あのう",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "À..., ờ... (Ngập ngừng, do dự)"
+        },
+        {
+          "hiragana": "えっ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái gì cơ? (Thể hiện ngạc nhiên)"
+        },
+        {
+          "hiragana": "どうぞ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Xin mời"
+        },
+        {
+          "hiragana": "［どうも］ありがとう ［ございます］。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cảm ơn"
+        },
+        {
+          "hiragana": "そうですか。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vậy à, thế à."
+        },
+        {
+          "hiragana": "ちがいます。",
+          "kanji": "違います。",
+          "hanViet": "VI",
+          "meaning": "Không phải, sai rồi."
+        },
+        {
+          "hiragana": "あ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "A! (Dùng khi nhận ra điều gì đó)"
+        },
+        {
+          "hiragana": "これから おせわに なります。",
+          "kanji": "これから お世話に なります",
+          "hanViet": "THẾ THOẠI",
+          "meaning": "Rất mong được bạn quan tâm, giúp đỡ."
+        },
+        {
+          "hiragana": "こちらこそ [どうぞ] よろしく[おねがいします]。",
+          "kanji": "お願いします",
+          "hanViet": "NGUYỆN",
+          "meaning": "Tôi cũng mong được quan tâm, giúp đỡ."
+        }
+      ]
+    },
+    {
+      "lessonNumber": 3,
+      "title": "Bài 03",
+      "vocabularies": [
+        {
+          "hiragana": "ここ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chỗ này, đây"
+        },
+        {
+          "hiragana": "そこ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chỗ đó, đó"
+        },
+        {
+          "hiragana": "あそこ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chỗ kia, kia"
+        },
+        {
+          "hiragana": "どこ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chỗ nào, đâu"
+        },
+        {
+          "hiragana": "こちら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Phía này, đằng này, chỗ này, đây (cách nói lịch sự của 「ここ」)"
+        },
+        {
+          "hiragana": "そちら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Phía đó, đằng đó, chỗ đó, đó (cách nói lịch sự của 「そこ」)"
+        },
+        {
+          "hiragana": "あちら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Phía kia, đằng kia, chỗ kia, kia (cách nói lịch sự của 「あそこ」)"
+        },
+        {
+          "hiragana": "どちら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Phía nào, đằng nào, chỗ nào, đâu (cách nói lịch sự của 「どこ」)"
+        },
+        {
+          "hiragana": "きょうしつ",
+          "kanji": "教室",
+          "hanViet": "GIÁO THẤT",
+          "meaning": "Lớp học, phòng học"
+        },
+        {
+          "hiragana": "しょくどう",
+          "kanji": "食堂",
+          "hanViet": "THỰC ĐƯỜNG",
+          "meaning": "Nhà ăn"
+        },
+        {
+          "hiragana": "じむしょ",
+          "kanji": "事務所",
+          "hanViet": "SỰ VỤ SỞ",
+          "meaning": "Văn phòng"
+        },
+        {
+          "hiragana": "かいぎしつ",
+          "kanji": "会議室",
+          "hanViet": "HỘI NGHỊ THẤT",
+          "meaning": "Phòng họp"
+        },
+        {
+          "hiragana": "うけつけ",
+          "kanji": "受付",
+          "hanViet": "THỤ PHÓ",
+          "meaning": "Bộ phận tiếp tân, phòng thường trực"
+        },
+        {
+          "hiragana": "ロビー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hành lang, đại sảnh"
+        },
+        {
+          "hiragana": "へや",
+          "kanji": "部屋",
+          "hanViet": "BỘ ỐC",
+          "meaning": "Căn phòng"
+        },
+        {
+          "hiragana": "トイレ (おてあらい)",
+          "kanji": "（お手洗い）",
+          "hanViet": "THỦ TẨY",
+          "meaning": "Nhà vệ sinh, phòng vệ sinh, toa-lét"
+        },
+        {
+          "hiragana": "かいだん",
+          "kanji": "階段",
+          "hanViet": "GIAI ĐOẠN",
+          "meaning": "Cầu thang"
+        },
+        {
+          "hiragana": "エレベーター",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thang máy"
+        },
+        {
+          "hiragana": "エスカレーター",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thang cuốn"
+        },
+        {
+          "hiragana": "じどうはんばいき",
+          "kanji": "自動販売機",
+          "hanViet": "TỰ ĐỘNG PHIẾN MẠI CƠ",
+          "meaning": "Máy bán hàng tự động"
+        },
+        {
+          "hiragana": "でんわ",
+          "kanji": "電話",
+          "hanViet": "ĐIỆN THOẠI",
+          "meaning": "Điện thoại"
+        },
+        {
+          "hiragana": "[お]くに",
+          "kanji": "[お]国",
+          "hanViet": "QUỐC",
+          "meaning": "Đất nước"
+        },
+        {
+          "hiragana": "かいしゃ",
+          "kanji": "会社",
+          "hanViet": "HỘI XÃ",
+          "meaning": "Công ty"
+        },
+        {
+          "hiragana": "うち",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhà"
+        },
+        {
+          "hiragana": "くつ",
+          "kanji": "靴",
+          "hanViet": "NGOA",
+          "meaning": "Giầy"
+        },
+        {
+          "hiragana": "ネクタイ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cà vạt"
+        },
+        {
+          "hiragana": "ワイン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Rượu vang"
+        },
+        {
+          "hiragana": "うりば",
+          "kanji": "売り場",
+          "hanViet": "MẠI TRƯỜNG",
+          "meaning": "Quầy bán"
+        },
+        {
+          "hiragana": "ちか",
+          "kanji": "地下",
+          "hanViet": "ĐỊA HẠ",
+          "meaning": "Tầng hầm"
+        },
+        {
+          "hiragana": "―かい（－がい）",
+          "kanji": "－階",
+          "hanViet": "GIAI",
+          "meaning": "Tầng thứ -"
+        },
+        {
+          "hiragana": "なんがい",
+          "kanji": "何階",
+          "hanViet": "HÀ GIAI",
+          "meaning": "Tầng mấy"
+        },
+        {
+          "hiragana": "―えん",
+          "kanji": "―円",
+          "hanViet": "VIÊN",
+          "meaning": "- Yên"
+        },
+        {
+          "hiragana": "いくら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bao nhiêu tiền"
+        },
+        {
+          "hiragana": "ひゃく",
+          "kanji": "百",
+          "hanViet": "BÁCH",
+          "meaning": "Trăm"
+        },
+        {
+          "hiragana": "せん",
+          "kanji": "千",
+          "hanViet": "THIÊN",
+          "meaning": "Nghìn"
+        },
+        {
+          "hiragana": "まん",
+          "kanji": "万",
+          "hanViet": "VẠN",
+          "meaning": "Mười nghìn, vạn"
+        },
+        {
+          "hiragana": "すみません。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Xin lỗi"
+        },
+        {
+          "hiragana": "どうも",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cám ơn"
+        },
+        {
+          "hiragana": "いらっしゃいませ。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chào mừng/ Hoan nghênh"
+        },
+        {
+          "hiragana": "[～を] みせて ください。",
+          "kanji": "[～を] 見せて ください",
+          "hanViet": "KIẾN",
+          "meaning": "Cho tôi xem [～]"
+        },
+        {
+          "hiragana": "じゃ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thế thì, vậy thì"
+        },
+        {
+          "hiragana": "[～を] ください。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cho tôi [～]"
+        },
+        {
+          "hiragana": "イタリア",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ý"
+        },
+        {
+          "hiragana": "スイス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thụy Sĩ"
+        },
+        {
+          "hiragana": "フランス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Pháp"
+        },
+        {
+          "hiragana": "ジャカルタ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Jakarta"
+        },
+        {
+          "hiragana": "バンコク",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bangkok"
+        },
+        {
+          "hiragana": "ベルリン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Berlin"
+        },
+        {
+          "hiragana": "しんおおさか",
+          "kanji": "新大阪",
+          "hanViet": "TÂN ĐẠI PHẢN",
+          "meaning": "Tên một nhà ga ở Osaka"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 4,
+      "title": "Bài 04",
+      "vocabularies": [
+        {
+          "hiragana": "おきます",
+          "kanji": "起きます",
+          "hanViet": "KHỞI",
+          "meaning": "Dậy, thức dậy"
+        },
+        {
+          "hiragana": "ねます",
+          "kanji": "寝ます",
+          "hanViet": "TẨM",
+          "meaning": "Ngủ, đi ngủ"
+        },
+        {
+          "hiragana": "はたらきます",
+          "kanji": "働きます",
+          "hanViet": "ĐỘNG",
+          "meaning": "Làm việc"
+        },
+        {
+          "hiragana": "やすみます",
+          "kanji": "休みます",
+          "hanViet": "HƯU",
+          "meaning": "Nghỉ, nghỉ ngơi"
+        },
+        {
+          "hiragana": "べんきょうします",
+          "kanji": "勉強します",
+          "hanViet": "MIỄN CƯỜNG",
+          "meaning": "Học"
+        },
+        {
+          "hiragana": "おわります",
+          "kanji": "終わります",
+          "hanViet": "CHUNG",
+          "meaning": "Hết, kết thúc, xong"
+        },
+        {
+          "hiragana": "デパート",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Trung tâm thương mại"
+        },
+        {
+          "hiragana": "ぎんこう",
+          "kanji": "銀行",
+          "hanViet": "NGÂN HÀNH",
+          "meaning": "Ngân hàng"
+        },
+        {
+          "hiragana": "ゆうびんきょく",
+          "kanji": "郵便局",
+          "hanViet": "BƯU TIỆN CỤC",
+          "meaning": "Bưu điện"
+        },
+        {
+          "hiragana": "としょかん",
+          "kanji": "図書館",
+          "hanViet": "ĐỒ THƯ QUÁN",
+          "meaning": "Thư viện"
+        },
+        {
+          "hiragana": "びじゅつかん",
+          "kanji": "美術館",
+          "hanViet": "MỸ THUẬT QUÁN",
+          "meaning": "Bảo tàng mỹ thuật"
+        },
+        {
+          "hiragana": "いま",
+          "kanji": "今",
+          "hanViet": "KIM",
+          "meaning": "Bây giờ"
+        },
+        {
+          "hiragana": "－じ",
+          "kanji": "－時",
+          "hanViet": "THỜI",
+          "meaning": "- Giờ"
+        },
+        {
+          "hiragana": "－ふん（－ぷん）",
+          "kanji": "－分",
+          "hanViet": "PHÂN",
+          "meaning": "- Phút"
+        },
+        {
+          "hiragana": "はん",
+          "kanji": "半",
+          "hanViet": "BÁN",
+          "meaning": "Rưỡi, nửa"
+        },
+        {
+          "hiragana": "なんじ",
+          "kanji": "何時",
+          "hanViet": "HÀ THỜI",
+          "meaning": "Mấy giờ"
+        },
+        {
+          "hiragana": "なんぷん",
+          "kanji": "何分",
+          "hanViet": "HÀ PHÂN",
+          "meaning": "Mấy phút"
+        },
+        {
+          "hiragana": "ごぜん",
+          "kanji": "午前",
+          "hanViet": "NGỌ TIỀN",
+          "meaning": "Sáng, trước 12 giờ trưa"
+        },
+        {
+          "hiragana": "ごご",
+          "kanji": "午後",
+          "hanViet": "NGỌ HẬU",
+          "meaning": "Chiều, sau 12 giờ trưa"
+        },
+        {
+          "hiragana": "あさ",
+          "kanji": "朝",
+          "hanViet": "TRIỀU",
+          "meaning": "Buổi sáng, sáng"
+        },
+        {
+          "hiragana": "ひる",
+          "kanji": "昼",
+          "hanViet": "TRÚ",
+          "meaning": "Buổi trưa, trưa"
+        },
+        {
+          "hiragana": "ばん（よる）",
+          "kanji": "晩(夜)",
+          "hanViet": "VÃN(DẠ)",
+          "meaning": "Buổi tối, tối"
+        },
+        {
+          "hiragana": "おととい",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hôm kia"
+        },
+        {
+          "hiragana": "きのう",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hôm qua"
+        },
+        {
+          "hiragana": "きょう",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hôm nay"
+        },
+        {
+          "hiragana": "あした",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ngày mai"
+        },
+        {
+          "hiragana": "あさって",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ngày kia"
+        },
+        {
+          "hiragana": "けさ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Sáng nay"
+        },
+        {
+          "hiragana": "こんばん",
+          "kanji": "今晩",
+          "hanViet": "KIM VÃN",
+          "meaning": "Tối nay"
+        },
+        {
+          "hiragana": "やすみ",
+          "kanji": "休み",
+          "hanViet": "HƯU",
+          "meaning": "Nghỉ, nghỉ phép, ngày nghỉ"
+        },
+        {
+          "hiragana": "ひるやすみ",
+          "kanji": "昼休み",
+          "hanViet": "TRÚ HƯU",
+          "meaning": "Nghỉ trưa"
+        },
+        {
+          "hiragana": "しけん",
+          "kanji": "試験",
+          "hanViet": "THÍ NGHIỆM",
+          "meaning": "Kì thi, bài thi, bài kiểm tra"
+        },
+        {
+          "hiragana": "かいぎ",
+          "kanji": "会議",
+          "hanViet": "HỘI NGHỊ",
+          "meaning": "Cuộc họp"
+        },
+        {
+          "hiragana": "えいが",
+          "kanji": "映画",
+          "hanViet": "ÁNH HỌA",
+          "meaning": "Phim, điện ảnh"
+        },
+        {
+          "hiragana": "まいあさ",
+          "kanji": "毎朝",
+          "hanViet": "MỖI TRIỀU",
+          "meaning": "Hàng sáng, mỗi sáng"
+        },
+        {
+          "hiragana": "まいばん",
+          "kanji": "毎晩",
+          "hanViet": "MỖI VÃN",
+          "meaning": "Hàng tối, mỗi tối"
+        },
+        {
+          "hiragana": "まいにち",
+          "kanji": "毎日",
+          "hanViet": "MỖI NHẬT",
+          "meaning": "Hàng ngày, mỗi ngày"
+        },
+        {
+          "hiragana": "げつようび",
+          "kanji": "月曜日",
+          "hanViet": "NGUYỆT DIỆU NHẬT",
+          "meaning": "Thứ hai"
+        },
+        {
+          "hiragana": "かようび",
+          "kanji": "火曜日",
+          "hanViet": "HỎA DIỆU NHẬT",
+          "meaning": "Thứ ba"
+        },
+        {
+          "hiragana": "すいようび",
+          "kanji": "水曜日",
+          "hanViet": "THỦY DIỆU NHẬT",
+          "meaning": "Thứ tư"
+        },
+        {
+          "hiragana": "もくようび",
+          "kanji": "木曜日",
+          "hanViet": "MỘC DIỆU NHẬT",
+          "meaning": "Thứ năm"
+        },
+        {
+          "hiragana": "きんようび",
+          "kanji": "金曜日",
+          "hanViet": "KIM DIỆU NHẬT",
+          "meaning": "Thứ sáu"
+        },
+        {
+          "hiragana": "どようび",
+          "kanji": "土曜日",
+          "hanViet": "THỔ DIỆU NHẬT",
+          "meaning": "Thứ bảy"
+        },
+        {
+          "hiragana": "にちようび",
+          "kanji": "日曜日",
+          "hanViet": "NHẬT DIỆU NHẬT",
+          "meaning": "Chủ nhật"
+        },
+        {
+          "hiragana": "なんようび",
+          "kanji": "何曜日",
+          "hanViet": "HÀ DIỆU NHẬT",
+          "meaning": "Thứ mấy"
+        },
+        {
+          "hiragana": "～から",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "~ Từ"
+        },
+        {
+          "hiragana": "～まで",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "~ Đến"
+        },
+        {
+          "hiragana": "～と～",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "~ Và (dùng để nối hai danh từ)"
+        },
+        {
+          "hiragana": "たいへんですね。",
+          "kanji": "大変ですね。",
+          "hanViet": "ĐẠI BIẾN",
+          "meaning": "Anh/chị vất vả quá. (dùng để bày tỏ sự thông cảm)"
+        },
+        {
+          "hiragana": "ばんごう",
+          "kanji": "番号",
+          "hanViet": "PHIÊN HIỆU",
+          "meaning": "Số (số điện thoại, số phòng…)"
+        },
+        {
+          "hiragana": "なんばん",
+          "kanji": "何番",
+          "hanViet": "HÀ PHIÊN",
+          "meaning": "Số bao nhiêu, số mấy"
+        },
+        {
+          "hiragana": "そちら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Phía anh/chị/ông/bà"
+        },
+        {
+          "hiragana": "ニューヨーク",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "New York"
+        },
+        {
+          "hiragana": "ペキン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bắc Kinh"
+        },
+        {
+          "hiragana": "ロサンゼルス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "LosAngeles"
+        },
+        {
+          "hiragana": "ロンドン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Luân Đôn"
+        },
+        {
+          "hiragana": "あすか",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên nhà hàng giả tưởng"
+        },
+        {
+          "hiragana": "アップルぎんこう",
+          "kanji": "アップル銀行",
+          "hanViet": "NGÂN HÀNH",
+          "meaning": "Tên một ngân hàng"
+        },
+        {
+          "hiragana": "みどりとしょかん",
+          "kanji": "みどり図書館",
+          "hanViet": "ĐỒ THƯ QUÁN",
+          "meaning": "Tên một thư viện"
+        },
+        {
+          "hiragana": "やまとびじゅつかん",
+          "kanji": "やまと美術館",
+          "hanViet": "MỸ THUẬT QUÁN",
+          "meaning": "Tên một bảo tàng Mỹ thuật"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 5,
+      "title": "Bài 05",
+      "vocabularies": [
+        {
+          "hiragana": "いきます",
+          "kanji": "行きます",
+          "hanViet": "HÀNH",
+          "meaning": "Đi"
+        },
+        {
+          "hiragana": "きます",
+          "kanji": "来ます",
+          "hanViet": "LAI",
+          "meaning": "Đến"
+        },
+        {
+          "hiragana": "かえります",
+          "kanji": "帰ります",
+          "hanViet": "QUY",
+          "meaning": "Về"
+        },
+        {
+          "hiragana": "がっこう",
+          "kanji": "学校",
+          "hanViet": "HỌC HIỆU",
+          "meaning": "Trường học"
+        },
+        {
+          "hiragana": "スーパー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Siêu thị"
+        },
+        {
+          "hiragana": "えき",
+          "kanji": "駅",
+          "hanViet": "DỊCH",
+          "meaning": "Ga, nhà ga"
+        },
+        {
+          "hiragana": "ひこうき",
+          "kanji": "飛行機",
+          "hanViet": "PHI HÀNH CƠ",
+          "meaning": "Máy bay"
+        },
+        {
+          "hiragana": "ふね",
+          "kanji": "船",
+          "hanViet": "THUYỀN",
+          "meaning": "Thuyền, tàu thủy"
+        },
+        {
+          "hiragana": "でんしゃ",
+          "kanji": "電車",
+          "hanViet": "ĐIỆN XA",
+          "meaning": "Tàu điện"
+        },
+        {
+          "hiragana": "ちかてつ",
+          "kanji": "地下鉄",
+          "hanViet": "ĐỊA HẠ THIẾT",
+          "meaning": "Tàu điện ngầm"
+        },
+        {
+          "hiragana": "しんかんせん",
+          "kanji": "新幹線",
+          "hanViet": "TÂN CÁN TUYẾN",
+          "meaning": "Tàu Shinkansen (tàu điện siêu tốc của Nhật)"
+        },
+        {
+          "hiragana": "バス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Xe buýt"
+        },
+        {
+          "hiragana": "タクシー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tắc-xi"
+        },
+        {
+          "hiragana": "じてんしゃ",
+          "kanji": "自転車",
+          "hanViet": "TỰ CHUYỂN XA",
+          "meaning": "Xe đạp"
+        },
+        {
+          "hiragana": "あるいて",
+          "kanji": "歩いて",
+          "hanViet": "BỘ",
+          "meaning": "Đi bộ"
+        },
+        {
+          "hiragana": "ひと",
+          "kanji": "人",
+          "hanViet": "NHÂN",
+          "meaning": "Người"
+        },
+        {
+          "hiragana": "ともだち",
+          "kanji": "友達",
+          "hanViet": "HỮU ĐẠT",
+          "meaning": "Bạn, bạn bè"
+        },
+        {
+          "hiragana": "かれ",
+          "kanji": "彼",
+          "hanViet": "BỈ",
+          "meaning": "Anh ấy, bạn trai"
+        },
+        {
+          "hiragana": "かのじょ",
+          "kanji": "彼女",
+          "hanViet": "BỈ NỮ",
+          "meaning": "Chị ấy, bạn gái"
+        },
+        {
+          "hiragana": "かぞく",
+          "kanji": "家族",
+          "hanViet": "GIA TỘC",
+          "meaning": "Gia đình"
+        },
+        {
+          "hiragana": "ひとりで",
+          "kanji": "一人で",
+          "hanViet": "NHẤT NHÂN",
+          "meaning": "Một mình"
+        },
+        {
+          "hiragana": "せんしゅう",
+          "kanji": "先週",
+          "hanViet": "TIÊN CHU",
+          "meaning": "Tuần trước"
+        },
+        {
+          "hiragana": "こんしゅう",
+          "kanji": "今週",
+          "hanViet": "KIM CHU",
+          "meaning": "Tuần này"
+        },
+        {
+          "hiragana": "らいしゅう",
+          "kanji": "来週",
+          "hanViet": "LAI CHU",
+          "meaning": "Tuần sau"
+        },
+        {
+          "hiragana": "せんげつ",
+          "kanji": "先月",
+          "hanViet": "TIÊN NGUYỆT",
+          "meaning": "Tháng trước"
+        },
+        {
+          "hiragana": "こんげつ",
+          "kanji": "今月",
+          "hanViet": "KIM NGUYỆT",
+          "meaning": "Tháng này"
+        },
+        {
+          "hiragana": "らいげつ",
+          "kanji": "来月",
+          "hanViet": "LAI NGUYỆT",
+          "meaning": "Tháng sau"
+        },
+        {
+          "hiragana": "きょねん",
+          "kanji": "去年",
+          "hanViet": "KHỨ NIÊN",
+          "meaning": "Năm ngoái"
+        },
+        {
+          "hiragana": "ことし",
+          "kanji": "今年",
+          "hanViet": null,
+          "meaning": "Năm nay"
+        },
+        {
+          "hiragana": "らいねん",
+          "kanji": "来年",
+          "hanViet": "LAI NIÊN",
+          "meaning": "Năm sau"
+        },
+        {
+          "hiragana": "―ねん",
+          "kanji": "―年",
+          "hanViet": "NIÊN",
+          "meaning": "Năm ~"
+        },
+        {
+          "hiragana": "なんねん",
+          "kanji": "何年",
+          "hanViet": "HÀ NIÊN",
+          "meaning": "Năm nào"
+        },
+        {
+          "hiragana": "―がつ",
+          "kanji": "―月",
+          "hanViet": "NGUYỆT",
+          "meaning": "Tháng -"
+        },
+        {
+          "hiragana": "なんがつ",
+          "kanji": "何月",
+          "hanViet": "HÀ NGUYỆT",
+          "meaning": "Tháng mấy"
+        },
+        {
+          "hiragana": "ついたち",
+          "kanji": "１日",
+          "hanViet": "NHẬT",
+          "meaning": "Ngày mồng 1"
+        },
+        {
+          "hiragana": "ふつか",
+          "kanji": "２日",
+          "hanViet": null,
+          "meaning": "Ngày mồng 2, 2 ngày"
+        },
+        {
+          "hiragana": "みっか",
+          "kanji": "３日",
+          "hanViet": null,
+          "meaning": "Ngày mồng 3, 3 ngày"
+        },
+        {
+          "hiragana": "よっか",
+          "kanji": "４日",
+          "hanViet": null,
+          "meaning": "Ngày mồng 4, 4 ngày"
+        },
+        {
+          "hiragana": "いつか",
+          "kanji": "５日",
+          "hanViet": null,
+          "meaning": "Ngày mồng 5, 5 ngày"
+        },
+        {
+          "hiragana": "むいか",
+          "kanji": "６日",
+          "hanViet": null,
+          "meaning": "Ngày mồng 6, 6 ngày"
+        },
+        {
+          "hiragana": "なのか",
+          "kanji": "７日",
+          "hanViet": null,
+          "meaning": "Ngày mồng 7, 7 ngày"
+        },
+        {
+          "hiragana": "ようか",
+          "kanji": "８日",
+          "hanViet": null,
+          "meaning": "Ngày mồng 8, 8 ngày"
+        },
+        {
+          "hiragana": "ここのか",
+          "kanji": "９日",
+          "hanViet": null,
+          "meaning": "Ngày mồng 9, 9 ngày"
+        },
+        {
+          "hiragana": "とおか",
+          "kanji": "１０日",
+          "hanViet": null,
+          "meaning": "Ngày mồng 10, 10 ngày"
+        },
+        {
+          "hiragana": "じゅうよっか",
+          "kanji": "１４日",
+          "hanViet": null,
+          "meaning": "Ngày 14, 14 ngày"
+        },
+        {
+          "hiragana": "はつか",
+          "kanji": "２０日",
+          "hanViet": null,
+          "meaning": "Ngày 20, 20 ngày"
+        },
+        {
+          "hiragana": "にじゅうよっか",
+          "kanji": "２４日",
+          "hanViet": null,
+          "meaning": "Ngày 24, 24 ngày"
+        },
+        {
+          "hiragana": "―にち",
+          "kanji": "―日",
+          "hanViet": null,
+          "meaning": "Ngày -, - ngày"
+        },
+        {
+          "hiragana": "なんにち",
+          "kanji": "何日",
+          "hanViet": "HÀ NHẬT",
+          "meaning": "Ngày mấy, ngày bao nhiêu, mấy ngày, bao nhiêu ngày"
+        },
+        {
+          "hiragana": "いつ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bao giờ, khi nào"
+        },
+        {
+          "hiragana": "たんじょうび",
+          "kanji": "誕生日",
+          "hanViet": "ĐẢN SINH NHẬT",
+          "meaning": "Sinh nhật"
+        },
+        {
+          "hiragana": "そうですね。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ừ, đúng thế nhỉ?"
+        },
+        {
+          "hiragana": "[どうも]ありがとうござい ました",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cảm ơn rất nhiều."
+        },
+        {
+          "hiragana": "どういたしまして。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Không có gì."
+        },
+        {
+          "hiragana": "―ばんせん",
+          "kanji": "~ 番線",
+          "hanViet": "PHIÊN TUYẾN",
+          "meaning": "Sân ga số ―"
+        },
+        {
+          "hiragana": "つぎの",
+          "kanji": "次の",
+          "hanViet": "THỨ",
+          "meaning": "Tiếp theo"
+        },
+        {
+          "hiragana": "ふつう",
+          "kanji": "普通",
+          "hanViet": "PHỔ THÔNG",
+          "meaning": "Tàu thường (dừng cả ở các ga lẻ)"
+        },
+        {
+          "hiragana": "きゅうこう",
+          "kanji": "急行",
+          "hanViet": "CẤP HÀNH",
+          "meaning": "Tàu tốc hành"
+        },
+        {
+          "hiragana": "とっきゅう",
+          "kanji": "特急",
+          "hanViet": "ĐẶC CẤP",
+          "meaning": "Tàu tốc hành đặc biệt"
+        },
+        {
+          "hiragana": "こうしえん",
+          "kanji": "甲子園",
+          "hanViet": "GIÁP TỬ VIÊN",
+          "meaning": "Tên một khu phố ở Osaka"
+        },
+        {
+          "hiragana": "おおさかじょう",
+          "kanji": "大阪城",
+          "hanViet": "ĐẠI PHẢN THÀNH",
+          "meaning": "Lâu đài Osaka, một lâu đài nổi tiếng ở Osaka"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 6,
+      "title": "Bài 06",
+      "vocabularies": [
+        {
+          "hiragana": "たべます",
+          "kanji": "食べます",
+          "hanViet": "THỰC",
+          "meaning": "Ăn"
+        },
+        {
+          "hiragana": "のみます",
+          "kanji": "飲みます",
+          "hanViet": "ẨM",
+          "meaning": "Uống"
+        },
+        {
+          "hiragana": "すいます [たばこを]",
+          "kanji": "吸います",
+          "hanViet": "HẤP",
+          "meaning": "Hút [thuốc lá]"
+        },
+        {
+          "hiragana": "みます",
+          "kanji": "見ます",
+          "hanViet": "KIẾN",
+          "meaning": "Xem, nhìn, trông"
+        },
+        {
+          "hiragana": "ききます",
+          "kanji": "聞きます",
+          "hanViet": "VĂN",
+          "meaning": "Nghe"
+        },
+        {
+          "hiragana": "よみます",
+          "kanji": "読みます",
+          "hanViet": "ĐỘC",
+          "meaning": "Đọc"
+        },
+        {
+          "hiragana": "かきます",
+          "kanji": "書きます",
+          "hanViet": "THƯ",
+          "meaning": "Viết, vẽ"
+        },
+        {
+          "hiragana": "かいます",
+          "kanji": "買います",
+          "hanViet": "MÃI",
+          "meaning": "Mua"
+        },
+        {
+          "hiragana": "とります [しゃしんを]",
+          "kanji": "撮ります [写真を]",
+          "hanViet": "TOÁT [TẢ CHÂN]",
+          "meaning": "Chụp [ảnh]"
+        },
+        {
+          "hiragana": "します",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Làm"
+        },
+        {
+          "hiragana": "あいます [ともだちに]",
+          "kanji": "会います [友達に]",
+          "hanViet": "HỘI [HỮU ĐẠT]",
+          "meaning": "Gặp [bạn]"
+        },
+        {
+          "hiragana": "ごはん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cơm, bữa ăn"
+        },
+        {
+          "hiragana": "あさごはん",
+          "kanji": "朝ごはん",
+          "hanViet": "TRIỀU",
+          "meaning": "Cơm sáng, bữa sáng"
+        },
+        {
+          "hiragana": "ひるごはん",
+          "kanji": "昼ごはん",
+          "hanViet": "TRÚ",
+          "meaning": "Cơm trưa, bữa trưa"
+        },
+        {
+          "hiragana": "ばんごはん",
+          "kanji": "晩ごはん",
+          "hanViet": "VÃN",
+          "meaning": "Cơm tối, bữa tối"
+        },
+        {
+          "hiragana": "パン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bánh mì"
+        },
+        {
+          "hiragana": "たまご",
+          "kanji": "卵",
+          "hanViet": "NOÃN",
+          "meaning": "Trứng"
+        },
+        {
+          "hiragana": "にく",
+          "kanji": "肉",
+          "hanViet": "NHỤC",
+          "meaning": "Thịt"
+        },
+        {
+          "hiragana": "さかな",
+          "kanji": "魚",
+          "hanViet": "NGƯ",
+          "meaning": "Cá"
+        },
+        {
+          "hiragana": "やさい",
+          "kanji": "野菜",
+          "hanViet": "DÃ THÁI",
+          "meaning": "Rau"
+        },
+        {
+          "hiragana": "くだもの",
+          "kanji": "果物",
+          "hanViet": "QUẢ VẬT",
+          "meaning": "Hoa quả, trái cây"
+        },
+        {
+          "hiragana": "みず",
+          "kanji": "水",
+          "hanViet": "THỦY",
+          "meaning": "Nước"
+        },
+        {
+          "hiragana": "おちゃ",
+          "kanji": "お茶",
+          "hanViet": "TRÀ",
+          "meaning": "Trà (nói chung)"
+        },
+        {
+          "hiragana": "こうちゃ",
+          "kanji": "紅茶",
+          "hanViet": "HỒNG TRÀ",
+          "meaning": "Trà đen"
+        },
+        {
+          "hiragana": "ぎゅうにゅう(ミルク)",
+          "kanji": "牛乳",
+          "hanViet": "NGƯU NHŨ",
+          "meaning": "Sữa"
+        },
+        {
+          "hiragana": "ジュース",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nước hoa quả"
+        },
+        {
+          "hiragana": "ビール",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bia"
+        },
+        {
+          "hiragana": "[お]さけ",
+          "kanji": "[お]酒",
+          "hanViet": "TỬU",
+          "meaning": "Rượu, rượu gạo Nhật Bản"
+        },
+        {
+          "hiragana": "たばこ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thuốc lá"
+        },
+        {
+          "hiragana": "てがみ",
+          "kanji": "手紙",
+          "hanViet": "THỦ CHỈ",
+          "meaning": "Thư"
+        },
+        {
+          "hiragana": "レポート",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Báo cáo"
+        },
+        {
+          "hiragana": "しゃしん",
+          "kanji": "写真",
+          "hanViet": "TẢ CHÂN",
+          "meaning": "Ảnh"
+        },
+        {
+          "hiragana": "ビデオ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Video, băng video, đầu video"
+        },
+        {
+          "hiragana": "みせ",
+          "kanji": "店",
+          "hanViet": "ĐIẾM",
+          "meaning": "Cửa hàng, tiệm"
+        },
+        {
+          "hiragana": "にわ",
+          "kanji": "庭",
+          "hanViet": "ĐÌNH",
+          "meaning": "Vườn, sân, sân vườn"
+        },
+        {
+          "hiragana": "しゅくだい",
+          "kanji": "宿題",
+          "hanViet": "TÚC ĐỀ",
+          "meaning": "Bài tập về nhà (～をします: làm bài tập)"
+        },
+        {
+          "hiragana": "テニス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Quần vợt (～をします: đánh quần vợt)"
+        },
+        {
+          "hiragana": "サッカー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bóng đá (～をします: chơi bóng đá)"
+        },
+        {
+          "hiragana": "[お]はなみ",
+          "kanji": "[お]花見",
+          "hanViet": "HOA KIẾN",
+          "meaning": "Việc ngắm hoa anh đào (～をします: ngắm hoa anh đào)"
+        },
+        {
+          "hiragana": "なに",
+          "kanji": "何",
+          "hanViet": "HÀ",
+          "meaning": "Cái gì, gì"
+        },
+        {
+          "hiragana": "いっしょに",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cùng, cùng nhau"
+        },
+        {
+          "hiragana": "ちょっと",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Một chút"
+        },
+        {
+          "hiragana": "いつも",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Luôn luôn, lúc nào cũng"
+        },
+        {
+          "hiragana": "ときどき",
+          "kanji": "時々",
+          "hanViet": "THỜI (KÉP)",
+          "meaning": "Thỉnh thoảng"
+        },
+        {
+          "hiragana": "それから",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Sau đó, tiếp theo"
+        },
+        {
+          "hiragana": "ええ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vâng, được (cách nói thân mật của［はい］)"
+        },
+        {
+          "hiragana": "いいですね。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Được đấy nhỉ."
+        },
+        {
+          "hiragana": "わかりました。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tôi hiểu rồi ạ."
+        },
+        {
+          "hiragana": "なんですか",
+          "kanji": "何ですか",
+          "hanViet": "HÀ",
+          "meaning": "Vâng? Có việc gì thế/Cái gì thế?"
+        },
+        {
+          "hiragana": "じゃ、また[あした]。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hẹn gặp lại [ngày mai]."
+        },
+        {
+          "hiragana": "メキシコ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Mexico"
+        },
+        {
+          "hiragana": "おおさかデパート",
+          "kanji": "大阪",
+          "hanViet": "ĐẠI PHẢN",
+          "meaning": "Tên bách hóa giả tưởng"
+        },
+        {
+          "hiragana": "つるや",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên nhà hàng giả tưởng"
+        },
+        {
+          "hiragana": "や フランス屋",
+          "kanji": "フランス屋",
+          "hanViet": "ỐC",
+          "meaning": "Tên siêu thị giả tưởng"
+        },
+        {
+          "hiragana": "まいにちや 毎日屋",
+          "kanji": "毎日屋",
+          "hanViet": "MỖI NHẬT ỐC",
+          "meaning": "Tên siêu thị giả tưởng"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 7,
+      "title": "Bài 07",
+      "vocabularies": [
+        {
+          "hiragana": "きります",
+          "kanji": "切ります",
+          "hanViet": "THIẾT",
+          "meaning": "Cắt"
+        },
+        {
+          "hiragana": "おくります",
+          "kanji": "送ります",
+          "hanViet": "TỐNG",
+          "meaning": "Gửi"
+        },
+        {
+          "hiragana": "あげます",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cho, tặng"
+        },
+        {
+          "hiragana": "もらいます",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhận"
+        },
+        {
+          "hiragana": "かします",
+          "kanji": "貸します",
+          "hanViet": "THẢI",
+          "meaning": "Cho mượn, cho vay"
+        },
+        {
+          "hiragana": "かります",
+          "kanji": "借ります",
+          "hanViet": "TÁ",
+          "meaning": "Mượn, vay"
+        },
+        {
+          "hiragana": "おしえます",
+          "kanji": "教えます",
+          "hanViet": "GIÁO",
+          "meaning": "Dạy"
+        },
+        {
+          "hiragana": "ならいます",
+          "kanji": "習います",
+          "hanViet": "TẬP",
+          "meaning": "Học, tập"
+        },
+        {
+          "hiragana": "かけます[でんわを]",
+          "kanji": "[電話を]",
+          "hanViet": "ĐIỆN THOẠI",
+          "meaning": "Gọi [điện thoại]"
+        },
+        {
+          "hiragana": "て",
+          "kanji": "手",
+          "hanViet": "THỦ",
+          "meaning": "Tay"
+        },
+        {
+          "hiragana": "はし",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đũa"
+        },
+        {
+          "hiragana": "スプーン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thìa"
+        },
+        {
+          "hiragana": "ナイフ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Dao"
+        },
+        {
+          "hiragana": "フォーク",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nĩa"
+        },
+        {
+          "hiragana": "はさみ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Kéo"
+        },
+        {
+          "hiragana": "パソコン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Máy vi tính cá nhân"
+        },
+        {
+          "hiragana": "ケータイ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Điện thoại di động"
+        },
+        {
+          "hiragana": "メール",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Mail"
+        },
+        {
+          "hiragana": "ねんがじょう",
+          "kanji": "年賀状",
+          "hanViet": "NIÊN HẠ TRẠNG",
+          "meaning": "Thiệp chúc mừng năm mới"
+        },
+        {
+          "hiragana": "パンチ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái đục lỗ"
+        },
+        {
+          "hiragana": "ホッチキス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái dập ghim"
+        },
+        {
+          "hiragana": "セロテープ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Băng dính"
+        },
+        {
+          "hiragana": "けしゴム",
+          "kanji": "消しゴム",
+          "hanViet": "TIÊU",
+          "meaning": "Cục tẩy"
+        },
+        {
+          "hiragana": "かみ",
+          "kanji": "紙",
+          "hanViet": "CHỈ",
+          "meaning": "Giấy"
+        },
+        {
+          "hiragana": "はな",
+          "kanji": "花",
+          "hanViet": "HOA",
+          "meaning": "Hoa"
+        },
+        {
+          "hiragana": "シャツ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Áo sơ mi"
+        },
+        {
+          "hiragana": "プレゼント",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Quà tặng, tặng phẩm"
+        },
+        {
+          "hiragana": "にもつ",
+          "kanji": "荷物",
+          "hanViet": "HÀ VẬT",
+          "meaning": "Đồ đạc, hành lý"
+        },
+        {
+          "hiragana": "おかね",
+          "kanji": "お金",
+          "hanViet": "KIM",
+          "meaning": "Tiền"
+        },
+        {
+          "hiragana": "きっぷ",
+          "kanji": "切符",
+          "hanViet": "THIẾT PHÙ",
+          "meaning": "Vé"
+        },
+        {
+          "hiragana": "クリスマス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Giáng sinh"
+        },
+        {
+          "hiragana": "ちち",
+          "kanji": "父",
+          "hanViet": "PHỤ",
+          "meaning": "Bố (dùng khi nói về bố mình)"
+        },
+        {
+          "hiragana": "はは",
+          "kanji": "母",
+          "hanViet": "MẪU",
+          "meaning": "Mẹ (dùng khi nói về mẹ mình)"
+        },
+        {
+          "hiragana": "おとうさん",
+          "kanji": "お父さん",
+          "hanViet": "PHỤ",
+          "meaning": "Bố (dùng khi nói về bố người khác và dùng khi gọi bố mình)"
+        },
+        {
+          "hiragana": "おかあさん",
+          "kanji": "お母さん",
+          "hanViet": "MẪU",
+          "meaning": "Mẹ (dùng khi nói về mẹ người khác và dùng khi gọi mẹ mình)"
+        },
+        {
+          "hiragana": "もう",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đã, rồi"
+        },
+        {
+          "hiragana": "まだ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vẫn chưa"
+        },
+        {
+          "hiragana": "これから",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Từ bây giờ, sau đây"
+        },
+        {
+          "hiragana": "[～] すてきですね。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "[~] Hay nhỉ / Đẹp nhỉ."
+        },
+        {
+          "hiragana": "いらっしゃい。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chào mừng anh/chị đã đến chơi."
+        },
+        {
+          "hiragana": "あ どうぞ お上がり ください。",
+          "kanji": null,
+          "hanViet": "THƯỢNG",
+          "meaning": "Mời anh/chị vào."
+        },
+        {
+          "hiragana": "しつれい 失礼します。",
+          "kanji": null,
+          "hanViet": "THẤT LỄ",
+          "meaning": "Tôi xin phép (vào nhà)!"
+        },
+        {
+          "hiragana": "[～は] いかがですか。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Anh/chị dùng [~] có được không? (Dùng khi mời ai đó cái gì)"
+        },
+        {
+          "hiragana": "いただきます。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Mời anh/chị dùng ~. (Cách nói dùng trước khi ăn hoặc uống)"
+        },
+        {
+          "hiragana": "ごちそうさま[でした]。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Xin cám ơn vì đã chiêu đãi (Dùng sau khi ăn hoặc uống)"
+        },
+        {
+          "hiragana": "スペイン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tây Ban Nha"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 8,
+      "title": "Bài 08",
+      "vocabularies": [
+        {
+          "hiragana": "ハンサム[な]",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đẹp trai"
+        },
+        {
+          "hiragana": "きれい[な]",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đẹp, sạch"
+        },
+        {
+          "hiragana": "しずか[な]",
+          "kanji": "静か[な]",
+          "hanViet": "TĨNH",
+          "meaning": "Yên tĩnh"
+        },
+        {
+          "hiragana": "にぎやか[な]",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Náo nhiệt"
+        },
+        {
+          "hiragana": "ゆうめい[な]",
+          "kanji": "有名[な]",
+          "hanViet": "HỮU DANH",
+          "meaning": "Nổi tiếng"
+        },
+        {
+          "hiragana": "しんせつ[な]",
+          "kanji": "親切[な]",
+          "hanViet": "THÂN THIẾT",
+          "meaning": "Tốt bụng, thân thiện"
+        },
+        {
+          "hiragana": "げんき[な]",
+          "kanji": "元気[な]",
+          "hanViet": "NGUYÊN KHÍ",
+          "meaning": "Khỏe"
+        },
+        {
+          "hiragana": "ひま[な]",
+          "kanji": "暇[な]",
+          "hanViet": "HẠ",
+          "meaning": "Rảnh rỗi"
+        },
+        {
+          "hiragana": "べんり[な]",
+          "kanji": "便利[な]",
+          "hanViet": "TIỆN LỢI",
+          "meaning": "Tiện lợi"
+        },
+        {
+          "hiragana": "すてき[な]",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đẹp, hay"
+        },
+        {
+          "hiragana": "おおきい",
+          "kanji": "大きい",
+          "hanViet": "ĐẠI",
+          "meaning": "Lớn, to"
+        },
+        {
+          "hiragana": "ちいさい",
+          "kanji": "小さい",
+          "hanViet": "TIỂU",
+          "meaning": "Bé, nhỏ"
+        },
+        {
+          "hiragana": "あたらしい",
+          "kanji": "新しい",
+          "hanViet": "TÂN",
+          "meaning": "Mới"
+        },
+        {
+          "hiragana": "ふるい",
+          "kanji": "古い",
+          "hanViet": "CỔ",
+          "meaning": "Cũ"
+        },
+        {
+          "hiragana": "いい（よい）",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tốt"
+        },
+        {
+          "hiragana": "わるい",
+          "kanji": "悪い",
+          "hanViet": "ÁC",
+          "meaning": "Xấu"
+        },
+        {
+          "hiragana": "あつい",
+          "kanji": "暑い, 熱い",
+          "hanViet": "THỬ, NHIỆT",
+          "meaning": "Nóng"
+        },
+        {
+          "hiragana": "さむい",
+          "kanji": "寒い",
+          "hanViet": "HÀN",
+          "meaning": "Lạnh, rét (dùng cho thời tiết)"
+        },
+        {
+          "hiragana": "つめたい",
+          "kanji": "冷たい",
+          "hanViet": "LÃNH",
+          "meaning": "Lạnh, buốt (dùng cho đồ ăn…)"
+        },
+        {
+          "hiragana": "むずかしい",
+          "kanji": "難しい",
+          "hanViet": "NAN",
+          "meaning": "Khó"
+        },
+        {
+          "hiragana": "やさしい",
+          "kanji": "易しい",
+          "hanViet": "DỊ",
+          "meaning": "Dễ"
+        },
+        {
+          "hiragana": "たかい",
+          "kanji": "高い",
+          "hanViet": "CAO",
+          "meaning": "Đắt, cao"
+        },
+        {
+          "hiragana": "やすい",
+          "kanji": "安い",
+          "hanViet": "AN",
+          "meaning": "Rẻ"
+        },
+        {
+          "hiragana": "ひくい",
+          "kanji": "低い",
+          "hanViet": "ĐÊ",
+          "meaning": "Thấp"
+        },
+        {
+          "hiragana": "おもしろい",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thú vị, hay"
+        },
+        {
+          "hiragana": "おいしい",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ngon"
+        },
+        {
+          "hiragana": "いそがしい",
+          "kanji": "忙しい",
+          "hanViet": "MANG",
+          "meaning": "Bận"
+        },
+        {
+          "hiragana": "たのしい",
+          "kanji": "楽しい",
+          "hanViet": "LẠC",
+          "meaning": "Vui"
+        },
+        {
+          "hiragana": "しろい",
+          "kanji": "白い",
+          "hanViet": "BẠCH",
+          "meaning": "Trắng"
+        },
+        {
+          "hiragana": "くろい",
+          "kanji": "黒い",
+          "hanViet": "HẮC",
+          "meaning": "Đen"
+        },
+        {
+          "hiragana": "あかい",
+          "kanji": "赤い",
+          "hanViet": "XÍCH",
+          "meaning": "Đỏ"
+        },
+        {
+          "hiragana": "あおい",
+          "kanji": "青い",
+          "hanViet": "THANH",
+          "meaning": "Xanh da trời"
+        },
+        {
+          "hiragana": "さくら",
+          "kanji": "桜",
+          "hanViet": "ANH",
+          "meaning": "Hoa anh đào"
+        },
+        {
+          "hiragana": "やま",
+          "kanji": "山",
+          "hanViet": "SƠN, SAN",
+          "meaning": "Núi"
+        },
+        {
+          "hiragana": "まち",
+          "kanji": "町",
+          "hanViet": "ĐINH",
+          "meaning": "Thị trấn, thị xã, thành phố"
+        },
+        {
+          "hiragana": "たべもの",
+          "kanji": "食べ物",
+          "hanViet": "THỰC VẬT",
+          "meaning": "Đồ ăn"
+        },
+        {
+          "hiragana": "ところ",
+          "kanji": "所",
+          "hanViet": "SỞ",
+          "meaning": "Nơi, chỗ"
+        },
+        {
+          "hiragana": "りょう",
+          "kanji": "寮",
+          "hanViet": "LIÊU",
+          "meaning": "Kí túc xá"
+        },
+        {
+          "hiragana": "レストラン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhà hàng"
+        },
+        {
+          "hiragana": "せいかつ",
+          "kanji": "生活",
+          "hanViet": "SINH HOẠT",
+          "meaning": "Cuộc sống, sinh hoạt"
+        },
+        {
+          "hiragana": "[お]しごと",
+          "kanji": "[お]仕事",
+          "hanViet": "SĨ SỰ",
+          "meaning": "Công việc (～をします：làm việc)"
+        },
+        {
+          "hiragana": "どう",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thế nào"
+        },
+        {
+          "hiragana": "どんな～",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "~ Như thế nào"
+        },
+        {
+          "hiragana": "とても",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Rất, lắm"
+        },
+        {
+          "hiragana": "あまり",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Không ~ lắm"
+        },
+        {
+          "hiragana": "そして",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Và, thêm nữa (dùng để nối 2 câu)"
+        },
+        {
+          "hiragana": "～が、～",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "~ Nhưng ~"
+        },
+        {
+          "hiragana": "おげんきですか。",
+          "kanji": "お元気ですか。",
+          "hanViet": "NGUYÊN KHÍ",
+          "meaning": "Anh/chị có khỏe không?"
+        },
+        {
+          "hiragana": "そうですね。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thế à./ Để tôi xem. (Cách nói trong lúc suy nghĩ câu trả lời)"
+        },
+        {
+          "hiragana": "いっぱい [～、] もう 一杯 いかが ですか。",
+          "kanji": "一杯",
+          "hanViet": "NHẤT BÔI",
+          "meaning": "Anh/ chị dùng thêm một chén [~] nữa không ạ?"
+        },
+        {
+          "hiragana": "［いいえ］、けっこうです。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Không, đủ rồi ạ."
+        },
+        {
+          "hiragana": "もう～です[ね]。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đã ~ rồi nhỉ."
+        },
+        {
+          "hiragana": "そろそろ しつれいします",
+          "kanji": "失礼します。",
+          "hanViet": "THẤT LỄ",
+          "meaning": "Đã đến lúc tôi phải về."
+        },
+        {
+          "hiragana": "いいえ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Không"
+        },
+        {
+          "hiragana": "また いらっしゃって ください。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Lần sau anh/ chị lại đến chơi nhé."
+        },
+        {
+          "hiragana": "シャンハイ",
+          "kanji": "上海",
+          "hanViet": "THƯỢNG HẢI",
+          "meaning": "Thượng Hải"
+        },
+        {
+          "hiragana": "きんかくじ",
+          "kanji": "金閣寺",
+          "hanViet": "KIM CÁC TỰ",
+          "meaning": "Chùa Kinkaku-ji (Chùa Vàng)"
+        },
+        {
+          "hiragana": "ならこうえん",
+          "kanji": "奈良公園",
+          "hanViet": "NẠI LƯƠNG CÔNG VIÊN",
+          "meaning": "Công viên Nara"
+        },
+        {
+          "hiragana": "ふじさん",
+          "kanji": "富士山",
+          "hanViet": "PHÚ SĨ SƠN",
+          "meaning": "Núi Phú Sĩ"
+        },
+        {
+          "hiragana": "しちにんのさむらい",
+          "kanji": "七人の侍",
+          "hanViet": "THẤT NHÂN THỊ",
+          "meaning": "“Bảy chàng võ sĩ Samurai” (tên một bộ phim kinh điển của đạo diễn Kurosawa Akira)"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 9,
+      "title": "Bài 09",
+      "vocabularies": [
+        {
+          "hiragana": "わかります",
+          "kanji": "分かります",
+          "hanViet": "PHÂN",
+          "meaning": "Hiểu, nắm được"
+        },
+        {
+          "hiragana": "あります",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Có (sở hữu)"
+        },
+        {
+          "hiragana": "すき[な]",
+          "kanji": "好き[な]",
+          "hanViet": "HẢO",
+          "meaning": "Thích"
+        },
+        {
+          "hiragana": "きらい[な]",
+          "kanji": "嫌い[な]",
+          "hanViet": "HIỀM",
+          "meaning": "Ghét, không thích"
+        },
+        {
+          "hiragana": "じょうず[な]",
+          "kanji": "上手[な]",
+          "hanViet": "THƯỢNG THỦ",
+          "meaning": "Giỏi, khéo"
+        },
+        {
+          "hiragana": "へた[な]",
+          "kanji": "下手[な]",
+          "hanViet": "HẠ THỦ",
+          "meaning": "Kém"
+        },
+        {
+          "hiragana": "のみもの",
+          "kanji": "飲み物",
+          "hanViet": "ẨM VẬT",
+          "meaning": "Đồ uống"
+        },
+        {
+          "hiragana": "りょうり",
+          "kanji": "料理",
+          "hanViet": "LIỆU LÝ",
+          "meaning": "Món ăn, việc nấu ăn (～をします： nấu ăn)"
+        },
+        {
+          "hiragana": "スポーツ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thể thao (～をします： chơi thể thao)"
+        },
+        {
+          "hiragana": "やきゅう",
+          "kanji": "野球",
+          "hanViet": "DÃ CẦU",
+          "meaning": "Bóng chày (～をします： chơi bóng chày)"
+        },
+        {
+          "hiragana": "ダンス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhảy, khiêu vũ (～をします： nhảy)"
+        },
+        {
+          "hiragana": "りょこう",
+          "kanji": "旅行",
+          "hanViet": "LỮ HÀNH",
+          "meaning": "Việc đi du lịch (～をします： đi du lịch)"
+        },
+        {
+          "hiragana": "おんがく",
+          "kanji": "音楽",
+          "hanViet": "ÂM NHẠC/LẠC",
+          "meaning": "Âm nhạc"
+        },
+        {
+          "hiragana": "うた",
+          "kanji": "歌",
+          "hanViet": "CA",
+          "meaning": "Bài hát"
+        },
+        {
+          "hiragana": "クラシック",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhạc cổ điển"
+        },
+        {
+          "hiragana": "ジャズ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhạc jazz"
+        },
+        {
+          "hiragana": "コンサート",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Buổi hòa nhạc"
+        },
+        {
+          "hiragana": "カラオケ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Karaoke"
+        },
+        {
+          "hiragana": "かぶき",
+          "kanji": "歌舞伎",
+          "hanViet": "CA VŨ KỸ",
+          "meaning": "Kabuki (một loại ca kịch truyền thống của Nhật)"
+        },
+        {
+          "hiragana": "え",
+          "kanji": "絵",
+          "hanViet": "HỘI",
+          "meaning": "Tranh, hội họa"
+        },
+        {
+          "hiragana": "じ",
+          "kanji": "字",
+          "hanViet": "TỰ",
+          "meaning": "Chữ"
+        },
+        {
+          "hiragana": "かんじ",
+          "kanji": "漢字",
+          "hanViet": "HÁN TỰ",
+          "meaning": "Chữ hán"
+        },
+        {
+          "hiragana": "ひらがな",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chữ mềm"
+        },
+        {
+          "hiragana": "かたかな",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chữ cứng"
+        },
+        {
+          "hiragana": "ローマじ",
+          "kanji": "ローマ字",
+          "hanViet": "TỰ",
+          "meaning": "Chữ La-tinh"
+        },
+        {
+          "hiragana": "こまかいおかね",
+          "kanji": "細かいお金",
+          "hanViet": "TẾ KIM",
+          "meaning": "Tiền lẻ"
+        },
+        {
+          "hiragana": "チケット",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vé (xem hòa nhạc, phim)"
+        },
+        {
+          "hiragana": "じかん",
+          "kanji": "時間",
+          "hanViet": "THỜI GIAN",
+          "meaning": "Thời gian"
+        },
+        {
+          "hiragana": "ようじ",
+          "kanji": "用事",
+          "hanViet": "DỤNG SỰ",
+          "meaning": "Việc bận, công chuyện"
+        },
+        {
+          "hiragana": "やくそく",
+          "kanji": "約束",
+          "hanViet": "ƯỚC THÚC",
+          "meaning": "Cuộc hẹn, lời hứa (～[を]します：hứa)"
+        },
+        {
+          "hiragana": "アルバイト",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Việc làm thêm (～をします：làm thêm)"
+        },
+        {
+          "hiragana": "ごしゅじん",
+          "kanji": "ご主人",
+          "hanViet": "CHỦ NHÂN",
+          "meaning": "Chồng (chồng người khác)"
+        },
+        {
+          "hiragana": "おっと/しゅじん",
+          "kanji": "夫 /主人",
+          "hanViet": "PHU /CHỦ NHÂN",
+          "meaning": "Chồng (chồng mình)"
+        },
+        {
+          "hiragana": "おくさん",
+          "kanji": "奥さん",
+          "hanViet": "ÁO",
+          "meaning": "Vợ (vợ người khác)"
+        },
+        {
+          "hiragana": "つま/かない",
+          "kanji": "妻/家内",
+          "hanViet": "THÊ /GIA NỘI",
+          "meaning": "Vợ (vợ mình)"
+        },
+        {
+          "hiragana": "こども",
+          "kanji": "子ども",
+          "hanViet": "TỬ",
+          "meaning": "Con cái, trẻ con"
+        },
+        {
+          "hiragana": "よく",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tốt, rõ (chỉ mức độ)"
+        },
+        {
+          "hiragana": "だいたい",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đại khái, đại thể"
+        },
+        {
+          "hiragana": "たくさん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhiều"
+        },
+        {
+          "hiragana": "すこし",
+          "kanji": "少し",
+          "hanViet": "THIỂU",
+          "meaning": "Ít, một ít, một chút"
+        },
+        {
+          "hiragana": "ぜんぜん",
+          "kanji": "全然",
+          "hanViet": "TOÀN NHIÊN",
+          "meaning": "Hoàn toàn ~ không"
+        },
+        {
+          "hiragana": "はやく",
+          "kanji": "早く 、 速く",
+          "hanViet": "TẢO, TỐC",
+          "meaning": "Sớm, nhanh"
+        },
+        {
+          "hiragana": "～から",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vì ~"
+        },
+        {
+          "hiragana": "どうして",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tại sao"
+        },
+        {
+          "hiragana": "かして ください。",
+          "kanji": "貸してください",
+          "hanViet": "THẢI",
+          "meaning": "Làm ơn cho tôi mượn."
+        },
+        {
+          "hiragana": "いいですよ。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Được đấy nhỉ."
+        },
+        {
+          "hiragana": "ざんねんです［が］。",
+          "kanji": "残念ですが。",
+          "hanViet": "TÀN NIỆM",
+          "meaning": "Thật đáng tiếc."
+        },
+        {
+          "hiragana": "ああ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "A (cách nói khi đã gặp được đúng người trên điện thoại)"
+        },
+        {
+          "hiragana": "いっしょに いかがですか。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bạn cùng ~ (làm cái gì đó) với tôi/ chúng tôi được không?"
+        },
+        {
+          "hiragana": "[～は] ちょっと…。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "[~ thì] có lẽ không được rồi. (cách từ chối khéo khi nhận được một lời mời nào đó)"
+        },
+        {
+          "hiragana": "だめですか。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Không được à?"
+        },
+        {
+          "hiragana": "こんど ねが また 今度 お願いします",
+          "kanji": null,
+          "hanViet": "KIM ĐỘ NGUYỆN",
+          "meaning": "Hẹn Anh/Chị lần sau vậy."
+        }
+      ]
+    },
+    {
+      "lessonNumber": 10,
+      "title": "Bài 10",
+      "vocabularies": [
+        {
+          "hiragana": "あります",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Có, ở (tồn tại đồ vật)"
+        },
+        {
+          "hiragana": "います",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Có, ở (tồn tại người và động vật)"
+        },
+        {
+          "hiragana": "いろいろ[な]",
+          "kanji": "色々",
+          "hanViet": "SẮC",
+          "meaning": "Nhiều, đa dạng"
+        },
+        {
+          "hiragana": "おとこのひと",
+          "kanji": "男の人",
+          "hanViet": "NAM NHÂN",
+          "meaning": "Người đàn ông"
+        },
+        {
+          "hiragana": "おんなのひと",
+          "kanji": "女の人",
+          "hanViet": "NỮ NHÂN",
+          "meaning": "Người đàn bà"
+        },
+        {
+          "hiragana": "おとこのこ",
+          "kanji": "男の子",
+          "hanViet": "NAM TỬ",
+          "meaning": "Cậu con trai, cậu bé"
+        },
+        {
+          "hiragana": "おんなのこ",
+          "kanji": "女の子",
+          "hanViet": "NỮ TỬ",
+          "meaning": "Cô con gái, cô bé"
+        },
+        {
+          "hiragana": "いぬ",
+          "kanji": "犬",
+          "hanViet": "KHUYỂN",
+          "meaning": "Chó"
+        },
+        {
+          "hiragana": "ねこ",
+          "kanji": "猫",
+          "hanViet": "MIÊU",
+          "meaning": "Mèo"
+        },
+        {
+          "hiragana": "パンダ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Gấu trúc"
+        },
+        {
+          "hiragana": "ぞう",
+          "kanji": "象",
+          "hanViet": "TƯỢNG",
+          "meaning": "Voi"
+        },
+        {
+          "hiragana": "き",
+          "kanji": "木",
+          "hanViet": "MỘC",
+          "meaning": "Cây, gỗ"
+        },
+        {
+          "hiragana": "もの",
+          "kanji": "物",
+          "hanViet": "VẬT",
+          "meaning": "Vật, đồ vật"
+        },
+        {
+          "hiragana": "でんち",
+          "kanji": "電池",
+          "hanViet": "ĐIỆN TRÌ",
+          "meaning": "Pin"
+        },
+        {
+          "hiragana": "はこ",
+          "kanji": "箱",
+          "hanViet": "TƯƠNG",
+          "meaning": "Hộp"
+        },
+        {
+          "hiragana": "スイッチ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Công tắc"
+        },
+        {
+          "hiragana": "れいぞうこ",
+          "kanji": "冷蔵庫",
+          "hanViet": "LÃNH TÀNG KHỐ",
+          "meaning": "Tủ lạnh"
+        },
+        {
+          "hiragana": "テーブル",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bàn"
+        },
+        {
+          "hiragana": "ベッド",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Giường"
+        },
+        {
+          "hiragana": "たな",
+          "kanji": "棚",
+          "hanViet": "BẰNG",
+          "meaning": "Giá kệ"
+        },
+        {
+          "hiragana": "ドア",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cửa"
+        },
+        {
+          "hiragana": "まど",
+          "kanji": "窓",
+          "hanViet": "SONG",
+          "meaning": "Cửa sổ"
+        },
+        {
+          "hiragana": "ポスト",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hộp thư, hòm thư"
+        },
+        {
+          "hiragana": "ビル",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tòa nhà"
+        },
+        {
+          "hiragana": "ATM",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Máy rút tiền tự động"
+        },
+        {
+          "hiragana": "コンビ二",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cửa hàng tiện lợi"
+        },
+        {
+          "hiragana": "こうえん",
+          "kanji": "公園",
+          "hanViet": "CÔNG VIÊN",
+          "meaning": "Công viên"
+        },
+        {
+          "hiragana": "きっさてん",
+          "kanji": "喫茶店",
+          "hanViet": "KHIẾT TRÀ ĐIẾM",
+          "meaning": "Quán giải khát, quán cafe"
+        },
+        {
+          "hiragana": "～や",
+          "kanji": "～屋",
+          "hanViet": "ỐC",
+          "meaning": "Hiệu ~, cửa hàng ~"
+        },
+        {
+          "hiragana": "のりば",
+          "kanji": "乗り場",
+          "hanViet": "THỪA TRƯỜNG",
+          "meaning": "Bến xe, điểm lên xuống xe"
+        },
+        {
+          "hiragana": "けん",
+          "kanji": "県",
+          "hanViet": "HUYỆN",
+          "meaning": "Tỉnh"
+        },
+        {
+          "hiragana": "うえ",
+          "kanji": "上",
+          "hanViet": "THƯỢNG",
+          "meaning": "Trên"
+        },
+        {
+          "hiragana": "した",
+          "kanji": "下",
+          "hanViet": "HẠ",
+          "meaning": "Dưới"
+        },
+        {
+          "hiragana": "まえ",
+          "kanji": "前",
+          "hanViet": "TIỀN",
+          "meaning": "Trước"
+        },
+        {
+          "hiragana": "うしろ",
+          "kanji": "後ろ",
+          "hanViet": "HẬU",
+          "meaning": "Sau"
+        },
+        {
+          "hiragana": "みぎ",
+          "kanji": "右",
+          "hanViet": "HỮU",
+          "meaning": "Phải"
+        },
+        {
+          "hiragana": "ひだり",
+          "kanji": "左",
+          "hanViet": "TẢ",
+          "meaning": "Trái"
+        },
+        {
+          "hiragana": "なか",
+          "kanji": "中",
+          "hanViet": "TRUNG",
+          "meaning": "Trong, giữa"
+        },
+        {
+          "hiragana": "そと",
+          "kanji": "外",
+          "hanViet": "NGOẠI",
+          "meaning": "Ngoài"
+        },
+        {
+          "hiragana": "となり",
+          "kanji": "隣",
+          "hanViet": "LÂN",
+          "meaning": "Bên cạnh"
+        },
+        {
+          "hiragana": "ちかく",
+          "kanji": "近く",
+          "hanViet": "CẬN",
+          "meaning": "Gần"
+        },
+        {
+          "hiragana": "あいだ",
+          "kanji": "間",
+          "hanViet": "GIAN",
+          "meaning": "Giữa"
+        },
+        {
+          "hiragana": "～や～[など]",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Và ~, [v.v.]"
+        },
+        {
+          "hiragana": "[どうも]すみません。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cám ơn."
+        },
+        {
+          "hiragana": "ナンプラー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một đồ chấm của Thái Lan"
+        },
+        {
+          "hiragana": "コーナー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Góc"
+        },
+        {
+          "hiragana": "いちばん した",
+          "kanji": "一番下",
+          "hanViet": "NHẤT PHIÊN HẠ",
+          "meaning": "Thấp nhất, phía dưới cùng"
+        },
+        {
+          "hiragana": "とうきょう 東京ディズニーランド",
+          "kanji": null,
+          "hanViet": "ĐÔNG KINH",
+          "meaning": "Công viên Tokyo Disneyland"
+        },
+        {
+          "hiragana": "アジアストア",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một siêu thị (giả tưởng)"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 11,
+      "title": "Bài 11",
+      "vocabularies": [
+        {
+          "hiragana": "います [こどもが～]",
+          "kanji": "[子供が～]",
+          "hanViet": "TỬ CUNG",
+          "meaning": "Có [con]"
+        },
+        {
+          "hiragana": "います [にほんに～]",
+          "kanji": "[日本に～]",
+          "hanViet": "NHẬT BẢN",
+          "meaning": "Ở [Nhật]"
+        },
+        {
+          "hiragana": "かかります",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Mất, tốn (thời gian, tiền)"
+        },
+        {
+          "hiragana": "やすみます [かいしゃを～]",
+          "kanji": "休みます [会社を～]",
+          "hanViet": "HƯU [HỘI XÃ]",
+          "meaning": "Nghỉ (làm)"
+        },
+        {
+          "hiragana": "ひとつ",
+          "kanji": "１つ",
+          "hanViet": null,
+          "meaning": "Một cái"
+        },
+        {
+          "hiragana": "ふたつ",
+          "kanji": "２つ",
+          "hanViet": null,
+          "meaning": "Hai cái"
+        },
+        {
+          "hiragana": "みっつ",
+          "kanji": "３つ",
+          "hanViet": null,
+          "meaning": "Ba cái"
+        },
+        {
+          "hiragana": "よっつ",
+          "kanji": "４つ",
+          "hanViet": null,
+          "meaning": "Bốn cái"
+        },
+        {
+          "hiragana": "いつつ",
+          "kanji": "５つ",
+          "hanViet": null,
+          "meaning": "Năm cái"
+        },
+        {
+          "hiragana": "むっつ",
+          "kanji": "６つ",
+          "hanViet": null,
+          "meaning": "Sáu cái"
+        },
+        {
+          "hiragana": "ななつ",
+          "kanji": "７つ",
+          "hanViet": null,
+          "meaning": "Bảy cái"
+        },
+        {
+          "hiragana": "やっつ",
+          "kanji": "８つ",
+          "hanViet": null,
+          "meaning": "Tám cái"
+        },
+        {
+          "hiragana": "ここのつ",
+          "kanji": "９つ",
+          "hanViet": null,
+          "meaning": "Chín cái"
+        },
+        {
+          "hiragana": "とお",
+          "kanji": "１０",
+          "hanViet": null,
+          "meaning": "Mười cái"
+        },
+        {
+          "hiragana": "いくつ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Mấy cái, bao nhiêu cái"
+        },
+        {
+          "hiragana": "ひとり",
+          "kanji": "１人",
+          "hanViet": "NHÂN",
+          "meaning": "Một người"
+        },
+        {
+          "hiragana": "ふたり",
+          "kanji": "２人",
+          "hanViet": "NHÂN",
+          "meaning": "Hai người"
+        },
+        {
+          "hiragana": "―にん",
+          "kanji": "－人",
+          "hanViet": "NHÂN",
+          "meaning": "- Người"
+        },
+        {
+          "hiragana": "―だい",
+          "kanji": "－台",
+          "hanViet": "ĐÀI",
+          "meaning": "- Cái (đếm máy móc…)"
+        },
+        {
+          "hiragana": "―まい",
+          "kanji": "－枚",
+          "hanViet": "MAI",
+          "meaning": "- Tờ, tấm (đếm vật mỏng như giấy, tem, phong bì...)"
+        },
+        {
+          "hiragana": "―かい",
+          "kanji": "―回",
+          "hanViet": "HỒI",
+          "meaning": "- Lần"
+        },
+        {
+          "hiragana": "りんご",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Táo"
+        },
+        {
+          "hiragana": "みかん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Quýt"
+        },
+        {
+          "hiragana": "サンドイッチ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bánh San Uých"
+        },
+        {
+          "hiragana": "カレー[ライス]",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Món [cơm] ca-ri"
+        },
+        {
+          "hiragana": "アイスクリーム",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Kem"
+        },
+        {
+          "hiragana": "きって",
+          "kanji": "切手",
+          "hanViet": "THIẾT THỦ",
+          "meaning": "Tem"
+        },
+        {
+          "hiragana": "はがき",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bưu thiếp"
+        },
+        {
+          "hiragana": "ふうとう",
+          "kanji": "封筒",
+          "hanViet": "PHONG ĐỒNG",
+          "meaning": "Phong bì"
+        },
+        {
+          "hiragana": "りょうしん",
+          "kanji": "両親",
+          "hanViet": "LƯỠNG THÂN",
+          "meaning": "Bố mẹ"
+        },
+        {
+          "hiragana": "きょうだい",
+          "kanji": "兄弟",
+          "hanViet": "HUYNH ĐỆ",
+          "meaning": "Anh chị em"
+        },
+        {
+          "hiragana": "あに",
+          "kanji": "兄",
+          "hanViet": "HUYNH",
+          "meaning": "Anh trai"
+        },
+        {
+          "hiragana": "おにいさん",
+          "kanji": "お兄さん",
+          "hanViet": "HUYNH",
+          "meaning": "Anh trai (của người khác)"
+        },
+        {
+          "hiragana": "あね",
+          "kanji": "姉",
+          "hanViet": "TỶ",
+          "meaning": "Chị gái"
+        },
+        {
+          "hiragana": "おねえさん",
+          "kanji": "お姉さん",
+          "hanViet": "TỶ",
+          "meaning": "Chị gái (của người khác)"
+        },
+        {
+          "hiragana": "おとうと",
+          "kanji": "弟",
+          "hanViet": "ĐỆ",
+          "meaning": "Em trai"
+        },
+        {
+          "hiragana": "おとうとさん",
+          "kanji": "弟さん",
+          "hanViet": "ĐỆ",
+          "meaning": "Em trai (của người khác)"
+        },
+        {
+          "hiragana": "いもうと",
+          "kanji": "妹",
+          "hanViet": "MUỘI",
+          "meaning": "Em gái"
+        },
+        {
+          "hiragana": "いもうとさん",
+          "kanji": "妹さん",
+          "hanViet": "MUỘI",
+          "meaning": "Em gái (của người khác)"
+        },
+        {
+          "hiragana": "がいこく",
+          "kanji": "外国",
+          "hanViet": "NGOẠI QUỐC",
+          "meaning": "Nước ngoài"
+        },
+        {
+          "hiragana": "りゅうがくせい",
+          "kanji": "留学生",
+          "hanViet": "LƯU HỌC SINH",
+          "meaning": "Du học sinh"
+        },
+        {
+          "hiragana": "クラス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Lớp học"
+        },
+        {
+          "hiragana": "―じかん",
+          "kanji": "―時間",
+          "hanViet": "THỜI GIAN",
+          "meaning": "- Tiếng"
+        },
+        {
+          "hiragana": "―しゅうかん",
+          "kanji": "―週間",
+          "hanViet": "CHU GIAN",
+          "meaning": "- Tuần"
+        },
+        {
+          "hiragana": "―かげつ",
+          "kanji": "－か月",
+          "hanViet": "NGUYỆT",
+          "meaning": "- Tháng"
+        },
+        {
+          "hiragana": "―ねん",
+          "kanji": "―年",
+          "hanViet": "NIÊN",
+          "meaning": "- Năm"
+        },
+        {
+          "hiragana": "～ぐらい",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Khoảng ~"
+        },
+        {
+          "hiragana": "どのくらい",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bao lâu"
+        },
+        {
+          "hiragana": "ぜんぶで",
+          "kanji": "全部で",
+          "hanViet": "TOÀN BỘ",
+          "meaning": "Tổng cộng"
+        },
+        {
+          "hiragana": "みんな",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tất cả"
+        },
+        {
+          "hiragana": "～だけ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chỉ ~"
+        },
+        {
+          "hiragana": "かしこまりました。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tôi hiểu rồi ạ. (lịch sự)"
+        },
+        {
+          "hiragana": "てんき いい[お]天気ですね",
+          "kanji": null,
+          "hanViet": "THIÊN KHÍ",
+          "meaning": "Trời đẹp nhỉ."
+        },
+        {
+          "hiragana": "で お出かけですか。",
+          "kanji": null,
+          "hanViet": "XUẤT",
+          "meaning": "Anh/Chị đi ra ngoài đấy à?"
+        },
+        {
+          "hiragana": "ちょっと～まで。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tôi đi ~ một chút."
+        },
+        {
+          "hiragana": "い 行ってらっしゃい。",
+          "kanji": null,
+          "hanViet": "HÀNH",
+          "meaning": "Anh/Chị đi nhé. (Anh/Chị đi rồi lại về nhé)"
+        },
+        {
+          "hiragana": "い 行って きます。",
+          "kanji": null,
+          "hanViet": "HÀNH",
+          "meaning": "Tôi đi đây. (Tôi đi rồi sẽ về, câu nói khi ra khỏi nhà)"
+        },
+        {
+          "hiragana": "ふなびん 船便",
+          "kanji": null,
+          "hanViet": "THUYỀN TIỆN",
+          "meaning": "Gửi bằng đường biển"
+        },
+        {
+          "hiragana": "こうくうびん 航空便（エアメール）",
+          "kanji": null,
+          "hanViet": "HÀNG KHÔNG TIỆN",
+          "meaning": "Gửi bằng đường hàng không"
+        },
+        {
+          "hiragana": "ねが お願いします",
+          "kanji": null,
+          "hanViet": "NGUYỆN",
+          "meaning": "Làm ơn"
+        },
+        {
+          "hiragana": "オーストラリア",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Úc"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 12,
+      "title": "Bài 12",
+      "vocabularies": [
+        {
+          "hiragana": "かんたん「な」",
+          "kanji": "簡単「な」",
+          "hanViet": "GIẢN ĐƠN",
+          "meaning": "Đơn giản, dễ"
+        },
+        {
+          "hiragana": "ちかい",
+          "kanji": "近い",
+          "hanViet": "CẬN",
+          "meaning": "Gần"
+        },
+        {
+          "hiragana": "とおい",
+          "kanji": "遠い",
+          "hanViet": "VIỄN",
+          "meaning": "Xa"
+        },
+        {
+          "hiragana": "はやい",
+          "kanji": "速い/ 早い",
+          "hanViet": "TỐC/ TẢO",
+          "meaning": "Nhanh, sớm"
+        },
+        {
+          "hiragana": "おそい",
+          "kanji": "遅い",
+          "hanViet": "TRÌ",
+          "meaning": "Chậm, muộn"
+        },
+        {
+          "hiragana": "おおい[ひとが～]",
+          "kanji": "多い[人が～]",
+          "hanViet": "ĐA NHÂN",
+          "meaning": "Nhiều [người]"
+        },
+        {
+          "hiragana": "すくない[ひとが～]",
+          "kanji": "少ない[人が～]",
+          "hanViet": "THIẾU NHÂN",
+          "meaning": "Ít [người]"
+        },
+        {
+          "hiragana": "あたたかい",
+          "kanji": "温かい/ 暖かい",
+          "hanViet": "ÔN, NOÃN",
+          "meaning": "Ấm"
+        },
+        {
+          "hiragana": "すずしい",
+          "kanji": "涼しい",
+          "hanViet": "LƯƠNG",
+          "meaning": "Mát"
+        },
+        {
+          "hiragana": "あまい",
+          "kanji": "甘い",
+          "hanViet": "CAM",
+          "meaning": "Ngọt"
+        },
+        {
+          "hiragana": "からい",
+          "kanji": "辛い",
+          "hanViet": "TÂN",
+          "meaning": "Cay"
+        },
+        {
+          "hiragana": "おもい",
+          "kanji": "重い",
+          "hanViet": "TRỌNG",
+          "meaning": "Nặng"
+        },
+        {
+          "hiragana": "かるい",
+          "kanji": "軽い",
+          "hanViet": "KHINH",
+          "meaning": "Nhẹ"
+        },
+        {
+          "hiragana": "いい[コーヒーが～]",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thích, chọn, dùng [cafe]"
+        },
+        {
+          "hiragana": "きせつ",
+          "kanji": "季節",
+          "hanViet": "QUÝ TIẾT",
+          "meaning": "Mùa"
+        },
+        {
+          "hiragana": "はる",
+          "kanji": "春",
+          "hanViet": "XUÂN",
+          "meaning": "Mùa xuân"
+        },
+        {
+          "hiragana": "なつ",
+          "kanji": "夏",
+          "hanViet": "HẠ",
+          "meaning": "Mùa hè"
+        },
+        {
+          "hiragana": "あき",
+          "kanji": "秋",
+          "hanViet": "THU",
+          "meaning": "Mùa thu"
+        },
+        {
+          "hiragana": "ふゆ",
+          "kanji": "冬",
+          "hanViet": "ĐÔNG",
+          "meaning": "Mùa đông"
+        },
+        {
+          "hiragana": "てんき",
+          "kanji": "天気",
+          "hanViet": "THIÊN KHÍ",
+          "meaning": "Thời tiết"
+        },
+        {
+          "hiragana": "あめ",
+          "kanji": "雨",
+          "hanViet": "VŨ",
+          "meaning": "Mưa"
+        },
+        {
+          "hiragana": "ゆき",
+          "kanji": "雪",
+          "hanViet": "TUYẾT",
+          "meaning": "Tuyết"
+        },
+        {
+          "hiragana": "くもり",
+          "kanji": "曇り",
+          "hanViet": "ĐÀM",
+          "meaning": "Có mây"
+        },
+        {
+          "hiragana": "ホテル",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Khách sạn"
+        },
+        {
+          "hiragana": "くうこう",
+          "kanji": "空港",
+          "hanViet": "KHÔNG CẢNG",
+          "meaning": "Sân bay"
+        },
+        {
+          "hiragana": "うみ",
+          "kanji": "海",
+          "hanViet": "HẢI",
+          "meaning": "Biển, đại dương"
+        },
+        {
+          "hiragana": "せかい",
+          "kanji": "世界",
+          "hanViet": "THẾ GIỚI",
+          "meaning": "Thế giới"
+        },
+        {
+          "hiragana": "パーティー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tiệc (～をします：tổ chức tiệc)"
+        },
+        {
+          "hiragana": "[お]まつり",
+          "kanji": "［お］祭り",
+          "hanViet": "TẾ",
+          "meaning": "Lễ hội"
+        },
+        {
+          "hiragana": "すきやき",
+          "kanji": "すき焼き",
+          "hanViet": "THIÊU",
+          "meaning": "Món Sukiyaki (món thịt bò nấu rau)"
+        },
+        {
+          "hiragana": "さしみ",
+          "kanji": "刺身",
+          "hanViet": "THÍCH THÂN",
+          "meaning": "Món Sashimi (món gỏi cá sống)"
+        },
+        {
+          "hiragana": "[お]すし",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Món Sushi"
+        },
+        {
+          "hiragana": "てんぷら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Món Tempura"
+        },
+        {
+          "hiragana": "ぶたにく",
+          "kanji": "豚肉",
+          "hanViet": "ĐỒN NHỤC",
+          "meaning": "Thịt lợn"
+        },
+        {
+          "hiragana": "とりにく",
+          "kanji": "とり肉",
+          "hanViet": "NHỤC",
+          "meaning": "Thịt gà"
+        },
+        {
+          "hiragana": "ぎゅうにく",
+          "kanji": "牛肉",
+          "hanViet": "NGƯU NHỤC",
+          "meaning": "Thịt bò"
+        },
+        {
+          "hiragana": "レモン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Quả chanh"
+        },
+        {
+          "hiragana": "いけばな",
+          "kanji": "生け花",
+          "hanViet": "SINH HOA",
+          "meaning": "Nghệ thuật cắm hoa (～をします: cắm hoa)"
+        },
+        {
+          "hiragana": "もみじ",
+          "kanji": "紅葉",
+          "hanViet": "HỒNG DIỆP",
+          "meaning": "Lá đỏ"
+        },
+        {
+          "hiragana": "どちら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái nào"
+        },
+        {
+          "hiragana": "どちらも",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cả hai"
+        },
+        {
+          "hiragana": "いちばん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhất"
+        },
+        {
+          "hiragana": "ずっと",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "(Hơn) hẳn"
+        },
+        {
+          "hiragana": "はじめて",
+          "kanji": "初めて",
+          "hanViet": "SƠ",
+          "meaning": "Lần đầu tiên"
+        },
+        {
+          "hiragana": "ただいま。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tôi đã về đây. (dùng nói khi về đến nhà)"
+        },
+        {
+          "hiragana": "かえ お帰りなさい。",
+          "kanji": null,
+          "hanViet": "QUY",
+          "meaning": "Anh/Chị đã về đấy à. (dùng để nói với ai đó mới về đến nhà)"
+        },
+        {
+          "hiragana": "ひと わあ、すごい人ですね。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ôi, nhiều người quá nhỉ?"
+        },
+        {
+          "hiragana": "つか 疲れました。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tôi mệt rồi"
+        },
+        {
+          "hiragana": "ぎ おんまつり 祗園 祭",
+          "kanji": null,
+          "hanViet": "KỲ VIÊN TẾ",
+          "meaning": "Lễ hội Gi-ôn (lễ hội nổi tiếng nhất ở Kyoto)"
+        },
+        {
+          "hiragana": "ホンコン",
+          "kanji": null,
+          "hanViet": "HƯƠNG CẢNG",
+          "meaning": "Hồng Kông"
+        },
+        {
+          "hiragana": "シンガポール",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Singapore"
+        },
+        {
+          "hiragana": "ABCストア",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một siêu thị (giả tưởng)"
+        },
+        {
+          "hiragana": "ジャパン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một siêu thị (giả tưởng)"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 13,
+      "title": "Bài 13",
+      "vocabularies": [
+        {
+          "hiragana": "あそびます",
+          "kanji": "遊びます",
+          "hanViet": "DU",
+          "meaning": "Chơi"
+        },
+        {
+          "hiragana": "およぎます",
+          "kanji": "泳ぎます",
+          "hanViet": "VỊNH",
+          "meaning": "Bơi"
+        },
+        {
+          "hiragana": "むかえます",
+          "kanji": "迎えます",
+          "hanViet": "NGHÊNH / NGHINH",
+          "meaning": "Đón, chào đón"
+        },
+        {
+          "hiragana": "つかれます",
+          "kanji": "疲れます",
+          "hanViet": "BÌ",
+          "meaning": "Mệt (khi miêu tả tình trạng mệt mỏi ở quá khứ thì dùng つかれました)"
+        },
+        {
+          "hiragana": "けっこんします",
+          "kanji": "結婚します",
+          "hanViet": "KẾT HÔN",
+          "meaning": "Kết hôn, lập gia đình, cưới"
+        },
+        {
+          "hiragana": "かいものします",
+          "kanji": "買い物します",
+          "hanViet": "MÃI VẬT",
+          "meaning": "Mua hàng"
+        },
+        {
+          "hiragana": "しょくじします",
+          "kanji": "食事します",
+          "hanViet": "THỰC SỰ",
+          "meaning": "Ăn cơm, dùng bữa"
+        },
+        {
+          "hiragana": "さんぽします [こうえんを～]",
+          "kanji": "散歩します [公園を～]",
+          "hanViet": "TẢN BỘ [CÔNG VIÊN]",
+          "meaning": "Đi dạo [ở công viên]"
+        },
+        {
+          "hiragana": "たいへん「な」",
+          "kanji": "大変「な」",
+          "hanViet": "ĐẠI BIẾN",
+          "meaning": "Vất vả, khó khăn, khổ"
+        },
+        {
+          "hiragana": "ほしい",
+          "kanji": "欲しい",
+          "hanViet": "DỤC",
+          "meaning": "Muốn có"
+        },
+        {
+          "hiragana": "ひろい",
+          "kanji": "広い",
+          "hanViet": "QUẢNG",
+          "meaning": "Rộng"
+        },
+        {
+          "hiragana": "せまい",
+          "kanji": "狭い",
+          "hanViet": "HIỆP",
+          "meaning": "Chật, hẹp [không gian]"
+        },
+        {
+          "hiragana": "プール",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bể bơi"
+        },
+        {
+          "hiragana": "かわ",
+          "kanji": "川",
+          "hanViet": "XUYÊN",
+          "meaning": "Sông"
+        },
+        {
+          "hiragana": "びじゅつ",
+          "kanji": "美術",
+          "hanViet": "MỸ THUẬT",
+          "meaning": "Mỹ thuật"
+        },
+        {
+          "hiragana": "つり",
+          "kanji": "釣り",
+          "hanViet": "ĐIẾU",
+          "meaning": "Việc câu cá (～を します: câu cá)"
+        },
+        {
+          "hiragana": "スキー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Việc trượt tuyết (～を します： trượt tuyết)"
+        },
+        {
+          "hiragana": "しゅうまつ",
+          "kanji": "週末",
+          "hanViet": "CHU MẠT",
+          "meaning": "Cuối tuần"
+        },
+        {
+          "hiragana": "[お]しょうがつ",
+          "kanji": "[お]正月",
+          "hanViet": "CHÍNH NGUYỆT",
+          "meaning": "Năm mới [TẾT]"
+        },
+        {
+          "hiragana": "～ごろ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Khoảng, vào khoảng ~ (chỉ một mốc thời gian)"
+        },
+        {
+          "hiragana": "なにか",
+          "kanji": "何か",
+          "hanViet": "HÀ",
+          "meaning": "Cái gì đó"
+        },
+        {
+          "hiragana": "どこか",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đâu đó, chỗ nào đó"
+        },
+        {
+          "hiragana": "のどが かわきました。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "(Tôi) khát."
+        },
+        {
+          "hiragana": "おなかが すきました。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "(Tôi) đói rồi."
+        },
+        {
+          "hiragana": "そう しましょう。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhất trí./ Chúng ta thống nhất như thế đi."
+        },
+        {
+          "hiragana": "ちゅうもん ご注文は？",
+          "kanji": null,
+          "hanViet": "CHÚ VĂN",
+          "meaning": "Anh/Chị dùng món gì ạ?"
+        },
+        {
+          "hiragana": "ていしょく 定食",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cơm suất, cơm phần"
+        },
+        {
+          "hiragana": "ぎゅう 牛どん",
+          "kanji": null,
+          "hanViet": "NGƯU",
+          "meaning": "Món cơm thịt bò"
+        },
+        {
+          "hiragana": "しょうしょう ま ［少々］お待ち ください。",
+          "kanji": null,
+          "hanViet": "ĐÃI",
+          "meaning": "Xin anh/chị vui lòng đợi [một chút]."
+        },
+        {
+          "hiragana": "～で ございます。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cách sử dụng lịch sự của「です」"
+        },
+        {
+          "hiragana": "べつべつに",
+          "kanji": "別々に",
+          "hanViet": "BIỆT",
+          "meaning": "Riêng lẻ, tách biệt"
+        },
+        {
+          "hiragana": "アキックス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một công ty (giả tưởng)"
+        },
+        {
+          "hiragana": "おはようテレビ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một chương trình truyền hình (giả tưởng)"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 14,
+      "title": "Bài 14",
+      "vocabularies": [
+        {
+          "hiragana": "つけますII",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bật (điện, máy điều hòa)"
+        },
+        {
+          "hiragana": "けしますI",
+          "kanji": "消します",
+          "hanViet": "TIÊU",
+          "meaning": "Tắt (điện, máy điều hòa)"
+        },
+        {
+          "hiragana": "あけますII",
+          "kanji": "開けます",
+          "hanViet": "KHAI",
+          "meaning": "Mở (cửa, cửa sổ)"
+        },
+        {
+          "hiragana": "しめますII",
+          "kanji": "閉めます",
+          "hanViet": "BẾ",
+          "meaning": "Đóng (cửa, cửa sổ)"
+        },
+        {
+          "hiragana": "いそぎますI",
+          "kanji": "急ぎます",
+          "hanViet": "CẤP",
+          "meaning": "Vội, gấp"
+        },
+        {
+          "hiragana": "まちますI",
+          "kanji": "待ちます",
+          "hanViet": "ĐÃI",
+          "meaning": "Đợi, chờ"
+        },
+        {
+          "hiragana": "とめますII",
+          "kanji": "止めます",
+          "hanViet": "CHỈ",
+          "meaning": "Dừng (băng, ôtô), đỗ (ôtô)"
+        },
+        {
+          "hiragana": "もちますI",
+          "kanji": "持ちます",
+          "hanViet": "TRÌ",
+          "meaning": "Mang, cầm"
+        },
+        {
+          "hiragana": "とりますI",
+          "kanji": "取ります",
+          "hanViet": "THỦ",
+          "meaning": "Lấy (muối)"
+        },
+        {
+          "hiragana": "てつだいますI",
+          "kanji": "手伝います",
+          "hanViet": "THỦ TRUYỀN",
+          "meaning": "Giúp đỡ (làm việc)"
+        },
+        {
+          "hiragana": "よびますI",
+          "kanji": "呼びます",
+          "hanViet": "HÔ",
+          "meaning": "Gọi (taxi, tên)"
+        },
+        {
+          "hiragana": "はなしますI",
+          "kanji": "話します",
+          "hanViet": "THOẠI",
+          "meaning": "Nói, nói chuyện"
+        },
+        {
+          "hiragana": "つかいますI",
+          "kanji": "使います",
+          "hanViet": "SỬ/SỨ",
+          "meaning": "Dùng, sử dụng"
+        },
+        {
+          "hiragana": "みせますII",
+          "kanji": "見せます",
+          "hanViet": "KIẾN",
+          "meaning": "Cho xem, trình"
+        },
+        {
+          "hiragana": "おしえますII [じゅうしょを～]",
+          "kanji": "教えます [住所を～]",
+          "hanViet": "GIÁO [TRÚ SỞ]",
+          "meaning": "Nói, chỉ cho biết [địa chỉ]"
+        },
+        {
+          "hiragana": "すわりますI",
+          "kanji": "座ります",
+          "hanViet": "TỌA",
+          "meaning": "Ngồi"
+        },
+        {
+          "hiragana": "たちますI",
+          "kanji": "立ちます",
+          "hanViet": "LẬP",
+          "meaning": "Đứng"
+        },
+        {
+          "hiragana": "はいりますI [きっさてんに]",
+          "kanji": "入ります [喫茶店に]",
+          "hanViet": "NHẬP [KHIẾT TRÀ ĐIẾM]",
+          "meaning": "Vào (quán giải khát)"
+        },
+        {
+          "hiragana": "でますII [きっさてんを]",
+          "kanji": "出ますII [喫茶店を]",
+          "hanViet": "XUẤT [KHIẾT TRÀ ĐIẾM]",
+          "meaning": "Ra khỏi (quán giải khát)"
+        },
+        {
+          "hiragana": "ふりますI [あめが～]",
+          "kanji": "降ります [雨が～]",
+          "hanViet": "GIÁNG [VŨ]",
+          "meaning": "[Mưa] rơi"
+        },
+        {
+          "hiragana": "コピーしますIII",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Copy"
+        },
+        {
+          "hiragana": "でんき",
+          "kanji": "電気",
+          "hanViet": "ĐIỆN KHÍ",
+          "meaning": "Điện, đèn điện"
+        },
+        {
+          "hiragana": "エアコン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Máy điều hòa"
+        },
+        {
+          "hiragana": "パスポート",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hộ chiếu"
+        },
+        {
+          "hiragana": "なまえ",
+          "kanji": "名前",
+          "hanViet": "DANH TIỀN",
+          "meaning": "Tên"
+        },
+        {
+          "hiragana": "じゅうしょ",
+          "kanji": "住所",
+          "hanViet": "TRÚ SỞ",
+          "meaning": "Địa chỉ"
+        },
+        {
+          "hiragana": "ちず",
+          "kanji": "地図",
+          "hanViet": "ĐỊA ĐỒ",
+          "meaning": "Bản đồ"
+        },
+        {
+          "hiragana": "しお",
+          "kanji": "塩",
+          "hanViet": "DIÊM",
+          "meaning": "Muối"
+        },
+        {
+          "hiragana": "さとう",
+          "kanji": "砂糖",
+          "hanViet": "SA ĐƯỜNG",
+          "meaning": "Đường"
+        },
+        {
+          "hiragana": "もんだい",
+          "kanji": "問題",
+          "hanViet": "VẤN ĐỀ",
+          "meaning": "Vấn đề, câu hỏi"
+        },
+        {
+          "hiragana": "こたえ",
+          "kanji": "答え",
+          "hanViet": "ĐÁP",
+          "meaning": "Câu trả lời"
+        },
+        {
+          "hiragana": "よみかた",
+          "kanji": "読み方",
+          "hanViet": "ĐỘC PHƯƠNG",
+          "meaning": "Cách đọc"
+        },
+        {
+          "hiragana": "～かた",
+          "kanji": "～方",
+          "hanViet": "PHƯƠNG",
+          "meaning": "Cách ~"
+        },
+        {
+          "hiragana": "まっすぐ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thẳng"
+        },
+        {
+          "hiragana": "ゆっくり",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chậm, thong thả, thoải mái"
+        },
+        {
+          "hiragana": "すぐ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ngay, lập tức"
+        },
+        {
+          "hiragana": "また",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Lại (~đến)"
+        },
+        {
+          "hiragana": "あとで",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Sau"
+        },
+        {
+          "hiragana": "もう すこし",
+          "kanji": "もう 少し",
+          "hanViet": "THIỂU",
+          "meaning": "Thêm một chút nữa"
+        },
+        {
+          "hiragana": "もう～",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thêm ～"
+        },
+        {
+          "hiragana": "さあ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thôi, nào, (dùng để thúc giục hoặc khuyến khích ai làm gì.)"
+        },
+        {
+          "hiragana": "あれ？",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ô! (câu cảm thán khi phát hiện hoặc thấy cái gì đó lạ, hoặc bất ngờ)"
+        },
+        {
+          "hiragana": "しんごう みぎ 信号 を右へ ま 曲がってください。",
+          "kanji": null,
+          "hanViet": "TÍN HIỆU HỮU KHÚC",
+          "meaning": "Anh/ Chị rẽ phải ở chỗ đèn tín hiệu."
+        },
+        {
+          "hiragana": "ねが これで お願いします 。",
+          "kanji": null,
+          "hanViet": "NGUYỆN",
+          "meaning": "Gởi anh tiền này."
+        },
+        {
+          "hiragana": "つ お釣り",
+          "kanji": null,
+          "hanViet": "ĐIẾU",
+          "meaning": "Tiền thừa"
+        },
+        {
+          "hiragana": "ちょう みどり町",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên thị trấn giả tưởng"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 15,
+      "title": "Bài 15",
+      "vocabularies": [
+        {
+          "hiragana": "おきますI",
+          "kanji": "置きます",
+          "hanViet": "TRÍ",
+          "meaning": "Đặt, để"
+        },
+        {
+          "hiragana": "つくりますI",
+          "kanji": "作ります 造ります",
+          "hanViet": "TÁC TẠO",
+          "meaning": "Làm, chế tạo, sản xuất"
+        },
+        {
+          "hiragana": "うりますI",
+          "kanji": "売ります",
+          "hanViet": "MẠI",
+          "meaning": "Bán"
+        },
+        {
+          "hiragana": "しりますI",
+          "kanji": "知ります",
+          "hanViet": "TRI",
+          "meaning": "Biết"
+        },
+        {
+          "hiragana": "すみますI",
+          "kanji": "住みます",
+          "hanViet": "TRÚ",
+          "meaning": "Sống, cư trú ở"
+        },
+        {
+          "hiragana": "けんきゅうしますIII",
+          "kanji": "研究します",
+          "hanViet": "NGHIÊN CỨU",
+          "meaning": "Nghiên cứu"
+        },
+        {
+          "hiragana": "しりょう",
+          "kanji": "資料",
+          "hanViet": "TƯ LIỆU",
+          "meaning": "Tài liệu, tư liệu"
+        },
+        {
+          "hiragana": "カタログ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ca-ta-lô"
+        },
+        {
+          "hiragana": "じこくひょう",
+          "kanji": "時刻表",
+          "hanViet": "THỜI KHẮC BIỂU",
+          "meaning": "Bảng giờ tàu chạy"
+        },
+        {
+          "hiragana": "ふく",
+          "kanji": "服",
+          "hanViet": "PHỤC",
+          "meaning": "Quần áo"
+        },
+        {
+          "hiragana": "せいひん",
+          "kanji": "製品",
+          "hanViet": "CHẾ PHẨM",
+          "meaning": "Sản phẩm"
+        },
+        {
+          "hiragana": "ソフト",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Phần mềm"
+        },
+        {
+          "hiragana": "でんしじしょ",
+          "kanji": "電子辞書",
+          "hanViet": "ĐIỆN TỬ TỪ THƯ",
+          "meaning": "Từ điển điện tử, kim từ điển"
+        },
+        {
+          "hiragana": "けいざい",
+          "kanji": "経済",
+          "hanViet": "KINH TẾ",
+          "meaning": "Kinh tế"
+        },
+        {
+          "hiragana": "しやくしょ",
+          "kanji": "市役所",
+          "hanViet": "THỊ DỊCH SỞ",
+          "meaning": "Văn phòng hành chính thành phố"
+        },
+        {
+          "hiragana": "こうこう",
+          "kanji": "高校",
+          "hanViet": "CAO HIỆU",
+          "meaning": "Trường phổ thông, cấp 3"
+        },
+        {
+          "hiragana": "はいしゃ",
+          "kanji": "歯医者",
+          "hanViet": "XỈ Y GIẢ",
+          "meaning": "Nha sĩ"
+        },
+        {
+          "hiragana": "どくしん",
+          "kanji": "独身",
+          "hanViet": "ĐỘC THÂN",
+          "meaning": "Độc thân"
+        },
+        {
+          "hiragana": "すみません",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Xin lỗi"
+        },
+        {
+          "hiragana": "みなさん",
+          "kanji": "皆さん",
+          "hanViet": "GIAI",
+          "meaning": "Mọi người ơi/ Thưa mọi người"
+        },
+        {
+          "hiragana": "おもいだしますI",
+          "kanji": "思い出します",
+          "hanViet": "TƯ XUẤT",
+          "meaning": "Nhớ lại, hồi tưởng"
+        },
+        {
+          "hiragana": "いらっしゃいますI",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thể kính trọng của「います」"
+        },
+        {
+          "hiragana": "にっぽんばし",
+          "kanji": "日本橋",
+          "hanViet": "NHẬT BẢN KIỀU",
+          "meaning": "Tên một khu phố buôn bán ở Osaka"
+        },
+        {
+          "hiragana": "みんなの インタビュー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên chương trình TV giả tưởng"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 16,
+      "title": "Bài 16",
+      "vocabularies": [
+        {
+          "hiragana": "のりますI [でんしゃに～]",
+          "kanji": "乗ります [電車に～]",
+          "hanViet": "THỪA [ĐIỆN XA]",
+          "meaning": "Đi, lên [tàu]"
+        },
+        {
+          "hiragana": "おりますII [でんしゃを～]",
+          "kanji": "降ります [電車を～]",
+          "hanViet": "GIÁNG [ĐIỆN XA]",
+          "meaning": "Xuống [tàu]"
+        },
+        {
+          "hiragana": "のりかえますII",
+          "kanji": "乗り換えます",
+          "hanViet": "THỪA HOÁN",
+          "meaning": "Chuyển, đổi (tàu, xe,…)"
+        },
+        {
+          "hiragana": "あびますII [シャワーを～]",
+          "kanji": "浴びます [シャワーを～]",
+          "hanViet": "DỤC",
+          "meaning": "Tắm [vòi hoa sen]"
+        },
+        {
+          "hiragana": "いれますII",
+          "kanji": "入れます",
+          "hanViet": "NHẬP",
+          "meaning": "Cho vào, bỏ vào"
+        },
+        {
+          "hiragana": "だしますI",
+          "kanji": "出します",
+          "hanViet": "XUẤT",
+          "meaning": "Lấy ra, rút, gửi"
+        },
+        {
+          "hiragana": "おろしますI [おかねを]",
+          "kanji": "下ろします [お金を]",
+          "hanViet": "HẠ [KIM]",
+          "meaning": "Rút (tiền)"
+        },
+        {
+          "hiragana": "はいりますI [だいがくに～]",
+          "kanji": "入ります [大学に～]",
+          "hanViet": "NHẬP [ĐẠI HỌC]",
+          "meaning": "Vào, nhập học [đại học]"
+        },
+        {
+          "hiragana": "でますII [だいがくを～]",
+          "kanji": "出ます [大学を～]",
+          "hanViet": "XUẤT [ĐẠI HỌC]",
+          "meaning": "Ra, tốt nghiệp [đại học]"
+        },
+        {
+          "hiragana": "おしますI",
+          "kanji": "押します",
+          "hanViet": "ÁP",
+          "meaning": "Bấm, ấn (nút)"
+        },
+        {
+          "hiragana": "のみますI",
+          "kanji": "飲みます",
+          "hanViet": "ẨM",
+          "meaning": "Uống"
+        },
+        {
+          "hiragana": "はじめますII",
+          "kanji": "始めます",
+          "hanViet": "THỦY",
+          "meaning": "Bắt đầu"
+        },
+        {
+          "hiragana": "けんがくしますIII",
+          "kanji": "見学します",
+          "hanViet": "KIẾN HỌC",
+          "meaning": "Kiến tập"
+        },
+        {
+          "hiragana": "でんわしますIII",
+          "kanji": "電話します",
+          "hanViet": "ĐIỆN THOẠI",
+          "meaning": "Gọi điện"
+        },
+        {
+          "hiragana": "わかい",
+          "kanji": "若い",
+          "hanViet": "NHƯỢC",
+          "meaning": "Trẻ"
+        },
+        {
+          "hiragana": "ながい",
+          "kanji": "長い",
+          "hanViet": "TRƯỜNG",
+          "meaning": "Dài"
+        },
+        {
+          "hiragana": "みじかい",
+          "kanji": "短い",
+          "hanViet": "ĐOẢN",
+          "meaning": "Ngắn"
+        },
+        {
+          "hiragana": "あかるい",
+          "kanji": "明るい",
+          "hanViet": "MINH",
+          "meaning": "Sáng"
+        },
+        {
+          "hiragana": "くらい",
+          "kanji": "暗い",
+          "hanViet": "ÁM",
+          "meaning": "Tối"
+        },
+        {
+          "hiragana": "からだ",
+          "kanji": "体",
+          "hanViet": "THỂ",
+          "meaning": "Người, cơ thể"
+        },
+        {
+          "hiragana": "あたま",
+          "kanji": "頭",
+          "hanViet": "ĐẦU",
+          "meaning": "Đầu"
+        },
+        {
+          "hiragana": "かみ",
+          "kanji": "髪",
+          "hanViet": "PHÁT",
+          "meaning": "Tóc"
+        },
+        {
+          "hiragana": "かお",
+          "kanji": "顔",
+          "hanViet": "NHAN",
+          "meaning": "Mặt"
+        },
+        {
+          "hiragana": "め",
+          "kanji": "目",
+          "hanViet": "MỤC",
+          "meaning": "Mắt"
+        },
+        {
+          "hiragana": "みみ",
+          "kanji": "耳",
+          "hanViet": "NHĨ",
+          "meaning": "Tai"
+        },
+        {
+          "hiragana": "はな",
+          "kanji": "鼻",
+          "hanViet": "TỊ",
+          "meaning": "Mũi"
+        },
+        {
+          "hiragana": "くち",
+          "kanji": "口",
+          "hanViet": "KHẨU",
+          "meaning": "Miệng"
+        },
+        {
+          "hiragana": "は",
+          "kanji": "歯",
+          "hanViet": "XỈ",
+          "meaning": "Răng"
+        },
+        {
+          "hiragana": "おなか",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bụng"
+        },
+        {
+          "hiragana": "あし",
+          "kanji": "足",
+          "hanViet": "TÚC",
+          "meaning": "Chân"
+        },
+        {
+          "hiragana": "せ",
+          "kanji": "背",
+          "hanViet": "BỐI",
+          "meaning": "せ たか Chiều cao (背が高い: cao)"
+        },
+        {
+          "hiragana": "サービス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Dịch vụ"
+        },
+        {
+          "hiragana": "ジョギング",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Việc chạy bộ (~をします: chạy bộ)"
+        },
+        {
+          "hiragana": "シャワー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vòi hoa sen"
+        },
+        {
+          "hiragana": "みどり",
+          "kanji": "緑",
+          "hanViet": "LỤC",
+          "meaning": "Màu xanh lá cây"
+        },
+        {
+          "hiragana": "[お]てら",
+          "kanji": "[お]寺",
+          "hanViet": "TỰ",
+          "meaning": "Chùa"
+        },
+        {
+          "hiragana": "じんじゃ",
+          "kanji": "神社",
+          "hanViet": "THẦN XÃ",
+          "meaning": "Đền thờ đạo thần"
+        },
+        {
+          "hiragana": "一ばん",
+          "kanji": "一番",
+          "hanViet": "PHIÊN",
+          "meaning": "Số ―"
+        },
+        {
+          "hiragana": "どうやって",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Làm thế nào ~"
+        },
+        {
+          "hiragana": "どの～",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "~ nào (Cái nào/Người nào, dùng với từ ba thứ trở lên)"
+        },
+        {
+          "hiragana": "どれ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái nào (dùng với từ ba thứ trở lên)"
+        },
+        {
+          "hiragana": "すごいですね。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thật là tuyệt vời!"
+        },
+        {
+          "hiragana": "[いいえ、] まだまだです。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "[Không] tôi còn kém lắm. (cách nói khiêm tốn khi ai đó khen)"
+        },
+        {
+          "hiragana": "おひきだしですか",
+          "kanji": "お引き出しですか",
+          "hanViet": "DẪN XUẤT",
+          "meaning": "Anh/ chị rút tiền ạ?"
+        },
+        {
+          "hiragana": "まず",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Trước hết, đầu tiên"
+        },
+        {
+          "hiragana": "つぎに",
+          "kanji": "次",
+          "hanViet": "THỨ",
+          "meaning": "Tiếp theo (sau đó)"
+        },
+        {
+          "hiragana": "キャッシュカード",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thẻ ngân hàng, thẻ ATM"
+        },
+        {
+          "hiragana": "あんしょうばんごう",
+          "kanji": "暗証番号",
+          "hanViet": "ÁM CHỨNG PHIÊN HIỆU",
+          "meaning": "Mã số bí mật (mật khẩu)"
+        },
+        {
+          "hiragana": "きんがく",
+          "kanji": "金額",
+          "hanViet": "KIM NGẠCH",
+          "meaning": "Số tiền, khoản tiền"
+        },
+        {
+          "hiragana": "かくにん",
+          "kanji": "確認",
+          "hanViet": "XÁC NHẬN",
+          "meaning": "Sự xác nhận, sự kiểm tra (～します： xác nhận)"
+        },
+        {
+          "hiragana": "ボタン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nút"
+        },
+        {
+          "hiragana": "ＪＲ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Công ty đường sắt Nhật Bản"
+        },
+        {
+          "hiragana": "ゆきまつ 雪祭り",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Lễ hội tuyết"
+        },
+        {
+          "hiragana": "バンドン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bandung (Indonesia)"
+        },
+        {
+          "hiragana": "フランケン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Franken (ở Đức)"
+        },
+        {
+          "hiragana": "ベラクルス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Veracruz (ở Mexico)"
+        },
+        {
+          "hiragana": "うめだ 梅田",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một khu phố ở Osaka"
+        },
+        {
+          "hiragana": "だいがくまえ 大学前",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một điểm dừng xe buýt (giả tưởng)"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 17,
+      "title": "Bài 17",
+      "vocabularies": [
+        {
+          "hiragana": "おぼえますII",
+          "kanji": "覚えます",
+          "hanViet": "GIÁC",
+          "meaning": "Nhớ"
+        },
+        {
+          "hiragana": "わすれますII",
+          "kanji": "忘れます",
+          "hanViet": "VONG",
+          "meaning": "Quên"
+        },
+        {
+          "hiragana": "なくしますI",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Mất, đánh mất"
+        },
+        {
+          "hiragana": "はらいますI",
+          "kanji": "払います",
+          "hanViet": "PHẤT",
+          "meaning": "Trả tiền"
+        },
+        {
+          "hiragana": "かえしますI",
+          "kanji": "返します",
+          "hanViet": "PHẢN",
+          "meaning": "Trả lại"
+        },
+        {
+          "hiragana": "でかけますII",
+          "kanji": "出かけます",
+          "hanViet": "XUẤT",
+          "meaning": "Ra ngoài"
+        },
+        {
+          "hiragana": "ぬぎますI",
+          "kanji": "脱ぎます",
+          "hanViet": "THOÁT",
+          "meaning": "Cởi (quần áo, giầy)"
+        },
+        {
+          "hiragana": "もっていきますI",
+          "kanji": "持って行きます",
+          "hanViet": "TRÌ HÀNH",
+          "meaning": "Mang đi, mang theo"
+        },
+        {
+          "hiragana": "もってきますIII",
+          "kanji": "持って来ます",
+          "hanViet": "TRÌ LAI",
+          "meaning": "Mang đến"
+        },
+        {
+          "hiragana": "しんぱいしますIII",
+          "kanji": "心配します",
+          "hanViet": "TÂM PHỐI",
+          "meaning": "Lo lắng"
+        },
+        {
+          "hiragana": "ざんぎょうしますIII",
+          "kanji": "残業します",
+          "hanViet": "TÀN NGHIỆP",
+          "meaning": "Làm thêm, làm quá giờ"
+        },
+        {
+          "hiragana": "しゅっちょうしますIII",
+          "kanji": "出張します",
+          "hanViet": "XUẤT TRƯƠNG",
+          "meaning": "Đi công tác"
+        },
+        {
+          "hiragana": "のみますI [くすりを～]",
+          "kanji": "飲みます [薬を～]",
+          "hanViet": "ẨM [DƯỢC]",
+          "meaning": "Uống [thuốc]"
+        },
+        {
+          "hiragana": "はいりますI [おふろに～]",
+          "kanji": "入ります [おふろに～]",
+          "hanViet": "NHẬP",
+          "meaning": "Tắm bồn [vào bồn tắm]"
+        },
+        {
+          "hiragana": "たいせつ[な]",
+          "kanji": "大切[な]",
+          "hanViet": "ĐẠI THIẾT",
+          "meaning": "Quan trọng, quý giá"
+        },
+        {
+          "hiragana": "だいじょうぶ[な]",
+          "kanji": "大丈夫[な]",
+          "hanViet": "ĐẠI TRƯỢNG PHU",
+          "meaning": "Không sao, không vấn đề gì"
+        },
+        {
+          "hiragana": "あぶない",
+          "kanji": "危ない",
+          "hanViet": "NGUY",
+          "meaning": "Nguy hiểm"
+        },
+        {
+          "hiragana": "きんえん",
+          "kanji": "禁煙",
+          "hanViet": "CẤM YÊN",
+          "meaning": "Cấm hút thuốc"
+        },
+        {
+          "hiragana": "[けんこう] ほけんしょう",
+          "kanji": "[健康] 保険証",
+          "hanViet": "[KIỆN KHANG] BẢO HIỂM CHỨNG",
+          "meaning": "Thẻ bảo hiểm [y tế]"
+        },
+        {
+          "hiragana": "ねつ",
+          "kanji": "熱",
+          "hanViet": "NHIỆT",
+          "meaning": "Sốt"
+        },
+        {
+          "hiragana": "びょうき",
+          "kanji": "病気",
+          "hanViet": "BỆNH KHÍ",
+          "meaning": "Ốm, bệnh"
+        },
+        {
+          "hiragana": "くすり",
+          "kanji": "薬",
+          "hanViet": "DƯỢC",
+          "meaning": "Thuốc"
+        },
+        {
+          "hiragana": "[お]ふろ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bồn tắm"
+        },
+        {
+          "hiragana": "うわぎ",
+          "kanji": "上着",
+          "hanViet": "THƯỢNG TRƯỚC",
+          "meaning": "Áo khoác"
+        },
+        {
+          "hiragana": "したぎ",
+          "kanji": "下着",
+          "hanViet": "HẠ TRƯỚC",
+          "meaning": "Quần áo lót"
+        },
+        {
+          "hiragana": "2、3にち",
+          "kanji": "2、3 日",
+          "hanViet": "NHẬT",
+          "meaning": "Vài ngày"
+        },
+        {
+          "hiragana": "2、3 ～",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vài~ (“~” là hậu tố chỉ cách đếm)"
+        },
+        {
+          "hiragana": "～までに",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Trước ~ (chỉ thời hạn)"
+        },
+        {
+          "hiragana": "ですから",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vì thế, vì vậy, do đó"
+        },
+        {
+          "hiragana": "どうしましたか。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Có vần đề gì?/Anh/chị bị làm sao?"
+        },
+        {
+          "hiragana": "のど",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Họng"
+        },
+        {
+          "hiragana": "いた [～が]痛いです。",
+          "kanji": null,
+          "hanViet": "THỐNG",
+          "meaning": "Tôi bị đau (ở~)."
+        },
+        {
+          "hiragana": "かぜ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bị cảm, cúm"
+        },
+        {
+          "hiragana": "それから",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Và, sau đó"
+        },
+        {
+          "hiragana": "だいじ お大事に。",
+          "kanji": null,
+          "hanViet": "ĐẠI SỰ",
+          "meaning": "Anh/chị nhớ giữ gìn sức khỏe. (câu nói với người ốm hoặc bị bệnh)"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 18,
+      "title": "Bài 18",
+      "vocabularies": [
+        {
+          "hiragana": "できます II",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Có thể"
+        },
+        {
+          "hiragana": "あらいますI",
+          "kanji": "洗います",
+          "hanViet": "TẨY",
+          "meaning": "Rửa"
+        },
+        {
+          "hiragana": "ひきます I",
+          "kanji": "弾きます",
+          "hanViet": "ĐÀN, ĐẠN",
+          "meaning": "Chơi (nhạc cụ)"
+        },
+        {
+          "hiragana": "うたいますI",
+          "kanji": "歌います",
+          "hanViet": "CA",
+          "meaning": "Hát"
+        },
+        {
+          "hiragana": "あつめますII",
+          "kanji": "集めます",
+          "hanViet": "TẬP",
+          "meaning": "Sưu tầm, thu thập"
+        },
+        {
+          "hiragana": "すてますII",
+          "kanji": "捨てます",
+          "hanViet": "XẢ",
+          "meaning": "Vứt, bỏ đi"
+        },
+        {
+          "hiragana": "かえますII",
+          "kanji": "換えます",
+          "hanViet": "HOÁN",
+          "meaning": "Đổi"
+        },
+        {
+          "hiragana": "うんてんしますIII",
+          "kanji": "運転します",
+          "hanViet": "VẬN CHUYỂN",
+          "meaning": "Lái xe"
+        },
+        {
+          "hiragana": "よやくしますIII",
+          "kanji": "予約します",
+          "hanViet": "DỰ ƯỚC",
+          "meaning": "Đặt chỗ, đặt trước"
+        },
+        {
+          "hiragana": "ピアノ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Đàn Piano"
+        },
+        {
+          "hiragana": "～メートル",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "― Mét"
+        },
+        {
+          "hiragana": "げんきん",
+          "kanji": "現金",
+          "hanViet": "HIỆN KIM",
+          "meaning": "Tiền mặt"
+        },
+        {
+          "hiragana": "しゅみ",
+          "kanji": "趣味",
+          "hanViet": "THÚ VỊ",
+          "meaning": "Sở thích, thú vui"
+        },
+        {
+          "hiragana": "にっき",
+          "kanji": "日記",
+          "hanViet": "NHẬT KÝ",
+          "meaning": "Nhật ký"
+        },
+        {
+          "hiragana": "[お]いのり",
+          "kanji": "[お]祈り",
+          "hanViet": "KỲ",
+          "meaning": "Việc cầu nguyện (～をします：cầu nguyện)"
+        },
+        {
+          "hiragana": "かちょう",
+          "kanji": "課長",
+          "hanViet": "KHÓA TRƯỞNG",
+          "meaning": "Tổ trưởng"
+        },
+        {
+          "hiragana": "ぶちょう",
+          "kanji": "部長",
+          "hanViet": "BỘ TRƯỞNG",
+          "meaning": "Trưởng phòng"
+        },
+        {
+          "hiragana": "しゃちょう",
+          "kanji": "社長",
+          "hanViet": "XÃ TRƯỞNG",
+          "meaning": "Giám đốc"
+        },
+        {
+          "hiragana": "どうぶつ",
+          "kanji": "動物",
+          "hanViet": "ĐỘNG VẬT",
+          "meaning": "Động vật"
+        },
+        {
+          "hiragana": "うま",
+          "kanji": "馬",
+          "hanViet": "MÃ",
+          "meaning": "Ngựa"
+        },
+        {
+          "hiragana": "インターネット",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Internet"
+        },
+        {
+          "hiragana": "とくに",
+          "kanji": "特に",
+          "hanViet": "ĐẶC",
+          "meaning": "Đặc biệt"
+        },
+        {
+          "hiragana": "へえ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thế à! (dùng để biểu thị sự ngạc nhiên hoặc quan tâm)"
+        },
+        {
+          "hiragana": "それは おもしろいですね。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Hay thật nhỉ."
+        },
+        {
+          "hiragana": "なかなか",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Khó mà~, không dễ, mãi mà (dùng với thể phủ định)"
+        },
+        {
+          "hiragana": "ほんとうですか。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thật không ạ?"
+        },
+        {
+          "hiragana": "ぜひ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhất định, thực sự"
+        },
+        {
+          "hiragana": "ふるさと 故郷",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên bài hát"
+        },
+        {
+          "hiragana": "ビートルズ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Beatles, một nhóm nhạc nổi tiếng"
+        },
+        {
+          "hiragana": "あきはばら 秋葉原",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một quận ở Tokyo"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 19,
+      "title": "Bài 19",
+      "vocabularies": [
+        {
+          "hiragana": "のぼりますI [やまに～]",
+          "kanji": "登ります [山に～]",
+          "hanViet": "ĐĂNG [SƠN]",
+          "meaning": "Leo [núi]"
+        },
+        {
+          "hiragana": "とまりますI [ホテルに～]",
+          "kanji": "泊まります [ホテルに～]",
+          "hanViet": "BẠC",
+          "meaning": "Trọ [ở khách sạn]"
+        },
+        {
+          "hiragana": "そうじしますIII",
+          "kanji": "掃除します",
+          "hanViet": "TẢO TRỪ",
+          "meaning": "Dọn vệ sinh"
+        },
+        {
+          "hiragana": "せんたくしますIII",
+          "kanji": "洗濯します",
+          "hanViet": "TẨY TRẠC",
+          "meaning": "Giặt giũ"
+        },
+        {
+          "hiragana": "れんしゅうしますIII",
+          "kanji": "練習します",
+          "hanViet": "LUYỆN TẬP",
+          "meaning": "Luyện tập, thực hành"
+        },
+        {
+          "hiragana": "なりますI",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Trở thành, trở nên"
+        },
+        {
+          "hiragana": "ねむい",
+          "kanji": "眠い",
+          "hanViet": "MIÊN",
+          "meaning": "Buồn ngủ"
+        },
+        {
+          "hiragana": "つよい",
+          "kanji": "強い",
+          "hanViet": "CƯỜNG",
+          "meaning": "Mạnh"
+        },
+        {
+          "hiragana": "よわい",
+          "kanji": "弱い",
+          "hanViet": "NHƯỢC",
+          "meaning": "Yếu"
+        },
+        {
+          "hiragana": "れんしゅう",
+          "kanji": "練習",
+          "hanViet": "LUYỆN TẬP",
+          "meaning": "Sự luyện tập"
+        },
+        {
+          "hiragana": "ゴルフ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Golf (～をします: chơi golf)"
+        },
+        {
+          "hiragana": "すもう",
+          "kanji": "相撲",
+          "hanViet": "TƯƠNG PHÁC",
+          "meaning": "Vật Sumo"
+        },
+        {
+          "hiragana": "おちゃ",
+          "kanji": "お茶",
+          "hanViet": "TRÀ",
+          "meaning": "Trà"
+        },
+        {
+          "hiragana": "ひ",
+          "kanji": "日",
+          "hanViet": "NHẬT",
+          "meaning": "Ngày"
+        },
+        {
+          "hiragana": "ちょうし",
+          "kanji": "調子",
+          "hanViet": "ĐIỀU TỬ",
+          "meaning": "Tình trạng, trạng thái"
+        },
+        {
+          "hiragana": "いちども",
+          "kanji": "一度も",
+          "hanViet": "NHẤT ĐỘ",
+          "meaning": "Chưa lần nào"
+        },
+        {
+          "hiragana": "だんだん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Dần dần"
+        },
+        {
+          "hiragana": "もうすぐ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Sắp"
+        },
+        {
+          "hiragana": "おかげさまで",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhờ ơn anh/chị mà, nhờ ơn trời (dùng bày tỏ sự cám ơn khi nhận được sự giúp đỡ của ai đó)"
+        },
+        {
+          "hiragana": "でも",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhưng"
+        },
+        {
+          "hiragana": "かんぱい",
+          "kanji": "乾杯",
+          "hanViet": "CAN BỘI",
+          "meaning": "Nâng cốc/Cạn chén"
+        },
+        {
+          "hiragana": "ダイエット",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Việc ăn kiêng, chế độ giảm cân (～をします: ăn kiêng)"
+        },
+        {
+          "hiragana": "むり「な」",
+          "kanji": "無理[な]",
+          "hanViet": "VÔ LÝ",
+          "meaning": "Không thể, quá sức"
+        },
+        {
+          "hiragana": "からだに いい",
+          "kanji": "体にいい",
+          "hanViet": "THỂ",
+          "meaning": "Tốt cho sức khỏe"
+        },
+        {
+          "hiragana": "とうきょう 東京スカイツリー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tháp Tokyo"
+        },
+        {
+          "hiragana": "かつしかほくさい",
+          "kanji": "葛飾北斎",
+          "hanViet": null,
+          "meaning": "Katsushika Hokusai (1760-1849), một họa sĩ nổi tiếng thời Edo"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 20,
+      "title": "Bài 20",
+      "vocabularies": [
+        {
+          "hiragana": "いりますI [ビザが～]",
+          "kanji": "要ります [ビザが]",
+          "hanViet": "YẾU",
+          "meaning": "Cần [thị thực (visa)]"
+        },
+        {
+          "hiragana": "しらべますII",
+          "kanji": "調べます",
+          "hanViet": "ĐIỀU",
+          "meaning": "Tìm hiểu, điều tra"
+        },
+        {
+          "hiragana": "しゅうりしますIII",
+          "kanji": "修理します",
+          "hanViet": "TU LÝ",
+          "meaning": "Sửa chữa, tu sửa"
+        },
+        {
+          "hiragana": "ぼく",
+          "kanji": "僕",
+          "hanViet": "BỘC/PHÓ",
+          "meaning": "Tớ (cách xưng thân mật của nam giới, cùng nghĩa với [わたし] )"
+        },
+        {
+          "hiragana": "きみ",
+          "kanji": "君",
+          "hanViet": "QUÂN",
+          "meaning": "Cậu, bạn (cách gọi thân mật, cùng nghĩa với 「あなた」)"
+        },
+        {
+          "hiragana": "～くん",
+          "kanji": "～君",
+          "hanViet": "QUÂN",
+          "meaning": "Anh~, cậu~ (cách gọi thân mật dùng cho nam giới, cùng nghĩa với 「～さん」)"
+        },
+        {
+          "hiragana": "うん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ừ (cách nói thân mật của「はい」)"
+        },
+        {
+          "hiragana": "ううん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Không (cách nói thân mật của「いいえ」)"
+        },
+        {
+          "hiragana": "きもの",
+          "kanji": "着物",
+          "hanViet": "TRƯỚC VẬT",
+          "meaning": "Kimono (trang phục truyền thống của Nhật Bản)"
+        },
+        {
+          "hiragana": "ビザ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thị thực, Visa"
+        },
+        {
+          "hiragana": "げんきん",
+          "kanji": "現金",
+          "hanViet": "HIỆN KIM",
+          "meaning": "Tiền mặt"
+        },
+        {
+          "hiragana": "はじめ",
+          "kanji": "始め",
+          "hanViet": "THỦY",
+          "meaning": "Ban đầu, đầu tiên"
+        },
+        {
+          "hiragana": "おわり",
+          "kanji": "終わり",
+          "hanViet": "CHUNG",
+          "meaning": "Kết thúc"
+        },
+        {
+          "hiragana": "こっち",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Phía này, chỗ này (cách nói thân mật của 「こちら」)"
+        },
+        {
+          "hiragana": "そっち",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Phía đó, chỗ đó (cách nói thân mật của 「そちら」)"
+        },
+        {
+          "hiragana": "あっち",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Phía kia, chỗ kia (cách nói thân mật của 「あちら」)"
+        },
+        {
+          "hiragana": "どっち",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái nào, phía nào, đâu (cách nói thân mật của 「どちら」)"
+        },
+        {
+          "hiragana": "みんなで",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Mọi người cùng"
+        },
+        {
+          "hiragana": "～けど",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhưng (cách nói thân mật của 「が」)"
+        },
+        {
+          "hiragana": "おなかが いっぱいです。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tôi no rồi."
+        },
+        {
+          "hiragana": "よかったら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nếu anh/chị thích thì"
+        },
+        {
+          "hiragana": "いろいろ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhiều thứ"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 21,
+      "title": "Bài 21",
+      "vocabularies": [
+        {
+          "hiragana": "おもいますI",
+          "kanji": "思います",
+          "hanViet": "TƯ",
+          "meaning": "Nghĩ, nghĩ rằng, cho rằng"
+        },
+        {
+          "hiragana": "いいますI",
+          "kanji": "言います",
+          "hanViet": "NGÔN",
+          "meaning": "Nói"
+        },
+        {
+          "hiragana": "かちます I",
+          "kanji": "勝ちます",
+          "hanViet": "THẮNG",
+          "meaning": "Thắng, chiến thắng"
+        },
+        {
+          "hiragana": "まけます II",
+          "kanji": "負けます",
+          "hanViet": "PHỤ",
+          "meaning": "Thua"
+        },
+        {
+          "hiragana": "ありますI [おまつりが～]",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "(lễ hội) được tổ chức"
+        },
+        {
+          "hiragana": "やくに たちますI",
+          "kanji": "役に 立ちます",
+          "hanViet": "DỊCH LẬP",
+          "meaning": "Có ích, có lợi"
+        },
+        {
+          "hiragana": "うごきますI",
+          "kanji": "動きます",
+          "hanViet": "ĐỘNG",
+          "meaning": "Hoạt động (máy), cử động"
+        },
+        {
+          "hiragana": "やめますII [かいしゃを]",
+          "kanji": "[会社を]",
+          "hanViet": "HỘI XÃ",
+          "meaning": "Nghỉ việc"
+        },
+        {
+          "hiragana": "きを つけますII",
+          "kanji": "気を つけます",
+          "hanViet": "KHÍ",
+          "meaning": "Chú ý, cẩn thận"
+        },
+        {
+          "hiragana": "りゅうがくしますIII",
+          "kanji": "留学します",
+          "hanViet": "LƯU HỌC",
+          "meaning": "Du học"
+        },
+        {
+          "hiragana": "むだ「な」",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Vô ích, lãng phí"
+        },
+        {
+          "hiragana": "ふべん「な」",
+          "kanji": "不便「な」",
+          "hanViet": "BẤT TIỆN",
+          "meaning": "Bất tiện"
+        },
+        {
+          "hiragana": "すごい",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Ghê, giỏi, khủng khiếp! (biểu lộ sự ngạc nhiên, thán phục)"
+        },
+        {
+          "hiragana": "ほんとう",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Sự thật"
+        },
+        {
+          "hiragana": "うそ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nói dối"
+        },
+        {
+          "hiragana": "じどうしゃ",
+          "kanji": "自動車",
+          "hanViet": "TỰ ĐỘNG XA",
+          "meaning": "Ô tô"
+        },
+        {
+          "hiragana": "こうつう",
+          "kanji": "交通",
+          "hanViet": "GIAO THÔNG",
+          "meaning": "Giao thông"
+        },
+        {
+          "hiragana": "ぶっか",
+          "kanji": "物価",
+          "hanViet": "VẬT GIÁ",
+          "meaning": "Vật giá, giá cả"
+        },
+        {
+          "hiragana": "ほうそう",
+          "kanji": "放送",
+          "hanViet": "PHÓNG TỐNG",
+          "meaning": "Phát thanh, phát sóng"
+        },
+        {
+          "hiragana": "ニュース",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bản tin, tin tức"
+        },
+        {
+          "hiragana": "アニメ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Anime (phim hoạt hình Nhật Bản)"
+        },
+        {
+          "hiragana": "マンガ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Truyện tranh"
+        },
+        {
+          "hiragana": "デザイン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thiết kế"
+        },
+        {
+          "hiragana": "ゆめ",
+          "kanji": "夢",
+          "hanViet": "MỘNG",
+          "meaning": "Giấc mơ"
+        },
+        {
+          "hiragana": "しあい",
+          "kanji": "試合",
+          "hanViet": "THÍ HỢP",
+          "meaning": "Trận đấu"
+        },
+        {
+          "hiragana": "てんさい",
+          "kanji": "天才",
+          "hanViet": "THIÊN TÀI",
+          "meaning": "Thiên tài"
+        },
+        {
+          "hiragana": "いけん",
+          "kanji": "意見",
+          "hanViet": "Ý KIẾN",
+          "meaning": "Ý kiến"
+        },
+        {
+          "hiragana": "はなし",
+          "kanji": "話",
+          "hanViet": "THOẠI",
+          "meaning": "Câu chuyện"
+        },
+        {
+          "hiragana": "ちきゅう",
+          "kanji": "地球",
+          "hanViet": "ĐỊA CẦU",
+          "meaning": "Trái đất"
+        },
+        {
+          "hiragana": "つき",
+          "kanji": "月",
+          "hanViet": "NGUYỆT",
+          "meaning": "Mặt trăng"
+        },
+        {
+          "hiragana": "さいきん",
+          "kanji": "最近",
+          "hanViet": "TỐI CẬN",
+          "meaning": "Gần đây"
+        },
+        {
+          "hiragana": "たぶん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Có lẽ, chắc là"
+        },
+        {
+          "hiragana": "きっと",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chắc chắn"
+        },
+        {
+          "hiragana": "ほんとうに",
+          "kanji": "本当に",
+          "hanViet": "BẢN ĐƯƠNG",
+          "meaning": "Thật là, quả thật, đúng là"
+        },
+        {
+          "hiragana": "そんなに",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Không ~ lắm"
+        },
+        {
+          "hiragana": "～について",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Về ~"
+        },
+        {
+          "hiragana": "ひさしぶりですね。",
+          "kanji": "久しぶりですね",
+          "hanViet": "CỬU",
+          "meaning": "Lâu ngày không gặp nhỉ"
+        },
+        {
+          "hiragana": "～でも のみませんか。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Anh uống ~ gì đó nhé"
+        },
+        {
+          "hiragana": "もちろん",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tất nhiên"
+        },
+        {
+          "hiragana": "もう かえらないと。",
+          "kanji": "もう帰らないと",
+          "hanViet": "QUY",
+          "meaning": "Tôi phải về rồi."
+        },
+        {
+          "hiragana": "アインシュタイン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Albert Einstein (1879 – 1955)"
+        },
+        {
+          "hiragana": "ガガーリン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Yuri Alekseyevich Gagarin (1934 – 1968)"
+        },
+        {
+          "hiragana": "ガリレオ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Galileo Galilei (1564 – 1642)"
+        },
+        {
+          "hiragana": "ぼく し キング牧師",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Martin Luther King, Jr (1929 – 1968)"
+        },
+        {
+          "hiragana": "フランクリン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Benjamin Franklin (1706 – 1790)"
+        },
+        {
+          "hiragana": "ひめ かぐや姫",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Công chúa Kaguya (nhân vật trong truyện dân gian Nhật Bản “Nàng tiên trong ống tre”)"
+        },
+        {
+          "hiragana": "てんじんまつ 天神祭り",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Lễ hội Tenjin ở Osaka"
+        },
+        {
+          "hiragana": "よしのやま 吉野山",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Núi Yoshino ở Nara"
+        },
+        {
+          "hiragana": "カソガルー",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chuột túi"
+        },
+        {
+          "hiragana": "チャプテン・クック",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thuyền trưởng James Cook(1728- 1779)"
+        },
+        {
+          "hiragana": "ヨーネン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tên một công ty giả tưởng"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 22,
+      "title": "Bài 22",
+      "vocabularies": [
+        {
+          "hiragana": "きますII 「シャツを～」",
+          "kanji": "着ます",
+          "hanViet": "TRƯỚC",
+          "meaning": "Mặc (áo sơ mi…)"
+        },
+        {
+          "hiragana": "はきますI 「くつを～」",
+          "kanji": "履きます",
+          "hanViet": "LÝ",
+          "meaning": "Mặc (quần), xỏ (giầy, dép...)"
+        },
+        {
+          "hiragana": "かぶりますI 「ぼうしを～」",
+          "kanji": "被ります",
+          "hanViet": "BỊ",
+          "meaning": "Đội (mũ)"
+        },
+        {
+          "hiragana": "かけますII 「めがねを～」",
+          "kanji": "掛けます",
+          "hanViet": "QUẢI",
+          "meaning": "Đeo (kính)"
+        },
+        {
+          "hiragana": "しますIII [ネクタイを～]",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thắt (cà vạt)"
+        },
+        {
+          "hiragana": "うまれますII",
+          "kanji": "生まれます",
+          "hanViet": "SINH",
+          "meaning": "Được sinh ra"
+        },
+        {
+          "hiragana": "わたしたち",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Chúng ta, chúng tôi"
+        },
+        {
+          "hiragana": "コート",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Áo choàng ngoài"
+        },
+        {
+          "hiragana": "セーター",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Áo len"
+        },
+        {
+          "hiragana": "スーツ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bộ com lê"
+        },
+        {
+          "hiragana": "ぼうし",
+          "kanji": "帽子",
+          "hanViet": "MẠO TỬ",
+          "meaning": "Mũ"
+        },
+        {
+          "hiragana": "めがね",
+          "kanji": "眼鏡",
+          "hanViet": "NHÃN KÍNH",
+          "meaning": "Kính"
+        },
+        {
+          "hiragana": "ケーキ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Bánh kem"
+        },
+        {
+          "hiragana": "[お] べんとう",
+          "kanji": "弁当",
+          "hanViet": "BIỆN ĐƯƠNG",
+          "meaning": "Cơm hộp"
+        },
+        {
+          "hiragana": "ロボット",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Robot"
+        },
+        {
+          "hiragana": "ユーモア",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tính hài hước"
+        },
+        {
+          "hiragana": "つごう ［～がいい］ ［～がわるい］",
+          "kanji": "都合",
+          "hanViet": "ĐÔ HỢP",
+          "meaning": "Tình huống; hoàn cảnh thuận lợi để hẹn gặp (thời gian, sức khoẻ...)"
+        },
+        {
+          "hiragana": "よく",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thường, rất, hay"
+        },
+        {
+          "hiragana": "えーと",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "À, để tôi xem… (một chút ngập ngừng)"
+        },
+        {
+          "hiragana": "おめでとう [ございます]。",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Xin chúc mừng. (dùng trong các dịp như sinh nhật, đám cưới hay năm mới,…)"
+        },
+        {
+          "hiragana": "おさがしですか。",
+          "kanji": "お探しですか",
+          "hanViet": "THÁM",
+          "meaning": "Anh chị tìm gì thế ạ?"
+        },
+        {
+          "hiragana": "では",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Thế thì, thế là"
+        },
+        {
+          "hiragana": "こちら",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cái này (cách nói lịch sự của これ)"
+        },
+        {
+          "hiragana": "やちん",
+          "kanji": "家賃",
+          "hanViet": "GIA NHẪM",
+          "meaning": "Tiền thuê nhà"
+        },
+        {
+          "hiragana": "ダイニングキッチン",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nhà bếp kiêm phòng ăn"
+        },
+        {
+          "hiragana": "わしつ",
+          "kanji": "和室",
+          "hanViet": "HÒA THẤT",
+          "meaning": "Phòng kiểu nhật"
+        },
+        {
+          "hiragana": "おしいれ",
+          "kanji": "押し入れ",
+          "hanViet": "ÁP NHẬP",
+          "meaning": "Chỗ để chăn gối trong phòng kiểu Nhật"
+        },
+        {
+          "hiragana": "ふとん",
+          "kanji": "布団",
+          "hanViet": "BỐ ĐOÀN",
+          "meaning": "Chăn, đệm kiểu Nhật"
+        },
+        {
+          "hiragana": "パリ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Paris"
+        },
+        {
+          "hiragana": "ばんりのちょうじょう",
+          "kanji": "万里の長城",
+          "hanViet": "VẠN LÝ TRƯỜNG THÀNH",
+          "meaning": "Vạn lý trường thành"
+        },
+        {
+          "hiragana": "みんなの アンケート",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Tiêu đề của bản điều tra giả tưởng"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 23,
+      "title": "Bài 23",
+      "vocabularies": [
+        {
+          "hiragana": "ききますI [せんせいに～]",
+          "kanji": "聞きます [先生に]",
+          "hanViet": "VĂN [TIÊN SINH]",
+          "meaning": "Hỏi (thầy cô giáo)"
+        },
+        {
+          "hiragana": "まわしますI",
+          "kanji": "回します",
+          "hanViet": "HỒI",
+          "meaning": "Vặn, xoay"
+        },
+        {
+          "hiragana": "ひきますI",
+          "kanji": "引きます",
+          "hanViet": "DẪN",
+          "meaning": "Kéo"
+        },
+        {
+          "hiragana": "かえますII",
+          "kanji": "変えます",
+          "hanViet": "BIẾN",
+          "meaning": "Đổi"
+        },
+        {
+          "hiragana": "さわりますI [ドアに]",
+          "kanji": "触ります",
+          "hanViet": "XÚC",
+          "meaning": "Sờ, chạm (sờ vào cửa)"
+        },
+        {
+          "hiragana": "でますII [おつりが～]",
+          "kanji": "出ます [お釣りが～]",
+          "hanViet": "XUẤT [ĐIẾU]",
+          "meaning": "(Tiền thừa) ra"
+        },
+        {
+          "hiragana": "あるきますI [みちを～]",
+          "kanji": "歩きます [道を～]",
+          "hanViet": "BỘ ĐẠO",
+          "meaning": "Đi bộ (trên đường)"
+        },
+        {
+          "hiragana": "わたりますI [はしを～]",
+          "kanji": "渡ります [橋を]",
+          "hanViet": "ĐỘ KIỀU",
+          "meaning": "Băng qua (cầu)"
+        },
+        {
+          "hiragana": "まがりますI [みぎへ～]",
+          "kanji": "曲がります [右へ]",
+          "hanViet": "KHÚC HỮU",
+          "meaning": "Rẽ (bên phải )"
+        },
+        {
+          "hiragana": "さびしい",
+          "kanji": "寂しい",
+          "hanViet": "TỊCH",
+          "meaning": "Buồn, cô đơn"
+        },
+        {
+          "hiragana": "[お]ゆ",
+          "kanji": "[お]湯",
+          "hanViet": "THANG",
+          "meaning": "Nước sôi, nước nóng"
+        },
+        {
+          "hiragana": "おと",
+          "kanji": "音",
+          "hanViet": "ÂM",
+          "meaning": "Tiếng, âm thanh"
+        },
+        {
+          "hiragana": "サイズ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Size, kích cỡ, kích thước"
+        },
+        {
+          "hiragana": "こしょう",
+          "kanji": "故障",
+          "hanViet": "CỐ CHƯỚNG",
+          "meaning": "Hỏng, sự cố"
+        },
+        {
+          "hiragana": "みち",
+          "kanji": "道",
+          "hanViet": "ĐẠO",
+          "meaning": "Đường"
+        },
+        {
+          "hiragana": "こうさてん",
+          "kanji": "交差点",
+          "hanViet": "GIAO SAI ĐIỂM",
+          "meaning": "Ngã tư"
+        },
+        {
+          "hiragana": "しんごう",
+          "kanji": "信号",
+          "hanViet": "TÍN HIỆU",
+          "meaning": "Đèn giao thông"
+        },
+        {
+          "hiragana": "かど",
+          "kanji": "角",
+          "hanViet": "GIÁC",
+          "meaning": "Góc"
+        },
+        {
+          "hiragana": "はし",
+          "kanji": "橋",
+          "hanViet": "KIỀU",
+          "meaning": "Cầu"
+        },
+        {
+          "hiragana": "ちゅうしゃじょう",
+          "kanji": "駐車場",
+          "hanViet": "TRÚ XA TRƯỜNG",
+          "meaning": "Bãi đỗ xe"
+        },
+        {
+          "hiragana": "たてもの",
+          "kanji": "建物",
+          "hanViet": "KIẾN VẬT",
+          "meaning": "Tòa nhà"
+        },
+        {
+          "hiragana": "なんかいも",
+          "kanji": "何回も",
+          "hanViet": "HÀ HỒI",
+          "meaning": "Nhiều lần"
+        },
+        {
+          "hiragana": "―め",
+          "kanji": "―目",
+          "hanViet": "MỤC",
+          "meaning": "Thứ ~ (biểu thị thứ tự)"
+        },
+        {
+          "hiragana": "しょうとくたいし",
+          "kanji": "聖徳太子",
+          "hanViet": null,
+          "meaning": "Thái tử Shotoku (574 – 622)"
+        },
+        {
+          "hiragana": "ほうりゅうじ",
+          "kanji": "法隆寺",
+          "hanViet": null,
+          "meaning": "Chùa Horyu-ji (một ngôi chùa ở Nara do hoàng tử Shotoku xây vào thế kỷ 7)"
+        },
+        {
+          "hiragana": "げんきちゃ",
+          "kanji": "元気茶",
+          "hanViet": null,
+          "meaning": "Tên một loại trà giả tưởng"
+        },
+        {
+          "hiragana": "ほんだえき",
+          "kanji": "本田駅",
+          "hanViet": null,
+          "meaning": "Tên một nhà ga giả tưởng"
+        },
+        {
+          "hiragana": "としょかんまえ",
+          "kanji": "図書館前",
+          "hanViet": null,
+          "meaning": "Tên một bến xe buýt giả tưởng"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 24,
+      "title": "Bài 24",
+      "vocabularies": [
+        {
+          "hiragana": "くれますII",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cho, tặng (cho mình)"
+        },
+        {
+          "hiragana": "なおしますI",
+          "kanji": "直します",
+          "hanViet": "TRỰC",
+          "meaning": "Sửa, chỉnh lại"
+        },
+        {
+          "hiragana": "つれて いきますI",
+          "kanji": "連れて 行きます",
+          "hanViet": "LIÊN HÀNH",
+          "meaning": "Đưa (ai) đi, dẫn đi"
+        },
+        {
+          "hiragana": "つれて きますIII",
+          "kanji": "連れて 来ます",
+          "hanViet": "LIÊN LAI",
+          "meaning": "Đưa (ai) đến, dẫn đến"
+        },
+        {
+          "hiragana": "おくりますI [ひとを～]",
+          "kanji": "送ります [人を～]",
+          "hanViet": "TỐNG",
+          "meaning": "Tiễn (người)"
+        },
+        {
+          "hiragana": "しょうかいしますIII",
+          "kanji": "紹介します",
+          "hanViet": "THIỆU GIỚI",
+          "meaning": "Giới thiệu"
+        },
+        {
+          "hiragana": "あんないしますIII",
+          "kanji": "案内します",
+          "hanViet": "ÁN NỘI",
+          "meaning": "Hướng dẫn, chỉ dẫn"
+        },
+        {
+          "hiragana": "せつめいしますIII",
+          "kanji": "説明します",
+          "hanViet": "THUYẾT MINH",
+          "meaning": "Thuyết minh, giải thích"
+        },
+        {
+          "hiragana": "おじいさん/おじいちゃん",
+          "kanji": "お祖父さん",
+          "hanViet": "TỔ PHỤ",
+          "meaning": "Ông nội, ông ngoại, ông cụ"
+        },
+        {
+          "hiragana": "おばあさん/おばあちゃん",
+          "kanji": "お祖母さん",
+          "hanViet": "TỔ MẪU",
+          "meaning": "Bà nội, bà ngoại, bà cụ"
+        },
+        {
+          "hiragana": "じゅんび",
+          "kanji": "準備",
+          "hanViet": "CHUẨN BỊ",
+          "meaning": "Sự chuẩn bị (~[を]します： Chuẩn bị)"
+        },
+        {
+          "hiragana": "ひっこし",
+          "kanji": "引越し",
+          "hanViet": "DẪN VIỆT",
+          "meaning": "Việc chuyển nhà (~[を]します： Chuyển nhà)"
+        },
+        {
+          "hiragana": "[お]かし",
+          "kanji": "お菓子",
+          "hanViet": "QUẢ TỬ",
+          "meaning": "Bánh kẹo"
+        },
+        {
+          "hiragana": "ホームステイ",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Homestay"
+        },
+        {
+          "hiragana": "ぜんぶ",
+          "kanji": "全部",
+          "hanViet": "TOÀN BỘ",
+          "meaning": "Tất cả, toàn bộ"
+        },
+        {
+          "hiragana": "じぶんで",
+          "kanji": "自分で",
+          "hanViet": "TỰ PHÂN",
+          "meaning": "Tự (mình)"
+        },
+        {
+          "hiragana": "ほかに",
+          "kanji": "他に",
+          "hanViet": "THA",
+          "meaning": "Ngoài ra, bên cạnh đó"
+        },
+        {
+          "hiragana": "ははの ひ",
+          "kanji": "母の日",
+          "hanViet": "MẪU NHẬT",
+          "meaning": "Ngày của mẹ"
+        }
+      ]
+    },
+    {
+      "lessonNumber": 25,
+      "title": "Bài 25",
+      "vocabularies": [
+        {
+          "hiragana": "かんがえますII",
+          "kanji": "考えます",
+          "hanViet": "KHẢO",
+          "meaning": "Suy nghĩ"
+        },
+        {
+          "hiragana": "つきますI",
+          "kanji": "着きます",
+          "hanViet": "TRƯỚC",
+          "meaning": "Đến (nơi)"
+        },
+        {
+          "hiragana": "とりますI [としを～]",
+          "kanji": "取ります [年を～]",
+          "hanViet": "THỦ NIÊN",
+          "meaning": "Có tuổi, thêm tuổi"
+        },
+        {
+          "hiragana": "たりますII",
+          "kanji": "足ります",
+          "hanViet": "TÚC",
+          "meaning": "Đủ"
+        },
+        {
+          "hiragana": "いなか",
+          "kanji": "田舎",
+          "hanViet": "ĐIỀN XÁ",
+          "meaning": "Quê, nông thôn"
+        },
+        {
+          "hiragana": "チャンス",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Cơ hội"
+        },
+        {
+          "hiragana": "おく",
+          "kanji": "億",
+          "hanViet": "ỨC",
+          "meaning": "Trăm triệu"
+        },
+        {
+          "hiragana": "もし「～たら」",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Nếu (~thì)"
+        },
+        {
+          "hiragana": "いみ",
+          "kanji": "意味",
+          "hanViet": "Ý VỊ",
+          "meaning": "Ý nghĩa"
+        },
+        {
+          "hiragana": "もしもし",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "A lô"
+        },
+        {
+          "hiragana": "てんきん",
+          "kanji": "転勤",
+          "hanViet": "CHUYỂN CẦN",
+          "meaning": "Chuyển chỗ làm (chuyển sang một cơ sở khác cùng một công ty)"
+        },
+        {
+          "hiragana": "こと",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Việc, điều (～のこと： những chuyện về ～)"
+        },
+        {
+          "hiragana": "ひま",
+          "kanji": "暇",
+          "hanViet": "HẠ",
+          "meaning": "Rảnh rỗi"
+        },
+        {
+          "hiragana": "[いろいろ]おせわに なりました。",
+          "kanji": "お世話に なりました",
+          "hanViet": "THẾ THOẠI",
+          "meaning": "Xin cảm ơn về tất cả những gì Anh/Chị đã giúp đỡ tôi."
+        },
+        {
+          "hiragana": "がんばんりますI",
+          "kanji": "頑張ります",
+          "hanViet": "NGOAN TRƯƠNG",
+          "meaning": "Cố gắng"
+        },
+        {
+          "hiragana": "どうぞ おげんきで。",
+          "kanji": "どうぞお元気で",
+          "hanViet": "NGUYÊN KHÍ",
+          "meaning": "Xin chú ý giữ gìn sức khỏe. (dùng khi chia tay người có thể không gặp trong một thời gian dài)"
+        },
+        {
+          "hiragana": "ベトナム",
+          "kanji": null,
+          "hanViet": null,
+          "meaning": "Việt Nam"
+        }
+      ]
+    }
+  ]
+}
