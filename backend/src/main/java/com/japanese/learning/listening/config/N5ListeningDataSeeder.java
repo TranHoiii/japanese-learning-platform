@@ -80,12 +80,10 @@ public class N5ListeningDataSeeder implements CommandLineRunner {
                         return lessonRepository.save(newL);
                     });
 
-            if (group.lessonNumber() == 1) {
-                List<ListeningContent> existingContents = listeningContentRepository.findByLessonIdOrderBySortOrderAsc(lesson.getId());
-                if (!existingContents.isEmpty()) {
-                    listeningContentRepository.deleteAll(existingContents);
-                    listeningContentRepository.flush();
-                }
+            List<ListeningContent> existingContents = listeningContentRepository.findByLessonIdOrderBySortOrderAsc(lesson.getId());
+            if (!existingContents.isEmpty()) {
+                listeningContentRepository.deleteAll(existingContents);
+                listeningContentRepository.flush();
             }
 
             for (ListeningItemPayload payload : group.items()) {

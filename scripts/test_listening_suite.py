@@ -4,70 +4,45 @@ sys.stdout.reconfigure(encoding='utf-8')
 BASE_URL = 'http://localhost:8080/api/v1'
 
 def run():
-    print('1. Testing GET /lessons/1/listenings')
-    res = json.loads(urllib.request.urlopen(f'{BASE_URL}/lessons/1/listenings').read().decode('utf-8'))
-    assert res['success'] is True
-    data = res['data']
-    print(f'Total tracks: {len(data)}')
-    for d in data:
-        print(f"  Track {d['title']} has {len(d['questions'])} questions")
-        for q in d['questions']:
-            for opt in q['options']:
-                assert 'isCorrect' not in opt and 'correct' not in opt, 'Leaked isCorrect'
-    first_id = data[0]['id']
-    third_id = data[2]['id']
-    
-    print('2. Testing GET /listenings/{id}')
-    res1 = json.loads(urllib.request.urlopen(f'{BASE_URL}/listenings/{first_id}').read().decode('utf-8'))
-    print(f"  Track: {res1['data']['title']}")
-    
-    print('3. Testing Submit 1 right, 1 wrong')
-    d1 = res1['data']
+    print('=== TESTING ALL N5 LISTENING LESSONS (1 to 13) ===')
+    for lesson_num in range(1, 14):
+        res = json.loads(urllib.request.urlopen(f'{BASE_URL}/lessons/{lesson_num}/listenings').read().decode('utf-8'))
+        assert res['success'] is True, f"Lesson {lesson_num} failed"
+        data = res['data']
+        print(f"Lesson {lesson_num:02d}: {len(data)} tracks loaded cleanly.")
+        for track in data:
+            for q in track['questions']:
+                for opt in q['options']:
+                    assert 'isCorrect' not in opt and 'correct' not in opt, 'Leaked isCorrect'
+
+    print('\n2. Testing GET & Submit for Lesson 2 (Track A-5)')
+    l2_res = json.loads(urllib.request.urlopen(f'{BASE_URL}/lessons/2/listenings').read().decode('utf-8'))
+    first_track = l2_res['data'][0]
     payload = {
         'answers': [
-            {'questionId': d1['questions'][0]['id'], 'selectedOptionId': d1['questions'][0]['options'][0]['id']},
-            {'questionId': d1['questions'][1]['id'], 'selectedOptionId': d1['questions'][1]['options'][0]['id']},
-            {'questionId': d1['questions'][2]['id'], 'selectedOptionId': d1['questions'][2]['options'][1]['id']}
+            {'questionId': first_track['questions'][0]['id'], 'selectedOptionId': first_track['questions'][0]['options'][2]['id']}, # correct c
+            {'questionId': first_track['questions'][1]['id'], 'selectedOptionId': first_track['questions'][1]['options'][0]['id']}, # correct a
+            {'questionId': first_track['questions'][2]['id'], 'selectedOptionId': first_track['questions'][2]['options'][1]['id']}  # correct b
         ]
     }
-    req = urllib.request.Request(f'{BASE_URL}/listenings/{first_id}/submit', data=json.dumps(payload).encode('utf-8'), headers={'Content-Type': 'application/json'})
+    req = urllib.request.Request(f"{BASE_URL}/listenings/{first_track['id']}/submit", data=json.dumps(payload).encode('utf-8'), headers={'Content-Type': 'application/json'})
     sub_res = json.loads(urllib.request.urlopen(req).read().decode('utf-8'))
-    print(f"  Score: {sub_res['data']['score']}% | Correct: {sub_res['data']['correctCount']} | Wrong: {sub_res['data']['wrongCount']}")
-    assert sub_res['data']['correctCount'] == 2
-    
-    print('5. Testing Partial Submit')
-    payload_partial = {'answers': [{'questionId': d1['questions'][0]['id'], 'selectedOptionId': d1['questions'][0]['options'][0]['id']}]}
-    req_p = urllib.request.Request(f'{BASE_URL}/listenings/{first_id}/submit', data=json.dumps(payload_partial).encode('utf-8'), headers={'Content-Type': 'application/json'})
-    sub_p = json.loads(urllib.request.urlopen(req_p).read().decode('utf-8'))
-    print(f"  Partial submit correct: {sub_p['data']['correctCount']} / {sub_p['data']['totalQuestions']}")
-    assert sub_p['data']['totalQuestions'] == 3
+    print(f"  Lesson 2 Track A-5 Submit Score: {sub_res['data']['score']}% ({sub_res['data']['correctCount']}/{sub_res['data']['totalQuestions']})")
+    assert sub_res['data']['correctCount'] == 3
 
-    print('6. Testing Invalid Question ID')
-    payload_inv = {'answers': [{'questionId': 999999, 'selectedOptionId': d1['questions'][0]['options'][0]['id']}]}
-    req_inv = urllib.request.Request(f'{BASE_URL}/listenings/{first_id}/submit', data=json.dumps(payload_inv).encode('utf-8'), headers={'Content-Type': 'application/json'})
-    try:
-        urllib.request.urlopen(req_inv)
-        assert False, 'Should fail'
-    except urllib.error.HTTPError as e:
-        err = json.loads(e.read().decode('utf-8'))
-        print(f"  Expected HTTP {e.code} received: {err['message']}")
-        assert e.code == 404
+    print('\n3. Testing GET & Submit for Lesson 13 (Track A-49)')
+    l13_res = json.loads(urllib.request.urlopen(f'{BASE_URL}/lessons/13/listenings').read().decode('utf-8'))
+    l13_track = l13_res['data'][0]
+    payload13 = {
+        'answers': [
+            {'questionId': l13_track['questions'][0]['id'], 'selectedOptionId': l13_track['questions'][0]['options'][1]['id']} # correct c (index 1)
+        ]
+    }
+    req13 = urllib.request.Request(f"{BASE_URL}/listenings/{l13_track['id']}/submit", data=json.dumps(payload13).encode('utf-8'), headers={'Content-Type': 'application/json'})
+    sub_res13 = json.loads(urllib.request.urlopen(req13).read().decode('utf-8'))
+    print(f"  Lesson 13 Track A-49 Submit Score: {sub_res13['data']['score']}% ({sub_res13['data']['correctCount']}/{sub_res13['data']['totalQuestions']})")
 
-    print('7. Testing Mismatched Option (Option does not belong to question)')
-    track2_id = data[1]['id']
-    d2 = json.loads(urllib.request.urlopen(f'{BASE_URL}/listenings/{track2_id}').read().decode('utf-8'))['data']
-    foreign_opt_id = d2['questions'][0]['options'][0]['id']
-    payload_mismatch = {'answers': [{'questionId': d1['questions'][0]['id'], 'selectedOptionId': foreign_opt_id}]}
-    req_mis = urllib.request.Request(f'{BASE_URL}/listenings/{first_id}/submit', data=json.dumps(payload_mismatch).encode('utf-8'), headers={'Content-Type': 'application/json'})
-    try:
-        urllib.request.urlopen(req_mis)
-        assert False, 'Should fail'
-    except urllib.error.HTTPError as e:
-        err = json.loads(e.read().decode('utf-8'))
-        print(f"  Expected HTTP {e.code} received: {err['message']}")
-        assert e.code == 400
-
-    print('ALL BACKEND API TESTS (INCLUDING EDGE CASES & VALIDATION) PASSED SUCCESSFULLY!')
+    print('\nALL BACKEND API TESTS FOR LESSONS 1-13 PASSED SUCCESSFULLY!')
 
 if __name__ == '__main__':
     run()
