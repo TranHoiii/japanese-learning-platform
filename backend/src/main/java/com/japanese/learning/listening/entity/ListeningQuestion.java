@@ -19,6 +19,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import org.hibernate.annotations.BatchSize;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,6 +52,7 @@ public class ListeningQuestion {
     @Column(name = "sort_order", nullable = false)
     private Integer sortOrder;
 
+    @BatchSize(size = 25)
     @OneToMany(
             mappedBy = "question",
             cascade = CascadeType.ALL,

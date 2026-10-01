@@ -1,0 +1,1688 @@
+[
+  {
+    "lessonNumber": 1,
+    "items": [
+      {
+        "title": "Bài 01 - Track A-1",
+        "audioUrl": "/audio/n5/lesson-01/listening-01.mp3",
+        "description": "1. 名前は a ですか、b ですか。",
+        "transcript": "例) A: 初めまして、増田です。 B: 松田さんですね。 A: いいえ、増田です。\n1) A: 初めまして、佐野です。どうぞよろしく。 B: さろさんですか。 A: いいえ、佐野です。\n2) A: こんにちは、鈴木です。 B: ああ、鈴木さんですね。 A: ええ。\n3) A: 失礼ですが、お名前は？ B: 工藤です。 A: ぐとうさんですか。 B: いいえ、工藤です。",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 名前は a ですか、b ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: A nói「初めまして、佐野 (さの) です。どうぞよろしく。」B nghe nhầm là「さろさんですか。」A đính chính lại「いいえ、佐野 (さの) です。」nên đáp án đúng là a. さの.",
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "a. さの",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. さろ",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 名前は a ですか、b ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Theo Answer Key chính thức trang 124 (1. 2) b) và phát âm trong hội thoại, đáp án đúng là b. つづき.",
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "a. すずき",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. つづき",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 名前は a ですか、b ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: B nói「工藤 (くどう) です。」A hỏi「ぐとうさんですか。」B đính chính「いいえ、工藤 (くどう) です。」nên đáp án đúng là b. くどう.",
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "a. ぐとう",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. くどう",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 01 - Track A-2",
+        "audioUrl": "/audio/n5/lesson-01/listening-02.mp3",
+        "description": "2. 国は a ですか、b ですか。",
+        "transcript": "例) A: 初めまして、ワンです。中国から来ました。どうぞよろしく。 B: 初めまして、田中です。どうぞよろしく。\n1) A: 皆さん、こちらはセンさんです。 B: 初めまして、センです。インドから来ました。\n2) A: 佐藤さん、こんばんは。 B: あっ、山田さん。 A: 佐藤さん、こちらはジャンさんです。 C: ジャンです。フランスから来ました。どうぞよろしく。 B: 佐藤です。よろしくお願いします。\n3) A: 初めまして、コールです。 B: コーンさんですか。 A: いいえ、コールです。ドイツから来ました。 B: わたしは山田です。よろしくお願いします。",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) セン",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: B giới thiệu「初めまして、センです。インドから来ました。」(Đến từ Ấn Độ) nên đáp án đúng là a. インド.",
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "a. インド",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. インドネシア",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) ジャン",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: Jean giới thiệu「ジャンです。フランスから来ました。」(Đến từ Pháp) nên đáp án đúng là b. フランス.",
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "a. ブラジル",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. フランス",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) コール",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: Cole đính chính「いいえ、コールです。ドイツから来ました。」(Đến từ Đức) nên đáp án đúng là b. ドイツ.",
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "a. インド",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. ドイツ",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 01 - Track A-3",
+        "audioUrl": "/audio/n5/lesson-01/listening-03.mp3",
+        "description": "3. 〔 〕の 人の 仕事は aですか、bですか。(女の人の仕事は aですか、bですか。)",
+        "transcript": "例) A: 初めまして、ワットです。イギリスから来ました。 B: 初めまして、林です。 A: わたしはさくら大学の教師です。 B: あ、わたしも教師です。富士大学です。どうぞよろしく。\n1) A: 初めまして、ワンです。 B: 初めまして、後藤です。 A: 後藤さんは先生ですか。 B: いいえ、医者です。 A: ああ、わたしも医者です。\n2) A: あのう、タワポンさんですか。 B: はい、タワポンです。タイから来ました。 A: わたしは山田です。銀行員です。 B: わたしは学生です。どうぞよろしく。\n3) A: 失礼ですが、お名前は？ B: ミラーです。アメリカから来ました。 A: わたしは林です。ミラーさんは会社員ですか。 B: はい、IMCの社員です。どうぞよろしくお願いします。 A: わたしも会社員です。パワー電気の社員です。どうぞよろしく。",
+        "sortOrder": 3,
+        "questions": [
+          {
+            "question": "1) 〔ワン〕",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: Gotoh nói「いいえ、医者です。」Wang (người phụ nữ) đáp:「ああ、わたしも医者です。」(Tôi cũng là bác sĩ). Do đó nghề nghiệp của Wang là bác sĩ (hình b - 医者).",
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "a. 先生 (日本語) - /media/listening/lesson-01/a3/question-1-a.png",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. 医者 - /media/listening/lesson-01/a3/question-1-b.png",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 〔山田〕",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: Người phụ nữ (Yamada) nói「わたしは山田です。銀行員です。」Do đó nghề nghiệp của Yamada là nhân viên ngân hàng (hình a - 銀行員).",
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "a. 銀行員 - /media/listening/lesson-01/a3/question-2-a.png",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. 学生 - /media/listening/lesson-01/a3/question-2-b.png",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 〔林〕",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: Người phụ nữ (Hayashi) nói「わたしも会社員です。パワー電気の社員です。」Do đó công ty của Hayashi là Power Denki (hình b - パワー電気).",
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "a. IMC - /media/listening/lesson-01/a3/question-3-a.png",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. パワー電気 - /media/listening/lesson-01/a3/question-3-b.png",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 01 - Track A-4",
+        "audioUrl": "/audio/n5/lesson-01/listening-04.mp3",
+        "description": "4. 何歳ですか。",
+        "transcript": "例) A: ミラーさん、失礼ですが、おいくつですか。 B: 28歳です。 A: そうですか。わたしも28です。\n1) A: あの芳はどなたですか。 B: 益田さんです。神戸病院の医者です。 A: おいくつですか。 B: えーと、…51歳です。\n2) A: なな子ちゃんですか。 B: はい。 A: なな子ちゃんは何歳ですか。 B: わたしは8歳です。\n3) A: あの芳は? B: ケリーさんです。 A: あのう、おいくつですか。 B: ケリーさんは、えーと、26です。 A: そうですか。",
+        "sortOrder": 4,
+        "questions": [
+          {
+            "question": "1) 益田 (  ) 歳",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: B giới thiệu「益田さんです。神戸病院の医者です... えーと、…51歳です。」nên số tuổi của bác sĩ Masuda là 51歳.",
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "a. 51歳",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. 41歳",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) なな子 (  ) 歳",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: Bé Nanako trả lời rõ ràng「わたしは8歳です。」(8 tuổi).",
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "a. 8歳",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. 18歳",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) ケリー (  ) 歳",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: B trả lời「ケリーさんは、えーと、26です。」(26 tuổi).",
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "a. 26歳",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "b. 36歳",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "items": [
+      {
+        "title": "Bài 02 - Luyện nghe 1 (Track A-5)",
+        "audioUrl": "/audio/n5/lesson-02/listening-01.mp3",
+        "description": "Hỏi đáp về đồ vật (これ、それ、あれ).",
+        "transcript": "例：これは何ですか。…本です。\n1) それは何ですか。…名刺です。\n2) あれは何ですか。…辞書です。\n3) これはシャープペンシルですか。…いいえ、ボールペンです。",
+        "questions": [
+          {
+            "question": "1) 「それ」は何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong hội thoại: 名刺です (Danh thiếp).",
+            "options": [
+              {
+                "content": "a. 名刺 (Danh thiếp)",
+                "correct": true
+              },
+              {
+                "content": "b. 本 (Sách)",
+                "correct": false
+              },
+              {
+                "content": "c. 辞書 (Từ điển)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "2) これはシャープペンシルですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trả lời: いいえ、ボールペンです (Không, là bút bi).",
+            "options": [
+              {
+                "content": "a. いいえ、ボールペンです",
+                "correct": true
+              },
+              {
+                "content": "b. はい、シャープペンシルです",
+                "correct": false
+              },
+              {
+                "content": "c. いいえ、鉛筆です",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 02 - Luyện nghe 2 (Track A-6)",
+        "audioUrl": "/audio/n5/lesson-02/listening-02.mp3",
+        "description": "Xác nhận danh thiếp và số điện thoại.",
+        "transcript": "1) ひふみ電気の電話番号は何番ですか。…03-3456-7890です。\n2) なかじまさんの名刺です。…中島清さんです。",
+        "questions": [
+          {
+            "question": "1) ひふみ電気の電話番号は何番ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Trong băng: 03-3456-7890.",
+            "options": [
+              {
+                "content": "a. 03-3456-7890",
+                "correct": true
+              },
+              {
+                "content": "b. 03-3456-7891",
+                "correct": false
+              },
+              {
+                "content": "c. 03-1234-5678",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 02 - Luyện nghe 3 (Track A-7)",
+        "audioUrl": "/audio/n5/lesson-02/listening-03.mp3",
+        "description": "Hỏi về sở hữu của đồ vật (だれの).",
+        "transcript": "1) この傘はだれのですか。…佐藤さんの傘です。\n2) その鍵はだれのですか。…ミラーさんのです。",
+        "questions": [
+          {
+            "question": "1) この傘は誰のですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "佐藤さんの傘です (Của cô Sato).",
+            "options": [
+              {
+                "content": "a. 佐藤さん",
+                "correct": true
+              },
+              {
+                "content": "b. ミラーさん",
+                "correct": false
+              },
+              {
+                "content": "c. 山田さん",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 02 - Luyện nghe 4 (Track A-8)",
+        "audioUrl": "/audio/n5/lesson-02/listening-04.mp3",
+        "description": "Chào hỏi khi chuyển đến nhà mới (ほんの気持ちです).",
+        "transcript": "A: はい、どなたですか。\nB: 401のミラーです。これ、ほんの気持ちです。コーヒーです。\nA: どうもありがとうございます。",
+        "questions": [
+          {
+            "question": "1) ミラーさんは何をあげましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "コーヒーです (Cà phê).",
+            "options": [
+              {
+                "content": "a. コーヒー",
+                "correct": true
+              },
+              {
+                "content": "b. お茶",
+                "correct": false
+              },
+              {
+                "content": "c. チョコレート",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "items": [
+      {
+        "title": "Bài 03 - Luyện nghe 1 (Track A-9)",
+        "audioUrl": "/audio/n5/lesson-03/listening-01.mp3",
+        "description": "Hỏi vị trí của địa điểm và phòng học (ここ、そこ、あそこ).",
+        "transcript": "1) すみません、受付はどこですか。…あそこです。\n2) トイレはどこですか。…階下です。",
+        "questions": [
+          {
+            "question": "1) 受付はどこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "あそこです (Ở đằng kia).",
+            "options": [
+              {
+                "content": "a. あそこ",
+                "correct": true
+              },
+              {
+                "content": "b. ここ",
+                "correct": false
+              },
+              {
+                "content": "c. そこ",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 03 - Luyện nghe 2 (Track A-10)",
+        "audioUrl": "/audio/n5/lesson-03/listening-02.mp3",
+        "description": "Hỏi tầng và thang máy.",
+        "transcript": "1) 食堂は何階ですか。…地下一階です。\n2) エレベーターはどこですか。…あちらです。",
+        "questions": [
+          {
+            "question": "1) 食堂は何階ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "地下一階です (Tầng hầm B1).",
+            "options": [
+              {
+                "content": "a. 地下一階 (B1)",
+                "correct": true
+              },
+              {
+                "content": "b. 一階 (Tầng 1)",
+                "correct": false
+              },
+              {
+                "content": "c. 二階 (Tầng 2)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 03 - Luyện nghe 3 (Track A-11)",
+        "audioUrl": "/audio/n5/lesson-03/listening-03.mp3",
+        "description": "Hỏi xuất xứ sản phẩm (どこの).",
+        "transcript": "1) これはどこのワインですか。…イタリアのワインです。\n2) そのカメラはどこのですか。…日本のカメラです。",
+        "questions": [
+          {
+            "question": "1) ワインはどこの国のですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "イタリアのワインです (Rượu vang Ý).",
+            "options": [
+              {
+                "content": "a. イタリア (Ý)",
+                "correct": true
+              },
+              {
+                "content": "b. フランス (Pháp)",
+                "correct": false
+              },
+              {
+                "content": "c. 日本 (Nhật)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 03 - Luyện nghe 4 (Track A-12)",
+        "audioUrl": "/audio/n5/lesson-03/listening-04.mp3",
+        "description": "Hỏi giá tiền (いくら).",
+        "transcript": "1) このネクタイはいくらですか。…8,400円です。\n2) その時計はいくらですか。…18,800円です。",
+        "questions": [
+          {
+            "question": "1) ネクタイはいくらですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "8,400円です (8.400 Yên).",
+            "options": [
+              {
+                "content": "a. 8,400円",
+                "correct": true
+              },
+              {
+                "content": "b. 8,000円",
+                "correct": false
+              },
+              {
+                "content": "c. 9,400円",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "items": [
+      {
+        "title": "Bài 04 - Luyện nghe 1 (Track A-13)",
+        "audioUrl": "/audio/n5/lesson-04/listening-01.mp3",
+        "description": "Hỏi và trả lời giờ giấc (何時).",
+        "transcript": "1) 今何時ですか。…7時15分です。\n2) ニューヨークは今何時ですか。…午後6時40分です。",
+        "questions": [
+          {
+            "question": "1) 今何時ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "7時15分です (7 giờ 15 phút).",
+            "options": [
+              {
+                "content": "a. 7時15分",
+                "correct": true
+              },
+              {
+                "content": "b. 7時50分",
+                "correct": false
+              },
+              {
+                "content": "c. 8時15分",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 04 - Luyện nghe 2 (Track A-14)",
+        "audioUrl": "/audio/n5/lesson-04/listening-02.mp3",
+        "description": "Hỏi giờ mở cửa/đóng cửa của ngân hàng/bưu điện (何時から何時まで).",
+        "transcript": "1) 銀行は何時から何時までですか。…9時から3時までです。\n2) 郵便局は何時までですか。…5時までです。",
+        "questions": [
+          {
+            "question": "1) 銀行は何時から何時までですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "9時から3時までです (Từ 9h đến 3h).",
+            "options": [
+              {
+                "content": "a. 9時から3時まで",
+                "correct": true
+              },
+              {
+                "content": "b. 9時から5時まで",
+                "correct": false
+              },
+              {
+                "content": "c. 8時から4時まで",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 04 - Luyện nghe 3 (Track A-15)",
+        "audioUrl": "/audio/n5/lesson-04/listening-03.mp3",
+        "description": "Hỏi thời gian học tập và làm việc hàng ngày.",
+        "transcript": "1) 毎朝何時に起きますか。…6時半に起きます。\n2) 昨日の夜何時に寝ましたか。…11時に寝ました。",
+        "questions": [
+          {
+            "question": "1) 毎朝何時に起きますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "6時半に起きます (Dậy lúc 6 rưỡi).",
+            "options": [
+              {
+                "content": "a. 6時半 (6h30)",
+                "correct": true
+              },
+              {
+                "content": "b. 7時 (7h00)",
+                "correct": false
+              },
+              {
+                "content": "c. 6時 (6h00)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 04 - Luyện nghe 4 (Track A-16)",
+        "audioUrl": "/audio/n5/lesson-04/listening-04.mp3",
+        "description": "Hỏi đáp ngày nghỉ trong tuần (何曜日).",
+        "transcript": "1) 休みは何曜日ですか。…土曜日と日曜日です。\n2) 昨日勉強しましたか。…はい、勉強しました。",
+        "questions": [
+          {
+            "question": "1) 休みは何曜日ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "土曜日と日曜日です (Thứ 7 và Chủ nhật).",
+            "options": [
+              {
+                "content": "a. 土曜日と日曜日",
+                "correct": true
+              },
+              {
+                "content": "b. 日曜日だけ",
+                "correct": false
+              },
+              {
+                "content": "c. 水曜日と日曜日",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "items": [
+      {
+        "title": "Bài 05 - Luyện nghe 1 (Track A-17)",
+        "audioUrl": "/audio/n5/lesson-05/listening-01.mp3",
+        "description": "Hỏi phương tiện đi lại (何で行きますか).",
+        "transcript": "1) 何で会社へ行きますか。…電車で行きます。\n2) 駅までどうやって行きますか。…歩いて行きます。",
+        "questions": [
+          {
+            "question": "1) 何で会社へ行きますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "電車で行きます (Đi bằng tàu điện).",
+            "options": [
+              {
+                "content": "a. 電車 (Tàu điện)",
+                "correct": true
+              },
+              {
+                "content": "b. バス (Xe buýt)",
+                "correct": false
+              },
+              {
+                "content": "c. 歩いて (Đi bộ)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 05 - Luyện nghe 2 (Track A-18)",
+        "audioUrl": "/audio/n5/lesson-05/listening-02.mp3",
+        "description": "Hỏi đi đâu và đi với ai (誰と).",
+        "transcript": "1) 誰と美術館へ行きますか。…友達と行きます。\n2) どこへ行きましたか。…どこも行きませんでした。",
+        "questions": [
+          {
+            "question": "1) 誰と行きますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "友達と行きます (Đi cùng bạn).",
+            "options": [
+              {
+                "content": "a. 友達と",
+                "correct": true
+              },
+              {
+                "content": "b. 家族と",
+                "correct": false
+              },
+              {
+                "content": "c. 1人で",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 05 - Luyện nghe 3 (Track A-19)",
+        "audioUrl": "/audio/n5/lesson-05/listening-03.mp3",
+        "description": "Hỏi ngày tháng lịch trình (いつ).",
+        "transcript": "1) いつ日本へ来ましたか。…3月20日に来ました。\n2) 誕生日いつですか。…6月13日です。",
+        "questions": [
+          {
+            "question": "1) いつ日本へ来ましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "3月20日 (Ngày 20 tháng 3).",
+            "options": [
+              {
+                "content": "a. 3月20日",
+                "correct": true
+              },
+              {
+                "content": "b. 3月2日",
+                "correct": false
+              },
+              {
+                "content": "c. 4月20日",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 05 - Luyện nghe 4 (Track A-20)",
+        "audioUrl": "/audio/n5/lesson-05/listening-04.mp3",
+        "description": "Hội thoại hỏi đáp chuyến du lịch.",
+        "transcript": "A: 来週のどこへ行きますか。\nB: 京都へ行きます。新幹線で行きます。",
+        "questions": [
+          {
+            "question": "1) 京都へ何で行きますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "新幹線で行きます (Đi bằng tàu Shinkansen).",
+            "options": [
+              {
+                "content": "a. 新幹線",
+                "correct": true
+              },
+              {
+                "content": "b. 飛行機",
+                "correct": false
+              },
+              {
+                "content": "c. 高速バス",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "items": [
+      {
+        "title": "Bài 06 - Luyện nghe 1 (Track A-21)",
+        "audioUrl": "/audio/n5/lesson-06/listening-01.mp3",
+        "description": "Hỏi xem ăn uống cái gì (何を飲／食べますか).",
+        "transcript": "1) 毎朝何を食べますか。…パンと卵を食べます。\n2) 何を飲みますか。…何も飲みません。",
+        "questions": [
+          {
+            "question": "1) 毎朝何を食べますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "パンと卵を食べます (Ăn bánh mì và trứng).",
+            "options": [
+              {
+                "content": "a. パンと卵",
+                "correct": true
+              },
+              {
+                "content": "b. ご飯と魚",
+                "correct": false
+              },
+              {
+                "content": "c. フルーツだけ",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 06 - Luyện nghe 2 (Track A-22)",
+        "audioUrl": "/audio/n5/lesson-06/listening-02.mp3",
+        "description": "Hỏi mua sắm và làm việc ở đâu (どこで).",
+        "transcript": "1) どこでそのシャツを買いましたか。…デパートで買いました。\n2) どこで昼ご飯を食べますか。…会社の食堂で食べます。",
+        "questions": [
+          {
+            "question": "1) どこでシャツを買いましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "デパートで買いました (Mua ở trung tâm thương mại).",
+            "options": [
+              {
+                "content": "a. デパート",
+                "correct": true
+              },
+              {
+                "content": "b. スーパー",
+                "correct": false
+              },
+              {
+                "content": "c. ネットショップ",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 06 - Luyện nghe 3 (Track A-23)",
+        "audioUrl": "/audio/n5/lesson-06/listening-03.mp3",
+        "description": "Lời rủ rê cùng thực hiện hành động (～一緒に行きませんか).",
+        "transcript": "A: 日曜日一緒にサッカーをしませんか。\nB: ええ、いいですね。そうしましょう。",
+        "questions": [
+          {
+            "question": "1) 日曜日何をしますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "サッカーをします (Chơi bóng đá).",
+            "options": [
+              {
+                "content": "a. サッカーをします",
+                "correct": true
+              },
+              {
+                "content": "b. テニスをします",
+                "correct": false
+              },
+              {
+                "content": "c. 野球をします",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 06 - Luyện nghe 4 (Track A-24)",
+        "audioUrl": "/audio/n5/lesson-06/listening-04.mp3",
+        "description": "Hỏi đáp xem phim / uống trà.",
+        "transcript": "A: 一緒に映画を見に行きませんか。\nB: すみません。今日はちょっと…。",
+        "questions": [
+          {
+            "question": "1) 相手は映画に行きますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Từ chối khéo (今日はちょっと… ➔ 行きません).",
+            "options": [
+              {
+                "content": "a. 行きません (Không đi)",
+                "correct": true
+              },
+              {
+                "content": "b. 行きます (Có đi)",
+                "correct": false
+              },
+              {
+                "content": "c. 分かりません",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "items": [
+      {
+        "title": "Bài 07 - Luyện nghe 1 (Track A-25)",
+        "audioUrl": "/audio/n5/lesson-07/listening-01.mp3",
+        "description": "Hỏi công cụ sử dụng trong công việc (何で).",
+        "transcript": "1) 何で手紙を書きますか。…ボールペンで書きます。\n2) 何でご飯を食べますか。…はしで食べます。",
+        "questions": [
+          {
+            "question": "1) 何でご飯を食べますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "はしで食べます (Ăn bằng đũa).",
+            "options": [
+              {
+                "content": "a. はし (Đũa)",
+                "correct": true
+              },
+              {
+                "content": "b. スプーン (Thìa)",
+                "correct": false
+              },
+              {
+                "content": "c. フォーク (Nĩa)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 07 - Luyện nghe 2 (Track A-26)",
+        "audioUrl": "/audio/n5/lesson-07/listening-02.mp3",
+        "description": "Hỏi cách nói trong tiếng Nhật (日本語で何ですか).",
+        "transcript": "1) 「Thank you」は日本語で何ですか。…「ありがとう」です。\n2) 「Goodbye」は日本語で何ですか。…「さようなら」です。",
+        "questions": [
+          {
+            "question": "1) 「Thank you」は日本語で何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「ありがとう」です。",
+            "options": [
+              {
+                "content": "a. ありがとう",
+                "correct": true
+              },
+              {
+                "content": "b. すみません",
+                "correct": false
+              },
+              {
+                "content": "c. こんにちは",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 07 - Luyện nghe 3 (Track A-27)",
+        "audioUrl": "/audio/n5/lesson-07/listening-03.mp3",
+        "description": "Hỏi về tặng quà (あげます／もらいます).",
+        "transcript": "1) 山田さんは木村さんに何をあげましたか。…花をあげました。\n2) ミラーさんは誰に本をもらいましたか。…先生にもらいました。",
+        "questions": [
+          {
+            "question": "1) 山田さんは木村さんに何をあげましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "花をあげました (Tặng hoa).",
+            "options": [
+              {
+                "content": "a. 花 (Hoa)",
+                "correct": true
+              },
+              {
+                "content": "b. 本 (Sách)",
+                "correct": false
+              },
+              {
+                "content": "c. 時計 (Đồng hồ)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 07 - Luyện nghe 4 (Track A-28)",
+        "audioUrl": "/audio/n5/lesson-07/listening-04.mp3",
+        "description": "Xác nhận hành động đã thực hiện hay chưa (もう～ましたか).",
+        "transcript": "A: もう昼ご飯を食べましたか。\nB: いいえ、まだです。これから食べます。",
+        "questions": [
+          {
+            "question": "1) 昼ご飯をもう食べましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "いいえ、まだです (Chưa, bây giờ mới ăn).",
+            "options": [
+              {
+                "content": "a. いいえ、まだです",
+                "correct": true
+              },
+              {
+                "content": "b. はい、もう食べました",
+                "correct": false
+              },
+              {
+                "content": "c. 食べません",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "items": [
+      {
+        "title": "Bài 08 - Luyện nghe 1 (Track A-29)",
+        "audioUrl": "/audio/n5/lesson-08/listening-01.mp3",
+        "description": "Đánh giá tính chất bằng tính từ (どんな～／～ですか).",
+        "transcript": "1) 日本の生活はどうですか。…忙しいですが、面白いです。\n2) 富士山はどうですか。…とても綺麗です。",
+        "questions": [
+          {
+            "question": "1) 日本の生活はどうですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "忙しいですが、面白いです (Bận rộn nhưng thú vị).",
+            "options": [
+              {
+                "content": "a. 忙しいですが、面白いです",
+                "correct": true
+              },
+              {
+                "content": "b. 静かで暇です",
+                "correct": false
+              },
+              {
+                "content": "c. 面白くないです",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 08 - Luyện nghe 2 (Track A-30)",
+        "audioUrl": "/audio/n5/lesson-08/listening-02.mp3",
+        "description": "Hỏi về đặc điểm đồ vật / thành phố (どんな街／どんな学校).",
+        "transcript": "1) 東京はどんな街ですか。…にぎやかな街です。\n2) さくら大学はどんな学校ですか。…新しい学校です。",
+        "questions": [
+          {
+            "question": "1) 東京はどんな街ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "にぎやかな街です (Thành phố nhộn nhịp).",
+            "options": [
+              {
+                "content": "a. にぎやかな街",
+                "correct": true
+              },
+              {
+                "content": "b. 静かな街",
+                "correct": false
+              },
+              {
+                "content": "c. 古い街",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 08 - Luyện nghe 3 (Track A-31)",
+        "audioUrl": "/audio/n5/lesson-08/listening-03.mp3",
+        "description": "Phủ định của tính từ (～くないです／～じゃありません).",
+        "transcript": "1) そのカメラは高いですか。…いいえ、あまり高くありません。\n2) 学校の寮は静かですか。…いいえ、あまり静かじゃありません。",
+        "questions": [
+          {
+            "question": "1) そのカメラは高いですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "あまり高くありません (Không đắt lắm).",
+            "options": [
+              {
+                "content": "a. あまり高くありません",
+                "correct": true
+              },
+              {
+                "content": "b. とても高いです",
+                "correct": false
+              },
+              {
+                "content": "c. 全然安くありません",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 08 - Luyện nghe 4 (Track A-32)",
+        "audioUrl": "/audio/n5/lesson-08/listening-04.mp3",
+        "description": "Thăm nhà và mời dùng đồ uống (お茶をどうぞ).",
+        "transcript": "A: いらっしゃい。どうぞお上がりください。\nB: 失礼します。お茶をどうぞ。\nA: ありがとうございます。いただきます。お茶、美味しいですね。",
+        "questions": [
+          {
+            "question": "1) お茶はどうですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "美味しいですね (Ngon).",
+            "options": [
+              {
+                "content": "a. 美味しいです",
+                "correct": true
+              },
+              {
+                "content": "b. 熱すぎます",
+                "correct": false
+              },
+              {
+                "content": "c. 美味しくないです",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "items": [
+      {
+        "title": "Bài 09 - Luyện nghe 1 (Track A-33)",
+        "audioUrl": "/audio/n5/lesson-09/listening-01.mp3",
+        "description": "Hỏi về sở thích và mức độ thành thạo (好き／上手).",
+        "transcript": "1) スポーツが好きですか。…はい、サッカーが好きです。\n2) 日本語が上手ですね。…いいえ、まだまだです。",
+        "questions": [
+          {
+            "question": "1) どんなスポーツが好きですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "サッカーが好きです (Thích bóng đá).",
+            "options": [
+              {
+                "content": "a. サッカー",
+                "correct": true
+              },
+              {
+                "content": "b. 野球",
+                "correct": false
+              },
+              {
+                "content": "c. 水泳",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 09 - Luyện nghe 2 (Track A-34)",
+        "audioUrl": "/audio/n5/lesson-09/listening-02.mp3",
+        "description": "Hỏi về mức độ hiểu/biết (よく／だいたい／あまり).",
+        "transcript": "1) 英語が分かりますか。…はい、少し分かります。\n2) 漢字が分かりますか。…いいえ、全然分かりません。",
+        "questions": [
+          {
+            "question": "1) 英語が分かりますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "少し分かります (Hiểu một chút).",
+            "options": [
+              {
+                "content": "a. 少し分かります",
+                "correct": true
+              },
+              {
+                "content": "b. よく分かります",
+                "correct": false
+              },
+              {
+                "content": "c. 全然分かりません",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 09 - Luyện nghe 3 (Track A-35)",
+        "audioUrl": "/audio/n5/lesson-09/listening-03.mp3",
+        "description": "Hỏi về việc có sở hữu / đồ đạc (あります／います).",
+        "transcript": "1) 車がありますか。…いいえ、ありません。\n2) 細かいお金がありますか。…はい、あります。",
+        "questions": [
+          {
+            "question": "1) 車がありますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "いいえ、ありません (Không có xe).",
+            "options": [
+              {
+                "content": "a. いいえ、ありません",
+                "correct": true
+              },
+              {
+                "content": "b. はい、あります",
+                "correct": false
+              },
+              {
+                "content": "c. バイクがあります",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 09 - Luyện nghe 4 (Track A-36)",
+        "audioUrl": "/audio/n5/lesson-09/listening-04.mp3",
+        "description": "Hỏi lý do (どうして).",
+        "transcript": "A: 昨日どうして早く帰りましたか。\nB: 用事がありましたから。",
+        "questions": [
+          {
+            "question": "1) どうして早く帰りましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "用事がありましたから (Vì có việc bận).",
+            "options": [
+              {
+                "content": "a. 用事があったから",
+                "correct": true
+              },
+              {
+                "content": "b. 病気だったから",
+                "correct": false
+              },
+              {
+                "content": "c. 雨が降ったから",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 10,
+    "items": [
+      {
+        "title": "Bài 10 - Luyện nghe 1 (Track A-37)",
+        "audioUrl": "/audio/n5/lesson-10/listening-01.mp3",
+        "description": "Xác định sự tồn tại của người/vật (あります／います).",
+        "transcript": "1) 庭に誰がいますか。…男の子がいます。\n2) 部屋に何がありますか。…机と椅子があります。",
+        "questions": [
+          {
+            "question": "1) 庭に誰がいますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "男の子がいます (Có cậu bé).",
+            "options": [
+              {
+                "content": "a. 男の子",
+                "correct": true
+              },
+              {
+                "content": "b. 女の子",
+                "correct": false
+              },
+              {
+                "content": "c. 犬",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 10 - Luyện nghe 2 (Track A-38)",
+        "audioUrl": "/audio/n5/lesson-10/listening-02.mp3",
+        "description": "Hỏi vị trí tương đối (上、下、前、後ろ、隣、中).",
+        "transcript": "1) 本棚はどこにありますか。…部屋の隅にあります。\n2) 犬はどこにいますか。…テーブルの下にいます。",
+        "questions": [
+          {
+            "question": "1) 犬はどこにいますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "テーブルの下にいます (Dưới bàn).",
+            "options": [
+              {
+                "content": "a. テーブルの下",
+                "correct": true
+              },
+              {
+                "content": "b. テーブルの上",
+                "correct": false
+              },
+              {
+                "content": "c. ドアの横",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 10 - Luyện nghe 3 (Track A-39)",
+        "audioUrl": "/audio/n5/lesson-10/listening-03.mp3",
+        "description": "Hỏi nơi chốn của siêu thị / bưu điện / cây ATM.",
+        "transcript": "1) ポストはどこにありますか。…郵便局の前にあります。\n2) コンビニはどこにありますか。…駅の隣にあります。",
+        "questions": [
+          {
+            "question": "1) ポストはどこにありますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "郵便局の前にあります (Trước bưu điện).",
+            "options": [
+              {
+                "content": "a. 郵便局の前",
+                "correct": true
+              },
+              {
+                "content": "b. 駅の中",
+                "correct": false
+              },
+              {
+                "content": "c. 銀行のとなり",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 10 - Luyện nghe 4 (Track A-40)",
+        "audioUrl": "/audio/n5/lesson-10/listening-04.mp3",
+        "description": "Hỏi đồ đạc trong gian phòng / siêu thị.",
+        "transcript": "A: すみません、ナンプラーはどこにありますか。\nB: アジアコーナーにあります。あそこの一番下の棚です。",
+        "questions": [
+          {
+            "question": "1) ナンプラーはどこにありますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "一番下の棚です (Kệ dưới cùng).",
+            "options": [
+              {
+                "content": "a. 一番下の棚",
+                "correct": true
+              },
+              {
+                "content": "b. 一番上の棚",
+                "correct": false
+              },
+              {
+                "content": "c. レジの横",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 11,
+    "items": [
+      {
+        "title": "Bài 11 - Luyện nghe 1 (Track A-41)",
+        "audioUrl": "/audio/n5/lesson-11/listening-01.mp3",
+        "description": "Đếm số lượng đồ vật và người (ひとつ、ふたつ／～人).",
+        "transcript": "1) りんごをいくつ買いましたか。…5つ買いました。\n2) 家族は何人ですか。…4人です。",
+        "questions": [
+          {
+            "question": "1) りんごをいくつ買いましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "5つ買いました (Mua 5 cái).",
+            "options": [
+              {
+                "content": "a. 5つ",
+                "correct": true
+              },
+              {
+                "content": "b. 3つ",
+                "correct": false
+              },
+              {
+                "content": "c. 4つ",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 11 - Luyện nghe 2 (Track A-42)",
+        "audioUrl": "/audio/n5/lesson-11/listening-02.mp3",
+        "description": "Hỏi số lần / số khoảng thời gian (～回／～時間／～週間).",
+        "transcript": "1) 一週間に何回スポーツをしますか。…2回します。\n2) どのくらい日本語を勉強しましたか。…3か月勉強しました。",
+        "questions": [
+          {
+            "question": "1) 一週間に何回スポーツをしますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "2回します (2 lần/tuần).",
+            "options": [
+              {
+                "content": "a. 2回",
+                "correct": true
+              },
+              {
+                "content": "b. 1回",
+                "correct": false
+              },
+              {
+                "content": "c. 3回",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 11 - Luyện nghe 3 (Track A-43)",
+        "audioUrl": "/audio/n5/lesson-11/listening-03.mp3",
+        "description": "Hỏi thời gian di chuyển (どのくらいかかりますか).",
+        "transcript": "1) うちから駅までどのくらいかかりますか。…バスで15分くらいかかります。\n2) 東京から大阪まで新幹線でどのくらいですか。…2時間半くらいです。",
+        "questions": [
+          {
+            "question": "1) うちから駅までどのくらいかかりますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "15分くらいかかります (Khoảng 15 phút).",
+            "options": [
+              {
+                "content": "a. 15分くらい",
+                "correct": true
+              },
+              {
+                "content": "b. 30分くらい",
+                "correct": false
+              },
+              {
+                "content": "c. 5分くらい",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 11 - Luyện nghe 4 (Track A-44)",
+        "audioUrl": "/audio/n5/lesson-11/listening-04.mp3",
+        "description": "Gọi món tại nhà hàng / mua hàng.",
+        "transcript": "A: いらっしゃいませ。\nB: サンドイッチを2つとコーヒーを1つください。\nA: はい、かしこまりました。",
+        "questions": [
+          {
+            "question": "1) 注文したものは何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "サンドイッチ2つとコーヒー1つ (2 sandwich + 1 coffee).",
+            "options": [
+              {
+                "content": "a. サンドイッチ2つ、コーヒー1つ",
+                "correct": true
+              },
+              {
+                "content": "b. サンドイッチ1つ、コーヒー2つ",
+                "correct": false
+              },
+              {
+                "content": "c. ケーキ2つ、紅茶1つ",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 12,
+    "items": [
+      {
+        "title": "Bài 12 - Luyện nghe 1 (Track A-45)",
+        "audioUrl": "/audio/n5/lesson-12/listening-01.mp3",
+        "description": "So sánh 2 đối tượng (AはBより～ですか／どちらが～ですか).",
+        "transcript": "1) 今日は昨日より寒いですか。…はい、ずっと寒いです。\n2) サッカーと野球とどちらが面白いですか。…サッカーのほうが面白いです。",
+        "questions": [
+          {
+            "question": "1) サッカーと野球とどちらが面白いですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "サッカーのほうが面白いです (Bóng đá thú vị hơn).",
+            "options": [
+              {
+                "content": "a. サッカー",
+                "correct": true
+              },
+              {
+                "content": "b. 野球",
+                "correct": false
+              },
+              {
+                "content": "c. どちらも面白くない",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 12 - Luyện nghe 2 (Track A-46)",
+        "audioUrl": "/audio/n5/lesson-12/listening-02.mp3",
+        "description": "So sánh nhất trong phạm vi (一番～).",
+        "transcript": "1) 一年でいつが一番寒いですか。…2月が一番寒いです。\n2) 季節でいつが一番好きですか。…秋が一番好きです。",
+        "questions": [
+          {
+            "question": "1) 一年でいつが一番寒いですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "2月が一番寒いです (Tháng 2 lạnh nhất).",
+            "options": [
+              {
+                "content": "a. 2月",
+                "correct": true
+              },
+              {
+                "content": "b. 1月",
+                "correct": false
+              },
+              {
+                "content": "c. 12月",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 12 - Luyện nghe 3 (Track A-47)",
+        "audioUrl": "/audio/n5/lesson-12/listening-03.mp3",
+        "description": "Hỏi ấn tượng chuyến đi / quá khứ của tính từ.",
+        "transcript": "1) 京都の旅行はどうでしたか。…紅葉がとても綺麗でした。\n2) 天気はどうでしたか。…あまり良くなかったです。",
+        "questions": [
+          {
+            "question": "1) 京都の旅行はどうでしたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "とても綺麗でした (Rất đẹp).",
+            "options": [
+              {
+                "content": "a. とても綺麗でした",
+                "correct": true
+              },
+              {
+                "content": "b. つまらなかったです",
+                "correct": false
+              },
+              {
+                "content": "c. 賑やかではありませんでした",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 12 - Luyện nghe 4 (Track A-48)",
+        "audioUrl": "/audio/n5/lesson-12/listening-04.mp3",
+        "description": "Hội thoại hỏi món ăn ngon nhất ở tiệm.",
+        "transcript": "A: この店で何が一番人気ですか。\nB: ラーメンが一番人気ですよ。とても美味しいです。",
+        "questions": [
+          {
+            "question": "1) 一番人気の料理は何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ラーメンです (Mì Ramen).",
+            "options": [
+              {
+                "content": "a. ラーメン",
+                "correct": true
+              },
+              {
+                "content": "b. うどん",
+                "correct": false
+              },
+              {
+                "content": "c. カレー",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 13,
+    "items": [
+      {
+        "title": "Bài 13 - Luyện nghe 1 (Track A-49)",
+        "audioUrl": "/audio/n5/lesson-13/listening-01.mp3",
+        "description": "Bày tỏ mong muốn đồ vật (～が欲しいです).",
+        "transcript": "1) 今何が一番欲しいですか。…車が欲しいです。\n2) 新しいパソコンが欲しいですか。…いいえ、欲しくないです。",
+        "questions": [
+          {
+            "question": "1) 今何が一番欲しいですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "車が欲しいです (Muốn có ô tô).",
+            "options": [
+              {
+                "content": "a. 車",
+                "correct": true
+              },
+              {
+                "content": "b. カメラ",
+                "correct": false
+              },
+              {
+                "content": "c. お金",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 13 - Luyện nghe 2 (Track A-50)",
+        "audioUrl": "/audio/n5/lesson-13/listening-02.mp3",
+        "description": "Bày tỏ nguyện vọng làm việc gì đó (～たいです).",
+        "transcript": "1) 休みどこへ行きたいですか。…沖縄へ行きたいです。\n2) 何を食べたいですか。…お寿司を食べたいです。",
+        "questions": [
+          {
+            "question": "1) 何を食べたいですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "お寿司を食べたいです (Muốn ăn Sushi).",
+            "options": [
+              {
+                "content": "a. お寿司",
+                "correct": true
+              },
+              {
+                "content": "b. 天ぷら",
+                "correct": false
+              },
+              {
+                "content": "c. 焼肉",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 13 - Luyện nghe 3 (Track A-51)",
+        "audioUrl": "/audio/n5/lesson-13/listening-03.mp3",
+        "description": "Hỏi mục đích đi đâu (～に行きます).",
+        "transcript": "1) どこへ行きますか。…デパートへ買い物に行きます。\n2) 公園へ何をしに行きますか。…散歩しに行きます。",
+        "questions": [
+          {
+            "question": "1) デパートへ何をしに行きますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "買い物に行きます (Đi mua sắm).",
+            "options": [
+              {
+                "content": "a. 買い物",
+                "correct": true
+              },
+              {
+                "content": "b. 映画を見る",
+                "correct": false
+              },
+              {
+                "content": "c. 友達に会う",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 13 - Luyện nghe 4 (Track A-52)",
+        "audioUrl": "/audio/n5/lesson-13/listening-04.mp3",
+        "description": "Mời gọi đi ăn/uống giải khát.",
+        "transcript": "A: お腹が空きましたね。\nB: ええ、喉も渇きました。何か飲みに行きませんか。\nA: いいですね。行きましょう。",
+        "questions": [
+          {
+            "question": "1) 2人はこれから何をしますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "何か飲みに行きます (Đi uống cái gì đó).",
+            "options": [
+              {
+                "content": "a. 何か飲みに行きます",
+                "correct": true
+              },
+              {
+                "content": "b. 帰ります",
+                "correct": false
+              },
+              {
+                "content": "c. 勉強します",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 13 - Luyện nghe 5 (Track A-53)",
+        "audioUrl": "/audio/n5/lesson-13/listening-05.mp3",
+        "description": "Hỏi kế hoạch nghỉ hè / nghỉ lễ.",
+        "transcript": "A: 夏休みはどこかへ行きましたか。\nB: はい、北海道へスキーに行きました。",
+        "questions": [
+          {
+            "question": "1) 夏休みどこへ行きましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "北海道へ行きました (Đi Hokkaido).",
+            "options": [
+              {
+                "content": "a. 北海道",
+                "correct": true
+              },
+              {
+                "content": "b. 沖縄",
+                "correct": false
+              },
+              {
+                "content": "c. 東京",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bài 13 - Luyện nghe 6 (Track A-54)",
+        "audioUrl": "/audio/n5/lesson-13/listening-06.mp3",
+        "description": "Hội thoại tổng hợp nguyện vọng giải trí cuối tuần.",
+        "transcript": "A: 週末は何をしたいですか。\nB: 温泉に行きたいです。ゆっくり休みたいです。",
+        "questions": [
+          {
+            "question": "1) 週末何をしたいですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "温泉に行きたいです (Muốn đi suối nước nóng Onsen).",
+            "options": [
+              {
+                "content": "a. 温泉に行きたい",
+                "correct": true
+              },
+              {
+                "content": "b. 買い物をしたい",
+                "correct": false
+              },
+              {
+                "content": "c. 家で寝たい",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

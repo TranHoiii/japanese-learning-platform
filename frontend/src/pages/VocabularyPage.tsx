@@ -159,6 +159,14 @@ export default function VocabularyPage() {
               <span>🈁</span>
               <span>Kanji N5</span>
             </Link>
+
+            <Link
+              to={`/n5/lessons/${activeLessonId}/listening`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+            >
+              <span>🎧</span>
+              <span>Nghe Hiểu N5</span>
+            </Link>
           </div>
 
           {/* Search Box & View Mode Toggle */}

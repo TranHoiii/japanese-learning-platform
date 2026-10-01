@@ -19,6 +19,8 @@ import java.util.List;
 
 import com.japanese.learning.kanji.dto.KanjiResponse;
 import com.japanese.learning.kanji.service.KanjiService;
+import com.japanese.learning.listening.dto.ListeningContentResponse;
+import com.japanese.learning.listening.service.ListeningService;
 
 @Validated
 @RestController
@@ -30,6 +32,7 @@ public class LessonController {
     private final VocabularyService vocabularyService;
     private final GrammarService grammarService;
     private final KanjiService kanjiService;
+    private final ListeningService listeningService;
 
     @GetMapping("/{lessonId}")
     public ApiResponse<LessonResponse> getById(@PathVariable @Positive Long lessonId) {
@@ -49,5 +52,10 @@ public class LessonController {
     @GetMapping("/{lessonId}/kanjis")
     public ApiResponse<List<KanjiResponse>> getKanjisByLessonId(@PathVariable @Positive Long lessonId) {
         return ApiResponse.success("Lấy danh sách Kanji thành công", kanjiService.getKanjisByLessonId(lessonId));
+    }
+
+    @GetMapping("/{lessonId}/listenings")
+    public ApiResponse<List<ListeningContentResponse>> getListeningsByLessonId(@PathVariable @Positive Long lessonId) {
+        return ApiResponse.success("Lấy danh sách bài nghe thành công", listeningService.getListeningsByLessonId(lessonId));
     }
 }
