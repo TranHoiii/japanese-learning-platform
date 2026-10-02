@@ -414,7 +414,7 @@ export default function ListeningDetailPage() {
                           optionStyle = "border-emerald-600 bg-emerald-50/80 text-emerald-900 font-semibold ring-2 ring-emerald-500/20";
                         }
 
-                        const matchImg = opt.content.match(/(\/media\/[^\s]+\.(png|jpg|jpeg|webp))/i);
+                        const matchImg = opt.content.match(/(\/(?:media|listening)\/[^\s]+\.(png|jpg|jpeg|webp))/i);
                         const imageUrl = matchImg ? matchImg[0] : null;
                         const textLabel = imageUrl
                           ? opt.content.replace(imageUrl, "").replace(/-\s*$/, "").trim()
