@@ -18,6 +18,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import org.hibernate.annotations.BatchSize;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,6 +53,7 @@ public class ListeningContent extends BaseTimeEntity {
     @Column(name = "sort_order", nullable = false)
     private Integer sortOrder;
 
+    @BatchSize(size = 25)
     @OneToMany(
             mappedBy = "listening",
             cascade = CascadeType.ALL,
