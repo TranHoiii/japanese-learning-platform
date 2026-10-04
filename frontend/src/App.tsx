@@ -15,6 +15,7 @@ import ReadingPage from "./pages/ReadingPage";
 import ReadingDetailPage from "./pages/ReadingDetailPage";
 import ExercisePage from "./pages/ExercisePage";
 import ExerciseDetailPage from "./pages/ExerciseDetailPage";
+import ProgressPage from "./pages/ProgressPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/progress" element={<ProgressPage />} />
       <Route path="/n5" element={<Navigate to="/n5/lessons" replace />} />
       <Route path="/n5/lessons" element={<LessonsPage />} />
       <Route path="/n5/exercises" element={<ExercisePage />} />

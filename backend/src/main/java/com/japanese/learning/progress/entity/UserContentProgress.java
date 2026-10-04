@@ -1,6 +1,6 @@
 package com.japanese.learning.progress.entity;
 
-import com.japanese.learning.exercise.enums.ContentType;
+import com.japanese.learning.common.enums.ContentType;
 import com.japanese.learning.progress.enums.LearningStatus;
 import com.japanese.learning.user.entity.User;
 import jakarta.persistence.Column;
@@ -15,6 +15,7 @@ import jakarta.persistence.Index;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -27,6 +28,12 @@ import java.time.LocalDateTime;
 @Entity
 @Table(
         name = "user_content_progress",
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uq_user_content_progress",
+                        columnNames = {"user_id", "content_type", "content_id"}
+                )
+        },
         indexes = {
                 @Index(name = "idx_user_content_progress_user_id", columnList = "user_id")
         }
