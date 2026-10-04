@@ -45,6 +45,9 @@ public class ReadingContent extends BaseTimeEntity {
     @Column(columnDefinition = "LONGTEXT")
     private String translation;
 
+    @Column(name = "image_url", length = 500)
+    private String imageUrl;
+
     @Column(name = "sort_order", nullable = false)
     private Integer sortOrder;
 
