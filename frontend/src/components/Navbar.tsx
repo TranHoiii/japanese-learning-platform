@@ -65,6 +65,17 @@ export default function Navbar() {
               >
                 Ôn tập
               </Link>
+              <Link
+                to="/favorites"
+                id="favorites-nav-link"
+                className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold transition-colors ${
+                  location.pathname === "/favorites"
+                    ? "bg-indigo-50 text-indigo-700 border border-indigo-200/60"
+                    : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+                }`}
+              >
+                Yêu thích
+              </Link>
             </>
           )}
           <span className="hidden sm:inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">
