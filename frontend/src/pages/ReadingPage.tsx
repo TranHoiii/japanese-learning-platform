@@ -1,10 +1,10 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { vocabularyApi } from "../services/vocabularyApi";
-import { listeningApi } from "../services/listeningApi";
+import { readingApi } from "../services/readingApi";
 import Navbar from "../components/Navbar";
 
-export default function ListeningPage() {
+export default function ReadingPage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
   const navigate = useNavigate();
 
@@ -31,21 +31,21 @@ export default function ListeningPage() {
 
   const currentLesson = lessons?.find((l) => l.id === activeLessonId);
 
-  // 3. Get Listenings for active lesson
+  // 3. Get Readings for active lesson
   const {
-    data: listenings,
+    data: readings,
     isLoading,
     error,
   } = useQuery({
-    queryKey: ["listenings", activeLessonId],
-    queryFn: () => listeningApi.getListeningsByLesson(activeLessonId!),
+    queryKey: ["readings", activeLessonId],
+    queryFn: () => readingApi.getReadingsByLesson(activeLessonId!),
     enabled: !!activeLessonId,
   });
 
   const handleLessonChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const targetId = e.target.value;
     if (targetId) {
-      navigate(`/n5/lessons/${targetId}/listening`);
+      navigate(`/n5/lessons/${targetId}/reading`);
     }
   };
 
@@ -65,7 +65,7 @@ export default function ListeningPage() {
           </Link>
           <span>/</span>
           <span className="font-semibold text-slate-900">
-            {currentLesson ? `${currentLesson.title} - Luyện nghe` : `Bài học ${activeLessonId || ""}`}
+            {currentLesson ? `${currentLesson.title} - Luyện đọc` : `Bài học ${activeLessonId || ""}`}
           </span>
         </div>
 
@@ -77,17 +77,17 @@ export default function ListeningPage() {
                 <span className="px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">
                   JLPT N5
                 </span>
-                <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
+                <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">
                   {currentLesson ? currentLesson.title : `Bài học ${activeLessonId || ""}`}
                 </span>
-                {listenings && (
+                {readings && (
                   <span className="text-xs text-slate-500 font-medium">
-                    ({listenings.length} bài nghe)
+                    ({readings.length} bài đọc)
                   </span>
                 )}
               </div>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                {currentLesson ? `Nghe Hiểu N5 - ${currentLesson.title}` : "Nghe Hiểu N5"}
+                {currentLesson ? `Đọc Hiểu N5 - ${currentLesson.title}` : "Đọc Hiểu N5"}
               </h1>
             </div>
 
@@ -100,7 +100,7 @@ export default function ListeningPage() {
                 <select
                   value={activeLessonId || ""}
                   onChange={handleLessonChange}
-                  className="bg-slate-50 border border-slate-300 text-slate-900 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-emerald-500 p-2.5 shadow-xs cursor-pointer min-w-[140px]"
+                  className="bg-slate-50 border border-slate-300 text-slate-900 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-indigo-500 p-2.5 shadow-xs cursor-pointer min-w-[140px]"
                 >
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
@@ -134,13 +134,13 @@ export default function ListeningPage() {
               to={`/n5/lessons/${activeLessonId}/kanji`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
-              <span></span>
+              <span>🈸</span>
               <span>Kanji N5</span>
             </Link>
 
             <Link
               to={`/n5/lessons/${activeLessonId}/listening`}
-              className="px-5 py-2.5 rounded-xl text-sm font-bold bg-emerald-600 text-white shadow-md shadow-emerald-600/20 transition-all flex items-center space-x-2"
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>🎧</span>
               <span>Nghe Hiểu N5</span>
@@ -148,7 +148,7 @@ export default function ListeningPage() {
 
             <Link
               to={`/n5/lessons/${activeLessonId}/reading`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              className="px-5 py-2.5 rounded-xl text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 transition-all flex items-center space-x-2"
             >
               <span>📖</span>
               <span>Đọc Hiểu N5</span>
@@ -159,8 +159,8 @@ export default function ListeningPage() {
         {/* Loading State */}
         {isLoading && (
           <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl border border-slate-200/80 shadow-xs">
-            <div className="w-12 h-12 border-4 border-emerald-600 border-t-transparent rounded-full animate-spin mb-4" />
-            <p className="text-slate-600 font-medium">Đang tải danh sách bài nghe...</p>
+            <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-4" />
+            <p className="text-slate-600 font-medium">Đang tải danh sách bài đọc...</p>
           </div>
         )}
 
@@ -168,7 +168,7 @@ export default function ListeningPage() {
         {error && (
           <div className="bg-rose-50 border border-rose-200 text-rose-700 p-8 rounded-3xl text-center max-w-lg mx-auto shadow-xs">
             <div className="text-4xl mb-3">⚠️</div>
-            <h3 className="font-bold text-lg mb-2">Không thể tải danh sách bài nghe</h3>
+            <h3 className="font-bold text-lg mb-2">Không thể tải danh sách bài đọc</h3>
             <p className="text-sm text-rose-600">
               Đã xảy ra lỗi khi kết nối với server. Vui lòng thử lại sau.
             </p>
@@ -176,64 +176,69 @@ export default function ListeningPage() {
         )}
 
         {/* Empty State */}
-        {!isLoading && !error && listenings && listenings.length === 0 && (
-          <div className="bg-white rounded-3xl p-12 border border-slate-200/80 text-center shadow-xs">
-            <div className="text-5xl mb-4">🎧</div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Chưa có bài nghe</h3>
-            <p className="text-slate-500 text-sm max-w-md mx-auto">
-              Bài học này chưa được cập nhật dữ liệu bài nghe. Vui lòng chọn bài học khác.
+        {!isLoading && !error && (!readings || readings.length === 0) && (
+          <div className="bg-white rounded-3xl p-12 text-center border border-slate-200/80 shadow-xs max-w-xl mx-auto">
+            <div className="text-5xl mb-4">📖</div>
+            <h3 className="text-lg font-bold text-slate-900 mb-1">Chưa có bài đọc nào</h3>
+            <p className="text-sm text-slate-500">
+              Nội dung bài đọc cho bài học này đang được chuẩn bị.
             </p>
           </div>
         )}
 
-        {/* Listenings Grid */}
-        {!isLoading && !error && listenings && listenings.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {listenings.map((item, index) => (
+        {/* Readings Grid */}
+        {!isLoading && !error && readings && readings.length > 0 && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {readings.map((reading) => (
               <div
-                key={item.id}
-                className="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
+                key={reading.id}
+                className="bg-white rounded-3xl border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between group"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/60">
-                      Bài nghe #{index + 1}
-                    </span>
-                    <span className="text-xs font-medium text-slate-400">
-                      {item.questions ? `${item.questions.length} câu hỏi` : "Nhiều câu hỏi"}
-                    </span>
-                  </div>
-
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    {item.title}
-                  </h3>
-
-                  {item.description && (
-                    <p className="text-sm text-slate-600 mb-4 line-clamp-2">
-                      {item.description}
-                    </p>
+                  {/* Image thumbnail if present */}
+                  {reading.imageUrl && (
+                    <div className="w-full h-44 bg-slate-100 overflow-hidden border-b border-slate-100 relative">
+                      <img
+                        src={reading.imageUrl}
+                        alt={reading.title}
+                        className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                      <span className="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-xs font-semibold px-2.5 py-1 rounded-full text-slate-700 shadow-xs border border-slate-200">
+                        Hình ảnh đính kèm
+                      </span>
+                    </div>
                   )}
 
-                  {/* Audio Preview element */}
-                  <div className="bg-slate-50 p-3 rounded-2xl mb-4 border border-slate-100">
-                    <audio controls className="w-full h-9 rounded-lg">
-                      <source src={item.audioUrl} type="audio/mpeg" />
-                      Trình duyệt của bạn không hỗ trợ audio element.
-                    </audio>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <span className="text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-100 px-2.5 py-1 rounded-full">
+                        Phần {reading.sortOrder}
+                      </span>
+                      <span className="text-xs font-medium text-slate-400">
+                        {reading.questions?.length || 0} câu hỏi
+                      </span>
+                    </div>
+
+                    <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                      {reading.title}
+                    </h3>
+
+                    {/* Excerpt text */}
+                    <p className="text-sm text-slate-500 line-clamp-3 leading-relaxed">
+                      {reading.content}
+                    </p>
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                  <span className="text-xs text-slate-500 font-medium">
-                    Có audio & bài tập
-                  </span>
-                  <Link
-                    to={`/listenings/${item.id}`}
-                    className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold text-sm hover:bg-emerald-700 transition-colors shadow-xs"
+                <div className="p-6 pt-0 mt-4 border-t border-slate-100">
+                  <button
+                    onClick={() => navigate(`/readings/${reading.id}`)}
+                    className="w-full mt-4 py-2.5 px-4 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-indigo-600 transition-colors flex items-center justify-center space-x-2 shadow-xs cursor-pointer"
                   >
-                    <span>Làm Bài Nghe</span>
+                    <span>Luyện đọc ngay</span>
                     <span>→</span>
-                  </Link>
+                  </button>
                 </div>
               </div>
             ))}

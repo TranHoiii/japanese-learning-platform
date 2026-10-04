@@ -9,6 +9,8 @@ import KanjiPage from "./pages/KanjiPage";
 import KanjiDetailPage from "./pages/KanjiDetailPage";
 import ListeningPage from "./pages/ListeningPage";
 import ListeningDetailPage from "./pages/ListeningDetailPage";
+import ReadingPage from "./pages/ReadingPage";
+import ReadingDetailPage from "./pages/ReadingDetailPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
@@ -22,10 +24,12 @@ export default function App() {
       <Route path="/n5/lessons/:lessonId/grammar" element={<GrammarPage />} />
       <Route path="/n5/lessons/:lessonId/kanji" element={<KanjiPage />} />
       <Route path="/n5/lessons/:lessonId/listening" element={<ListeningPage />} />
+      <Route path="/n5/lessons/:lessonId/reading" element={<ReadingPage />} />
       <Route path="/vocabulary/:id" element={<VocabularyDetailPage />} />
       <Route path="/grammar/:id" element={<GrammarDetailPage />} />
       <Route path="/kanjis/:id" element={<KanjiDetailPage />} />
       <Route path="/listenings/:id" element={<ListeningDetailPage />} />
+      <Route path="/readings/:id" element={<ReadingDetailPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

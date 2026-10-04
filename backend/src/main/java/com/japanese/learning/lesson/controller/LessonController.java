@@ -22,6 +22,9 @@ import com.japanese.learning.kanji.service.KanjiService;
 import com.japanese.learning.listening.dto.ListeningContentResponse;
 import com.japanese.learning.listening.service.ListeningService;
 
+import com.japanese.learning.reading.dto.ReadingContentResponse;
+import com.japanese.learning.reading.service.ReadingService;
+
 @Validated
 @RestController
 @RequiredArgsConstructor
@@ -33,6 +36,7 @@ public class LessonController {
     private final GrammarService grammarService;
     private final KanjiService kanjiService;
     private final ListeningService listeningService;
+    private final ReadingService readingService;
 
     @GetMapping("/{lessonId}")
     public ApiResponse<LessonResponse> getById(@PathVariable @Positive Long lessonId) {
@@ -57,5 +61,10 @@ public class LessonController {
     @GetMapping("/{lessonId}/listenings")
     public ApiResponse<List<ListeningContentResponse>> getListeningsByLessonId(@PathVariable @Positive Long lessonId) {
         return ApiResponse.success("Lấy danh sách bài nghe thành công", listeningService.getListeningsByLessonId(lessonId));
+    }
+
+    @GetMapping("/{lessonId}/readings")
+    public ApiResponse<List<ReadingContentResponse>> getReadingsByLessonId(@PathVariable @Positive Long lessonId) {
+        return ApiResponse.success("Lấy danh sách bài đọc thành công", readingService.getReadingsByLessonId(lessonId));
     }
 }

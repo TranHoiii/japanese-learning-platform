@@ -1,0 +1,4951 @@
+[
+  {
+    "lessonNumber": 1,
+    "items": [
+      {
+        "title": "お国は どちらですか",
+        "content": "☆どこから 来ましたか。\n\n【例】\n失礼ですが、お名前は？\n…モームです。\nお国は どちらですか。\n…イギリスです。ロンドンから 来ました。( ⑦ )",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l01_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. 初めまして。ワシントンです。アメリカから 来ました。うちは ニューヨークです。どうぞ よろしく。( )",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "アメリカから来ました。うちはニューヨークです。(①)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① ニューヨーク",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② ワシントン",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ リオデジャネイロ",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ ペキン",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ ハノイ",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "⑥ ニューデリー",
+                "correct": false,
+                "sortOrder": 6
+              },
+              {
+                "content": "⑦ ロンドン",
+                "correct": false,
+                "sortOrder": 7
+              },
+              {
+                "content": "⑧ カイロ",
+                "correct": false,
+                "sortOrder": 8
+              }
+            ]
+          },
+          {
+            "question": "2. 皆さん、こちらは ナセルさんです。\n…ナセルです。エジプトの カイロから 来ました。よろしくお願いします。( )",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "エジプトのカイロから来ました。(⑧)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① ニューヨーク",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② ワシントン",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ リオデジャネイロ",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ ペキン",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ ハノイ",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "⑥ ニューデリー",
+                "correct": false,
+                "sortOrder": 6
+              },
+              {
+                "content": "⑦ ロンドン",
+                "correct": false,
+                "sortOrder": 7
+              },
+              {
+                "content": "⑧ カイロ",
+                "correct": true,
+                "sortOrder": 8
+              }
+            ]
+          },
+          {
+            "question": "3. ホーさんは 中国の 方ですか。\n…いいえ、ベトナムの ハノイから 来ました。( )",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ベトナムのハノイから来ました。(⑤)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① ニューヨーク",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② ワシントン",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ リオデジャネイロ",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ ペキン",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ ハノイ",
+                "correct": true,
+                "sortOrder": 5
+              },
+              {
+                "content": "⑥ ニューデリー",
+                "correct": false,
+                "sortOrder": 6
+              },
+              {
+                "content": "⑦ ロンドン",
+                "correct": false,
+                "sortOrder": 7
+              },
+              {
+                "content": "⑧ カイロ",
+                "correct": false,
+                "sortOrder": 8
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "items": [
+      {
+        "title": "ジュースを お願いします",
+        "content": "いらっしゃいませ。メニューです。どうぞ。\n\n☆いくらですか。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l02_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. ホン: 「カレーと コーヒーを ください。」\nホンさんは いくらですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "カレー(750円) + コーヒー(300円) = 1,050円",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "1,050円",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "950円",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "1,100円",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "1,500円",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2. ジル: 「サンドイッチと ジュースを お願いします。」\nジルさんは いくらですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "サンドイッチ(600円) + ジュース(350円) = 950円",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "950円",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "1,050円",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "900円",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "1,000円",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3. マーク: 「スパゲッティと サラダと ビールを ください。」\nマークさんは いくらですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "スパゲッティ(700円) + サラダ(400円) + ビール(400円) = 1,500円",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "1,500円",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "1,450円",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "1,550円",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "1,600円",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "items": [
+      {
+        "title": "こうべまで いくらですか",
+        "content": "JRの おおさか駅です。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l03_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. すみません。きょうとまで いくらですか。… ( ) 円ですよ。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "おおさか駅からきょうと駅までは 560円です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "560円",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "410円",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "800円",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "920円",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2. ならへ 行きます。いくらですか。… ( ) 円です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "おおさか駅からなら駅までは 800円です。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "800円",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "560円",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "710円",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "970円",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3. あかしまで 300円ですか。…いいえ、あかしは ( ) 円ですよ。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "おおさか駅からあかし駅までは 920円です。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "920円",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "800円",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "1,140円",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "710円",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "items": [
+      {
+        "title": "いつ 行きますか",
+        "content": "☆ケンさんは いつ 歯医者へ 行きますか。\n\nケンさんの1週間の予定表と、塩崎歯科の診療時間表を比べて、ケンさんが歯医者へ行ける時間帯を選んでください。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l04_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "ケンさんは いつ 歯医者へ 行くことが できますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ケンさんの空き時間と塩崎歯科の診療時間（〇）が重なるのは「木曜日の夜7:00〜9:00」と「日曜日の朝9:00〜12:00」です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "木曜日の よる 7:00〜9:00 と 日曜日の 9:00〜12:00",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "月曜日の あさ 9:00〜12:00 と 木曜日の ひる 3:00〜5:00",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "水曜日の あさ 9:00〜12:00 と 金曜日の よる 7:00〜9:00",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "火曜日の ひる 3:00〜5:00 と 土曜日の あさ 9:00〜12:00",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "items": [
+      {
+        "title": "何時の 飛行機で？",
+        "content": "田中さんは 月曜日の 朝 福岡から 東京の 本社へ 行きます。\n本社の 会議は 10時から 5時までです。本社から 空港まで JRで 30分です。夜 福岡へ 帰ります。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l05_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. 何時の 飛行機で 行きますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "福岡7:00発（8:25羽田着）なら、空港から本社までJRで30分なので9:00頃到着し10時の会議に間に合います。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "07:00 (JAL300)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "08:00 (JAL302)",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "08:25 (JAL304)",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "09:00 (JAL306)",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2. 何時の 飛行機で 帰りますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "会議終了は17:00で空港まで30分かかるため、17:30以降空港着となります。搭乗可能なのは18:15以降の便（18:15, 18:50, 19:30, 19:50）です。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "18:15, 18:50, 19:30, 19:50",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "16:15, 17:10, 18:15",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "15:15, 16:15, 17:10",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "20:15, 20:50, 21:35",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "items": [
+      {
+        "title": "お花見",
+        "content": "お花見を しましょう\n\n奈良の 吉野山へ 行きませんか。\n吉野山で お花見を します。\n電車と ロープウエーで 行きます。\n吉野山で 昼ごはんを 食べます。\n桜の 写真を 撮りましょう。\n皆さん、いっしょに 行きましょう。\n\nいつ：4月18日（土曜日）\nどこで：あべの橋駅で 午前7時30分に 会います\nいくら：2,550円（電車、ロープウエー）\n持ち物：お弁当、飲み物\n申し込み：田中（Tel. 194-0873）\n＊☂：行きません",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l06_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "メル：「何曜日ですか。」\nアン：「(① ) です。」",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ポスターに「4月18日（土曜日）」とあります。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "土曜日",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "日曜日",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "月曜日",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "金曜日",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "メル：「何を しますか。」\nアン：「(② ) を します。」",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ポスターに「吉野山でお花見をします」とあります。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "お花見",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "テニス",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "買い物",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "パーティー",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "メル：「いいですね。何時に 行きますか。」\nアン：「(③ ) に あべの橋駅で 会いましょう。」",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「あべの橋駅で 午前7時30分に会います」とあります。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "7時30分 (午前7時30分)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "8時30分",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "7時00分",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "8時00分",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "メル：「いくらですか。」\nアン：「(④ ) です。」",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「いくら：2,550円」とあります。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "2,550円",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "2,500円",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "2,050円",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "3,000円",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "アン：「お弁当と (⑤ ) を 持って 行きます。」\nメル：「わかりました。じゃ、18日に 会いましょう。」",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "持ち物に「お弁当、飲み物」とあります。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "飲み物",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "カメラ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "傘",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "お菓子",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "items": [
+      {
+        "title": "もらいました・あげました",
+        "content": "わたしは 去年 ペルーから 日本へ 来ました。\nワットさんに テレビを もらいました。松本さんに 机を もらいました。山田さんに コートを もらいました。会社の 人に 自転車を 借りました。わたしは 皆さんに ペルーの お土産を あげました。\nわたしは 来週 国へ 帰ります。きょう 会社の 人に 自転車を 返しました。友達に テレビと 机を あげました。でも、コートを あげませんでした。わたしの 身長は 165センチです。友達の 身長は 2メートルです。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l07_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "だれに 何を もらいましたか。だれに 何を あげましたか。\nA ( ) に入るものは何ですか。（わたしから友達へあげたもの）",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "友達に「机」と「テレビ(②)」をあげました。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① コート",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② テレビ",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 自転車",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 山田さん",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 松本さん",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "B ( ) に入るものは何ですか。（ワットさんからわたしにもらったもの）",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ワットさんに「テレビ(②)」をもらいました。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① コート",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② テレビ",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 自転車",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 山田さん",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 松本さん",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "C ( ) に入るものは何ですか。（Dの人からわたしにもらったもの）",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "山田さんに「コート(①)」をもらいました。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① コート",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② テレビ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 自転車",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 山田さん",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 松本さん",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "D ( ) に入る人はだれですか。（わたしにコートをくれた人）",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "コートをくれたのは「山田さん(④)」です。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "① コート",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② テレビ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 自転車",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 山田さん",
+                "correct": true,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 松本さん",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "E ( ) に入る人はだれですか。（わたしに机をくれた人）",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "机をくれたのは「松本さん(⑤)」です。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "① コート",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② テレビ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 自転車",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 山田さん",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 松本さん",
+                "correct": true,
+                "sortOrder": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "items": [
+      {
+        "title": "町の 生活・田舎の 生活",
+        "content": "【手紙1】\n山川さん、お元気ですか。\nもう 12月ですね。寒いですね。町は 今 とても にぎやかです。そして、きれいです。仕事は 忙しいですが、おもしろいです。\nお正月に わたしの うちへ 来ませんか。いっしょに 楽しい お正月の パーティーを しましょう。\n12月3日 町田 太郎\n\n【手紙2】\n町田さん、先週は どうも ありがとう ございました。\n町の 生活は おもしろいですね。そして、便利です。でも、とても 忙しいです。食べ物も 高いです。町の 生活は 大変ですね。\n田舎の 生活は あまり 便利じゃ ありませんが、静かです。山は とても きれいです。\n今度は わたしの うちへ 来ませんか。ここの 野菜は おいしいですよ。いっしょに ごはんを 食べましょう。\n1月7日 山川 健",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. 山川さんは 12月に 町田さんに 手紙を {①もらいました ②あげました}。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "12月3日に町田さんから手紙をもらいました。(①)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① もらいました",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② あげました",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2. 町田さんは {①暇です ②暇じゃ ありません}。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「仕事は忙しいですが」とあるので暇じゃありません。(②)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① 暇です",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 暇じゃ ありません",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3. 町の 生活は おもしろいですが、{①便利じゃ ありません ②忙しいです}。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「とても忙しいです」とあります。(②)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① 便利じゃ ありません",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 忙しいです",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4. 田舎の 生活は {①にぎやかです ②静かです}。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「あまり便利じゃありませんが、静かです」とあります。(②)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "① にぎやかです",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 静かです",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5. 田舎の 野菜は {①高いです ②おいしいです}。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「ここの野菜はおいしいですよ」とあります。(②)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "① 高いです",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② おいしいです",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "items": [
+      {
+        "title": "日本が 好きです",
+        "content": "インタビュー\nムスヤさんは 写真家です。日本の 山の 写真を たくさん 撮りました。\n\nうちは どちらですか。\n――長野です。長野で 日本の 古い うちを 買いました。畳の 部屋は とても 便利ですから、好きです。仕事と 食事を 同じ 部屋で します。そして、同じ 部屋で 寝ます。\nムスヤさんの お国は タンザニアですね。長野は 寒いですか。\n――ええ、とても 寒いですから、大きい こたつを 買いました。でも、わたしは 長野の 冬が 好きです。冬の 山は きれいです。\n奥さんは 日本の 方ですね。どんな 方ですか。\n――妻は いつも 元気です。そして、料理が 上手です。毎日 妻の おいしい 料理を 食べますから、わたしも 元気です。\n日本の 生活は どうですか。\n――日本の 生活は おもしろいです。わたしは 日本が とても 好きです。\nありがとう ございました。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) ムスヤさんの うちは 長野です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "長野で古いうちを買いました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) ムスヤさんは こたつが あります。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "大きいこたつを買いました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) ムスヤさんは 長野の 冬が 嫌いです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "長野の冬が好きです。(✕)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) ムスヤさんの 奥さんは 料理が あまり 上手じゃ ありません。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "料理が上手です。(✕)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5) ムスヤさんは どうして 畳の 部屋が 好きですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "畳の部屋はとても便利ですから、好きです。(とても便利ですから。)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "とても 便利ですから。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "部屋が 広いですから。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "畳が きれいですから。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "畳の 部屋が 寒いですから。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "6) ムスヤさんは どうして いつも 元気ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "毎日妻のおいしい料理を食べますから、わたしも元気です。",
+            "imageUrl": null,
+            "sortOrder": 6,
+            "options": [
+              {
+                "content": "毎日 奥さんの おいしい 料理を 食べますから。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "毎日 山へ 行きますから。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "たくさん 寝ますから。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "こたつが ありますから。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 10,
+    "items": [
+      {
+        "title": "美術館",
+        "content": "きのう 友達と「みんなの 美術館」へ 行きました。\nおもしろい 絵が たくさん ありました。\n\n1. 窓の 近くに 男の 人と 女の 人が います。女の 人の うしろに 地図が あります。ヨーロッパの 地図です。\n2. 絵の 真ん中に 町が あります。町の 左に 男の 人が、右に 女の 人が います。町の 右の 上に 木が あります。木の 中に 男の 人と 女の 人が います。この 女の 人は 男の 人の 奥さんです。\n3. テーブルの 上に 果物や ナイフや グラスが あります。でも、ワインは ありません。\n4. ピアノの 上に 花が あります。ピアノの 前に 女の 人が います。女の 人の そばに 猫が います。猫は 目が ありますが、女の 人は 目が ありません。\n5. 高い 山が あります。山の 上に 白い 雲が あります。山と 山の 間に 川が あります。川の 近くに 桜の 木が たくさん あります。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l10_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "絵 A はどの説明文の絵ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ピアノの前に目が描かれていない女性と猫がいる絵です。(4)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": true,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "絵 B はどの説明文の絵ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "山の上に白い雲、川の近くに桜の木がある絵です。(5)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": true,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "絵 C はどの説明文の絵ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "果物、ナイフ、グラスがありワインがない絵です。(3)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "絵 D はどの説明文の絵ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "真ん中に町、男女、木の中に夫婦がいる絵です。(2)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "絵 E はどの説明文の絵ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "1〜5の説明文のいずれにも該当しません(-)。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": true,
+                "sortOrder": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 11,
+    "items": [
+      {
+        "title": "お祭り",
+        "content": "先週 佐藤さんの うちで 1週間 ホームステイを しました。佐藤さんの 家族は 4人です。お父さんと お母さんと 8歳の 男の子と 5歳の 女の子です。\n佐藤さんの 町の 近くに 大きい 神社が あります。土曜日に みんなで お祭りに 行きました。神社に 人が 大勢 いました。\n男の子は お父さんに 車のおもちゃを 2台 買ってもらいました。女の子は たこ焼きを 4つ 食べました。わたしは お好み焼きを 2枚 食べました。とても おいしかったです。\n夜 花火を 見ました。とても きれいでした。楽しかったです。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) わたしは 一人で 神社へ 行きました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "みんなでお祭りに神社へ行きました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 神社に 人が あまり いませんでした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "神社に人が大勢いました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) たこ焼きを 食べました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "女の子はたこ焼きを食べました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) きれいな 花火を 見ました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "夜、きれいな花火を見ました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5) 車のおもちゃを いくつ もらいましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "車のおもちゃを2台買ってもらいました。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "2台 もらいました。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "1台 もらいました。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3台 もらいました。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4台 もらいました。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "6) たこ焼きを いくつ 食べましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "たこ焼きを4つ食べました。",
+            "imageUrl": null,
+            "sortOrder": 6,
+            "options": [
+              {
+                "content": "4つ 食べました。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "2つ 食べました。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "6つ 食べました。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "8つ 食べました。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "7) お好み焼きを 何枚 食べましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "お好み焼きを2枚食べました。",
+            "imageUrl": null,
+            "sortOrder": 7,
+            "options": [
+              {
+                "content": "2枚 食べました。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "1枚 食べました。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3枚 食べました。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4枚 食べました。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "8) 佐藤さんの 家族は 何人ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "佐藤さんの家族は4人です。",
+            "imageUrl": null,
+            "sortOrder": 8,
+            "options": [
+              {
+                "content": "4人 いました (4人)。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "3人 いました。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "5人 いました。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "6人 いました。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "お祭りに 行きましょう",
+        "content": "お祭りの屋台での助数詞（数え方）クイズです。\n適切な助数詞を選んでください。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l11_r02_img01.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "A. 金魚すくい (匹) の助数詞番号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "金魚は「匹(④)」で数えます。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① 羽",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 枚",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 杯",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 匹",
+                "correct": true,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 個",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "⑦ 本",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "B. わたあめ・風船 (本) の助数詞番号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "細長い棒のついたものは「本(⑦)」で数えます。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① 羽",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 枚",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 杯",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 匹",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 個",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "⑦ 本",
+                "correct": true,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "C. お面 (枚) の助数詞番号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "平たいお面は「枚(②)」で数えます。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① 羽",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 枚",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 杯",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 匹",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 個",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "⑦ 本",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "D. ジュース (杯) の助数詞番号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "コップのジュースは「杯(③)」で数えます。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "① 羽",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 枚",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 杯",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 匹",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 個",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "⑦ 本",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "E. あひる (羽) の助数詞番号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "鳥類（あひる）は「羽(①)」で数えます。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "① 羽",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 枚",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 杯",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 匹",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 個",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "⑦ 本",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "F. 団子・たこ焼き (個/つ) の助数詞番号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "丸い食べ物は「個(⑤)」で数えます。",
+            "imageUrl": null,
+            "sortOrder": 6,
+            "options": [
+              {
+                "content": "① 羽",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 枚",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 杯",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 匹",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑤ 個/つ",
+                "correct": true,
+                "sortOrder": 5
+              },
+              {
+                "content": "⑦ 本",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 12,
+    "items": [
+      {
+        "title": "沖縄旅行",
+        "content": "わたしは ことしの 3月に 初めて 沖縄へ 行きました。沖縄は 九州の 南に あります。大阪から 船で 2日ぐらい かかりました。\n沖縄の 海は 青くて、とても きれいでした。わたしは 海で 泳ぎました。魚が たくさん いました。\n果物も おいしかったです。特に マンゴーが 一番 おいしかったです。\n沖縄の 人は 親切で、温かかったです。また 行きたいです。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 大阪から 沖縄まで 船で 3日ぐらいです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "大阪から船で2日ぐらいかかりました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 沖縄の 海は あまり きれいじゃ ありませんでした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "海は青くて、とてもきれいでした。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 海で 魚を 見ました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "魚がたくさんいました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) バナナが 一番 おいしかったです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "マンゴーが一番おいしかったです。(✕)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5) 沖縄の 人は 親切でした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "沖縄の人は親切で、温かかったです。(〇)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "クイズ 世界と 日本",
+        "content": "日本の地理や世界の地理についてのクイズです。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l12_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1. 富士山は 日本で 一番 高い 山です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "富士山(3,776m)は日本最高峰です。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2. 信濃川は 世界で 一番 長い 川です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "信濃川は日本で一番長い川ですが世界一ではありません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3. 琵琶湖は 日本で 一番 小さい 湖です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "琵琶湖は日本最大の湖です。(✕)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4. 日本は 島国です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本は四方を海に囲まれた島国です。(〇)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5. 東京は 北海道より 寒いです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "北海道の方が北にあり寒いです。(✕)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "6. 京都は 沖縄より 南に あります。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "沖縄の方が南にあります。(✕)",
+            "imageUrl": null,
+            "sortOrder": 6,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "7. 日本で 8月が 一番 暑いです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本の夏で8月が最も気温が高くなります。(〇)",
+            "imageUrl": null,
+            "sortOrder": 7,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "8. 日本と イギリスと どちらが 広いですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本の面積は約37.8万km²、イギリスは約24.4万km²で日本の方が広いです。(①)",
+            "imageUrl": null,
+            "sortOrder": 8,
+            "options": [
+              {
+                "content": "① 日本",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② イギリス",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "9. 東京と ニューヨークと どちらが 人が 多いですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "大都市圏人口では東京の方が人が多いです。(②)",
+            "imageUrl": null,
+            "sortOrder": 9,
+            "options": [
+              {
+                "content": "① ニューヨーク",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 東京",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "10. 富士山と エベレストと どちらが 高いですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "エベレスト(8,848m)の方が高いです。(①)",
+            "imageUrl": null,
+            "sortOrder": 10,
+            "options": [
+              {
+                "content": "① エベレスト",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 富士山",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "11. 日本で 一番 北に あるのは どこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本で最も北にあるのは北海道です。(②)",
+            "imageUrl": null,
+            "sortOrder": 11,
+            "options": [
+              {
+                "content": "① 本州",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 北海道",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 九州",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "12. 日本で 一番 長い 川は どれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本で一番長い川は信濃川(367km)です。(①)",
+            "imageUrl": null,
+            "sortOrder": 12,
+            "options": [
+              {
+                "content": "① 信濃川",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 利根川",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 石狩川",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "13. 日本で 一番 大きい 湖は どれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本最大の湖は琵琶湖です。(③)",
+            "imageUrl": null,
+            "sortOrder": 13,
+            "options": [
+              {
+                "content": "① 霞ヶ浦",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 諏訪湖",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 琵琶湖",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 13,
+    "items": [
+      {
+        "title": "宝くじ",
+        "content": "宝くじが 当たりました。3億円です。信じられません。\n仕事を 辞めました。世界旅行に 行きました。ハワイ、パリ、ローマ…。毎日 おいしい 料理を 食べました。買い物を たくさん しました。大きい うちを 買いました。車も 3台 買いました。友達に たくさん お金を 貸しました。\nでも、全部 なくなりました。仕事も、お金も、友達も ありません。\n宝くじを 買う 前の 生活の ほうが よかったです。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l13_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "2番目の 絵（宝くじが当たった直後、会社を辞めて旅行へ行く）はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "2番目は仕事を辞めて旅行に出発する絵(A)です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "A",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "F",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "3番目の 絵（旅行先でおいしい料理やパーティーを楽しむ）はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "3番目はごちそうを食べる絵(D)です。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "A",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": true,
+                "sortOrder": 4
+              },
+              {
+                "content": "F",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "4番目の 絵（大きい家と車を3台買う）はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "4番目は大邸宅と高級車を買う絵(C)です。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "A",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "F",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "5番目の 絵（友達にお金をたくさん貸す）はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "5番目は友達にお金を貸す絵(F)です。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "A",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "F",
+                "correct": true,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "6番目の 絵（お金も友達も仕事もなくなる）はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "6番目はすべてを失って途方に暮れる絵(B)です。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "A",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "F",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 14,
+    "items": [
+      {
+        "title": "ビデオレター",
+        "content": "マナさんから ビデオレターを もらいました。マナさんは 大阪を 旅行して います。\n「洋子さん、こんにちは。今、道頓堀に います。あそこの 橋の 上で 男の 人が ギターを 弾いて いますね。とても 上手ですね。\nわたしは たこ焼きを 食べました。熱かったですが、とても おいしかったです。\nあ、公園で 犬と 散歩して いる 人が います。かわいい 犬ですね。\nあしたは 大阪城を 見に 行きます。じゃ、また ビデオを 送りますね。」",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. マナさんは だれに ビデオレターを 送りましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「洋子さん、こんにちは」と呼びかけています。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "洋子さんに 送りました。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "田中さんに 送りました。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "佐藤さんに 送りました。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "先生に 送りました。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2. 男の 人は どこで ギターを 弾いて いますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「橋の上で男の人がギターを弾いていますね」とあります。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "橋の 上で 弾いて います。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "公園で 弾いて います。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "店の中で 弾いて います。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "駅の前で 弾いて います。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3. たこ焼きは どうでしたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「熱かったですが、とてもおいしかったです」とあります。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "熱かったですが、とても おいしかったです。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "冷たかったです。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "辛かったです。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "あまり おいしくなかったです。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "4. 公園で だれが 何を して いますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「公園で犬と散歩している人がいます」とあります。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "犬と 散歩して います。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "ギターを 弾いて います。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "たこ焼きを 食べて います。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "走って います。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "5. あした どこへ 行きますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「あしたは大阪城を見に行きます」とあります。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "大阪城を 見に 行きます。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "京都へ 行きます。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "海へ 行きます。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "国へ 帰ります。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "みんなの 伝言板",
+        "content": "掲示板（伝言板）のお知らせを見て質問に答えてください。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l14_r02_img01.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1. 「日本語を 教えて ください」と 書いた 人は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "伝言板1に名前があります。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "たかはしさん (高橋さん)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "山本さん",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "スミスさん",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "木村さん",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2. 「猫を もらって ください」と 書いた 人は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "伝言板2に名前があります。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "山本さん",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "たかはしさん",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "佐藤さん",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "山田さん",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 15,
+    "items": [
+      {
+        "title": "高校",
+        "content": "日本では 小学校と 中学校の 9年間は 義務教育です。中学校を 卒業して、ほとんどの 人が 高校へ 行きます。高校は 3年間です。普通科の ほかに、商業科や 工業科などが あります。\n\n生徒の インタビュー：\nA君（普通科）：「将来 大学へ 行きたいですから、毎日 一生懸命 勉強して います。」\nB君（工業科）：「機械や コンピューターの 勉強を して います。将来 自動車の 会社で 働きたいです。」\nCさん（商業科）：「簿記や パソコンを 習って います。卒業したら、銀行で 働きたいです。」",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 将来 大学へ 行きたい 人は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "A君は「将来大学へ行きたい」と述べています。(A)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "A君",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "B君",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "Cさん",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "2) 卒業したら、銀行で 働きたい 人は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Cさんは「卒業したら、銀行で働きたい」と述べています。(C)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "A君",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B君",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "Cさん",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "3) 将来 自動車の 会社で 働きたい 人は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "B君は「将来自動車の会社で働きたい」と述べています。(B)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "A君",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B君",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "Cさん",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "4) 普通科の 生徒は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "A君は普通科です。(A)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "A君",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "B君",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "Cさん",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "5) 商業科の 生徒は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "Cさんは商業科です。(C)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "A君",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B君",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "Cさん",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "6) 日本では 中学校まで 義務教育です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "小学校と中学校の9年間は義務教育です。(〇)",
+            "imageUrl": null,
+            "sortOrder": 6,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "7) ほとんどの 人が 高校へ 行きます。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ほとんどの人が高校へ行きます。(〇)",
+            "imageUrl": null,
+            "sortOrder": 7,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "8) 高校は 4年間です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "高校は3年間です。(✕)",
+            "imageUrl": null,
+            "sortOrder": 8,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "日本の 高校生に 聞きました",
+        "content": "全国の高校生を対象にしたアンケート結果のグラフです。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l15_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1. 勉強が 好きな 高校生より、嫌いな 高校生の ほうが 多いです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "グラフで嫌いと答えた生徒の割合が上回っています。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2. スマートフォンを 持って いない 高校生の ほうが 多いです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "持っている生徒が大半を占めています。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3. 将来の 夢が ある 高校生は 半分以下です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "夢がある高校生は過半数です。(✕)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 16,
+    "items": [
+      {
+        "title": "想像の 動物",
+        "content": "世界には いろいろな 想像の 動物が います。\n\n1. 人魚：上が 人間で、下が 魚です。海に 住んで います。\n2. ケンタウロス：上が 人間で、下が 馬です。ギリシャ神話に 出て きます。\n3. スフィンクス：顔が 人間で、体が ライオンです。エジプトの ピラミッドの 前に います。\n4. 河童：頭に 皿が あります。川や 池に 住んで います。きゅうりが 好きです。\n5. 天狗：鼻が 高くて、顔が 赤いです。山に 住んで いて、空を 飛ぶ ことが できます。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l16_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "人魚 (にんぎょ) の 絵は何番ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "上が人間、下が魚の絵は4番です。(4)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": true,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "ケンタウロス の 絵は何番ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "上が人間、下が馬の絵は5番です。(5)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": true,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "スフィンクス の 絵は何番ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "スフィンクスの絵は描かれていません(-)。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": true,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "河童 (かっぱ) の 絵は何番ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "頭に皿がある河童の絵は2番です。(2)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "天狗 (てんぐ) の 絵は何番ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "鼻が高く団扇を持った天狗の絵は3番です。(3)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "1",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "2",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "3",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "4",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "5",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "- (どの絵でもない)",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 17,
+    "items": [
+      {
+        "title": "江戸時代",
+        "content": "江戸時代は 1603年から 1868年までです。徳川将軍が 日本を 治めて いました。\nこの 時代、日本は 外国と 貿易を あまり しませんでした。鎖国と 言います。平和な 時代が 250年以上 続きました。\n人々は 身分に よって 住む 所や 着る 物が 違いました。武士、農民、職人、商人が いました。\n町人文化が 発達して、歌舞伎や 浮世絵が 生まれました。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. 江戸時代は 100年ぐらい 続きました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "江戸時代は250年以上続きました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2. 江戸時代、外国と たくさん 貿易を しました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "鎖国のため外国と貿易をあまりしませんでした。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3. 平和な 時代でした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "平和な時代が250年以上続きました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4. 武士と 農民は 同じ 服を 着て いました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "身分によって着る物が違いました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5. 歌舞伎は 江戸時代の 前に 始まりました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "江戸時代に町人文化として歌舞伎が生まれました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 18,
+    "items": [
+      {
+        "title": "個人旅行？ 団体旅行？",
+        "content": "旅行に 行く とき、個人旅行と 団体旅行と どちらが いいですか。\n\nA（個人旅行が 好きな 人）：「自分の 好きな 所へ 行く ことが できます。自由な 時間が たくさん ありますから、個人旅行の ほうが 好きです。」\n\nB（団体旅行が 好きな 人）：「旅行会社が ホテルや 切符を 全部 予約して くれます。道に 迷いませんし、安全ですから、団体旅行の ほうが 便利です。」",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. 自由に 観光したい 人は どちらですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "自由な時間があるのは個人旅行(A)です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "A (個人旅行)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "B (団体旅行)",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2. 自分で 予約するのが 大変な 人は どちらですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "会社が全部予約してくれる団体旅行(B)が合っています。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "A (個人旅行)",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B (団体旅行)",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3. 初めて 外国へ 行く 人は どちらが 安心ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "道に迷わず安全な団体旅行(B)が安心です。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "A (個人旅行)",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B (団体旅行)",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4. 好きな 時間に 起きて 出かけたい 人は どちらですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "自由に行動できる個人旅行(A)です。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "A (個人旅行)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "B (団体旅行)",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5. ガイドの 説明を 聞きたい 人は どちらですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "団体旅行(B)にはガイドがつきます。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "A (個人旅行)",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B (団体旅行)",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ここは どこですか",
+        "content": "会話や状況から場所を特定する問題です。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l18_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "A の場所はどこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "本がたくさんある場所です。(⑥)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① 駅",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 銀行",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 病院",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 空港",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑥ 本屋・図書館",
+                "correct": true,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "B の場所はどこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "お金を下ろしたり送金する場所です。(②)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① 駅",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 銀行・郵便局",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 病院",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 空港",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑥ 本屋",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "C の場所はどこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "乗り物に乗る場所です。(④)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① レストラン",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 銀行",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 病院",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 駅・空港",
+                "correct": true,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑥ 図書館",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          },
+          {
+            "question": "D の場所はどこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "病気や薬の場所です。(③)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "① ホテル",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 郵便局",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 病院・薬局",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 空港",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "⑥ 本屋",
+                "correct": false,
+                "sortOrder": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 19,
+    "items": [
+      {
+        "title": "相撲",
+        "content": "相撲を 見た ことが ありますか。相撲は 日本の 古い スポーツです。1300年ぐらい まえから ありました。昔は 神様のための お祭りでした。江戸時代に プロスポーツに なりました。\n力士は まわしを しめて、土俵の 上で 戦います。土俵から 出たり、足の 裏以外が 土に ついたり すると、負けです。\n本場所は 1年に 6回 あります。東京、大阪、名古屋、福岡で あります。テレビでも 見る ことが できます。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. 相撲は いつごろ 始まりましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "1300年ぐらい前からありました。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "1300年ぐらいまえから 始めました。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "500年ぐらいまえから 始めました。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "100年まえから 始めました。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "江戸時代から 始めました。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2. いつ プロスポーツに なりましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "江戸時代にプロスポーツになりました。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "江戸時代に プロスポーツに なりました。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "明治時代に プロスポーツに なりました。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "1300年まえに プロスポーツに なりました。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "戦後に プロスポーツに なりました。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3. 1年に 何回 本場所を 見る ことが できますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "本場所は1年に6回あります。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "6回 見る ことが できます。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "4回 見る ことが できます。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "12回 見る ことが できます。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "3回 見る ことが できます。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "4. テレビで 相撲を 見る ことが できますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「テレビでも見ることができます」とあります。(はい、できます。)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "はい、できます。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "いいえ、できません。",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 20,
+    "items": [
+      {
+        "title": "伊能忠敬の 一生",
+        "content": "伊能忠敬は 日本で 初めて 正確な 日本地図を 作った 人です。\n1745年に 生まれました。50歳の とき、仕事を 息子に ゆずって、江戸へ 行きました。そして、天文学や 測量を 勉強しました。\n55歳から 自分の 足で 日本中を 歩いて、測量を しました。17年間 歩きました。歩いた 距離は 約4万キロです。\n1816年に 測量を 終わりました。忠敬が 亡くなった あと、弟子たちが 地図を 完成させました。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "① 日本の 正確な 地図を 作った 人の名前は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "伊能忠敬(いのうただたか)です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "伊能忠敬",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "徳川家康",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "松尾芭蕉",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "福沢諭吉",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "② 何歳のとき、仕事を 息子に ゆずりましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「50歳のとき、仕事を息子にゆずって」とあります。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "50歳",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "40歳",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "55歳",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "60歳",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "③ 勉強した 場所は どこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「江戸へ行きました」とあります。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "江戸",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "大阪",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "京都",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "長崎",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "④ 江戸で 何を 勉強しましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「天文学や測量を勉強しました」とあります。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "天文学 (と測量)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "医学",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "経済学",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "文学",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "⑤ 何年に 測量を 終わりましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「1816年に測量を終わりました」とあります。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "1816年",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "1745年",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "1800年",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "1868年",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "クイズ 地図の 記号",
+        "content": "日本の地図記号についてのクイズです。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l20_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1. 小学校・中学校を表す地図記号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "文の記号は学校を表します。(③)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "①",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "②",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ (文)",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "2. 病院を表す地図記号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "十字マークは病院を表します。(②)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "①",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② (十に〇)",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "3. 郵便局を表す地図記号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "〒マークは郵便局を表します。(①)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① (〒)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "②",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "4. 交番・警察署を表す地図記号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "交差した警棒マークは交番を表します。(③)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "①",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "②",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ (X)",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "5. 神社を表す地図記号はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "鳥居マークは神社を表します。(①)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "① (鳥居)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "②",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "クイズ 日本の 地理",
+        "content": "日本の地理についてのクイズです。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l20_r03.png",
+        "sortOrder": 3,
+        "questions": [
+          {
+            "question": "1. 日本の首都はどこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本の首都は東京です。(①)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① 東京",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 京都",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2. 日本で一番面積が大きい都道府県はどこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "北海道が最も広いです。(①)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① 北海道",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 岩手県",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3. 本州と四国をつなぐ橋はありますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "瀬戸大橋などでつながっています。(②)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① ありません",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② あります (瀬戸大橋など)",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4. 日本の四季で桜が咲くのはいつですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "春(3〜4月)に咲きます。(①)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "① 春",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 秋",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5. 日本で一番南にある県はどこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "沖縄県が最も南にあります。(②)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "① 鹿児島県",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 沖縄県",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 21,
+    "items": [
+      {
+        "title": "雨 降って、地 固まる",
+        "content": "「雨 降って、地 固まる」ということわざが あります。喧嘩や 悪い ことの あとに、前より いい 関係に なる という 意味です。\n結婚した ばかりの 夫婦の 相談です。夫と 妻の 意見が 合わなくて、よく 喧嘩を します。でも、よく 話し合って、お互いを 理解する ように なりました。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1. 「雨 降って、地 固まる」とは どういう 意味ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "困難や揉め事を経て絆が深まることを意味します。(③)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① 雨が降ると地面がぬかるむこと",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 天気がよくなると出かけること",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 喧嘩や揉め事のあと、前より仲がよくなること",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "2. 夫婦の 喧嘩の 理由は 何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "お互いの考え方や習慣の違いが理由です。(③)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① お金がないこと",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 料理がまずいこと",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 考え方や生活習慣の違い",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "3. 喧嘩の あと、どう 解決しましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "よく話し合ってお互いを理解するようになりました。(②)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① 話さないで別れた",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② よく話し合ってお互いを理解した",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 両親に頼んだ",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "結婚!!??",
+        "content": "現代の若者の結婚に関する意識調査アンケートです。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l21_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "アンケート：結婚について若者が重視していることは何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "性格や価値観の一致が最も重視されています。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "お互いの性格や価値観が合うこと",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "相手の学歴",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "親の希望",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 22,
+    "items": [
+      {
+        "title": "テレビ放送",
+        "content": "日本で 初めて テレビ放送を したのは 1953年2月1日です。その とき、テレビを 持って いた 人は 866人だけでした。テレビが とても 高かったからです。\nテレビが 急に 増えた きっかけは、1959年の 皇太子の 結婚式です。テレビを 見たい 人が たくさん 買って、200万台を こえました。そして、1964年の 東京オリンピックで カラーテレビが 普及しました。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "① テレビが 急に 増えた きっかけは何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "1959年の皇太子の結婚式がきっかけです。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "皇太子の 結婚式",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "新幹線の 開通",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "映画の 公開",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "② 皇太子の結婚式のころ、テレビは何台をこえましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "200万台をこえました。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "200万台",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "100万台",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "500万台",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "③ カラーテレビが 急に 増えた きっかけは何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "1964年の東京オリンピックです。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "(東京で) オリンピック",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "サッカーワールドカップ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "万国博覧会",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "1) 1953年に ほとんどの 家に テレビが ありました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "当時は866人だけでした。(✕)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 皇太子の 結婚式を 見たい 人が たくさん テレビを 買いました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "結婚式を見たい人がたくさん買いました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 東京オリンピックの ころ、カラーテレビが 増えました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "東京オリンピックでカラーテレビが普及しました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 6,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "テレビ番組",
+        "content": "番組表を見て答えましょう。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l22_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "A. 22:00から ニュースを 見たいです。何チャンネルを 見ますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "22:00 9チャンネルでニュースが放送されます。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "22:00 9チャンネル",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "22:00 1チャンネル",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "21:00 3チャンネル",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "B. 20:00から ドラマを 見たいです。何チャンネルを 見ますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "20:00 3チャンネルでドラマが放送されます。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "20:00 3チャンネル",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "20:00 6チャンネル",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "19:00 9チャンネル",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "東京 スカイツリーと 法隆寺五重塔…",
+        "content": "東京スカイツリーの 高さは 634メートルです。世界で 一番 高い 電波塔です。\nスカイツリーの 耐震技術（地震に 強い 技術）は、奈良の 法隆寺五重塔の 技術と同じです。真ん中に「心柱」という 太い 柱が あって、地震が 来ても 倒れません。1300年以上 前の 日本の 建築技術が 今も 生きて います。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l22_r03.png",
+        "sortOrder": 3,
+        "questions": [
+          {
+            "question": "1. スカイツリーの 高さは 何メートルですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "高さは634(ムサシ)メートルです。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "634メートル",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "333メートル",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "500メートル",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "1000メートル",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2. スカイツリーは どうして 地震に 強いですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "法隆寺五重塔の「心柱」と同じ耐震構造を採用しています。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "五重塔と同じ「心柱」の技術を使って揺れを抑えるから",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "ゴムの上に建っているから",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "軽くて柔らかいから",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 23,
+    "items": [
+      {
+        "title": "コーヒーを 飲むと",
+        "content": "コーヒーは 今から 200年ぐらい 前に オランダ人が 日本へ 持って 来ました。最初、日本人は「苦くて おいしくない」と 言いました。でも、今 コーヒーは 日本中で 飲まれて います。\nコーヒーを 飲むと、どんな 効果が ありますか。カフェインが 入って いますから、目が 覚めて、元気に なります。頭の 働きが よく なります。また、いい 香りを かぐと、リラックスする ことが できます。温かい コーヒーを 飲むと、体が 温かく なります。でも、夜 たくさん 飲むと、眠る ことが できなく なりますから、気を つけて ください。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) コーヒーは 日本人が 作りました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "オランダ人が日本へ持って来ました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 最初から 日本人は コーヒーが 大好きでした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "最初は「苦くておいしくない」と言いました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 夜 たくさん 飲むと、よく 眠れます。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "夜たくさん飲むと眠れなくなります。(✕)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4. コーヒーを 飲むと、どんな よい 効果が ありますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "文中にある効果が該当します。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "元気に なります。頭の 働きが よく なります。リラックスできます。体が 温かく なります。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "すぐに 眠く なります。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "お腹が すきます。",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "背が 高く なります。",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 24,
+    "items": [
+      {
+        "title": "日本語で お願いします",
+        "content": "わたしは アランです。大阪に 住んで います。\n日本へ 来た とき、日本語が 全然 話せませんでした。でも、スーパーや 駅で 人に 話しかけると、みんな 英語で 答えて くれました。親切ですが、わたしは 日本語を 勉強したいと 思いました。\nある日、Tシャツを 買いました。背中に「日本語で お願いします」と 書いて あります。その Tシャツを 着て 出かけると、みんな 日本語で 話しかけて くれる ように なりました。とても うれしかったです。",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) アランさんは 日本へ 来た とき、日本語が 上手でした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "全然話せませんでした。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 日本人は アランさんに 最初 日本語だけで 話しました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "みんな英語で答えてくれました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) アランさんは 日本語で 話したいと 思いました。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本語を勉強したいと思いました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) Tシャツを 着た あと、だれも 話しかけませんでした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "みんな日本語で話しかけてくれるようになりました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5) Tシャツには 何と 書いて ありましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「日本語で お願いします」と書いてありました。(②)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "① 「英語で お願いします」",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 「日本語で お願いします」",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 「こんにちは」",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "それ、英語？",
+        "content": "カタカナ言葉（和製英語など）とイラストのマッチング問題です。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l24_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1. マンション の イラストカードはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本のマンション（集合住宅）はDです。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "A",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "D (集合住宅)",
+                "correct": true,
+                "sortOrder": 4
+              },
+              {
+                "content": "E",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "F",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "2. テレホンカード の イラストカードはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "テレホンカードはFです。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "A",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "E",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "F (テレホンカード)",
+                "correct": true,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "3. オートバイ の イラストカードはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "オートバイ(バイク)はEです。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "A",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "E (オートバイ)",
+                "correct": true,
+                "sortOrder": 5
+              },
+              {
+                "content": "F",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "4. ノートパソコン の イラストカードはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ノートパソコンはBです。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "A",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B (ノートPC)",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "E",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "F",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "5. フライパン の イラストカードはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "フライパンはAです。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "A (フライパン)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "C",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "E",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "F",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          },
+          {
+            "question": "6. ガソリンスタンド の イラストカードはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ガソリンスタンドはCです。",
+            "imageUrl": null,
+            "sortOrder": 6,
+            "options": [
+              {
+                "content": "A",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "B",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "C (ガソリンスタンド)",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "D",
+                "correct": false,
+                "sortOrder": 4
+              },
+              {
+                "content": "E",
+                "correct": false,
+                "sortOrder": 5
+              },
+              {
+                "content": "F",
+                "correct": false,
+                "sortOrder": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 25,
+    "items": [
+      {
+        "title": "将来は…",
+        "content": "高校生 3人の 進路についての 話です。\n\n出本君：「わたしは 高校を 卒業したら、大学へ 行かないで、料理の 専門学校へ 行きます。将来 自分の レストランを 開きたいですから。」\n川田君：「わたしは 大学へ 行きます。両親が 大学を 出なければ ならないと 言いました。川田君も そう 思いましたから。」\n佐藤君：「わたしは 音楽の 勉強が したいですが、両親は 経済の 勉強を しろと 言います。意見が 違いますから、今 悩んで います。」",
+        "translation": null,
+        "imageUrl": null,
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 専門学校へ 行く 人は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "出本君は料理の専門学校へ行きます。(①)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① 出本君",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 川田君",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 佐藤君",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "2) 両親と 同じ 意見で 大学へ行く 人は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "川田君は両親と同じ意見です。(②)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① 出本君",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 川田君",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 佐藤君",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "3) 将来の 進路について 悩んで いる 人は だれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "佐藤君は両親と意見が違い悩んでいます。(②)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① 出本君",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 佐藤君",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 川田君",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "4) 出本君は どうして 大学へ 行きませんか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "自分の進みたい道（料理）が明確なためです。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "大学で 勉強したい ことが 見つかりませんでしたから、大学へ 行っても 意味が ないと 思いました。(料理の道へ進むため)",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "お金が ないからです。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "試験に 落ちたからです。",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "5) 川田君は どうして 大学へ 行きますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "両親の勧めと本人の意志が一致したためです。",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "両親が 大学を 出なければ ならないと 言いました。川田君も そう 思いましたから。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "友達が みんな 行くからです。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "遊びたいからです。",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "6) 佐藤君は どうして 悩んで いますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "佐藤君と両親の意見が違うためです。",
+            "imageUrl": null,
+            "sortOrder": 6,
+            "options": [
+              {
+                "content": "佐藤君と 両親の 意見が 違いましたから。",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "行きたい 大学が ないからです。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "成績が 悪いからです。",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "若い 人の 考え方",
+        "content": "世界各国の若者の価値観調査データについての問題です。",
+        "translation": null,
+        "imageUrl": "/media/reading/reading_n5_l25_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1. 「仕事より 自分の 生活を 大切に したい」と 答えた 人が 一番 多い 国は どこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "調査データでフランスがトップです。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "フランス",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "日本",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "アメリカ",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "韓国",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2. 日本の 若い 人が 仕事を 選ぶ ときに 一番 大切に して いる ものは何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「収入」が最優先項目となっています。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "日本：収入",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "日本：やりがい",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "日本：自由時間",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "3. 「休みの 日に 家族と 過ごしたい」と 答えた 人が 一番 多い 国は どこですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "調査データでフランスが一番多いです。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "フランス",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "日本",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "ドイツ",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
