@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContext";
 
 export default function Navbar() {
   const location = useLocation();
+  const { currentUser, logout } = useAuth();
 
   return (
     <header className="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
@@ -21,7 +23,7 @@ export default function Navbar() {
         <nav className="flex items-center space-x-1 sm:space-x-2">
           <Link
             to="/n5/lessons"
-            className={`px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors ${
+            className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold transition-colors ${
               location.pathname === "/n5/lessons"
                 ? "bg-indigo-50 text-indigo-700 border border-indigo-200/60"
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
@@ -31,18 +33,61 @@ export default function Navbar() {
           </Link>
           <Link
             to="/n5/exercises"
-            className={`px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors ${
+            className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold transition-colors ${
               location.pathname.startsWith("/n5/exercises") || location.pathname.startsWith("/exercises")
                 ? "bg-indigo-50 text-indigo-700 border border-indigo-200/60"
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
             }`}
           >
-            Bài tập N5 (27 bài)
+            Bài tập N5
           </Link>
-          <div className="h-4 w-[1px] bg-slate-200 mx-1 hidden sm:block" />
-          <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">
+          <span className="hidden sm:inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">
             JLPT N5
           </span>
+
+          <div className="h-4 w-[1px] bg-slate-200 mx-1 hidden sm:block" />
+
+          {currentUser ? (
+            <div className="flex items-center space-x-2 pl-1">
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-xs border border-indigo-200">
+                  {currentUser.fullName ? currentUser.fullName.charAt(0).toUpperCase() : "U"}
+                </div>
+                <div className="hidden md:block text-left">
+                  <div className="text-xs font-bold text-slate-800 leading-tight truncate max-w-[120px]">
+                    {currentUser.fullName || currentUser.email}
+                  </div>
+                  <div className="text-[10px] text-slate-400 leading-tight truncate max-w-[120px]">
+                    {currentUser.email}
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={logout}
+                id="logout-button"
+                className="px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-rose-600 hover:bg-rose-50 transition-colors border border-slate-200"
+              >
+                Đăng xuất
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center space-x-1 sm:space-x-2">
+              <Link
+                to="/login"
+                id="login-link"
+                className="px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 transition-colors"
+              >
+                Đăng nhập
+              </Link>
+              <Link
+                to="/register"
+                id="register-link"
+                className="px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold bg-indigo-600 text-white hover:bg-indigo-500 shadow-xs transition-colors"
+              >
+                Đăng ký
+              </Link>
+            </div>
+          )}
         </nav>
       </div>
     </header>
