@@ -10,5 +10,11 @@ public interface LevelRepository extends JpaRepository<Level, Long> {
 
     List<Level> findByActiveTrueOrderBySortOrderAsc();
 
+    List<Level> findAllByOrderBySortOrderAsc();
+
     Optional<Level> findByCode(String code);
+
+    boolean existsByCode(String code);
+
+    boolean existsByCodeAndIdNot(String code, Long id);
 }

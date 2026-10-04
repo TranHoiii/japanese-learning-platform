@@ -9,5 +9,15 @@ public interface LessonRepository extends JpaRepository<Lesson, Long> {
 
     List<Lesson> findByLevelIdAndActiveTrueOrderBySortOrderAsc(Long levelId);
 
+    List<Lesson> findByLevelIdOrderBySortOrderAsc(Long levelId);
+
+    List<Lesson> findAllByOrderBySortOrderAsc();
+
     java.util.Optional<Lesson> findByLevelIdAndLessonNumber(Long levelId, Integer lessonNumber);
+
+    boolean existsByLevelId(Long levelId);
+
+    boolean existsByLevelIdAndLessonNumber(Long levelId, Integer lessonNumber);
+
+    boolean existsByLevelIdAndLessonNumberAndIdNot(Long levelId, Integer lessonNumber, Long id);
 }

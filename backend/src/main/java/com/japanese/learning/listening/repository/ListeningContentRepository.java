@@ -16,6 +16,10 @@ public interface ListeningContentRepository extends JpaRepository<ListeningConte
     @EntityGraph(attributePaths = {"questions"})
     List<ListeningContent> findByLessonIdOrderBySortOrderAsc(Long lessonId);
 
+    List<ListeningContent> findAllByOrderBySortOrderAsc();
+
+    boolean existsByLessonId(Long lessonId);
+
     @EntityGraph(attributePaths = {"questions", "questions.options"})
     @Query("SELECT lc FROM ListeningContent lc WHERE lc.id = :id")
     Optional<ListeningContent> findByIdWithDetails(@Param("id") Long id);

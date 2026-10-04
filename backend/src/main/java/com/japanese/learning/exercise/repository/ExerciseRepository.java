@@ -17,6 +17,8 @@ public interface ExerciseRepository extends JpaRepository<Exercise, Long> {
 
     List<Exercise> findByLessonIdOrderBySortOrderAsc(Long lessonId);
 
+    boolean existsByLessonId(Long lessonId);
+
     Optional<Exercise> findBySortOrder(Integer sortOrder);
 
     @EntityGraph(attributePaths = {"questions"})

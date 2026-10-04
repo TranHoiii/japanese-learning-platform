@@ -13,5 +13,13 @@ public interface LessonKanjiRepository extends JpaRepository<LessonKanji, Long> 
     @EntityGraph(attributePaths = {"kanji", "kanji.compounds"})
     List<LessonKanji> findByLessonIdOrderBySortOrderAsc(Long lessonId);
 
+    boolean existsByLessonId(Long lessonId);
+
+    boolean existsByKanjiId(Long kanjiId);
+
     boolean existsByLessonIdAndKanjiId(Long lessonId, Long kanjiId);
+
+    java.util.Optional<LessonKanji> findByLessonIdAndKanjiId(Long lessonId, Long kanjiId);
+
+    void deleteByLessonIdAndKanjiId(Long lessonId, Long kanjiId);
 }

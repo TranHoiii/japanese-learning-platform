@@ -21,9 +21,23 @@ import FavoritePage from "./pages/FavoritePage";
 import SearchPage from "./pages/SearchPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
+// Admin CMS
+import RequireAdmin from "./components/RequireAdmin";
+import AdminLayout from "./layouts/AdminLayout";
+import AdminDashboardPage from "./pages/admin/AdminDashboardPage";
+import AdminLevelsPage from "./pages/admin/AdminLevelsPage";
+import AdminLessonsPage from "./pages/admin/AdminLessonsPage";
+import AdminVocabulariesPage from "./pages/admin/AdminVocabulariesPage";
+import AdminGrammarsPage from "./pages/admin/AdminGrammarsPage";
+import AdminKanjisPage from "./pages/admin/AdminKanjisPage";
+import AdminListeningsPage from "./pages/admin/AdminListeningsPage";
+import AdminReadingsPage from "./pages/admin/AdminReadingsPage";
+import AdminExercisesPage from "./pages/admin/AdminExercisesPage";
+
 export default function App() {
   return (
     <Routes>
+      {/* Learner Public & Protected Routes */}
       <Route path="/" element={<HomePage />} />
       <Route path="/search" element={<SearchPage />} />
       <Route path="/login" element={<LoginPage />} />
@@ -48,6 +62,22 @@ export default function App() {
       <Route path="/listenings/:id" element={<ListeningDetailPage />} />
       <Route path="/readings/:id" element={<ReadingDetailPage />} />
       <Route path="/exercises/:id" element={<ExerciseDetailPage />} />
+
+      {/* Admin CMS Routes (Protected by RequireAdmin) */}
+      <Route element={<RequireAdmin />}>
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<AdminDashboardPage />} />
+          <Route path="levels" element={<AdminLevelsPage />} />
+          <Route path="lessons" element={<AdminLessonsPage />} />
+          <Route path="vocabularies" element={<AdminVocabulariesPage />} />
+          <Route path="grammars" element={<AdminGrammarsPage />} />
+          <Route path="kanjis" element={<AdminKanjisPage />} />
+          <Route path="listenings" element={<AdminListeningsPage />} />
+          <Route path="readings" element={<AdminReadingsPage />} />
+          <Route path="exercises" element={<AdminExercisesPage />} />
+        </Route>
+      </Route>
+
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

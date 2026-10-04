@@ -11,6 +11,11 @@ public interface VocabularyRepository extends JpaRepository<Vocabulary, Long> {
 
     List<Vocabulary> findByLessonIdOrderByIdAsc(Long lessonId);
 
+    @Query("SELECT v FROM Vocabulary v WHERE v.lesson.level.id = :levelId ORDER BY v.id ASC")
+    List<Vocabulary> findByLevelIdOrderByIdAsc(@Param("levelId") Long levelId);
+
+    boolean existsByLessonId(Long lessonId);
+
     List<Vocabulary> findAllByOrderByIdAsc();
 
     @Query("SELECT v FROM Vocabulary v WHERE " +

@@ -15,6 +15,10 @@ public interface ReadingContentRepository extends JpaRepository<ReadingContent, 
     @EntityGraph(attributePaths = {"questions"})
     List<ReadingContent> findByLessonIdOrderBySortOrderAsc(Long lessonId);
 
+    List<ReadingContent> findAllByOrderBySortOrderAsc();
+
+    boolean existsByLessonId(Long lessonId);
+
     boolean existsByLessonIdAndTitle(Long lessonId, String title);
 
     @Query("SELECT rc FROM ReadingContent rc " +

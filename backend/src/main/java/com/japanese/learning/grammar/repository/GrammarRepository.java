@@ -13,6 +13,13 @@ public interface GrammarRepository extends JpaRepository<Grammar, Long> {
 
     List<Grammar> findByLessonIdOrderBySortOrderAsc(Long lessonId);
 
+    @Query("SELECT g FROM Grammar g WHERE g.lesson.level.id = :levelId ORDER BY g.sortOrder ASC")
+    List<Grammar> findByLevelIdOrderBySortOrderAsc(@Param("levelId") Long levelId);
+
+    List<Grammar> findAllByOrderBySortOrderAsc();
+
+    boolean existsByLessonId(Long lessonId);
+
     Optional<Grammar> findByLessonIdAndPattern(Long lessonId, String pattern);
 
     @Query("SELECT DISTINCT g FROM Grammar g " +

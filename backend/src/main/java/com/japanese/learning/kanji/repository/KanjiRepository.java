@@ -17,6 +17,12 @@ public interface KanjiRepository extends JpaRepository<Kanji, Long> {
 
     Optional<Kanji> findByKanji(String kanji);
 
+    boolean existsByKanji(String kanji);
+
+    boolean existsByKanjiAndIdNot(String kanji, Long id);
+
+    List<Kanji> findAllByOrderByIdAsc();
+
     @EntityGraph(attributePaths = {"compounds"})
     @Query("SELECT k FROM Kanji k WHERE k.id = :id")
     Optional<Kanji> findByIdWithDetails(@Param("id") Long id);
