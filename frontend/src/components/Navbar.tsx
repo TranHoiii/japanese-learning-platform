@@ -22,12 +22,22 @@ export default function Navbar() {
           <Link
             to="/n5/lessons"
             className={`px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors ${
-              location.pathname.startsWith("/n5")
+              location.pathname === "/n5/lessons"
                 ? "bg-indigo-50 text-indigo-700 border border-indigo-200/60"
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
             }`}
           >
-            Danh sách bài N5
+            Bài học N5
+          </Link>
+          <Link
+            to="/n5/exercises"
+            className={`px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors ${
+              location.pathname.startsWith("/n5/exercises") || location.pathname.startsWith("/exercises")
+                ? "bg-indigo-50 text-indigo-700 border border-indigo-200/60"
+                : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+            }`}
+          >
+            Bài tập N5 (27 bài)
           </Link>
           <div className="h-4 w-[1px] bg-slate-200 mx-1 hidden sm:block" />
           <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">

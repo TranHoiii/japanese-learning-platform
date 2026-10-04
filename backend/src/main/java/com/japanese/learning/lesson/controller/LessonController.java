@@ -37,6 +37,7 @@ public class LessonController {
     private final KanjiService kanjiService;
     private final ListeningService listeningService;
     private final ReadingService readingService;
+    private final com.japanese.learning.exercise.service.ExerciseService exerciseService;
 
     @GetMapping("/{lessonId}")
     public ApiResponse<LessonResponse> getById(@PathVariable @Positive Long lessonId) {
@@ -66,5 +67,10 @@ public class LessonController {
     @GetMapping("/{lessonId}/readings")
     public ApiResponse<List<ReadingContentResponse>> getReadingsByLessonId(@PathVariable @Positive Long lessonId) {
         return ApiResponse.success("Lấy danh sách bài đọc thành công", readingService.getReadingsByLessonId(lessonId));
+    }
+
+    @GetMapping("/{lessonId}/exercises")
+    public ApiResponse<List<com.japanese.learning.exercise.dto.ExerciseResponse>> getExercisesByLessonId(@PathVariable @Positive Long lessonId) {
+        return ApiResponse.success("Lấy danh sách bài tập thành công", exerciseService.getExercisesByLessonId(lessonId));
     }
 }

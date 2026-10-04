@@ -1,0 +1,1585 @@
+[
+  {
+    "sortOrder": 1,
+    "title": "Bài 01–02",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 1,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 01 & 02: Từ vựng đồ vật, đại từ chỉ định, trợ từ は, も, の, hỏi tuổi, hỏi danh tính",
+    "questions": [
+      {
+        "questionText": "1. [IMAGE_REQUIRED] Nhìn hình và viết từ tương ứng:\n例: ( 手帳 )\n1) ( )\n2) ( )\n3) ( )\n4) ( )\n5) ( )\n6) ( )\n7) ( )\n8) ( )\n9) ( )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 時計 (とけい)\n2) カメラ\n3) いす\n4) 雑誌 (ざっし)\n5) 本 (ほん)\n6) ノート\n7) かばん\n8) コンピューター\n9) 傘 (かさ)",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền trợ từ thích hợp vào ngoặc ( ):\n例: あの 方 ( は ) どなたですか。\n1) A: サントスさんはブラジル人です。マリアさん ( ) ブラジル人ですか。\n   B: はい、マリアさん ( ) ブラジル人です。\n   A: ミラーさん ( ) ブラジル人ですか。\n   B: いいえ、ミラーさん ( ) ブラジル人じゃありません。\n2) グプタさんはIMC ( ) 社員です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) も, も, も, は\n2) の",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. [IMAGE_REQUIRED] Nhìn hình và điền từ chỉ định (これ, それ, あれ, この, その, あの):\n例: ( これ ) ( このかばん )\n1) それ ( ＿＿＿＿ )\n2) ( ＿＿＿＿ ) あの かばん",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) そのかばん\n2) あれ",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Hoàn thành câu trả lời:\n例: ミラーさんは会社員ですか。…はい、会社員です。\n1) カリナさんは学生ですか。…はい、＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) ワンさんも学生ですか。…いいえ、＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) あの方は＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿…山田さんです。\n4) この傘は＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿…ミラーさんのです。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 学生です。\n2) 学生じゃありません。\n3) どなたですか。／だれですか。\n4) だれのですか。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Nối câu hỏi với câu trả lời phù hợp (a - i):\n例: これは本ですか。( d )\n1) あの人はだれですか。( )\n2) これはノートですか、雑誌ですか。( )\n3) それは何の雑誌ですか。( )\n4) 山田さんはおいくつですか。( )\n5) あの人は山田さんですか。( )\n6) これはだれの時計ですか。( )\n7) ワットさんは学生ですか。( )\n\n[Lựa chọn]:\na. それはノートです。\nb. 38歳です。\nc. はい、山田さんです。\nd. はい、それは本です。\ne. 山田さんのです。\nf. 山田さんです。\ng. いいえ、先生です。\nh. 車の雑誌です。\ni. はい、わたしのです。",
+        "questionType": "MATCHING",
+        "explanation": "1) f\n2) a\n3) h\n4) b\n5) c\n6) e\n7) g",
+        "sortOrder": 5,
+        "options": [
+          {
+            "optionText": "a. それはノートです。",
+            "isCorrect": false,
+            "sortOrder": 1
+          },
+          {
+            "optionText": "b. 38歳です。",
+            "isCorrect": false,
+            "sortOrder": 2
+          },
+          {
+            "optionText": "c. はい、山田さんです。",
+            "isCorrect": false,
+            "sortOrder": 3
+          },
+          {
+            "optionText": "d. はい、それは本です。",
+            "isCorrect": false,
+            "sortOrder": 4
+          },
+          {
+            "optionText": "e. 山田さんのです。",
+            "isCorrect": false,
+            "sortOrder": 5
+          },
+          {
+            "optionText": "f. 山田さんです。",
+            "isCorrect": false,
+            "sortOrder": 6
+          },
+          {
+            "optionText": "g. いいえ、先生です。",
+            "isCorrect": false,
+            "sortOrder": 7
+          },
+          {
+            "optionText": "h. 車の雑誌です。",
+            "isCorrect": false,
+            "sortOrder": 8
+          },
+          {
+            "optionText": "i. はい、わたしのです。",
+            "isCorrect": false,
+            "sortOrder": 9
+          }
+        ]
+      },
+      {
+        "questionText": "6. Chọn từ đúng trong ngoặc { }:\n例: {この, ○これ} は本です。\n1) それは {だれ, 何} のかばんですか。… {わたし, わたしの} です。\n2) {その, それ} は何のCDですか。…日本語のCDです。\n3) {この, これ} 傘はあなたのですか。…いいえ、{あなた, わたし} のじゃありません。\n4) これは {新聞, 何} ですか。…はい、それは新聞です。\n5) あの人は {何, だれ} ですか。…佐藤さんです。\n6) テレーザちゃんは {だれ, 何歳} ですか。…9歳です。",
+        "questionType": "MULTIPLE_CHOICE",
+        "explanation": "1) だれ, わたしの\n2) それ\n3) この, わたし\n4) 新聞\n5) だれ\n6) 何歳",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Viết cách đọc số tuổi bằng hiragana:\n例: グプタさんは42歳です。(よんじゅうに)\n1) イーさんは35歳です。( ＿＿＿＿ )\n2) 太郎ちゃんは8歳です。( ＿＿＿＿ )\n3) ワンさんは29歳です。( ＿＿＿＿ )\n4) カリナさんは24歳です。( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) さんじゅうご\n2) はっ\n3) にじゅうきゅう\n4) にじゅうよん",
+        "sortOrder": 7,
+        "options": []
+      },
+      {
+        "questionText": "8. Trả lời các câu hỏi sau về bản thân:\n1) あなたは学生ですか。＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) お名前は？＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) おいくつですか。＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、学生です。／いいえ、学生じゃありません。\n2) 例: マイク・ミラーです。\n3) 例: 23歳です。",
+        "sortOrder": 8,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 2,
+    "title": "Bài 03",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 3,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 03: Địa điểm, số tiền hàng vạn, từ chỉ phương hướng và câu hỏi nơi chốn",
+    "questions": [
+      {
+        "questionText": "1. [IMAGE_REQUIRED] Nhìn hình giá tiền và viết cách đọc số bằng hiragana:\n例: このネクタイは ろくせんよんひゃく 円です。(¥6,400)\n1) このかばんは ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ 円です。(¥8,300)\n2) このカメラは ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ 円です。(¥23,800)\n3) このコンピューターは ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ 円です。(¥124,000)\n4) この車は ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿ 円です。(¥4,700,000)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はっせんさんびゃく\n2) にまんさんぜんはっぴゃく\n3) じゅうまんよんせん\n4) よんひゃくななじゅうまん",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền từ chỉ vị trí / phương hướng vào bảng tương ứng:\nこれ | この | 4) ＿＿＿＿ | こちら\n1) ＿＿＿＿ | その | 5) ＿＿＿＿ | 6) ＿＿＿＿\n2) ＿＿＿＿ | 3) ＿＿＿＿ | あそこ | 7) ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) それ\n2) あれ\n3) あの\n4) ここ\n5) そこ\n6) そちら\n7) あちら",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền trợ từ thích hợp vào ngoặc ( ):\n例: わたし ( は ) 山田です。\n1) A: それはどこ ( ) 時計ですか。\n   B: 日本 ( ) です。\n2) A: マリアさん ( ) お国 ( ) どちらですか。\n   B: ブラジルです。\n3) A: 松本さん ( ) 車 ( ) どこですか。\n   B: あそこです。\n4) A: すみません。そのワイン ( ) 見せてください。\n   B: どうぞ。\n   A: これはどこ ( ) ワインですか。\n   B: イタリアのです。\n   A: じゃ、これ ( ) ください。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) の, の\n2) の, は\n3) の, は\n4) を, の, を",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Chọn từ hỏi phù hợp điền vào [ ]:\n例: あの方は [ どなた ] ですか。…ミラーさんです。\n1) カメラ売り場は [ ＿＿＿＿ ] ですか。…3階です。\n2) それは [ ＿＿＿＿ ] のコーヒーですか。…ブラジルのコーヒーです。\n3) 会社は [ ＿＿＿＿ ] ですか。…パワー電気です。\n4) お国は [ ＿＿＿＿ ] ですか。…インドネシアです。\n5) その時計は [ ＿＿＿＿ ] ですか。…18,800円です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) どこ／何階\n2) どこ\n3) どちら／どこ\n4) どちら／どこ\n5) いくら",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Sắp xếp các từ thành câu hoàn chỉnh:\n例: 受付／か／は／です／どちら…受付はどちらですか。\n1) かばん／この／か／は／です／いくら\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 先生／日本語／か／は／の／です／どなた\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 松本さん／か／は／です／どちら\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) コーヒー／これ／の／は／か／です／どこ\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "SENTENCE_ORDER",
+        "explanation": "1) このかばんはいくらですか。\n2) 日本語の先生はどなたですか。\n3) 松本さんはどちらですか。\n4) これはどこのコーヒーですか。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Trả lời các câu hỏi sau:\n1) うちはどこですか。\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) あなたの部屋は1階ですか。\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) あなたの時計は日本のですか。\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) あなたの日本語の本はいくらですか。\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 新宿です。\n2) はい、1階です。／いいえ、○○階です。\n3) はい、日本のです。／いいえ、○○のです。\n4) 例: 2,500円です。",
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 3,
+    "title": "Bài 04",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 4,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 04: Giờ, phút, thứ trong tuần, động từ thời gian, から, まで, に",
+    "questions": [
+      {
+        "questionText": "1. [IMAGE_REQUIRED] Nhìn đồng hồ và viết cách đọc giờ phút bằng hiragana:\n例: 1:05 (いちじごふん)\n1) 7:15 ( ＿＿＿＿ )\n2) 4:20 ( ＿＿＿＿ )\n3) 9:30 ( ＿＿＿＿ )\n4) 8:45 ( ＿＿＿＿ )\n5) 11:20 ( ＿＿＿＿ )\n6) 6:55 ( ＿＿＿＿ )\n7) 12:00 ( ＿＿＿＿ )\n8) 2:20 ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) しちじじゅうごふん\n2) よじにじゅっぷん\n3) くじはん／くじさんじゅっぷん\n4) はちじよんじゅうごふん\n5) じゅういちじよんじゅっぷん\n6) ろくじごじゅうごふん\n7) じゅうにじ\n8) にじじゅっぷん",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền thứ trong tuần bằng kanji/hiragana thích hợp:\n月曜日 → 5) ＿＿＿＿ → 水曜日 → 6) ＿＿＿＿ → 3) ＿＿＿＿ → 1) ＿＿＿＿ → 4) ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) ど\n2) げつ\n3) きん\n4) にち\n5) か\n6) もく",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền trợ từ thích hợp (の, と, に, から, まで, は) hoặc đánh × nếu không cần trợ từ:\n1) 銀行 ( ) 休みは土曜日 ( ) 日曜日です。\n2) 毎晩11時半 ( ) 寝ます。\n3) 昼休みは12時 ( ) 1時 ( ) です。\n4) きのうの晩勉強しましたか。…いいえ、きのう ( ) 勉強しませんでした。\n5) けさ何時 ( ) 起きましたか。…7時です。\n6) あした ( ) 働きますか。…いいえ、あした ( ) 働きません。\n7) 月曜日 ( ) 金曜日 ( ) 働きます。\n8) きのう ( ) 10時 ( ) 寝ました。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) の, と\n2) に\n3) の, から, まで\n4) は\n5) の\n6) は, ×\n7) から, まで\n8) ×, に",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. [IMAGE_REQUIRED] Nhìn bảng thời gian làm việc và viết câu:\n1) デパート: 10:00 - 16:00, 休み: 水曜日\n2) 郵便局: 9:00 - 18:00, 休み: 月・金\n3) 図書館: 9:00 - 15:00, 休み: 土・日\n4) レストラン: 9:30 - 20:30, 休み: 日曜日",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 10時から4時までです。休みは水曜日です。\n2) 9時から6時までです。休みは月曜日と金曜日です。\n3) 9時から3時までです。休みは土曜日と日曜日です。\n4) 9時半から8時半までです。休みは日曜日です。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Chia động từ thích hợp:\n1) きのう勉強しましたか。…いいえ、( ＿＿＿＿ )。(休みます)\n2) きょうは火曜日ですか。…いいえ、( ＿＿＿＿ )。(月曜日)\n3) 日曜日働きますか。…いいえ、( ＿＿＿＿ )。(働きます)\n4) おとといの晩テレビを見ましたか。…いいえ、( ＿＿＿＿ )。(勉強します)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 休みませんでした。\n2) 月曜日じゃありません。\n3) 働きません。\n4) 勉強しました。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Điền từ để hỏi thích hợp (何時, 何曜日, 何番):\n1) きょうは ( ＿＿＿＿ ) ですか。…水曜日です。\n2) あなたの電話番号は ( ＿＿＿＿ ) ですか。…03-1234-5678です。\n3) いま ( ＿＿＿＿ ) ですか。…4時15分です。\n4) 休みは ( ＿＿＿＿ ) と ( ＿＿＿＿ ) ですか。…土曜日と日曜日です。\n5) 毎晩 ( ＿＿＿＿ ) に寝ますか。…11時です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 何曜日\n2) 何番\n3) 何時\n4) 何曜日, 何曜日\n5) 何時",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Trả lời câu hỏi về bản thân:\n1) いま何時ですか。\n2) きょうは何曜日ですか。\n3) 毎朝何時に起きますか。\n4) きのうの晩何時から何時まで勉強しましたか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 午前0時です。\n2) 例: 木曜日です。\n3) 例: 9時からです。\n4) 例: 11時まで勉強しました。",
+        "sortOrder": 7,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 4,
+    "title": "Bài 05",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 5,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 05: Ngày tháng năm, đi lại bằng phương tiện (で), đến/đi/về (へ, に, と)",
+    "questions": [
+      {
+        "questionText": "1. Viết cách đọc ngày tháng bằng hiragana:\n例: 3/24 (さんがつにじゅうよっか)\n1) 5/10 ( ＿＿＿＿ )\n2) 3/3 ( ＿＿＿＿ )\n3) 1/4 ( ＿＿＿＿ )\n4) 12/1 ( ＿＿＿＿ )\n5) 9/5 ( ＿＿＿＿ )\n6) 11/7 ( ＿＿＿＿ )\n7) 4/8 ( ＿＿＿＿ )\n8) 10/14 ( ＿＿＿＿ )\n9) 6/2 ( ＿＿＿＿ )\n10) 8/20 ( ＿＿＿＿ )\n11) 2/6 ( ＿＿＿＿ )\n12) 4/9 ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) ごがつとおか\n2) さんがつみっか\n3) いちがつよっか\n4) じゅうにがつついたち\n5) くがつついつか\n6) じゅういちがつなのか\n7) しがつようか\n8) じゅうがつじゅうよっか\n9) ろくがつふつか\n10) はちがつはつか\n11) にがつむいか\n12) しがつここのか",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền từ chỉ thời gian thích hợp (きのう, 先週, 去年, ことし, あした, 来月):\n1) ＿＿＿＿ 2) ＿＿＿＿ 3) ＿＿＿＿ 4) ＿＿＿＿ 5) ＿＿＿＿ 6) ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) きのう\n2) 先週\n3) 去年\n4) ことし\n5) あした\n6) 来月",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Chia động từ 行きます, 来ます, 帰ります thích hợp vào câu:\n1) 先週日本へ ( ＿＿＿＿ )。\n2) おととい国へ ( ＿＿＿＿ )。\n3) 来週国へ ( ＿＿＿＿ )。\n4) きのうどこも ( ＿＿＿＿ )。\n5) あした京都へ ( ＿＿＿＿ )。\n6) 去年東京へ ( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 来ました。\n2) 帰りました。\n3) 帰ります。\n4) 行きませんでした。\n5) 行きます。\n6) 行きました。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền trợ từ thích hợp (へ, に, で, と, の) hoặc ×:\n1) だれ ( ) どこ ( ) 行きません。\n2) どこ ( ) 行きますか。…どこ ( ) 行きません。\n3) 7月20日 ( ) 新幹線 ( ) 友達 ( ) うち ( ) 行きます。歩いて駅 ( ) 行きました。友達 ( ) 会いました。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) ×, へ, に\n2) へ, [へ]も\n3) に, で, の, へ, ×, と",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Điền từ để hỏi thích hợp (何曜日, いつ, だれ, いくら, 何, 何月何日, どこ):\n1) ( ＿＿＿＿ ) ですか。…月曜日です。\n2) ( ＿＿＿＿ ) 日本へ来ましたか。…3月です。\n3) ( ＿＿＿＿ ) と行きましたか。…佐藤さんです。\n4) 新幹線は ( ＿＿＿＿ ) ですか。…14,000円です。\n5) ( ＿＿＿＿ ) で行きますか。…バスです。\n6) 誕生日は ( ＿＿＿＿ ) ですか。…8月15日です。\n7) ( ＿＿＿＿ ) へ行きますか。…病院です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 何曜日\n2) いつ\n3) だれ\n4) いくら\n5) 何\n6) 何月, 何日\n7) どこ",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Sắp xếp các từ thành câu hoàn chỉnh:\n1) わたし／大阪／あした／佐藤さん／へ／行きます／と／は\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 晩／帰りました／駅／きのう／うち／の／から／へ／歩いて\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 自転車／彼女／先週／うち／の／行きました／で／へ／土曜日／の\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 家族／わたし／来ました／と／日本／去年／へ／は\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "SENTENCE_ORDER",
+        "explanation": "1) わたしはあした佐藤さんと大阪へ行きます。\n2) きのうの晩駅から歩いてうちへ帰りました。\n3) 先週の土曜日自転車で彼女のうちへ行きました。\n4) わたしは去年家族と日本へ来ました。",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Trả lời câu hỏi về bản thân:\n1) あなたの誕生日はいつですか。\n2) いつ日本へ来ましたか。\n3) きょうは何月何日ですか。\n4) 日曜日どこへ行きますか。\n5) いつ国へ帰りますか。\n6) きのうどこかへ行きましたか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 8月31日です。\n2) 例: 3月25日に来ました。\n3) 例: 4月18日です。\n4) 例: 京都へ行きます。\n5) 例: 来年の3月に帰ります。\n6) はい、行きました。／いいえ、行きませんでした。",
+        "sortOrder": 7,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 5,
+    "title": "Bài 06",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 6,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 06: Ngoại động từ với を, địa điểm hành động で, rủ rê 〜ませんか / 〜ましょう",
+    "questions": [
+      {
+        "questionText": "1. Điền trợ từ và động từ thích hợp (買います, 見ます, 聞きます, 飲みます, 吸います, 勉強します, します, 撮ります, 会います):\n1) たばこ ( ＿＿＿＿ ) ( ＿＿＿＿ )。\n2) ジュース ( ＿＿＿＿ ) ( ＿＿＿＿ )。\n3) テレビ ( ＿＿＿＿ ) ( ＿＿＿＿ )。\n4) 日本語 ( ＿＿＿＿ ) ( ＿＿＿＿ )。\n5) 音楽 ( ＿＿＿＿ ) ( ＿＿＿＿ )。\n6) サッカー ( ＿＿＿＿ ) ( ＿＿＿＿ )。\n7) 写真 ( ＿＿＿＿ ) ( ＿＿＿＿ )。\n8) 友達 ( ＿＿＿＿ ) ( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) を, 吸います。\n2) を, 飲みます。\n3) を, 見ます。\n4) を, 勉強します。\n5) を, 聞きます。\n6) を, します。\n7) を, 撮ります。\n8) に, 会います。",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền trợ từ thích hợp (を, で, に, と, も, へ, の):\n1) 友達 ( ) ごはん ( ) 食べます。\n2) レストラン ( ) ビール ( ) 飲みます。\n3) コーヒー ( ) 飲みます。\n4) 会社の食堂 ( ) 昼ごはん ( ) 食べます。\n5) 駅 ( ) 友達 ( ) 会います。\n6) バス ( ) デパート ( ) 行って、友達 ( ) 買い物 ( ) します。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) と, を\n2) で, を, の\n3) も\n4) の, で, を\n5) に, で, の, に\n6) で, へ, で, と, を",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Hoàn thành câu theo ngữ cảnh:\n1) たばこを吸いますか。…いいえ、( ＿＿＿＿ )。\n2) きのうの晩勉強しましたか。…いいえ、( ＿＿＿＿ )。\n3) 日曜日 ( ＿＿＿＿ )。…テニスをしました。\n4) いっしょに昼ごはんを食べませんか。…ええ、( ＿＿＿＿ )。\n5) ちょっと ( ＿＿＿＿ )。…ええ、休みましょう。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 吸いません。\n2) 勉強しませんでした。\n3) 何をしましたか。\n4) しましょう。／いいですね。\n5) 休みませんか。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền trợ từ và dạng động từ thích hợp:\n1) きのう友達 ( ) カフェ ( ) コーヒー ( ) (飲みます → ＿＿＿＿ )。\n2) 毎晩7時 ( ) うち ( ) ごはん ( ) (食べます → ＿＿＿＿ )。\n3) スーパー ( ) 果物 ( ) (買いました → ＿＿＿＿ )。\n4) 図書館 ( ) 本 ( ) (読みます → ＿＿＿＿ )。\n5) 公園 ( ) 10時 ( ) 12時 ( ) サッカー ( ) (見ます → ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) と, で, を, 飲みました。\n2) に, で, を, 食べます。\n3) で, を, 買いました。\n4) で, を, 読みます。\n5) で, から, まで, を, 見ます。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Điền từ để hỏi thích hợp (どこ, なに, なん, いつ, だれ):\n1) ( ＿＿＿＿ ) で買いましたか。…スーパーです。\n2) ( ＿＿＿＿ ) を食べましたか。…魚です。\n3) ( ＿＿＿＿ ) の本ですか。…日本語の本です。\n4) ( ＿＿＿＿ ) 曜日ですか。…金曜日です。\n5) ( ＿＿＿＿ )、( ＿＿＿＿ ) と行きますか。…来週、山田さんと行きます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) どこ\n2) なに\n3) なん\n4) なん\n5) いつ, だれ",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Trả lời câu hỏi về thói quen của bản thân:\n1) きのう新聞を読みましたか。\n2) 朝何時にごはんを食べますか。\n3) お酒を飲みますか。\n4) けさ日本語を勉強しましたか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、読みました。／いいえ、読みませんでした。\n2) 例: 7時半に食べます。\n3) はい、飲みます。／いいえ、飲みません。\n4) はい、[勉強]しました。／いいえ、[勉強]しませんでした。",
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 6,
+    "title": "Bài 07",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 7,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 07: Công cụ / phương tiện で, cho / nhận (あげます, もらいます), もう〜ました / まだです",
+    "questions": [
+      {
+        "questionText": "1. Điền trợ từ thích hợp (で, に, を, は, から, の):\n1) はし ( ) ごはん ( ) 食べます。スプーン ( ) 食べます。\n2) 先生 ( ) 本 ( ) もらいました。\n3) 日本語 ( ) レポート ( ) 書きます。\n4) 友達 ( ) プレゼント ( ) あげます。\n5) これは日本語 ( ) 何ですか。\n6) 母 ( ) 花 ( ) もらいました。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) で, を, で\n2) に, に／から, を\n3) で, を\n4) に, の, を\n5) は, で\n6) に, を",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. [IMAGE_REQUIRED] Nhìn hình công cụ và viết câu sử dụng công cụ đó:\n例: はさみ → 紙を切ります。\n1) はさみ ( ＿＿＿＿ )\n2) ペン ( ＿＿＿＿ )\n3) ナイフ ( ＿＿＿＿ )\n4) ケータイ ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 紙を切ります。\n2) 例: 手紙を書きます。\n3) 例: ナイフ\n4) 例: ケータイ",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Viết lại câu theo mẫu あげます / もらいます / 貸します / 借ります:\n1) 山田さん・日本語・習いました → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) ミラーさん・お金・貸しました → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 松本さん・ネクタイ・あげました → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) カリナさん・CD・借りました → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 山田さんに日本語を習いました。\n2) ミラーさんにお金を貸しました。\n3) 松本さんにネクタイをあげました。\n4) カリナさんにCDを借りました。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền từ để hỏi thích hợp (何, どこ, だれ, いつ):\n1) ( ＿＿＿＿ ) で切りますか。…はさみです。\n2) ( ＿＿＿＿ ) で習いましたか。…学校です。\n3) ( ＿＿＿＿ ) にあげますか。…母です。\n4) ( ＿＿＿＿ ) にもらいましたか。…友達です。\n5) ( ＿＿＿＿ ) 荷物を送りましたか。…きのうです。\n6) これは日本語で ( ＿＿＿＿ ) ですか。…「消しゴム」です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 何\n2) どこ\n3) だれ\n4) だれ\n5) いつ\n6) 何",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Điền câu trả lời hoàn chỉnh với もう / まだ:\n1) もう荷物を送りましたか。…はい、( ＿＿＿＿ )。\n2) もう切手を買いましたか。…いいえ、( ＿＿＿＿ )。\n3) もうレポートを書きましたか。…はい、( ＿＿＿＿ )。\n4) もう宿題をしましたか。…いいえ、( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) もう送りました。\n2) まだです。これから買います。\n3) もう書きました。\n4) まだです。これからします。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Trả lời câu hỏi về bản thân:\n1) もう試験は終わりましたか。\n2) もう家族に電話をかけましたか。\n3) Good morningは日本語で何ですか。\n4) レポートは日本語で書きますか。\n5) どこで辞書を借りますか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、もう終わりました。\n2) はい、かけました。／いいえ、かけませんでした。\n3) 「おはようございます」です。\n4) はい、[日本語で]書きます。／いいえ、○○語で書きます。\n5) 例: 図書館で借ります。",
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 7,
+    "title": "Bài 08",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 8,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 08: Tính từ đuôi い và tính từ đuôi な, bổ nghĩa danh từ, liên từ が và そして",
+    "questions": [
+      {
+        "questionText": "1. Viết tính từ trái nghĩa kèm danh từ:\n例: 大きい家 ↔ 小さい家\n1) 新しいうち ↔ ( ＿＿＿＿ )\n2) いい人 ↔ ( ＿＿＿＿ )\n3) 難しい仕事 ↔ ( ＿＿＿＿ )\n4) 安い車 ↔ ( ＿＿＿＿ )\n5) 高い山 ↔ ( ＿＿＿＿ )\n6) 忙しい日曜日 ↔ ( ＿＿＿＿ )\n7) 静かな町 ↔ ( ＿＿＿＿ )\n8) 冷たいお茶 ↔ ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 古いうち\n2) 悪い人\n3) 易しい仕事\n4) 高い車\n5) 低い山\n6) 暇な日曜日\n7) にぎやかな町\n8) 熱いお茶",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Nối tính từ với danh từ thích hợp (tính từ đuôi い/な):\n1) 新しい・ケータイ → ＿＿＿＿\n2) 静か・レストラン → ＿＿＿＿\n3) 親切・先生 → ＿＿＿＿\n4) おいしい・チョコレート → ＿＿＿＿\n5) きれい・花 → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 新しいケータイ\n2) 静かなレストラン\n3) 親切な先生\n4) おいしいチョコレート\n5) きれいな花",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Chia tính từ sang thể khẳng định hoặc phủ định hiện tại:\n1) この町は (便利です / 便利じゃありません)。…( ＿＿＿＿ )。\n2) きょうは (寒いです / 寒くないです)。…( ＿＿＿＿ )。\n3) 昨日の天気は (いいです / よくないです)。…( ＿＿＿＿ )。\n4) 日本語の勉強は (楽しいです / 楽しくないです)。…( ＿＿＿＿ )。\n5) わたしの部屋は (にぎやかです / にぎやかじゃありません)。…( ＿＿＿＿ )。\n6) この料理は (おいしいです / おいしくないです)。…( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 便利です。\n2) 寒くないです。\n3) よくないです。\n4) 楽しいです。\n5) にぎやかじゃありません。\n6) おいしいです。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Kết hợp hai câu sử dụng が (nhưng) hoặc そして (và/thêm nữa):\n1) この部屋は小さいです。有名です。 → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 仕事は忙しいです。楽しいです。 → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) ミラーさんはハンサムです。おもしろいです。 → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 日本語は難しいです。おもしろいです。 → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n5) あの車は新しいです。とても大きいです。 → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 小さいですが、有名です。\n2) 忙しいですが、楽しいです。\n3) ハンサムです。そして、おもしろいです。\n4) 難しいですが、おもしろいです。\n5) 新しいです。そして、とても大きいです。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Điền từ để hỏi thích hợp (どう, どんな, なん, なに, どこ):\n1) 日本の生活は ( ＿＿＿＿ ) ですか。…楽しいです。\n2) サントスさんは ( ＿＿＿＿ ) 人ですか。…親切な人です。\n3) 天気は ( ＿＿＿＿ ) ですか。…いい天気です。\n4) 大学はどうですか。… ( ＿＿＿＿ ) ですか。…おもしろいです。\n5) ( ＿＿＿＿ ) の仕事ですか。…コンピューターの仕事です。\n6) ( ＿＿＿＿ ) を買いましたか。…靴です。\n7) 寮は ( ＿＿＿＿ ) にありますか。…駅の近くです。\n8) ( ＿＿＿＿ ) 映画が好きですか。…アクション映画です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) どう\n2) どんな\n3) どう\n4) どう\n5) なん\n6) なに\n7) どこ\n8) どんな",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Trả lời câu hỏi về trải nghiệm thực tế của bạn:\n1) あなたの部屋はどんな部屋ですか。\n2) 日本の料理はどうですか。\n3) お母さんはお元気ですか。\n4) お国は今寒いですか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 小さいですが、きれいな部屋です。\n2) 例: おいしいです。\n3) はい、[母は]元気です。／いいえ、[母はあまり]元気じゃありません。\n4) はい、寒いです。／いいえ、[あまり]寒くないです。",
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 8,
+    "title": "Tổng hợp Bài 01–08",
+    "exerciseType": "REVIEW",
+    "contentType": "EXERCISE",
+    "lessonNumber": 8,
+    "description": "Ôn tập tổng hợp kiến thức từ Bài 01 đến Bài 08: Số đếm, ngày giờ, trợ từ tổng hợp, chia động từ, tính từ và mẫu câu giao tiếp",
+    "questions": [
+      {
+        "questionText": "1. Viết cách đọc số, giờ, ngày tháng, tiền tệ bằng hiragana:\n1) 318 ( ＿＿＿＿ )\n2) ¥23,800 ( ＿＿＿＿ )\n3) 0:10 ( ＿＿＿＿ )\n4) 4/20 ( ＿＿＿＿ )\n5) 9/1 ( ＿＿＿＿ )\n6) 9:15, 5:50 ( ＿＿＿＿ )\n7) 4/8 ( ＿＿＿＿ )\n8) ¥630 ( ＿＿＿＿ )\n9) ¥35,000 ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) さんいちはち\n2) にまんさんぜんはっぴゃくえん\n3) れいじじゅっぷん\n4) しがつはつか\n5) くがつついたち\n6) くじじゅうごふん, ごじごじゅっぷん\n7) しがつようか\n8) ろっぴゃくさんじゅうえん\n9) さんまんごせんえん",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền trợ từ thích hợp vào toàn bộ câu ôn tập 1-15:\n1) わたし ( ) 傘 ( ) ありません。\n2) これ ( ) 辞書 ( ) わたしのです。\n3) 9時 ( ) 働きます。\n4) 毎朝7時 ( ) 起きます。\n5) 8時 ( ) 5時 ( ) 働きます。\n6) 学校 ( ) 友達 ( ) 会い ( ) 行きます。\n7) 友達 ( ) バス ( ) 病院 ( ) 行きます。\n8) レストラン ( ) 友達 ( ) 日本 ( ) 料理 ( ) 食べます。\n9) どこ ( ) 行きませんでした。\n10) スプーン ( ) ごはん ( ) 食べます。\n11) 英語 ( ) 書きます。\n12) 先生 ( ) 本 ( ) 借りました。\n13) 友達 ( ) プレゼント ( ) あげます。\n14) だれ ( ) 来ましたか。\n15) 部屋 ( ) 本 ( ) 読みます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) の, の\n2) の, は\n3) から\n4) に\n5) から, まで\n6) の, に, へ\n7) と, で, へ\n8) で, と, の, を\n9) [へ]も\n10) で, を\n11) で\n12) に, に／から, を\n13) に, を\n14) が\n15) で, を",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Chọn tính từ đuôi い và tính từ đuôi な đúng dạng:\n1) つめたい水 → ( ＿＿＿＿ )\n2) 静かな町 → ( ＿＿＿＿ )\n3) いい天気 → 否定形: ( ＿＿＿＿ )\n4) ゆうめいな人 → 肯定形: ( ＿＿＿＿ )\n5) きれいな花 → 否定形: ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 冷たい\n2) 静かな\n3) よくないです\n4) 有名です\n5) きれいじゃありません",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền từ để hỏi thích hợp (何歳/おいくつ, 何, だれ, どこ, いくら, 何時, 何曜日, 何番, いつ, どう, どんな):\n1) ( ＿＿＿＿ ) ですか。…28歳です。\n2) ( ＿＿＿＿ ) を飲みますか。…お茶です。\n3) これは何ですか。… ( ＿＿＿＿ ) ですか。\n4) ( ＿＿＿＿ ) と行きますか。…山田さんです。\n5) お手洗いは ( ＿＿＿＿ ) ですか。…あちらです。\n6) このネクタイは ( ＿＿＿＿ ) ですか。…3,000円です。\n7) 毎朝 ( ＿＿＿＿ ) に起きますか。…6時半です。\n8) きょうは ( ＿＿＿＿ ) ですか。…火曜日です。\n9) あなたの部屋は ( ＿＿＿＿ ) ですか。…305号室です。\n10) ( ＿＿＿＿ ) 日本へ来ましたか。…去年の9月です。\n11) 会社は ( ＿＿＿＿ ) ですか。…東京です。\n12) ( ＿＿＿＿ ) を勉強しますか。…日本語です。\n13) あの人は ( ＿＿＿＿ ) ですか。…木村さんです。\n14) 日本の料理は ( ＿＿＿＿ ) ですか。…おいしいです。\n15) 富士山は ( ＿＿＿＿ ) 山ですか。…高い山です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 何歳／おいくつ\n2) 何\n3) 何\n4) だれ\n5) どこ\n6) いくら\n7) 何時\n8) 何曜日\n9) 何番\n10) いつ\n11) どこ\n12) 何\n13) だれ\n14) どう\n15) どんな",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Hoàn thành các câu thoại thông dụng:\n1) あの方は ( ＿＿＿＿ )。…ミラーさんです。\n2) 新聞を読みますか。…いいえ、( ＿＿＿＿ )。\n3) ミラーさんですか。…いいえ、( ＿＿＿＿ )。\n4) きのう学校へ来ましたか。…いいえ、( ＿＿＿＿ )。\n5) もう昼ごはんを食べましたか。…いいえ、( ＿＿＿＿ )。\n6) いっしょにお茶を飲みませんか。…ええ、( ＿＿＿＿ )。\n7) 京都はどうでしたか。… ( ＿＿＿＿ )。\n8) 部屋はきれいでしたか。…いいえ、( ＿＿＿＿ )。\n9) サントスさんは ( ＿＿＿＿ ) ですか。…親切な人です。\n10) 試験は難しかったですか。…いいえ、( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) どなたですか。／だれですか。\n2) 読みません。\n3) 違います。／ミラーさんじゃありません。\n4) 来ませんでした。\n5) まだです。[これから食べます。]\n6) 食べましょう。／いいですね。\n7) どうですか。\n8) きれいじゃありません。\n9) どんな人ですか。\n10) 難しくないです。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Nối câu hỏi với đáp án tương ứng (1-10 với a-m):\n1) ( d ) 2) ( e ) 3) ( b ) 4) ( f ) 5) ( c )\n6) ( j ) 7) ( k ) 8) ( l ) 9) ( m ) 10) ( h )",
+        "questionType": "MATCHING",
+        "explanation": "1) d\n2) e\n3) b\n4) f\n5) c\n6) j\n7) k\n8) l\n9) m\n10) h",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Chọn từ thích hợp điền vào chỗ trống trong đoạn văn:\n1) ＿＿＿＿ 2) ＿＿＿＿ 3) ＿＿＿＿ 4) ＿＿＿＿ 5) ＿＿＿＿\n6) ＿＿＿＿ 7) ＿＿＿＿ 8) ＿＿＿＿ 9) ＿＿＿＿ 10) ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 来月\n2) スーパー\n3) きれいな\n4) 習いました\n5) 会いました\n6) 安い\n7) あげます\n8) プレゼント\n9) 先生\n10) ちょっと",
+        "sortOrder": 7,
+        "options": []
+      },
+      {
+        "questionText": "8. Chia dạng động từ phù hợp:\n1) きのうどこへも (行きませんでした)。\n2) いっしょにお茶を (飲みましょう)。\n3) ここで写真を (撮りません)。\n4) 毎晩手紙を (書きます)。\n5) 日曜日会社で (働きません)。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 行きませんでした\n2) 会いましょう\n3) 撮りません\n4) 書きます\n5) 働きます",
+        "sortOrder": 8,
+        "options": []
+      },
+      {
+        "questionText": "9. Sắp xếp các từ thành câu hoàn chỉnh:\n1) かけます／これから／電話／ミラーさん／会社／を／に／の\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) とても／この／コーヒー／おいしい／は／レストラン／の／です\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) で／フォーク／インドネシア人／と／ごはん／食べます／スプーン／を／は\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 買いました／おととい／おいしい／チョコレート／デパート／で／を\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n5) 行きます／へ／毎朝／会社／バス／で\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "SENTENCE_ORDER",
+        "explanation": "1) これからミラーさんの会社に電話をかけます。\n2) このレストランのコーヒーはとてもおいしいです。\n3) インドネシア人はスプーンとフォークでごはんを食べます。\n4) おとといデパートでおいしいチョコレートを買いました。\n5) 毎朝バスで会社へ行きます。",
+        "sortOrder": 9,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 9,
+    "title": "Bài 09",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 9,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 09: Sở thích, năng lực, sở hữu (好き/嫌い/上手/下手/あります/わかります) đi với trợ từ が, chỉ mức độ, giải thích lý do から",
+    "questions": [
+      {
+        "questionText": "1. Điền trợ từ thích hợp (は, が, を, と, から, に) hoặc ×:\n1) わたし ( ) イタリア料理 ( ) 好きです。\n2) スポーツ ( ) ダンス ( ) 上手ですが、テニス ( ) 下手です。\n3) 漢字 ( ) わかりません。ひらがな ( ) わかります。\n4) 英語 ( ) ドイツ語 ( ) わかります。\n5) 時間 ( ) ありません ( )、どこ ( ) 行きません。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) は, が\n2) ×, が, が\n3) が, ×\n4) を, と, が\n5) が, から, に／から",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền phó từ chỉ mức độ thích hợp (よく, 少し, だいたい, 全然, たくさん, 早く):\n1) 英語が ( ＿＿＿＿ ) わかります。(rất rõ)\n2) フランス語が ( ＿＿＿＿ ) わかります。(một chút)\n3) 日本語が ( ＿＿＿＿ ) わかります。(đại khái)\n4) アラビア語が ( ＿＿＿＿ ) わかりません。(hoàn toàn không)\n5) お金が ( ＿＿＿＿ ) あります。(nhiều)\n6) 毎朝 ( ＿＿＿＿ ) 起きます。(sớm)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) よく\n2) 少し\n3) だいたい\n4) 全然\n5) たくさん\n6) 早く",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Sắp xếp lại thứ tự câu đối thoại hợp lý (b, e, d, c):\n( b ) → ( e ) → ( d ) → ( c )",
+        "questionType": "MATCHING",
+        "explanation": "b, e, d, c",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Nối nguyên nhân và kết quả phù hợp (a - g):\n1) 時間がありませんから ( g )\n2) お金がありませんから ( f )\n3) 忙しいですから ( e )\n4) 薬を飲みましたから ( b )\n5) 寒いですから ( a )\n6) 日本語がわかりませんから ( c )",
+        "questionType": "MATCHING",
+        "explanation": "1) g\n2) f\n3) e\n4) b\n5) a\n6) c",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Viết câu hỏi hoặc câu trả lời giải thích lý do với 〜から:\n1) どうしてきのう来ませんでしたか。…( ＿＿＿＿ )。(時間がありませんでした)\n2) どうしてあの店で買いますか。…( ＿＿＿＿ )。(安いです)\n3) どうして歌を歌いませんか。…( ＿＿＿＿ )。(上手じゃありません)\n4) どうしてテレビを見ませんか。…( ＿＿＿＿ )。\n5) どうして旅行をしませんか。…( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 時間がありませんでしたから。\n2) 例: 安いですから。\n3) 例: 上手じゃありませんから。\n4) 例: どうしてテレビを見ませんか。\n5) 例: どうして旅行をしませんか。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Điền từ để hỏi thích hợp (どうして, どんな, どう, だれ, 何):\n1) ( ＿＿＿＿ ) 会社を休みましたか。…熱がありましたから。\n2) ( ＿＿＿＿ ) スポーツが好きですか。…野球が好きです。\n3) 日本の生活は ( ＿＿＿＿ ) ですか。…おもしろいです。\n4) ( ＿＿＿＿ ) が一番上手ですか。…ミラーさんです。\n5) かばんの中に ( ＿＿＿＿ ) がありますか。…本や鍵があります。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) どうして\n2) どんな\n3) どう\n4) だれ\n5) 何",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Trả lời câu hỏi về bản thân:\n1) スポーツが好きですか。\n2) 自動車がありますか。\n3) どうして日本語を勉強しますか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、好きです。／いいえ、[あまり]好きじゃありません。\n2) はい、あります。／いいえ、ありません。\n3) 例: 日本の大学で勉強しますから。",
+        "sortOrder": 7,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 10,
+    "title": "Bài 10",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 10,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 10: Sự tồn tại của người và vật (あります/います), vị trí không gian (上, 下, 前, 後ろ, 中, 隣, 近く, 間)",
+    "questions": [
+      {
+        "questionText": "1. Chọn あります hoặc います điền vào chỗ trống:\n1) 部屋にテレビが ( ＿＿＿＿ )。\n2) あそこにだれも ( ＿＿＿＿ )。\n3) 庭に池が ( ＿＿＿＿ )。\n4) 冷蔵庫の中にビールが ( ＿＿＿＿ )。\n5) 机の上に何も ( ＿＿＿＿ )。\n6) 公園に子供が ( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) あります\n2) いません\n3) あります\n4) あります\n5) ありません\n6) います",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền trợ từ thích hợp (に, が, は, の, も, で):\n1) 庭 ( ) 犬 ( ) います。庭 ( ) 誰もいません。\n2) ミラーさん ( ) 事務所 ( ) います。会議室 ( ) だれがいますか。\n3) 箱 ( ) 中 ( ) 何 ( ) ありますか。本 ( ) あります。\n4) 郵便局 ( ) 隣 ( ) 銀行です。\n5) 部屋 ( ) 机 ( ) あります。ベッド ( ) あります。\n6) 駅の前 ( ) イベント ( ) あります。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) に, が, に\n2) は, に, に\n3) に, が, は\n4) の, は\n5) に, が, も\n6) で, に",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. [IMAGE_REQUIRED] Nhìn hình vẽ và trả lời đồ vật/vị trí:\n1) 机の上に何がありますか。…( ＿＿＿＿ )。\n2) 冷蔵庫の中に何がありますか。…( ＿＿＿＿ )。\n3) 時計はどこにありますか。…( ＿＿＿＿ )。\n4) 猫はどこにいますか。…( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) シャツがあります。\n2) 何もありません。\n3) 机の上にあります。\n4) 箱の中にいます。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền câu hỏi thích hợp (どこにいますか, どこにありますか, だれがいますか):\n1) 犬は ( ＿＿＿＿ )。…庭にいます。\n2) 郵便局は ( ＿＿＿＿ )。…駅の前にあります。\n3) 教室に ( ＿＿＿＿ )。…ワンさんがいます。\n4) 鍵は ( ＿＿＿＿ )。…かばんの中にあります。\n5) 事務所に ( ＿＿＿＿ )。…佐藤さんがいます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) どこにいますか。\n2) どこにありますか。\n3) だれがいますか。\n4) どこにありますか。\n5) だれがいますか。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Điền từ chỉ vị trí thích hợp:\n1) 男の人 ( ＿＿＿＿ ) 女の人 ( ＿＿＿＿ ) 間に子どもがいます。\n2) 飲み物 ( ＿＿＿＿ ) 棚 ( ＿＿＿＿ ) 前にあります。\n3) 庭 ( ＿＿＿＿ ) 男の子と女の子がいます。\n4) 車 ( ＿＿＿＿ ) 下に猫がいます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) は男の人と女の人の間にいます。\n2) は飲み物の棚の前にあります。\n3) に男の子と女の子がいます。\n4) の下に猫がいます。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Trả lời câu hỏi về xung quanh bạn:\n1) あなたの部屋にテレビがありますか。\n2) ご家族はどこにいますか。\n3) かばんはどこにありますか。\n4) 机の上に何がありますか。\n5) ポケットの中に何がありますか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、あります。／いいえ、ありません。\n2) 例: アメリカにいます。\n3) 例: 棚の上にあります。\n4) 例: 本やノート[など]があります。\n5) 例: 何もありません。",
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 11,
+    "title": "Bài 11",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 11,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 11: Lượng từ (số đếm vật, người, máy móc, tờ/mỏng), thời gian và tần suất (〜に〜回), cách gọi người trong gia đình",
+    "questions": [
+      {
+        "questionText": "1. Viết cách đếm số lượng thích hợp:\n1) Đếm người (1〜10, hỏi): ひとり, ふたり, さんにん, ( ＿＿＿＿ )\n2) Đếm vật mỏng (tờ/vé/áo: 1, 3, 4, 5, 6, 8, 9, 10): いちまい, ( ＿＿＿＿ )\n3) Đếm máy móc/xe cộ (2, 3, 4, 5, 7, 8, 9, 10, hỏi): にだい, ( ＿＿＿＿ )\n4) Đếm đồ vật nói chung (1, 3, 4, 6, 7, 8, 9, 10, hỏi): ひとつ, ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) ひとり, ふたり, さんにん, よにん, ろくにん, ななにん／しちにん, きゅうにん, じゅうにん, なんにん\n2) いちまい, さんまい, よんまい, ごまい, ろくまい, はちまい, きゅうまい, じゅうまい\n3) にだい, さんだい, よんだい, ごだい, ななだい, はちだい, きゅうだい, じゅうだい, なんだい\n4) ひとつ, みっつ, よっつ, むっつ, ななつ, やっつ, ここのつ, とお, いくつ",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền trợ từ thích hợp hoặc đánh ×:\n1) りんご ( ) 4つ ( ) 買いました。\n2) 切手 ( ) 80円の ( ) 5枚ください。\n3) 兄弟 ( ) 3人 ( ) います。\n4) 1週間 ( ) 2回 ( ) テニス ( ) します。\n5) 東京 ( ) 大阪 ( ) 新幹線 ( ) 2時間半かかります。\n6) 教室に男の子 ( ) 5人 ( ) います。\n7) はがき ( ) 2枚 ( ) 出しました。\n8) 自転車 ( ) 15分かかります。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) を, ×\n2) と, を, ×\n3) の, に, が, ×\n4) に, ×, に, を\n5) から, まで, で, ×\n6) と, が, ×\n7) ×, を\n8) で",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền từ xưng hô gia đình (gia đình mình / gia đình người khác):\n1) ( ＿＿＿＿ ) / お母さん\n2) 兄 / ( ＿＿＿＿ )\n3) ( ＿＿＿＿ ) / お姉さん\n4) ( ＿＿＿＿ ) / 妹さん\n5) 弟 / ( ＿＿＿＿ )\n6) ( ＿＿＿＿ ) / 奥さん\n7) 夫 / ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 母\n2) お兄さん\n3) 姉\n4) 妹\n5) 弟さん\n6) 妻／家内\n7) ご主人",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền từ để hỏi số lượng (何人, 何回, どのくらい, 何枚, いくら):\n1) 家族は ( ＿＿＿＿ ) ですか。…4人です。\n2) 1か月に ( ＿＿＿＿ ) 映画を見ますか。…2回見ます。\n3) 国から日本まで飛行機で ( ＿＿＿＿ ) かかりますか。…5時間です。\n4) シャツを ( ＿＿＿＿ ) 買いましたか。…3枚です。\n5) 全部で ( ＿＿＿＿ ) ですか。…1,500円です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 何人\n2) 何回[ぐらい]\n3) どのくらい／何か月ぐらい\n4) 何枚\n5) いくら",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Đặt câu hoàn chỉnh với lượng từ cho sẵn:\n1) 庭・男の子3人・女の子2人・います → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 90円切手1枚・はがき2枚・ください → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 事務所・コンピューター5台・あります → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 3か月・日本語・勉強しました → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n5) 1週間・2回・テニスをします → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 庭に男の子が3人と女の子が2人います。\n2) 90円の切手を1枚とはがきを2枚ください。\n3) 事務所にコンピューターが5台あります。\n4) 3か月日本語を勉強しました。\n5) 1週間に2回テニスをします。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Trả lời câu hỏi về bản thân:\n1) 毎晩何時間ぐらい寝ますか。\n2) どのくらい日本語を勉強しましたか。\n3) うちから駅までどのくらいかかりますか。\n4) あなたの国のビールはいくらですか。\n5) 1週間に何回家族に電話をかけますか。\n6) 1日に何時間テレビを見ますか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 8時間ぐらい寝ます。\n2) 例: 3か月ぐらい勉強しました。\n3) 例: 歩いて20分ぐらいかかります。\n4) 例: 90円です。\n5) 例: 5回ぐらいかけます。\n6) 例: 1時間ぐらい見ます。",
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 12,
+    "title": "Bài 12",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 12,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 12: Thời quá khứ của tính từ và danh từ, mẫu so sánh hơn (AはBより〜), so sánh lựa chọn (どちらが〜), so sánh nhất (一番〜)",
+    "questions": [
+      {
+        "questionText": "1. Chia tính từ / danh từ sang các dạng khẳng định, phủ định, quá khứ:\n1) 重いです → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n2) いいです → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n3) きれいじゃありません → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n4) 簡単です → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n5) 雨です → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 重いです, 重かったです, 重くなかったです\n2) いいです, よくないです, よかったです\n3) きれいじゃありません, きれいでした, きれいじゃありませんでした\n4) 簡単です, 簡単じゃありません, 簡単でした\n5) 雨です, 雨じゃありません, 雨じゃありませんでした",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Chuyển sang câu phủ định hoặc phủ định quá khứ thích hợp:\n1) きょうは熱いです。…いいえ、( ＿＿＿＿ )。\n2) きょうは暇です。…いいえ、( ＿＿＿＿ )。\n3) きのうは休みでした。…いいえ、( ＿＿＿＿ )。\n4) 映画はおもしろかったです。…いいえ、( ＿＿＿＿ )。\n5) 旅行は楽しかったです。…いいえ、( ＿＿＿＿ )。\n6) きのうはいい天気でした。…いいえ、( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 熱くないです。\n2) 暇じゃありません。\n3) 休みじゃありませんでした。\n4) おもしろくなかったです。\n5) 楽しくなかったです。\n6) いい天気じゃありませんでした。",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền trợ từ so sánh thích hợp (は, より, と, が, の, で):\n1) 中国 ( ) 日本 ( ) 広いです。\n2) 牛肉 ( ) 豚肉 ( ) どちら ( ) 好きですか。…牛肉 ( ) ほう ( ) 好きです。\n3) 季節 ( ) いつ ( ) 一番好きですか。…秋 ( ) 一番好きです。\n4) 去年 ( ) 北海道 ( ) 行きました。\n5) サッカー ( ) 野球 ( ) どちら ( ) おもしろいですか。…どちら ( ) おもしろいです。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) は, より\n2) と, と, が, の, が\n3) で, が, が\n4) は, で\n5) と, と, が, が, も",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền từ thích hợp vào đoạn văn tường thuật chuyến đi:\nきのうは ( ＿＿＿＿ )。人が ( ＿＿＿＿ )。とても ( ＿＿＿＿ )。景色が ( ＿＿＿＿ )。写真をたくさん ( ＿＿＿＿ )。( ＿＿＿＿ )。あまり ( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 休みじゃありませんでした\n2) 多かったです\n3) にぎやかでした\n4) きれいでした\n5) 撮りました\n6) いい天気でした\n7) 暑くなかったです",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Điền từ để hỏi thích hợp (どちら, 何, どう, いつ, どこ):\n1) 紅茶とコーヒーと ( ＿＿＿＿ ) が好きですか。…コーヒーが好きです。\n2) 1年で ( ＿＿＿＿ ) 月が一番寒いですか。…1月です。\n3) 旅行は ( ＿＿＿＿ ) でしたか。…楽しかったです。\n4) 1年で ( ＿＿＿＿ ) が一番好きですか。…春です。\n5) どこ ( ＿＿＿＿ ) が一番静かですか。…図書館です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) どちら\n2) 何\n3) どう\n4) いつ\n5) どこ",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Đặt câu so sánh theo gợi ý:\n1) 地下鉄・バス・速いです → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 日本料理・すし・一番好きです → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 1年・8月・一番暑いです → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) さくら大学・富士大学・古いです → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n5) 駅の前・パン屋・デパート・安いです → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 地下鉄はバスより速いです。\n2) 日本料理ですしがいちばん好きです。\n3) 1年で8月がいちばん暑いです。\n4) さくら大学は富士大学より古いです。\n5) 駅の前のパン屋はデパートより安いです。",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Trả lời các câu hỏi so sánh:\n1) 銀行と郵便局とどちらが近いですか。\n2) 季節でいつがいちばん好きですか。\n3) 昨日の試験はどうでしたか。\n4) きのうは休みでしたか。\n5) 日本とあなたの国とどちらが大きいですか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 銀行のほうが近いです。／郵便局のほうが近いです。\n2) 例: 春がいちばん好きです。\n3) 例: よかったです。\n4) はい、休みでした。／いいえ、休みじゃありませんでした。\n5) 日本のほうが大きいです。／わたしの国のほうが大きいです。",
+        "sortOrder": 7,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 13,
+    "title": "Bài 13",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 13,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 13: Biểu hiện mong muốn sở hữu (〜が欲しい), muốn làm việc gì (〜たい), mục đích di chuyển (〜に行きます)",
+    "questions": [
+      {
+        "questionText": "1. Điền trợ từ thích hợp (から, が, も, か, へ, に, の, で, を):\n1) 暑いです ( )、冷たい水 ( ) 欲しいです。\n2) 何 ( ) 欲しくないです。\n3) のど ( ) かわきました ( )、お茶を飲みましょう。\n4) どこ ( ) 遊び ( ) 行きますか。\n5) 週末友達 ( ) うち ( ) 遊び ( ) 行きました。\n6) デパート ( ) 買い物 ( ) 行きます。\n7) 郵便局 ( ) 切手 ( ) 買い ( ) 行きます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) から, が\n2) も\n3) が, か\n4) へ, に\n5) に, の, へ, に\n6) で, へ, を, に\n7) へ, の, に",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. [IMAGE_REQUIRED] Nhìn hình và viết câu mong muốn sở hữu đồ vật (〜が欲しいです):\n1) (かばん) → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) (カメラ) → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) (コンピューター/パソコン) → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) (車) → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) わたしはかばんが欲しいです。\n2) わたしはカメラが欲しいです。\n3) わたしはコンピューターが欲しいです。／わたしはパソコンが欲しいです。\n4) わたしは車が欲しいです。",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Viết câu diễn tả mong muốn làm gì (〜たいです):\n1) 水・飲みます → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 本・読みます → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 手紙・書きます → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 写真・撮ります → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) わたしは水を飲みたいです。\n2) わたしは本を読みたいです。\n3) わたしは手紙を書きたいです。\n4) わたしは写真を撮りたいです。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Chia động từ thể 〜たい / 〜たくない:\n1) おなかがいっぱいですから、何も ( ＿＿＿＿ )。(食べます)\n2) のどがかわきましたから、ジュースを ( ＿＿＿＿ )。(飲みます)\n3) 母の誕生日に花を ( ＿＿＿＿ )。(あげます/送ります/買います)\n4) 疲労ですから、どこへも ( ＿＿＿＿ )。(行きます)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 食べたくないです。\n2) 飲みたいです。\n3) あげたいです。／送りたいです。／買いたいです。\n4) 行きたくないです。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Đặt câu mục đích di chuyển (〜へ〜に行きます/行きました):\n1) スーパー・パンと牛乳・買いに行きます → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 横浜・船の写真・撮りに行きました → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 友達のうち・CD・借りにいきました → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 毎朝・近くの公園・散歩に行きます → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n5) タイ料理の店・食事に行きました → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) スーパーへパンと牛乳を買いに行きます。\n2) 横浜へ船の写真を撮りに行きました。\n3) 友達のうちへCDを借りにいきました。\n4) 毎朝近くの公園へ散歩に行きます。\n5) タイ料理の店へ食事に行きました。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Viết mục đích hành động thích hợp:\n1) 郵便局へ ( ＿＿＿＿ ) 行きます。\n2) 喫茶店へ ( ＿＿＿＿ ) 入りました。\n3) コンビニへ ( ＿＿＿＿ ) 行きます。\n4) 海へ ( ＿＿＿＿ ) 行きました。\n5) 美術館へ ( ＿＿＿＿ ) 行きます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 切手を買いに\n2) 例: コーヒーを飲みに\n3) 例: 飲み物を買いに\n4) 例: 泳ぎに\n5) 例: 美術の勉強に",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Điền từ để hỏi thích hợp (どんな, いつ, 何, だれ):\n1) ( ＿＿＿＿ ) 車が欲しいですか。…赤い車が欲しいです。\n2) ( ＿＿＿＿ ) 旅行に行きたいですか。…来月行きたいです。\n3) 何を ( ＿＿＿＿ ) 買いたいですか。…靴を買いたいです。\n4) ( ＿＿＿＿ ) を食べに行きますか。…ラーメンを食べに行きます。\n5) ( ＿＿＿＿ ) に会いたいですか。…友達に会いたいです。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) どんな\n2) いつ\n3) 何\n4) 何\n5) だれ",
+        "sortOrder": 7,
+        "options": []
+      },
+      {
+        "questionText": "8. Trả lời câu hỏi về nguyện vọng bản thân:\n1) 今何が一番欲しいですか。\n2) 休みの日どこへ遊びに行きたいですか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: お金のほうが欲しいです。／どちらも欲しいです。\n2) 例: 友達とディズニーランドへ行きたいです。",
+        "sortOrder": 8,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 14,
+    "title": "Bài 14",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 14,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 14: Chia động từ thể Te (て形), yêu cầu lịch sự 〜てください, hành động đang tiếp diễn 〜ています, đề nghị giúp đỡ 〜ましょうか",
+    "questions": [
+      {
+        "questionText": "1. Chuyển động từ sang thể ます hoặc thể て tương ứng:\n1) 座って → ( ＿＿＿＿ )\n2) 持ちます → ( ＿＿＿＿ )\n3) 急いで → ( ＿＿＿＿ )\n4) 開けます → ( ＿＿＿＿ )\n5) 遊んで → ( ＿＿＿＿ )\n6) 行きます → ( ＿＿＿＿ )\n7) 借りて → ( ＿＿＿＿ )\n8) 降ります → ( ＿＿＿＿ )\n9) コピーして → ( ＿＿＿＿ )\n10) 手伝います → ( ＿＿＿＿ )\n11) 立って → ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 座ります\n2) 持って\n3) 急ぎます\n4) 開けて\n5) 遊びます\n6) 行って\n7) 借ります\n8) 降って\n9) コピーします\n10) 手伝って\n11) 立ちます",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Viết câu yêu cầu lịch sự với 〜てください:\n1) 教えます → ＿＿＿＿\n2) 見せます → ＿＿＿＿\n3) 書きます → ＿＿＿＿\n4) つけます → ＿＿＿＿\n5) 取ります → ＿＿＿＿\n6) 閉めます → ＿＿＿＿\n7) 使います → ＿＿＿＿\n8) 休ます → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 教えてください。\n2) 見せてください。\n3) 書いてください。\n4) つけてください。\n5) 取ってください。\n6) 閉めてください。\n7) 使ってください。\n8) 休んでください。",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền động từ thể Te và hoàn thành câu đề nghị:\n1) 来ます → ( ＿＿＿＿ )、1時ごろ来てください。\n2) 貸します → ( ＿＿＿＿ )、200円貸してください。\n3) 持ちます → ( ＿＿＿＿ )、1つ持ってください。\n4) 買います → ( ＿＿＿＿ )、ジュースとビールを買ってください。\n5) 送ります → ( ＿＿＿＿ )、メールで送ってください。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 来, 1時ごろ来てください。\n2) 貸し, 200円貸してください。\n3) 持ち, 1つ持ってください。\n4) 買い, ジュースとビールを買ってください。\n5) 送り, メールで送ってください。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. [IMAGE_REQUIRED] Nhìn tranh và viết câu hành động đang tiếp diễn (〜ています):\n1) (水) → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) (たばこ) → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) (手紙) → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) (写真) → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 水を飲んでいます。\n2) たばこを吸っています。\n3) 手紙を書いています。\n4) 写真を撮っています。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Điền phó từ thích hợp (もう, もう少し, あとで, また, ゆっくり, すぐ):\n1) ( ＿＿＿＿ ) 12時ですね。昼ごはんを食べましょう。\n2) すみませんが、( ＿＿＿＿ ) ゆっくり話してください。\n3) いま忙しいですから、( ＿＿＿＿ ) 来てください。\n4) 雨が降っていますから、( ＿＿＿＿ ) あした来ます。\n5) 日曜日はうちで ( ＿＿＿＿ ) 休みたいです。\n6) 危ないですから、( ＿＿＿＿ ) 止まってください。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) もう\n2) もう少し\n3) あとで\n4) また\n5) ゆっくり\n6) すぐ",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Điền thể Te của động từ vào hội thoại nối tiếp:\nA: コピーを ( ＿＿＿＿ ) ください。 B: ちょっと待って。これを見て、山田さんを ( ＿＿＿＿ ) ください。\nA: 山田さんを ( ＿＿＿＿ )、いっしょにお茶を ( ＿＿＿＿ ) ください。 B: ええ、お茶を ( ＿＿＿＿ ) ましょう。",
+        "questionType": "FILL_BLANK",
+        "explanation": "A: して B: 見て, 呼び A: 呼んで, 飲み B: 飲み",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Trả lời câu hỏi:\n1) いまCDを聞いていますか。\n2) ひらがなで書いてください:「定食」→ ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、聞いています。／いいえ、聞いていません。\n2) ていしょく",
+        "sortOrder": 7,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 15,
+    "title": "Bài 15",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 15,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 15: Xin phép làm gì (〜てもいいですか), cấm đoán (〜てはいけません), biểu thị trạng thái kết quả / nghề nghiệp (〜ています)",
+    "questions": [
+      {
+        "questionText": "1. Điền trợ từ thích hợp (を, に, の, は):\n1) ここでたばこ ( ) 吸ってもいいですか。\n2) 写真 ( ) 入ってはいけません。\n3) 会社 ( ) 名前 ( ) 住所 ( ) 書いてください。\n4) わたし ( ) 家族 ( ) 東京 ( ) 住んでいます。\n5) 先生 ( ) 電話番号 ( ) 知っていますか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) を\n2) に\n3) の, の, を\n4) の, に, を\n5) は, に",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Chia động từ sang thể Te thích hợp đi với 〜てもいいですか / 〜てはいけません:\n1) エアコンを (つけます → ＿＿＿＿ ) もいいですか。\n2) ボールペンで (書きます → ＿＿＿＿ ) もいいですか。\n3) 窓を (開けます → ＿＿＿＿ ) もいいですか。\n4) カタログを (もらいます → ＿＿＿＿ ) もいいですか。\n5) ここで (泳ぎます → ＿＿＿＿ ) はいけません。\n6) 教室でたばこを (吸います → ＿＿＿＿ ) はいけません。\n7) お酒を (飲みます → ＿＿＿＿ ) はいけません。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) つけて\n2) 書いて\n3) 開けて\n4) もらって\n5) 泳いで\n6) 吸って\n7) 飲んで",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền động từ thể 〜ています diễn tả trạng thái/nghề nghiệp:\n1) どこに (住みます → ＿＿＿＿ ) いますか。\n2) ミラーさんは (結婚します → ＿＿＿＿ ) います。\n3) 大学で経済を (研究します → ＿＿＿＿ ) います。\n4) IMCで (働きます → ＿＿＿＿ ) います。\n5) あの店で古い本を (売ります → ＿＿＿＿ ) います。\n6) 山田さんの電話番号を (知ります → ＿＿＿＿ ) います。\n7) 自転車を (持ちます → ＿＿＿＿ ) います。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 住んで\n2) 結婚して\n3) 研究して\n4) 働いて\n5) 売って\n6) 知って\n7) 持って",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền dạng động từ thích hợp vào đoạn văn giới thiệu:\nここに荷物を ( ＿＿＿＿ )、荷物を ( ＿＿＿＿ ) ください。日曜日は ( ＿＿＿＿ )、しっかり ( ＿＿＿＿ ) ます。学校で日本語を ( ＿＿＿＿ )、家で ( ＿＿＿＿ )、会社で ( ＿＿＿＿ ) ます。テレビを ( ＿＿＿＿ )、デパートへ ( ＿＿＿＿ )、写真を ( ＿＿＿＿ ) ます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 置いて, 置いて\n2) 休んで, 休み\n3) 教えて, 勉強して, 働き\n4) 見, 行き, 行って, 行き, と撮って",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Trả lời câu hỏi thực tế:\n1) パソコンを持っていますか。\n2) どこにだれと住んでいますか。\n3) あなたはどこかで働いていますか。\n4) 先生の住所を知っていますか。\n5) この部屋でたばこを吸ってもいいですか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、持っています。／いいえ、持っていません。\n2) 例: 友達と住んでいます。／一人で住んでいます。\n3) はい、働いています。／いいえ、働いていません。\n4) はい、知っています。／いいえ、知りません。\n5) はい、[吸っても]いいです。／いいえ、[吸っては]いけません。",
+        "sortOrder": 5,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 16,
+    "title": "Bài 16",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 16,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 16: Chuỗi hành động liên tiếp (〜て、〜て), làm xong việc A rồi làm B (〜てから), nối tính từ và danh từ (〜くて、〜で), miêu tả đặc điểm (〜は〜が〜)",
+    "questions": [
+      {
+        "questionText": "1. Viết cặp từ trái nghĩa hoặc nối hành động:\n1) 多い ↔ 少ない 2) 近い ↔ 遠い 3) 軽い ↔ 重い 4) 早い ↔ 遅い\n5) 広い ↔ 狭い 6) 暗い ↔ 明るい 7) 古い ↔ 新しい 8) 低い ↔ 高い\n9) 長い ↔ 短い 10) 暇な ↔ 忙しい 11) 消します ↔ つけます 12) 閉めます ↔ 開けます\n13) 入れます ↔ 出します 14) 座ります ↔ 立ちます 15) 電車に乗ります ↔ 電車を降ります 16) 大学を出ます ↔ 大学に入ります",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 少ない 2) 遠い 3) 重い 4) 遅い 5) 狭い 6) 明るい 7) 新しい 8) 高い 9) 短い 10) 忙しい 11) つけます 12) 開けます 13) 出します 14) 立ちます 15) 電車を降ります 16) 大学に入ります",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Nối chuỗi hành động bằng thể Te (〜て、〜て):\n1) 銀座へ行きます・買い物をします → ＿＿＿＿\n2) 切符を買います・電車に乗ります → ＿＿＿＿\n3) 電車を降ります・歩いて行きます → ＿＿＿＿\n4) ごはんを食べます・少し休みます → ＿＿＿＿\n5) うちを出ます・駅に入ります → ＿＿＿＿\n6) 仕事が終わります・プールで泳ぎます → ＿＿＿＿\n7) 映画を見ます・友達とお茶をします → ＿＿＿＿\n8) カードを入れます・暗証番号を押します・確認します → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 行って\n2) 買って\n3) 降りて\n4) 食べて, 休んで\n5) 出て, 入って\n6) 終わって, 泳いで\n7) 見て, して\n8) 入れて, 押して, 確認して",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Đặt câu miêu tả đặc điểm (Chủ ngữ は Thuộc tính が Tính từ):\n1) マリアさん・髪・長いです → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) この料理・作り方・簡単です → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 日本・山・多いです → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 北海道・雪の季節・れいです → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n5) この喫茶店・紅茶・おいしいです → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) マリアさんは髪が長いです。\n2) この料理は作り方が簡単です。\n3) 日本は山が多いです。\n4) 北海道は雪の季節がきれいです。\n5) この喫茶店は紅茶がおいしいです。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Nối hai tính từ / danh từ bằng 〜くて hoặc 〜で:\n1) 目が青いです。背が高いです。 → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 若いです。頭がいいです。すてきな人です。 → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 曇りでした。寒かったです。 → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 小さいです。使い方が簡単です。パソコンが欲しいです。 → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 目が青くて、背が高い人です。\n2) 若くて、頭がよくて、すてきな人です。\n3) 曇りで、寒かったです。\n4) 小さくて、使い方が簡単なパソコンが欲しいです。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Nối câu dùng 〜が (ngược nghĩa) hoặc 〜て/〜で (thuận nghĩa):\n1) 便利ですが、ちょっと重いです。\n2) 有名なお寺で、庭がきれいです。\n3) 安いですが、サービスがよくないです。\n4) 緑が多くて、静かです。\n5) イギリス人で、英語の先生です。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 便利ですが、ちょっと重いです\n2) 有名なお寺で、庭がきれいです\n3) 安いですが、サービスがよくないです\n4) 緑が多くて、静かです\n5) イギリス人で、英語の先生です",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Trả lời câu hỏi về bản thân:\n1) 国を出てから、どのくらい日本にいますか。\n2) あなたの部屋はどんな部屋ですか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 1か月ぐらい勉強しました。\n2) 例: 明るくて、きれいな部屋です。",
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 17,
+    "title": "Bài 17",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 17,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 17: Thể Nai (ない形), xin đừng 〜ないでください, phải làm 〜なければなりません, không cần làm 〜なくてもいいです, phân biệt まで và までに",
+    "questions": [
+      {
+        "questionText": "1. Chuyển động từ sang thể ない và thể ます tương ứng:\n1) 行きます → ( ＿＿＿＿ )\n2) 払います → ( ＿＿＿＿ )\n3) 覚えます → ( ＿＿＿＿ )\n4) 立ちます → ( ＿＿＿＿ )\n5) 借ります → ( ＿＿＿＿ )\n6) 入ります → ( ＿＿＿＿ )\n7) 出張します → ( ＿＿＿＿ )\n8) なくします → ( ＿＿＿＿ )\n9) 来ます → ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 行きます, 行かない\n2) 払って, 払わない\n3) 覚えます, 覚えない\n4) 立ちます, 立って\n5) 借ります, 借りない\n6) 入って, 入らない\n7) 出張します, 出張して\n8) なくします, なくさない\n9) 来て, 来ない",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền trợ từ thích hợp (に, へ, を, が):\n1) ここ ( ) 荷物を置かないでください。\n2) 病院 ( ) 行かなければなりません。\n3) 会社 ( ) 保険証 ( ) 見せてください。\n4) 頭 ( ) 痛いですから、薬を飲みます。\n5) 国 ( ) 荷物 ( ) 送らなければなりません。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) に\n2) へ\n3) に, を\n4) が\n5) へ, を",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Phân biệt まで (cho đến khi) và までに (trước hạn chót):\n1) 5時 ( ＿＿＿＿ ) 働きます。\n2) 土曜日 ( ＿＿＿＿ ) 本を返さなければなりません。\n3) あした ( ＿＿＿＿ ) 休みます。\n4) 金曜日 ( ＿＿＿＿ ) レポートを出してください。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) まで\n2) までに\n3) まで\n4) までに",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Viết câu yêu cầu đừng làm gì (〜ないでください):\n1) 手伝います → 手伝ってください\n2) 忘れます → ＿＿＿＿\n3) 押します → ＿＿＿＿\n4) 急ぎます → ＿＿＿＿\n5) 開けます → ＿＿＿＿\n6) 書きます → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 手伝ってください\n2) 忘れないでください\n3) 押さないでください\n4) 急いでください\n5) 開けないでください\n6) 書いてください",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Viết dạng 〜なくてもいいです hoặc 〜なければなりません:\n1) 心配します → ( ＿＿＿＿ ) (không cần)\n2) 帰ります → ( ＿＿＿＿ ) (phải)\n3) 作ります → ( ＿＿＿＿ ) (không cần)\n4) 行きます → ( ＿＿＿＿ ) (phải)\n5) 買います → ( ＿＿＿＿ ) (phải)\n6) 残業します → ( ＿＿＿＿ ) (không cần)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 心配しなくてもいいです\n2) 帰らなければなりません\n3) 作らなくてもいいです\n4) 行かなければなりません\n5) 買わなければなりません\n6) 残業しなくてもいいです",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Sắp xếp các từ thành câu hoàn chỉnh:\n1) ここ／靴／脱いで／は／で／ください\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) ビール／冷蔵庫／ジュース／入れて／と／は／に／ください\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 2、3日／スポーツ／しないで／は／ください\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 送らなければなりません／までに／資料／あさって／は\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n5) 覚えますか／漢字／どうやって／は\n…＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "SENTENCE_ORDER",
+        "explanation": "1) 靴はここで脱いでください。\n2) ビールとジュースは冷蔵庫に入れてください。\n3) スポーツは2、3日しないでください。\n4) 資料はあさってまでに送らなければなりません。\n5) 漢字はどうやって覚えますか。",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Biến đổi động từ theo 3 thể (ます形, て形, ない形):\n1) 返します → ( ＿＿＿＿ ), ( ＿＿＿＿ )\n2) 書きます → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n3) 持って来ます → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 返さ, 返して\n2) 書いて, 書か, 書か\n3) 持って来, 持って来, 持って来て",
+        "sortOrder": 7,
+        "options": []
+      },
+      {
+        "questionText": "8. Trả lời câu hỏi nghĩa vụ bản thân:\n1) 日曜日も早く起きなければなりませんか。\n2) あした宿題をしなければなりませんか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、[日曜日も]早く起きなければなりません。／いいえ、[日曜日は]早く起きなくてもいいです。\n2) はい、しなければなりません。／いいえ、しなくてもいいです。",
+        "sortOrder": 8,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 18,
+    "title": "Tổng hợp Bài 09–17",
+    "exerciseType": "REVIEW",
+    "contentType": "EXERCISE",
+    "lessonNumber": 17,
+    "description": "Ôn tập tổng hợp kiến thức từ Bài 09 đến Bài 17: Thể て, thể ない, sở thích năng lực, vị trí không gian, số lượng từ, so sánh, mong muốn, xin phép cấm đoán",
+    "questions": [
+      {
+        "questionText": "1. Đặt câu với số lượng từ và cấu trúc đã học:\n1) はがき10枚・80円切手2枚・ください → ＿＿＿＿\n2) 教室・男の人3人・います → ＿＿＿＿\n3) 学校の前・自転車6台・あります → ＿＿＿＿\n4) みかん5つ・食べました → ＿＿＿＿\n5) 1週間2回・病院・行かなければなりません → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はがきを10枚と80円の切手を2枚ください。\n2) 教室に男の人が3人います。\n3) 学校の前に自転車が6台あります。\n4) みかんを5つ食べました。\n5) 1週間に2回病院へ行かなければなりません。",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Viết cách đọc thời gian / khoảng thời gian bằng chữ:\n1) 40分 ( ＿＿＿＿ )\n2) 1.5時間 ( ＿＿＿＿ )\n3) 1週間 / 7日間 ( ＿＿＿＿ )\n4) 1か月 / 31日 ( ＿＿＿＿ )\n5) 1年 / 12か月 / 365日 ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 40分\n2) 1時間半／1時間30分／90分\n3) 1週間／7日\n4) 1か月／31日\n5) 1年／12か月／365日",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền trợ từ thích hợp vào câu tổng hợp 1-12:\n1) 車 ( ) 鍵 ( ) あります。\n2) 友達 ( ) テニス ( ) します。\n3) 部屋 ( ) 机 ( ) あります。テレビ ( ) ありません。\n4) バス ( ) 地下鉄 ( ) 速いです。\n5) 肉 ( ) 魚 ( ) どちら ( ) 好きですか。…魚 ( ) ほう ( ) 好きです。\n6) 図書館 ( ) 本 ( ) あります。\n7) 友達 ( ) 会い ( ) 行きます。\n8) 喉 ( ) かわきました ( )、水 ( ) 飲みたいです。\n9) ペン ( ) 日本語 ( ) 手紙 ( ) 書きます。\n10) 先生 ( ) 本 ( ) 返します。\n11) 今日 ( ) 天気 ( ) いいです。\n12) だれ ( ) 来ましたか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) の, が\n2) と, が\n3) に, が, は\n4) より, が\n5) と, と, が, の, が\n6) で, が\n7) へ, に\n8) が, から, も\n9) を, で, で, に\n10) に, を\n11) は, が\n12) が",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Hoàn thành bảng chia các thể thời của động từ và tính từ:\n1) 返します → ( ＿＿＿＿ ), ( ＿＿＿＿ )\n2) 病気じゃありません → ( ＿＿＿＿ ), ( ＿＿＿＿ )\n3) 簡単です → ( ＿＿＿＿ ), ( ＿＿＿＿ )\n4) 出かけます → ( ＿＿＿＿ ), ( ＿＿＿＿ )\n5) よくないです → ( ＿＿＿＿ ), ( ＿＿＿＿ )\n6) 欲しくないです → ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 返します, 返しました, 返しませんでした\n2) 病気じゃありません, 病気でした, 病気じゃありませんでした\n3) 簡単です, 簡単じゃありません, 簡単でした\n4) 出かけます, 出かけません, 出かけませんでした\n5) よくないです, よかったです, よくなかったです\n6) 欲しくないです, 欲しくなかったです",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Điền dạng động từ thích hợp (thể て, thể ない, thể ます):\n1) きょうは (残業します → ＿＿＿＿ ) ません。\n2) 靴を (脱ぎます → ＿＿＿＿ ) てください。\n3) お金を (払います → ＿＿＿＿ ) なければなりません。\n4) 鍵を (なくします → ＿＿＿＿ ) ないでください。\n5) 荷物を (置きます → ＿＿＿＿ ) てもいいです。\n6) めがねを (かけます → ＿＿＿＿ ) て本を読みます。\n7) 雨が (降ります → ＿＿＿＿ ) います。\n8) お風呂に (入ります → ＿＿＿＿ ) ます。\n9) 本を (返します → ＿＿＿＿ ) てください。\n10) 病院へ (行きます → ＿＿＿＿ ) ました。\n11) うちへ (帰ります → ＿＿＿＿ ) てから、ごはんを食べます。\n12) シャワーを (浴びます → ＿＿＿＿ ) て出かけます。\n13) 傘を (持ちます → ＿＿＿＿ ) います。\n14) 先生の住所を (知ります → ＿＿＿＿ ) います。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 残業し\n2) 脱いで\n3) 払わ\n4) なくさ\n5) 置いて\n6) かけて\n7) 降って\n8) 入り\n9) 返し\n10) 行き\n11) 帰って\n12) 浴びて\n13) 持って\n14) 知って",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Điền từ để hỏi thích hợp (どうして, いくつ, どうやって, どの, どちら):\n1) ( ＿＿＿＿ ) 会社を休みましたか。…熱がありましたから。\n2) りんごを ( ＿＿＿＿ ) 買いましたか。…4つ買いました。\n3) 大学まで ( ＿＿＿＿ ) 行きますか。…電車で行きます。\n4) ミラーさんの傘は ( ＿＿＿＿ ) 傘ですか。…あの青い傘です。\n5) 紅茶とコーヒーと ( ＿＿＿＿ ) がいいですか。…コーヒーをお願いします。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) どうして\n2) いくつ\n3) どうやって\n4) どの\n5) どちら",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Nối hai tính từ / danh từ bằng 〜くて hoặc 〜で:\n1) 黒いです。すてきです。 → ＿＿＿＿\n2) 簡単です。便利です。 → ＿＿＿＿\n3) 24歳です。銀行員です。 → ＿＿＿＿\n4) 天気がよかったです。暖かかったです。 → ＿＿＿＿\n5) おいしいです。いいです。 → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 黒くて、すてきな\n2) 簡単で、便利\n3) 24歳で、銀行員\n4) よくて、暖かかった\n5) おいしくて、いい",
+        "sortOrder": 7,
+        "options": []
+      },
+      {
+        "questionText": "8. Điền từ vựng thích hợp vào câu:\n1) 電気の ( ＿＿＿＿ ) を消してください。\n2) ( ＿＿＿＿ ) がありますから、会社を休みます。\n3) 1,000円出しました。( ＿＿＿＿ ) は200円です。\n4) ATMで ( ＿＿＿＿ ) を押してください。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) スイッチ\n2) 熱\n3) お釣り\n4) 暗証番号",
+        "sortOrder": 8,
+        "options": []
+      },
+      {
+        "questionText": "9. Điền liên từ thích hợp (じゃ, それから, そして, まず, ですから):\n1) ( ＿＿＿＿ )、あしたまた会いましょう。\n2) ごはんを食べました。( ＿＿＿＿ )、テレビを見ました。\n3) あの人は親切です。( ＿＿＿＿ )、きれいです。\n4) ( ＿＿＿＿ ) お金を入れてください。\n5) 雨が降っています。( ＿＿＿＿ )、タクシーで行きます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) じゃ\n2) それから\n3) そして\n4) まず\n5) ですから",
+        "sortOrder": 9,
+        "options": []
+      },
+      {
+        "questionText": "10. Nối câu hỏi với câu đối thoại phù hợp (1-5 với a-g):\n1) ( f ) 2) ( b ) 3) ( g ) 4) ( c ) 5) ( a )",
+        "questionType": "MATCHING",
+        "explanation": "1) f\n2) b\n3) g\n4) c\n5) a",
+        "sortOrder": 10,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 19,
+    "title": "Bài 18",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 18,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 18: Thể từ điển (辞書形), biểu thị năng lực (〜ことができます), sở thích (〜趣味は〜ことです), trước khi làm gì (〜前に)",
+    "questions": [
+      {
+        "questionText": "1. Chuyển động từ sang thể từ điển (辞書形) hoặc thể ます:\n1) 返します → ( ＿＿＿＿ )\n2) 運転する → ( ＿＿＿＿ )\n3) 待ちます → ( ＿＿＿＿ )\n4) 捨てる → ( ＿＿＿＿ )\n5) できる → ( ＿＿＿＿ )\n6) 急ぎます → ( ＿＿＿＿ )\n7) 休む → ( ＿＿＿＿ )\n8) 換えます → ( ＿＿＿＿ )\n9) 洗う → ( ＿＿＿＿ )\n10) 浴びます → ( ＿＿＿＿ )\n11) 遊ぶ → ( ＿＿＿＿ )\n12) 知ります → ( ＿＿＿＿ )\n13) 借りる → ( ＿＿＿＿ )\n14) 来ます → ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 返す\n2) 運転します\n3) 待つ\n4) 捨てます\n5) できます\n6) 急ぐ\n7) 休みます\n8) 換える\n9) 洗います\n10) 浴びる\n11) 遊びます\n12) 知る\n13) 借ります\n14) 来る",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền trợ từ thích hợp (が, で, の, を, は) hoặc ×:\n1) 漢字を読んでもいいですか。…漢字 ( ) 読むこと ( ) できません。\n2) カード ( ) 払うこと ( ) できます。\n3) わたし ( ) 趣味は写真を撮ること ( ) です。\n4) 寝る前 ( ) 本 ( ) 読みます。食事 ( ) 前 ( ) 手 ( ) 洗います。\n5) 日本 ( ) 来る前 ( )、日本語 ( ) 勉強しました。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) ×, が\n2) で, が\n3) の, を, ×\n4) の, は, の, を\n5) ×, を, が",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền thể từ điển của động từ thích hợp (泳ぐ, 覚える, 入る, 見学する, 置く):\n1) 50メートル ( ＿＿＿＿ ) ことができます。\n2) 漢字を100 ( ＿＿＿＿ ) ことができます。\n3) お風呂に ( ＿＿＿＿ ) ことができます。\n4) 工場を ( ＿＿＿＿ ) ことができます。\n5) ここに荷物を ( ＿＿＿＿ ) ことができます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 泳ぐ\n2) 覚える\n3) 入る\n4) 見学する\n5) 置く",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Viết câu diễn tả khả năng (〜ことができます / 〜ことができません):\n1) 漢字・読みます → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) インターネット・切符・買います／予約します → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 車・運転します → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) ケータイ・写真・撮ります／送ります → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 読むことができません。\n2) 買うことができます。／予約することができます。\n3) 運転することができません。\n4) 撮ることができます。／送ることができます。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Viết câu diễn tả sở thích (わたしの趣味は〜ことです):\n1) ピアノを弾きます → ＿＿＿＿\n2) お菓子を作ります → ＿＿＿＿\n3) 切手を集めます → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 弾くことです。\n2) 作ることです。\n3) 集めることです。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Nối câu trước khi làm gì (Vる前に / Nの前に):\n1) 部屋に ( ＿＿＿＿ ) 前に、( a )。\n2) 車を ( ＿＿＿＿ ) 前に、( e )。\n3) レポートを ( ＿＿＿＿ ) 前に、( f )。\n4) 国へ ( ＿＿＿＿ ) 前に、( b )。",
+        "questionType": "MATCHING",
+        "explanation": "1) 入る, a\n2) 運転する, e\n3) 書く, f\n4) 帰る, b",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Chia động từ theo 3 thể (て形, 辞書形, ます形):\n1) 捨てます → ( ＿＿＿＿ ), ( ＿＿＿＿ ), 読みます → ( ＿＿＿＿ )\n2) 買います → ( ＿＿＿＿ ), 知ります → ( ＿＿＿＿ ), 行きます → ( ＿＿＿＿ ), 買います → ( ＿＿＿＿ ), 見ます → ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 捨てて, 捨てる, 読み\n2) 買い, 知って, 行き, 買う, 見る",
+        "sortOrder": 7,
+        "options": []
+      },
+      {
+        "questionText": "8. Trả lời câu hỏi về bản thân:\n1) ピアノを弾くことができますか。\n2) 外国語を話すことができますか。\n3) 日本へ来る前に、日本語を勉強しましたか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、できます。／いいえ、できません。\n2) 例: フランス語とスペイン語を話すことができます。\n3) はい、勉強しました。／いいえ、勉強しませんでした。",
+        "sortOrder": 8,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 20,
+    "title": "Bài 19",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 19,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 19: Thể Ta (た形), đã từng làm gì (〜たことがあります), liệt kê hành động (〜たり〜たりします), trở nên thay đổi (〜くなります / 〜になります)",
+    "questions": [
+      {
+        "questionText": "1. Chuyển động từ sang các thể ます, ない, た tương ứng:\n1) 泊まります → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n2) 降ります → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n3) 押します → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n4) 洗濯します → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n5) 置きます → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n6) 起きます → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n7) 来ます → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )\n8) 閉めます → ( ＿＿＿＿ ), ( ＿＿＿＿ ), ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 泊まります, 泊まらない, 泊まった\n2) 降ります, 降りる, 降りた\n3) 押す, 押さない, 押した\n4) 洗濯します, 洗濯する, 洗濯した\n5) 置きます, 置く, 置かない\n6) 起きます, 起きない, 起きた\n7) 来る, 来ない, 来た\n8) 閉めます, 閉める, 閉めない",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền thể Ta diễn tả trải nghiệm (〜たことがあります):\n1) 歌舞伎を (見ます → ＿＿＿＿ ) ことがありますか。…いいえ、( ＿＿＿＿ ) も ( ＿＿＿＿ ) ません。\n2) お茶を (習います → ＿＿＿＿ ) ことがありますか。…はい、( ＿＿＿＿ ) ( ＿＿＿＿ ) ました。\n3) すしを (食べます → ＿＿＿＿ ) ことがありますか。…はい、( ＿＿＿＿ ) ( ＿＿＿＿ ) ました。\n4) 富士山に (登ります → ＿＿＿＿ ) ことがありますか。…はい、( ＿＿＿＿ ) ( ＿＿＿＿ ) ました。\n5) 日記を (書きます → ＿＿＿＿ ) ことがありますか。…はい、( ＿＿＿＿ ) ( ＿＿＿＿ ) きます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 見た, 一度も, 見\n2) 習った, もう一度, 習い\n3) 食べた, 初めて, 食べて\n4) 登った, 一度, 登り\n5) 書いた, 時々, 書く",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Đặt câu liệt kê hành động bằng 〜たり〜たりします/しました:\n1) 本を (読みます → ＿＿＿＿ )、映画を (見ます → ＿＿＿＿ ) しました。\n2) ビールを (飲みます → ＿＿＿＿ )、たばこを (吸います → ＿＿＿＿ ) しました。\n3) 音楽を (聞きます → ＿＿＿＿ )、ダンスを (覚えます → ＿＿＿＿ ) しました。\n4) 写真を (撮ります → ＿＿＿＿ )、お土産を (買います → ＿＿＿＿ ) しました。\n5) シャワーを (浴びます → ＿＿＿＿ )、お風呂に (入ります → ＿＿＿＿ ) しました。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 読んだ, 見た\n2) 飲んだ, 吸った\n3) 聞いた, 覚えた／練習した／勉強した\n4) 撮った, 買った\n5) 浴びた, 入った",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền dạng biến đổi 〜くなります / 〜になります:\n1) テレーザちゃんは (大きい → ＿＿＿＿ ) なりました。(もうすぐ ＿＿＿＿ 歳になります)。\n2) 秋ですから、(だんだん ＿＿＿＿ ) なりました。(いい ＿＿＿＿ になりました)。\n3) 日本語が (なかなか ＿＿＿＿ ) になりません。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 大きく, もうすぐ, 9歳に\n2) だんだん, 涼しく, 季節に\n3) なかなか, 上手に",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Trả lời câu hỏi kinh nghiệm bản thân:\n1) 馬に乗ったことがありますか。\n2) 休みの日は何をしましたか。\n3) 日本語が上手になりましたか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、あります。／いいえ、ありません。\n2) 例: 洗濯したり、買い物に行ったりしました。\n3) はい、上手になりました。／いいえ、まだです。／いいえ、まだまだです。",
+        "sortOrder": 5,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 21,
+    "title": "Bài 20",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 20,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 20: Thể thông thường (普通形), đối thoại thân mật (普通体), chuyển đổi từ thể lịch sự sang thể thông thường",
+    "questions": [
+      {
+        "questionText": "1. Chuyển đổi qua lại giữa thể lịch sự (丁寧形) và thể thông thường (普通形):\n1) 調べた ↔ ( ＿＿＿＿ )\n2) 飲みます ↔ ( ＿＿＿＿ )\n3) 降りない ↔ ( ＿＿＿＿ )\n4) なくします ↔ ( ＿＿＿＿ )\n5) 待たなかった ↔ ( ＿＿＿＿ )\n6) 来ませんでした ↔ ( ＿＿＿＿ )\n7) 修理する ↔ ( ＿＿＿＿ )\n8) 買いました ↔ ( ＿＿＿＿ )\n9) 要る ↔ ( ＿＿＿＿ )\n10) ありません ↔ ( ＿＿＿＿ )\n11) 便利です ↔ ( ＿＿＿＿ )\n12) 眠い ↔ ( ＿＿＿＿ )\n13) 雨でした ↔ ( ＿＿＿＿ )\n14) 暑くないです ↔ ( ＿＿＿＿ )\n15) よくないです ↔ ( ＿＿＿＿ )\n16) 休みじゃなかった ↔ ( ＿＿＿＿ )\n17) 無理じゃないです ↔ ( ＿＿＿＿ )\n18) 知らない ↔ ( ＿＿＿＿ )\n19) 持っています ↔ ( ＿＿＿＿ )\n20) 帰らなければなりません ↔ ( ＿＿＿＿ )\n21) 食事しませんか ↔ ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 調べました 2) 飲んだ 3) 降りません 4) なくさない 5) 待ちませんでした 6) 来なかった 7) 修理します 8) 買った 9) 要ります 10) ない 11) 便利だ 12) 眠いです 13) 雨だった 14) 暑くなかったです 15) よくない 16) 休みじゃありませんでした 17) 無理じゃない 18) 知りません 19) 持っている 20) 帰らなければなりません 21) 食事しませんか",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Chuyển câu hỏi / câu nói sang thể thông thường (普通体):\n1) わかりません。 → ＿＿＿＿\n2) できますか。 → ＿＿＿＿\n3) 会いませんでした。 → ＿＿＿＿\n4) 撮りましたか。 → ＿＿＿＿\n5) 知りません。 → ＿＿＿＿\n6) 大変ですか。 → ＿＿＿＿\n7) 欲しくないです。 → ＿＿＿＿\n8) 要りますか。 → ＿＿＿＿\n9) 休みじゃありませんでした。 → ＿＿＿＿\n10) よくなかったです。 → ＿＿＿＿\n11) もらいましたか。 → ＿＿＿＿\n12) あります。 → ＿＿＿＿\n13) 持って行かなくてもいいです。 → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) わからない。\n2) できる？\n3) 会わなかった。\n4) 撮った？\n5) 知らない。\n6) 大変？\n7) 欲しくない。\n8) 要る？\n9) 休みじゃなかった。\n10) よくなかった。\n11) もらった？\n12) ある。\n13) 持って行かなくてもいい。",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Trả lời câu hỏi bằng thể thông thường:\n1) あの人はだれ？…( ＿＿＿＿ )。\n2) 日本料理は好き？…( ＿＿＿＿ )。\n3) きのうどこか行った？…( ＿＿＿＿ )。\n4) あしたパーティーに行く？…( ＿＿＿＿ )。\n5) もう昼ごはん食べた？…( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 男の人です。\n2) はい、好きです。\n3) いいえ、行きませんでした。\n4) はい、行きます。\n5) いいえ、まだです。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Trả lời câu hỏi thân mật về bản thân:\n1) いま何時？\n2) 漢字が書ける？\n3) きのうの新聞を読んだ？\n4) 先週忙しかった？\n5) ごはんとパンとどちらが好き？\n6) ケータイを持っている？\n7) きのうの天気はどうだった？",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 10時半です。\n2) はい、できます。／いいえ、できません。\n3) はい、読みました。／いいえ、読みませんでした。\n4) はい、忙しかったです。／いいえ、忙しくなかったです。\n5) 例: パンのほうが好きです。／どちらも好きです。\n6) はい、持っています。／いいえ、持っていません。\n7) 例: 曇りでした。",
+        "sortOrder": 4,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 22,
+    "title": "Bài 21",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 21,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 21: Thể thông thường trước と思います (nghĩ rằng), と言いました (nói rằng), でしょう (có đúng không), phó từ chỉ mức độ phỏng đoán",
+    "questions": [
+      {
+        "questionText": "1. Nối câu thể thông thường trước と思います (1-7 với a-i):\n1) ( c ) 2) ( a ) 3) ( g ) 4) ( i ) 5) ( f ) 6) ( b ) 7) ( e )",
+        "questionType": "MATCHING",
+        "explanation": "1) c\n2) a\n3) g\n4) i\n5) f\n6) b\n7) e",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Chuyển động từ / tính từ / danh từ sang thể thông thường trước と思います:\n1) 来ます → ( ＿＿＿＿ ) と思います。\n2) 休みじゃありません → ( ＿＿＿＿ ) と思います。\n3) 吸いません → ( ＿＿＿＿ ) と思います。\n4) 独身です → ( ＿＿＿＿ ) と思います。\n5) 読みました → ( ＿＿＿＿ ) と思います。\n6) 役に立ちます → ( ＿＿＿＿ ) と思います。\n7) 難しくなかったです → ( ＿＿＿＿ ) と思います。\n8) ありません → ( ＿＿＿＿ ) と思います。\n9) 知りません → ( ＿＿＿＿ ) と思います。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 来る\n2) 休みじゃない\n3) 吸わない\n4) 独身だ\n5) 読んだ\n6) 役に立つ\n7) 難しくなかった\n8) ない\n9) 知らない",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền từ thích hợp vào câu trích dẫn hoặc ý kiến:\n1) あの人は ( ＿＿＿＿ ) だと思います。(留学生)\n2) タイ料理は ( ＿＿＿＿ ) と思います。(辛くない)\n3) 部長に ( ＿＿＿＿ ) と言いました。(会いませんでした)\n4) 仕事は ( ＿＿＿＿ ) と思います。(大変でした)\n5) パソコンを ( ＿＿＿＿ ) と言いました。(使います)\n6) 傘を ( ＿＿＿＿ ) と言いました。(持って来ませんでした)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 留学生\n2) 辛くないです。\n3) 会いませんでした。\n4) 大変だった\n5) 使う\n6) 持って来ませんでした。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền trợ từ thích hợp (で, が, に, を):\n1) 日本 ( ) サッカー ( ) 一番人気があると思います。\n2) 会議 ( ) 誰 ( ) 来ると思いますか。\n3) テレビ ( ) ニュース ( ) 見ました。\n4) 来週京都 ( ) 行く ( ) つもりです。\n5) 会議 ( ) 意見 ( ) 言いました。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) で, が\n2) に, が\n3) で, を\n4) で, に\n5) で, を",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Hoàn thành ý kiến, dự định cá nhân:\n1) 冬休みは ( ＿＿＿＿ ) と思います。(スキーに行きます)\n2) 来年は ( ＿＿＿＿ ) と思います。(家族と旅行したいです)\n3) 暇な時 ( ＿＿＿＿ ) と思います。(マンガを読んだりアニメを見たりします)\n4) 明日までに ( ＿＿＿＿ ) と思います。(レポートを書かなければなりません)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) スキーに行く\n2) 家族と旅行したい\n3) マンガを読んだり、アニメを見たりする\n4) レポートを書かなければならない",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Điền phó từ phỏng đoán thích hợp (最近, ほんとうに, そんなに, きっと, たぶん, もちろん):\n1) ( ＿＿＿＿ ) 日本の物価が高くなりました。\n2) あの映画は ( ＿＿＿＿ ) おもしろいです。\n3) この本は ( ＿＿＿＿ ) 難しくないです。\n4) 明日は ( ＿＿＿＿ ) 晴れるでしょう。\n5) ミラーさんは ( ＿＿＿＿ ) 来ると思います。\n6) ( ＿＿＿＿ )、パーティーに行きます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 最近\n2) ほんとうに\n3) そんなに\n4) きっと\n5) たぶん\n6) もちろん",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Trả lời câu hỏi quan điểm:\n1) 明日雨が降ると思いますか。\n2) あしたは休みですか。\n3) 病気の人に何と言いますか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、降ると思います。／いいえ、降らないと思います。\n2) はい、休みです。\n3) 例: 「お大事に」と言います。",
+        "sortOrder": 7,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 23,
+    "title": "Bài 22",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 22,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 22: Mệnh đề bổ ngữ cho danh từ (連体修飾節), động từ thể thông thường bổ nghĩa cho danh từ, câu miêu tả người/vật cụ thể",
+    "questions": [
+      {
+        "questionText": "1. Nối mệnh đề thành câu có danh từ được bổ nghĩa:\n1) イギリスで買いました・時計です → ＿＿＿＿\n2) 友達に借りました・カメラです → ＿＿＿＿\n3) 山田さんにあげます・シャープペンシルです → ＿＿＿＿\n4) ミラーさんが作りました・いすです → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) イギリスで買った時計です。\n2) 友達に借りたカメラです。\n3) 山田さんにあげるシャープペンシルです。\n4) ミラーさんが作ったいすです。",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Chia động từ thể thông thường trong mệnh đề bổ nghĩa:\n1) パンを (作ります → ＿＿＿＿ ) 人\n2) 着物を (着ています → ＿＿＿＿ ) 人\n3) あした病院へ (行きます → ＿＿＿＿ ) 人\n4) 写真を (撮りました → ＿＿＿＿ ) 人\n5) 切符が (要りません → ＿＿＿＿ ) 人\n6) 花を (売っています → ＿＿＿＿ ) 店\n7) セーターを (着ます → ＿＿＿＿ ) 人\n8) たばこを (吸いません → ＿＿＿＿ ) 人\n9) 料理が (できます → ＿＿＿＿ ) 人\n10) 英語を (話します → ＿＿＿＿ ) 人",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 作る\n2) 着ている\n3) 行く\n4) 撮った\n5) 要らない\n6) 売っている\n7) 着る\n8) 吸わない\n9) できる\n10) 話す",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền từ thích hợp vào mệnh đề bổ nghĩa:\n1) あした山へ ( ＿＿＿＿ ) 人は ( ＿＿＿＿ ) ですか。…5人です。\n2) きのう ( ＿＿＿＿ ) ホテルは ( ＿＿＿＿ ) でしたか。…とてもきれいでした。\n3) 図書館で ( ＿＿＿＿ ) 本は ( ＿＿＿＿ ) ですか。…無料です。\n4) 駅の前に ( ＿＿＿＿ ) 喫茶店は ( ＿＿＿＿ ) ですか。…あそこです。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 行く, 何人\n2) 泊まった, どう\n3) 借りた, いくら\n4) ある, どこ",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. [IMAGE_REQUIRED] Nhìn tranh và xác định người qua hành động bổ nghĩa:\n1) 公園で ( ＿＿＿＿ ) 人は ( ＿＿＿＿ ) ですか。… ( ＿＿＿＿ )。\n2) ( ＿＿＿＿ ) 人ですか。… ( ＿＿＿＿ )。\n3) 電話で ( ＿＿＿＿ ) 人は ( ＿＿＿＿ ) ですか。… ( ＿＿＿＿ )。\n4) ( ＿＿＿＿ ) 人ですか。… ( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 遊んでいる, だれ, 山田さんです。\n2) どの人, [木の下で]寝ている人です。\n3) 話している, だれ, シュミットさんです。\n4) どの人, 絵をかいている人です。",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Đặt câu với thời gian / nơi chốn làm việc gì (〜時間/〜所):\n1) テレビを見ます → ＿＿＿＿\n2) 郵便局へ行きます → ＿＿＿＿\n3) 友達と買い物に行きます → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: テレビを見る\n2) 例: 郵便局へ行く\n3) 例: 友達と買い物に行く",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Trả lời câu hỏi:\n1) あなたのクラスに眼鏡をかけている人がいますか。\n2) 毎日日本語を勉強する時間はどのくらいありますか。\n3) 初めて作った日本料理はどうでしたか。\n4) あなたが話すことができる外国語は何ですか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、います。／いいえ、いません。\n2) 例: 2時間ぐらいあります。／全然ありません。\n3) 例: ちょっと難しいですが、いいと思います。\n4) 例: フランス語です。",
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 24,
+    "title": "Bài 23",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 23,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 23: Cấu trúc khi 〜とき (Vる/Vた/Vない/Aい/Aな/Nのとき), điều kiện hiển nhiên 〜と (hễ mà), hướng dẫn chỉ đường",
+    "questions": [
+      {
+        "questionText": "1. Điền từ thích hợp vào chỗ trống:\n1) 橋を ( ＿＿＿＿ )。\n2) バスが ( ＿＿＿＿ )。\n3) 時間を ( ＿＿＿＿ )。\n4) 一人ですから ( ＿＿＿＿ )。\n5) 明日は ( ＿＿＿＿ ) です。\n6) ( ＿＿＿＿ ) とき、よく遊びました。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 渡る\n2) 来ない\n3) 変えたい\n4) 寂しい\n5) 暇な\n6) 子どもの",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Phân biệt thì của động từ trước とき (Vるとき vs Vたとき):\n1) 鍵を (なくします → ＿＿＿＿ ) とき、警察へ行きます。\n2) 日本へ (来ます → ＿＿＿＿ ) とき、かばんを買いました。(trước khi đến)\n3) 会社へ (行きます → ＿＿＿＿ ) とき、駅で新聞を買います。(trên đường đi)\n4) 映画を (見ます → ＿＿＿＿ ) とき、とても泣きました。(sau khi xem)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) なくした\n2) 来る\n3) 行く\n4) 見た",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền động từ thể từ điển trước と (điều kiện hễ mà):\n1) ボタンを押す・音を ( ＿＿＿＿ ) と、音楽が聞こえます。\n2) ボタンを押す・水が ( ＿＿＿＿ ) と、雨が降ります。\n3) ここに ( ＿＿＿＿ ) と、電気がつきます。\n4) 赤ちゃんが ( ＿＿＿＿ ) と、みんな喜びます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 聞く\n2) 降る\n3) 触る\n4) 生まれる",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền dạng thích hợp vào ngữ cảnh:\n1) ( ＿＿＿＿ ) とき、鍵をかけます。(出かけます)\n2) 散歩に ( ＿＿＿＿ ) とき、カメラを持って ( ＿＿＿＿ )。(行きます)\n3) お酒を ( ＿＿＿＿ )、車を ( ＿＿＿＿ )、危ないです。(飲みます/運転します)\n4) 橋を ( ＿＿＿＿ )、まっすぐ ( ＿＿＿＿ )、駅があります。(渡ります/行きます)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 出かけるとき\n2) 行くとき, 行って\n3) 飲んで, 運転すると\n4) 渡って, 行くと",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. [IMAGE_REQUIRED] Nhìn bản đồ chỉ đường và viết câu hướng dẫn:\n1) 2つ目の角・左へ曲がります → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 次の角・左へ曲がります・橋・渡ります → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 2つ目の角・右へ曲がります・50メートル → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 2つ目の角を左へ曲がると、右にあります。\n2) 例: 次の角を左へ曲がって、まっすぐ行くと、橋があります。橋を渡ると、右にあります。\n3) 例: 2つ目の角を右へ曲がって、50メートルぐらい行くと、左にあります。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Hoàn thành câu theo tình huống:\n1) 寂しいとき、( ＿＿＿＿ )。\n2) 疲れたとき、( ＿＿＿＿ )。\n3) 暇なとき、( ＿＿＿＿ )。\n4) 眠いとき、( ＿＿＿＿ )。\n5) 道がわからないとき、( ＿＿＿＿ )。\n6) 引っ越しのとき、( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 音楽を聞く\n2) 例: 頭が痛くなります。\n3) 例: スポーツをする\n4) 例: 疲れた\n5) 例: 近くにいる人に聞きます。\n6) 例: 荷物がたくさんある",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Trả lời câu hỏi:\n1) わからない言葉があるとき、辞書を使いますか。\n2) 日本へ来たとき、だれと来ましたか。\n3) 疲れたとき、どうしますか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、使います。／いいえ、使いません。\n2) 例: 家族と来ました。／一人で来ました。\n3) 例: おふろに入って、早く寝ます。",
+        "sortOrder": 7,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 25,
+    "title": "Bài 24",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 24,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 24: Cho và nhận hành động (くれます, 〜てもらいます, 〜てくれます, 〜てあげます)",
+    "questions": [
+      {
+        "questionText": "1. Chọn động từ cho nhận phù hợp (もらい／あげ／くれ):\n1) 友達にプレゼントを ( ＿＿＿＿ ) ます。\n2) 先生に本を ( ＿＿＿＿ ) ました。\n3) 友達がわたしにお菓子を ( ＿＿＿＿ ) ました。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) もらいます\n2) あげました\n3) くれました",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Viết lại câu dùng 〜てもらいました và 〜てくれました:\n1) 母・セーター・送りました → ＿＿＿＿\n2) 佐藤さん・傘・貸しました → ＿＿＿＿\n3) 松本さん・すき焼き・作りました → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 母にセーターを送ってもらいました。セーターを送ってくれました。\n2) 佐藤さんに傘を貸してもらいました。傘を貸してくれました。\n3) 松本さんにすき焼きを作ってもらいました。すき焼きを作ってくれました。",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền động từ thể 〜てもらいました hoặc 〜てくれました thích hợp:\n1) 山田さんに引越しを ( ＿＿＿＿ )。\n2) 部長が駅まで ( ＿＿＿＿ )。\n3) 友達に病院へ ( ＿＿＿＿ )。\n4) 母がおいしいケーキを ( ＿＿＿＿ )。\n5) 明日友達がうちに ( ＿＿＿＿ )。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 手伝ってもらいました。\n2) 車で送ってくれました。\n3) いっしょに行ってもらいました。\n4) 作ってくれました。\n5) 来てくれます。",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Điền phó từ thích hợp (ほかに, 全部, 自分で):\n1) ( ＿＿＿＿ ) 何か質問がありますか。\n2) 宿題は ( ＿＿＿＿ ) 終わりました。\n3) この料理は ( ＿＿＿＿ ) 作りました。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) ほかに\n2) 全部\n3) 自分で",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Trả lời câu hỏi:\n1) 誕生日にだれに何をもらいましたか。\n2) あなたに日本語を教えてくれる人がいますか。\n3) 友達が国へ来たら、何をしてあげますか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 自転車を買ってもらいました。\n2) はい、います。／いいえ、いません。\n3) ○○を案内してあげます。",
+        "sortOrder": 5,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 26,
+    "title": "Bài 25",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 25,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 25: Câu điều kiện giả định 〜たら (nếu, sau khi), câu nhượng bộ 〜ても (dù, cho dẫu)",
+    "questions": [
+      {
+        "questionText": "1. Chuyển động từ / tính từ / danh từ sang thể quá khứ trước ら (〜たら):\n1) 入りたい → ( ＿＿＿＿ )\n2) 知っている → ( ＿＿＿＿ )\n3) 着かない → ( ＿＿＿＿ )\n4) わからない → ( ＿＿＿＿ )\n5) 広い → ( ＿＿＿＿ )\n6) 悪い → ( ＿＿＿＿ )\n7) 無理だ → ( ＿＿＿＿ )\n8) かぜだ → ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 入りたかった\n2) 知っていた\n3) 着かなかった\n4) わからなかった\n5) 広かった\n6) 悪かった\n7) 無理だった\n8) かぜだった",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền dạng 〜たら hoặc thể Te thích hợp:\n1) 駅に (着きます → ＿＿＿＿ ) ら、電話してください。(迎え) に行きます。\n2) お金を (貸します → ＿＿＿＿ ) てください。仕事が (終わります → ＿＿＿＿ ) たら、すぐに (返します → ＿＿＿＿ ) ます。(急ぎます → ＿＿＿＿ ) ないでください。\n3) うちを (出ます → ＿＿＿＿ ) たら、図書館で (勉強します → ＿＿＿＿ ) ます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 着いた, 迎え\n2) 貸して, 終わった, 返し, 急が\n3) 出た, 勉強し",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Điền dạng 〜ても (dù... cho dẫu...):\n1) (頑張ります → ＿＿＿＿ ) も、試験に合格できませんでした。\n2) 何度 (見ます → ＿＿＿＿ ) も、わかりません。\n3) (眠いです → ＿＿＿＿ ) も、レポートを書かなければなりません。\n4) (漢字です → ＿＿＿＿ ) も、読めます。\n5) (下手です → ＿＿＿＿ ) も、歌うのが好きです。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 頑張って\n2) 見て\n3) 眠くて\n4) 漢字で\n5) 下手で",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Phân biệt 〜たら và 〜ても:\n1) (車だ → ＿＿＿＿ ) ら、便利です。人が (多い → ＿＿＿＿ ) ても、行きます。\n2) 天気が (いい → ＿＿＿＿ ) たら、散歩します。(寒い → ＿＿＿＿ ) ても、出かけます。\n3) 辞書を (調べます → ＿＿＿＿ ) ても、(わからない → ＿＿＿＿ ) ったです。\n4) (古い → ＿＿＿＿ ) くても、(安い → ＿＿＿＿ ) かったら、買います。\n5) 時間が (あります → ＿＿＿＿ ) ても、お金が (ない → ＿＿＿＿ ) ったら、行けません。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 車だった, 多くて\n2) よくて, 寒かった\n3) 調べて, わからなかった\n4) 古くて, 安かった\n5) あって, なかった",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Nối hai vế câu bằng 〜ても hoặc 〜たら:\n1) 修理します・このパソコンはすぐ故障します → ＿＿＿＿\n2) お酒を飲みました・車を運転しないでください → ＿＿＿＿\n3) 不便です・物価が安い所に住みたいです → ＿＿＿＿\n4) あしたは無理です・あさってです・時間があります → ＿＿＿＿\n5) 安いです・要らない物は買いません → ＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 修理しても、このパソコンはすぐ故障します。\n2) お酒を飲んだら、車を運転しないでください。\n3) 不便でも、物価が安い所に住みたいです。\n4) あしたは無理ですが、あさってだったら、時間があります。\n5) 安くても、要らない物は買いません。",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Trả lời câu hỏi giả định về bản thân:\n1) お金がたくさんあったら、何をしたいですか。\n2) 結婚するなら、男の人と女の人とどちらのほうがいいですか。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 例: 田舎で野菜を作ったり、ゆっくり本を読んだりしたいです。\n2) 男の人のほうがいいです。／女の人のほうがいいです。",
+        "sortOrder": 6,
+        "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 27,
+    "title": "Tổng hợp Bài 18–25",
+    "exerciseType": "REVIEW",
+    "contentType": "EXERCISE",
+    "lessonNumber": 25,
+    "description": "Ôn tập tổng hợp kiến thức từ Bài 18 đến Bài 25: Thể từ điển, thể た, thể thông thường, mệnh đề bổ nghĩa danh từ, 〜とき, 〜と, cho nhận hành động, điều kiện 〜たら và nhượng bộ 〜ても",
+    "questions": [
+      {
+        "questionText": "1. Điền trợ từ thích hợp vào toàn bộ câu ôn tập 1-20:\n1) 趣味 ( ) 読書 ( ) です。\n2) 車 ( ) 運転ができます。\n3) カード ( ) 払うこと ( ) できます。\n4) 富士山に登ったこと ( ) あります。\n5) 部屋 ( ) 中 ( ) 誰かがいます。\n6) 会社 ( ) 人 ( ) 話しました。\n7) 友達 ( ) 会いに行きます。\n8) 朝 ( ) ジョギング ( ) します。\n9) 電車 ( ) 行きます。\n10) 喉 ( ) かわきました ( )、お茶を飲みます。\n11) 7時 ( ) 起きます。\n12) ここ ( ) 座ってください。\n13) どこ ( ) 行きたい ( ) ですか。\n14) 本 ( ) 読み ( ) 行きます。\n15) 駅から学校 ( ) 10分 ( ) かかります。\n16) 1週間 ( ) 1回映画を見ます。\n17) 先生 ( ) 本 ( ) 借りました。\n18) 友達 ( ) プレゼントをあげます。\n19) 母 ( ) セーターをもらいました。\n20) 友達 ( ) いっしょに行きます。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) の, が\n2) の\n3) で, が\n4) が\n5) の, に\n6) に, が\n7) に\n8) は, に\n9) で\n10) が, は\n11) に\n12) に\n13) へ, が\n14) を, に\n15) から, に\n16) に\n17) に, に\n18) に\n19) に\n20) と",
+        "sortOrder": 1,
+        "options": []
+      },
+      {
+        "questionText": "2. Điền từ vựng N5 thích hợp vào câu:\n1) ( ＿＿＿＿ ) が不便ですから、車が必要です。(こうつう)\n2) ( ＿＿＿＿ ) をかけて本を読みます。(めがね)\n3) 毎月 ( ＿＿＿＿ ) を払います。(やちん)\n4) 布団を ( ＿＿＿＿ ) に入れます。(おしいれ)\n5) ( ＿＿＿＿ ) をしないでください。(むり)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 交通\n2) 眼鏡\n3) 家賃\n4) 押し入れ\n5) 無理",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "3. Chia động từ và tính từ thích hợp vào câu tổng hợp 1-12:\n1) 夜 ( ＿＿＿＿ ) 寝ます。(12時)\n2) 漢字を ( ＿＿＿＿ ) ら、本が ( ＿＿＿＿ ) ます。(覚えます/読みます)\n3) 薬を ( ＿＿＿＿ ) と、( ＿＿＿＿ ) くなります。(飲みます/眠い)\n4) 単語を ( ＿＿＿＿ ) て、日本語で ( ＿＿＿＿ ) ます。(覚えます/話します)\n5) 日本へ ( ＿＿＿＿ ) ことがあります。(行きます)\n6) ( ＿＿＿＿ ) とき、薬を ( ＿＿＿＿ ) ください。(病気/持って行きます)\n7) 旅行に ( ＿＿＿＿ ) 前に、切符を ( ＿＿＿＿ ) り、ホテルを ( ＿＿＿＿ ) り ( ＿＿＿＿ ) ます。(行きます/買います/予約します/します)\n8) ( ＿＿＿＿ ) とき、電気を消して、( ＿＿＿＿ ) ます。(出かけます/帰ります)\n9) 意味が ( ＿＿＿＿ ) ったら、辞書で ( ＿＿＿＿ ) ます。(わかりません/調べます)\n10) ( ＿＿＿＿ ) くても、いい ( ＿＿＿＿ ) ったら、( ＿＿＿＿ ) ます。(高い/物/買います)\n11) 写真を ( ＿＿＿＿ ) ら、( ＿＿＿＿ ) てください。(撮ります/見せます)\n12) ミラーさんは ( ＿＿＿＿ ) で、とても ( ＿＿＿＿ ) と思います。(親切/親切だ)",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 12時に\n2) 覚えた, 読む\n3) 飲む, 眠く\n4) 覚えて, 話す\n5) 行った\n6) 病気の, 持って行って\n7) 行く, 買った, 予約した, し\n8) 出かける, 帰る\n9) わからなかった, 調べて\n10) 高くて, 物だった, 買う\n11) 撮った, 見せて\n12) 親切, 親切だ",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "4. Phân loại từ theo nhóm chủ đề:\n1) 野球、サッカー、テニス → ( ＿＿＿＿ )\n2) 春、夏、秋、冬 → ( ＿＿＿＿ )\n3) 兄、姉、弟、妹 → ( ＿＿＿＿ )\n4) お茶、コーヒー、ジュース → ( ＿＿＿＿ )\n5) 父、母 → ( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) スポーツ\n2) 季節\n3) 兄弟\n4) 飲み物\n5) 両親",
+        "sortOrder": 4,
+        "options": []
+      },
+      {
+        "questionText": "5. Chọn dạng động từ và tính từ thích hợp (a - j):\na. 作る b. 作った c. あげた d. 送った e. 食べた f. おいしい g. 降る h. 上手だ i. 始めて j. 7時ごろに",
+        "questionType": "MATCHING",
+        "explanation": "a. 作る\nb. 作った\nc. あげた\nd. 送った\ne. 食べた\nf. おいしい\ng. 降る\nh. 上手だ\ni. 始めて\nj. 7時ごろに",
+        "sortOrder": 5,
+        "options": []
+      },
+      {
+        "questionText": "6. Điền phó từ thích hợp (よく, ずっと, たぶん, 最近, ぜひ, みんなで, もうすぐ, だんだん, すぐ, もし):\n1) 日本語が ( ＿＿＿＿ ) わかります。\n2) 去年から ( ＿＿＿＿ ) 日本に住んでいます。\n3) 明日は ( ＿＿＿＿ ) 雨でしょう。\n4) ( ＿＿＿＿ ) 忙しいです。\n5) ( ＿＿＿＿ ) 遊びに来てください。\n6) ( ＿＿＿＿ ) ごはんを食べましょう。\n7) ( ＿＿＿＿ ) 桜が咲きます。\n8) ( ＿＿＿＿ ) 暖かくなりました。\n9) ( ＿＿＿＿ ) 行きますから、待ってください。\n10) ( ＿＿＿＿ ) 1億円あったら、世界旅行をしたいです。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) よく\n2) ずっと\n3) たぶん\n4) 最近\n5) ぜひ\n6) みんなで\n7) もうすぐ\n8) だんだん\n9) すぐ\n10) もし",
+        "sortOrder": 6,
+        "options": []
+      },
+      {
+        "questionText": "7. Điền dạng thích hợp của động từ / tính từ / danh từ:\n1) 部屋を (きれい → ＿＿＿＿ ) 掃除しました。\n2) 寒く (なります → ＿＿＿＿ ) も、コートを着ません。\n3) (いい → ＿＿＿＿ ) 天気ですね。\n4) (疲れます → ＿＿＿＿ ) たら、少し休みましょう。\n5) 簡単な (料理 → ＿＿＿＿ ) も、作れません。\n6) (安いです → ＿＿＿＿ ) たら、買いたいです。\n7) カードを (入れます → ＿＿＿＿ ) て、ボタンを (押します → ＿＿＿＿ ) と、切符が出ます。\n8) 電車で (行きます → ＿＿＿＿ ) て、駅を (降ります → ＿＿＿＿ ) たら、すぐです。",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) きれいに\n2) なっても\n3) よく\n4) 疲れたら\n5) 料理でも\n6) 安かったら\n7) 入れて, 押すと\n8) 行って, 降りたら",
+        "sortOrder": 7,
+        "options": []
+      },
+      {
+        "questionText": "8. Điền câu giao tiếp / chào hỏi thông dụng:\n1) 試験に合格しました！…( ＿＿＿＿ )！\n2) いっしょにお茶を飲みませんか。…ええ、( ＿＿＿＿ )。\n3) お元気ですか。…はい、( ＿＿＿＿ )。\n4) 来月結婚します。…えっ、( ＿＿＿＿ )？\n5) しばらくですね！…あ、田中さん！( ＿＿＿＿ )！",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) おめでとうございます\n2) よかったら\n3) おかげさまで\n4) ほんとうですか\n5) 久しぶりですね",
+        "sortOrder": 8,
+        "options": []
+      }
+    ]
+  }
+]

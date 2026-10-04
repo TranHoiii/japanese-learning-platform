@@ -31,6 +31,7 @@ public class SecurityConfig {
             "/api/v1/kanjis/**",
             "/api/v1/listenings/**",
             "/api/v1/readings/**",
+            "/api/v1/exercises/**",
             "/audio/**",
             "/media/**",
             "/swagger-ui.html",
