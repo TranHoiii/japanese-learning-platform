@@ -46,11 +46,45 @@ public class SecurityConfig {
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/v1/auth/register", "/api/v1/auth/login").permitAll()
                         .requestMatchers(PUBLIC_ENDPOINTS).permitAll()
                         .anyRequest().authenticated())
-                .oauth2ResourceServer(oauth2 -> oauth2.jwt(jwt -> {}));
+                .oauth2ResourceServer(oauth2 -> oauth2
+                        .jwt(jwt -> jwt.jwtAuthenticationConverter(jwtAuthenticationConverter()))
+                        .authenticationEntryPoint((request, response, authException) -> {
+                            response.setContentType(org.springframework.http.MediaType.APPLICATION_JSON_VALUE);
+                            response.setCharacterEncoding("UTF-8");
+                            response.setStatus(jakarta.servlet.http.HttpServletResponse.SC_UNAUTHORIZED);
+                            new com.fasterxml.jackson.databind.ObjectMapper().writeValue(
+                                    response.getWriter(),
+                                    com.japanese.learning.common.response.ApiResponse.error("Yêu cầu xác thực tài khoản")
+                            );
+                        })
+                        .accessDeniedHandler((request, response, accessDeniedException) -> {
+                            response.setContentType(org.springframework.http.MediaType.APPLICATION_JSON_VALUE);
+                            response.setCharacterEncoding("UTF-8");
+                            response.setStatus(jakarta.servlet.http.HttpServletResponse.SC_FORBIDDEN);
+                            new com.fasterxml.jackson.databind.ObjectMapper().writeValue(
+                                    response.getWriter(),
+                                    com.japanese.learning.common.response.ApiResponse.error("Bạn không có quyền truy cập tài nguyên này")
+                            );
+                        })
+                );
 
         return http.build();
+    }
+
+    @Bean
+    public org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter jwtAuthenticationConverter() {
+        org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter authoritiesConverter =
+                new org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter();
+        authoritiesConverter.setAuthoritiesClaimName("role");
+        authoritiesConverter.setAuthorityPrefix("ROLE_");
+
+        org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter converter =
+                new org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter();
+        converter.setJwtGrantedAuthoritiesConverter(authoritiesConverter);
+        return converter;
     }
 
     @Bean
@@ -59,10 +93,10 @@ public class SecurityConfig {
     }
 
     @Bean
-    SecretKey jwtSecretKey() {
+    SecretKey jwtSecretKey(@org.springframework.beans.factory.annotation.Value("${jwt.secret:change-this-development-secret-to-a-long-random-value}") String defaultSecret) {
         String secret = System.getenv().getOrDefault(
                 "JWT_SECRET",
-                "change-this-development-secret-to-a-long-random-value"
+                defaultSecret
         );
         return new SecretKeySpec(
                 secret.getBytes(StandardCharsets.UTF_8),

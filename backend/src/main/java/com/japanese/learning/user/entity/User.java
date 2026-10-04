@@ -47,7 +47,11 @@ public class User extends BaseTimeEntity {
     @Column(name = "password_hash", nullable = false, length = 255)
     private String passwordHash;
 
-    @Column(name = "full_name", length = 150)
+    @Column(
+            name = "full_name",
+            nullable = false,
+            length = 100
+    )
     private String fullName;
 
     @Column(name = "avatar_url", length = 500)
