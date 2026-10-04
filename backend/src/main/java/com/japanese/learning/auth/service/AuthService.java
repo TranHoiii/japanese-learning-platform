@@ -79,6 +79,12 @@ public class AuthService {
 
     @Transactional(readOnly = true)
     public UserResponse getCurrentUser(Jwt jwt) {
+        User user = getAuthenticatedUser(jwt);
+        return UserResponse.fromEntity(user);
+    }
+
+    @Transactional(readOnly = true)
+    public User getAuthenticatedUser(Jwt jwt) {
         if (jwt == null) {
             throw new InvalidCredentialsException("Yêu cầu xác thực tài khoản");
         }
@@ -94,21 +100,18 @@ public class AuthService {
             }
         }
 
-        User user;
         if (parsedUserId != null) {
             final Long targetUserId = parsedUserId;
-            user = userRepository.findById(targetUserId)
+            return userRepository.findById(targetUserId)
                     .orElseThrow(() -> new ResourceNotFoundException("Không tìm thấy người dùng với ID: " + targetUserId));
         } else {
             final String email = jwt.getSubject();
             if (email == null || email.isBlank()) {
                 throw new InvalidCredentialsException("Token không hợp lệ");
             }
-            user = userRepository.findByEmail(email)
+            return userRepository.findByEmail(email)
                     .orElseThrow(() -> new ResourceNotFoundException("Không tìm thấy người dùng với email: " + email));
         }
-
-        return UserResponse.fromEntity(user);
     }
 
     public String generateToken(User user) {
