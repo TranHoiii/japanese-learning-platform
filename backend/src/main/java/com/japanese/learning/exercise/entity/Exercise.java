@@ -2,6 +2,7 @@ package com.japanese.learning.exercise.entity;
 
 import com.japanese.learning.common.entity.BaseTimeEntity;
 import com.japanese.learning.exercise.enums.ContentType;
+import com.japanese.learning.exercise.enums.ExerciseType;
 import com.japanese.learning.lesson.entity.Lesson;
 import com.japanese.learning.progress.entity.UserAnswer;
 import jakarta.persistence.CascadeType;
@@ -46,8 +47,9 @@ public class Exercise extends BaseTimeEntity {
     @Column(columnDefinition = "TEXT")
     private String description;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "exercise_type", nullable = false, length = 50)
-    private String exerciseType;
+    private ExerciseType exerciseType;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "content_type", nullable = false, length = 50)

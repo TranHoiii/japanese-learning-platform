@@ -11,6 +11,8 @@ import ListeningPage from "./pages/ListeningPage";
 import ListeningDetailPage from "./pages/ListeningDetailPage";
 import ReadingPage from "./pages/ReadingPage";
 import ReadingDetailPage from "./pages/ReadingDetailPage";
+import ExercisePage from "./pages/ExercisePage";
+import ExerciseDetailPage from "./pages/ExerciseDetailPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
@@ -19,17 +21,21 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/n5" element={<Navigate to="/n5/lessons" replace />} />
       <Route path="/n5/lessons" element={<LessonsPage />} />
+      <Route path="/n5/exercises" element={<ExercisePage />} />
       <Route path="/n5/lessons/:lessonId" element={<VocabularyPage />} />
       <Route path="/n5/lessons/:lessonId/vocabulary" element={<VocabularyPage />} />
       <Route path="/n5/lessons/:lessonId/grammar" element={<GrammarPage />} />
       <Route path="/n5/lessons/:lessonId/kanji" element={<KanjiPage />} />
       <Route path="/n5/lessons/:lessonId/listening" element={<ListeningPage />} />
       <Route path="/n5/lessons/:lessonId/reading" element={<ReadingPage />} />
+      <Route path="/n5/lessons/:lessonId/exercise" element={<ExercisePage />} />
+      <Route path="/n5/lessons/:lessonId/exercises" element={<ExercisePage />} />
       <Route path="/vocabulary/:id" element={<VocabularyDetailPage />} />
       <Route path="/grammar/:id" element={<GrammarDetailPage />} />
       <Route path="/kanjis/:id" element={<KanjiDetailPage />} />
       <Route path="/listenings/:id" element={<ListeningDetailPage />} />
       <Route path="/readings/:id" element={<ReadingDetailPage />} />
+      <Route path="/exercises/:id" element={<ExerciseDetailPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
