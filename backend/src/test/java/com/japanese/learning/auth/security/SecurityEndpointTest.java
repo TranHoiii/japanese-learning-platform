@@ -33,4 +33,22 @@ class SecurityEndpointTest {
                 .andExpect(jsonPath("$.success").value(false))
                 .andExpect(jsonPath("$.message").value("Yêu cầu xác thực tài khoản"));
     }
+
+    @Test
+    @DisplayName("9. POST /api/v1/auth/login là public endpoint: không bị chặn 401 bởi Security")
+    void testLogin_PublicEndpoint() throws Exception {
+        mockMvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post("/api/v1/auth/login")
+                        .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
+                        .content("{}"))
+                .andExpect(status().isBadRequest()); // 400 validation error, NOT 401 Unauthorized
+    }
+
+    @Test
+    @DisplayName("10. POST /api/v1/auth/register là public endpoint: không bị chặn 401 bởi Security")
+    void testRegister_PublicEndpoint() throws Exception {
+        mockMvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post("/api/v1/auth/register")
+                        .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
+                        .content("{}"))
+                .andExpect(status().isBadRequest()); // 400 validation error, NOT 401 Unauthorized
+    }
 }

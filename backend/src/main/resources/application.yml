@@ -28,3 +28,8 @@ app:
   jwt:
     issuer: japanese-learning-platform
     expiration-seconds: ${JWT_EXPIRATION_SECONDS:86400}
+    secret: ${JWT_SECRET:}
+  admin:
+    email: ${ADMIN_EMAIL:}
+    password: ${ADMIN_PASSWORD:}
+    full-name: ${ADMIN_FULL_NAME:Administrator}

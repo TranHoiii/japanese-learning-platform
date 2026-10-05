@@ -95,15 +95,21 @@ public class SecurityConfig {
     }
 
     @Bean
-    SecretKey jwtSecretKey(@org.springframework.beans.factory.annotation.Value("${jwt.secret:change-this-development-secret-to-a-long-random-value}") String defaultSecret) {
-        String secret = System.getenv().getOrDefault(
-                "JWT_SECRET",
-                defaultSecret
-        );
-        return new SecretKeySpec(
-                secret.getBytes(StandardCharsets.UTF_8),
-                "HmacSHA256"
-        );
+    public SecretKey jwtSecretKey(
+            @org.springframework.beans.factory.annotation.Value("${app.jwt.secret:${jwt.secret:}}") String configuredSecret
+    ) {
+        String secret = (configuredSecret != null && !configuredSecret.isBlank())
+                ? configuredSecret
+                : System.getenv("JWT_SECRET");
+
+        if (secret == null || secret.isBlank()) {
+            throw new IllegalStateException("JWT secret is not configured. Please provide a secure secret via JWT_SECRET environment variable or app.jwt.secret configuration property.");
+        }
+        byte[] secretBytes = secret.getBytes(StandardCharsets.UTF_8);
+        if (secretBytes.length < 32) {
+            throw new IllegalStateException("JWT secret must be at least 32 bytes (256 bits) for HMAC-SHA-256 algorithm. Current length: " + secretBytes.length + " bytes.");
+        }
+        return new SecretKeySpec(secretBytes, "HmacSHA256");
     }
 
     @Bean
