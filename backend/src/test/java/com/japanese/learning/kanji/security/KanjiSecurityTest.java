@@ -121,6 +121,15 @@ class KanjiSecurityTest {
     }
 
     @Test
+    @DisplayName("Learner: GET /api/v1/kanjis/search thiếu tham số bắt buộc q trả về 400 Bad Request theo ApiResponse")
+    void testLearner_SearchKanjis_MissingQuery_Returns400() throws Exception {
+        mockMvc.perform(get("/api/v1/kanjis/search"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.success").value(false))
+                .andExpect(jsonPath("$.message").value("Thiếu tham số request: q"));
+    }
+
+    @Test
     @DisplayName("Learner: GET /api/v1/kanjis/{id} là public")
     void testLearner_GetKanjiById_Public_Returns200() throws Exception {
         when(kanjiService.getKanjiById(1L)).thenReturn(sampleLearnerKanji);

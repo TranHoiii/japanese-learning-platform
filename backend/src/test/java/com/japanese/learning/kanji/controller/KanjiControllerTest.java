@@ -130,6 +130,20 @@ class KanjiControllerTest {
     }
 
     @Test
+    @DisplayName("GET /api/v1/kanjis: Query param q= (chuỗi rỗng) thì gọi getAllKanjis theo đúng optional-q behavior")
+    void testGetAllKanjis_WithEmptyQuery_CallsGetAllKanjis() throws Exception {
+        Page<KanjiResponse> page = new PageImpl<>(List.of(sampleKanji), PageRequest.of(0, 20), 1);
+        when(kanjiService.getAllKanjis(any(Pageable.class))).thenReturn(page);
+
+        mockMvc.perform(get("/api/v1/kanjis").param("q", ""))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.success", is(true)))
+                .andExpect(jsonPath("$.data.content", hasSize(1)));
+
+        verify(kanjiService).getAllKanjis(any(Pageable.class));
+    }
+
+    @Test
     @DisplayName("GET /api/v1/kanjis: Trả về trang rỗng khi không có dữ liệu")
     void testGetAllKanjis_EmptyPage_ReturnsEmptyContent() throws Exception {
         Page<KanjiResponse> emptyPage = new PageImpl<>(Collections.emptyList(), PageRequest.of(0, 20), 0);
@@ -178,6 +192,16 @@ class KanjiControllerTest {
                 .andExpect(jsonPath("$.data.totalElements", is(0)));
 
         verify(kanjiService).searchKanjis(eq("không_tồn_tại"), any(Pageable.class));
+    }
+
+    @Test
+    @DisplayName("GET /api/v1/kanjis/search: Thiếu tham số bắt buộc q trả về 400 Bad Request theo chuẩn ApiResponse")
+    void testSearchKanjis_MissingQueryParam_Returns400() throws Exception {
+        mockMvc.perform(get("/api/v1/kanjis/search"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.success", is(false)))
+                .andExpect(jsonPath("$.message", is("Thiếu tham số request: q")))
+                .andExpect(jsonPath("$.data").doesNotExist());
     }
 
     // ==========================================
