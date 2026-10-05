@@ -27,7 +27,10 @@ services:
       DB_URL: jdbc:mysql://mysql:3306/${MYSQL_DATABASE:-japanese_learning}?useSSL=false&serverTimezone=Asia/Ho_Chi_Minh&allowPublicKeyRetrieval=true
       DB_USERNAME: ${MYSQL_USER:-japanese}
       DB_PASSWORD: ${MYSQL_PASSWORD:-japanese_dev}
-      JWT_SECRET: ${JWT_SECRET:-change-this-development-secret-to-a-long-random-value}
+      JWT_SECRET: ${JWT_SECRET}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      ADMIN_FULL_NAME: ${ADMIN_FULL_NAME:-Administrator}
     depends_on:
       mysql:
         condition: service_healthy

@@ -41,6 +41,17 @@ export default function Navbar() {
           >
             Bài tập N5
           </Link>
+          <Link
+            to="/search"
+            id="search-nav-link"
+            className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold transition-colors ${
+              location.pathname === "/search"
+                ? "bg-indigo-50 text-indigo-700 border border-indigo-200/60"
+                : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+            }`}
+          >
+            Tìm kiếm
+          </Link>
           {currentUser && (
             <>
               <Link

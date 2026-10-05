@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: japanese-learning-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/japanese_learning?useSSL=false&serverTimezone=Asia/Ho_Chi_Minh&allowPublicKeyRetrieval=true
+    username: root
+    password: testpassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+
+  flyway:
+    enabled: false
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    issuer: japanese-learning-platform
+    expiration-seconds: 86400
+    secret: test-jwt-secret-key-for-unit-and-integration-tests-minimum-32-bytes
+  admin:
+    email: test-admin@example.com
+    password: test-admin-password-123
+    full-name: Test Administrator

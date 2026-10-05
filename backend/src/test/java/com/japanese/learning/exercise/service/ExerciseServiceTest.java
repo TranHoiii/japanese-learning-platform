@@ -2,15 +2,23 @@ package com.japanese.learning.exercise.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.japanese.learning.exercise.dto.ExerciseAnswerRequest;
 import com.japanese.learning.exercise.dto.ExerciseMapper;
 import com.japanese.learning.exercise.dto.ExerciseResponse;
+import com.japanese.learning.exercise.dto.ExerciseSubmitRequest;
+import com.japanese.learning.exercise.dto.ExerciseSubmitResponse;
 import com.japanese.learning.exercise.dto.QuestionMapper;
+import com.japanese.learning.exercise.dto.QuestionOptionMapper;
+import com.japanese.learning.exercise.dto.QuestionResponse;
 import com.japanese.learning.exercise.entity.Exercise;
 import com.japanese.learning.exercise.entity.Question;
+import com.japanese.learning.exercise.entity.QuestionOption;
 import com.japanese.learning.exercise.enums.ExerciseType;
+import com.japanese.learning.exercise.enums.QuestionType;
 import com.japanese.learning.exercise.repository.ExerciseRepository;
 import com.japanese.learning.exercise.repository.QuestionRepository;
 import com.japanese.learning.lesson.entity.Lesson;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,6 +26,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mapstruct.factory.Mappers;
+import org.springframework.test.util.ReflectionTestUtils;
 
 import java.io.InputStream;
 import java.util.*;
@@ -36,6 +45,13 @@ class ExerciseServiceTest {
 
     private final ExerciseMapper exerciseMapper = Mappers.getMapper(ExerciseMapper.class);
     private final QuestionMapper questionMapper = Mappers.getMapper(QuestionMapper.class);
+
+    @BeforeEach
+    void setUpMappers() {
+        QuestionOptionMapper questionOptionMapper = Mappers.getMapper(QuestionOptionMapper.class);
+        ReflectionTestUtils.setField(questionMapper, "questionOptionMapper", questionOptionMapper);
+        ReflectionTestUtils.setField(exerciseMapper, "questionMapper", questionMapper);
+    }
 
     @Test
     @DisplayName("TEST 1 & 3: GET danh sách Exercise trả về đúng 27 bài theo Business Sort Order 1 -> 27")
@@ -228,5 +244,184 @@ class ExerciseServiceTest {
                 assertNotNull(q.get("questionType"));
             }
         }
+    }
+
+    @Test
+    @DisplayName("REGRESSION TEST 1: QuestionMapper KHÔNG map explanation sang QuestionResponse")
+    void testQuestionMapper_IgnoresExplanation() {
+        Question question = new Question();
+        question.setId(1L);
+        question.setQuestionText("わたしは ___ です。");
+        question.setQuestionType(QuestionType.FILL_BLANK);
+        question.setExplanation("学生");
+        question.setSortOrder(1);
+
+        QuestionResponse response = questionMapper.toResponse(question);
+
+        assertNotNull(response);
+        assertEquals(1L, response.getId());
+        assertEquals("わたしは ___ です。", response.getQuestionText());
+        assertEquals(QuestionType.FILL_BLANK, response.getQuestionType());
+        assertNull(response.getExplanation(), "QuestionResponse.explanation PHẢI là null để không leak đáp án");
+    }
+
+    @Test
+    @DisplayName("REGRESSION TEST 2: GET questions qua ExerciseService KHÔNG expose explanation")
+    void testGetQuestionsByExerciseId_NeverExposesExplanation() {
+        ExerciseServiceImpl service = new ExerciseServiceImpl(exerciseRepository, questionRepository, exerciseMapper, questionMapper);
+
+        Long exerciseId = 1L;
+        when(exerciseRepository.existsById(exerciseId)).thenReturn(true);
+
+        Question q1 = new Question();
+        q1.setId(1L);
+        q1.setQuestionText("わたしは ___ です。");
+        q1.setQuestionType(QuestionType.FILL_BLANK);
+        q1.setExplanation("学生");
+        q1.setSortOrder(1);
+
+        when(questionRepository.findByExerciseIdOrderBySortOrderAsc(exerciseId)).thenReturn(List.of(q1));
+
+        List<QuestionResponse> results = service.getQuestionsByExerciseId(exerciseId);
+
+        assertEquals(1, results.size());
+        assertEquals("わたしは ___ です。", results.get(0).getQuestionText());
+        assertNull(results.get(0).getExplanation(), "Pre-submit response không được chứa explanation");
+    }
+
+    @Test
+    @DisplayName("REGRESSION TEST 3: FILL_BLANK submit chấm ĐÚNG dựa trên question.explanation và trả explanation sau submit")
+    void testSubmitExercise_FillBlank_CorrectAnswer() {
+        ExerciseServiceImpl service = new ExerciseServiceImpl(exerciseRepository, questionRepository, exerciseMapper, questionMapper);
+
+        Long exerciseId = 1L;
+        Exercise exercise = new Exercise();
+        exercise.setId(exerciseId);
+
+        Question q = new Question();
+        q.setId(10L);
+        q.setExercise(exercise);
+        q.setQuestionText("わたしは ___ です。");
+        q.setQuestionType(QuestionType.FILL_BLANK);
+        q.setExplanation("学生");
+        q.setSortOrder(1);
+        q.setOptions(new ArrayList<>());
+        exercise.setQuestions(List.of(q));
+
+        when(exerciseRepository.findWithQuestionsById(exerciseId)).thenReturn(Optional.of(exercise));
+
+        ExerciseSubmitRequest req = new ExerciseSubmitRequest(List.of(
+                new ExerciseAnswerRequest(10L, null, "学生")
+        ));
+
+        ExerciseSubmitResponse submitRes = service.submitExercise(exerciseId, req);
+
+        assertEquals(100, submitRes.getScore());
+        assertEquals(1, submitRes.getCorrectCount());
+        assertEquals(0, submitRes.getWrongCount());
+        assertEquals(1, submitRes.getResults().size());
+
+        var result = submitRes.getResults().get(0);
+        assertTrue(result.getIsCorrect(), "Trả lời đúng expected answer phải được chấm isCorrect=true");
+        assertEquals("学生", result.getAnswerText());
+        assertEquals("学生", result.getCorrectAnswerText());
+        assertEquals("学生", result.getExplanation(), "Explanation phải được trả lại sau submit để review");
+    }
+
+    @Test
+    @DisplayName("REGRESSION TEST 4: FILL_BLANK submit chấm SAI khi answer không khớp question.explanation")
+    void testSubmitExercise_FillBlank_WrongAnswer() {
+        ExerciseServiceImpl service = new ExerciseServiceImpl(exerciseRepository, questionRepository, exerciseMapper, questionMapper);
+
+        Long exerciseId = 1L;
+        Exercise exercise = new Exercise();
+        exercise.setId(exerciseId);
+
+        Question q = new Question();
+        q.setId(10L);
+        q.setExercise(exercise);
+        q.setQuestionText("わたしは ___ です。");
+        q.setQuestionType(QuestionType.FILL_BLANK);
+        q.setExplanation("学生");
+        q.setSortOrder(1);
+        q.setOptions(new ArrayList<>());
+        exercise.setQuestions(List.of(q));
+
+        when(exerciseRepository.findWithQuestionsById(exerciseId)).thenReturn(Optional.of(exercise));
+
+        ExerciseSubmitRequest req = new ExerciseSubmitRequest(List.of(
+                new ExerciseAnswerRequest(10L, null, "先生")
+        ));
+
+        ExerciseSubmitResponse submitRes = service.submitExercise(exerciseId, req);
+
+        assertEquals(0, submitRes.getScore());
+        assertEquals(0, submitRes.getCorrectCount());
+        assertEquals(1, submitRes.getWrongCount());
+
+        var result = submitRes.getResults().get(0);
+        assertFalse(result.getIsCorrect(), "Trả lời sai expected answer phải được chấm isCorrect=false");
+        assertEquals("先生", result.getAnswerText());
+        assertEquals("学生", result.getCorrectAnswerText());
+        assertEquals("学生", result.getExplanation(), "Explanation vẫn trả sau submit để người dùng xem đáp án đúng");
+    }
+
+    @Test
+    @DisplayName("REGRESSION TEST 5: MCQ submit chấm đúng/sai theo correct option và trả explanation sau submit")
+    void testSubmitExercise_MCQ_CorrectAndWrong() {
+        ExerciseServiceImpl service = new ExerciseServiceImpl(exerciseRepository, questionRepository, exerciseMapper, questionMapper);
+
+        Long exerciseId = 2L;
+        Exercise exercise = new Exercise();
+        exercise.setId(exerciseId);
+
+        Question q = new Question();
+        q.setId(20L);
+        q.setExercise(exercise);
+        q.setQuestionText("Chọn chữ Hán của 'わたし'");
+        q.setQuestionType(QuestionType.MULTIPLE_CHOICE);
+        q.setExplanation("私 là Watashi");
+        q.setSortOrder(1);
+
+        QuestionOption opt1 = new QuestionOption();
+        opt1.setId(101L);
+        opt1.setQuestion(q);
+        opt1.setOptionText("私");
+        opt1.setCorrect(true);
+        opt1.setSortOrder(1);
+
+        QuestionOption opt2 = new QuestionOption();
+        opt2.setId(102L);
+        opt2.setQuestion(q);
+        opt2.setOptionText("僕");
+        opt2.setCorrect(false);
+        opt2.setSortOrder(2);
+
+        q.setOptions(List.of(opt1, opt2));
+        exercise.setQuestions(List.of(q));
+
+        when(exerciseRepository.findWithQuestionsById(exerciseId)).thenReturn(Optional.of(exercise));
+
+        // Submit option 1 (correct)
+        ExerciseSubmitRequest correctReq = new ExerciseSubmitRequest(List.of(
+                new ExerciseAnswerRequest(20L, 101L, null)
+        ));
+        ExerciseSubmitResponse correctRes = service.submitExercise(exerciseId, correctReq);
+
+        assertEquals(100, correctRes.getScore());
+        assertEquals(1, correctRes.getCorrectCount());
+        assertTrue(correctRes.getResults().get(0).getIsCorrect());
+        assertEquals("私 là Watashi", correctRes.getResults().get(0).getExplanation());
+
+        // Submit option 2 (wrong)
+        ExerciseSubmitRequest wrongReq = new ExerciseSubmitRequest(List.of(
+                new ExerciseAnswerRequest(20L, 102L, null)
+        ));
+        ExerciseSubmitResponse wrongRes = service.submitExercise(exerciseId, wrongReq);
+
+        assertEquals(0, wrongRes.getScore());
+        assertEquals(1, wrongRes.getWrongCount());
+        assertFalse(wrongRes.getResults().get(0).getIsCorrect());
+        assertEquals("私 là Watashi", wrongRes.getResults().get(0).getExplanation());
     }
 }

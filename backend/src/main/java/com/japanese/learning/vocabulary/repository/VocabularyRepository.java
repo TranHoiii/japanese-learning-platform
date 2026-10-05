@@ -11,6 +11,11 @@ public interface VocabularyRepository extends JpaRepository<Vocabulary, Long> {
 
     List<Vocabulary> findByLessonIdOrderByIdAsc(Long lessonId);
 
+    @Query("SELECT v FROM Vocabulary v WHERE v.lesson.level.id = :levelId ORDER BY v.id ASC")
+    List<Vocabulary> findByLevelIdOrderByIdAsc(@Param("levelId") Long levelId);
+
+    boolean existsByLessonId(Long lessonId);
+
     List<Vocabulary> findAllByOrderByIdAsc();
 
     @Query("SELECT v FROM Vocabulary v WHERE " +
@@ -20,4 +25,17 @@ public interface VocabularyRepository extends JpaRepository<Vocabulary, Long> {
            "LOWER(v.meaning) LIKE LOWER(CONCAT('%', :query, '%')) " +
            "ORDER BY v.id ASC")
     List<Vocabulary> searchVocabularies(@Param("query") String query);
-}
+
+    @Query("SELECT v FROM Vocabulary v " +
+           "JOIN FETCH v.lesson l " +
+           "JOIN FETCH l.level lvl " +
+           "WHERE (:level IS NULL OR UPPER(lvl.code) = UPPER(:level)) " +
+           "AND (" +
+           "v.hiragana LIKE CONCAT('%', :query, '%') OR " +
+           "(v.kanji IS NOT NULL AND v.kanji LIKE CONCAT('%', :query, '%')) OR " +
+           "(v.hanViet IS NOT NULL AND (v.hanViet LIKE CONCAT('%', :query, '%') OR LOWER(v.hanViet) LIKE LOWER(CONCAT('%', :query, '%')))) OR " +
+           "(v.meaning IS NOT NULL AND (v.meaning LIKE CONCAT('%', :query, '%') OR LOWER(v.meaning) LIKE LOWER(CONCAT('%', :query, '%')))) OR " +
+           "(v.notes IS NOT NULL AND (v.notes LIKE CONCAT('%', :query, '%') OR LOWER(v.notes) LIKE LOWER(CONCAT('%', :query, '%'))))" +
+           ") ORDER BY v.id ASC")
+    List<Vocabulary> searchByKeyword(@Param("query") String query, @Param("level") String level);
+}
