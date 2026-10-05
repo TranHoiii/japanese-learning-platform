@@ -8,5 +8,6 @@ import org.mapstruct.Mapping;
 public interface QuestionMapper {
 
     @Mapping(target = "exerciseId", source = "exercise.id")
+    @Mapping(target = "explanation", ignore = true)
     QuestionResponse toResponse(Question entity);
 }

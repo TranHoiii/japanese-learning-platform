@@ -78,4 +78,24 @@ class AdminExerciseTest {
                 .andExpect(jsonPath("$.data.title").value("Bài tập từ vựng 1"))
                 .andExpect(jsonPath("$.data.questions[0].options[0].correct").value(true));
     }
+
+    @Test
+    @WithMockUser(roles = "ADMIN")
+    @DisplayName("TEST 6: Admin GET questions vẫn thấy explanation và correct answer")
+    void testGetQuestions_AdminCanSeeExplanationAndCorrectAnswer() throws Exception {
+        AdminQuestionOptionResponse optRes1 = new AdminQuestionOptionResponse(1L, 10L, "私", true, 1);
+        AdminQuestionOptionResponse optRes2 = new AdminQuestionOptionResponse(2L, 10L, "僕", false, 2);
+        AdminQuestionResponse qRes = new AdminQuestionResponse(
+                10L, 5L, "Chọn chữ Hán đúng của 'わたし'", QuestionType.MULTIPLE_CHOICE, "私 là Watashi", 1, List.of(optRes1, optRes2)
+        );
+
+        when(adminExerciseService.getQuestions(5L)).thenReturn(List.of(qRes));
+
+        mockMvc.perform(get("/api/v1/admin/exercises/5/questions"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.success").value(true))
+                .andExpect(jsonPath("$.data[0].explanation").value("私 là Watashi"))
+                .andExpect(jsonPath("$.data[0].options[0].correct").value(true))
+                .andExpect(jsonPath("$.data[0].options[1].correct").value(false));
+    }
 }
