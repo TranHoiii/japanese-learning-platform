@@ -395,19 +395,59 @@ class ReadingServiceTest {
     }
 
     @Test
-    @DisplayName("Regression / Known Bug: submitReading ném NullPointerException khi selectedOptionId là null do Collectors.toMap")
-    void testSubmitReading_SelectedOptionIdNull_KnownProductionBug() {
+    @DisplayName("submitReading: Xử lý an toàn khi selectedOptionId là null (câu hỏi chưa được trả lời)")
+    void testSubmitReading_SelectedOptionIdNull_TreatedAsUnansweredAndIncorrect() {
         when(readingContentRepository.findById(1L)).thenReturn(Optional.of(sampleReading));
 
         ReadingSubmitRequest request = new ReadingSubmitRequest(List.of(
-                new ReadingAnswerRequest(201L, 101L),
+                new ReadingAnswerRequest(201L, 101L), // answered correctly (Tokyo)
+                new ReadingAnswerRequest(202L, null)  // unanswered
+        ));
+
+        ReadingSubmitResponse response = readingService.submitReading(1L, request);
+
+        assertThat(response).isNotNull();
+        assertThat(response.getScore()).isEqualTo(50);
+        assertThat(response.getTotalQuestions()).isEqualTo(2);
+        assertThat(response.getCorrectCount()).isEqualTo(1);
+        assertThat(response.getWrongCount()).isEqualTo(1);
+        assertThat(response.getResults()).hasSize(2);
+
+        ReadingQuestionResultResponse r1 = response.getResults().get(0);
+        assertThat(r1.getQuestionId()).isEqualTo(201L);
+        assertThat(r1.isCorrect()).isTrue();
+        assertThat(r1.getSelectedOptionId()).isEqualTo(101L);
+        assertThat(r1.getCorrectOptionId()).isEqualTo(101L);
+
+        ReadingQuestionResultResponse r2 = response.getResults().get(1);
+        assertThat(r2.getQuestionId()).isEqualTo(202L);
+        assertThat(r2.isCorrect()).isFalse();
+        assertThat(r2.getSelectedOptionId()).isNull();
+        assertThat(r2.getCorrectOptionId()).isEqualTo(103L);
+        assertThat(r2.getExplanation()).isEqualTo("Phú Sĩ là ngọn núi cao nhất.");
+    }
+
+    @Test
+    @DisplayName("submitReading: Tất cả câu trả lời có selectedOptionId là null")
+    void testSubmitReading_AllAnswersSelectedOptionIdNull() {
+        when(readingContentRepository.findById(1L)).thenReturn(Optional.of(sampleReading));
+
+        ReadingSubmitRequest request = new ReadingSubmitRequest(List.of(
+                new ReadingAnswerRequest(201L, null),
                 new ReadingAnswerRequest(202L, null)
         ));
 
-        // In ReadingServiceImpl.java:75, Collectors.toMap(..., ..., mergeFunction) invokes Map.merge()
-        // which rejects null values with NullPointerException even though ReadingAnswerRequest allows null selectedOptionId.
-        assertThatThrownBy(() -> readingService.submitReading(1L, request))
-                .isInstanceOf(NullPointerException.class);
+        ReadingSubmitResponse response = readingService.submitReading(1L, request);
+
+        assertThat(response).isNotNull();
+        assertThat(response.getScore()).isEqualTo(0);
+        assertThat(response.getTotalQuestions()).isEqualTo(2);
+        assertThat(response.getCorrectCount()).isEqualTo(0);
+        assertThat(response.getWrongCount()).isEqualTo(2);
+        assertThat(response.getResults().get(0).isCorrect()).isFalse();
+        assertThat(response.getResults().get(0).getSelectedOptionId()).isNull();
+        assertThat(response.getResults().get(1).isCorrect()).isFalse();
+        assertThat(response.getResults().get(1).getSelectedOptionId()).isNull();
     }
 
     @Test

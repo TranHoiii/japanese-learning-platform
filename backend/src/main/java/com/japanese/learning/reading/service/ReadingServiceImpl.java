@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -71,8 +72,10 @@ public class ReadingServiceImpl implements ReadingService {
             }
         }
 
-        Map<Long, Long> userAnswers = request.getAnswers().stream()
-                .collect(Collectors.toMap(ReadingAnswerRequest::getQuestionId, ReadingAnswerRequest::getSelectedOptionId, (k1, k2) -> k2));
+        Map<Long, Long> userAnswers = new HashMap<>();
+        for (ReadingAnswerRequest answerReq : request.getAnswers()) {
+            userAnswers.put(answerReq.getQuestionId(), answerReq.getSelectedOptionId());
+        }
 
         List<ReadingQuestionResultResponse> results = new ArrayList<>();
         int correctCount = 0;
