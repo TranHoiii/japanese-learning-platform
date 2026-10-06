@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useQuery, useMutation } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { exerciseApi } from "../services/exerciseApi";
+import { progressApi } from "../services/progressApi";
 import { ExerciseSubmitResponse } from "../types/exercise";
 import Navbar from "../components/Navbar";
+import { FavoriteButton } from "../components/favorite/FavoriteButton";
 
 export default function ExerciseDetailPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const exerciseId = id ? parseInt(id, 10) : 0;
 
   // Selected option IDs mapped by question ID
@@ -36,6 +39,18 @@ export default function ExerciseDetailPage() {
       exerciseApi.submitExercise(exerciseId, { answers: answersPayload }),
     onSuccess: (data) => {
       setResult(data);
+      progressApi
+        .updateContentProgress({
+          contentType: "EXERCISE",
+          contentId: exerciseId,
+          progressPercent: 100,
+        })
+        .then(() => {
+          queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
+          queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
+          queryClient.invalidateQueries({ queryKey: ["progress-content"] });
+        })
+        .catch(() => {});
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
   });
@@ -164,12 +179,15 @@ export default function ExerciseDetailPage() {
                     {exercise.questions?.length || 0} câu hỏi
                   </span>
                 </div>
-                <Link
-                  to="/n5/exercises"
-                  className="text-sm font-semibold text-slate-500 hover:text-indigo-600 transition-colors flex items-center space-x-1"
-                >
-                  <span>← Danh sách bài tập</span>
-                </Link>
+                <div className="flex items-center space-x-3">
+                  <FavoriteButton contentType="EXERCISE" contentId={exerciseId} size="md" />
+                  <Link
+                    to="/n5/exercises"
+                    className="text-sm font-semibold text-slate-500 hover:text-indigo-600 transition-colors flex items-center space-x-1"
+                  >
+                    <span>← Danh sách bài tập</span>
+                  </Link>
+                </div>
               </div>
 
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">

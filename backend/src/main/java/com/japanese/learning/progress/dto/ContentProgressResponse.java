@@ -11,6 +11,19 @@ public record ContentProgressResponse(
         Integer progressPercent,
         LearningStatus status,
         LocalDateTime lastAccessedAt,
-        LocalDateTime completedAt
+        LocalDateTime completedAt,
+        Boolean patternOpened,
+        Boolean contentViewed,
+        Boolean examplesViewed
 ) {
+    public ContentProgressResponse(
+            ContentType contentType,
+            Long contentId,
+            Integer progressPercent,
+            LearningStatus status,
+            LocalDateTime lastAccessedAt,
+            LocalDateTime completedAt
+    ) {
+        this(contentType, contentId, progressPercent, status, lastAccessedAt, completedAt, false, false, false);
+    }
 }

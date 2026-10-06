@@ -1,11 +1,15 @@
+import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { kanjiApi } from "../services/kanjiApi";
+import { progressApi } from "../services/progressApi";
 import Navbar from "../components/Navbar";
+import FavoriteButton from "../components/favorite/FavoriteButton";
 
 export default function KanjiDetailPage() {
   const { id } = useParams<{ id: string }>();
   const kanjiId = id ? parseInt(id, 10) : null;
+  const queryClient = useQueryClient();
 
   const {
     data: kanji,
@@ -16,6 +20,34 @@ export default function KanjiDetailPage() {
     queryFn: () => kanjiApi.getKanjiById(kanjiId!),
     enabled: !!kanjiId,
   });
+
+  // Track kanji item completion when user views/reaches this kanji
+  useEffect(() => {
+    if (kanjiId && kanji) {
+      progressApi
+        .updateContentProgress({
+          contentType: "KANJI",
+          contentId: kanjiId,
+          progressPercent: 100,
+        })
+        .then(() => {
+          queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
+          queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
+          queryClient.invalidateQueries({ queryKey: ["progress-content"] });
+        })
+        .catch(() => {});
+    }
+  }, [kanjiId, kanji?.id]);
+
+  const speakJapanese = (text: string) => {
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "ja-JP";
+      utterance.rate = 0.85;
+      window.speechSynthesis.speak(utterance);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
@@ -58,7 +90,7 @@ export default function KanjiDetailPage() {
         )}
 
         {!isLoading && !error && kanji && (
-          <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden">
+          <div className="bg-white rounded-3xl border border-slate-200/80 shadow-zen overflow-hidden">
             {/* Header Banner */}
             <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-10 relative flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div>
@@ -71,6 +103,7 @@ export default function KanjiDetailPage() {
                       {kanji.strokeCount} nét vẽ
                     </span>
                   )}
+                  <FavoriteButton contentType="KANJI" contentId={kanji.id} size="sm" />
                 </div>
 
                 <div className="flex items-baseline space-x-4">
@@ -82,6 +115,14 @@ export default function KanjiDetailPage() {
                       {kanji.hanViet}
                     </span>
                   )}
+                  <button
+                    type="button"
+                    onClick={() => speakJapanese(kanji.onyomi || kanji.kunyomi || kanji.kanji)}
+                    className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-amber-300 transition-colors"
+                    title="Nghe phát âm"
+                  >
+                    🔊
+                  </button>
                 </div>
 
                 {kanji.meaning && (
@@ -91,8 +132,8 @@ export default function KanjiDetailPage() {
                 )}
               </div>
 
-              {/* Stroke Order SVG */}
-              {kanji.strokeOrderUrl && (
+              {/* Stroke Order Visual */}
+              {kanji.strokeOrderUrl ? (
                 <div className="bg-white/10 p-3 rounded-2xl border border-white/20 backdrop-blur-xs text-center shrink-0 self-center">
                   <img
                     src={kanji.strokeOrderUrl}
@@ -104,6 +145,11 @@ export default function KanjiDetailPage() {
                   />
                   <span className="text-[10px] font-bold text-amber-300 block mt-1">THỨ TỰ NÉT VẼ</span>
                 </div>
+              ) : (
+                <div className="w-24 h-24 rounded-2xl bg-white/5 border border-white/10 flex flex-col items-center justify-center text-center p-2 self-center shrink-0">
+                  <span className="text-3xl font-japanese font-bold text-amber-300">{kanji.kanji}</span>
+                  <span className="text-[9px] font-semibold text-slate-400 mt-1">{kanji.strokeCount || 4} nét</span>
+                </div>
               )}
             </div>
 
@@ -112,24 +158,44 @@ export default function KanjiDetailPage() {
               {/* Readings Section */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {kanji.onyomi && (
-                  <div className="bg-amber-50/70 p-5 rounded-2xl border border-amber-200/60">
-                    <span className="text-xs font-extrabold text-amber-800 uppercase tracking-wider block mb-1">
-                      🔊 ÂM ONYOMI (Âm Hán Nhật)
-                    </span>
-                    <div className="text-xl font-bold text-slate-900 jp-font">
-                      {kanji.onyomi}
+                  <div className="bg-amber-50/70 p-5 rounded-2xl border border-amber-200/60 flex items-start justify-between">
+                    <div>
+                      <span className="text-xs font-extrabold text-amber-800 uppercase tracking-wider block mb-1">
+                        🔊 ÂM ONYOMI (Âm Hán Nhật)
+                      </span>
+                      <div className="text-xl font-bold text-slate-900 jp-font">
+                        {kanji.onyomi}
+                      </div>
                     </div>
+                    <button
+                      type="button"
+                      onClick={() => speakJapanese(kanji.onyomi || "")}
+                      className="p-2 rounded-xl bg-amber-100 hover:bg-amber-200 text-amber-900 transition-colors"
+                      title="Nghe phát âm Onyomi"
+                    >
+                      🔊
+                    </button>
                   </div>
                 )}
 
                 {kanji.kunyomi && (
-                  <div className="bg-indigo-50/70 p-5 rounded-2xl border border-indigo-200/60">
-                    <span className="text-xs font-extrabold text-indigo-800 uppercase tracking-wider block mb-1">
-                      🗣️ ÂM KUNYOMI (Âm thuần Nhật)
-                    </span>
-                    <div className="text-xl font-bold text-slate-900 jp-font">
-                      {kanji.kunyomi}
+                  <div className="bg-indigo-50/70 p-5 rounded-2xl border border-indigo-200/60 flex items-start justify-between">
+                    <div>
+                      <span className="text-xs font-extrabold text-indigo-800 uppercase tracking-wider block mb-1">
+                        🗣️ ÂM KUNYOMI (Âm thuần Nhật)
+                      </span>
+                      <div className="text-xl font-bold text-slate-900 jp-font">
+                        {kanji.kunyomi}
+                      </div>
                     </div>
+                    <button
+                      type="button"
+                      onClick={() => speakJapanese(kanji.kunyomi || "")}
+                      className="p-2 rounded-xl bg-indigo-100 hover:bg-indigo-200 text-indigo-900 transition-colors"
+                      title="Nghe phát âm Kunyomi"
+                    >
+                      🔊
+                    </button>
                   </div>
                 )}
               </div>

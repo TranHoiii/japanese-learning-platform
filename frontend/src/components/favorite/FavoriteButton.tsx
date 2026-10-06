@@ -1,42 +1,46 @@
 import React from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import { favoriteApi } from "../../services/favoriteApi";
 import { FavoriteContentType } from "../../types/favorite";
+import { cn } from "../../utils/cn";
 
-interface FavoriteButtonProps {
+export interface FavoriteButtonProps {
   contentType: FavoriteContentType;
   contentId: number;
+  size?: "sm" | "md" | "lg";
+  showLabel?: boolean;
   className?: string;
-  showText?: boolean;
 }
 
-export default function FavoriteButton({
+export const FavoriteButton: React.FC<FavoriteButtonProps> = ({
   contentType,
   contentId,
-  className = "",
-  showText = false,
-}: FavoriteButtonProps) {
+  size = "md",
+  showLabel = false,
+  className,
+}) => {
   const { currentUser } = useAuth();
-  const navigate = useNavigate();
   const queryClient = useQueryClient();
 
   const queryKey = ["favorite-check", contentType, contentId];
 
+  // 1. Check favorite status
   const { data: checkData, isLoading } = useQuery({
     queryKey,
     queryFn: () => favoriteApi.checkFavorite(contentType, contentId),
-    enabled: !!currentUser && !!contentId,
+    enabled: !!currentUser && contentId > 0,
+    staleTime: 1000 * 60 * 5, // 5 mins
   });
 
   const isFavorited = !!checkData?.favorited;
-  const favoriteId = checkData?.favoriteId;
 
+  // 2. Add / Delete Mutations
   const toggleMutation = useMutation({
     mutationFn: async () => {
-      if (isFavorited && favoriteId) {
-        await favoriteApi.deleteFavorite(favoriteId);
+      if (!currentUser) return;
+      if (isFavorited && checkData?.favoriteId) {
+        await favoriteApi.deleteFavorite(checkData.favoriteId);
       } else {
         await favoriteApi.addFavorite(contentType, contentId);
       }
@@ -50,51 +54,60 @@ export default function FavoriteButton({
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-
     if (!currentUser) {
-      navigate("/login");
+      alert("Vui lòng đăng nhập để lưu nội dung yêu thích!");
       return;
     }
-
     toggleMutation.mutate();
+  };
+
+  const sizeClasses = {
+    sm: "w-7 h-7 text-xs",
+    md: "w-9 h-9 text-sm",
+    lg: "w-11 h-11 text-base",
+  };
+
+  const heartIconSizes = {
+    sm: "w-3.5 h-3.5",
+    md: "w-4.5 h-4.5",
+    lg: "w-5.5 h-5.5",
   };
 
   return (
     <button
       type="button"
       onClick={handleClick}
-      disabled={isLoading || toggleMutation.isPending}
-      id={`favorite-toggle-btn-${contentType}-${contentId}`}
-      title={isFavorited ? "Bỏ yêu thích" : "Thêm vào yêu thích"}
-      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150 border ${
+      disabled={toggleMutation.isPending || isLoading}
+      title={isFavorited ? "Bỏ khỏi yêu thích" : "Lưu vào yêu thích"}
+      className={cn(
+        "rounded-full transition-all flex items-center justify-center cursor-pointer select-none",
         isFavorited
-          ? "bg-rose-50 text-rose-600 border-rose-200 hover:bg-rose-100"
-          : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50 hover:text-rose-500"
-      } ${className}`}
+          ? "bg-rose-50 text-rose-600 border border-rose-200 hover:bg-rose-100 shadow-2xs"
+          : "bg-white/80 text-slate-400 border border-slate-200/80 hover:text-rose-500 hover:border-rose-200 hover:bg-rose-50/50 shadow-2xs",
+        showLabel ? "px-3 w-auto gap-1.5" : sizeClasses[size],
+        toggleMutation.isPending && "opacity-60 scale-95",
+        className
+      )}
+      aria-label={isFavorited ? "Đã yêu thích" : "Yêu thích"}
     >
       <svg
-        className={`w-4 h-4 transition-transform ${
-          isFavorited ? "fill-rose-500 text-rose-500 scale-110" : "fill-none text-current"
-        }`}
-        stroke="currentColor"
+        className={cn(heartIconSizes[size], "transition-transform active:scale-125")}
         viewBox="0 0 24 24"
+        fill={isFavorited ? "currentColor" : "none"}
+        stroke="currentColor"
+        strokeWidth={isFavorited ? "0" : "2"}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-        />
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
       </svg>
-      {showText && (
-        <span>
-          {toggleMutation.isPending
-            ? "Đang lưu..."
-            : isFavorited
-            ? "Đã thích"
-            : "Yêu thích"}
+      {showLabel && (
+        <span className="text-xs font-semibold">
+          {isFavorited ? "Đã lưu" : "Yêu thích"}
         </span>
       )}
     </button>
   );
-}
+};
+
+export default FavoriteButton;

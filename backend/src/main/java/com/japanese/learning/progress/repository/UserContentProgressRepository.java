@@ -17,4 +17,8 @@ public interface UserContentProgressRepository extends JpaRepository<UserContent
     List<UserContentProgress> findByUserIdAndContentTypeInOrderByLastAccessedAtDesc(Long userId, Collection<ContentType> contentTypes);
 
     List<UserContentProgress> findByUserIdAndContentTypeOrderByLastAccessedAtDesc(Long userId, ContentType contentType);
+
+    List<UserContentProgress> findByUserIdAndContentType(Long userId, ContentType contentType);
+
+    List<UserContentProgress> findByUserIdAndContentTypeAndContentIdIn(Long userId, ContentType contentType, Collection<Long> contentIds);
 }

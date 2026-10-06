@@ -14,9 +14,19 @@ public record UpdateContentProgressRequest(
         @Positive(message = "ID nội dung phải lớn hơn 0")
         Long contentId,
 
-        @NotNull(message = "Tiến độ không được để trống")
         @Min(value = 0, message = "Tiến độ phải từ 0 đến 100")
         @Max(value = 100, message = "Tiến độ phải từ 0 đến 100")
-        Integer progressPercent
+        Integer progressPercent,
+
+        Boolean patternOpened,
+        Boolean contentViewed,
+        Boolean examplesViewed
 ) {
+    public UpdateContentProgressRequest(
+            ContentType contentType,
+            Long contentId,
+            Integer progressPercent
+    ) {
+        this(contentType, contentId, progressPercent, null, null, null);
+    }
 }

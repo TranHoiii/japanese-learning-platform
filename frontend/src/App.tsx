@@ -20,6 +20,9 @@ import ReviewPage from "./pages/ReviewPage";
 import FavoritePage from "./pages/FavoritePage";
 import SearchPage from "./pages/SearchPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import BeginnerPage from "./pages/BeginnerPage";
+import N4Page from "./pages/N4Page";
+import HandbookPage from "./pages/HandbookPage";
 
 // Admin CMS
 import RequireAdmin from "./components/RequireAdmin";
@@ -39,15 +42,20 @@ export default function App() {
     <Routes>
       {/* Learner Public & Protected Routes */}
       <Route path="/" element={<HomePage />} />
+      <Route path="/beginner" element={<BeginnerPage />} />
       <Route path="/search" element={<SearchPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/progress" element={<ProgressPage />} />
       <Route path="/review" element={<ReviewPage />} />
       <Route path="/favorites" element={<FavoritePage />} />
+      <Route path="/handbook" element={<HandbookPage />} />
+      <Route path="/levels/n5" element={<Navigate to="/n5/lessons" replace />} />
+      <Route path="/levels/n4" element={<N4Page />} />
       <Route path="/n5" element={<Navigate to="/n5/lessons" replace />} />
       <Route path="/n5/lessons" element={<LessonsPage />} />
       <Route path="/n5/exercises" element={<ExercisePage />} />
+      <Route path="/lessons/:lessonId" element={<Navigate to="/n5/lessons/:lessonId" replace />} />
       <Route path="/n5/lessons/:lessonId" element={<VocabularyPage />} />
       <Route path="/n5/lessons/:lessonId/vocabulary" element={<VocabularyPage />} />
       <Route path="/n5/lessons/:lessonId/grammar" element={<GrammarPage />} />

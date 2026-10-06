@@ -97,6 +97,86 @@ export default function ProgressSummaryCard({ summary }: ProgressSummaryCardProp
           </div>
         </div>
       </div>
+
+      {/* N5 Skill Mastery Breakdown */}
+      {summary.vocabularyMastery !== undefined && (
+        <div className="mt-8 pt-6 border-t border-slate-100">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-sm font-bold text-slate-800">
+              📊 Mức độ thành thạo JLPT N5 theo kỹ năng (Toàn khóa)
+            </h3>
+            <span className="text-xs text-slate-500 font-medium">
+              Tích lũy từ 25 bài học Minnano Nihongo
+            </span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-5 gap-4">
+            <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
+              <div className="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                <span>📖 Từ vựng</span>
+                <span className="text-indigo-600">{summary.vocabularyMastery}%</span>
+              </div>
+              <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                <div
+                  className="bg-indigo-600 h-full rounded-full transition-all"
+                  style={{ width: `${summary.vocabularyMastery}%` }}
+                />
+              </div>
+            </div>
+
+            <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
+              <div className="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                <span>🈁 Hán tự</span>
+                <span className="text-amber-600">{summary.kanjiMastery}%</span>
+              </div>
+              <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                <div
+                  className="bg-amber-600 h-full rounded-full transition-all"
+                  style={{ width: `${summary.kanjiMastery}%` }}
+                />
+              </div>
+            </div>
+
+            <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
+              <div className="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                <span>⛩️ Ngữ pháp</span>
+                <span className="text-sky-600">{summary.grammarMastery}%</span>
+              </div>
+              <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                <div
+                  className="bg-sky-600 h-full rounded-full transition-all"
+                  style={{ width: `${summary.grammarMastery}%` }}
+                />
+              </div>
+            </div>
+
+            <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
+              <div className="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                <span>🎧 Luyện nghe</span>
+                <span className="text-purple-600">{summary.listeningMastery}%</span>
+              </div>
+              <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                <div
+                  className="bg-purple-600 h-full rounded-full transition-all"
+                  style={{ width: `${summary.listeningMastery}%` }}
+                />
+              </div>
+            </div>
+
+            <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
+              <div className="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                <span>📖 Luyện đọc</span>
+                <span className="text-rose-600">{summary.readingMastery}%</span>
+              </div>
+              <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                <div
+                  className="bg-rose-600 h-full rounded-full transition-all"
+                  style={{ width: `${summary.readingMastery}%` }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

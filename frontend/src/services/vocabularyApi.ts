@@ -37,4 +37,9 @@ export const vocabularyApi = {
     const res = await api.get<ApiResponse<Vocabulary[]>>(`/vocabularies/search?q=${encodeURIComponent(query)}`);
     return res.data.data;
   },
+
+  getAllVocabularies: async (): Promise<Vocabulary[]> => {
+    const res = await api.get<ApiResponse<Vocabulary[]>>("/vocabularies");
+    return res.data.data;
+  },
 };
