@@ -1,14 +1,17 @@
-import { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { vocabularyApi } from "../services/vocabularyApi";
 import { grammarApi } from "../services/grammarApi";
+import { progressApi } from "../services/progressApi";
 import { Grammar } from "../types/grammar";
+import { ContentProgressResponse } from "../types/progress";
 import Navbar from "../components/Navbar";
 
 export default function GrammarPage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
 
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
@@ -46,6 +49,44 @@ export default function GrammarPage() {
     enabled: !!activeLessonId,
   });
 
+  // 4. Get Grammar Progresses
+  const { data: grammarProgressList = [], refetch: refetchProgress } = useQuery({
+    queryKey: ["progress-content-grammar"],
+    queryFn: () => progressApi.getContentProgresses("GRAMMAR"),
+  });
+
+  const progressMap = useMemo(() => {
+    const map = new Map<number, ContentProgressResponse>();
+    grammarProgressList.forEach((p) => {
+      map.set(p.contentId, p);
+    });
+    return map;
+  }, [grammarProgressList]);
+
+  // Mutation to update grammar progress
+  const updateProgressMutation = useMutation({
+    mutationFn: (data: {
+      contentId: number;
+      patternOpened?: boolean;
+      contentViewed?: boolean;
+      examplesViewed?: boolean;
+    }) =>
+      progressApi.updateContentProgress({
+        contentType: "GRAMMAR",
+        contentId: data.contentId,
+        patternOpened: data.patternOpened,
+        contentViewed: data.contentViewed,
+        examplesViewed: data.examplesViewed,
+      }),
+    onSuccess: () => {
+      refetchProgress();
+      queryClient.invalidateQueries({ queryKey: ["progress-content-grammar"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-content"] });
+    },
+  });
+
   const handleLessonChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const targetId = e.target.value;
     if (targetId) {
@@ -54,7 +95,31 @@ export default function GrammarPage() {
   };
 
   const toggleExpand = (id: number) => {
+    const isExpanding = expandedId !== id;
     setExpandedId((prev) => (prev === id ? null : id));
+    if (isExpanding) {
+      // Mark patternOpened = true
+      updateProgressMutation.mutate({
+        contentId: id,
+        patternOpened: true,
+      });
+    }
+  };
+
+  const handleMarkContent = (contentId: number) => {
+    updateProgressMutation.mutate({
+      contentId,
+      patternOpened: true,
+      contentViewed: true,
+    });
+  };
+
+  const handleMarkExamples = (contentId: number) => {
+    updateProgressMutation.mutate({
+      contentId,
+      patternOpened: true,
+      examplesViewed: true,
+    });
   };
 
   return (
@@ -207,15 +272,21 @@ export default function GrammarPage() {
         {/* Grammar List */}
         {!isLoading && !error && grammars && grammars.length > 0 && (
           <div className="space-y-6">
-            {grammars.map((grammar, index) => (
-              <GrammarCard
-                key={grammar.id}
-                grammar={grammar}
-                index={index + 1}
-                isExpanded={expandedId === grammar.id || expandedId === null}
-                onToggle={() => toggleExpand(grammar.id)}
-              />
-            ))}
+            {grammars.map((grammar, index) => {
+              const progress = progressMap.get(grammar.id);
+              return (
+                <GrammarCard
+                  key={grammar.id}
+                  grammar={grammar}
+                  index={index + 1}
+                  progress={progress}
+                  isExpanded={expandedId === grammar.id}
+                  onToggle={() => toggleExpand(grammar.id)}
+                  onMarkContent={() => handleMarkContent(grammar.id)}
+                  onMarkExamples={() => handleMarkExamples(grammar.id)}
+                />
+              );
+            })}
           </div>
         )}
       </main>
@@ -226,11 +297,28 @@ export default function GrammarPage() {
 interface GrammarCardProps {
   grammar: Grammar;
   index: number;
+  progress?: ContentProgressResponse;
   isExpanded: boolean;
   onToggle: () => void;
+  onMarkContent: () => void;
+  onMarkExamples: () => void;
 }
 
-function GrammarCard({ grammar, index, isExpanded, onToggle }: GrammarCardProps) {
+function GrammarCard({
+  grammar,
+  index,
+  progress,
+  isExpanded,
+  onToggle,
+  onMarkContent,
+  onMarkExamples,
+}: GrammarCardProps) {
+  const isCompleted =
+    progress?.status === "COMPLETED" ||
+    (progress?.patternOpened && progress?.contentViewed && progress?.examplesViewed);
+
+  const progPercent = progress?.progressPercent || 0;
+
   return (
     <div className="bg-white rounded-3xl border border-slate-200/80 shadow-xs hover:shadow-md transition-all overflow-hidden">
       {/* Header Bar */}
@@ -243,9 +331,22 @@ function GrammarCard({ grammar, index, isExpanded, onToggle }: GrammarCardProps)
             {index}
           </span>
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold jp-font tracking-wide">
-              {grammar.pattern}
-            </h3>
+            <div className="flex items-center space-x-2">
+              <h3 className="text-xl sm:text-2xl font-bold jp-font tracking-wide">
+                {grammar.pattern}
+              </h3>
+              <span
+                className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${
+                  isCompleted
+                    ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
+                    : progPercent > 0
+                    ? "bg-amber-500/20 text-amber-300 border border-amber-500/40"
+                    : "bg-white/10 text-slate-300 border border-white/15"
+                }`}
+              >
+                {isCompleted ? "✓ Hoàn thành" : progPercent > 0 ? `${progPercent}%` : "Chưa học"}
+              </span>
+            </div>
             {grammar.meaning && (
               <p className="text-slate-300 text-sm font-medium mt-0.5">
                 {grammar.meaning}
@@ -254,14 +355,68 @@ function GrammarCard({ grammar, index, isExpanded, onToggle }: GrammarCardProps)
           </div>
         </div>
 
-        <button className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-sm transition-transform">
-          {isExpanded ? "▲" : "▼"}
-        </button>
+        <div className="flex items-center space-x-3">
+          <Link
+            to={`/grammar/${grammar.id}`}
+            onClick={(e) => e.stopPropagation()}
+            className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white transition-colors"
+          >
+            Chi tiết &rarr;
+          </Link>
+          <button className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-sm transition-transform">
+            {isExpanded ? "▲" : "▼"}
+          </button>
+        </div>
       </div>
 
       {/* Card Content Body */}
       {isExpanded && (
         <div className="p-6 sm:p-8 space-y-6">
+          {/* Progress 3-step checklist indicator */}
+          <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 flex flex-wrap items-center justify-between gap-3 text-xs">
+            <span className="flex items-center space-x-1.5 text-emerald-600 font-semibold">
+              <span>✓</span>
+              <span>1. Đã mở mẫu câu</span>
+            </span>
+
+            <span
+              className={`flex items-center space-x-1.5 font-semibold ${
+                progress?.contentViewed ? "text-emerald-600" : "text-slate-500"
+              }`}
+            >
+              <span>{progress?.contentViewed ? "✓" : "○"}</span>
+              <span>2. Lý thuyết cấu trúc</span>
+            </span>
+
+            <span
+              className={`flex items-center space-x-1.5 font-semibold ${
+                progress?.examplesViewed ? "text-emerald-600" : "text-slate-500"
+              }`}
+            >
+              <span>{progress?.examplesViewed ? "✓" : "○"}</span>
+              <span>3. Ví dụ minh họa</span>
+            </span>
+
+            <div className="flex items-center space-x-2 ml-auto">
+              {!progress?.contentViewed && (
+                <button
+                  onClick={onMarkContent}
+                  className="px-2.5 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition-colors"
+                >
+                  ✓ Đã đọc lý thuyết
+                </button>
+              )}
+              {!progress?.examplesViewed && (
+                <button
+                  onClick={onMarkExamples}
+                  className="px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition-colors"
+                >
+                  ✓ Đã xem ví dụ
+                </button>
+              )}
+            </div>
+          </div>
+
           {/* CẤU TRÚC / USAGE */}
           {grammar.usage && (
             <div className="bg-indigo-50/70 p-5 rounded-2xl border border-indigo-100">
@@ -301,9 +456,19 @@ function GrammarCard({ grammar, index, isExpanded, onToggle }: GrammarCardProps)
           {/* VÍ DỤ / EXAMPLES */}
           {grammar.examples && grammar.examples.length > 0 && (
             <div className="pt-2">
-              <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider block mb-4">
-                🌟 VÍ DỤ (EXAMPLES)
-              </span>
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">
+                  🌟 VÍ DỤ (EXAMPLES)
+                </span>
+                {!progress?.examplesViewed && (
+                  <button
+                    onClick={onMarkExamples}
+                    className="px-3 py-1 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors"
+                  >
+                    ✓ Đã học xong ví dụ
+                  </button>
+                )}
+              </div>
 
               <div className="space-y-4">
                 {grammar.examples.map((ex, exIdx) => (

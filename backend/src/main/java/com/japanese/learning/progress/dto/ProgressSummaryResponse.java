@@ -1,9 +1,22 @@
 package com.japanese.learning.progress.dto;
 
 public record ProgressSummaryResponse(
-        Integer overallProgress,
+        int overallProgress,
         long completedLessons,
         long totalLessons,
-        long inProgressLessons
+        long inProgressLessons,
+        Integer vocabularyMastery,
+        Integer kanjiMastery,
+        Integer grammarMastery,
+        Integer listeningMastery,
+        Integer readingMastery
 ) {
+    public ProgressSummaryResponse(
+            int overallProgress,
+            long completedLessons,
+            long totalLessons,
+            long inProgressLessons
+    ) {
+        this(overallProgress, completedLessons, totalLessons, inProgressLessons, 0, 0, 0, 0, 0);
+    }
 }

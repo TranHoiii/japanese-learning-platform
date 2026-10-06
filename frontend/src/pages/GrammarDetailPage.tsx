@@ -1,12 +1,15 @@
+import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { grammarApi } from "../services/grammarApi";
+import { progressApi } from "../services/progressApi";
 import Navbar from "../components/Navbar";
 import FavoriteButton from "../components/favorite/FavoriteButton";
 
 export default function GrammarDetailPage() {
   const { id } = useParams<{ id: string }>();
   const grammarId = id ? parseInt(id, 10) : null;
+  const queryClient = useQueryClient();
 
   const {
     data: grammar,
@@ -17,6 +20,61 @@ export default function GrammarDetailPage() {
     queryFn: () => grammarApi.getGrammarById(grammarId!),
     enabled: !!grammarId,
   });
+
+  // Fetch progress for this grammar
+  const { data: progressList = [] } = useQuery({
+    queryKey: ["progress-content-grammar"],
+    queryFn: () => progressApi.getContentProgresses("GRAMMAR"),
+  });
+
+  const currentProgress = grammarId
+    ? progressList.find((p) => p.contentId === grammarId)
+    : undefined;
+
+  // Mutation to update grammar progress
+  const updateProgressMutation = useMutation({
+    mutationFn: (data: {
+      patternOpened?: boolean;
+      contentViewed?: boolean;
+      examplesViewed?: boolean;
+    }) =>
+      progressApi.updateContentProgress({
+        contentType: "GRAMMAR",
+        contentId: grammarId!,
+        ...data,
+      }),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["progress-content-grammar"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-content"] });
+    },
+  });
+
+  // When opening grammar detail page, emit patternOpened and contentViewed
+  useEffect(() => {
+    if (grammarId && grammar) {
+      updateProgressMutation.mutate({
+        patternOpened: true,
+        contentViewed: true,
+      });
+    }
+  }, [grammarId, grammar?.id]);
+
+  const handleMarkExamplesViewed = () => {
+    if (!grammarId) return;
+    updateProgressMutation.mutate({
+      patternOpened: true,
+      contentViewed: true,
+      examplesViewed: true,
+    });
+  };
+
+  const isCompleted =
+    currentProgress?.status === "COMPLETED" ||
+    (currentProgress?.patternOpened &&
+      currentProgress?.contentViewed &&
+      currentProgress?.examplesViewed);
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
@@ -62,7 +120,18 @@ export default function GrammarDetailPage() {
           <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden">
             {/* Header Banner */}
             <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-8 sm:p-10 relative">
-              <div className="absolute top-6 right-6">
+              <div className="absolute top-6 right-6 flex items-center space-x-3">
+                <span
+                  className={`text-xs font-bold px-3 py-1 rounded-full ${
+                    isCompleted
+                      ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
+                      : "bg-amber-500/20 text-amber-300 border border-amber-500/40"
+                  }`}
+                >
+                  {isCompleted
+                    ? "✓ Hoàn thành (100%)"
+                    : `${currentProgress?.progressPercent || 67}% Đang học`}
+                </span>
                 <FavoriteButton contentType="GRAMMAR" contentId={grammar.id} size="sm" />
               </div>
               <div className="text-xs uppercase tracking-wider text-indigo-300 font-bold mb-2">
@@ -76,6 +145,26 @@ export default function GrammarDetailPage() {
                   {grammar.meaning}
                 </p>
               )}
+
+              {/* Progress 3-step checklist */}
+              <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-3 text-xs">
+                <span className="flex items-center space-x-1.5 text-emerald-400 font-semibold">
+                  <span>✓</span>
+                  <span>1. Đã mở mẫu câu</span>
+                </span>
+                <span className="flex items-center space-x-1.5 text-emerald-400 font-semibold">
+                  <span>✓</span>
+                  <span>2. Đã đọc cấu trúc & ý nghĩa</span>
+                </span>
+                <span
+                  className={`flex items-center space-x-1.5 font-semibold ${
+                    currentProgress?.examplesViewed ? "text-emerald-400" : "text-slate-400"
+                  }`}
+                >
+                  <span>{currentProgress?.examplesViewed ? "✓" : "○"}</span>
+                  <span>3. Xem ví dụ minh họa</span>
+                </span>
+              </div>
             </div>
 
             {/* Details */}
@@ -108,7 +197,7 @@ export default function GrammarDetailPage() {
               {grammar.explanation && (
                 <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200/60">
                   <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider block mb-2">
-                    📝 GIẢI THÍCH & QUA TẮC
+                    📝 GIẢI THÍCH & QUY TẮC
                   </span>
                   <div className="text-sm font-medium text-slate-800 leading-relaxed whitespace-pre-line">
                     {grammar.explanation}
@@ -119,9 +208,20 @@ export default function GrammarDetailPage() {
               {/* Examples */}
               {grammar.examples && grammar.examples.length > 0 && (
                 <div className="pt-2">
-                  <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider block mb-4">
-                    🌟 VÍ DỤ MINH HỌA ({grammar.examples.length})
-                  </span>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">
+                      🌟 VÍ DỤ MINH HỌA ({grammar.examples.length})
+                    </span>
+                    {!currentProgress?.examplesViewed && (
+                      <button
+                        onClick={handleMarkExamplesViewed}
+                        className="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors shadow-xs flex items-center space-x-1.5"
+                      >
+                        <span>✓</span>
+                        <span>Đã xem & hiểu ví dụ</span>
+                      </button>
+                    )}
+                  </div>
 
                   <div className="space-y-4">
                     {grammar.examples.map((ex, exIdx) => (
@@ -149,6 +249,26 @@ export default function GrammarDetailPage() {
                         </div>
                       </div>
                     ))}
+                  </div>
+
+                  {/* Mark complete action button */}
+                  <div className="mt-6 flex justify-center">
+                    <button
+                      onClick={handleMarkExamplesViewed}
+                      disabled={currentProgress?.examplesViewed}
+                      className={`px-6 py-3 rounded-xl font-bold text-sm shadow-sm transition-all flex items-center space-x-2 ${
+                        currentProgress?.examplesViewed
+                          ? "bg-emerald-100 text-emerald-800 cursor-default"
+                          : "bg-emerald-600 hover:bg-emerald-500 text-white cursor-pointer"
+                      }`}
+                    >
+                      <span>{currentProgress?.examplesViewed ? "✓" : "✨"}</span>
+                      <span>
+                        {currentProgress?.examplesViewed
+                          ? "Đã hoàn thành mẫu ngữ pháp này"
+                          : "Xác nhận đã học xong ví dụ (Hoàn thành 100%)"}
+                      </span>
+                    </button>
                   </div>
                 </div>
               )}

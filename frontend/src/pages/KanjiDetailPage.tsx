@@ -1,12 +1,15 @@
+import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { kanjiApi } from "../services/kanjiApi";
+import { progressApi } from "../services/progressApi";
 import Navbar from "../components/Navbar";
 import FavoriteButton from "../components/favorite/FavoriteButton";
 
 export default function KanjiDetailPage() {
   const { id } = useParams<{ id: string }>();
   const kanjiId = id ? parseInt(id, 10) : null;
+  const queryClient = useQueryClient();
 
   const {
     data: kanji,
@@ -17,6 +20,24 @@ export default function KanjiDetailPage() {
     queryFn: () => kanjiApi.getKanjiById(kanjiId!),
     enabled: !!kanjiId,
   });
+
+  // Track kanji item completion when user views/reaches this kanji
+  useEffect(() => {
+    if (kanjiId && kanji) {
+      progressApi
+        .updateContentProgress({
+          contentType: "KANJI",
+          contentId: kanjiId,
+          progressPercent: 100,
+        })
+        .then(() => {
+          queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
+          queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
+          queryClient.invalidateQueries({ queryKey: ["progress-content"] });
+        })
+        .catch(() => {});
+    }
+  }, [kanjiId, kanji?.id]);
 
   const speakJapanese = (text: string) => {
     if ("speechSynthesis" in window) {

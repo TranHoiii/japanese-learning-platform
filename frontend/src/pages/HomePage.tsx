@@ -26,10 +26,17 @@ export default function HomePage() {
     enabled: !!n5Level,
   });
 
-  // 2. Fetch Review Due Items count
+  // 2a. Fetch Review Due Items count
   const { data: dueItems = [] } = useQuery({
     queryKey: ["review-items-due"],
     queryFn: () => reviewApi.getDueReviewItems(),
+    enabled: !!currentUser,
+  });
+
+  // 2b. Fetch Total Review Items count (all tracked items in SRS)
+  const { data: allReviewItems = [] } = useQuery({
+    queryKey: ["review-items-all"],
+    queryFn: () => reviewApi.getReviewItems(),
     enabled: !!currentUser,
   });
 
@@ -40,17 +47,10 @@ export default function HomePage() {
     enabled: !!currentUser,
   });
 
-  // 4. Fetch Progress Summary (for overall completion)
+  // 4. Fetch Progress Summary (for overall completion & N5 category mastery)
   const { data: progressSummary } = useQuery({
     queryKey: ["progress-summary"],
     queryFn: progressApi.getProgressSummary,
-    enabled: !!currentUser,
-  });
-
-  // 5. Fetch Content Progresses (for skill breakdown)
-  const { data: contentProgresses = [] } = useQuery({
-    queryKey: ["progress-content"],
-    queryFn: () => progressApi.getContentProgresses(),
     enabled: !!currentUser,
   });
 
@@ -85,29 +85,22 @@ export default function HomePage() {
     return displayLessons.find((l) => (progressMap.get(l.id) || 0) < 100) || displayLessons[0];
   }, [displayLessons, progressMap]);
 
-  // Calculate JLPT N5 Mastery Stats from real user progress
+  // Calculate JLPT N5 Mastery Stats across ALL N5 content (not tied to current lesson)
   const masteryStats = useMemo(() => {
-    const calcCategory = (type: string) => {
-      const items = contentProgresses.filter((c) => c.contentType === type);
-      if (items.length === 0) return 0;
-      const sum = items.reduce((acc, cur) => acc + (cur.progressPercent || 0), 0);
-      return Math.min(100, Math.max(0, Math.round(sum / items.length)));
-    };
-
     const overall = progressSummary?.overallProgress ?? 0;
-
     return {
       overall,
-      vocabulary: calcCategory("VOCABULARY"),
-      kanji: calcCategory("KANJI"),
-      grammar: calcCategory("GRAMMAR"),
-      listening: calcCategory("LISTENING"),
-      reading: calcCategory("READING"),
+      vocabulary: progressSummary?.vocabularyMastery ?? 0,
+      kanji: progressSummary?.kanjiMastery ?? 0,
+      grammar: progressSummary?.grammarMastery ?? 0,
+      listening: progressSummary?.listeningMastery ?? 0,
+      reading: progressSummary?.readingMastery ?? 0,
     };
-  }, [contentProgresses, progressSummary]);
+  }, [progressSummary]);
 
   const userName = currentUser?.fullName?.split(" ").pop() || "bạn";
   const dueCount = dueItems.length;
+  const totalReviewCount = allReviewItems.length;
 
   const currentLessonNum = currentLesson?.lessonNumber || 1;
   const currentLessonPad = currentLessonNum < 10 ? `0${currentLessonNum}` : currentLessonNum;
@@ -251,13 +244,13 @@ export default function HomePage() {
                 <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 flex items-baseline space-x-2">
                   <span>{dueCount}</span>
                   <span className="text-sm font-medium text-slate-500">
-                    {dueCount === 0 ? "từ vựng đến hạn hôm nay" : "từ vựng cần ôn hôm nay"}
+                    từ vựng đến hạn hôm nay
                   </span>
                 </div>
                 <p className="text-xs text-slate-500 mt-1">
-                  {dueCount === 0
-                    ? "Bạn đã ôn hết các từ vựng đến hạn! Hãy học thêm từ mới để duy trì chuỗi ôn tập."
-                    : "Thuật toán lặp lại ngắt quãng giúp chống quên kiến thức cũ."}
+                  {totalReviewCount > 0
+                    ? `Bạn có ${totalReviewCount} mục đang được theo dõi trong SRS.`
+                    : "Chưa có mục nào đang được theo dõi trong SRS."}
                 </p>
               </div>
             </div>
@@ -336,7 +329,7 @@ export default function HomePage() {
                               : "bg-slate-100 text-slate-500 border border-slate-200"
                           }`}
                         >
-                          {isComplete ? "Hoàn thành" : inProgress ? `${prog}%` : "Chưa học"}
+                          {isComplete ? "Hoàn thành" : inProgress ? `${prog}% hoàn thành` : "Chưa học"}
                         </span>
                       </div>
 
@@ -390,9 +383,14 @@ export default function HomePage() {
             {/* JLPT Skill Mastery Card */}
             <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs">
               <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center space-x-2">
-                  <span className="text-lg">📊</span>
-                  <h3 className="font-bold text-slate-900 text-sm sm:text-base">JLPT N5 Mastery Stats</h3>
+                <div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-lg">📊</span>
+                    <h3 className="font-bold text-slate-900 text-sm sm:text-base">JLPT N5 Mastery Stats</h3>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mt-0.5">
+                    Tiến độ tích lũy toàn khóa N5 (25 bài học)
+                  </p>
                 </div>
                 <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
                   N5 Đạt {masteryStats.overall}%

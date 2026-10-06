@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useQuery, useMutation } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { readingApi } from "../services/readingApi";
+import { progressApi } from "../services/progressApi";
 import { ReadingSubmitResponse } from "../types/reading";
 import Navbar from "../components/Navbar";
 import FuriganaText from "../components/ui/FuriganaText";
@@ -11,6 +12,7 @@ import FavoriteButton from "../components/favorite/FavoriteButton";
 export default function ReadingDetailPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const readingId = id ? parseInt(id, 10) : 0;
 
   // Selected option IDs mapped by question ID
@@ -59,6 +61,18 @@ export default function ReadingDetailPage() {
       readingApi.submitReading(readingId, { answers: answersPayload }),
     onSuccess: (data) => {
       setResult(data);
+      progressApi
+        .updateContentProgress({
+          contentType: "READING",
+          contentId: readingId,
+          progressPercent: 100,
+        })
+        .then(() => {
+          queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
+          queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
+          queryClient.invalidateQueries({ queryKey: ["progress-content"] });
+        })
+        .catch(() => {});
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
   });

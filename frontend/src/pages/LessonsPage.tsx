@@ -195,7 +195,7 @@ export default function LessonsPage() {
                                 : "bg-slate-100 text-slate-500 border border-slate-200"
                             }`}
                           >
-                            {isComplete ? "Hoàn thành" : inProgress ? `${prog}%` : "Chưa học"}
+                            {isComplete ? "Hoàn thành" : inProgress ? `${prog}% hoàn thành` : "Chưa học"}
                           </span>
                         </div>
                       </div>

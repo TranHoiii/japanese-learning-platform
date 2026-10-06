@@ -67,4 +67,13 @@ public class UserContentProgress {
 
     @Column(name = "completed_at")
     private LocalDateTime completedAt;
+
+    @Column(name = "pattern_opened", nullable = false)
+    private Boolean patternOpened = false;
+
+    @Column(name = "content_viewed", nullable = false)
+    private Boolean contentViewed = false;
+
+    @Column(name = "examples_viewed", nullable = false)
+    private Boolean examplesViewed = false;
 }
