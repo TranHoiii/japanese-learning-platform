@@ -221,6 +221,13 @@ export default function VocabularyPage() {
                 <span>📚</span>
                 <span>Từ Vựng N4</span>
               </span>
+              <Link
+                to={`/n4/lessons/${activeLessonId}/grammar`}
+                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
+              >
+                <span>⛩️</span>
+                <span>Ngữ Pháp N4</span>
+              </Link>
             </div>
           )}
 

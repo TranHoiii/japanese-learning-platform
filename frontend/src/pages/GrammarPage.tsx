@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate, Link, useLocation } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { vocabularyApi } from "../services/vocabularyApi";
 import { grammarApi } from "../services/grammarApi";
@@ -12,30 +12,34 @@ import { FuriganaText, FuriganaModeControl } from "../components/ui";
 export default function GrammarPage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const queryClient = useQueryClient();
+
+  const isN4 = location.pathname.startsWith("/n4") || location.pathname.includes("n4");
+  const levelCode = isN4 ? "N4" : "N5";
 
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  // 1. Get Level N5
+  // 1. Get Level
   const { data: levels } = useQuery({
     queryKey: ["levels"],
     queryFn: vocabularyApi.getLevels,
   });
 
-  const n5Level = levels?.find((l) => l.code === "N5") || levels?.[0];
+  const targetLevel = levels?.find((l) => l.code === levelCode) || (isN4 ? levels?.find((l) => l.code === "N4") : levels?.[0]);
 
   // 2. Get Lessons list for selector
   const { data: lessons } = useQuery({
-    queryKey: ["lessons", n5Level?.id],
-    queryFn: () => vocabularyApi.getLessonsByLevel(n5Level!.id),
-    enabled: !!n5Level,
+    queryKey: ["lessons", targetLevel?.id],
+    queryFn: () => vocabularyApi.getLessonsByLevel(targetLevel!.id),
+    enabled: !!targetLevel,
   });
 
   const activeLessonId = lessonId
     ? parseInt(lessonId, 10)
     : lessons && lessons.length > 0
     ? lessons[0].id
-    : null;
+    : isN4 ? 26 : 1;
 
   const currentLesson = lessons?.find((l) => l.id === activeLessonId);
 
@@ -91,7 +95,7 @@ export default function GrammarPage() {
   const handleLessonChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const targetId = e.target.value;
     if (targetId) {
-      navigate(`/n5/lessons/${targetId}/grammar`);
+      navigate(`/${isN4 ? "n4" : "n5"}/lessons/${targetId}/grammar`);
     }
   };
 
@@ -134,8 +138,8 @@ export default function GrammarPage() {
             Trang chủ
           </Link>
           <span>/</span>
-          <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-            Bài học N5
+          <Link to={isN4 ? "/n4/lessons" : "/n5/lessons"} className="hover:text-slate-900 transition-colors">
+            {isN4 ? "Bài học N4" : "Bài học N5"}
           </Link>
           <span>/</span>
           <span className="font-semibold text-slate-900">
@@ -148,8 +152,12 @@ export default function GrammarPage() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <div className="flex items-center space-x-3 mb-2">
-                <span className="px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">
-                  JLPT N5
+                <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                  isN4
+                    ? "bg-emerald-50 text-emerald-700 border border-emerald-200/60"
+                    : "bg-rose-50 text-rose-700 border border-rose-200/60"
+                }`}>
+                  JLPT {levelCode}
                 </span>
                 <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">
                   {currentLesson ? currentLesson.title : `Bài học ${activeLessonId || ""}`}
@@ -161,7 +169,7 @@ export default function GrammarPage() {
                 )}
               </div>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                {currentLesson ? `Ngữ Pháp N5 - ${currentLesson.title}` : "Ngữ Pháp N5"}
+                {currentLesson ? `Ngữ Pháp ${levelCode} - ${currentLesson.title}` : `Ngữ Pháp ${levelCode}`}
               </h1>
             </div>
 
@@ -193,52 +201,56 @@ export default function GrammarPage() {
           {/* Module Switcher Tabs (Vocabulary vs Grammar) */}
           <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2">
             <Link
-              to={`/n5/lessons/${activeLessonId}/vocabulary`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/vocabulary`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>📚</span>
-              <span>Từ Vựng N5</span>
+              <span>Từ Vựng {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId}/grammar`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/grammar`}
               className="px-5 py-2.5 rounded-xl text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 transition-all flex items-center space-x-2"
             >
               <span>⛩️</span>
-              <span>Ngữ Pháp N5</span>
+              <span>Ngữ Pháp {levelCode}</span>
             </Link>
 
-            <Link
-              to={`/n5/lessons/${activeLessonId}/kanji`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
-            >
-              <span>🈁</span>
-              <span>Kanji N5</span>
-            </Link>
+            {!isN4 && (
+              <>
+                <Link
+                  to={`/n5/lessons/${activeLessonId}/kanji`}
+                  className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+                >
+                  <span>🈁</span>
+                  <span>Kanji N5</span>
+                </Link>
 
-            <Link
-              to={`/n5/lessons/${activeLessonId}/listening`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
-            >
-              <span>🎧</span>
-              <span>Nghe Hiểu N5</span>
-            </Link>
+                <Link
+                  to={`/n5/lessons/${activeLessonId}/listening`}
+                  className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+                >
+                  <span>🎧</span>
+                  <span>Nghe Hiểu N5</span>
+                </Link>
 
-            <Link
-              to={`/n5/lessons/${activeLessonId}/reading`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
-            >
-              <span>📖</span>
-              <span>Đọc Hiểu N5</span>
-            </Link>
+                <Link
+                  to={`/n5/lessons/${activeLessonId}/reading`}
+                  className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+                >
+                  <span>📖</span>
+                  <span>Đọc Hiểu N5</span>
+                </Link>
 
-            <Link
-              to={`/n5/lessons/${activeLessonId}/exercise`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
-            >
-              <span>✏️</span>
-              <span>Bài Tập N5</span>
-            </Link>
+                <Link
+                  to={`/n5/lessons/${activeLessonId}/exercise`}
+                  className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+                >
+                  <span>✏️</span>
+                  <span>Bài Tập N5</span>
+                </Link>
+              </>
+            )}
           </div>
         </div>
 
