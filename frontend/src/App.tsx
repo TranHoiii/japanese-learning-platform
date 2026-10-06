@@ -31,6 +31,10 @@ import {
 } from "./features/beginner";
 import N4Page from "./pages/N4Page";
 import HandbookPage from "./pages/HandbookPage";
+import {
+  HandbookCategoryPage,
+  HandbookArticleDetailPage,
+} from "./features/handbook";
 
 // Admin CMS
 import RequireAdmin from "./components/RequireAdmin";
@@ -64,6 +68,8 @@ export default function App() {
       <Route path="/review" element={<ReviewPage />} />
       <Route path="/favorites" element={<FavoritePage />} />
       <Route path="/handbook" element={<HandbookPage />} />
+      <Route path="/handbook/:category" element={<HandbookCategoryPage />} />
+      <Route path="/handbook/:category/:slug" element={<HandbookArticleDetailPage />} />
       <Route path="/levels/n5" element={<Navigate to="/n5/lessons" replace />} />
       <Route path="/levels/n4" element={<N4Page />} />
       <Route path="/n5" element={<Navigate to="/n5/lessons" replace />} />
