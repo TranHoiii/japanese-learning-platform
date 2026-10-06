@@ -21,6 +21,14 @@ import FavoritePage from "./pages/FavoritePage";
 import SearchPage from "./pages/SearchPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import BeginnerPage from "./pages/BeginnerPage";
+import {
+  HiraganaPage,
+  KatakanaPage,
+  PronunciationOverviewPage,
+  PronunciationTopicPage,
+  NumbersPage,
+  PracticePage,
+} from "./features/beginner";
 import N4Page from "./pages/N4Page";
 import HandbookPage from "./pages/HandbookPage";
 
@@ -43,6 +51,12 @@ export default function App() {
       {/* Learner Public & Protected Routes */}
       <Route path="/" element={<HomePage />} />
       <Route path="/beginner" element={<BeginnerPage />} />
+      <Route path="/beginner/hiragana" element={<HiraganaPage />} />
+      <Route path="/beginner/katakana" element={<KatakanaPage />} />
+      <Route path="/beginner/pronunciation" element={<PronunciationOverviewPage />} />
+      <Route path="/beginner/pronunciation/:topicSlug" element={<PronunciationTopicPage />} />
+      <Route path="/beginner/numbers" element={<NumbersPage />} />
+      <Route path="/beginner/practice" element={<PracticePage />} />
       <Route path="/search" element={<SearchPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
