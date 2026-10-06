@@ -7,6 +7,7 @@ import { progressApi } from "../services/progressApi";
 import { Grammar } from "../types/grammar";
 import { ContentProgressResponse } from "../types/progress";
 import Navbar from "../components/Navbar";
+import { FuriganaText, FuriganaModeControl } from "../components/ui";
 
 export default function GrammarPage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
@@ -164,25 +165,29 @@ export default function GrammarPage() {
               </h1>
             </div>
 
-            {/* Lesson Selector */}
-            {lessons && (
-              <div className="flex items-center space-x-3">
-                <label className="text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap">
-                  Chọn bài học:
-                </label>
-                <select
-                  value={activeLessonId || ""}
-                  onChange={handleLessonChange}
-                  className="bg-slate-50 border border-slate-300 text-slate-900 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-indigo-500 p-2.5 shadow-xs cursor-pointer min-w-[140px]"
-                >
-                  {lessons.map((l) => (
-                    <option key={l.id} value={l.id}>
-                      {l.title} (Bài {l.lessonNumber})
-                    </option>
-                  ))}
-                </select>
-              </div>
-            )}
+            {/* Controls: Furigana Mode + Lesson Selector */}
+            <div className="flex flex-wrap items-center gap-3">
+              <FuriganaModeControl />
+
+              {lessons && (
+                <div className="flex items-center space-x-2">
+                  <label className="text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap hidden sm:inline">
+                    Bài học:
+                  </label>
+                  <select
+                    value={activeLessonId || ""}
+                    onChange={handleLessonChange}
+                    className="bg-slate-50 border border-slate-300 text-slate-900 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-indigo-500 p-2.5 shadow-xs cursor-pointer min-w-[140px]"
+                  >
+                    {lessons.map((l) => (
+                      <option key={l.id} value={l.id}>
+                        {l.title} (Bài {l.lessonNumber})
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Module Switcher Tabs (Vocabulary vs Grammar) */}
@@ -320,11 +325,13 @@ function GrammarCard({
   const progPercent = progress?.progressPercent || 0;
 
   return (
-    <div className="bg-white rounded-3xl border border-slate-200/80 shadow-xs hover:shadow-md transition-all overflow-hidden">
+    <div className="bg-white rounded-3xl border border-slate-200/80 shadow-xs hover:shadow-md transition-all">
       {/* Header Bar */}
       <div
         onClick={onToggle}
-        className="p-6 cursor-pointer flex items-center justify-between bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white select-none"
+        className={`p-6 cursor-pointer flex items-center justify-between bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white select-none rounded-t-3xl ${
+          !isExpanded ? "rounded-b-3xl" : ""
+        }`}
       >
         <div className="flex items-center space-x-4">
           <span className="w-9 h-9 rounded-xl bg-white/10 text-white font-extrabold text-sm flex items-center justify-center border border-white/20">
@@ -333,7 +340,7 @@ function GrammarCard({
           <div>
             <div className="flex items-center space-x-2">
               <h3 className="text-xl sm:text-2xl font-bold jp-font tracking-wide">
-                {grammar.pattern}
+                <FuriganaText text={grammar.pattern} />
               </h3>
               <span
                 className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${
@@ -424,7 +431,7 @@ function GrammarCard({
                 📌 CẤU TRÚC
               </span>
               <div className="text-lg font-bold text-slate-900 jp-font leading-relaxed whitespace-pre-line">
-                {grammar.usage}
+                <FuriganaText text={grammar.usage} />
               </div>
             </div>
           )}
@@ -483,7 +490,7 @@ function GrammarCard({
                       <div className="flex-1">
                         {/* Japanese Example Text */}
                         <div className="text-lg font-bold text-slate-900 jp-font leading-normal mb-1">
-                          {ex.japanese}
+                          <FuriganaText text={ex.japanese} />
                         </div>
 
                         {/* Furigana line if available */}

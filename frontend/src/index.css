@@ -100,24 +100,30 @@ body {
   font-feature-settings: "palt" 1;
 }
 
-/* Furigana Ruby Typography */
+/* Furigana Ruby Typography & Interactive Kanji */
 ruby {
   ruby-align: center;
   ruby-position: over;
-  line-height: 2;
+  line-height: 2.1;
+}
+
+ruby.ruby-interactive {
+  display: inline-ruby;
+  position: relative;
+  transition: all 0.15s ease-in-out;
 }
 
 rt {
-  font-size: 0.6em;
-  font-weight: 500;
-  color: #64748B;
+  font-size: 0.65em;
+  font-weight: 600;
+  color: #4f46e5;
   user-select: none;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .hide-furigana rt {
-  visibility: hidden;
-  opacity: 0;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 /* 3D Flashcard Transformations */

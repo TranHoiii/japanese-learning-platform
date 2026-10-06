@@ -5,7 +5,7 @@ import { readingApi } from "../services/readingApi";
 import { progressApi } from "../services/progressApi";
 import { ReadingSubmitResponse } from "../types/reading";
 import Navbar from "../components/Navbar";
-import FuriganaText from "../components/ui/FuriganaText";
+import { FuriganaText, FuriganaModeControl } from "../components/ui";
 import { cn } from "../utils/cn";
 import FavoriteButton from "../components/favorite/FavoriteButton";
 
@@ -360,8 +360,8 @@ export default function ReadingDetailPage() {
                   </div>
                 </div>
 
-                {/* Furigana Toggle Switch */}
-                <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                {/* Furigana Mode Switcher */}
+                <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100">
                   <div className="flex items-center space-x-2">
                     <span className="text-lg">📖</span>
                     <h2 className="text-sm font-bold text-slate-800 uppercase tracking-wider">
@@ -369,25 +369,7 @@ export default function ReadingDetailPage() {
                     </h2>
                   </div>
 
-                  <div className="flex items-center space-x-2">
-                    <span className="text-xs font-semibold text-slate-600">Hiện Furigana</span>
-                    <button
-                      type="button"
-                      onClick={() => setShowFurigana(!showFurigana)}
-                      className={cn(
-                        "w-11 h-6 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-200 ease-in-out",
-                        showFurigana ? "bg-indigo-600" : "bg-slate-300"
-                      )}
-                      aria-label="Bật tắt Furigana"
-                    >
-                      <div
-                        className={cn(
-                          "bg-white w-4 h-4 rounded-full shadow-md transform transition-transform duration-200 ease-in-out",
-                          showFurigana ? "translate-x-5" : "translate-x-0"
-                        )}
-                      />
-                    </button>
-                  </div>
+                  <FuriganaModeControl />
                 </div>
 
                 {/* Optional Passage Illustration */}
@@ -404,7 +386,7 @@ export default function ReadingDetailPage() {
 
                 {/* Reading Japanese Passage */}
                 <div className="bg-slate-50/80 rounded-2xl p-6 border border-slate-100 text-slate-900 text-base sm:text-lg leading-loose font-medium whitespace-pre-line tracking-wide">
-                  <FuriganaText text={reading.content} showFurigana={showFurigana} />
+                  <FuriganaText text={reading.content} />
                 </div>
 
                 {/* Translation Accordion */}

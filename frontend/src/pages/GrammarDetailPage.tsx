@@ -5,6 +5,7 @@ import { grammarApi } from "../services/grammarApi";
 import { progressApi } from "../services/progressApi";
 import Navbar from "../components/Navbar";
 import FavoriteButton from "../components/favorite/FavoriteButton";
+import { FuriganaText, FuriganaModeControl } from "../components/ui";
 
 export default function GrammarDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -81,16 +82,20 @@ export default function GrammarDetailPage() {
       <Navbar />
 
       <main className="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 py-8">
-        <div className="mb-6 flex items-center space-x-2 text-sm text-slate-500">
-          <Link to="/" className="hover:text-slate-900 transition-colors">
-            Trang chủ
-          </Link>
-          <span>/</span>
-          <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-            Bài học N5
-          </Link>
-          <span>/</span>
-          <span className="font-semibold text-slate-900">Chi tiết ngữ pháp #{id}</span>
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+          <div className="flex items-center space-x-2 text-sm text-slate-500">
+            <Link to="/" className="hover:text-slate-900 transition-colors">
+              Trang chủ
+            </Link>
+            <span>/</span>
+            <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
+              Bài học N5
+            </Link>
+            <span>/</span>
+            <span className="font-semibold text-slate-900">Chi tiết ngữ pháp #{id}</span>
+          </div>
+
+          <FuriganaModeControl />
         </div>
 
         {isLoading && (
@@ -117,9 +122,9 @@ export default function GrammarDetailPage() {
         )}
 
         {!isLoading && !error && grammar && (
-          <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden">
+          <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm">
             {/* Header Banner */}
-            <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-8 sm:p-10 relative">
+            <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-8 sm:p-10 relative rounded-t-3xl">
               <div className="absolute top-6 right-6 flex items-center space-x-3">
                 <span
                   className={`text-xs font-bold px-3 py-1 rounded-full ${
@@ -138,7 +143,7 @@ export default function GrammarDetailPage() {
                 Mẫu Ngữ Pháp #{grammar.id} • Bài học #{grammar.lessonId}
               </div>
               <h1 className="text-3xl sm:text-4xl font-extrabold jp-font tracking-wide mb-2">
-                {grammar.pattern}
+                <FuriganaText text={grammar.pattern} />
               </h1>
               {grammar.meaning && (
                 <p className="text-lg text-slate-300 font-medium leading-relaxed">
@@ -176,7 +181,7 @@ export default function GrammarDetailPage() {
                     📌 CẤU TRÚC
                   </span>
                   <div className="text-xl font-bold text-slate-900 jp-font leading-relaxed whitespace-pre-line">
-                    {grammar.usage}
+                    <FuriganaText text={grammar.usage} />
                   </div>
                 </div>
               )}
@@ -235,7 +240,7 @@ export default function GrammarDetailPage() {
                           </span>
                           <div className="flex-1">
                             <div className="text-lg font-bold text-slate-900 jp-font mb-1">
-                              {ex.japanese}
+                              <FuriganaText text={ex.japanese} />
                             </div>
                             {ex.furigana && (
                               <div className="text-xs font-medium text-indigo-600 jp-font mb-1">

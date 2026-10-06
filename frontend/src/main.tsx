@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { AuthProvider } from "./contexts/AuthContext";
 import { ToastProvider } from "./components/ui/Toast";
+import { FuriganaProvider } from "./contexts/FuriganaContext";
 import "./index.css";
 
 const queryClient = new QueryClient();
@@ -15,7 +16,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <BrowserRouter>
         <AuthProvider>
           <ToastProvider>
-            <App />
+            <FuriganaProvider>
+              <App />
+            </FuriganaProvider>
           </ToastProvider>
         </AuthProvider>
       </BrowserRouter>

@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
 import { useAuth } from "../../contexts/AuthContext";
+import { progressApi } from "../../services/progressApi";
 import { cn } from "../../utils/cn";
 
 export interface HeaderProps {
@@ -16,6 +18,18 @@ export const Header: React.FC<HeaderProps> = ({
   const { currentUser, logout } = useAuth();
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const userMenuRef = useRef<HTMLDivElement>(null);
+
+  // Fetch progress summary to display matching Daily XP
+  const { data: progressSummary } = useQuery({
+    queryKey: ["progress-summary"],
+    queryFn: progressApi.getProgressSummary,
+    enabled: !!currentUser,
+  });
+
+  const overallPercent = progressSummary?.overallProgress ?? 0;
+  const currentXp = overallPercent > 0 ? overallPercent * 5 : 0;
+  const targetXp = 500;
+  const xpPercent = Math.min(100, Math.round((currentXp / targetXp) * 100));
 
   // Close user menu on outside click or escape
   useEffect(() => {
@@ -171,16 +185,22 @@ export const Header: React.FC<HeaderProps> = ({
           </Link>
 
           {/* Daily XP Progress Pill (Hidden on mobile) */}
-          <div className="hidden xl:flex items-center space-x-2 px-3 py-1.5 rounded-full bg-slate-100/90 border border-slate-200/80 text-xs font-medium text-slate-700">
+          <Link
+            to="/progress"
+            title={`Mục tiêu học hôm nay: ${currentXp}/${targetXp} XP (${xpPercent}%)`}
+            className="hidden xl:flex items-center space-x-2 px-3 py-1.5 rounded-full bg-slate-100/90 hover:bg-slate-200/70 border border-slate-200/80 text-xs font-medium text-slate-700 transition-colors"
+          >
             <span className="text-[11px] text-slate-500 font-semibold uppercase">Daily XP</span>
             <div className="w-16 h-2 bg-slate-200 rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full"
-                style={{ width: "70%" }}
+                className="h-full bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full transition-all duration-500"
+                style={{ width: `${Math.max(currentXp > 0 ? 5 : 0, xpPercent)}%` }}
               />
             </div>
-            <span className="text-[11px] font-bold text-indigo-700">350/500</span>
-          </div>
+            <span className="text-[11px] font-bold text-indigo-700">
+              {currentXp}/{targetXp}
+            </span>
+          </Link>
 
           {/* Quick Search */}
           <Link

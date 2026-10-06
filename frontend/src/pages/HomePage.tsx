@@ -193,7 +193,12 @@ export default function HomePage() {
                 <div className="w-full bg-slate-100 rounded-full h-3 overflow-hidden">
                   <div
                     className="h-full bg-gradient-to-r from-indigo-500 to-rose-500 rounded-full transition-all duration-500"
-                    style={{ width: `${Math.min(100, Math.max(5, masteryStats.overall))}%` }}
+                    style={{
+                      width: `${Math.max(
+                        masteryStats.overall > 0 ? 5 : 0,
+                        Math.min(100, Math.round(((masteryStats.overall * 5) / 500) * 100))
+                      )}%`,
+                    }}
                   />
                 </div>
                 <div className="flex justify-between items-center text-xs text-slate-400">

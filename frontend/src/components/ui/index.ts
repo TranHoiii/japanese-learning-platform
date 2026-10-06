@@ -10,3 +10,5 @@ export { Modal, type ModalProps } from "./Modal";
 export { ToastProvider, useToast, type ToastMessage, type ToastType } from "./Toast";
 export { CircularProgress, type CircularProgressProps } from "./CircularProgress";
 export { FuriganaText, type FuriganaTextProps } from "./FuriganaText";
+export { FuriganaModeControl, type FuriganaModeControlProps } from "./FuriganaModeControl";
+export { KanjiHoverWord, type KanjiHoverWordProps } from "./KanjiHoverWord";
