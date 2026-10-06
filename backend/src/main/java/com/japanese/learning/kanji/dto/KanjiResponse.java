@@ -26,4 +26,14 @@ public class KanjiResponse {
     private String mnemonic;
     private String mnemonicImageUrl;
     private List<KanjiCompoundResponse> compounds;
+    private String levelCode;
+    private Integer lessonNumber;
+
+    public KanjiResponse(Long id, String kanji, String hanViet, String onyomi, String kunyomi,
+                         String meaning, Integer strokeCount, String strokeOrderUrl,
+                         String mnemonic, String mnemonicImageUrl,
+                         List<KanjiCompoundResponse> compounds) {
+        this(id, kanji, hanViet, onyomi, kunyomi, meaning, strokeCount, strokeOrderUrl,
+             mnemonic, mnemonicImageUrl, compounds, null, null);
+    }
 }

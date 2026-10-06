@@ -2,7 +2,7 @@ export interface KanjiCompound {
   id?: number;
   word: string;
   reading: string;
-  meaning: string;
+  meaning?: string;
   exampleSentence?: string;
 }
 
@@ -18,6 +18,8 @@ export interface Kanji {
   mnemonic?: string;
   mnemonicImageUrl?: string;
   compounds?: KanjiCompound[];
+  levelCode?: string;
+  lessonNumber?: number;
 }
 
 export interface PaginatedKanjiResponse {
