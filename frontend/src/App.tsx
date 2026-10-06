@@ -71,11 +71,11 @@ export default function App() {
       <Route path="/handbook/:category" element={<HandbookCategoryPage />} />
       <Route path="/handbook/:category/:slug" element={<HandbookArticleDetailPage />} />
       <Route path="/levels/n5" element={<Navigate to="/n5/lessons" replace />} />
-      <Route path="/levels/n4" element={<N4Page />} />
+      <Route path="/levels/n4" element={<Navigate to="/n4/lessons" replace />} />
       <Route path="/n5" element={<Navigate to="/n5/lessons" replace />} />
       <Route path="/n5/lessons" element={<LessonsPage />} />
       <Route path="/n5/exercises" element={<ExercisePage />} />
-      <Route path="/lessons/:lessonId" element={<Navigate to="/n5/lessons/:lessonId" replace />} />
+      <Route path="/lessons/:lessonId" element={<VocabularyPage />} />
       <Route path="/n5/lessons/:lessonId" element={<VocabularyPage />} />
       <Route path="/n5/lessons/:lessonId/vocabulary" element={<VocabularyPage />} />
       <Route path="/n5/lessons/:lessonId/grammar" element={<GrammarPage />} />
@@ -84,6 +84,12 @@ export default function App() {
       <Route path="/n5/lessons/:lessonId/reading" element={<ReadingPage />} />
       <Route path="/n5/lessons/:lessonId/exercise" element={<ExercisePage />} />
       <Route path="/n5/lessons/:lessonId/exercises" element={<ExercisePage />} />
+
+      {/* N4 Routes */}
+      <Route path="/n4" element={<Navigate to="/n4/lessons" replace />} />
+      <Route path="/n4/lessons" element={<LessonsPage />} />
+      <Route path="/n4/lessons/:lessonId" element={<VocabularyPage />} />
+      <Route path="/n4/lessons/:lessonId/vocabulary" element={<VocabularyPage />} />
       <Route path="/vocabulary/:id" element={<VocabularyDetailPage />} />
       <Route path="/grammar/:id" element={<GrammarDetailPage />} />
       <Route path="/kanjis/:id" element={<KanjiDetailPage />} />

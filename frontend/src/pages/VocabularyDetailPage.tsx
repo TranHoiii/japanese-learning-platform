@@ -27,8 +27,11 @@ export default function VocabularyDetailPage() {
             Trang chủ
           </Link>
           <span>/</span>
-          <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-            Bài học N5
+          <Link
+            to={vocabulary && vocabulary.lessonId >= 26 ? "/n4/lessons" : "/n5/lessons"}
+            className="hover:text-slate-900 transition-colors"
+          >
+            {vocabulary && vocabulary.lessonId >= 26 ? "Bài học N4" : "Bài học N5"}
           </Link>
           <span>/</span>
           <span className="font-semibold text-slate-900">Chi tiết từ vựng #{id}</span>
@@ -62,7 +65,7 @@ export default function VocabularyDetailPage() {
             {/* Header */}
             <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-8 sm:p-10 relative">
               <div className="text-xs uppercase tracking-wider text-indigo-300 font-bold mb-2">
-                Từ vựng #{vocabulary.id} • Bài học #{vocabulary.lessonId}
+                Từ vựng #{vocabulary.id} • {vocabulary.lessonId >= 26 ? `Bài học N4 #${vocabulary.lessonId}` : `Bài học N5 #${vocabulary.lessonId}`}
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold jp-font mb-2">
                 {vocabulary.hiragana}
@@ -129,7 +132,11 @@ export default function VocabularyDetailPage() {
                 </button>
 
                 <Link
-                  to={`/n5/lessons/${vocabulary.lessonId}/vocabulary`}
+                  to={
+                    vocabulary.lessonId >= 26
+                      ? `/n4/lessons/${vocabulary.lessonId}/vocabulary`
+                      : `/n5/lessons/${vocabulary.lessonId}/vocabulary`
+                  }
                   className="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-semibold transition-colors"
                 >
                   ← Quay lại bài học

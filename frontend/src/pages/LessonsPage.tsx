@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { vocabularyApi } from "../services/vocabularyApi";
 import { progressApi } from "../services/progressApi";
 import { useAuth } from "../contexts/AuthContext";
@@ -10,6 +10,9 @@ import { getLessonDisplayInfo } from "../constants/lessonTopics";
 
 export default function LessonsPage() {
   const { currentUser } = useAuth();
+  const location = useLocation();
+  const isN4 = location.pathname.startsWith("/n4") || location.pathname.includes("n4");
+
   const [searchQuery, setSearchQuery] = useState("");
   const [filterStatus, setFilterStatus] = useState<"ALL" | "IN_PROGRESS" | "COMPLETED">("ALL");
 
@@ -18,16 +21,16 @@ export default function LessonsPage() {
     queryFn: vocabularyApi.getLevels,
   });
 
-  const n5Level = levels?.find((l) => l.code === "N5") || levels?.[0];
+  const targetLevel = levels?.find((l) => l.code === (isN4 ? "N4" : "N5")) || (isN4 ? levels?.find((l) => l.code === "N4") : levels?.[0]);
 
   const {
     data: lessons,
     isLoading: isLoadingLessons,
     error: errorLessons,
   } = useQuery({
-    queryKey: ["lessons", n5Level?.id],
-    queryFn: () => vocabularyApi.getLessonsByLevel(n5Level!.id),
-    enabled: !!n5Level,
+    queryKey: ["lessons", targetLevel?.id],
+    queryFn: () => vocabularyApi.getLessonsByLevel(targetLevel!.id),
+    enabled: !!targetLevel,
   });
 
   // Fetch progress if authenticated
@@ -77,14 +80,20 @@ export default function LessonsPage() {
         <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-6 sm:p-10 text-white shadow-zen relative overflow-hidden">
           <div className="absolute -right-10 -bottom-10 w-80 h-80 bg-rose-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="max-w-2xl relative z-10 space-y-3">
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30">
-              🌸 JLPT N5 • 25 Bài học Minnano Nihongo
+            <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold ${
+              isN4
+                ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                : "bg-rose-500/20 text-rose-300 border border-rose-500/30"
+            }`}>
+              {isN4 ? "📗 JLPT N4 • 25 Bài học Minnano Nihongo" : "🌸 JLPT N5 • 25 Bài học Minnano Nihongo"}
             </span>
             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-              Lộ Trình Toàn Diện 25 Bài Học N5
+              {isN4 ? "Lộ Trình Từ Vựng 25 Bài Học N4" : "Lộ Trình Toàn Diện 25 Bài Học N5"}
             </h1>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Tổng hợp đầy đủ các bài học chuẩn Minnano Nihongo. Mỗi bài bao gồm Từ vựng, Ngữ pháp mẫu câu, Hán tự Kanji, Luyện nghe Audio bản xứ, Luyện đọc hiểu và Bài tập củng cố.
+              {isN4
+                ? "Tổng hợp đầy đủ 1138 từ vựng tiếng Nhật trình độ N4 chuẩn giáo trình Minnano Nihongo (Bài 26 đến Bài 50)."
+                : "Tổng hợp đầy đủ các bài học chuẩn Minnano Nihongo. Mỗi bài bao gồm Từ vựng, Ngữ pháp mẫu câu, Hán tự Kanji, Luyện nghe Audio bản xứ, Luyện đọc hiểu và Bài tập củng cố."}
             </p>
           </div>
         </div>
@@ -142,7 +151,7 @@ export default function LessonsPage() {
         {isLoading && (
           <div className="flex flex-col items-center justify-center py-20">
             <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-4" />
-            <p className="text-slate-600 font-medium">Đang tải danh sách 25 bài học N5...</p>
+            <p className="text-slate-600 font-medium">Đang tải danh sách 25 bài học {isN4 ? "N4" : "N5"}...</p>
           </div>
         )}
 
@@ -215,55 +224,70 @@ export default function LessonsPage() {
 
                   {/* Skills Pills */}
                   <div>
-                    <div className="pt-3 border-t border-slate-100 grid grid-cols-3 gap-1.5 text-center text-xs font-medium">
-                      <Link
-                        to={`/n5/lessons/${lesson.id}/vocabulary`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
-                      >
-                        📚 Từ vựng
-                      </Link>
-                      <Link
-                        to={`/n5/lessons/${lesson.id}/grammar`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
-                      >
-                        ⛩️ Ngữ pháp
-                      </Link>
-                      <Link
-                        to={`/n5/lessons/${lesson.id}/kanji`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-amber-50 hover:text-amber-700 transition-colors"
-                      >
-                        🈁 Kanji
-                      </Link>
-                      <Link
-                        to={`/n5/lessons/${lesson.id}/listening`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-purple-50 hover:text-purple-700 transition-colors"
-                      >
-                        🎧 Nghe
-                      </Link>
-                      <Link
-                        to={`/n5/lessons/${lesson.id}/reading`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-rose-50 hover:text-rose-700 transition-colors"
-                      >
-                        📖 Đọc
-                      </Link>
-                      <Link
-                        to={`/n5/lessons/${lesson.id}/exercise`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
-                      >
-                        ✏️ Bài tập
-                      </Link>
-                    </div>
+                    {isN4 ? (
+                      <div className="pt-3 border-t border-slate-100">
+                        <Link
+                          to={`/n4/lessons/${lesson.id}/vocabulary`}
+                          className="w-full py-2.5 rounded-xl bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1.5"
+                        >
+                          <span>📚</span>
+                          <span>Học Từ vựng Bài {lesson.lessonNumber}</span>
+                          <span>&rarr;</span>
+                        </Link>
+                      </div>
+                    ) : (
+                      <>
+                        <div className="pt-3 border-t border-slate-100 grid grid-cols-3 gap-1.5 text-center text-xs font-medium">
+                          <Link
+                            to={`/n5/lessons/${lesson.id}/vocabulary`}
+                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
+                          >
+                            📚 Từ vựng
+                          </Link>
+                          <Link
+                            to={`/n5/lessons/${lesson.id}/grammar`}
+                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
+                          >
+                            ⛩️ Ngữ pháp
+                          </Link>
+                          <Link
+                            to={`/n5/lessons/${lesson.id}/kanji`}
+                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-amber-50 hover:text-amber-700 transition-colors"
+                          >
+                            🈁 Kanji
+                          </Link>
+                          <Link
+                            to={`/n5/lessons/${lesson.id}/listening`}
+                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-purple-50 hover:text-purple-700 transition-colors"
+                          >
+                            🎧 Nghe
+                          </Link>
+                          <Link
+                            to={`/n5/lessons/${lesson.id}/reading`}
+                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-rose-50 hover:text-rose-700 transition-colors"
+                          >
+                            📖 Đọc
+                          </Link>
+                          <Link
+                            to={`/n5/lessons/${lesson.id}/exercise`}
+                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                          >
+                            ✏️ Bài tập
+                          </Link>
+                        </div>
 
-                    <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                      <span className="text-xs font-semibold text-slate-400">25 bài Minnano</span>
-                      <Link
-                        to={`/n5/lessons/${lesson.id}/vocabulary`}
-                        className="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors flex items-center space-x-1"
-                      >
-                        <span>Học ngay</span>
-                        <span>&rarr;</span>
-                      </Link>
-                    </div>
+                        <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                          <span className="text-xs font-semibold text-slate-400">25 bài Minnano</span>
+                          <Link
+                            to={`/n5/lessons/${lesson.id}/vocabulary`}
+                            className="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors flex items-center space-x-1"
+                          >
+                            <span>Học ngay</span>
+                            <span>&rarr;</span>
+                          </Link>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
               );
