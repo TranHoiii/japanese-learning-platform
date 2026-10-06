@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { grammarApi } from "../services/grammarApi";
 import Navbar from "../components/Navbar";
+import FavoriteButton from "../components/favorite/FavoriteButton";
 
 export default function GrammarDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -61,6 +62,9 @@ export default function GrammarDetailPage() {
           <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden">
             {/* Header Banner */}
             <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-8 sm:p-10 relative">
+              <div className="absolute top-6 right-6">
+                <FavoriteButton contentType="GRAMMAR" contentId={grammar.id} size="sm" />
+              </div>
               <div className="text-xs uppercase tracking-wider text-indigo-300 font-bold mb-2">
                 Mẫu Ngữ Pháp #{grammar.id} • Bài học #{grammar.lessonId}
               </div>

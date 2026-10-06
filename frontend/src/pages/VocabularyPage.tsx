@@ -5,13 +5,15 @@ import { vocabularyApi } from "../services/vocabularyApi";
 import { Vocabulary } from "../types/vocabulary";
 import Navbar from "../components/Navbar";
 import VocabularyDetailModal from "../components/VocabularyDetailModal";
+import InteractiveFlashcardSession from "../components/learning/InteractiveFlashcardSession";
+import FavoriteButton from "../components/favorite/FavoriteButton";
 
 export default function VocabularyPage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
   const navigate = useNavigate();
 
   const [selectedVocab, setSelectedVocab] = useState<Vocabulary | null>(null);
-  const [viewMode, setViewMode] = useState<"table" | "card">("table");
+  const [viewMode, setViewMode] = useState<"flashcard" | "table" | "grid">("flashcard");
   const [searchQuery, setSearchQuery] = useState("");
 
   // 1. Get Level N5
@@ -33,7 +35,7 @@ export default function VocabularyPage() {
     ? parseInt(lessonId, 10)
     : lessons && lessons.length > 0
     ? lessons[0].id
-    : null;
+    : 1;
 
   // 3. Get Lesson info
   const currentLesson = lessons?.find((l) => l.id === activeLessonId);
@@ -68,6 +70,26 @@ export default function VocabularyPage() {
     const targetId = e.target.value;
     if (targetId) {
       navigate(`/n5/lessons/${targetId}/vocabulary`);
+    }
+  };
+
+  const playWordAudio = (word: string, audioUrl?: string, e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    if (audioUrl) {
+      const audio = new Audio(audioUrl);
+      audio.play().catch(() => playSpeech(word));
+    } else {
+      playSpeech(word);
+    }
+  };
+
+  const playSpeech = (text: string) => {
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "ja-JP";
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
     }
   };
 
@@ -122,7 +144,7 @@ export default function VocabularyPage() {
                 <select
                   value={activeLessonId || ""}
                   onChange={handleLessonChange}
-                  className="bg-slate-50 border border-slate-300 text-slate-900 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 p-2.5 shadow-xs cursor-pointer min-w-[140px]"
+                  className="bg-slate-50 border border-slate-300 text-slate-900 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 p-2.5 shadow-xs cursor-pointer min-w-[160px]"
                 >
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
@@ -134,11 +156,11 @@ export default function VocabularyPage() {
             )}
           </div>
 
-          {/* Module Switcher Tabs (Vocabulary vs Grammar) */}
-          <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2">
+          {/* Module Switcher Tabs (Vocabulary, Grammar, Kanji, Listening, Reading, Exercise) */}
+          <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto pb-2">
             <Link
               to={`/n5/lessons/${activeLessonId}/vocabulary`}
-              className="px-5 py-2.5 rounded-xl text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 transition-all flex items-center space-x-2"
+              className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 transition-all flex items-center space-x-2 shrink-0"
             >
               <span>📚</span>
               <span>Từ Vựng N5</span>
@@ -146,42 +168,42 @@ export default function VocabularyPage() {
 
             <Link
               to={`/n5/lessons/${activeLessonId}/grammar`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
             >
               <span>⛩️</span>
-              <span>Ngữ Pháp N5</span>
+              <span>Ngữ Pháp</span>
             </Link>
 
             <Link
               to={`/n5/lessons/${activeLessonId}/kanji`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
             >
               <span>🈁</span>
-              <span>Kanji N5</span>
+              <span>Kanji</span>
             </Link>
 
             <Link
               to={`/n5/lessons/${activeLessonId}/listening`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
             >
               <span>🎧</span>
-              <span>Nghe Hiểu N5</span>
+              <span>Luyện Nghe</span>
             </Link>
 
             <Link
               to={`/n5/lessons/${activeLessonId}/reading`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
             >
               <span>📖</span>
-              <span>Đọc Hiểu N5</span>
+              <span>Luyện Đọc</span>
             </Link>
 
             <Link
               to={`/n5/lessons/${activeLessonId}/exercise`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
             >
               <span>✏️</span>
-              <span>Bài Tập N5</span>
+              <span>Bài Tập</span>
             </Link>
           </div>
 
@@ -196,15 +218,15 @@ export default function VocabularyPage() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Tìm từ vựng (Hiragana, Kanji, Hán Việt, Ý nghĩa)..."
-                className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all placeholder:text-slate-400"
+                placeholder="Tìm từ vựng (Hiragana, Kanji, Hán Việt, Nghĩa)..."
+                className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all placeholder:text-slate-400"
               />
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery("")}
                   className="absolute inset-y-0 right-0 pr-3 flex items-center text-xs text-slate-400 hover:text-slate-600"
                 >
-                  ✕ Clear
+                  ✕
                 </button>
               )}
             </div>
@@ -212,8 +234,19 @@ export default function VocabularyPage() {
             {/* View Mode Toggle */}
             <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200/60 self-end sm:self-auto">
               <button
+                onClick={() => setViewMode("flashcard")}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
+                  viewMode === "flashcard"
+                    ? "bg-white text-indigo-700 shadow-xs"
+                    : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                <span>🎴</span>
+                <span>Thẻ Học 3D</span>
+              </button>
+              <button
                 onClick={() => setViewMode("table")}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
                   viewMode === "table"
                     ? "bg-white text-indigo-700 shadow-xs"
                     : "text-slate-600 hover:text-slate-900"
@@ -223,15 +256,15 @@ export default function VocabularyPage() {
                 <span>Dạng Bảng</span>
               </button>
               <button
-                onClick={() => setViewMode("card")}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
-                  viewMode === "card"
+                onClick={() => setViewMode("grid")}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
+                  viewMode === "grid"
                     ? "bg-white text-indigo-700 shadow-xs"
                     : "text-slate-600 hover:text-slate-900"
                 }`}
               >
-                <span>🎴</span>
-                <span>Dạng Thẻ</span>
+                <span>🗂️</span>
+                <span>Lưới Thẻ</span>
               </button>
             </div>
           </div>
@@ -272,7 +305,15 @@ export default function VocabularyPage() {
         {/* Content Display */}
         {!isLoading && !error && filteredVocabularies.length > 0 && (
           <>
-            {/* TABLE VIEW */}
+            {/* 1. FLASHCARD 3D INTERACTIVE SESSION (Mockup 2) */}
+            {viewMode === "flashcard" && (
+              <InteractiveFlashcardSession
+                vocabularies={filteredVocabularies}
+                onClose={() => setViewMode("table")}
+              />
+            )}
+
+            {/* 2. TABLE VIEW */}
             {viewMode === "table" && (
               <div className="bg-white rounded-3xl border border-slate-200/80 shadow-xs overflow-hidden">
                 <div className="overflow-x-auto">
@@ -284,6 +325,7 @@ export default function VocabularyPage() {
                         <th className="py-4 px-6">Kanji</th>
                         <th className="py-4 px-6">Hán Việt</th>
                         <th className="py-4 px-6">Ý Nghĩa</th>
+                        <th className="py-4 px-6 text-center w-20">Yêu Thích</th>
                         <th className="py-4 px-6 text-center w-24">Âm Thanh</th>
                       </tr>
                     </thead>
@@ -309,7 +351,7 @@ export default function VocabularyPage() {
                           </td>
                           <td className="py-4 px-6">
                             {vocab.hanViet ? (
-                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-100">
+                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200/80">
                                 {vocab.hanViet}
                               </span>
                             ) : (
@@ -320,10 +362,18 @@ export default function VocabularyPage() {
                             {vocab.meaning}
                           </td>
                           <td className="py-4 px-6 text-center" onClick={(e) => e.stopPropagation()}>
+                            <div className="flex justify-center">
+                              <FavoriteButton contentType="VOCABULARY" contentId={vocab.id} size="sm" />
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center" onClick={(e) => e.stopPropagation()}>
                             <button
-                              disabled
-                              className="w-8 h-8 rounded-full bg-slate-100 text-slate-300 flex items-center justify-center text-xs cursor-not-allowed mx-auto hover:bg-slate-100"
-                              title="Chưa có file âm thanh"
+                              type="button"
+                              onClick={(e) =>
+                                playWordAudio(vocab.hiragana || vocab.kanji || "", vocab.audioUrl || undefined, e)
+                              }
+                              className="w-8 h-8 rounded-full bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-600 flex items-center justify-center text-xs transition-colors mx-auto shadow-2xs cursor-pointer"
+                              title="Nghe phát âm chuẩn"
                             >
                               🔊
                             </button>
@@ -336,8 +386,8 @@ export default function VocabularyPage() {
               </div>
             )}
 
-            {/* CARD VIEW */}
-            {viewMode === "card" && (
+            {/* 3. CARD GRID VIEW */}
+            {viewMode === "grid" && (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredVocabularies.map((vocab, index) => (
                   <div
@@ -347,14 +397,20 @@ export default function VocabularyPage() {
                   >
                     <div>
                       <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-md">
-                          #{index + 1}
-                        </span>
-                        {vocab.hanViet && (
-                          <span className="text-xs font-bold px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-md border border-indigo-100">
-                            {vocab.hanViet}
+                        <div className="flex items-center space-x-2">
+                          <span className="text-xs font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-md">
+                            #{index + 1}
                           </span>
-                        )}
+                          {vocab.hanViet && (
+                            <span className="text-xs font-bold px-2.5 py-1 bg-amber-50 text-amber-800 rounded-md border border-amber-200/80 uppercase">
+                              {vocab.hanViet}
+                            </span>
+                          )}
+                        </div>
+
+                        <div onClick={(e) => e.stopPropagation()}>
+                          <FavoriteButton contentType="VOCABULARY" contentId={vocab.id} size="sm" />
+                        </div>
                       </div>
 
                       <div className="mb-4">
@@ -379,10 +435,12 @@ export default function VocabularyPage() {
                           Xem chi tiết →
                         </span>
                         <button
-                          disabled
-                          className="text-xs text-slate-300 p-1.5 rounded-md cursor-not-allowed"
-                          title="Chưa có file âm thanh"
-                          onClick={(e) => e.stopPropagation()}
+                          type="button"
+                          className="w-8 h-8 rounded-full bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-600 flex items-center justify-center text-xs transition-colors cursor-pointer"
+                          title="Nghe phát âm"
+                          onClick={(e) =>
+                            playWordAudio(vocab.hiragana || vocab.kanji || "", vocab.audioUrl || undefined, e)
+                          }
                         >
                           🔊
                         </button>

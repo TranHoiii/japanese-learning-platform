@@ -1,4 +1,5 @@
 import { Vocabulary } from "../types/vocabulary";
+import FavoriteButton from "./favorite/FavoriteButton";
 
 interface VocabularyDetailModalProps {
   vocabulary: Vocabulary | null;
@@ -19,18 +20,43 @@ export default function VocabularyDetailModal({
       >
         {/* Modal Header */}
         <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 relative">
-          <button
-            onClick={onClose}
-            className="absolute top-4 right-4 text-slate-400 hover:text-white bg-white/10 hover:bg-white/20 w-8 h-8 rounded-full flex items-center justify-center transition-colors"
-          >
-            ✕
-          </button>
+          <div className="absolute top-4 right-4 flex items-center space-x-2">
+            <FavoriteButton
+              contentType="VOCABULARY"
+              contentId={vocabulary.id}
+              size="sm"
+            />
+            <button
+              onClick={onClose}
+              className="text-slate-400 hover:text-white bg-white/10 hover:bg-white/20 w-8 h-8 rounded-full flex items-center justify-center transition-colors cursor-pointer"
+            >
+              ✕
+            </button>
+          </div>
           <div className="text-xs uppercase tracking-wider text-indigo-300 font-semibold mb-1">
             Chi tiết từ vựng #{vocabulary.id}
           </div>
-          <h2 className="text-3xl font-extrabold jp-font tracking-wide">
-            {vocabulary.hiragana}
-          </h2>
+          <div className="flex items-center space-x-3">
+            <h2 className="text-3xl font-extrabold jp-font tracking-wide">
+              {vocabulary.hiragana}
+            </h2>
+            <button
+              type="button"
+              onClick={() => {
+                if ("speechSynthesis" in window) {
+                  window.speechSynthesis.cancel();
+                  const u = new SpeechSynthesisUtterance(vocabulary.hiragana || vocabulary.kanji || "");
+                  u.lang = "ja-JP";
+                  u.rate = 0.9;
+                  window.speechSynthesis.speak(u);
+                }
+              }}
+              className="w-8 h-8 rounded-full bg-white/15 hover:bg-indigo-600 text-white flex items-center justify-center text-xs transition-colors cursor-pointer"
+              title="Phát âm"
+            >
+              🔊
+            </button>
+          </div>
           {vocabulary.kanji && (
             <div className="text-xl text-slate-300 font-medium kanji-text mt-1">
               {vocabulary.kanji}
