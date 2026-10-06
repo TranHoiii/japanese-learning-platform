@@ -88,11 +88,11 @@ export default function LessonsPage() {
               {isN4 ? "📗 JLPT N4 • 25 Bài học Minnano Nihongo" : "🌸 JLPT N5 • 25 Bài học Minnano Nihongo"}
             </span>
             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-              {isN4 ? "Lộ Trình Từ Vựng 25 Bài Học N4" : "Lộ Trình Toàn Diện 25 Bài Học N5"}
+              {isN4 ? "Lộ Trình Học Tập 25 Bài N4 (Bài 26 - 50)" : "Lộ Trình Toàn Diện 25 Bài Học N5"}
             </h1>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               {isN4
-                ? "Tổng hợp đầy đủ 1138 từ vựng tiếng Nhật trình độ N4 chuẩn giáo trình Minnano Nihongo (Bài 26 đến Bài 50)."
+                ? "Tổng hợp đầy đủ 1138 từ vựng và 91 mẫu ngữ pháp tiếng Nhật trình độ N4 chuẩn giáo trình Minnano Nihongo (Bài 26 đến Bài 50)."
                 : "Tổng hợp đầy đủ các bài học chuẩn Minnano Nihongo. Mỗi bài bao gồm Từ vựng, Ngữ pháp mẫu câu, Hán tự Kanji, Luyện nghe Audio bản xứ, Luyện đọc hiểu và Bài tập củng cố."}
             </p>
           </div>
@@ -225,14 +225,20 @@ export default function LessonsPage() {
                   {/* Skills Pills */}
                   <div>
                     {isN4 ? (
-                      <div className="pt-3 border-t border-slate-100">
+                      <div className="pt-3 border-t border-slate-100 grid grid-cols-2 gap-2">
                         <Link
                           to={`/n4/lessons/${lesson.id}/vocabulary`}
-                          className="w-full py-2.5 rounded-xl bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1.5"
+                          className="py-2 px-1 rounded-xl bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
                         >
                           <span>📚</span>
-                          <span>Học Từ vựng Bài {lesson.lessonNumber}</span>
-                          <span>&rarr;</span>
+                          <span>Từ vựng</span>
+                        </Link>
+                        <Link
+                          to={`/n4/lessons/${lesson.id}/grammar`}
+                          className="py-2 px-1 rounded-xl bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
+                        >
+                          <span>⛩️</span>
+                          <span>Ngữ pháp</span>
                         </Link>
                       </div>
                     ) : (

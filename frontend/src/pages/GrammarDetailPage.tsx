@@ -77,6 +77,8 @@ export default function GrammarDetailPage() {
       currentProgress?.contentViewed &&
       currentProgress?.examplesViewed);
 
+  const isN4 = (grammar?.lessonId && grammar.lessonId >= 26) || false;
+
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
       <Navbar />
@@ -88,8 +90,8 @@ export default function GrammarDetailPage() {
               Trang chủ
             </Link>
             <span>/</span>
-            <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-              Bài học N5
+            <Link to={isN4 ? "/n4/lessons" : "/n5/lessons"} className="hover:text-slate-900 transition-colors">
+              {isN4 ? "Bài học N4" : "Bài học N5"}
             </Link>
             <span>/</span>
             <span className="font-semibold text-slate-900">Chi tiết ngữ pháp #{id}</span>
@@ -281,7 +283,7 @@ export default function GrammarDetailPage() {
               {/* Back button */}
               <div className="pt-4 border-t border-slate-100 flex justify-end">
                 <Link
-                  to={`/n5/lessons/${grammar.lessonId}/grammar`}
+                  to={isN4 ? `/n4/lessons/${grammar.lessonId}/grammar` : `/n5/lessons/${grammar.lessonId}/grammar`}
                   className="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-semibold transition-colors"
                 >
                   ← Quay lại ngữ pháp bài học
