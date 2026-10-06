@@ -49,6 +49,9 @@ export default function KanjiDetailPage() {
     }
   };
 
+  const isN4 = kanji?.levelCode === "N4" || (kanji?.lessonNumber ? kanji.lessonNumber >= 26 : false);
+  const levelCode = isN4 ? "N4" : "N5";
+
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
       <Navbar />
@@ -59,8 +62,8 @@ export default function KanjiDetailPage() {
             Trang chủ
           </Link>
           <span>/</span>
-          <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-            Bài học N5
+          <Link to={isN4 ? "/n4/lessons" : "/n5/lessons"} className="hover:text-slate-900 transition-colors">
+            {isN4 ? "Bài học N4" : "Bài học N5"}
           </Link>
           <span>/</span>
           <span className="font-semibold text-slate-900">Chi tiết Hán tự Kanji #{id}</span>
@@ -81,7 +84,7 @@ export default function KanjiDetailPage() {
               Hán tự Kanji với ID #{id} không tồn tại hoặc đã bị xóa.
             </p>
             <Link
-              to="/n5/lessons"
+              to={isN4 ? "/n4/lessons" : "/n5/lessons"}
               className="inline-flex items-center px-4 py-2 bg-amber-600 text-white font-semibold rounded-xl text-sm"
             >
               Quay lại danh sách bài học
@@ -96,7 +99,7 @@ export default function KanjiDetailPage() {
               <div>
                 <div className="flex items-center space-x-3 mb-2">
                   <span className="text-xs uppercase tracking-wider text-amber-300 font-bold">
-                    Kanji N5 #{kanji.id}
+                    Kanji {levelCode} #{kanji.id}
                   </span>
                   {kanji.strokeCount && (
                     <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-500/30 text-amber-200 border border-amber-400/40">

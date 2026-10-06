@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate, Link, useLocation } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { kanjiApi } from "../services/kanjiApi";
 import { vocabularyApi } from "../services/vocabularyApi";
@@ -8,28 +8,32 @@ import Navbar from "../components/Navbar";
 export default function KanjiPage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const [searchQuery, setSearchQuery] = useState("");
 
-  // 1. Get Level N5
+  const isN4 = location.pathname.startsWith("/n4") || location.pathname.includes("n4");
+  const levelCode = isN4 ? "N4" : "N5";
+
+  // 1. Get Level
   const { data: levels } = useQuery({
     queryKey: ["levels"],
     queryFn: vocabularyApi.getLevels,
   });
 
-  const n5Level = levels?.find((l) => l.code === "N5") || levels?.[0];
+  const targetLevel = levels?.find((l) => l.code === levelCode) || (isN4 ? levels?.find((l) => l.code === "N4") : levels?.[0]);
 
   // 2. Get Lessons list for selector
   const { data: lessons } = useQuery({
-    queryKey: ["lessons", n5Level?.id],
-    queryFn: () => vocabularyApi.getLessonsByLevel(n5Level!.id),
-    enabled: !!n5Level,
+    queryKey: ["lessons", targetLevel?.id],
+    queryFn: () => vocabularyApi.getLessonsByLevel(targetLevel!.id),
+    enabled: !!targetLevel,
   });
 
   const activeLessonId = lessonId
     ? parseInt(lessonId, 10)
     : lessons && lessons.length > 0
     ? lessons[0].id
-    : 1;
+    : isN4 ? 26 : 1;
 
   const currentLesson = lessons?.find((l) => l.id === activeLessonId);
 
@@ -59,7 +63,7 @@ export default function KanjiPage() {
   const handleLessonChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const targetId = e.target.value;
     if (targetId) {
-      navigate(`/n5/lessons/${targetId}/kanji`);
+      navigate(`/${isN4 ? "n4" : "n5"}/lessons/${targetId}/kanji`);
     }
   };
 
@@ -74,8 +78,8 @@ export default function KanjiPage() {
             Trang chủ
           </Link>
           <span>/</span>
-          <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-            Bài học N5
+          <Link to={isN4 ? "/n4/lessons" : "/n5/lessons"} className="hover:text-slate-900 transition-colors">
+            {isN4 ? "Bài học N4" : "Bài học N5"}
           </Link>
           <span>/</span>
           <span className="font-semibold text-slate-900">
@@ -88,8 +92,12 @@ export default function KanjiPage() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <div className="flex items-center space-x-3 mb-2">
-                <span className="px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">
-                  JLPT N5
+                <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                  isN4
+                    ? "bg-emerald-50 text-emerald-700 border border-emerald-200/60"
+                    : "bg-rose-50 text-rose-700 border border-rose-200/60"
+                }`}>
+                  JLPT {levelCode}
                 </span>
                 <span className="text-xs font-bold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200/60">
                   {currentLesson ? currentLesson.title : `Bài học ${activeLessonId}`}
@@ -101,7 +109,7 @@ export default function KanjiPage() {
                 )}
               </div>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                {currentLesson ? `Kanji N5 - ${currentLesson.title}` : "Hán tự Kanji N5"}
+                {currentLesson ? `Kanji ${levelCode} - ${currentLesson.title}` : `Hán tự Kanji ${levelCode}`}
               </h1>
             </div>
 
@@ -127,55 +135,83 @@ export default function KanjiPage() {
           </div>
 
           {/* Module Switcher Tabs */}
-          <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2">
-            <Link
-              to={`/n5/lessons/${activeLessonId}/vocabulary`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
-            >
-              <span>📚</span>
-              <span>Từ Vựng N5</span>
-            </Link>
+          {isN4 ? (
+            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto pb-2">
+              <Link
+                to={`/n4/lessons/${activeLessonId}/vocabulary`}
+                className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
+              >
+                <span>📚</span>
+                <span>Từ Vựng N4</span>
+              </Link>
 
-            <Link
-              to={`/n5/lessons/${activeLessonId}/grammar`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
-            >
-              <span>⛩️</span>
-              <span>Ngữ Pháp N5</span>
-            </Link>
+              <Link
+                to={`/n4/lessons/${activeLessonId}/grammar`}
+                className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
+              >
+                <span>⛩️</span>
+                <span>Ngữ Pháp N4</span>
+              </Link>
 
-            <Link
-              to={`/n5/lessons/${activeLessonId}/kanji`}
-              className="px-5 py-2.5 rounded-xl text-sm font-bold bg-amber-500 text-white shadow-md shadow-amber-500/20 transition-all flex items-center space-x-2"
-            >
-              <span>🈁</span>
-              <span>Kanji N5</span>
-            </Link>
+              <Link
+                to={`/n4/lessons/${activeLessonId}/kanji`}
+                className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-amber-500 text-white shadow-md shadow-amber-500/20 transition-all flex items-center space-x-2 shrink-0"
+              >
+                <span>🈁</span>
+                <span>Kanji N4</span>
+              </Link>
+            </div>
+          ) : (
+            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto pb-2">
+              <Link
+                to={`/n5/lessons/${activeLessonId}/vocabulary`}
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              >
+                <span>📚</span>
+                <span>Từ Vựng N5</span>
+              </Link>
 
-            <Link
-              to={`/n5/lessons/${activeLessonId}/listening`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
-            >
-              <span>🎧</span>
-              <span>Nghe Hiểu N5</span>
-            </Link>
+              <Link
+                to={`/n5/lessons/${activeLessonId}/grammar`}
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              >
+                <span>⛩️</span>
+                <span>Ngữ Pháp N5</span>
+              </Link>
 
-            <Link
-              to={`/n5/lessons/${activeLessonId}/reading`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
-            >
-              <span>📖</span>
-              <span>Đọc Hiểu N5</span>
-            </Link>
+              <Link
+                to={`/n5/lessons/${activeLessonId}/kanji`}
+                className="px-5 py-2.5 rounded-xl text-sm font-bold bg-amber-500 text-white shadow-md shadow-amber-500/20 transition-all flex items-center space-x-2"
+              >
+                <span>🈁</span>
+                <span>Kanji N5</span>
+              </Link>
 
-            <Link
-              to={`/n5/lessons/${activeLessonId}/exercise`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
-            >
-              <span>✏️</span>
-              <span>Bài Tập N5</span>
-            </Link>
-          </div>
+              <Link
+                to={`/n5/lessons/${activeLessonId}/listening`}
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              >
+                <span>🎧</span>
+                <span>Nghe Hiểu N5</span>
+              </Link>
+
+              <Link
+                to={`/n5/lessons/${activeLessonId}/reading`}
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              >
+                <span>📖</span>
+                <span>Đọc Hiểu N5</span>
+              </Link>
+
+              <Link
+                to={`/n5/lessons/${activeLessonId}/exercise`}
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              >
+                <span>✏️</span>
+                <span>Bài Tập N5</span>
+              </Link>
+            </div>
+          )}
 
           {/* Search Box */}
           <div className="mt-6 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">

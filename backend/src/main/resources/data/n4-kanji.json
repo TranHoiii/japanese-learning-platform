@@ -1,0 +1,7358 @@
+[
+  {
+    "kanji": "家",
+    "hanViet": "GIA",
+    "onyomi": "カ",
+    "kunyomi": "いえ, や",
+    "meaning": "nhà",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05bb6.svg",
+    "mnemonic": "Nhà (宀) nuôi Lợn (豕)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "家",
+        "reading": "いえ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "大家さん",
+        "reading": "おおやさん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "家賃",
+        "reading": "やちん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "家族",
+        "reading": "かぞく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "家内",
+        "reading": "かない",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "小説家",
+        "reading": "しょうせつか",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "家庭",
+        "reading": "かてい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "族",
+    "hanViet": "TỘC",
+    "onyomi": "ゾク",
+    "kunyomi": null,
+    "meaning": "dòng tộc",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/065cf.svg",
+    "mnemonic": "Nằm (𠂉) bắn Tên (矢) là Phương pháp (方) của gia Tộc (族)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "家族",
+        "reading": "かぞく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "水族館",
+        "reading": "すいぞくかん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "親族",
+        "reading": "しんぞく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "奥",
+    "hanViet": "ÁO",
+    "onyomi": null,
+    "kunyomi": "おく",
+    "meaning": "vợ, góc trong cùng",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05965.svg",
+    "mnemonic": "Cơm áo Gạo (米) tiền là chuyện Lớn (大) của các bà Vợ (大) mọi khu Vực (冂)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "奥",
+        "reading": "おく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "奥さん",
+        "reading": "おくさん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "育",
+    "hanViet": "DỤC",
+    "onyomi": "イク",
+    "kunyomi": "そだ・つ, そだ・てる",
+    "meaning": "giáo dục, thể dục",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/080b2.svg",
+    "mnemonic": "Cả Tháng (月) giáo Dục  (育) Đầu (亠) Tư (ム)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "育てる",
+        "reading": "そだてる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "育つ",
+        "reading": "そだつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "教育",
+        "reading": "きょういく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "体育",
+        "reading": "たいいく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "部",
+    "hanViet": "BỘ",
+    "onyomi": "ブ",
+    "kunyomi": null,
+    "meaning": "bộ phận",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/090e8.svg",
+    "mnemonic": "Mồm (口) to Đứng (立) hô Bố (阝) làm Bộ (部) trưởng",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "部屋",
+        "reading": "へや",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "部下",
+        "reading": "ぶか",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "部長",
+        "reading": "ぶちょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "全部",
+        "reading": "ぜんぶ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "屋",
+    "hanViet": "ỐC",
+    "onyomi": "オク",
+    "kunyomi": "や",
+    "meaning": "phòng ốc cửa hàng",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05c4b.svg",
+    "mnemonic": "尸 THI 至 CHÍ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "花屋",
+        "reading": "はなや",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "本屋",
+        "reading": "ほんや",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "部屋",
+        "reading": "へや",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "床屋",
+        "reading": "とこや",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "屋上",
+        "reading": "おくじょう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "室",
+    "hanViet": "THẤT",
+    "onyomi": "シツ",
+    "kunyomi": null,
+    "meaning": "phòng",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05ba4.svg",
+    "mnemonic": "宀 MIÊN 至 CHÍ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "教室",
+        "reading": "きょうしつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "研究室",
+        "reading": "けんきゅうしつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "会議室",
+        "reading": "かいぎしつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "和室",
+        "reading": "わしつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洋室",
+        "reading": "ようしつ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "宅",
+    "hanViet": "TRẠCH",
+    "onyomi": "タク",
+    "kunyomi": null,
+    "meaning": "nhà",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05b85.svg",
+    "mnemonic": "Nhà 宅 (có mái nhà 宀 ) của bạn Momo (モ)chan",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "お宅",
+        "reading": "おたく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "帰宅",
+        "reading": "きたく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "自宅",
+        "reading": "じたく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "住宅",
+        "reading": "じゅうたく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "宅配便",
+        "reading": "たくはいびん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "親",
+    "hanViet": "THÂN",
+    "onyomi": "シン",
+    "kunyomi": "おや, した・しい",
+    "meaning": "thân thiết, phụ thân, mẫu thân",
+    "strokeCount": 16,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/089aa.svg",
+    "mnemonic": "Đứng (立) trên Cây (木) Nhìn (見) hướng theo người Thân (親)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "親",
+        "reading": "おや",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "父親",
+        "reading": "ちちおや",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "母親",
+        "reading": "ははおや",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "親子",
+        "reading": "おやこ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "親しい",
+        "reading": "したしい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "親切な",
+        "reading": "しんせつな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "両親",
+        "reading": "りょうしん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "親友",
+        "reading": "しんゆう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "切",
+    "hanViet": "THIẾT",
+    "onyomi": "セツ",
+    "kunyomi": "き・る",
+    "meaning": "cắt, thân thiết",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05207.svg",
+    "mnemonic": "Dùng 7 (七) thanh Đao (刀 ) để Cắt (切)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      26
+    ],
+    "sortOrder": 10,
+    "compounds": [
+      {
+        "word": "切る",
+        "reading": "きる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "切手",
+        "reading": "きって",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "切符",
+        "reading": "きっぷ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "締め切り",
+        "reading": "しめきり",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "大切な",
+        "reading": "たいせつな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "親切な",
+        "reading": "しんせつな",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "近",
+    "hanViet": "CẬN",
+    "onyomi": "キン",
+    "kunyomi": "ちか・い",
+    "meaning": "gần",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08fd1.svg",
+    "mnemonic": "Cân (斤) Đi (辶) lân Cận (近)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      27
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "近い",
+        "reading": "ちかい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "近く",
+        "reading": "ちかく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "近ごろ",
+        "reading": "ちかごろ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "近所",
+        "reading": "きんじょ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "最近",
+        "reading": "さいきん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "遠",
+    "hanViet": "VIỄN",
+    "onyomi": "エン",
+    "kunyomi": "とお・い",
+    "meaning": "xa",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09060.svg",
+    "mnemonic": "Chữ Viên (園) thay Vi (囗) thành bộ Sước (辶) thành Viễn (遠)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      27
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "遠い",
+        "reading": "とおい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "遠く",
+        "reading": "とおく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "遠足",
+        "reading": "えんそく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "速",
+    "hanViet": "TỐC",
+    "onyomi": "ソク",
+    "kunyomi": "はや・い",
+    "meaning": "nhanh",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0901f.svg",
+    "mnemonic": "Bó (束) lại đồ đạc để Đi (辶) trên đường thì sẽ Nhanh (速) hơn",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      27
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "速い",
+        "reading": "はやい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "高速道路",
+        "reading": "こうそくどうろ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "速達",
+        "reading": "そくたつ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "早",
+    "hanViet": "TẢO",
+    "onyomi": "ソウ",
+    "kunyomi": "はや・い",
+    "meaning": "sớm",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/065e9.svg",
+    "mnemonic": "Chủ Nhật (日) thức dậy lúc 10 (十) giờ vẫn là Sớm (早)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      27
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "早い",
+        "reading": "はやい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "早く",
+        "reading": "はやく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "早朝",
+        "reading": "そうちょう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "遅",
+    "hanViet": "TRÌ",
+    "onyomi": "チ",
+    "kunyomi": "おく・れる, おそ・い",
+    "meaning": "muộn, chậm",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09045.svg",
+    "mnemonic": "尸 THI 羊 DƯƠNG  辶 SƯỚC",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      27
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "遅い",
+        "reading": "おそい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "遅れる",
+        "reading": "おくれる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "遅刻する",
+        "reading": "ちこくする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "重",
+    "hanViet": "TRỌNG",
+    "onyomi": "ジュウ",
+    "kunyomi": "おも・い",
+    "meaning": "nặng",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/091cd.svg",
+    "mnemonic": "Xe (車) bị chặn 2 đầu nên Nặng (重)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      27
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "重い",
+        "reading": "おもい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "重ねる",
+        "reading": "かさねる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "体重",
+        "reading": "たいじゅう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "重要な",
+        "reading": "じゅうような",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "軽",
+    "hanViet": "KHINH",
+    "onyomi": "ケイ",
+    "kunyomi": "かる・い",
+    "meaning": "nhẹ",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08efd.svg",
+    "mnemonic": "Có Xe (車) có Đất (土) sẽ không bị Khinh (軽) (xem Nhẹ)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      27
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "軽い",
+        "reading": "かるい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "静",
+    "hanViet": "TĨNH",
+    "onyomi": "セイ",
+    "kunyomi": "しず・か",
+    "meaning": "yên tĩnh",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09759.svg",
+    "mnemonic": "Bầu trời trong Xanh (青) không có Chiến tranh (争) thật Tĩnh lặng (静)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      27
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "静かな",
+        "reading": "しずかな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "冷静な",
+        "reading": "れいせいな",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "緑",
+    "hanViet": "LỤC",
+    "onyomi": "リョク",
+    "kunyomi": "みどり",
+    "meaning": "xanh lá cây",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07dd1.svg",
+    "mnemonic": "Em (ヨ) Thủy(水) thích Tơ (糸) Xanh lá cây (緑)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      27
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "緑",
+        "reading": "みどり",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "借",
+    "hanViet": "TÁ",
+    "onyomi": "シャク",
+    "kunyomi": "か・りる",
+    "meaning": "mượn",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0501f.svg",
+    "mnemonic": "Ngày xưa (昔) con Người (亻) hay mượn (借) tiền của nhau",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      28
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "借りる",
+        "reading": "かりる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "借金",
+        "reading": "しゃっきん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "貸",
+    "hanViet": "THẢI",
+    "onyomi": null,
+    "kunyomi": "か・す",
+    "meaning": "cho mượn",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08cb8.svg",
+    "mnemonic": "Thời  Đại(代)  Cho Vay (貸) Tiền(貝)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      28
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "貸す",
+        "reading": "かす",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "送",
+    "hanViet": "TỐNG",
+    "onyomi": "ソウ",
+    "kunyomi": "おく・る",
+    "meaning": "gửi",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09001.svg",
+    "mnemonic": "Hộ Tống (送) đường tăng đi tây Thiên (天) (có 2 râu 关 )",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      28
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "送る",
+        "reading": "おくる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "見送る",
+        "reading": "みおくる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "送別会",
+        "reading": "そうべつかい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "送料",
+        "reading": "そうりょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "放送",
+        "reading": "ほうそう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "客",
+    "hanViet": "KHÁCH",
+    "onyomi": "キャク, カク",
+    "kunyomi": null,
+    "meaning": "khách hàng",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05ba2.svg",
+    "mnemonic": "Dưới mái Nhà (宀) có Các (各) vị Khách (客)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      28
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "お客さん",
+        "reading": "おきゃくさん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "お客様",
+        "reading": "おきゃくさま",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "工",
+    "hanViet": "CÔNG",
+    "onyomi": "コウ, ク",
+    "kunyomi": null,
+    "meaning": "công trường, công sức",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05de5.svg",
+    "mnemonic": "Giống chữ “e-エ” trong bảng Katakana",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      28
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "工場",
+        "reading": "こうじょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "工夫",
+        "reading": "くふう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "工業",
+        "reading": "こうぎょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "工事",
+        "reading": "こうじ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "場",
+    "hanViet": "TRƯỜNG",
+    "onyomi": "ジョウ",
+    "kunyomi": "ば",
+    "meaning": "hội trường, nơi chốn",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05834.svg",
+    "mnemonic": "Công Trường (場) phía trước có Đất (土 ), trên có mặt Trời (日), dưới có Đồ Vật (勿)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      28
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "場合",
+        "reading": "ばあい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "市場",
+        "reading": "いちば",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "場所",
+        "reading": "ばしょ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "売り場",
+        "reading": "うりば",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "乗り場",
+        "reading": "のりば",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "広場",
+        "reading": "ひろば",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "会場",
+        "reading": "かいじょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "工場",
+        "reading": "こうじょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "駐車場",
+        "reading": "ちゅうしゃじょう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "自",
+    "hanViet": "TỰ",
+    "onyomi": "シ, ジ",
+    "kunyomi": null,
+    "meaning": "tự mình, tự động, tự tin",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/081ea.svg",
+    "mnemonic": "Tự (自) nhiên Gai (丿) vào Mắt (目)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      28
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "自分",
+        "reading": "じぶん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "自由",
+        "reading": "じゆう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "自転車",
+        "reading": "じてんしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "自動車",
+        "reading": "じどうしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "自然",
+        "reading": "しぜん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "自信",
+        "reading": "じしん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "海",
+    "hanViet": "HẢI",
+    "onyomi": "カイ",
+    "kunyomi": "うみ",
+    "meaning": "biển",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06d77.svg",
+    "mnemonic": "Nước(氵) Mỗi (毎) ngày chảy ra Biển (海)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      28
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "海",
+        "reading": "うみ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "海外",
+        "reading": "かいがい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "北海道",
+        "reading": "ほっかいどう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "海岸",
+        "reading": "かいがん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "虫",
+    "hanViet": "TRÙNG",
+    "onyomi": null,
+    "kunyomi": "むし",
+    "meaning": "côn trùng",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0866b.svg",
+    "mnemonic": "Trung (中 ) Quốc có rất nhiều côn Trùng (虫)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      28
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "虫",
+        "reading": "むし",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "虫歯",
+        "reading": "むしば",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "当",
+    "hanViet": "ĐƯƠNG",
+    "onyomi": "トウ",
+    "kunyomi": "あ・てる, あ・たる",
+    "meaning": "trúng",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05f53.svg",
+    "mnemonic": "Em (ヨ) Bé (小) bắn Trúng (当) tên",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "当たる",
+        "reading": "あたる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "当てる",
+        "reading": "あてる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "本当に",
+        "reading": "ほんとうに",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "弁当",
+        "reading": "べんとう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "当時",
+        "reading": "とうじ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "適当",
+        "reading": "てきとう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "品",
+    "hanViet": "PHẨM",
+    "onyomi": "ヒン",
+    "kunyomi": "しな",
+    "meaning": "phẩm vật, hàng hóa",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/054c1.svg",
+    "mnemonic": "3 cái Mồm (口) tạo nên sản Phẩm (品)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "品物",
+        "reading": "しなもの",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "作品",
+        "reading": "さくひん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "製品",
+        "reading": "せいひん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "食料品",
+        "reading": "しょくりょうひん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "便",
+    "hanViet": "TIỆN",
+    "onyomi": "ビン, ベン",
+    "kunyomi": "たよ・り",
+    "meaning": "tiện lợi",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04fbf.svg",
+    "mnemonic": "亻 NHÂN 更 CANH (一NHẤT 日 NHẬT メ )",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "不便な",
+        "reading": "ふべんな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "便利な",
+        "reading": "べんりな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "宅配便",
+        "reading": "たくはいびん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "郵便局",
+        "reading": "ゆうびんきょく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "航空便",
+        "reading": "こうくうびん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "利",
+    "hanViet": "LỢI",
+    "onyomi": "リ",
+    "kunyomi": null,
+    "meaning": "tiện lợi",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05229.svg",
+    "mnemonic": "Cắt lúa (禾) bằng Đao (刂) thì rất tiện Lợi (利)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "便利な",
+        "reading": "べんりな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "利用する",
+        "reading": "りようする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "作",
+    "hanViet": "TÁC",
+    "onyomi": "サク, サ",
+    "kunyomi": "つく・る",
+    "meaning": "tạo ra",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04f5c.svg",
+    "mnemonic": "亻 NHÂN 乍 SẠ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "作る",
+        "reading": "つくる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "手作り",
+        "reading": "てづくり",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "作文",
+        "reading": "さくぶん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "作品",
+        "reading": "さくひん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "作家",
+        "reading": "さっか",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "動作",
+        "reading": "どうさ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "作業",
+        "reading": "さぎょう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "使",
+    "hanViet": "SỬ",
+    "onyomi": "シ",
+    "kunyomi": "つか・う",
+    "meaning": "sử dụng",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04f7f.svg",
+    "mnemonic": "1(一) quan lại trong Lịch Sử (史) Sử Dụng (使) Người (亻) dân",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "使う",
+        "reading": "つかう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "大使館",
+        "reading": "たいしかん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "使用中",
+        "reading": "しようちゅう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "起",
+    "hanViet": "KHỞI",
+    "onyomi": "キ",
+    "kunyomi": "お・きる, お・こす",
+    "meaning": "thức dậy",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08d77.svg",
+    "mnemonic": "Thức Dậy (起) lúc 2 giờ (己) để Chạy (走) tập thể dục",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "起きる",
+        "reading": "おきる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "起こす",
+        "reading": "おこす",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "起こる",
+        "reading": "おこる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "起立する",
+        "reading": "きりつする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "寝",
+    "hanViet": "TẨM",
+    "onyomi": "シン",
+    "kunyomi": "ね・る",
+    "meaning": "ngủ",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05bdd.svg",
+    "mnemonic": "宀MIÊN ヨ KÝ 冖MỊCH 又HỰU",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "寝る",
+        "reading": "ねる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "昼寝",
+        "reading": "ひるね",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "寝坊",
+        "reading": "ねぼう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "寝室",
+        "reading": "しんしつ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "紙",
+    "hanViet": "CHỈ",
+    "onyomi": "シ",
+    "kunyomi": "かみ",
+    "meaning": "giấy",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07d19.svg",
+    "mnemonic": "Chỉ (糸) Thị (氏) được viết lên Giấy (紙)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "紙",
+        "reading": "かみ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "手紙",
+        "reading": "てがみ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "度",
+    "hanViet": "ĐỘ",
+    "onyomi": "ド",
+    "kunyomi": null,
+    "meaning": "độ, lần",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05ea6.svg",
+    "mnemonic": "广NGHIỄM 又HỰU",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      29
+    ],
+    "sortOrder": 10,
+    "compounds": [
+      {
+        "word": "一度",
+        "reading": "いちど",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "今度",
+        "reading": "こんど",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "住",
+    "hanViet": "TRÚ",
+    "onyomi": "ジュウ",
+    "kunyomi": "す・む",
+    "meaning": "cư trú, sinh sống",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04f4f.svg",
+    "mnemonic": "Người (亻) Sống (住) cùng ông Chủ (主 )",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      30
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "住む",
+        "reading": "すむ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "住所",
+        "reading": "じゅうしょ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "住宅",
+        "reading": "じゅうたく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "住民",
+        "reading": "じゅうみん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "所",
+    "hanViet": "SỞ",
+    "onyomi": "ショ",
+    "kunyomi": "ところ",
+    "meaning": "địa điểm, nơi chốn",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06240.svg",
+    "mnemonic": "戸 HỘ 斤 CÂN",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      30
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "所",
+        "reading": "ところ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "台所",
+        "reading": "だいどころ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "住所",
+        "reading": "じゅうしょ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "近所",
+        "reading": "きんじょ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "場所",
+        "reading": "ばしょ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "事務所",
+        "reading": "じむしょ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "市役所",
+        "reading": "しやくしょ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "様",
+    "hanViet": "DẠNG",
+    "onyomi": "ヨウ",
+    "kunyomi": "さま",
+    "meaning": "đa dạng, ngài (kính ngữ)",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/069d8.svg",
+    "mnemonic": "木 MỘC 羊DƯƠNG 水THỦY",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      30
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "神様",
+        "reading": "かみさま",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "田中様",
+        "reading": "たなかさま",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "様々な",
+        "reading": "さまざまな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "お客様",
+        "reading": "おきゃくさま",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "様子",
+        "reading": "ようす",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "主",
+    "hanViet": "CHỦ",
+    "onyomi": "シュ",
+    "kunyomi": "ぬし, おも",
+    "meaning": "chủ nhân, chủ đề",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e3b.svg",
+    "mnemonic": "亠 ĐẦU 王 VƯƠNG",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      30
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "主に",
+        "reading": "おもに",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "持ち主",
+        "reading": "もちぬし",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "主人",
+        "reading": "しゅじん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "主題",
+        "reading": "しゅだい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "番",
+    "hanViet": "PHIÊN",
+    "onyomi": "バン",
+    "kunyomi": null,
+    "meaning": "số",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0756a.svg",
+    "mnemonic": "Cắt (ノ) Lúa trên Đồng (田) theo Phiên (番)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      30
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "一番",
+        "reading": "いちばん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "何番",
+        "reading": "なんばん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "交番",
+        "reading": "こうばん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "番号",
+        "reading": "ばんごう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "号",
+    "hanViet": "HIỆU",
+    "onyomi": "ゴウ",
+    "kunyomi": null,
+    "meaning": "ký hiệu, số",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/053f7.svg",
+    "mnemonic": "Hô (口) to khẩu Hiệu (号) 5 (丂) lần",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      30
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "番号",
+        "reading": "ばんごう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "記号",
+        "reading": "きごう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "交",
+    "hanViet": "GIAO",
+    "onyomi": "コウ",
+    "kunyomi": "ま・ぜる, ま・じる",
+    "meaning": "giao nhau, giao thông, trộn",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04ea4.svg",
+    "mnemonic": "Ông Bố (父) Đầu (亠 ) đội mũ đi Giao (交) lưu",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      30
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "交ぜる",
+        "reading": "まぜる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "交通",
+        "reading": "こうつう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "交通事故",
+        "reading": "こうつうじこ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "交差点",
+        "reading": "こうさてん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "通",
+    "hanViet": "THÔNG",
+    "onyomi": "ツウ",
+    "kunyomi": "とお・る, かよ・う",
+    "meaning": "thông qua, giao thông",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0901a.svg",
+    "mnemonic": "Dũng (甬 ) cảm Đi (辶) Thông (通) qua đường",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      30
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "通る",
+        "reading": "とおる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "通う",
+        "reading": "かよう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "交通",
+        "reading": "こうつう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "建",
+    "hanViet": "KIẾN",
+    "onyomi": "ケン",
+    "kunyomi": "た・てる",
+    "meaning": "kiến thiết, xây dựng",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05efa.svg",
+    "mnemonic": "Kiến (建) trúc sư Đi (廴) vẽ nhà bằng cây Bút (聿)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      30
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "建てる",
+        "reading": "たてる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "建物",
+        "reading": "たてもの",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "建設",
+        "reading": "けんせつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "建築",
+        "reading": "けんちく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "京",
+    "hanViet": "KINH",
+    "onyomi": "キョウ",
+    "kunyomi": null,
+    "meaning": "kinh đô",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04eac.svg",
+    "mnemonic": "Đầu (亠) Mồm (口)  Nhỏ (小) là người ở Kinh đô (京)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      31
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "東京",
+        "reading": "とうきょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "京都",
+        "reading": "きょうと",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "都",
+    "hanViet": "ĐÔ",
+    "onyomi": "ト, ツ",
+    "kunyomi": "みやこ",
+    "meaning": "thủ đô",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/090fd.svg",
+    "mnemonic": "Người (者 ) thủ Đô (都) hay đi xe Bus (阝)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      31
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "都",
+        "reading": "みやこ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "首都",
+        "reading": "しゅと",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "京都",
+        "reading": "きょうと",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "東京都",
+        "reading": "とうきょうと",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "都会",
+        "reading": "とかい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "都合",
+        "reading": "つごう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "県",
+    "hanViet": "HUYỆN",
+    "onyomi": "ケン",
+    "kunyomi": null,
+    "meaning": "tỉnh",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0770c.svg",
+    "mnemonic": "Mắt (目) Lớn (L) mắt Nhỏ(小) là mấy ông trên Tỉnh (県)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      31
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "長野県",
+        "reading": "ながのけん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "市",
+    "hanViet": "THỊ",
+    "onyomi": "シ",
+    "kunyomi": "いち",
+    "meaning": "thành thị, chợ",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05e02.svg",
+    "mnemonic": "亠 ĐẦU 巾 CÂN",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      31
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "市場",
+        "reading": "いちば",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "都市",
+        "reading": "とし",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "市民",
+        "reading": "しみん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "市役所",
+        "reading": "しやくしょ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "ハノイ市",
+        "reading": "ハノイし",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "区",
+    "hanViet": "KHU",
+    "onyomi": "ク, タインスァン区",
+    "kunyomi": null,
+    "meaning": "khu vực",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0533a.svg",
+    "mnemonic": "Khu vực (区) đánh dấu (メ)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      31
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "区別する",
+        "reading": "くべつする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "村",
+    "hanViet": "THÔN",
+    "onyomi": "ソン",
+    "kunyomi": "むら",
+    "meaning": "làng",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06751.svg",
+    "mnemonic": "Nông Thôn (村) trồng nhiều cây (木) và thiếu Thốn (寸)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      31
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "村",
+        "reading": "むら",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "市町村",
+        "reading": "しちょうそん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "村長",
+        "reading": "そんちょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "農村",
+        "reading": "のうそん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "仕",
+    "hanViet": "SỸ",
+    "onyomi": "シ",
+    "kunyomi": null,
+    "meaning": "công việc",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04ed5.svg",
+    "mnemonic": "Người (亻) binh Sĩ (士) đang làm Công việc (仕) của mình",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      31
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "仕事",
+        "reading": "しごと",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "仕方",
+        "reading": "しかた",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "事",
+    "hanViet": "SỰ",
+    "onyomi": "ジ",
+    "kunyomi": "こと",
+    "meaning": "sự việc",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e8b.svg",
+    "mnemonic": "Qua 1 (一) Mồm (口) Em (ヨ) thì Sự việc (事) trở nên khác",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      31
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "事",
+        "reading": "こと",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "仕事",
+        "reading": "しごと",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "食事",
+        "reading": "しょくじ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "火事",
+        "reading": "かじ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "用事",
+        "reading": "ようじ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "事務所",
+        "reading": "じむしょ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "返事",
+        "reading": "へんじ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "員",
+    "hanViet": "VIÊN",
+    "onyomi": "イン",
+    "kunyomi": null,
+    "meaning": "nhân viên",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/054e1.svg",
+    "mnemonic": "Nhân Viên (員) đi làm kiếm Tiền (貝) nuôi cái Mồm (口)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      31
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "会社員",
+        "reading": "かいしゃいん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "店員",
+        "reading": "てんいん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "銀行員",
+        "reading": "ぎんこういん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "全員",
+        "reading": "ぜんいん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "映",
+    "hanViet": "ẢNH",
+    "onyomi": "エイ",
+    "kunyomi": "うつ・る, うつ・す",
+    "meaning": "phim ảnh",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06620.svg",
+    "mnemonic": "Vào chủ Nhât (日) lên Trung ương (央) xem Phim (映)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      32
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "映す",
+        "reading": "うつす",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "映る",
+        "reading": "うつる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "映画",
+        "reading": "えいが",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "映画館",
+        "reading": "えいがかん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "画",
+    "hanViet": "HỌA",
+    "onyomi": "ガ, カク",
+    "kunyomi": null,
+    "meaning": "ảnh họa, kế hoạch",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0753b.svg",
+    "mnemonic": "一 NHẤT 由 DO 凵 KHẢM",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      32
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "映画",
+        "reading": "えいが",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "計画",
+        "reading": "けいかく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "画家",
+        "reading": "がか",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "漫画",
+        "reading": "まんが",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "図",
+    "hanViet": "ĐỒ",
+    "onyomi": "ズ, ト",
+    "kunyomi": null,
+    "meaning": "bản đồ, hình vẽ",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/056f3.svg",
+    "mnemonic": "Đánh dấu X (乂) 2 điểm ở trên phạm Vi (囗) bản Đồ (図)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      32
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "図",
+        "reading": "ず",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "地図",
+        "reading": "ちず",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "図書館",
+        "reading": "としょかん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "意図",
+        "reading": "いと",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "館",
+    "hanViet": "QUÁN",
+    "onyomi": "カン",
+    "kunyomi": null,
+    "meaning": "hội quán",
+    "strokeCount": 16,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09928.svg",
+    "mnemonic": "Quan (官) ngồi Ăn (飠) ở Quán (館)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      32
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "図書館",
+        "reading": "としょかん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "映画館",
+        "reading": "えいがかん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "大使館",
+        "reading": "たいしかん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "旅館",
+        "reading": "りょかん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "美術館",
+        "reading": "びじゅつかん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "公",
+    "hanViet": "CÔNG",
+    "onyomi": "コウ",
+    "kunyomi": null,
+    "meaning": "công cộng, công bằng, công viên",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0516c.svg",
+    "mnemonic": "Làm 1 việc Tư (厶 ) bằng 8 (八 ) việc Công (公)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      32
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "公園",
+        "reading": "こうえん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "公平",
+        "reading": "こうへい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "園",
+    "hanViet": "VIÊN",
+    "onyomi": "エン",
+    "kunyomi": null,
+    "meaning": "công viên",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05712.svg",
+    "mnemonic": "Công viên có rào vây Quanh (囗 ), thứ 7(土) hàng tuần mặc Quần áo (衣) đẹp đi công Viên (園)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      32
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "公園",
+        "reading": "こうえん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "動物園",
+        "reading": "どうぶつえん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "遊園地",
+        "reading": "ゆうえんち",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "去",
+    "hanViet": "KHỨ",
+    "onyomi": "コ, キョ",
+    "kunyomi": null,
+    "meaning": "quá khứ",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/053bb.svg",
+    "mnemonic": "Chôn chuyện quá Khứ (去)  riêng Tư (厶 ) xuống Đất (土)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      32
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "去年",
+        "reading": "きょねん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "過去",
+        "reading": "かこ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "地",
+    "hanViet": "ĐỊA",
+    "onyomi": "チ, ジ",
+    "kunyomi": null,
+    "meaning": "đất",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05730.svg",
+    "mnemonic": "Dã (也) Thổ (土) là Đất (地)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      32
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "地図",
+        "reading": "ちず",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "地下",
+        "reading": "ちか",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "地下鉄",
+        "reading": "ちかてつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "地震",
+        "reading": "じしん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "土地",
+        "reading": "とち",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "池",
+    "hanViet": "TRÌ",
+    "onyomi": "チ",
+    "kunyomi": "いけ",
+    "meaning": "cái ao, cục pin",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06c60.svg",
+    "mnemonic": "Dã (也) Địa ( 氵 ) là Ao (池)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      32
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "池",
+        "reading": "いけ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "電池",
+        "reading": "でんち",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "夫",
+    "hanViet": "PHU",
+    "onyomi": "フ, フウ",
+    "kunyomi": "おっと",
+    "meaning": "chồng",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0592b.svg",
+    "mnemonic": "Chồng (夫) cao hơn Trời (天)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      33
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "夫",
+        "reading": "おっと",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "夫人",
+        "reading": "ふじん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "丈夫な",
+        "reading": "じょうぶな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "大丈夫",
+        "reading": "だいじょうぶ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "工夫",
+        "reading": "くふう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "夫妻",
+        "reading": "ふさい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "妻",
+    "hanViet": "THÊ",
+    "onyomi": "サイ",
+    "kunyomi": "つま",
+    "meaning": "vợ",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/059bb.svg",
+    "mnemonic": "Người phụ Nữ (女) cầm Bút (聿) viết đó là Vợ (妻) tôi",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      33
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "妻",
+        "reading": "つま",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "夫妻",
+        "reading": "ふさい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "特",
+    "hanViet": "ĐẶC",
+    "onyomi": "トク",
+    "kunyomi": null,
+    "meaning": "đặc biệt",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07279.svg",
+    "mnemonic": "ở Chùa (寺) nuôi Trâu (牛 ) thì Đặc (特) biệt",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      33
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "特に",
+        "reading": "とくに",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "特別な",
+        "reading": "とくべつな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "特急",
+        "reading": "とっきゅう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "思",
+    "hanViet": "TƯ",
+    "onyomi": "シ",
+    "kunyomi": "おも・う",
+    "meaning": "nghĩ, suy tư",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0601d.svg",
+    "mnemonic": "Mảnh Ruộng (田 ) là nơi gửi gắm Tâm (心) Tư(思) suy nghĩ của người nông dân",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      33
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "思う",
+        "reading": "おもう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "思い出す",
+        "reading": "おもいだす",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "思い出",
+        "reading": "おもいで",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "不思議な",
+        "reading": "ふしぎな",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "考",
+    "hanViet": "KHẢO",
+    "onyomi": "コウ",
+    "kunyomi": "かんが・える",
+    "meaning": "suy nghĩ, tham khảo",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08003.svg",
+    "mnemonic": "Chống gậy (ノ) xuống Đất (土) Suy nghĩ (考) 5 (丂) lần",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      33
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "考える",
+        "reading": "かんがえる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "考え",
+        "reading": "かんがえ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "考え方",
+        "reading": "かんがえかた",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "参考",
+        "reading": "さんこう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "参考書",
+        "reading": "さんこうしょ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "科",
+    "hanViet": "KHOA",
+    "onyomi": "カ",
+    "kunyomi": null,
+    "meaning": "khoa học, chuyên khoa",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/079d1.svg",
+    "mnemonic": "Đấu (斗 ) Lúa (禾) dùng để nghiên cứu Khoa (科) học",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      33
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "科学",
+        "reading": "かがく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "科目",
+        "reading": "かもく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "教科書",
+        "reading": "きょうかしょ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "料",
+    "hanViet": "LIỆU",
+    "onyomi": "リョウ",
+    "kunyomi": null,
+    "meaning": "nguyên liệu, tài liệu, nhiên liệu",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06599.svg",
+    "mnemonic": "Đấu (斗 ) Gạo (米 ) dùng làm nguyên Liệu  (料)để nấu ăn",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      33
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "料理",
+        "reading": "りょうり",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "無料",
+        "reading": "むりょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "料金",
+        "reading": "りょうきん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "資料",
+        "reading": "しりょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "給料",
+        "reading": "きゅうりょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "材料",
+        "reading": "ざいりょう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "理",
+    "hanViet": "LÝ",
+    "onyomi": "リ",
+    "kunyomi": null,
+    "meaning": "lý do, món ăn",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07406.svg",
+    "mnemonic": "Ông Vua(王) giết ông Lý (里) là có Lý do (理)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      33
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "料理",
+        "reading": "りょうり",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "無理な",
+        "reading": "むりな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "理由",
+        "reading": "りゆう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "地理",
+        "reading": "ちり",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "有",
+    "hanViet": "HỮU",
+    "onyomi": "ユウ",
+    "kunyomi": "あ・る",
+    "meaning": "sở hữu, có",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06709.svg",
+    "mnemonic": "Sở Hữu (有) em Nguyệt (月) Mười (十) năm",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      33
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "有る",
+        "reading": "ある",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "有名な",
+        "reading": "ゆうめいな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "有利な",
+        "reading": "ゆうりな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "有料",
+        "reading": "ゆうりょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "有効な",
+        "reading": "ゆうこうな",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "和",
+    "hanViet": "HÒA",
+    "onyomi": "ワ",
+    "kunyomi": null,
+    "meaning": "kiểu nhật, hòa bình",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0548c.svg",
+    "mnemonic": "Khi nào có Lúa (禾) bỏ vào Miệng (口) thì lúc đó đã là Hòa (和) bình",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      34
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "平和",
+        "reading": "へいわ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "和食",
+        "reading": "わしょく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "和室",
+        "reading": "わしつ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "洋",
+    "hanViet": "DƯƠNG",
+    "onyomi": "ヨウ",
+    "kunyomi": null,
+    "meaning": "kiểu tây, tây dương",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06d0b.svg",
+    "mnemonic": "Nước (氵) + Dương (羊 ) = Đại Dương (洋)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      34
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "洋服",
+        "reading": "ようふく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "西洋",
+        "reading": "せいよう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洋食",
+        "reading": "ようしょく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洋式",
+        "reading": "ようしき",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "服",
+    "hanViet": "PHỤC",
+    "onyomi": "フク",
+    "kunyomi": null,
+    "meaning": "trang phục",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0670d.svg",
+    "mnemonic": "Y phục (服) trên mặt Trăng (月) có chữ Fx",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      34
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "服",
+        "reading": "ふく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洋服",
+        "reading": "ようふく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "和服",
+        "reading": "わふく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "制服",
+        "reading": "せいふく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "衣",
+    "hanViet": "Y",
+    "onyomi": "イ",
+    "kunyomi": null,
+    "meaning": "y phục",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08863.svg",
+    "mnemonic": "亠 ĐẦU",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      34
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "衣服",
+        "reading": "いふく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "毛",
+    "hanViet": "MAO",
+    "onyomi": "モウ",
+    "kunyomi": "け",
+    "meaning": "lông",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06bdb.svg",
+    "mnemonic": "Chữ Lông (毛) ngược với chữ Tay (手) => Lông tay",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      34
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "かみの毛",
+        "reading": "かみのけ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "毛皮",
+        "reading": "けがわ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "毛布",
+        "reading": "もうふ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "糸",
+    "hanViet": "MỊCH",
+    "onyomi": null,
+    "kunyomi": "いと",
+    "meaning": "sợi tơ",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07cf8.svg",
+    "mnemonic": "Sơi tơ (糸) Nhỏ (幺) Bé (小)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      34
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "糸",
+        "reading": "いと",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "毛糸",
+        "reading": "けいと",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "注",
+    "hanViet": "CHÚ",
+    "onyomi": "チュウ",
+    "kunyomi": "そそ・ぐ",
+    "meaning": "chú ý",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06ce8.svg",
+    "mnemonic": "Rót (注)  Nước (氵) cho ông Chủ (主) phải Chú ý (注) cẩn thận",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      34
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "注ぐ",
+        "reading": "そそぐ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "注意する",
+        "reading": "ちゅういする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "注文する",
+        "reading": "ちゅうもんする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "不注意",
+        "reading": "ふちゅうい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "意",
+    "hanViet": "Ý",
+    "onyomi": "イ",
+    "kunyomi": null,
+    "meaning": "ý kiến, ý nghĩa, tâm ý",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0610f.svg",
+    "mnemonic": "Âm thanh (音) từ trong Tim (心) mình chính là Ý (意) của mình",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      34
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "意味",
+        "reading": "いみ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "意見",
+        "reading": "いけん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "注意する",
+        "reading": "ちゅういする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "用意する",
+        "reading": "よういする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "意外な",
+        "reading": "いがいな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "意地悪な",
+        "reading": "いじわるな",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "味",
+    "hanViet": "VỊ",
+    "onyomi": "ミ",
+    "kunyomi": "あじ",
+    "meaning": "vị giác, mùi vị",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05473.svg",
+    "mnemonic": "Vị thành niên (未 ) mở Miệng (口) nếm hương Vị (味)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      34
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "味",
+        "reading": "あじ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "意味",
+        "reading": "いみ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "興味",
+        "reading": "きょうみ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "趣味",
+        "reading": "しゅみ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "鉄",
+    "hanViet": "THIẾT",
+    "onyomi": "テツ",
+    "kunyomi": null,
+    "meaning": "sắt",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09244.svg",
+    "mnemonic": "Kim (金 ) loại bị Mất(失) giá nhanh nhất là Sắt (鉄)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "鉄",
+        "reading": "てつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "地下鉄",
+        "reading": "ちかてつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "鉄道",
+        "reading": "てつどう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "乗",
+    "hanViet": "THỪA",
+    "onyomi": "ジョウ",
+    "kunyomi": "の・る, の・せる",
+    "meaning": "lên xe",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e57.svg",
+    "mnemonic": "千 THIÊN 木 MỘC",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "乗る",
+        "reading": "のる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "乗り物",
+        "reading": "のりもの",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "乗り換える",
+        "reading": "のりかえる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "乗せる",
+        "reading": "のせる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "乗車",
+        "reading": "じょうしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "乗客",
+        "reading": "じょうきゃく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "乗車券",
+        "reading": "じょうしゃけん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "乗馬",
+        "reading": "じょうば",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "降",
+    "hanViet": "GIÁNG",
+    "onyomi": "コウ",
+    "kunyomi": "お・りる, ふ・る",
+    "meaning": "rơi (mưa, tuyết), xuống xe",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0964d.svg",
+    "mnemonic": "Ta (夊) bước 4 bước xuống (降) xe Bus (阝)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "降る",
+        "reading": "ふる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "降りる",
+        "reading": "おりる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "以降",
+        "reading": "いこう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "始",
+    "hanViet": "THỦY",
+    "onyomi": "シ",
+    "kunyomi": "はじ・める, はじ・まる",
+    "meaning": "bắt đầu",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/059cb.svg",
+    "mnemonic": "Người phụ Nữ (女 ) sang Đài(台) loan Bắt đầu (始) cuộc sống mới",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "始める",
+        "reading": "はじめる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "始まる",
+        "reading": "はじまる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "開始する",
+        "reading": "かいしする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "終",
+    "hanViet": "CHUNG",
+    "onyomi": "シュウ",
+    "kunyomi": "お・わる",
+    "meaning": "kết thúc",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07d42.svg",
+    "mnemonic": "Mùa Đông (冬) Chỉ (糸) cho ta biết sẽ Kết thúc  (終) 1 năm",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "終わる",
+        "reading": "おわる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "終わり",
+        "reading": "おわり",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "終電",
+        "reading": "しゅうでん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "終点",
+        "reading": "しゅうてん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "開",
+    "hanViet": "KHAI",
+    "onyomi": "カイ",
+    "kunyomi": "あ・ける, あ・く, ひら・く",
+    "meaning": "mở",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0958b.svg",
+    "mnemonic": "Có 2 (开) người đang Mở (開) cánh Cổng (門)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "開ける",
+        "reading": "あける",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "開く",
+        "reading": "あく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "開く",
+        "reading": "ひらく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "開店",
+        "reading": "かいてん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "開始する",
+        "reading": "かいしする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "閉",
+    "hanViet": "BẾ",
+    "onyomi": "ヘイ",
+    "kunyomi": "し・める, し・まる, と・じる",
+    "meaning": "đóng",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09589.svg",
+    "mnemonic": "Ô(オ)! Cổng (門) đang Đóng (閉)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "閉める",
+        "reading": "しめる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "閉まる",
+        "reading": "しまる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "閉じる",
+        "reading": "とじる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "閉店",
+        "reading": "へいてん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "着",
+    "hanViet": "TRƯỚC",
+    "onyomi": "チャク",
+    "kunyomi": "き・る, つ・く",
+    "meaning": "đến nơi, mặc",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07740.svg",
+    "mnemonic": "羊DƯƠNG 目 MỤC",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "着る",
+        "reading": "きる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "着物",
+        "reading": "きもの",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "上着",
+        "reading": "うわぎ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "下着",
+        "reading": "したぎ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "水着",
+        "reading": "みずぎ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "着く",
+        "reading": "つく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "落ち着く",
+        "reading": "おちつく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "到着",
+        "reading": "とうちゃく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "合",
+    "hanViet": "HỢP",
+    "onyomi": "ゴウ",
+    "kunyomi": "あ・う, あ・わせる",
+    "meaning": "thích hợp, hợp lý…",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05408.svg",
+    "mnemonic": "Con người (人) chỉ có 1(一) cái miệng (口) nên nói điều hợp tình hợp (合) lý",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "合う",
+        "reading": "あう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "間に合う",
+        "reading": "まにあう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "付き合う",
+        "reading": "つきあう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "似合う",
+        "reading": "にあう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "場合",
+        "reading": "ばあい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "具合",
+        "reading": "ぐあい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "試合",
+        "reading": "しあい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "都合",
+        "reading": "つごう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "止",
+    "hanViet": "CHỈ",
+    "onyomi": "シ",
+    "kunyomi": "と・める, と・まる",
+    "meaning": "dừng",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06b62.svg",
+    "mnemonic": "Lên Cao (上) rồi Dừng (止) lại nghỉ thôi",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      35
+    ],
+    "sortOrder": 10,
+    "compounds": [
+      {
+        "word": "止める",
+        "reading": "とめる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "止まる",
+        "reading": "とまる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "中止",
+        "reading": "ちゅうし",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "禁止",
+        "reading": "きんし",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "台",
+    "hanViet": "ĐÀI",
+    "onyomi": "ダイ, タイ",
+    "kunyomi": null,
+    "meaning": "đơn vị đếm máy móc, đài phong…",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/053f0.svg",
+    "mnemonic": "4 (厶 ) Mồm (口) nói như cái Đài (台)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "二台",
+        "reading": "にだい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "何台",
+        "reading": "なんだい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "台所",
+        "reading": "だいどころ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "台風",
+        "reading": "たいふう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "風",
+    "hanViet": "PHONG",
+    "onyomi": "フウ",
+    "kunyomi": "かぜ",
+    "meaning": "gió",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/098a8.svg",
+    "mnemonic": "Gió (風) thổi bay hết côn Trùng (虫) chui dưới bàn (bộ Kỷ几)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "風",
+        "reading": "かぜ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "台風",
+        "reading": "たいふう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洋風",
+        "reading": "ようふう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "和風",
+        "reading": "わふう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "病",
+    "hanViet": "BỆNH",
+    "onyomi": "ビョウ",
+    "kunyomi": null,
+    "meaning": "bệnh",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/075c5.svg",
+    "mnemonic": "Bên Trong (内) mình có 1(一) loại Bệnh (疒) là Bệnh tật (病)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "病気",
+        "reading": "びょうき",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "病院",
+        "reading": "びょういん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "重病",
+        "reading": "じゅうびょう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "院",
+    "hanViet": "VIỆN",
+    "onyomi": "イン",
+    "kunyomi": null,
+    "meaning": "viện",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09662.svg",
+    "mnemonic": "Bệnh viện (院) là cái nhà (宀) giúp Bố (阝) mình phục hồi Nguyên (元) khí",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "入院する",
+        "reading": "にゅういんする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "退院する",
+        "reading": "たいいんする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "病院",
+        "reading": "びょういん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "大学院",
+        "reading": "だいがくいん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "美容院",
+        "reading": "びよういん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "医",
+    "hanViet": "Y",
+    "onyomi": "イ",
+    "kunyomi": null,
+    "meaning": "y học, bác sĩ",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0533b.svg",
+    "mnemonic": "Y (医) sĩ đi khám bệnh thường mang theo 1 Hộp thuốc (bộ Phương 匚   ) đựng Kim châm (bộ Thỉ  矢)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "医者",
+        "reading": "いしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "医学",
+        "reading": "いがく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "歯医者",
+        "reading": "はいしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "医院",
+        "reading": "いいん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "者",
+    "hanViet": "GIẢ",
+    "onyomi": "シャ",
+    "kunyomi": "もの",
+    "meaning": "tác giả",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08005.svg",
+    "mnemonic": "Chống Gậy (ノ) xuống Đất (土) cả Ngày (日) là tác Giả (者)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "若者",
+        "reading": "わかもの",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "医者",
+        "reading": "いしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "作者",
+        "reading": "さくしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "研究者",
+        "reading": "けんきゅうしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "学者",
+        "reading": "がくしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "薬",
+    "hanViet": "DƯỢC",
+    "onyomi": "ヤク",
+    "kunyomi": "くすり",
+    "meaning": "thuốc",
+    "strokeCount": 16,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/085ac.svg",
+    "mnemonic": "Loại Thảo(艹) dược làm cho thoải mái, dễ chịu (楽 ) là Thuốc (薬)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "薬",
+        "reading": "くすり",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "薬屋",
+        "reading": "くすりや",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "風邪薬",
+        "reading": "かぜぐすり",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "計",
+    "hanViet": "KẾ",
+    "onyomi": "ケイ",
+    "kunyomi": "はか・る",
+    "meaning": "kế hoạch, kế toán, đồng hồ",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08a08.svg",
+    "mnemonic": "Muốn Nói (言) phát biểu được 10 (十 ) điểm cần phải có Kế  hoạch (計)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "計る",
+        "reading": "はかる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "時計",
+        "reading": "とけい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "計画",
+        "reading": "けいかく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "合計",
+        "reading": "ごうけい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "計算する",
+        "reading": "けいさんする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "会計",
+        "reading": "かいけい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "全",
+    "hanViet": "TOÀN",
+    "onyomi": "ゼン",
+    "kunyomi": "まった・く",
+    "meaning": "hoàn toàn, toàn bộ",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05168.svg",
+    "mnemonic": "Vua (王) là Người (人) Toàn (全) diện",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "全く",
+        "reading": "まったく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "全て",
+        "reading": "すべて",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "全部",
+        "reading": "ぜんぶ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "安全",
+        "reading": "あんぜん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "全国",
+        "reading": "ぜんこく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "全員",
+        "reading": "ぜんいん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "説",
+    "hanViet": "THUYẾT",
+    "onyomi": "セツ",
+    "kunyomi": null,
+    "meaning": "thuyết minh",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08aac.svg",
+    "mnemonic": "Ngôn (言) từ của Huynh(兄) như tiểu Thuyết (説)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 10,
+    "compounds": [
+      {
+        "word": "説明",
+        "reading": "せつめい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "小説",
+        "reading": "しょうせつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "小説家",
+        "reading": "しょうせつか",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "光",
+    "hanViet": "QUANG",
+    "onyomi": "コウ",
+    "kunyomi": "ひかり, ひか・る",
+    "meaning": "ánh sáng",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05149.svg",
+    "mnemonic": "Con người Đi (儿) đâu cũng cần có cái Đầu (亠) Sáng (光)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      36
+    ],
+    "sortOrder": 11,
+    "compounds": [
+      {
+        "word": "光",
+        "reading": "ひかり",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "光る",
+        "reading": "ひかる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "観光地",
+        "reading": "かんこうち",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "研",
+    "hanViet": "NGHIÊN",
+    "onyomi": "ケン",
+    "kunyomi": null,
+    "meaning": "nghiên cứu",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07814.svg",
+    "mnemonic": "Nghiên (研) cứu Đá thạch (石 ) thời sơ Khai (开trong 開)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      37
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "研究する",
+        "reading": "けんきゅうする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "研究者",
+        "reading": "けんきゅうしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "研究室",
+        "reading": "けんきゅうしつ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "究",
+    "hanViet": "CỨU",
+    "onyomi": "キュウ",
+    "kunyomi": null,
+    "meaning": "nghiên cứu",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07a76.svg",
+    "mnemonic": "Nghiên Cứu (究) 9 (九) năm trong Hang (穴) động",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      37
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "研究する",
+        "reading": "けんきゅうする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "研究者",
+        "reading": "けんきゅうしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "研究室",
+        "reading": "けんきゅうしつ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "発",
+    "hanViet": "PHÁT",
+    "onyomi": "ハツ, パツ",
+    "kunyomi": null,
+    "meaning": "xuất phát, phát hiện, phát minh",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0767a.svg",
+    "mnemonic": "Hai (二) người Chạy (儿) ở vạch xuất Phát (発)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      37
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "発音",
+        "reading": "はつおん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "出発",
+        "reading": "しゅっぱつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "発明",
+        "reading": "はつめい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "発見",
+        "reading": "はっけん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "取",
+    "hanViet": "THỦ",
+    "onyomi": null,
+    "kunyomi": "と・る",
+    "meaning": "lấy",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/053d6.svg",
+    "mnemonic": "Tai (耳) Lại(又) bị Lấy (取) mất",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      37
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "取る",
+        "reading": "とる",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "知",
+    "hanViet": "TRI",
+    "onyomi": "チ",
+    "kunyomi": "し・る",
+    "meaning": "biết",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/077e5.svg",
+    "mnemonic": "Người mở Mồm (口) ra nói như Tên (矢 ) bắn thì chính là Biết (知) rõ đấy!",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      37
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "知る",
+        "reading": "しる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "知らせる",
+        "reading": "しらせる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "知り合い",
+        "reading": "しりあい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "知人",
+        "reading": "ちじん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "歌",
+    "hanViet": "CA",
+    "onyomi": "カ",
+    "kunyomi": "うた・う, うた",
+    "meaning": "hát",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06b4c.svg",
+    "mnemonic": "Cuộc sống sẽ rất buồn chán nếu Thiếu (欠) Khả năng (可) Ca hát (歌)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      37
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "歌",
+        "reading": "うた",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "歌う",
+        "reading": "うたう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "歌手",
+        "reading": "かしゅ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "国歌",
+        "reading": "こっか",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "飯",
+    "hanViet": "PHẠN",
+    "onyomi": "ハン",
+    "kunyomi": null,
+    "meaning": "cơm",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/098ef.svg",
+    "mnemonic": "Phản đối (反) việc ăn (飠) Cơm (飯)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      37
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "ご飯",
+        "reading": "ごはん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "夕飯",
+        "reading": "ゆうはん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "朝ご飯",
+        "reading": "あさごはん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "昼ご飯",
+        "reading": "ひるごはん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "麦",
+    "hanViet": "MẠCH",
+    "onyomi": null,
+    "kunyomi": "むぎ",
+    "meaning": "lúa mạch",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09ea6.svg",
+    "mnemonic": "晩ご飯（ばんごはん) Ông Vua (王) lòi đầu Truy (夂) tìm lúa Mạch (麦)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      37
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "麦",
+        "reading": "むぎ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "小麦",
+        "reading": "こむぎ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "声",
+    "hanViet": "THANH",
+    "onyomi": "セイ",
+    "kunyomi": "こえ",
+    "meaning": "âm thanh",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/058f0.svg",
+    "mnemonic": "士 SĨ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      38
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "声",
+        "reading": "こえ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "大声",
+        "reading": "おおごえ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "文",
+    "hanViet": "VĂN",
+    "onyomi": "ブン",
+    "kunyomi": null,
+    "meaning": "văn học, văn chương",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06587.svg",
+    "mnemonic": "Học Văn(文) Đầu(亠 ) toàn suy nghĩ đến chuyện xxx (乂)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      38
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "文字",
+        "reading": "もじ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "文学",
+        "reading": "ぶんがく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "文化",
+        "reading": "ぶんか",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "作文",
+        "reading": "さくぶん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "文法",
+        "reading": "ぶんぽう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "化",
+    "hanViet": "HÓA",
+    "onyomi": "カ, ケ",
+    "kunyomi": "ば",
+    "meaning": "biến hóa",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05316.svg",
+    "mnemonic": "Người (亻) cười Hihi (匕) Hóa (化) vui vẻ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      38
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "お化け",
+        "reading": "おばけ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "化学",
+        "reading": "かがく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "文化",
+        "reading": "ぶんか",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "化粧",
+        "reading": "けしょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "変化",
+        "reading": "へんか",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "数",
+    "hanViet": "SỐ",
+    "onyomi": "スウ",
+    "kunyomi": "かぞ・える, かず",
+    "meaning": "số",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06570.svg",
+    "mnemonic": "米 MỄ 女 NỮ 夂 PHỘC",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      38
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "数える",
+        "reading": "かぞえる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "数",
+        "reading": "かず",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "人数",
+        "reading": "にんずう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "数学",
+        "reading": "すうがく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "数年",
+        "reading": "すうねん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "心",
+    "hanViet": "TÂM",
+    "onyomi": "シン",
+    "kunyomi": "こころ",
+    "meaning": "trái tim",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05fc3.svg",
+    "mnemonic": "Hình trái tim",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      38
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "心",
+        "reading": "こころ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "安心する",
+        "reading": "あんしんする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "熱心な",
+        "reading": "ねっしんな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "心配する",
+        "reading": "しんぱいする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "中心",
+        "reading": "ちゅうしん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "旅",
+    "hanViet": "LỮ",
+    "onyomi": "リョ",
+    "kunyomi": "たび",
+    "meaning": "du lịch",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/065c5.svg",
+    "mnemonic": "Người (𠂉) mang quần áoY phục (衣) đi Du lịch (旅) tứ Phương (方)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      38
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "旅",
+        "reading": "たび",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "一人旅",
+        "reading": "ひとりたび",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "旅行",
+        "reading": "りょこう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "旅館",
+        "reading": "りょかん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "世",
+    "hanViet": "THẾ",
+    "onyomi": "セイ, セ",
+    "kunyomi": "よ",
+    "meaning": "thế giới",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e16.svg",
+    "mnemonic": "Giống chữ  せtrong せかい (THẾ GIỚI)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      38
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "世の中",
+        "reading": "よのなか",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "世界",
+        "reading": "せかい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "世話",
+        "reading": "せわ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "世紀",
+        "reading": "せいき",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "界",
+    "hanViet": "GIỚI",
+    "onyomi": "カイ",
+    "kunyomi": null,
+    "meaning": "địa giới, thế giới",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0754c.svg",
+    "mnemonic": "Giới thiệu (介) Ruộng ( 田 ) ra thế Giới (界)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      38
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "世界",
+        "reading": "せかい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "集",
+    "hanViet": "TẬP",
+    "onyomi": "シュウ",
+    "kunyomi": "あつ・める, あつ・まる",
+    "meaning": "tập hợp, tập trung, tập đoàn",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/096c6.svg",
+    "mnemonic": "Chim (隹) đứng Tập trung (集) ở trên Cây (木 )",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      39
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "集める",
+        "reading": "あつめる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "集まる",
+        "reading": "あつまる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "集中する",
+        "reading": "しゅうちゅうする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "集合",
+        "reading": "しゅうごう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "集団",
+        "reading": "しゅうだん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "募集する",
+        "reading": "ぼしゅうする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "別",
+    "hanViet": "BIỆT",
+    "onyomi": "ベツ",
+    "kunyomi": "わか・れる",
+    "meaning": "đặc biệt, riêng rẽ",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05225.svg",
+    "mnemonic": "Lúc đặc Biệt Nói (口) Vạn (万) lời sắc như Dao (刂) kéo",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      39
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "別れる",
+        "reading": "わかれる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "特別な",
+        "reading": "とくべつな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "別々に",
+        "reading": "べつべつに",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "性別",
+        "reading": "せいべつ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "油",
+    "hanViet": "DU",
+    "onyomi": "ユ",
+    "kunyomi": "あぶら",
+    "meaning": "dầu",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06cb9.svg",
+    "mnemonic": "Dầu (油) ăn Do (由) Nước (氵) tạo thành",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      39
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "油",
+        "reading": "あぶら",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "石油",
+        "reading": "せきゆ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "しょう油",
+        "reading": "しょうゆ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "皿",
+    "hanViet": "MÃNH",
+    "onyomi": null,
+    "kunyomi": "さら",
+    "meaning": "cái đĩa",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/076bf.svg",
+    "mnemonic": null,
+    "mnemonicImageUrl": null,
+    "lessons": [
+      39
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "(お)皿",
+        "reading": "さら",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "灰皿",
+        "reading": "はいざら",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "若",
+    "hanViet": "NHƯỢC",
+    "onyomi": null,
+    "kunyomi": "わか・い",
+    "meaning": "trẻ",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/082e5.svg",
+    "mnemonic": "Phải (右) ăn Thảo (艹) dược mới Trẻ (若)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      39
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "若い",
+        "reading": "わかい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "若者",
+        "reading": "わかもの",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "銀",
+    "hanViet": "NGÂN",
+    "onyomi": "ギン",
+    "kunyomi": null,
+    "meaning": "bạc, ngân hàng",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09280.svg",
+    "mnemonic": "Bạc (銀) thì không Tốt (艮) bằng Vàng (金)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      39
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "銀",
+        "reading": "ぎん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "銀行",
+        "reading": "ぎんこう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "押",
+    "hanViet": "ÁP",
+    "onyomi": null,
+    "kunyomi": "お・す",
+    "meaning": "ấn",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/062bc.svg",
+    "mnemonic": "Dùng Tay (扌) Ấn Cọc (丨) xuống Ruộng (田)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      39
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "押す",
+        "reading": "おす",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "押し入れ",
+        "reading": "おしいれ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "引",
+    "hanViet": "DẪN",
+    "onyomi": null,
+    "kunyomi": "ひ・く",
+    "meaning": "kéo",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05f15.svg",
+    "mnemonic": "弓CUNG 丨CỔN",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      39
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "引く",
+        "reading": "ひく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "引き出し",
+        "reading": "ひきだし",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "引っ越す",
+        "reading": "ひっこす",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "引き分け",
+        "reading": "ひきわけ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "割り引き",
+        "reading": "わりびき",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "代",
+    "hanViet": "ĐẠI",
+    "onyomi": "ダイ",
+    "kunyomi": "か・わり",
+    "meaning": "tiền phí, thời đại, đại diện",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04ee3.svg",
+    "mnemonic": "亻NHÂN 弋DẶC",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      39
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "代わりに",
+        "reading": "かわりに",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "時代",
+        "reading": "じだい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "電話代",
+        "reading": "でんわだい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "電気代",
+        "reading": "でんきだい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "代金",
+        "reading": "だいきん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "春",
+    "hanViet": "XUÂN",
+    "onyomi": "シュン",
+    "kunyomi": "はる",
+    "meaning": "mùa xuân",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06625.svg",
+    "mnemonic": "Mùa Xuân (春) có 3 (三) Ngày (日) quan trọng với mọi Người (人)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      40
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "春",
+        "reading": "はる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "春休み",
+        "reading": "はるやすみ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "青春",
+        "reading": "せいしゅん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "夏",
+    "hanViet": "HẠ",
+    "onyomi": "カ",
+    "kunyomi": "なつ",
+    "meaning": "mùa hạ",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0590f.svg",
+    "mnemonic": "Còn lại 1 (一) Mình (自) Sau (夂) mùa Hạ (夏)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      40
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "夏",
+        "reading": "なつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "夏休み",
+        "reading": "なつやすみ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "真夏",
+        "reading": "まなつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "初夏",
+        "reading": "しょか",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "秋",
+    "hanViet": "THU",
+    "onyomi": "シュウ",
+    "kunyomi": "あき",
+    "meaning": "mùa thu",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/079cb.svg",
+    "mnemonic": "Mùa Thu (秋) Lúa (禾) đỏ như Lửa (火 )",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      40
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "秋",
+        "reading": "あき",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "冬",
+    "hanViet": "ĐÔNG",
+    "onyomi": "トウ",
+    "kunyomi": "ふゆ",
+    "meaning": "mùa đông",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/051ac.svg",
+    "mnemonic": "夂 TRUY 冫 BĂNG",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      40
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "冬",
+        "reading": "ふゆ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "冬休み",
+        "reading": "ふゆやすみ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "空",
+    "hanViet": "KHÔNG",
+    "onyomi": "クウ",
+    "kunyomi": "そら, から, あ・く",
+    "meaning": "bầu trời, không khí, hàng không",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07a7a.svg",
+    "mnemonic": "Công trường (工) ở trong Hang động (穴) thiếu Không khí (空)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      40
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "空く",
+        "reading": "あく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "空",
+        "reading": "そら",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "空手",
+        "reading": "からて",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "空気",
+        "reading": "くうき",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "空港",
+        "reading": "くうこう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "航空便",
+        "reading": "こうくうびん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "星",
+    "hanViet": "TINH",
+    "onyomi": "セイ",
+    "kunyomi": "ほし",
+    "meaning": "ngôi sao",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0661f.svg",
+    "mnemonic": "Mặt trời (日) Sinh (生) ra ngôi Sao (星)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      40
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "星",
+        "reading": "ほし",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "雪",
+    "hanViet": "TUYẾT",
+    "onyomi": null,
+    "kunyomi": "ゆき",
+    "meaning": "tuyết",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/096ea.svg",
+    "mnemonic": "Em (ヨ) đi dưới trời Mưa (雨) Tuyết (雪)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      40
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "雪",
+        "reading": "ゆき",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "大雪",
+        "reading": "おおゆき",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "雲",
+    "hanViet": "VÂN",
+    "onyomi": "ウン",
+    "kunyomi": "くも",
+    "meaning": "đám mây",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/096f2.svg",
+    "mnemonic": "Mưa (雨 ) suốt 24 (二+ム) giờ thì hết Mây (雲)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      40
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "雲",
+        "reading": "くも",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "動",
+    "hanViet": "ĐỘNG",
+    "onyomi": "ドウ",
+    "kunyomi": "うご・く, うご・かす",
+    "meaning": "chuyển động, di chuyển, tự động",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/052d5.svg",
+    "mnemonic": "Trọng(重) Lực(力)=Chuyển Động (動)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "動く",
+        "reading": "うごく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "運動",
+        "reading": "うんどう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "動物",
+        "reading": "どうぶつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "動物園",
+        "reading": "どうぶつえん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "自動車",
+        "reading": "じどうしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "働",
+    "hanViet": "ĐỘNG",
+    "onyomi": "ドウ",
+    "kunyomi": "はたら・く",
+    "meaning": "làm việc",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/050cd.svg",
+    "mnemonic": "Con người (亻 ) chuyển Động (動) là Lao Động (働)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "働く",
+        "reading": "はたらく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "労働者",
+        "reading": "ろうどうしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "運",
+    "hanViet": "VẬN",
+    "onyomi": "ウン",
+    "kunyomi": "はこ・ぶ",
+    "meaning": "vận chuyển, vận động",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0904b.svg",
+    "mnemonic": "Vận chuyển (運) hành lý Đi xa (辶) bằng Xe (車) có Trùm (冖) khăn(bạt)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "運ぶ",
+        "reading": "はこぶ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "運転",
+        "reading": "うんてん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "運動",
+        "reading": "うんどう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "運転手",
+        "reading": "うんてんしゅ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "練",
+    "hanViet": "LUYỆN",
+    "onyomi": "レン",
+    "kunyomi": null,
+    "meaning": "luyện tập",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07df4.svg",
+    "mnemonic": "糸 MỊCH 東 ĐÔNG",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "練習する",
+        "reading": "れんしゅうする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "習",
+    "hanViet": "TẬP",
+    "onyomi": "シュウ",
+    "kunyomi": "なら・う",
+    "meaning": "học tập",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07fd2.svg",
+    "mnemonic": "Cánh (羽) chim Trắng (白) nhỏ đang Tập (習) bay",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "習う",
+        "reading": "ならう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "練習",
+        "reading": "れんしゅう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "予習",
+        "reading": "よしゅう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "復習",
+        "reading": "ふくしゅう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "走",
+    "hanViet": "TẨU",
+    "onyomi": "ソウ",
+    "kunyomi": "はし・る",
+    "meaning": "chạy",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08d70.svg",
+    "mnemonic": "Đang Chạy (走) trên Đất (土) là Hạ (下) Nhân (人)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "走る",
+        "reading": "はしる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "逃走",
+        "reading": "とうそう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "歩",
+    "hanViet": "BỘ",
+    "onyomi": "ホ",
+    "kunyomi": "ある・く",
+    "meaning": "đi bộ",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06b69.svg",
+    "mnemonic": "Đi 1 vài bước Nhỏ (少) rồi lại Dừng(止 ) lại là đi Bộ (歩)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "歩く",
+        "reading": "あるく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "散歩する",
+        "reading": "さんぽする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "歩行者",
+        "reading": "ほこうしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "歩道",
+        "reading": "ほどう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "泳",
+    "hanViet": "VỊNH",
+    "onyomi": "エイ",
+    "kunyomi": "およ・ぐ",
+    "meaning": "bơi",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06cf3.svg",
+    "mnemonic": "Song Thủy (氵) (水) hóa Vịnh (泳) đầy",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "泳ぐ",
+        "reading": "およぐ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "水泳",
+        "reading": "すいえい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "急",
+    "hanViet": "CẤP",
+    "onyomi": "キュウ",
+    "kunyomi": "いそ・ぐ",
+    "meaning": "gấp, nhanh",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06025.svg",
+    "mnemonic": "Cứ (ク)có chuyện Gấp (急) là Tim (心) Em (ヨ)đập nhanh",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "急ぐ",
+        "reading": "いそぐ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "急に",
+        "reading": "きゅうに",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "急行",
+        "reading": "きゅうこう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "特急",
+        "reading": "とっきゅう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "救急車",
+        "reading": "きゅうきゅうしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "急用",
+        "reading": "きゅうよう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "鳴",
+    "hanViet": "MINH",
+    "onyomi": "メイ",
+    "kunyomi": "な・る, な・く",
+    "meaning": "reo, kêu, hót",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09cf4.svg",
+    "mnemonic": "Chim (鳥) Hót (鳴) kêu bằng Miệng (口)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      41
+    ],
+    "sortOrder": 10,
+    "compounds": [
+      {
+        "word": "鳴る",
+        "reading": "なる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "鳴く",
+        "reading": "なく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "晴",
+    "hanViet": "TÌNH",
+    "onyomi": "セイ",
+    "kunyomi": "は・れる",
+    "meaning": "nắng",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06674.svg",
+    "mnemonic": "Cả Ngày (日) bầu trời màu Xanh (青) là Trời Nắng (晴)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "晴れる",
+        "reading": "はれる",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "強",
+    "hanViet": "CƯỜNG",
+    "onyomi": "キョウ",
+    "kunyomi": "つよ・い",
+    "meaning": "mạnh",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05f37.svg",
+    "mnemonic": "Dùng Cung (弓) tên bắn Mạnh (強) chết 4 (ム) con côn Trùng (虫)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "強い",
+        "reading": "つよい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "勉強",
+        "reading": "べんきょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "強調する",
+        "reading": "きょうちょうする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "弱",
+    "hanViet": "NHƯỢC",
+    "onyomi": "ジャク",
+    "kunyomi": "よわ・い",
+    "meaning": "yếu",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05f31.svg",
+    "mnemonic": "弓 CUNG",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "弱い",
+        "reading": "よわい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "弱点",
+        "reading": "じゃくてん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "暑",
+    "hanViet": "THỬ",
+    "onyomi": "ショ",
+    "kunyomi": "あつ・い",
+    "meaning": "nóng",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06691.svg",
+    "mnemonic": "Con Người (者) ở dưới ánh mặt Trời (日) sẽ trở nên Nóng (暑)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "暑い",
+        "reading": "あつい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "蒸し暑い",
+        "reading": "むしあつい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "寒",
+    "hanViet": "HÀN",
+    "onyomi": "カン",
+    "kunyomi": "さむ・い",
+    "meaning": "lạnh",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05bd2.svg",
+    "mnemonic": "宀 MIÊN ⺀ BĂNG",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "寒い",
+        "reading": "さむい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "冷",
+    "hanViet": "LÃNH",
+    "onyomi": "レイ",
+    "kunyomi": "つめ・たい",
+    "meaning": "lạnh",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/051b7.svg",
+    "mnemonic": "Bây giờ (今) trời đang Lạnh  (冷) đóng Băng (冫)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "冷たい",
+        "reading": "つめたい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "冷める",
+        "reading": "さめる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "冷やす",
+        "reading": "ひやす",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "冷房",
+        "reading": "れいぼう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "冷蔵庫",
+        "reading": "れいぞうこ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "良",
+    "hanViet": "LƯƠNG",
+    "onyomi": null,
+    "kunyomi": "い・い, よ・い",
+    "meaning": "tốt",
+    "strokeCount": 7,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0826f.svg",
+    "mnemonic": "Ăn (食) uống đầy đủ thì rất Tốt (良) Chữ THỰC 食bỏ 「八」 => LƯƠNG 良",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "良い",
+        "reading": "いい／よい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "悪",
+    "hanViet": "ÁC",
+    "onyomi": "アク, 悪い（わるい)",
+    "kunyomi": "わる・い",
+    "meaning": "không tốt",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/060aa.svg",
+    "mnemonic": "心TÂM",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "意地悪な",
+        "reading": "いじわるな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "最悪",
+        "reading": "さいあく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "太",
+    "hanViet": "THÁI",
+    "onyomi": "タイ",
+    "kunyomi": "ふと・る, ふと・い",
+    "meaning": "béo",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0592a.svg",
+    "mnemonic": "Vừa To (大 ) vừa Béo (太)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "太い",
+        "reading": "ふとい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "太る",
+        "reading": "ふとる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "太陽",
+        "reading": "たいよう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "細",
+    "hanViet": "TẾ",
+    "onyomi": "サイ",
+    "kunyomi": "ほそ・い, こま・かい",
+    "meaning": "nhỏ",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07d30.svg",
+    "mnemonic": "Sử dụng sợi Tơ (糸) đo đạc phân cách Ruộng đất (田) thật tinh Tế (細)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      42
+    ],
+    "sortOrder": 10,
+    "compounds": [
+      {
+        "word": "細い",
+        "reading": "ほそい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "細かい",
+        "reading": "こまかい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "写",
+    "hanViet": "TẢ",
+    "onyomi": "シャ",
+    "kunyomi": "うつ・る, うつ・す",
+    "meaning": "chụp ảnh",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05199.svg",
+    "mnemonic": "冖 MỊCH 与 DỮ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      43
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "写す",
+        "reading": "うつす",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "写真",
+        "reading": "しゃしん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "写真家",
+        "reading": "しゃしんか",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "真",
+    "hanViet": "CHÂN",
+    "onyomi": "シン",
+    "kunyomi": "ま",
+    "meaning": "chân thực",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0771f.svg",
+    "mnemonic": "Có 10 (十) dụng Cụ (具) trang điểm => Chân (真) dung xinh đẹp",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      43
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "真ん中",
+        "reading": "まんなか",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "真夏",
+        "reading": "まなつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "真っ白",
+        "reading": "まっしろ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "写真",
+        "reading": "しゃしん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "真剣",
+        "reading": "しんけん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "船",
+    "hanViet": "THUYỀN",
+    "onyomi": "セン",
+    "kunyomi": "ふね",
+    "meaning": "thuyền",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08239.svg",
+    "mnemonic": "Thuyền Chu (舟) du qua 8 (八) cửa Khẩu (口)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      43
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "船",
+        "reading": "ふね",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "船便",
+        "reading": "ふなびん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "堂",
+    "hanViet": "ĐƯỜNG",
+    "onyomi": "ドウ",
+    "kunyomi": null,
+    "meaning": "tòa nhà, thực đường",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05802.svg",
+    "mnemonic": "小TIỂU 冖MỊCH 口KHẨU 土THỔ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      43
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "食堂",
+        "reading": "しょくどう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "頭",
+    "hanViet": "ĐẦU",
+    "onyomi": "ズ, トウ",
+    "kunyomi": "あたま",
+    "meaning": "đầu não",
+    "strokeCount": 16,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0982d.svg",
+    "mnemonic": "Đầu (頭) óc bã Đậu (豆) không thể làm việc Giấy (頁) tờ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      43
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "頭",
+        "reading": "あたま",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "頭痛",
+        "reading": "ずつう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "二頭",
+        "reading": "にとう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "顔",
+    "hanViet": "NHAN",
+    "onyomi": "ガン",
+    "kunyomi": "かお",
+    "meaning": "khuôn mặt",
+    "strokeCount": 18,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09854.svg",
+    "mnemonic": "Đứng (立) ở Sườn núi (厂) xõa Tóc (彡) cầm tờ Giấy (頁) che hết Mặt (顔)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      43
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "顔",
+        "reading": "かお",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "笑顔",
+        "reading": "えがお",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洗顔",
+        "reading": "せんがん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "首",
+    "hanViet": "THỦ",
+    "onyomi": "シュ",
+    "kunyomi": "くび",
+    "meaning": "cổ, thủ tướng",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09996.svg",
+    "mnemonic": "自 TỰ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      43
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "首",
+        "reading": "くび",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "首になる",
+        "reading": "くびになる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "首都",
+        "reading": "しゅと",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "首相",
+        "reading": "しゅしょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "部首",
+        "reading": "ぶしゅ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "勉",
+    "hanViet": "MIỄN",
+    "onyomi": "ベン",
+    "kunyomi": null,
+    "meaning": "học tập",
+    "strokeCount": 10,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/052c9.svg",
+    "mnemonic": "Nếu Học (勉) chăm chỉ sẽ Miễn (免) dùng sức Lực (力) để làm việc",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      44
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "勉強",
+        "reading": "べんきょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "勉学",
+        "reading": "べんがく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "漢",
+    "hanViet": "HÁN",
+    "onyomi": "カン",
+    "kunyomi": null,
+    "meaning": "hán tự",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06f22.svg",
+    "mnemonic": "氵 THỦY 艹THẢO 口KHẨU 夫PHU",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      44
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "漢字",
+        "reading": "かんじ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "宿",
+    "hanViet": "TÚC",
+    "onyomi": "シュク",
+    "kunyomi": "やど",
+    "meaning": "tá túc",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05bbf.svg",
+    "mnemonic": "Có Trăm (百) Người (亻) dưới Mái (宀) Nhà Trọ (宿)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      44
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "宿",
+        "reading": "やど",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "宿題",
+        "reading": "しゅくだい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "下宿",
+        "reading": "げしゅく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "題",
+    "hanViet": "ĐỀ",
+    "onyomi": "ダイ",
+    "kunyomi": null,
+    "meaning": "vấn đề, chủ đề",
+    "strokeCount": 18,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0984c.svg",
+    "mnemonic": "是 THỊ (NHẬT 日+CHÍNH 正) 頁 HIỆT",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      44
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "宿題",
+        "reading": "しゅくだい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "問題",
+        "reading": "もんだい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "主題",
+        "reading": "しゅだい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "話題",
+        "reading": "わだい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "質",
+    "hanViet": "CHẤT",
+    "onyomi": "シツ",
+    "kunyomi": null,
+    "meaning": "chất vấn, chất lượng",
+    "strokeCount": 15,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08cea.svg",
+    "mnemonic": "Có Tiền (貝)sẽ mua được 2 cái Đao (斤) Chất lượng (質)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      44
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "質",
+        "reading": "しつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "質問",
+        "reading": "しつもん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "問",
+    "hanViet": "VẤN",
+    "onyomi": "モン",
+    "kunyomi": "と・い, と・う",
+    "meaning": "hỏi",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0554f.svg",
+    "mnemonic": "Dưới Cổng (門) có Mồm (口) đang Hỏi (問)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      44
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "問い",
+        "reading": "とい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "問い合わせ",
+        "reading": "といあわせ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "問題",
+        "reading": "もんだい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "答",
+    "hanViet": "ĐÁP",
+    "onyomi": "トウ",
+    "kunyomi": "こた・える, こた・え",
+    "meaning": "trả lời",
+    "strokeCount": 12,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07b54.svg",
+    "mnemonic": "質問（しつもん) Đáp án (答)  Hợp (合 ) với cấu Trúc (竹) câu",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      44
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "答える",
+        "reading": "こたえる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "答え",
+        "reading": "こたえ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "回答",
+        "reading": "かいとう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "解答",
+        "reading": "かいとう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "洗",
+    "hanViet": "TẨY",
+    "onyomi": "セン",
+    "kunyomi": "あら・う",
+    "meaning": "rửa",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06d17.svg",
+    "mnemonic": "Muốn giặt Rửa (洗) trước Tiên (先) cần phải có Nước (氵)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      44
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "洗う",
+        "reading": "あらう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "お手洗い",
+        "reading": "おてあらい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洗濯する",
+        "reading": "せんたくする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洗剤",
+        "reading": "せんざい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洗顔",
+        "reading": "せんがん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "濯",
+    "hanViet": "TRẠC",
+    "onyomi": "タク",
+    "kunyomi": null,
+    "meaning": "giặt giũ",
+    "strokeCount": 17,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06fef.svg",
+    "mnemonic": "2 Em (ヨ) Chim (隹) dùng Nước(氵) để Giặt giũ (濯)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      44
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "洗濯する",
+        "reading": "せんたくする",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洗濯機",
+        "reading": "せんたくき",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洗濯物",
+        "reading": "せんたくもの",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "式",
+    "hanViet": "THỨC",
+    "onyomi": "シキ",
+    "kunyomi": null,
+    "meaning": "hình thức, buổi lễ",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/05f0f.svg",
+    "mnemonic": "Nghi thức (式) tưởng nhớ những người có Công (工) đánh Giặc ( DẶC 弋)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      45
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "入学式",
+        "reading": "にゅうがくしき",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "卒業式",
+        "reading": "そつぎょうしき",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "結婚式",
+        "reading": "けっこんしき",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "洋式",
+        "reading": "ようしき",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "和式",
+        "reading": "わしき",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "試",
+    "hanViet": "THÍ",
+    "onyomi": "シ",
+    "kunyomi": "ため・す",
+    "meaning": "kiểm tra, thi cử",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08a66.svg",
+    "mnemonic": "Nóí (言) Hình Thức (式) thực hiện kỳ Thi (試)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      45
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "試す",
+        "reading": "ためす",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "試験",
+        "reading": "しけん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "試合",
+        "reading": "しあい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "験",
+    "hanViet": "NGHIỆM",
+    "onyomi": "ケン",
+    "kunyomi": null,
+    "meaning": "kinh nghiệm, thí nghiệm",
+    "strokeCount": 18,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/09a13.svg",
+    "mnemonic": "Con Người (人) tổ chức kỳ Thi (験) đua Ngựa (馬) hợp (合) với ai yêu thích",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      45
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "経験",
+        "reading": "けいけん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "試験",
+        "reading": "しけん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "体験",
+        "reading": "たいけん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "実験",
+        "reading": "じっけん",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "正",
+    "hanViet": "CHÍNH",
+    "onyomi": "セイ, ショウ",
+    "kunyomi": "ただ・しい",
+    "meaning": "chính xác, chính thức",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06b63.svg",
+    "mnemonic": "Đến 1(一) điểm phải biết Dừng (止) lại Chính xác (正)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      45
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "正しい",
+        "reading": "ただしい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "お正月",
+        "reading": "おしょうがつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "正式な",
+        "reading": "せいしきな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "正午",
+        "reading": "しょうご",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "正直な",
+        "reading": "しょうじきな",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "丸",
+    "hanViet": "HOÀN",
+    "onyomi": null,
+    "kunyomi": "まる, まる・い",
+    "meaning": "tròn",
+    "strokeCount": 3,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e38.svg",
+    "mnemonic": "Số 9 (九) gạch bỏ 丶đuôi thành số 0 Tròn (丸) trịa",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      45
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "丸",
+        "reading": "まる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "丸い",
+        "reading": "まるい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "不",
+    "hanViet": "BẤT",
+    "onyomi": "フ",
+    "kunyomi": null,
+    "meaning": "không",
+    "strokeCount": 4,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/04e0d.svg",
+    "mnemonic": "True (T) bị đánh dấu X",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      45
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "不便な",
+        "reading": "ふべんな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "不安な",
+        "reading": "ふあんな",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "水不足",
+        "reading": "みずぶそく",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "不思議な",
+        "reading": "ふしぎな",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "同",
+    "hanViet": "ĐỒNG",
+    "onyomi": "ドウ",
+    "kunyomi": "おな・じ",
+    "meaning": "giống",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0540c.svg",
+    "mnemonic": "Nhất (一) Khẩu (口) Đồng (同) thanh: “Bảo vệ Biên giới (QUYNH 冂) quốc gia!”",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      45
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "同じ",
+        "reading": "おなじ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "同時",
+        "reading": "どうじ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "同僚",
+        "reading": "どうりょう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "野",
+    "hanViet": "DÃ",
+    "onyomi": "ヤ",
+    "kunyomi": null,
+    "meaning": "hoang dã",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/091ce.svg",
+    "mnemonic": "Ông Lý (里) Dự (予 ) đoán sắp bị Dã (野)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      45
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "野菜",
+        "reading": "やさい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "野球",
+        "reading": "やきゅう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "分野",
+        "reading": "ぶんや",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "菜",
+    "hanViet": "THÁI",
+    "onyomi": "サイ",
+    "kunyomi": null,
+    "meaning": "rau",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/083dc.svg",
+    "mnemonic": "Cây (木) mọc chung với Cỏ (艹), dùng móng tay (爫 TRẢO) có thể ngắt về đó là Rau (菜)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      45
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "野菜",
+        "reading": "やさい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "政",
+    "hanViet": "CHÍNH",
+    "onyomi": "セイ",
+    "kunyomi": null,
+    "meaning": "chính trị, chính phủ",
+    "strokeCount": 9,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0653f.svg",
+    "mnemonic": "Chính (政) trị/ làm Đúng (正)/ Đánh (攵)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 1,
+    "compounds": [
+      {
+        "word": "政府",
+        "reading": "せいふ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "政治",
+        "reading": "せいじ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "治",
+    "hanViet": "TRỊ",
+    "onyomi": "ジ, チ",
+    "kunyomi": "なお・す, なお・る",
+    "meaning": "điều trị, chính trị",
+    "strokeCount": 8,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06cbb.svg",
+    "mnemonic": "Sang Nước (氵 ) Đài Loan (台) để Trị liệu (治)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 2,
+    "compounds": [
+      {
+        "word": "治す",
+        "reading": "なおす",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "治る",
+        "reading": "なおる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "政治",
+        "reading": "せいじ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "経",
+    "hanViet": "KINH",
+    "onyomi": "ケイ",
+    "kunyomi": "た・つ",
+    "meaning": "kinh nghiệm, kinh tế",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07d4c.svg",
+    "mnemonic": "Sợi tơ (糸 ) thần Thánh (圣 ) tạo ra nền Kinh tế (経) mới",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 3,
+    "compounds": [
+      {
+        "word": "経つ",
+        "reading": "たつ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "経験",
+        "reading": "けいけん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "経済",
+        "reading": "けいざい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "済",
+    "hanViet": "TẾ",
+    "onyomi": "ザイ",
+    "kunyomi": "す・む, す・ます",
+    "meaning": "kinh tế",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06e08.svg",
+    "mnemonic": null,
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 4,
+    "compounds": [
+      {
+        "word": "済む",
+        "reading": "すむ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "経済",
+        "reading": "けいざい",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "歴",
+    "hanViet": "LỊCH",
+    "onyomi": "レキ",
+    "kunyomi": null,
+    "meaning": "lịch sử",
+    "strokeCount": 14,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06b74.svg",
+    "mnemonic": "Dừng lại (止) ở Vách đá  (厂) của khu Rừng  (林) để tìm hiểu Lịch sử  (歴)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 5,
+    "compounds": [
+      {
+        "word": "歴史",
+        "reading": "れきし",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "史",
+    "hanViet": "SỬ",
+    "onyomi": "シ",
+    "kunyomi": null,
+    "meaning": "lịch sử",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/053f2.svg",
+    "mnemonic": "Mồm (口) Trượng (丈) phu được đưa vào lịch Sử (史)",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 6,
+    "compounds": [
+      {
+        "word": "歴史",
+        "reading": "れきし",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "転",
+    "hanViet": "CHUYỂN",
+    "onyomi": "テン",
+    "kunyomi": null,
+    "meaning": "chuyển động",
+    "strokeCount": 11,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/08ee2.svg",
+    "mnemonic": "Xe (車) Chuyển động (転) 24 (二+ム) giờ",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 7,
+    "compounds": [
+      {
+        "word": "自転車",
+        "reading": "じてんしゃ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "運転",
+        "reading": "うんてん",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "運転手",
+        "reading": "うんてんしゅ",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "回",
+    "hanViet": "HỒI",
+    "onyomi": "カイ",
+    "kunyomi": "まわ・る",
+    "meaning": "lần, hồi phục",
+    "strokeCount": 6,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/056de.svg",
+    "mnemonic": "Khẩu (口) với Vi (囗) nhìn 1 Hồi vài Lần (回) vẫn chưa phân biệt được",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 8,
+    "compounds": [
+      {
+        "word": "回る",
+        "reading": "まわる",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "一回",
+        "reading": "いっかい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "何回",
+        "reading": "なんかい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "今回",
+        "reading": "こんかい",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "解答",
+        "reading": "かいとう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "回復",
+        "reading": "かいふく",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "業",
+    "hanViet": "NGHIỆP",
+    "onyomi": "ギョウ",
+    "kunyomi": null,
+    "meaning": "nghề nghiệp, sự nghiệp, công nghiệp",
+    "strokeCount": 13,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/0696d.svg",
+    "mnemonic": "Nghề (業) Đội mũ 4 gạch chăn Cừu (羊) 2 chân",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 9,
+    "compounds": [
+      {
+        "word": "卒業",
+        "reading": "そつぎょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "工業",
+        "reading": "こうぎょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "授業",
+        "reading": "じゅぎょう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "企業",
+        "reading": "きぎょう",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  },
+  {
+    "kanji": "用",
+    "hanViet": "DỤNG",
+    "onyomi": "ヨウ",
+    "kunyomi": null,
+    "meaning": "sử dụng",
+    "strokeCount": 5,
+    "strokeOrderUrl": "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/07528.svg",
+    "mnemonic": "冂 QUYNH",
+    "mnemonicImageUrl": null,
+    "lessons": [
+      46
+    ],
+    "sortOrder": 10,
+    "compounds": [
+      {
+        "word": "～用",
+        "reading": "よう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "用事",
+        "reading": "ようじ",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "使用中",
+        "reading": "しようちゅう",
+        "meaning": null,
+        "exampleSentence": null
+      },
+      {
+        "word": "利用する",
+        "reading": "りようする",
+        "meaning": null,
+        "exampleSentence": null
+      }
+    ]
+  }
+]

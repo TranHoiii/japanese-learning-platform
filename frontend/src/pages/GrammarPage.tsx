@@ -216,6 +216,16 @@ export default function GrammarPage() {
               <span>Ngữ Pháp {levelCode}</span>
             </Link>
 
+            {isN4 && (
+              <Link
+                to={`/n4/lessons/${activeLessonId}/kanji`}
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+              >
+                <span>🈁</span>
+                <span>Kanji N4</span>
+              </Link>
+            )}
+
             {!isN4 && (
               <>
                 <Link
