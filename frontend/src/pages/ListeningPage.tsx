@@ -1,4 +1,4 @@
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { vocabularyApi } from "../services/vocabularyApi";
 import { listeningApi } from "../services/listeningApi";
@@ -7,20 +7,24 @@ import Navbar from "../components/Navbar";
 export default function ListeningPage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
 
-  // 1. Get Level N5
+  const isN4 = location.pathname.startsWith("/n4");
+  const levelCode = isN4 ? "N4" : "N5";
+
+  // 1. Get Level (N4 or N5 based on route)
   const { data: levels } = useQuery({
     queryKey: ["levels"],
     queryFn: vocabularyApi.getLevels,
   });
 
-  const n5Level = levels?.find((l) => l.code === "N5") || levels?.[0];
+  const currentLevel = levels?.find((l) => l.code === levelCode) || levels?.[0];
 
   // 2. Get Lessons list for selector
   const { data: lessons } = useQuery({
-    queryKey: ["lessons", n5Level?.id],
-    queryFn: () => vocabularyApi.getLessonsByLevel(n5Level!.id),
-    enabled: !!n5Level,
+    queryKey: ["lessons", currentLevel?.id],
+    queryFn: () => vocabularyApi.getLessonsByLevel(currentLevel!.id),
+    enabled: !!currentLevel,
   });
 
   const activeLessonId = lessonId
@@ -45,7 +49,7 @@ export default function ListeningPage() {
   const handleLessonChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const targetId = e.target.value;
     if (targetId) {
-      navigate(`/n5/lessons/${targetId}/listening`);
+      navigate(`/${isN4 ? "n4" : "n5"}/lessons/${targetId}/listening`);
     }
   };
 
@@ -60,8 +64,8 @@ export default function ListeningPage() {
             Trang chủ
           </Link>
           <span>/</span>
-          <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-            Bài học N5
+          <Link to={`/${isN4 ? "n4" : "n5"}/lessons`} className="hover:text-slate-900 transition-colors">
+            Bài học {levelCode}
           </Link>
           <span>/</span>
           <span className="font-semibold text-slate-900">
@@ -75,7 +79,7 @@ export default function ListeningPage() {
             <div>
               <div className="flex items-center space-x-3 mb-2">
                 <span className="px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">
-                  JLPT N5
+                  JLPT {levelCode}
                 </span>
                 <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
                   {currentLesson ? currentLesson.title : `Bài học ${activeLessonId || ""}`}
@@ -87,7 +91,7 @@ export default function ListeningPage() {
                 )}
               </div>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                {currentLesson ? `Nghe Hiểu N5 - ${currentLesson.title}` : "Nghe Hiểu N5"}
+                {currentLesson ? `Nghe Hiểu ${levelCode} - ${currentLesson.title}` : `Nghe Hiểu ${levelCode}`}
               </h1>
             </div>
 
@@ -115,51 +119,51 @@ export default function ListeningPage() {
           {/* Module Switcher Tabs */}
           <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-2">
             <Link
-              to={`/n5/lessons/${activeLessonId}/vocabulary`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/vocabulary`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>📚</span>
-              <span>Từ Vựng N5</span>
+              <span>Từ Vựng {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId}/grammar`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/grammar`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>⛩️</span>
-              <span>Ngữ Pháp N5</span>
+              <span>Ngữ Pháp {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId}/kanji`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/kanji`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
-              <span></span>
-              <span>Kanji N5</span>
+              <span>🈯</span>
+              <span>Kanji {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId}/listening`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/listening`}
               className="px-5 py-2.5 rounded-xl text-sm font-bold bg-emerald-600 text-white shadow-md shadow-emerald-600/20 transition-all flex items-center space-x-2"
             >
               <span>🎧</span>
-              <span>Nghe Hiểu N5</span>
+              <span>Nghe Hiểu {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId}/reading`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/reading`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>📖</span>
-              <span>Đọc Hiểu N5</span>
+              <span>Đọc Hiểu {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId}/exercise`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/exercise`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>✏️</span>
-              <span>Bài Tập N5</span>
+              <span>Bài Tập {levelCode}</span>
             </Link>
           </div>
         </div>
