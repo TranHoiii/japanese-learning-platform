@@ -57,7 +57,7 @@ try:
 
         cur.execute('''
             INSERT INTO flyway_schema_history (installed_rank, version, description, type, script, checksum, installed_by, installed_on, execution_time, success)
-            VALUES (9, '9', 'add n4 reading', 'SQL', 'V9__add_n4_reading.sql', 0, 'root', NOW(), 150, 1)
+            VALUES (9, '9', 'add n4 reading', 'SQL', 'V9__add_n4_reading.sql', 2142542066, 'root', NOW(), 150, 1)
         ''')
         conn.commit()
         print(f"Executed {executed} statements from V9 SQL and registered in flyway_schema_history")
