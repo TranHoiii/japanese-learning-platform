@@ -185,6 +185,7 @@ export default function ListeningDetailPage() {
   const questions = listening?.questions || [];
   const currentQuestion = questions[activeQuestionIndex];
   const totalQuestions = questions.length;
+  const isN4 = !!(listening?.audioUrl?.includes("/n4/") || (listening?.lessonId && listening.lessonId >= 26));
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
@@ -199,7 +200,7 @@ export default function ListeningDetailPage() {
           <span>/</span>
           {listening ? (
             <Link
-              to={`/n5/lessons/${listening.lessonId}/listening`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${listening.lessonId}/listening`}
               className="hover:text-slate-900 transition-colors"
             >
               Nghe hiểu Bài {listening.lessonId}

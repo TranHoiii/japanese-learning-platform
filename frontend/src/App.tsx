@@ -92,6 +92,7 @@ export default function App() {
       <Route path="/n4/lessons/:lessonId/vocabulary" element={<VocabularyPage />} />
       <Route path="/n4/lessons/:lessonId/grammar" element={<GrammarPage />} />
       <Route path="/n4/lessons/:lessonId/kanji" element={<KanjiPage />} />
+      <Route path="/n4/lessons/:lessonId/listening" element={<ListeningPage />} />
       <Route path="/vocabulary/:id" element={<VocabularyDetailPage />} />
       <Route path="/grammar/:id" element={<GrammarDetailPage />} />
       <Route path="/kanjis/:id" element={<KanjiDetailPage />} />

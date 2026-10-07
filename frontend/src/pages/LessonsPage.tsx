@@ -225,7 +225,7 @@ export default function LessonsPage() {
                   {/* Skills Pills */}
                   <div>
                     {isN4 ? (
-                      <div className="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2">
+                      <div className="pt-3 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-4 gap-2">
                         <Link
                           to={`/n4/lessons/${lesson.id}/vocabulary`}
                           className="py-2 px-1 rounded-xl bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
@@ -246,6 +246,13 @@ export default function LessonsPage() {
                         >
                           <span>🈁</span>
                           <span>Kanji</span>
+                        </Link>
+                        <Link
+                          to={`/n4/lessons/${lesson.id}/listening`}
+                          className="py-2 px-1 rounded-xl bg-purple-50 hover:bg-purple-600 hover:text-white text-purple-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
+                        >
+                          <span>🎧</span>
+                          <span>Nghe</span>
                         </Link>
                       </div>
                     ) : (
