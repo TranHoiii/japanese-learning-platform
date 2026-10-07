@@ -92,7 +92,7 @@ export default function LessonsPage() {
             </h1>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               {isN4
-                ? "Tổng hợp đầy đủ 1138 từ vựng, 91 mẫu ngữ pháp, 192 chữ Hán tự, luyện nghe bản xứ và 44 bài đọc hiểu tiếng Nhật trình độ N4 chuẩn giáo trình Minnano Nihongo (Bài 26 đến Bài 50)."
+                ? "Tổng hợp đầy đủ 1138 từ vựng, 91 mẫu ngữ pháp, 192 chữ Hán tự, luyện nghe bản xứ, 44 bài đọc hiểu và 29 bài tập thực hành tiếng Nhật trình độ N4 chuẩn giáo trình Minnano Nihongo (Bài 26 đến Bài 50)."
                 : "Tổng hợp đầy đủ các bài học chuẩn Minnano Nihongo. Mỗi bài bao gồm Từ vựng, Ngữ pháp mẫu câu, Hán tự Kanji, Luyện nghe Audio bản xứ, Luyện đọc hiểu và Bài tập củng cố."}
             </p>
           </div>
@@ -225,7 +225,7 @@ export default function LessonsPage() {
                   {/* Skills Pills */}
                   <div>
                     {isN4 ? (
-                      <div className="pt-3 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-5 gap-2">
+                      <div className="pt-3 border-t border-slate-100 grid grid-cols-3 sm:grid-cols-6 gap-2">
                         <Link
                           to={`/n4/lessons/${lesson.id}/vocabulary`}
                           className="py-2 px-1 rounded-xl bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
@@ -260,6 +260,13 @@ export default function LessonsPage() {
                         >
                           <span>📖</span>
                           <span>Đọc</span>
+                        </Link>
+                        <Link
+                          to={`/n4/lessons/${lesson.id}/exercise`}
+                          className="py-2 px-1 rounded-xl bg-emerald-50 hover:bg-emerald-600 hover:text-white text-emerald-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
+                        >
+                          <span>✏️</span>
+                          <span>Bài tập</span>
                         </Link>
                       </div>
                     ) : (

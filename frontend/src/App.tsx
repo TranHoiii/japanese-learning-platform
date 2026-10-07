@@ -88,12 +88,15 @@ export default function App() {
       {/* N4 Routes */}
       <Route path="/n4" element={<Navigate to="/n4/lessons" replace />} />
       <Route path="/n4/lessons" element={<LessonsPage />} />
+      <Route path="/n4/exercises" element={<ExercisePage />} />
       <Route path="/n4/lessons/:lessonId" element={<VocabularyPage />} />
       <Route path="/n4/lessons/:lessonId/vocabulary" element={<VocabularyPage />} />
       <Route path="/n4/lessons/:lessonId/grammar" element={<GrammarPage />} />
       <Route path="/n4/lessons/:lessonId/kanji" element={<KanjiPage />} />
       <Route path="/n4/lessons/:lessonId/listening" element={<ListeningPage />} />
       <Route path="/n4/lessons/:lessonId/reading" element={<ReadingPage />} />
+      <Route path="/n4/lessons/:lessonId/exercise" element={<ExercisePage />} />
+      <Route path="/n4/lessons/:lessonId/exercises" element={<ExercisePage />} />
       <Route path="/vocabulary/:id" element={<VocabularyDetailPage />} />
       <Route path="/grammar/:id" element={<GrammarDetailPage />} />
       <Route path="/kanjis/:id" element={<KanjiDetailPage />} />

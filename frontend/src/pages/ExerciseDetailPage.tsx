@@ -101,6 +101,8 @@ export default function ExerciseDetailPage() {
 
   const totalQuestions = exercise?.questions?.length || 0;
   const isReview = exercise?.exerciseType === "REVIEW";
+  const isN4 = Boolean(exercise && exercise.sortOrder >= 28);
+  const levelCode = isN4 ? "N4" : "N5";
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
@@ -113,12 +115,12 @@ export default function ExerciseDetailPage() {
             Trang chủ
           </Link>
           <span>/</span>
-          <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-            Bài học N5
+          <Link to={`/${isN4 ? "n4" : "n5"}/lessons`} className="hover:text-slate-900 transition-colors">
+            Bài học {levelCode}
           </Link>
           <span>/</span>
-          <Link to="/n5/exercises" className="hover:text-slate-900 transition-colors">
-            Bài tập N5
+          <Link to={`/${isN4 ? "n4" : "n5"}/exercises`} className="hover:text-slate-900 transition-colors">
+            Bài tập {levelCode}
           </Link>
           <span>/</span>
           <span className="font-semibold text-slate-900 truncate">
@@ -163,8 +165,12 @@ export default function ExerciseDetailPage() {
             >
               <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                 <div className="flex items-center space-x-3">
-                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">
-                    JLPT N5
+                  <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                    isN4
+                      ? "bg-emerald-50 text-emerald-700 border border-emerald-200/60"
+                      : "bg-rose-50 text-rose-700 border border-rose-200/60"
+                  }`}>
+                    JLPT {levelCode}
                   </span>
                   <span
                     className={`px-3 py-1 rounded-full text-xs font-bold ${
@@ -182,7 +188,7 @@ export default function ExerciseDetailPage() {
                 <div className="flex items-center space-x-3">
                   <FavoriteButton contentType="EXERCISE" contentId={exerciseId} size="md" />
                   <Link
-                    to="/n5/exercises"
+                    to={`/${isN4 ? "n4" : "n5"}/exercises`}
                     className="text-sm font-semibold text-slate-500 hover:text-indigo-600 transition-colors flex items-center space-x-1"
                   >
                     <span>← Danh sách bài tập</span>
@@ -314,8 +320,19 @@ export default function ExerciseDetailPage() {
                           )}
                         </div>
 
+                        {/* Image for Lesson 30 Question 2 if applicable */}
+                        {exercise?.sortOrder === 32 && question.sortOrder === 2 && (
+                          <div className="mb-4 p-3 rounded-2xl bg-white border border-slate-200 shadow-2xs text-center">
+                            <img
+                              src="/media/exercise/exercise_n4_l30_q02.png"
+                              alt="Hình minh họa bài tập Bài 30 câu 2"
+                              className="max-h-80 mx-auto object-contain rounded-xl"
+                            />
+                          </div>
+                        )}
+
                         {/* Image required banner */}
-                        {hasImageRequired && (
+                        {hasImageRequired && !(exercise?.sortOrder === 32 && question.sortOrder === 2) && (
                           <div className="mb-4 p-3.5 rounded-xl bg-amber-50 border border-amber-200/70 text-amber-800 text-xs flex items-center space-x-2">
                             <span>📷</span>
                             <span>
