@@ -1,0 +1,3171 @@
+[
+  {
+    "lessonNumber": 26,
+    "items": [
+      {
+        "title": "宇宙ステーションの生活はどうですか",
+        "content": "――宇宙ステーションはどこにあるんですか。\n地球から400キロ上を飛んでいます。\n――えっ？ ステーションが飛んでいるんですか。\nはい。90分で1回地球を回っています。1日に16回朝と夜が来るんですよ。\n――じゃ、寝る時間や起きる時間はどうやってわかるんですか。\nグリニッジ標準時を使っています。\n――どうして宇宙ステーションの中ではいつも「泳いで」いるんですか。\n宇宙は重力がありませんから、歩くことができないんです。\n――いつも宇宙服を着ているんですか。\nいいえ。宇宙服はステーションの外に出て仕事をするとき、着ます。ステーションの中は普通の服を着ています。\n――服は洗濯するんですか。\nいいえ。宇宙では水が大切ですから、洗濯しません。4、5日着て、捨てます。\n――水も地球から運んでいるんですか。\nはい。でも、水は重いですから、たくさん運ぶことができません。ですから、わたしたちのおしっこから水を作っています。飲むこともできるんですよ。\n――リサイクルですね。じゃ、おふろは？\nありません。もちろんシャワーもありません。代わりに体をふきます。\n――雑誌で読んだんですが、宇宙で生活すると、背が高くなるんですか。\nええ、宇宙では、1～7センチ高くなります。しかし、地球へ帰ったら、まえと同じになります。\n――10年宇宙にいたら、どうなるんですか。\nまだ、わかりません。今、研究しています。\n（参考：JAXA 宇宙航空研究開発機構HP）",
+        "translation": "Cuộc sống ở trạm vũ trụ như thế nào?\n- Trạm vũ trụ ở đâu vậy?\nNó đang bay ở độ cao 400 km trên Trái Đất.\n- Hả? Trạm vũ trụ đang bay sao?\nVâng. Cứ 90 phút lại quay quanh Trái Đất 1 vòng. Một ngày có tới 16 lần buổi sáng và buổi tối đấy.\n- Vậy làm sao biết được giờ ngủ hay giờ thức?\nChúng tôi sử dụng giờ chuẩn Greenwich.\n- Tại sao trong trạm vũ trụ mọi người lúc nào cũng 'bơi' vậy?\nVì ngoài vũ trụ không có trọng lực, nên không thể đi bộ được.\n- Mọi người lúc nào cũng mặc bộ đồ du hành vũ trụ à?\nKhông. Bộ đồ vũ trụ chỉ mặc khi ra ngoài trạm làm việc. Ở trong trạm thì mặc quần áo bình thường.\n- Quần áo có giặt không?\nKhông. Ngoài vũ trụ nước rất quý nên không giặt. Mặc 4-5 ngày rồi vứt đi.\n- Nước cũng được chở từ Trái Đất lên à?\nVâng. Nhưng nước nặng nên không thể chở nhiều được. Vì vậy chúng tôi tái chế nước từ nước tiểu. Nước đó uống được đấy.\n- Tái chế nhỉ! Vậy còn tắm rửa thì sao?\nKhông có bồn tắm. Đương nhiên vòi hoa sen cũng không có. Thay vào đó, chúng tôi lau người.\n- Tôi đọc tạp chí thấy bảo sống ngoài vũ trụ thì chiều cao tăng lên đúng không?\nVâng, ngoài vũ trụ sẽ cao thêm 1-7 cm. Nhưng khi về Trái Đất thì sẽ trở lại như cũ.\n- Nếu ở ngoài vũ trụ 10 năm thì sẽ thế nào?\nVẫn chưa biết được. Hiện tại các nhà khoa học đang nghiên cứu.",
+        "imageUrl": "/media/reading/reading_n4_l26_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 宇宙では暗くなったら寝て、明るくなったら起きる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "90分で1回地球を回り、1日に16回朝と夜が来るため、グリニッジ標準時を使って時間を決めています。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) ステーションではおふろに入ったり、洗濯したりすることができない。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "おふろもシャワーもなく代わりに体をふき、水が大切なので洗濯もしません。(〇)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) ステーションで使う水は全部地球から運んでいる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "水は重くてたくさん運べないため、おしっこから水を作ってリサイクルしています。(✕)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) 宇宙から帰ると、背が高くなる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "宇宙では1～7センチ高くなりますが、地球へ帰ったらまえと同じになります。(✕)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "クイズ 宇宙",
+        "content": "宇宙についてのクイズです。宇宙での生活や宇宙の知識について考えてみましょう。\n\n1. 地球から宇宙ステーションまでどのくらいかかりますか。\n2. 地球を90分で回る宇宙ステーションは時速何キロで飛んでいますか。\n3. 宇宙ステーションの大きさ（広さ）はどのくらいですか。\n4. コップ1杯の水を宇宙に運びます。いくらかかりますか。\n5. 宇宙服は何キロありますか。\n6. 宇宙ステーションに何人住むことができますか。\n7. 宇宙には空気がありません。空気がなかったら、どうなりますか。\n8. 次の人で、宇宙飛行士はどの人ですか。\n9. 世界で初めて月へ行った人はどこの国の人ですか。",
+        "translation": "Câu đố về vũ trụ: Hãy cùng kiểm tra các kiến thức thú vị về cuộc sống và môi trường trong không gian.",
+        "imageUrl": "/media/reading/reading_n4_l26_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1. 地球から宇宙ステーションまでどのくらいかかりますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ロケットに乗って約6時間で国際宇宙ステーションに到着します。(③)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① 6か月",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 6日",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 6時間",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "2. 地球を90分で回る宇宙ステーションは時速何キロで飛んでいますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "秒速約8km、時速約28,000kmのスピードで地球の周りを回っています。(①)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① 28,000 km/h",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 2,800 km/h",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 280 km/h",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "3. 宇宙ステーションの大きさ（広さ）はどのくらいですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "長さ約108m、幅約73mで、ちょうどサッカー場と同じくらいの大きさです。(①)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① サッカー場ぐらい",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 東京ディズニーランドぐらい",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ ジャンボジェット機ぐらい",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "4. コップ1杯の水を宇宙に運びます。いくらかかりますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "宇宙への輸送費は1kgあたり約100万〜200万円のため、コップ1杯（200ml）で約30〜40万円かかります。(②)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "① 3～4万円",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 30～40万円",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 300～400万円",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "5. 宇宙服は何キロありますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "宇宙飛行士が船外活動で着る宇宙服は、生命維持装置を含めると約120kgあります。(①)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "① 120 kg",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 12 kg",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 1,200 kg",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "6. 宇宙ステーションに何人住むことができますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "通常は6人の宇宙飛行士が長期滞在して研究や作業を行っています。(③)",
+            "imageUrl": null,
+            "sortOrder": 6,
+            "options": [
+              {
+                "content": "① 100人",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 20人",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 6人",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "7. 宇宙には空気がありません。空気がなかったら、どうなりますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "空気がないと音の振動が空気を通して伝わらないため、音が聞こえません。(③)",
+            "imageUrl": null,
+            "sortOrder": 7,
+            "options": [
+              {
+                "content": "① 人や物が空中に浮く",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 人の顔が丸くなる",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 音が聞こえない",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "8. 次の人で、宇宙飛行士はどの人ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ユーリ・ガガーリンは1961年に世界で初めて宇宙飛行に成功した宇宙飛行士です。(②)",
+            "imageUrl": null,
+            "sortOrder": 8,
+            "options": [
+              {
+                "content": "① ガリレオ",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② ガガーリン",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ アインシュタイン",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "9. 世界で初めて月へ行った人はどこの国の人ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "1969年にアポロ11号で月面に降り立ったニール・アームストロング船長（アメリカ）です。(③)",
+            "imageUrl": null,
+            "sortOrder": 9,
+            "options": [
+              {
+                "content": "① ロシア",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② ドイツ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ アメリカ",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 27,
+    "items": [
+      {
+        "title": "忍者",
+        "content": "忍者は昔のスパイだ。忍者は厳しい訓練をしたから、いろいろなことができた。スポーツの選手と同じだ。とても速く歩いたり、走ったりすることができた。高い壁を登ることや長い時間水の中にいることもできた。目や耳がよかったから、遠い所がよく見えた。小さい音でもよく聞こえた。\n映画やマンガでは時々おもしろいまちがいがある。映画やマンガの忍者は水の上を歩いたり、空を飛んだりしている。でも、実際は無理だ。忍者はとても速く動いたり、いろいろな道具を使ったりした。それで、普通の人ができないことができたのだ。\n滋賀県や三重県には昔、忍者が住んでいたうちがある。うちの中にはいろいろおもしろい物がある。部屋の壁の前に立つと、壁が回転して、人が消える。小さい秘密の部屋から隣や下の部屋の中が見られる。忍者が使ったいろいろな道具もある。でも、今、忍者には会えない。残念だ。",
+        "translation": "Ninja là điệp viên ngày xưa. Ninja trải qua quá trình huấn luyện vô cùng nghiêm ngặt nên có thể làm được nhiều việc khác nhau, tương tự như các vận động viên thể thao. Họ có thể đi bộ hoặc chạy rất nhanh, có thể leo tường cao và ở dưới nước trong thời gian dài. Mắt và tai rất thính nên nhìn được nơi xa và nghe thấy cả những âm thanh rất nhỏ.\nTrong phim ảnh và truyện tranh thỉnh thoảng có những sự nhầm lẫn thú vị. Ninja trong phim đi trên mặt nước hay bay trên trời. Nhưng thực tế thì không thể làm vậy. Ninja di chuyển cực kỳ nhanh và sử dụng nhiều loại công cụ đặc biệt. Nhờ đó họ làm được những việc mà người bình thường không thể làm được.\nỞ tỉnh Shiga và Mie ngày xưa có những ngôi nhà nơi ninja từng sinh sống. Trong nhà có rất nhiều điều kỳ thú. Đứng trước tường phòng, bức tường xoay tròn và người biến mất. Từ căn phòng bí mật nhỏ có thể nhìn thấy phòng bên cạnh hoặc phòng bên dưới. Ngoài ra còn có nhiều dụng cụ ninja từng sử dụng. Tuy nhiên, ngày nay ta không thể gặp lại ninja được nữa. Thật đáng tiếc.",
+        "imageUrl": "/media/reading/reading_n4_l27_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 忍者は昔のスパイだ。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「忍者は昔のスパイだ」と本文にあります。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 忍者は水の上を歩いたり、空を飛んだりした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "映画やマンガの間違いで、実際は無理だと書かれています。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 忍者は普通の人ができない仕事をした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "道具や速い動きで、普通の人ができないことができました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) 忍者は目や耳をよくする訓練をした。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "厳しい訓練をしたため、遠い所が見えたり小さい音が聞こえたりしました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 28,
+    "items": [
+      {
+        "title": "昼ごはんはどこで？何を？",
+        "content": "昼ごはんについていろいろな人に聞きました。\n\n《中村正さん 会社員》\nたいてい社員食堂で食べています。安いし、それにメニューを見ると、料理のカロリーがわかるんです。実は去年こちらに転勤して、今、一人で住んでいますから、晩ごはんはほとんど外食なんです。ですから、昼ごはんは社員食堂で、栄養やカロリーを考えて、体にいい物を選んで食べています。（焼肉定食 450円 778 kcal）\n\n《岡本洋子さん 主婦》\n昼ごはんはたいてい一人でテレビを見ながら食べています。きょうはきのうの晩ごはんのすき焼きがありましたから、それを食べました。\n今、一週間に一回、ダンス教室に通っています。その日は友達と教室の近くのレストランで食べます。わたしはいつも1,500円の日替わりランチです。ちょっと高いけど、おいしいし、静かだし、サービスもいいし…みんなでおしゃべりしながら食べます。\n\n《チャンさん 日本語学校の学生》\nいつも学校の近くの弁当屋で弁当を買っています。メニューも多いし、あまり高くないし、それにおかずもごはんも温かいですから。味もまあまあです。日本の食べ物はちょっと甘いですが、もう慣れました。教室で友達と食べます。\n\n《山本元太君 小学一年生》\n教室で給食を食べます。みんなでいっしょに大きい声で「いただきます」と言ってから、食べます。先生はいつも「よくかみましょう。嫌いな物も食べましょう」と言います。でも、僕は嫌いなおかずは友達にあげます。給食で、カレーがいちばん好きです。",
+        "translation": "Chúng tôi đã hỏi nhiều người về bữa trưa của họ.\n- Anh Nakamura Tadashi (Nhân viên công ty): Thường ăn ở căng tin công ty. Vừa rẻ lại vừa biết được lượng calo. Năm ngoái tôi chuyển công tác tới đây, sống một mình nên bữa tối hầu hết ăn ngoài. Vì vậy bữa trưa tôi ăn ở căng tin để chọn món tốt cho sức khỏe.\n- Chị Okamoto Yoko (Nội trợ): Thường ăn một mình xem tivi, ăn đồ ăn thừa từ tối hôm trước. Mỗi tuần một lần đi học nhảy, hôm đó chị cùng bạn ăn set ăn trưa 1,500 yên ở nhà hàng gần lớp học.\n- Bạn Chan (Học sinh trường tiếng Nhật): Thường mua hộp cơm bento ở cửa hàng gần trường, vừa nhiều món, không quá đắt lại nóng sốt.\n- Bé Yamamoto Genta (Học sinh lớp 1): Ăn bữa trưa học đường (kyushoku) ở lớp cùng các bạn, thích nhất là món cà ri.",
+        "imageUrl": "/media/reading/reading_n4_l28_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 中村正さんはどこで、何を食べますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "社員食堂でカロリーを考えて焼肉定食などを食べます。(①)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① 社員食堂で焼肉定食",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② レストランで日替わりランチ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 教室で弁当",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ うちですき焼き",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) 岡本洋子さんはダンス教室の日、どこで食べますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ダンス教室の日は友達と教室の近くのレストランで1,500円の日替わりランチを食べます。(②)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① 一人でうちで食べる",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 友達とレストランで日替わりランチを食べる",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 弁当屋で弁当を買って食べる",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 社員食堂で食べる",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3) チャンさんはどこで昼ごはんを食べますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "学校の近くの弁当屋で買って、教室で友達と食べます。(③)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① 社員食堂",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② レストラン",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 教室で弁当",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ うちでテレビを見ながら",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "4) 山本元太君は給食で何がいちばん好きですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「給食で、カレーがいちばん好きです」と書かれています。(③)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "① 焼肉定食",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② すき焼き",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ カレー",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 魚",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 29,
+    "items": [
+      {
+        "title": "わたしの失敗",
+        "content": "《ライトさん》\nわたしは先週友達のうちへ遊びに行きました。大阪駅で来た電車にすぐ乗りました。友達はうちの近くの駅で待っていると言いました。でも、わたしが乗った電車はその駅を通り過ぎてしまいました。それは特急電車でした。京都までどこにも止まりませんでした。わたしはもう一度大阪へ行く電車に乗りました。友達は駅で2時間待っていてくれました。うれしかったです。\n\n《ジョンさん》\n先週日本人のうちにホームステイしました。晩ごはんのあとで、お母さんが「おふろ、どうぞ」と言ってくれました。日本のおふろは初めてでした。バスタブは大きくて、お湯がたくさん入っていました。お湯は少し熱かったです。お湯の中でゆっくり体を洗いました。そして汚れたお湯を全部捨てました。次にお父さんがおふろへ行きました。「あれ？ お湯が入っていない。」お父さんはびっくりしました。日本のおふろは、バスタブの外で体を洗ってから、中に入るんですね。知りませんでした。\n\n《ミゲルさん》\nわたしは水曜日の夜、日本人の友達のうちで、スペイン語を教えています。先週友達が「来月スペインへ旅行に行きますから、もっと勉強したいです」と言いました。わたしは「じゃ、土曜日も来ましょうか」と聞きました。彼は「土曜日はいいです」と言いました。土曜日に友達のうちへ行きました。家の電気は消えていました。ベルを押しましたが、返事がありませんでした。日曜日、彼に電話しました。「きのう、あなたのうちへ行きましたよ。」「『土曜日はいいです』と言ったでしょう？」",
+        "translation": "Những thất bại / sự cố đáng nhớ:\n- Anh Wright: Lên nhầm tàu tốc hành Tokkyu đi thẳng tới Kyoto không dừng lại ở ga của bạn mình, khiến bạn phải đợi 2 tiếng.\n- Anh John: Đi homestay tại nhà người Nhật, tắm trong bồn tắm rồi xả hết nước bẩn đi, khiến bố của gia đình chủ ngạc nhiên vì ở Nhật phải tắm rửa sạch sẽ bên ngoài bồn rồi mới vào ngâm nước.\n- Anh Miguel: Dạy tiếng Tây Ban Nha cho bạn người Nhật, nghe bạn bảo 'Thứ Bảy thì được rồi (không cần đâu)' nhưng lại tưởng là đồng ý, nên đến nhà không có ai.",
+        "imageUrl": "/media/reading/reading_n4_l29_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) ライトさんは特急電車に乗ってしまった。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "乗った電車が特急で京都まで止まりませんでした。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) ライトさんの友達のうちから近い駅は特急が止まる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "特急電車はその駅を通り過ぎてしまいました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 日本のおふろは、バスタブの中で体をきれいに洗ってお湯を捨てる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "バスタブの外で体を洗ってから中に入ります。お湯は捨てません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) ミゲルさんは「いいです」の意味をまちがえた。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "友達の「いいです（結構です・要りません）」を「来てもいいです」と勘違いしました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 30,
+    "items": [
+      {
+        "title": "日本でいちばん",
+        "content": "時計がなかったら、不便ですが、たくさんあっても、大変です。\n広島県福山市の赤繁さんのうちには時を音で知らせる時計が560あります。壁に掛ける時計が310、置き時計が210、そのほかの時計が40です。日本でいちばん時計の音がうるさいうちです。\n560の時計が決まった時間になると、鳴るのです。ほとんど古い時計で、そのままにしておくと、止まってしまいます。毎日ねじを巻かなければなりません。赤繁さんは一日中時計のねじを巻いていますから、右手がいつも痛いと言っています。もし一度に560の時計が全部鳴ったら、耳も痛くなってしまいますね。でも、みんな古い時計ですから、少しずつ違う時間に鳴ります。ですから、赤繁さんの耳は痛くならないのです。\n赤繁さんにちょっと聞きました。\n――どうしてそんなにたくさん時計を集めているんですか。\n30年まえに骨董屋で見つけた時計を修理してから、時計が好きになりました。壊れた時計を直すと、動きますね。それが楽しいんです。今も古い時計を見ると、買ってしまいます。もう離れの4つの部屋がいっぱいで、押し入れにも積んであります。\n――夜はよく寝られますか。時計の音がうるさくないですか。\n好きな時計の音ですから、すぐ慣れましたよ。音楽と同じです。\n――将来、時計の博物館を作りたいと思っていますか。\nええ。でも、今はお金がありませんから、しばらくこのままにしておきます。",
+        "translation": "Căn nhà số 1 Nhật Bản:\nỞ thành phố Fukuyama, tỉnh Hiroshima, nhà ông Akashige có 560 chiếc đồng hồ có chuông báo giờ: 310 đồng hồ treo tường, 210 đồng hồ để bàn và 40 loại khác. Đây là ngôi nhà ồn ào tiếng đồng hồ nhất Nhật Bản!\nCứ đến giờ nhất định là đồng hồ lại reo. Đều là đồng hồ cơ cũ nên mỗi ngày ông phải lên dây cót suốt ngày, đến mức tay phải luôn bị đau. Rất may là các đồng hồ reo ở các thời điểm lệch nhau một chút nên tai không bị đau. Ông bắt đầu sưu tầm từ 30 năm trước khi tự tay sửa một chiếc đồng hồ cũ ở tiệm đồ cổ. Ông coi tiếng tích tắc như âm nhạc và mơ ước mở một bảo tàng đồng hồ.",
+        "imageUrl": "/media/reading/reading_n4_l30_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 赤繁さんはどうして時計を集めているのですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "壊れた時計を修理して動くのが楽しいからです。(②)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① 時計があると、便利だから。",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 時計の修理が好きだから。",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 時計の音を聞きながら寝たいから。",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "2) 赤繁さんはどうして手が痛いのですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "一日中560個の時計のねじを巻いているからです。(②)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① 時計を直すから。",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 時計のねじを巻いているから。",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 骨董屋からうちまで時計を運ぶから。",
+                "correct": false,
+                "sortOrder": 3
+              }
+            ]
+          },
+          {
+            "question": "3) 時計が鳴っても、どうして耳が痛くならないのですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "みんな古い時計で、少しずつ違う時間に鳴るからです。(③)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① 押し入れに入れてあるから。",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 時計の音は音楽だから。",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 鳴る時間が同じではないから。",
+                "correct": true,
+                "sortOrder": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "伝言メモ",
+        "content": "日常でよく使われる伝言メモを読んでみましょう。\n\n1) お帰りなさい。冷蔵庫にケーキとジュースが入れてあります。食べたら、お皿とコップは洗っておいてね。5時ごろ帰ります。\n2) 大阪支店の佐藤さんから電話がありました。出張の予定を知らせておきました。会議の資料はメールで送っておきました。では、お先に失礼します。\n3) きのうは本当にゴメン。僕が悪かった。今晩は早く帰る。\n4) 掃除しました。机の上はそのままにしてあります。今晩の食事はカレーです。サラダは冷蔵庫に入れてあります。それから3時ごろ荷物が届きました。台所に置いてあります。あさっての午後また伺います。\n5) 今晩8時からサッカーの試合が予約してあるから、晩ごはんは要らないよ。それから今晩は彼女と食事するから、絶対にビデオに触らないで。",
+        "translation": "Các mẩu giấy ghi nhắn (Memo):\n1) Mẹ nhắn con: có bánh và nước trong tủ lạnh, ăn xong nhớ rửa.\n2) Nhân viên nhắn Trưởng phòng: có điện thoại từ anh Sato chi nhánh Osaka, đã gửi tài liệu qua mail.\n3) Chồng nhắn vợ: xin lỗi vì chuyện hôm qua, tối nay sẽ về sớm.\n4) Người giúp việc nhắn chủ nhà: đã dọn dẹp, nấu cà ri, hàng gửi đến để ở bếp.\n5) Con trai nhắn mẹ: tối nay hẹn hò và xem bóng đá, đừng động vào máy ghi hình.",
+        "imageUrl": "/media/reading/reading_n4_l30_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) メモ1「お帰りなさい。冷蔵庫にケーキとジュースが...」はだれからだれへ？",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "お母さんから子どもへのメモです。(①)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "① お母さん → 子ども",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 妻 → 夫",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 社員 → 課長",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 家政婦 → 家の人",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) メモ2「大阪支店の佐藤さんから電話がありました...」はだれからだれへ？",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "部下（社員）から上司（課長）への業務連絡メモです。(①)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "① 社員 → 課長",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 夫 → 妻",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 息子 → お母さん",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 課長 → 社員",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3) メモ3「きのうは本当にゴメン。僕が悪かった...」はだれからだれへ？",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "けんかした夫から妻への謝罪メモです。(①)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "① 夫 → 妻",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 子ども → お母さん",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 社員 → 課長",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 友達 → 友達",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "4) メモ4「掃除しました。机の上はそのままにしてあります...」はだれからだれへ？",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "家政婦さんから家の人への報告メモです。(①)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "① 家政婦 → 家の人",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② お母さん → 子ども",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 妻 → 夫",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 娘 → 両親",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "5) メモ5「今晩8時からサッカーの試合が予約してあるから...」はだれからだれへ？",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "息子からお母さんへ宛てたメモです。(①)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "① 息子 → お母さん",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "② 夫 → 妻",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "③ 課長 → 社員",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "④ 兄 → 妹",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 31,
+    "items": [
+      {
+        "title": "1月1日",
+        "content": "きょうは1月1日です。わたしの家族はみんな毎年1月1日に新年の決意を発表します。\n\n父・虎男（49歳）\n去年はジョギングを始めましたが、続けられませんでした。今年は50歳になるし、会社で課長になったし、体に気をつけようと思っています。お酒もできるだけ飲まないつもりです。太ると、困るから、食事に気をつけて、運動します。\n\n母・敏子（48歳）\n今年は介護のボランティアを始めようと思っています。若いときから介護の仕事をやりたかったんです。ボランティアをしながら、勉強をして資格も取るつもりです。皆さん、応援よろしくお願いします。\n\n姉・恵（22歳）\nインドネシアのバリの踊りが好きだから、将来はバリで踊りを研究したいと思っています。それで、今年からインドネシア語の勉強を始めようと思っています。\n\n弟・龍男（10歳）\n今年5年生になるから、学校のスポーツクラブに入れます。僕は野球のクラブに入ろうと思っています。僕は足も速いし、上手に打てるから、すぐ試合に出られると思います。みんな見に来てください。それから去年は宿題をよく忘れたけど、今年は忘れないつもりです。",
+        "translation": "Hôm nay là ngày 1 tháng 1. Cả gia đình tôi hàng năm vào ngày 1 tháng 1 đều công bố quyết tâm năm mới.\n\nBố - Torao (49 tuổi):\nNăm ngoái bố bắt đầu chạy bộ nhưng không duy trì được. Năm nay bố tròn 50 tuổi, lại lên chức trưởng phòng ở công ty nên định sẽ chú ý giữ gìn sức khỏe. Bố dự định hạn chế uống rượu hết mức có thể. Vì béo phì rất phiền toái nên bố sẽ chú ý ăn uống và tập thể dục.\n\nMẹ - Toshiko (48 tuổi):\nNăm nay mẹ định bắt đầu làm tình nguyện viên chăm sóc người già. Từ khi còn trẻ mẹ đã muốn làm công việc chăm sóc. Mẹ dự định vừa làm tình nguyện viên vừa học để lấy chứng chỉ. Rất mong mọi người ủng hộ.\n\nChị gái - Megumi (22 tuổi):\nVì thích điệu múa Bali của Indonesia nên tương lai em muốn nghiên cứu về điệu múa ở Bali. Vì vậy từ năm nay em định bắt đầu học tiếng Indonesia.\n\nEm trai - Tatsuo (10 tuổi):\nNăm nay em lên lớp 5 nên được vào câu lạc bộ thể thao của trường. Em định vào câu lạc bộ bóng chày. Em chạy nhanh và đánh bóng giỏi nên em nghĩ sẽ sớm được thi đấu. Mọi người hãy đến xem nhé. Thêm nữa năm ngoái em hay quên bài tập về nhà nhưng năm nay em nhất định sẽ không quên.",
+        "imageUrl": "/media/reading/reading_n4_l31_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) お父さんは今年ジョギングを続けます。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "お父さんは「去年はジョギングを始めましたが、続けられませんでした。今年は体に気をつけようと思っています。お酒もできるだけ飲まないつもりです」と言っており、ジョギングを続けるとは言っていません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) お母さんは介護の資格を取ってから、ボランティアをしようと思っています。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "お母さんは「ボランティアをしながら、勉強をして資格も取るつもりです」と言っています。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 恵さんは今年踊りの研究にバリへ行く予定です。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "恵さんは「将来はバリで踊りを研究したい。今年からインドネシア語の勉強を始めようと思っています」と言っており、今年バリへ行く予定ではありません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) 龍男君は今年宿題を必ずやろうと思っています。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "龍男君は「去年は宿題をよく忘れたけど、今年は忘れないつもりです」と言っています。(〇)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "あなたは何年生まれ？",
+        "content": "昔、神様が動物たちに言った。\n「1月1日の朝、わたしのうちへ早く来た順に、1番目から12番目のものに大切な仕事をあげよう。」\nネコは神様の話がよく聞こえなかったから、ネズミに「いつ？」と聞いた。ネズミは「2日だ」とうそを言った。\nウシが最初に神様のうちに着いたが、ウシの背中にはネズミがこっそり乗っていた。ドアが開いたときに、ネズミが飛び降りて、1番になった。そして2番から12番までの動物が決まった。\n神様が言った。\n「今年はネズミの年だ。ネズミの仕事は今年生まれる人たちを守ることだ。来年はウシ年で、ウシの仕事は来年生まれる人たちを守ることだ。毎年順番に仕事をして、12番まで仕事をしたら、またネズミの年になる。」\nこのときから毎年ネズミ年、ウシ年などと言う。ネコは遅れたから、仕事ももらえなかったし、ネコ年もない。それで、ネコはネズミを見ると、追いかける。今も怒っているのだ。",
+        "translation": "Ngày xửa ngày xưa, Thần linh nói với các loài động vật:\n'Sáng ngày 1 tháng 1, theo thứ tự những ai đến nhà ta sớm nhất, ta sẽ giao công việc quan trọng cho 12 con đầu tiên.'\nMèo không nghe rõ lời Thần dặn nên hỏi Chuột: 'Khi nào thế?'. Chuột nói dối: 'Ngày mùng 2 đấy'.\nBò là con đầu tiên đến nhà Thần linh, nhưng trên lưng Bò có Chuột đã lén trèo lên. Khi cánh cửa mở ra, Chuột nhảy bổ xuống và về nhất. Thế là các con vật từ số 2 đến số 12 đã được quyết định.\nThần linh phán:\n'Năm nay là năm Chuột. Việc của Chuột là bảo vệ những người sinh ra trong năm nay. Năm sau là năm Bò, việc của Bò là bảo vệ những người sinh ra năm sau. Mỗi năm lần lượt làm nhiệm vụ, khi hết 12 con thì lại đến năm Chuột.'\nTừ dạo đó mới có năm Tý, năm Sửu v.v. Mèo vì đến muộn nên không nhận được nhiệm vụ, cũng chẳng có năm Mão (theo 12 con giáp Nhật Bản, năm Mão là Thỏ). Vì thế hễ nhìn thấy Chuột là Mèo đuổi bắt. Đến tận bây giờ Mèo vẫn còn tức giận.",
+        "imageUrl": "/media/reading/reading_n4_l31_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) どうしてネコはネズミを追いかけるのですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ネズミに「2日だ」とうそを教えられて遅れ、仕事ももらえずネコ年もなくなったため、今でも怒っているからです。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "ネズミにうそをつかれて遅れ、十二支に入れなかったから",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "神様のうちにネズミより先に着いたから",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "ウシの背中に乗っていたネズミが嫌いだから",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "ネズミが神様の話を全部聞いていなかったから",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) ネズミはどうやって1番になりましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ウシの背中にこっそり乗り、ドアが開いたときに飛び降りて1番になりました。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "足がとても速くて最初に走って着いた",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "ウシの背中にこっそり乗って、ドアが開いたときに飛び降りた",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "神様に頼んで1番にしてもらった",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "ネコといっしょに朝早く起きて出かけた",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 32,
+    "items": [
+      {
+        "title": "桜とお花見",
+        "content": "日本人に「いちばん好きな花は何ですか」と聞いたら、多くの人が「桜」と答えるでしょう。春になって桜が咲くと、周りの景色がみんなピンク色になります。本当にきれいです。そして、満開の桜は風が吹くと一斉に散ります。桜は散るときも、とてもきれいです。\n\n春には、たくさんの人が桜を見に行きます。お花見は1200年ぐらいまえから続いている日本の春の大きいイベントです。桜が咲く時期は南から北へだんだん移ります。沖縄の桜がいちばん早くて、1月ごろ咲きます。北海道の桜は5月ごろ咲きます。ですから、お花見のシーズンになると、天気予報の中で、「上野公園の桜は来週金曜日ごろ満開になるでしょう。」とか、「弘前城の桜はもうすぐ咲くでしょう。」とか、桜の花が咲く日の予想を発表します。桜は1～2週間で散ってしまいますから、予想を聞いて、お花見の日を決めます。\n\nお花見では、家族や友達と、桜を見ながら食べたり飲んだり、歌ったり踊ったりします。絵をかいたり、写真を撮ったりする人もいます。バーベキューなどができる公園もあります。昼の桜もいいですが、夜の桜もとてもきれいです。でも、お花見のころの夜はちょっと寒いかもしれませんから、セーターなど暖かい服を持って行ったほうがいいでしょう。\n\n日本には、桜の名所がたくさんあります。春になると、桜の名所も、町の公園も、朝から夜まで人でいっぱいです。お花見は、日本人が短い桜の季節を楽しむ大切なイベントなのです。",
+        "translation": "Nếu hỏi người Nhật 'Bạn thích loài hoa nào nhất?', có lẽ rất nhiều người sẽ trả lời là 'Hoa anh đào' (Sakura). Khi mùa xuân đến và hoa anh đào nở, cảnh sắc xung quanh đều nhuộm một màu hồng. Thực sự rất đẹp. Và khi hoa nở rộ, chỉ một cơn gió thoảng qua là cánh hoa đồng loạt rơi rụng. Hoa anh đào ngay cả khi rụng cũng tuyệt đẹp.\n\nVào mùa xuân, rất nhiều người đi ngắm hoa. Ngắm hoa anh đào (Hanami) là một sự kiện lớn vào mùa xuân của Nhật Bản đã kéo dài khoảng 1200 năm nay. Thời điểm hoa anh đào nở dần dần dịch chuyển từ nam lên bắc. Hoa anh đào ở Okinawa nở sớm nhất vào khoảng tháng 1. Hoa anh đào ở Hokkaido nở vào khoảng tháng 5. Do đó khi bước vào mùa ngắm hoa, trong các bản tin dự báo thời tiết, người ta sẽ công bố dự báo ngày nở hoa như: 'Hoa anh đào ở công viên Ueno sẽ nở rộ vào khoảng thứ Sáu tuần sau' hay 'Hoa anh đào ở thành Hirosaki sắp nở'. Vì hoa anh đào tàn rụng chỉ trong 1-2 tuần nên mọi người nghe dự báo để chọn ngày đi ngắm hoa.\n\nKhi ngắm hoa, mọi người cùng gia đình, bạn bè vừa ngắm hoa vừa ăn uống, ca hát, nhảy múa. Có người vẽ tranh, chụp ảnh. Có những công viên cho phép nướng thịt BBQ. Hoa anh đào ban ngày đẹp nhưng hoa anh đào ban đêm cũng rất lung linh. Tuy nhiên ban đêm vào mùa ngắm hoa có thể hơi lạnh, nên mang theo áo ấm như áo len thì tốt hơn.\n\nỞ Nhật Bản có rất nhiều danh lam thắng cảnh ngắm hoa anh đào nổi tiếng. Mùa xuân đến, từ các địa điểm nổi tiếng đến công viên trong phố đều chật kín người từ sáng đến tối. Ngắm hoa là một sự kiện quan trọng để người Nhật tận hưởng mùa hoa anh đào ngắn ngủi.",
+        "imageUrl": "/media/reading/reading_n4_l32_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 桜は、咲いているときより、散るときのほうがきれいです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "本文では「満開の桜もきれいで、散るときもとてもきれい」と述べており、どちらのほうがきれいか比べてはいません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 沖縄で桜の花が見られなかった人は、北海道へ行ったら見られます。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "桜前線は南から北へ進み、沖縄は1月、北海道は5月ごろ咲くため、北海道に行けば見られます。(〇)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 天気予報を聞いてから、お花見の日を決めたほうがいいです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "桜は1～2週間ですぐ散ってしまうため、天気予報の開花予想を聞いて日を決めるのが適切です。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) 上野公園で一か月ぐらいお花見を楽しむことができます。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "桜の花は1～2週間で散ってしまうため、同じ公園で1か月間楽しむことはできません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "5) 夜のお花見をするときは、着る物に気をつけたほうがいいです。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「お花見のころの夜はちょっと寒いかもしれませんから、セーターなど暖かい服を持って行ったほうがいいでしょう」と書かれています。(〇)",
+            "imageUrl": null,
+            "sortOrder": 5,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "お花見",
+        "content": "日本人3万人に桜とお花見について聞きました。\n\n「桜が好きですか」という質問に対して：\n・とても好き：75%\n・まあまあ好き：22%\n・どちらでもない：3%\n\n好きなスタイル（スタイル別）：\n① 昼、散歩しながら見る\n② 夜桜を見る\n③ 桜の木の下でパーティーをする\n④ ドライブしながら見る\n⑤ 会社や学校へ行くとき見る\n\nまた、桜の花や葉の塩漬けをお湯に入れて「桜茶」として飲んだり、桜の葉で包んだ「桜餅」や「鯛の桜蒸し」など、桜を料理や和菓子にして味わう文化もあります。",
+        "translation": "Khảo sát 30.000 người Nhật về hoa anh đào và việc ngắm hoa:\n\nĐối với câu hỏi 'Bạn có thích hoa anh đào không?':\n- Rất thích: 75%\n- Khá thích: 22%\n- Bình thường/không ý kiến: 3%\n\nPhong cách ngắm hoa được yêu thích:\n① Ban ngày vừa đi dạo vừa ngắm\n② Ngắm hoa anh đào ban đêm (Yozakura)\n③ Mở tiệc liên hoan dưới gốc hoa anh đào\n④ Vừa lái xe vừa ngắm\n⑤ Ngắm trên đường đi làm hoặc đến trường\n\nNgoài ra còn có nét văn hóa thưởng thức ẩm thực từ hoa anh đào như 'Trà hoa anh đào' (Sakura-cha), bánh 'Sakura-mochi' hay món 'Cá tráp hấp hoa anh đào'.",
+        "imageUrl": "/media/reading/reading_n4_l32_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 日本人で桜が「とても好き」と答えた人は何％ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "調査によると、「とても好き」と答えた人は75%です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "22%",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "40%",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "75%",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "90%",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 33,
+    "items": [
+      {
+        "title": "大声大会",
+        "content": "わたしの町では毎年5月に大声大会があります。大きい声で何か叫んで、一年の嫌なことを忘れるのです。\n\n去年のテーマは「あの人に言いたい」でした。ほとんどの人は「税金を下げろ！」とか「首相はやめろ！」とか叫びましたが、外国から参加した女の人は「トーホク！ ガ・ン・バ・ロー！」と叫びました。この声が大会でいちばん大きい声でした。大きい地震があった東北の人に「元気を出して。いっしょに頑張りましょう」と言いたかったのです。\n\nほかに、「山本！貸した金返せ！」「給料を上げろ！」「良子、結婚してくれ！」「社長、下手な英語を使うなー！」「幸子、かんにーん！」などがありました。「かんにん」は大阪弁で「すみません」という意味です。この人は何か幸子さんに謝りたいことがあるのでしょう。\n\n毎日の生活では大声で叫ぶチャンスがありません。一年に一度、大声で叫んで、一年のストレスを全部出してしまいましょう。",
+        "translation": "Ở thị trấn của tôi, hàng năm vào tháng 5 đều tổ chức cuộc thi hét to. Mọi người hét to một điều gì đó để quên đi những chuyện không vui trong một năm.\n\nChủ đề năm ngoái là 'Điều muốn nói với người ấy'. Hầu hết mọi người đều hét lên: 'Hãy giảm thuế đi!' hay 'Thủ tướng hãy từ chức đi!'. Nhưng một người phụ nữ nước ngoài tham gia đã hét: 'Tohoku! Cố lên nhé!'. Tiếng hét này là tiếng to nhất cuộc thi. Chị ấy muốn gửi lời đến người dân vùng Tohoku nơi vừa trải qua trận động đất lớn: 'Hãy lên tinh thần nhé. Cùng nhau cố gắng nào!'.\n\nNgoài ra còn có: 'Yamamoto! Trả tiền vay đây!', 'Tăng lương đi!', 'Yoshiko, lấy anh nhé!', 'Giám đốc, đừng có nói tiếng Anh dở tệ nữa!', 'Sachiko, tha lỗi cho anh!'. 'Kannin' trong tiếng địa phương Osaka có nghĩa là 'Xin lỗi'. Chắc là anh này có điều gì muốn xin lỗi cô Sachiko.\n\nTrong cuộc sống thường ngày chúng ta không có dịp hét to. Mỗi năm một lần, hãy hét thật to để giải tỏa hết căng thẳng trong một năm nhé.",
+        "imageUrl": "/media/reading/reading_n4_l33_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 去年の大会で一番大きい声になった人のことばはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "外国から参加した女の人が叫んだ「トーホク！ ガ・ン・バ・ロー！」がいちばん大きい声でした。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "税金を下げろ",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "首相はやめろ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "トーホク！ ガ・ン・バ・ロー！",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "山本！貸した金返せ！",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) 「山本！貸した金返せ！」はだれがだれに言ったことばですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "友達が山本君にお金を返してほしいと言ったことばです。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "友達 → 山本君",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "山本君 → 友達",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "銀行 → 山本君",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "社長 → 山本君",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3) 大声大会に参加したら、嫌なことが忘れられ、ストレスを出すことができる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "本文の最後に「一年に一度、大声で叫んで、一年のストレスを全部出してしまいましょう」とあります。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "こんな人にこのことば",
+        "content": "日常生活の中で気をつけたいことと、ぴったりのことば：\n\n・石川さん（25歳）：「禁煙？考えたことない。寝る前はベッドで吸うんだ。一度布団が少し燃えたことがあるけど。」\n→「小さい火 初めはみんな 気をつけろ」\n\n・上田さん（27歳）：「あ、あそこの信号、もうすぐ赤になる！早く渡ってしまおう。」\n→「注意一秒、けが一生」\n\n・南山さん（36歳）：「シーツを買いました。袋を開けてから自分のベッドで使えないとわかりました。店に返しに行ったけど換えてもらえませんでした。」\n→「よく見て！聞いて！確かめて！」\n\n・田村さん（53歳）：「ごみは多いですよ。エアコンは一年中使っています。車が好きだからどこでも車で行きます。」\n→「守れ、緑の地球」\n\n・高橋さん（42歳）：「おじいちゃんは最近何でも忘れるし、何回も聞くし疲れます。子どもはいくら言っても部屋を片づけないし。」\n→「年寄り、笑うな、来た道だから。子ども、しかるな、行く道だから。」",
+        "translation": "Những thói quen cần lưu ý trong cuộc sống thường nhật và các câu nhắc nhở phù hợp:\n\n- Anh Ishikawa (25 tuổi): 'Bỏ thuốc? Chưa từng nghĩ tới. Trước khi ngủ tôi hút trên giường. Đã có lần chăn bị cháy xém một chút rồi đấy.' -> 'Lửa nhỏ lúc đầu, ai ai cũng phải cẩn thận.'\n\n- Anh Ueda (27 tuổi): 'A, đèn giao thông sắp đỏ rồi! Mau sang đường thôi.' -> 'Bất cẩn một giây, tàn tật một đời.'\n\n- Chị Minamiyama (36 tuổi): 'Tôi mua ga trải giường. Mở túi ra mới biết không vừa giường nhà mình. Mang ra tiệm đổi thì không được đổi nữa.' -> 'Hãy nhìn kỹ! Lắng nghe! Xác nhận kỹ!'\n\n- Ông Tamura (53 tuổi): 'Rác nhiều lắm. Điều hòa bật quanh năm. Tôi thích xe nên đi đâu cũng lái ô tô.' -> 'Hãy bảo vệ Trái Đất xanh.'\n\n- Chị Takahashi (42 tuổi): 'Ông dạo này cái gì cũng quên, hỏi đi hỏi lại mệt ghê. Con cái thì bảo bao lần cũng không chịu dọn phòng.' -> 'Người già chớ cười, vì đó là con đường ta từng đi qua. Trẻ nhỏ chớ mắng, vì đó là con đường ta sẽ đi tới.'",
+        "imageUrl": "/media/reading/reading_n4_l33_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 「ベッドでたばこを吸う人」に教えることばとして最も適切なものはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "火災の危険があるため、「小さい火 初めはみんな 気をつけろ」が適切です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "注意一秒、けが一生",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "小さい火 初めはみんな 気をつけろ",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "守れ、緑の地球",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "よく見て！聞いて！確かめて！",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 34,
+    "items": [
+      {
+        "title": "あなたの国では？",
+        "content": "日本ではあいさつするとき、頭を下げます。握手をしたり体に触ったりするあいさつはあまりありません。また、日本人は「わたし」というとき、人差し指で自分の鼻を指します。\n\n手を使うジェスチャーはいろいろあります。人の前や間を歩くとき、手を立てて上げたり下げたりします。これは「ちょっとすみません」という意味です。また、手を顔の前で横に何回も振ります。これは「さようなら」のジェスチャーではありません。「わかりません」「できません」「いいえ、違います」などの意味です。\n\n人や犬などを呼ぶとき、日本人は手のひらを下に向けて振ります。また、日本人は口の前に人差し指を立てて「シーッ」と言います。これは「話すな！」という意味です。みんなの前で話すときは、ポケットに手を入れて話してはいけません。また、日本人は相手の目をあまり見ないで話します。じっと見ると失礼なのです。\n\nこのほかに笑うとき、手で口を隠す女の人がいます。昔、女の人はほかの人に歯を見せてはいけませんでした。それで今もその習慣のとおりにしているのです。\n\n日本では小さい子どもに「いい子だね」と言うとき、頭に触ります。しかし、タイなどの東南アジアの国では頭に触ってはいけません。旅行のガイドブックにはタイへ行ったら、人の頭に触るなと書いてあります。世界にはいろいろなジェスチャーがあります。",
+        "translation": "Ở Nhật Bản khi chào hỏi, người ta cúi đầu. Rất ít khi bắt tay hay chạm vào cơ thể khi chào. Ngoài ra khi nói 'tôi', người Nhật lấy ngón trỏ chỉ vào mũi mình.\n\nCó rất nhiều cử chỉ điệu bộ (gesture) dùng tay. Khi đi cắt ngang mặt người khác hoặc đi giữa dòng người, họ giơ bàn tay khép thẳng lên xuống. Điệu bộ này có nghĩa là 'Xin lỗi một chút'. Khi xua tay ngang trước mặt nhiều lần, đây không phải cử chỉ tạm biệt, mà có nghĩa là 'Tôi không biết', 'Tôi không làm được' hoặc 'Không phải đâu'.\n\nKhi gọi người hoặc gọi chó, người Nhật úp lòng bàn tay xuống dưới rồi vẫy. Ngoài ra người Nhật đặt ngón trỏ lên trước miệng và nói 'Suỵt', có nghĩa là 'Đừng nói nữa!'. Khi nói chuyện trước đám đông, không được đút tay vào túi quần. Người Nhật cũng ít khi nhìn chằm chằm vào mắt đối phương khi nói chuyện vì nhìn chằm chằm là bất lịch sự.\n\nBên cạnh đó, khi cười có những phụ nữ lấy tay che miệng. Ngày xưa, phụ nữ không được để lộ răng cho người khác thấy. Vì thế cho đến nay họ vẫn duy trì tập quán đó.\n\nỞ Nhật khi khen trẻ nhỏ 'Bé ngoan quá', người ta xoa đầu bé. Tuy nhiên ở các nước Đông Nam Á như Thái Lan, tuyệt đối không được sờ vào đầu người khác. Sách hướng dẫn du lịch có viết nếu đến Thái Lan thì đừng chạm vào đầu người khác. Trên thế giới có muôn vàn cử chỉ điệu bộ khác nhau.",
+        "imageUrl": "/media/reading/reading_n4_l34_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 人がたくさんいる所で松本さんを呼びました。松本さんは「えっ、わたし？」と言いながら、どんなジェスチャーをしますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "日本人は「わたし」と言うとき、人差し指で自分の鼻を指します。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "人差し指で自分の鼻を指す",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "手を顔の前で横に振る",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "手のひらを下に向けて振る",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "口の前に人差し指を立てる",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) 公園で男の子が友達に「こっちへ来て」と呼ぶとき、どんなジェスチャーをしますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "人や動物を呼ぶとき、日本人は手のひらを下に向けて振ります。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "手のひらを上に向けて振る",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "手のひらを下に向けて振る",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "手を立てて上げたり下げたりする",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "相手の頭に触る",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3) 道を聞かれた日本人が「英語、わからない」と答えるとき、どんなジェスチャーをしますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「わかりません」「できません」という意味のとき、日本人は手を顔の前で横に何回も振ります。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "手を顔の前で横に何回も振る",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "ポケットに手を入れる",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "相手の目をじっと見る",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "頭を激しく下げる",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 35,
+    "items": [
+      {
+        "title": "自動販売機",
+        "content": "日本は自動販売機が多い国だ。ボタンを押せば、簡単に飲み物やお菓子などいろいろな物が買える。今、日本では飲み物の販売機がいちばん多くて、257万台ある。2番目はプリペイドカードや靴下など生活用品を売る販売機で、86万台ある。3番目はたばこの販売機で、23万台ある。食べ物の販売機が7万台ぐらい、切符などの販売機が4万台ある。全部で377万台だ。\n\nいつでも使うことができるから、便利だが、問題もある。日本では20歳以上にならなければ、お酒を飲んだり、たばこを吸ったりすることはできない。しかし、夜はだれも見ていないから、子どもでも、販売機でたばこやお酒が買える。また、24時間動かすと、電気もむだになる。\n\nそれで、お酒の販売機は夜11時から朝5時まで止めてある。たばこは「タスポ」というカードを機械にタッチしなければ、買えない。このカードは大人しか持てない。また、最近では、販売機のほとんどが節電タイプになっている。1991年から2013年までに、飲み物の販売機が使う電力は75％減った。\n\nしかし、販売機は町の美しさを壊すし、ごみが増えると言う人もいる。古くて静かな京都のお寺でも、門の前に販売機が置いてある。そばのごみ箱はいつでも空き缶でいっぱいだ。また、夜中に販売機の前に若い人が集まって、騒いだりする。便利な販売機だが、問題はまだある。\n\n《世界最初の自動販売機》\n紀元前3世紀にエジプトのお寺にありました。お金を入れると、その重さで水の出口が開いて、水が出てきました。\n\n《日本最初の自動販売機》\n明治21年にできた、たばこの販売機でした。今あるいちばん古い販売機は切手とはがきの販売機です。木の箱で、ポストもいっしょですから、切手とはがきを買って、手紙も出せる便利なものでした。",
+        "translation": "Nhật Bản là quốc gia có rất nhiều máy bán hàng tự động. Chỉ cần bấm nút là có thể mua đủ loại đồ uống, bánh kẹo một cách dễ dàng. Hiện nay ở Nhật Bản, máy bán đồ uống nhiều nhất với 2,57 triệu máy. Thứ hai là máy bán nhu yếu phẩm như tất, thẻ trả trước với 860.000 máy. Thứ ba là máy bán thuốc lá với 230.000 máy. Máy bán đồ ăn có khoảng 70.000 máy, máy bán vé khoảng 40.000 máy. Tổng cộng lên tới 3,77 triệu máy.\n\nVì có thể sử dụng bất cứ lúc nào nên rất tiện lợi, nhưng cũng phát sinh vấn đề. Ở Nhật Bản phải từ 20 tuổi trở lên mới được uống rượu và hút thuốc. Nhưng vào ban đêm không có ai giám sát, nên trẻ em cũng có thể mua thuốc lá hay rượu ở máy tự động. Thêm nữa nếu hoạt động 24/24 thì gây lãng phí điện năng.\n\nVì vậy, máy bán rượu bị khóa từ 11 giờ đêm đến 5 giờ sáng. Máy bán thuốc lá nếu không chạm thẻ 'taspo' vào máy thì không thể mua được. Thẻ này chỉ người lớn mới có. Ngoài ra gần đây hầu hết các máy bán hàng đều là loại tiết kiệm điện. Từ năm 1991 đến năm 2013, lượng điện năng máy bán nước giải khát sử dụng đã giảm tới 75%.\n\nTuy nhiên, có người phàn nàn máy bán hàng tự động làm mất mỹ quan đường phố và gia tăng rác thải. Ngay cả những ngôi chùa cổ kính yên tĩnh ở Kyoto, trước cổng cũng đặt máy bán hàng. Thùng rác bên cạnh lúc nào cũng tràn ngập vỏ lon rỗng. Ngoài ra đêm muộn nhiều thanh niên tụ tập trước máy gây ồn ào. Dù tiện lợi nhưng máy bán tự động vẫn còn nhiều vấn đề tồn tại.\n\n- Máy bán hàng tự động đầu tiên trên thế giới: Ra đời vào thế kỷ 3 trước Công nguyên ở ngôi đền Ai Cập. Khi thả đồng xu vào, sức nặng của đồng xu mở nắp vòi và nước chảy ra.\n- Máy bán hàng tự động đầu tiên của Nhật Bản: Năm Minh Trị 21 (1888), là máy bán thuốc lá. Máy cổ nhất còn tồn tại đến nay là máy bán tem và bưu thiếp bằng gỗ, kết hợp luôn hòm thư.",
+        "imageUrl": "/media/reading/reading_n4_l35_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 大人は夜11時まで、販売機でお酒が買える。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「お酒の販売機は夜11時から朝5時まで止めてある」ので、夜11時までは買えます。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 販売機でたばこを買うときは、カードを販売機に入れる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "たばこは「タスポ」というカードを機械に「タッチ」しなければ買えないので、入れるのではありません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 全部の販売機が使う電力は2013年までに75%減った。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "本文では「飲み物の販売機が使う電力は75%減った」とあり、全部の販売機ではありません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ほんとうに自動販売機で売っているの？",
+        "content": "日本にはいろいろ珍しい自動販売機もあります。\n\n街で見かけるユニークな自動販売機の例：\n・温かいおでんの缶詰\n・きれいな生花\n・突然の雨のための傘\n・焼きたてのクレープやパン\n・採れたての新鮮な卵や野菜\n\n「こんな物まで売っているの？」と驚くような自動販売機がたくさん開発されています。",
+        "translation": "Ở Nhật Bản có rất nhiều loại máy bán hàng tự động độc đáo, lạ mắt.\n\nVí dụ những máy bán hàng kỳ lạ trên đường phố:\n- Đồ hộp Oden nóng hổi\n- Hoa tươi thơm ngát\n- Ô dù đi mưa khi gặp mưa bất chợt\n- Bánh crepe hoặc bánh mì nướng\n- Trứng tươi và rau củ mới thu hoạch\n\nNhiều loại máy khiến người ta phải ngạc nhiên thốt lên: 'Đến món này mà cũng bán tự động ư?'.",
+        "imageUrl": "/media/reading/reading_n4_l35_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 日本の自動販売機で売られている珍しいものとして紹介されているものはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "おでんの缶詰、生花、傘、クレープ、野菜などが珍しい自動販売機として知られています。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "おでんの缶詰や生花、傘など",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "本物の自動車",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "生きたペットの犬や猫",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "海外旅行の飛行機チケット",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 36,
+    "items": [
+      {
+        "title": "動物の目",
+        "content": "皆さんは動物園へ行ったことがあるでしょう？ 短い足や大きい耳、長い鼻など、動物の体の形は面白いですね。目の形や位置もいろいろです。どうしてシマウマの目は顔の横にあるのですか。ライオンの目は前にならんでいるのですか。皆さんは考えたことがありますか。\n\nライオンはほかの動物の肉を食べます。その目は、遠くに動物がいても、すぐ走って行って捕まえられるように顔の前に2つ並んでいます。2つ並んでいなければ、正しい距離がわかりません。サルの目も顔の前に並んでいます。サルは木から木へ跳ぶとき、失敗しないように、よく前を見なければなりません。ヒトの目も同じです。ヒトは2本の足で歩けるようになって、手が使えるようになりました。それで、手で難しい仕事ができます。\n\n草や木の葉を食べる動物の目はどうですか。シマウマはライオンなどにいつも気をつけていなければなりません。ですから、草を食べていても、うしろの方まで見えるように、目が顔の横に付いています。カバは水の中にいますが、頭の上に目がありますから、目だけ水から出して周りを見ることができます。\n\n動物の目は食べる物や住んでいる所によって違うのです。今度動物園へ行ったら、動物の目をよく見てください。面白いことが見つかるかもしれませんよ。",
+        "translation": "Chắc hẳn mọi người từng đi vườn thú rồi nhỉ? Chân ngắn, tai to, mũi dài... hình dáng cơ thể các loài động vật thật thú vị. Hình dáng và vị trí của đôi mắt cũng rất đa dạng. Tại sao mắt ngựa vằn lại nằm ở hai bên mặt? Tại sao mắt sư tử lại cùng nằm ở phía trước? Mọi người đã từng nghĩ về điều đó chưa?\n\nSư tử ăn thịt các loài động vật khác. Mắt của chúng nằm song song phía trước khuôn mặt để dù con mồi ở xa cũng có thể lao tới vồ bắt chính xác khoảng cách. Nếu hai mắt không cùng hướng về phía trước thì không thể xác định chính xác cự ly. Mắt khỉ cũng nằm ở phía trước mặt. Khi khỉ chuyền từ cành cây này sang cành cây khác, để không bị ngã trượt, chúng phải nhìn rõ phía trước. Mắt con người cũng vậy. Con người đi bằng hai chân nên đôi tay được giải phóng và có thể làm những công việc khéo léo, phức tạp.\n\nCòn mắt của loài ăn cỏ lá cây thì sao? Ngựa vằn luôn phải cảnh giác trước sư tử. Vì vậy, ngay cả khi đang cúi đầu gặm cỏ, để có thể nhìn thấy cả phía sau, mắt của chúng nằm ở hai bên mặt. Hà mã sống dưới nước, nhưng mắt nằm trên đỉnh đầu nên chúng có thể chỉ nhô mắt lên khỏi mặt nước để quan sát xung quanh.\n\nMắt của động vật khác nhau tùy thuộc vào thức ăn và nơi sinh sống của chúng. Lần tới đi sở thú, các bạn hãy quan sát thật kỹ đôi mắt của các con vật nhé. Có thể bạn sẽ phát hiện ra nhiều điều thú vị đấy.",
+        "imageUrl": "/media/reading/reading_n4_l36_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) ライオンの目はうしろの方まで見えます。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ライオンの目は獲物を捕まえるために顔の前に並んでおり、うしろの方まで見えるのはシマウマなど草食動物です。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) サルは目が顔の前に2つ並んでいますから、正しい距離がわかります。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "サルは木から木へ跳ぶときに失敗しないよう、前にある2つの目で正しい距離をつかみます。(〇)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) シマウマはうしろからライオンが来ても見えますから、逃げることができます。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "シマウマの目は顔の横にあるため、草を食べていてもうしろの方まで見えて危険から逃げられます。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) カバの目は、水から目だけ出して周りが見られるように、頭の上にあります。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "カバは頭の上に目があるため、水の中から目だけ出して周りを見ることができます。(〇)",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 37,
+    "items": [
+      {
+        "title": "55年かかってゴールインした日本人選手",
+        "content": "日本は1912年の第5回ストックホルム大会からオリンピックに参加した。日本ではまだオリンピックはほとんど知られていなかった。選手を決めるマラソン大会が開かれて、20歳の学生が2時間32分45秒の記録で勝った。これはそのときの世界記録より27分速かった。学生の名前は金栗四三。金栗はオリンピック選手に選ばれた。ストックホルムへ行くお金がなかったが、兄や友達がお金を集めてくれた。それで、やっとオリンピックに参加することができた。\n\n金栗は一番になるかもしれないと思われていた。しかし、マラソンが行われた7月14日はとても暑い日だった。金栗は走っていてだんだん気分が悪くなった。水を飲んだり、頭から水を浴びたりしたが、32kmの所で倒れてしまった。近くに住んでいた親切な人に助けられて、その人のうちに泊まった。そして、次の日、元気になって、日本の選手がいるホテルへ帰った。「消えた日本人」はスウェーデンのニュースになっていた。一生懸命捜していた人はみんな金栗を見たとき、とても喜んでくれた。しかし、金栗は恥ずかしかった。\n\n1967年、75歳の金栗は招待されてストックホルムへ行った。競技場でたくさんの人に迎えられた金栗はみんなの前をゆっくり走って、ゴールインした。競技場にアナウンスがあった。「ミスター・カナグリ、ニッポン。ゴールイン。時間は54年と8か月6日5時間32分20秒3。これでストックホルム大会は全部の競技を終わりました。」金栗は言った。「長い試合でした。スタートからゴールインまでに孫が5人できましたよ。」",
+        "translation": "Nhật Bản bắt đầu tham gia Thế vận hội Olympic từ kỳ đại hội lần thứ 5 năm 1912 tại Stockholm. Lúc bấy giờ ở Nhật hầu như chưa ai biết đến Olympic. Một giải chạy marathon tuyển chọn tuyển thủ được tổ chức, và chàng sinh viên 20 tuổi đã chiến thắng với thành tích 2 giờ 32 phút 45 giây. Thành tích này nhanh hơn kỷ lục thế giới lúc đó tới 27 phút. Tên của chàng sinh viên đó là Kanakuri Shizo. Kanakuri được chọn làm vận động viên Olympic. Dù không có đủ kinh phí sang Stockholm, người anh trai và bạn bè đã gom góp tiền ủng hộ giúp anh. Nhờ thế anh cuối cùng đã có thể tham dự Olympic.\n\nKanakuri được kỳ vọng có thể sẽ về nhất. Tuy nhiên, ngày 14 tháng 7 diễn ra cuộc thi chạy marathon là một ngày vô cùng oi bức. Đang chạy thì Kanakuri dần dần cảm thấy kiệt sức. Dù đã uống nước và dội nước lên đầu, anh vẫn ngã quỵ ở mốc 32 km. Được một người dân tốt bụng gần đó giúp đỡ, anh đã ngủ nhờ lại nhà họ. Ngày hôm sau khi khỏe lại, anh trở về khách sạn nơi đoàn Nhật Bản lưu trú. Vụ việc 'Vận động viên Nhật Bản biến mất' đã lên trang nhất các báo Thụy Điển. Mọi người sau bao công tìm kiếm khi thấy Kanakuri đều vỡ òa vui mừng. Tuy nhiên, Kanakuri cảm thấy vô cùng hổ thẹn.\n\nNăm 1967, ở tuổi 75, Kanakuri được mời quay lại Stockholm. Được chào đón nồng nhiệt tại sân vận động, Kanakuri chầm chậm chạy trước mọi người và cán đích. Loa phát thanh sân vận động vang lên: 'Ông Kanakuri, đoàn Nhật Bản, đã cán đích! Thời gian hoàn thành là 54 năm 8 tháng 6 ngày 5 giờ 32 phút 20 giây 3. Như vậy kỳ Olympic Stockholm chính thức kết thúc toàn bộ các nội dung thi đấu!'. Kanakuri tươi cười phát biểu: 'Đó thực sự là một chặng đua dài. Từ khi xuất phát tới lúc về đích tôi đã có thêm tới 5 đứa cháu ngoại đấy.'",
+        "imageUrl": "/media/reading/reading_n4_l37_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 1912年ごろ日本ではオリンピックはとても人気があった。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "本文に「日本ではまだオリンピックはほとんど知られていなかった」とあります。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 第5回大会のまえの選考会で金栗の記録は当時の世界記録より速かった。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「これはそのときの世界記録より27分速かった」と書かれています。(〇)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 金栗は自分のお金でオリンピックに参加した。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ストックホルムへ行くお金がなかったが、兄や友達がお金を集めてくれました。(✕)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "4) 金栗選手が途中で走れなくなった理由は何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "とても暑い日で体調が悪くなり、倒れてしまったからです。",
+            "imageUrl": null,
+            "sortOrder": 4,
+            "options": [
+              {
+                "content": "とても暑い日で気分が悪くなって倒れてしまったから",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "道に迷ってストックホルムの街から出られなくなったから",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "走るまえに冷たい水を飲みすぎたから",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "ほかの選手と衝突して足にけがをしたから",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 38,
+    "items": [
+      {
+        "title": "消したいもの",
+        "content": "「あなたが一番消したいものは何ですか。」\nある会社が1000人にアンケートをしました。\n\n大人の男性と女性が消したいもの：\n・1番：体の脂肪\n・2番：借りたお金\n・3番：恥ずかしいこと\n男の人は「借りたお金」と答えた人が多くて、女の人は「体の脂肪」と答えた人が多かったです。\n\n子どもの消したいもの：\n・1番：悪い成績\n・2番：宿題\n・3番：けんかしたこと\n\nアンケートをした会社は、消しゴムを作っている会社です。「何でも消せる消しゴムがあればいいですね」と社長は言いました。",
+        "translation": "'Điều bạn muốn xóa đi nhất là gì?'\nMột công ty đã làm cuộc khảo sát với 1.000 người.\n\nĐiều người lớn (nam và nữ) muốn xóa đi nhất:\n- Số 1: Lượng mỡ thừa trên cơ thể\n- Số 2: Tiền vay nợ\n- Số 3: Những chuyện đáng xấu hổ trong quá khứ\nỞ nam giới người trả lời là 'tiền vay nợ' chiếm nhiều nhất, còn ở nữ giới người trả lời là 'mỡ thừa' chiếm nhiều nhất.\n\nĐiều trẻ em muốn xóa đi nhất:\n- Số 1: Điểm số kém\n- Số 2: Bài tập về nhà\n- Số 3: Những lần cãi vã đánh nhau với bạn bè\n\nCông ty làm cuộc khảo sát này chính là một công ty chuyên sản xuất tẩy (gôm). Vị giám đốc nói: 'Giá như có một cục tẩy xóa được mọi thứ trên đời thì hay biết mấy'.",
+        "imageUrl": "/media/reading/reading_n4_l38_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) アンケートで大人の女性が一番消したいと答えたものは何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "女性の1位は「体の脂肪」でした。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "体の脂肪",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "借りたお金",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "宿題",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "恥ずかしいこと",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) 子どもが一番消したいと答えたものは何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "子どもの1位は「悪い成績」でした。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "宿題",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "悪い成績",
+                "correct": true,
+                "sortOrder": 2
+              },
+              {
+                "content": "けんかしたこと",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "体の脂肪",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "迷惑なことは？",
+        "content": "駅や電車の中で迷惑なことは何ですか。鉄道会社が調べました。\n\n迷惑行為ランキング：\n1位：大きい声で話したり、騒いだりする（33.2%）\n2位：座り方が悪い（31.7%）\n3位：乗るとき、降りるときのマナーが悪い（27.9%）\n4位：ケータイの音や話す声がうるさい（24.7%）\n5位：ヘッドホンから音漏れが聞こえる（24.5%）\n6位：荷物の持ち方や置き方が悪い（22.3%）\n7位：混んでいる電車にベビーカーを押して乗る（19.5%）\n8位：ごみや空き缶を置いておく（16.9%）\n9位：電車の中で化粧する（16.5%）\n10位：酔っぱらって電車に乗る（14.6%）\n\n（日本民営鉄道協会調べ）",
+        "translation": "Hành vi gây phiền toái ở nhà ga và trên tàu điện là gì? Các công ty đường sắt đã tiến hành khảo sát.\n\nBảng xếp hạng các hành vi gây khó chịu nhất:\n1. Nói to, làm ồn (33,2%)\n2. Tư thế ngồi thiếu ý thức (31,7%)\n3. Thiếu văn hóa khi lên xuống tàu (27,9%)\n4. Tiếng chuông điện thoại hoặc nói chuyện điện thoại ồn ào (24,7%)\n5. Tai nghe để lọt âm thanh ra ngoài (24,5%)\n6. Cách đeo hoặc để hành lý vướng víu (22,3%)\n7. Đẩy xe nôi chen chúc lên tàu đông (19,5%)\n8. Vứt lại rác, vỏ lon trên tàu (16,9%)\n9. Trang điểm trên tàu (16,5%)\n10. Say xỉn lên tàu (14,6%).",
+        "imageUrl": "/media/reading/reading_n4_l38_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 駅や電車の中で最も迷惑だと感じられている行為は何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "調査で1位（33.2%）は「大きい声で話したり、騒いだりすること」です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "大きい声で話したり、騒いだりすること",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "電車の中で化粧すること",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "ごみを置いていくこと",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "酔っぱらって乗ること",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "なぞなぞ",
+        "content": "日本の面白いなぞなぞ：\n\n1. 切っても、切っても、切れないものは何？\n→ こたえ：水（みず）\n\n2. 生まれると、みんながもらうもの。自分のものだけど、ほかの人がよく使うものは何？\n→ こたえ：名前（なまえ）\n\n3. 作った人は言わない、持っている人はわからない、知っている人は欲しくないものは何？\n→ こたえ：にせ金（にせがね）\n\n4. 長生きすると多くなるけど、欲しくないものは何？\n→ こたえ：年（とし）／しわ\n\n5. 眠くなると会いに来て、起きるといない。見たくてもなかなか見られないものは何？\n→ こたえ：夢（ゆめ）",
+        "translation": "Những câu đố mẹo dân gian thú vị của Nhật Bản:\n\n1. Càng cắt càng không đứt là gì?\n-> Đáp án: Nước.\n\n2. Sinh ra ai cũng được nhận. Là của mình nhưng người khác lại dùng nhiều nhất?\n-> Đáp án: Tên gọi.\n\n3. Người làm ra không nói, người cầm không hay, người biết rõ thì chẳng ai muốn nhận?\n-> Đáp án: Tiền giả.\n\n4. Càng sống lâu thì càng nhiều thêm, nhưng chẳng ai muốn nhận thêm là gì?\n-> Đáp án: Tuổi tác / nếp nhăn.\n\n5. Khi buồn ngủ thì tìm đến, khi tỉnh giấc thì biến mất, muốn nhìn thấy cũng khó là gì?\n-> Đáp án: Giấc mơ.",
+        "imageUrl": null,
+        "sortOrder": 3,
+        "questions": [
+          {
+            "question": "1) 「自分のものだけど、ほかの人がよく使うもの」のこたえは何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「名前」は自分のものですが、呼ぶときに他人が一番使います。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "名前",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "お金",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "夢",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "水",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 39,
+    "items": [
+      {
+        "title": "万次郎",
+        "content": "1827年、高知の小さな村に元気な男の子が生まれました。名前は万次郎。家族は魚をとって暮らしていました。9歳のときにお父さんが亡くなったので、万次郎は家族のために、働かなければなりませんでした。\n\n1841年、14歳の万次郎は4人の仲間と船で漁に出ましたが、嵐に遭って太平洋の無人島に流されました。水も食べ物もほとんどない島で143日間生き延びた後、アメリカの捕鯨船「ジョン・ハウランド号」に助けられました。船長のホイットフィールドは万次郎の頭の良さと人柄を気に入り、アメリカへ連れて行きました。万次郎は「ジョン・マン」と呼ばれ、アメリカの学校で英語、数学、測量、航海術などを熱心に勉強しました。\n\nその後、万次郎は故郷の日本へ帰ることを決意し、1851年に日本へ戻りました。当時、日本は鎖国をしていましたが、ペリーの黒船が来航すると、幕府は英語と航海術に通じた万次郎を必要とし、武士の身分を与えて「中浜万次郎」と名乗らせました。万次郎は通訳や翻訳、航海術の教授として、日本の近代化に大きく貢献しました。",
+        "translation": "Năm 1827, tại một ngôi làng nhỏ ở Kochi, một bé trai khôi ngô ra đời. Tên cậu là Manjiro. Gia đình sống bằng nghề đánh cá. Năm 9 tuổi cha mất, Manjiro phải bươn chải làm việc để phụ giúp gia đình.\n\nNăm 1841, Manjiro 14 tuổi cùng 4 người bạn đi thuyền đánh cá thì gặp bão lớn dạt vào một hoang đảo ở Thái Bình Dương. Sau 143 ngày sinh tồn khắc nghiệt trên hòn đảo thiếu nước và đồ ăn, họ được tàu săn cá voi Mỹ mang tên 'John Howland' cứu sống. Thuyền trưởng Whitfield rất quý mến sự thông minh và hoạt bát của Manjiro nên đã đưa cậu về Mỹ. Manjiro được gọi thân mật là 'John Mung', cậu chăm chỉ học tiếng Anh, toán học, trắc địa và kỹ thuật hàng hải tại trường học ở Mỹ.\n\nSau đó, Manjiro quyết tâm trở về quê hương Nhật Bản và đã trở về vào năm 1851. Thời điểm đó Nhật Bản đang bế quan tỏa cảng, nhưng khi tàu đen của Đề đốc Perry cập bến, chính quyền Mạc phủ rất cần người thông thạo tiếng Anh và hàng hải nên đã phong cho Manjiro thân phận võ sĩ Samurai với họ tên Nakahama Manjiro. Manjiro đã đảm nhận phiên dịch, dịch thuật, giảng dạy kỹ thuật đi biển và đóng góp to lớn cho công cuộc hiện đại hóa của Nhật Bản.",
+        "imageUrl": "/media/reading/reading_n4_l39_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 万次郎が無人島に流されたあと、だれに助けられましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "アメリカの捕鯨船（ジョン・ハウランド号）に助けられました。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "アメリカの捕鯨船",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "日本の幕府の船",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "高知の漁師の船",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "イギリスの貿易船",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) 万次郎が日本に帰ったあと、幕府でどんな仕事をしましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "英語の通訳や翻訳、造船や航海術を教える仕事などをしました。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "英語の通訳や航海術を教える仕事",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "高知で魚をとる仕事だけをした",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "アメリカの大統領になった",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "お寺の住職になった",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "読みましたか・見ましたか・聞きましたか",
+        "content": "心に残る名作や文化の紹介：\n\n1. 本文の「万次郎」を読みましたか。すごい運命の人がいたんですね。\n2. 「鉄腕アトム」を知っていますか。マンガも面白いけど、アニメもいいですね。テーマ曲を聞くと元気が湧いてきます。\n3. バレエを見たことがありますか。「白鳥の湖」で白鳥を踊った人はとてもきれいで感動しました。\n4. 映画や演劇の「シラノ・ド・ベルジュラック」を見て感動しました。本当の愛を伝える名作です。",
+        "translation": "Giới thiệu những tác phẩm văn hóa nghệ thuật lay động lòng người:\n\n1. Bạn đã đọc câu chuyện về 'Manjiro' chưa? Đúng là một con người với số phận kỳ diệu nhỉ.\n2. Bạn có biết 'Astro Boy' (Atom tay sắt) không? Truyện tranh hay mà hoạt hình cũng tuyệt. Cứ nghe nhạc mở đầu là thấy tràn đầy năng lượng.\n3. Bạn từng xem múa ba lê chưa? Xem 'Hồ thiên nga', vũ công múa vai thiên nga đẹp tuyệt trần khiến người xem xúc động.\n4. Xem vở kịch 'Cyrano de Bergerac' thật xúc động. Một kiệt tác về tình yêu chân thành.",
+        "imageUrl": "/media/reading/reading_n4_l39_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 「鉄腕アトム」のテーマ曲を聞くとどんな気持ちになると紹介されていますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "アトムの歌を聞くと元気が出ると書かれています。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "元気が出る",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "悲しくなる",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "眠くなる",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "お腹がすく",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 40,
+    "items": [
+      {
+        "title": "常識",
+        "content": "わたしのうちに今、ブラジルのアナさんがホームステイしています。アナさんがかぜをひいたとき、母は「シャワーを浴びたり、おふろに入ったりしたらだめよ」と言いました。アナさんは「どうしていけないか、わかりません。病気のときは清潔が大切だし、わたしのうちでは熱が下がるようにシャワーを浴びたり、ぬるいお湯に入ったりします」と言いました。\n\nそれを聞いて、わたしたちはびっくりしました。熱があったり、かぜをひいたりしているときは、おふろに入らないほうがいいと信じていたからです。学校で友達に聞いてみましたが、みんな「おふろは入らないほうがいいと思う」と言いました。どうしてでしょうか。昔の日本のおふろは外にあったり、脱衣所が寒かったりして湯冷めしやすかったからです。でも今の日本の家は暖房があって暖かいので、さっとシャワーを浴びるくらいなら問題ありません。\n\n生活が変わっても、昔の常識をそのまま信じているのは不思議です。ときどきその常識が正しいかどうか、どうしてその常識ができたのか、考えてみたほうがいいでしょう。",
+        "translation": "Nhà tôi hiện có bạn Ana đến từ Brazil đang ở homestay. Khi Ana bị cảm cúm, mẹ tôi dặn: 'Đừng tắm vòi sen hay ngâm bồn tắm con nhé'. Ana ngạc nhiên bảo: 'Cháu không hiểu tại sao lại không được ạ. Khi ốm thì giữ vệ sinh sạch sẽ rất quan trọng, ở nhà cháu khi bị sốt mọi người thường tắm vòi sen hoặc ngâm nước ấm vừa phải để hạ sốt ạ'.\n\nNghe vậy chúng tôi rất ngạc nhiên. Bởi vì người Nhật từ xưa luôn tin rằng khi sốt hay cảm cúm thì không nên tắm. Tôi hỏi bạn bè ở trường, ai cũng nói 'Tớ nghĩ không nên tắm'. Tại sao lại như vậy? Vì ngày xưa phòng tắm ở Nhật thường nằm ngoài trời hoặc phòng thay đồ rất lạnh nên rất dễ bị nhiễm lạnh sau khi tắm. Nhưng nhà cửa ngày nay có hệ thống sưởi ấm áp, nên tắm nhanh dưới vòi sen thì không có vấn đề gì.\n\nDù đời sống đã thay đổi nhưng vẫn mù quáng tin vào những 'thường thức' ngày xưa thì thật kỳ lạ. Thỉnh thoảng chúng ta nên suy ngẫm xem thường thức đó có còn đúng hay không, và vì sao lại có định kiến thường thức ấy.",
+        "imageUrl": "/media/reading/reading_n4_l40_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) かぜのときや熱が高いとき、おふろに入らないのは世界中の常識だ。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ブラジルなど外国では清潔を保ち熱を下げるためにシャワーを浴びる習慣もあり、世界共通の常識ではありません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 熱があるとき、ぬるいおふろに入って、体の熱を下げようと思う人がいる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "アナさんの国では熱を下げるためにぬるいお湯に入ったりします。(〇)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 昔の日本人がかぜのときにおふろに入らなかった主な理由は何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "昔のおふろ場や脱衣所が寒く、湯冷めしてかぜが悪化しやすかったからです。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "昔の家やお風呂場が寒くて湯冷めしやすかったから",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "昔はお風呂の水がとても汚かったから",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "お風呂に入ると薬の効果が消えると信じられていたから",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "水が貴重でお風呂を沸かせなかったから",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "だれでもできて健康にいい習慣、教えます",
+        "content": "毎日のちょっとした習慣で健康になれる方法：\n\n1. 朝起きたら、すぐ冷たい水をコップ一杯飲む\n→ 冷たい水を飲むと、休んでいた胃と腸が動き始め、お通じが良くなります。\n\n2. 音楽を聞きながら食事する\n→ 楽しい音楽を聞いてリラックスすると、胃液がたくさん出て消化を助けます。\n\n3. 毎日鏡を見て笑う\n→ わたしたちの体には病気と闘う力があります。笑うとその免疫力が強くなり、気分も明るくなります。\n\n4. 大股で歩く\n→ 大股で歩くと、自然と運動量が増え、足の筋肉をしっかり鍛えられます。\n\n5. 寝る前に足の裏を5分マッサージする\n→ 足の裏を刺激することで全身の血行が良くなり、ぐっすり眠れます。",
+        "translation": "Những thói quen đơn giản ai cũng có thể làm để có một sức khỏe tốt:\n\n1. Vừa thức dậy uống ngay một ly nước mát: Kích thích dạ dày và ruột khởi động, hỗ trợ tiêu hóa.\n2. Vừa nghe nhạc vừa dùng bữa: Nghe nhạc vui tươi thư giãn giúp tiết dịch vị tiêu hóa thức ăn tốt hơn.\n3. Mỗi ngày nhìn vào gương và mỉm cười: Nụ cười giúp tăng cường hệ miễn dịch chống lại bệnh tật và mang lại tinh thần lạc quan.\n4. Đi sải bước dài: Tăng cường vận động và rèn luyện cơ bắp chân chắc khỏe.\n5. Xoa bóp lòng bàn chân 5 phút trước khi đi ngủ: Kích thích lưu thông máu toàn thân giúp ngủ ngon và sâu giấc.",
+        "imageUrl": "/media/reading/reading_n4_l40_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 朝起きてすぐ冷たい水を飲むと、どんな良い効果がありますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "胃と腸が動き始めて消化や排便が良くなります。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "胃と腸が動き始める",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "すぐに眠くなる",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "足の筋肉が強くなる",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "喉が渇かなくなる",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "健康チェック",
+        "content": "あなたの心臓と血管が疲れていないかチェックしてみましょう。\n\n当てはまる項目をチェック：\n・油が多い料理がとても好きだ\n・コーヒーに必ずミルクと砂糖を入れる\n・座っているときも脈拍が1分間に90回以上ある\n・スポーツをほとんどしない\n・塩辛い食べ物が好きだ\n・冬、重い布団をかけて寝ている\n・たばこが絶対にやめられない\n・枕が高くなければ寝られない\n・魚より肉をよく食べる\n・よく心臓がドキドキする\n\n診断：\n・チェックが10個以上：要注意！心臓と血管が疲れています。すぐに生活習慣を見直しましょう。\n・チェックが5～9個：油断禁物。適度な運動とバランスの取れた食事を心がけましょう。\n・チェックが4個以下：良好です。今の良い生活習慣を続けましょう。",
+        "translation": "Hãy kiểm tra xem tim và mạch máu của bạn có đang mệt mỏi hay không nhé.\n\nCác dấu hiệu cần lưu ý:\n- Rất thích các món nhiều dầu mỡ\n- Luôn cho đường và sữa vào cà phê\n- Ngay cả khi ngồi yên tim vẫn đập trên 90 nhịp/phút\n- Hầu như không bao giờ tập thể dục\n- Thích ăn đồ đậm vị, mặn\n- Mùa đông đắp chăn quá dày và nặng\n- Không thể bỏ được thuốc lá\n- Gối phải cao mới ngủ được\n- Ăn thịt nhiều hơn ăn cá\n- Hay bị hồi hộp, tim đập thình thịch\n\nĐánh giá kết quả:\n- Từ 10 điểm: Báo động! Cần thăm khám bác sĩ và điều chỉnh lối sống ngay.\n- 5 đến 9 điểm: Không được chủ quan, cần tập thể dục và ăn uống cân bằng.\n- Dưới 4 điểm: Tình trạng rất tốt, hãy duy trì lối sống lành mạnh này nhé.",
+        "imageUrl": null,
+        "sortOrder": 3,
+        "questions": [
+          {
+            "question": "1) 心臓や血管の健康のために避けたほうがよい習慣はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "油が多い料理や塩辛いものを多く食べ、運動をしない生活は心臓や血管に負担をかけます。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "油や塩分の多い料理ばかり食べること",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "適度な運動を続けること",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "魚や野菜をバランスよく食べること",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "毎日鏡を見て笑うこと",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 41,
+    "items": [
+      {
+        "title": "ロボットといっしょ",
+        "content": "日本は「ロボット大国」と言われています。工場で自動車や精密機械を作る産業用ロボットだけでなく、最近では病院や介護施設、そして家庭でも様々なロボットが活躍しています。\n\nお年寄りの介護の現場では、ベッドから車いすへ人を持ち上げる介護ロボットや、いっしょに体操をしてくれる体操ロボットが導入されています。また、本物のアザラシの赤ちゃんそっくりの「癒やしロボット（パロ）」は、名前を呼ぶと甘えた声を出し、触ると気持ちよさそうに目を閉じます。認知症のお年寄りがパロと触れ合うことで、笑顔が増え、心が落ち着く効果が認められています。\n\nさらに、掃除ロボットや案内ロボット、会話ができるコミュニケーションロボットなど、私たちの暮らしの身近なパートナーとしてロボットは日々進化しています。少子高齢化が進む日本において、ロボットはなくてはならない存在になりつつあります。",
+        "translation": "Nhật Bản được mệnh danh là 'Cường quốc robot'. Không chỉ những robot công nghiệp chế tạo ô tô hay máy móc chính xác trong nhà máy, mà gần đây trong bệnh viện, viện dưỡng lão và ngay cả các hộ gia đình, nhiều loại robot đa dạng cũng đang phát huy vai trò lớn.\n\nTại các cơ sở chăm sóc người cao tuổi, robot nâng đỡ người từ giường sang xe lăn hay robot tập thể dục cùng các cụ đã được đưa vào sử dụng. Đặc biệt, chú robot hải cẩu con 'Paro' giống hệt thật, khi được gọi tên sẽ phát ra tiếng kêu nũng nịu, khi được vuốt ve sẽ lim dim mắt khoan khoái. Người già suy giảm trí nhớ khi tiếp xúc với Paro đã cười nhiều hơn và tinh thần trở nên bình an hơn.\n\nNgoài ra, robot hút bụi, robot lễ tân hướng dẫn, robot giao tiếp... đang không ngừng phát triển như những người bạn đồng hành thân thiết. Trong một xã hội già hóa và sinh ít như Nhật Bản, robot đang dần trở thành sự tồn tại không thể thiếu.",
+        "imageUrl": "/media/reading/reading_n4_l41_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 日本ではいろいろな所でロボットを使っている。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "工場だけでなく、病院、介護施設、家庭など多様な場所でロボットが使われています。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) アザラシのロボット（パロ）はおしゃべりができる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "パロは鳴き声を出したり目を閉じたりして癒やすロボットであり、人間の言葉でおしゃべりをするわけではありません。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 体操ロボットに習ったとおりに体を動かすと、体の調子がよくなる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "ロボットと一緒に無理なく体操をすることで健康維持に役立ちます。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 42,
+    "items": [
+      {
+        "title": "肉を食べると",
+        "content": "世界中の人が食べる肉の量は毎年増えている。その大きな原因は人々の食生活が変わったからだ。日本でも魚や野菜より肉が好きな子どもが多い。\n\n今、世界では牛や羊、豚、鶏など、たくさんの家畜が飼われている。家畜の数は世界の人口の3倍以上で、今も増えている。増えた牛や羊を飼うのに、新しい草地が必要になる。それで、草地を作るために、世界中の森の木が切られている。森が少なくなると、二酸化炭素が増えて地球は暖かくなる。そして、草地はだんだん砂漠化する。\n\nまた、家畜のえさに麦やとうもろこしなどたくさんの穀物が使われる。牛の肉1キロを作るのに、約11キロもの穀物と大量の水やエネルギーが必要になる。私たちが肉をたくさん食べることは、地球の環境や食料問題と深くつながっているのだ。",
+        "translation": "Lượng thịt con người tiêu thụ trên thế giới đang tăng lên mỗi năm. Nguyên nhân chính là do thói quen ăn uống của mọi người đã thay đổi. Ngay cả ở Nhật Bản, trẻ em thích ăn thịt hơn cá và rau củ cũng ngày một nhiều.\n\nHiện nay, trên thế giới có rất nhiều gia súc gia cầm như bò, cừu, lợn, gà được chăn nuôi. Số lượng gia súc gấp hơn 3 lần dân số toàn cầu và vẫn tiếp tục tăng. Để chăn thả lượng bò và cừu tăng lên đó, cần thêm nhiều đồng cỏ mới. Vì thế, để lấy đất làm đồng cỏ, rừng trên khắp thế giới đang bị chặt phá. Rừng suy giảm khiến khí CO2 tăng cao và Trái Đất nóng lên. Những bãi chăn thả dần dần bị sa mạc hóa.\n\nNgoài ra, một lượng khổng lồ ngũ cốc như lúa mì, ngô được dùng làm thức ăn gia súc. Để sản xuất được 1 kg thịt bò cần tới khoảng 11 kg ngũ cốc cùng một lượng nước và năng lượng khổng lồ. Việc chúng ta ăn nhiều thịt có mối liên hệ mật thiết đến môi trường và an ninh lương thực của Trái Đất.",
+        "imageUrl": "/media/reading/reading_n4_l42_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) どうして人が食べる肉の量が増えているのですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "人々の食生活が変わり、肉を好んで食べるようになったからです。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "人々の食生活が変わったから",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "野菜や魚が世界からなくなったから",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "医者が肉だけを食べるように勧めているから",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "肉の値段が野菜よりずっと安くなったから",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) 今、世界で飼っている家畜の数はどのくらいですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "家畜の数は世界の人口の3倍以上です。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "世界の人口の3倍以上",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "世界の人口と同じくらい",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "世界の人口の半分くらい",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "100万頭くらい",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3) 牛の肉1キロを作るのに、穀物は約何キロ必要ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "牛肉1キロを作るのに約11キロの穀物が必要です。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "約1キロ",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "約5キロ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "約11キロ",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "約50キロ",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "地球はどうなる？",
+        "content": "環境問題の原因と結果：\n\n・ごみを分別せず何でも燃やす\n→ ダイオキシンが出る → 体が弱くなる、環境ホルモンの影響\n\n・エネルギーを大量に使い、物を使い捨てる\n→ 二酸化炭素（CO2）が増える → 地球温暖化が進む → 気候変動、食料不足、難民の発生\n\n・古い電化製品を適切に処理せず壊す\n→ フロンガスが出る → オゾン層が破壊される → 紫外線が増加する → 皮膚ガンや病気が増える",
+        "translation": "Nguyên nhân và hậu quả của các vấn đề môi trường:\n\n- Không phân loại rác, đốt rác bừa bãi:\n-> Sản sinh khí Dioxin độc hại -> Sức khỏe suy giảm, ảnh hưởng hormone môi trường.\n\n- Sử dụng lãng phí năng lượng, xả rác dùng một lần:\n-> Khí CO2 tăng -> Trái Đất ấm lên -> Biến đổi khí hậu, khủng hoảng lương thực.\n\n- Thải bỏ sai quy cách các thiết bị điện tử cũ:\n-> Rò rỉ khí Freon -> Phá hủy tầng Ozon -> Tia cực tím gia tăng -> Nguy cơ ung thư da và bệnh tật.",
+        "imageUrl": "/media/reading/reading_n4_l42_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 地球温暖化（地球が暖かくなること）の直接の原因となる気体は何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "二酸化炭素（CO2）が増えることが地球温暖化の大きな原因です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "二酸化炭素（CO2）",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "酸素",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "水素",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "水蒸気のみ",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "あなたのエコロジー度は？",
+        "content": "毎日の生活で地球環境を守る行動をチェック：\n\n1. できるだけ車に乗らないで、電車やバスを使う\n2. エアコンはできるだけ使わない\n3. 電気製品は省エネの製品を使う\n4. 洗濯のときは、おふろの残り水を利用する\n5. 合成洗剤やせっけんを使いすぎない\n6. 油で汚れたお皿は、汚れをふき取ってから洗う\n7. 新聞・雑誌、瓶・缶などをリサイクルに出す\n8. 買い物にはマイバッグを持参する\n9. 夜は早く寝て、朝早く起きる\n\n小さなエコの積み重ねが地球の未来を守ります。",
+        "translation": "Kiểm tra mức độ sống xanh bảo vệ môi trường hàng ngày:\n\n1. Hạn chế đi xe ô tô cá nhân, ưu tiên tàu điện và xe buýt\n2. Hạn chế sử dụng điều hòa\n3. Dùng thiết bị điện tiết kiệm năng lượng\n4. Tái sử dụng nước tắm để giặt giũ\n5. Không dùng quá nhiều chất tẩy rửa tổng hợp\n6. Lau sạch dầu mỡ trên đĩa trước khi rửa\n7. Thu gom báo cũ, chai lọ, lon tái chế\n8. Mang theo túi đi chợ cá nhân\n9. Ngủ sớm và dậy sớm\n\nMỗi hành động nhỏ sẽ chung tay bảo vệ tương lai Trái Đất.",
+        "imageUrl": null,
+        "sortOrder": 3,
+        "questions": [
+          {
+            "question": "1) 油で汚れたお皿を洗うとき、環境にやさしい方法はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "まず紙などで汚れをふき取ってから洗うと、水や洗剤の無駄遣いを防げます。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "汚れを紙などでふき取ってから洗う",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "洗剤をいつもの3倍使って一気に流す",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "熱湯を何時間も出しっぱなしにして流す",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "汚れた皿を川に捨ててしまう",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 43,
+    "items": [
+      {
+        "title": "お元気ですか",
+        "content": "【メール1】\n宛先：佐藤朝子\n件名：お元気ですか\n\nおばさん、お元気ですか。\nわたしは大学の冬休みを利用して、南米のエクアドルとガラパゴス諸島へ行ってきました。ガラパゴスでは珍しいイグアナや巨大なリクガメをたくさん見ました。自然の豊かさに本当に感動しました。\n\nところで、最近ニュースで見ましたが、東京の多摩川に巨大なワニや外来魚がたくさん捨てられているそうですね。ペットショップで買った珍しい動物を、大きくなって飼えなくなったからと川に捨てるなんて、本当に無責任で勝手な人たちだと思います。動物を飼うことについて、もっと厳しい法律や規制が必要だと思います。\n\nこちらは今晩から雪が降りそうです。おばさんもかぜをひかないように気をつけてください。\n田中博\n追伸：旅行のとき撮った写真を添付します。\n\n【メール2（返信）】\n宛先：田中博\n件名：Re: お元気ですか\n\n博君、メールと写真をありがとう。ガラパゴスのカメ、立派ね。\n実はこの間、隣の家の庭に大きなカメが入ってきて、うちの子どもたち（健太とみき）が大騒ぎしたのよ。飼い主が探していたからすぐ戻ったけれど、珍しいペットを飼うなら最後まで責任を持って世話してほしいわね。\n博君、卒業試験が終わったら、ぜひうちに遊びに来てね。大好物の肉じゃがを作って待っていますよ。\n佐藤朝子\n追伸：お正月に撮った家族の写真を送ります。",
+        "translation": "[Email 1]\nNgười nhận: Sato Asako\nTiêu đề: Cô có khỏe không ạ?\n\nCô ơi, cô và gia đình dạo này khỏe không ạ?\nCháu vừa tận dụng kỳ nghỉ đông đại học để đi du lịch Ecuador và quần đảo Galapagos ở Nam Mỹ về. Ở Galapagos cháu đã tận mắt thấy những con cự đà quý hiếm và những chú rùa cạn khổng lồ. Thiên nhiên hoang dã nơi đó thực sự tuyệt vời.\n\nNhân tiện, gần đây cháu xem tin tức thấy bảo ở sông Tamagawa ở Tokyo có người vứt cả cá sấu khổng lồ và nhiều loài cá ngoại lai xuống sông. Mua thú cưng độc lạ ở tiệm về nuôi, đến khi chúng lớn lên không nuôi nổi nữa lại đem vứt ra sông tự nhiên, đúng là những kẻ vô trách nhiệm và ích kỷ. Cháu nghĩ cần có quy định và luật pháp nghiêm ngặt hơn về việc nuôi động vật.\n\nChỗ cháu tối nay trời sắp đổ tuyết rồi. Cô giữ ấm đừng để bị cảm nhé ạ.\nTanaka Hiroshi\nTái bút: Cháu gửi kèm ảnh chụp trong chuyến đi ạ.\n\n[Email 2 - Hồi âm]\nNgười nhận: Tanaka Hiroshi\nTiêu đề: Re: Cô có khỏe không ạ?\n\nHiroshi à, cảm ơn cháu vì email và những bức ảnh nhé. Chú rùa Galapagos trông oai vệ thật đấy.\nThực ra mấy hôm trước có chú rùa to bò vào sân nhà bên cạnh, hai đứa Kenta và Miki nhà cô nháo nhào cả lên. May mà chủ của nó đi tìm nên đã trả về rồi, nhưng nuôi thú cưng lạ thì phải có trách nhiệm chăm sóc đến cùng chứ nhỉ.\nHiroshi thi tốt nghiệp xong nhớ ghé nhà cô chơi nhé. Cô sẽ nấu món thịt bò hầm khoai tây Nikujaga mà cháu thích nhất để thết đãi cháu.\nSato Asako\nTái bút: Cô gửi ảnh cả nhà chụp hôm Tết nhé.",
+        "imageUrl": "/media/reading/reading_n4_l43_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 田中博さんは何月ごろこのメールを送りましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「大学の冬休み」「今晩から雪が降りそう」という記述から、12月（冬）です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "1月",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "6月",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "12月",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "8月",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) 田中博さんと佐藤朝子さんはどんな関係ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "博さんが「おばさん」と呼び、親戚の関係です。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "友達",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "恋人",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "親戚（おばと甥）",
+                "correct": true,
+                "sortOrder": 3
+              },
+              {
+                "content": "会社の同僚",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3) 田中博さんは、ペットを飼う人には厳しい規制が必要だと考えている。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「動物を飼うことについてもっと厳しい法律や規制が必要だと思います」と述べています。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 44,
+    "items": [
+      {
+        "title": "カレー",
+        "content": "カレーライスを食べたことがありますか。カレーはもともとインドの料理ですが、日本には明治時代にイギリスから伝わりました。\n\n日本人はインドのカレーの作り方をイギリス人から学び、自分たちの好みに合うように工夫しました。小麦粉を入れてとろみをつけ、ご飯の上にかけて食べる「カレーライス」が誕生したのです。明治時代の終わりにはカレールウが国産化され、安くて栄養がある料理として全国の家庭や軍隊、学校給食に広まりました。\n\n昭和30年代（1950年代）に固形の「即席カレールウ」が発売されると、家庭で手軽にカレーが作れるようになり、生産量は飛躍的に増えました。今ではカレーうどん、カレー南蛮、カレーパンなど、カレーを使った日本独自の料理がたくさんあります。あるインド人は日本でカレールウを買って「日本のカレーは辛すぎずとても美味しい」と喜んで国へ持ち帰ったそうです。今や日本のカレーは独自の日本料理と言ってもいいでしょう。",
+        "translation": "Bạn đã từng ăn cơm cà ri (Curry rice) chưa? Cà ri vốn có nguồn gốc từ Ấn Độ, nhưng du nhập vào Nhật Bản từ nước Anh vào thời kỳ Minh Trị.\n\nNgười Nhật đã học cách nấu cà ri của người Ấn thông qua người Anh, rồi biến tấu sao cho phù hợp với khẩu vị của mình. Họ thêm bột mì để tạo độ sánh sệt, rồi rưới lên cơm nóng ăn kèm - món cơm cà ri đặc trưng ra đời từ đó. Cuối thời Minh Trị, viên gia vị cà ri roux được tự sản xuất trong nước, trở thành món ăn vừa ngon, bổ dưỡng lại rẻ tiền nên đã phổ biến khắp các gia đình, quân đội và bữa ăn bán trú học đường.\n\nVào những năm 1950 (thập niên Chiêu Hòa 30), khi viên cà ri cô đặc ăn liền ra đời, các gia đình có thể nấu cà ri dễ dàng, sản lượng tiêu thụ tăng vọt gấp nhiều lần. Ngày nay có rất nhiều món ăn độc đáo của Nhật sử dụng cà ri như mì udon cà ri, bánh mì nhân cà ri... Có một người Ấn Độ sau khi mua cà ri Nhật đã khen rằng 'Cà ri Nhật không quá cay nồng mà vị rất thanh ngon' và mang về nước làm quà. Giờ đây cà ri Nhật hoàn toàn có thể được xem là một nét ẩm thực mang bản sắc riêng của Nhật Bản.",
+        "imageUrl": "/media/reading/reading_n4_l44_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 日本人はインドのカレーの作り方をイギリス人から習った。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "カレーは明治時代にイギリスから日本に伝わりました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 明治時代の終わりにカレールウが国産化され、値段が安くなった。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "安くて栄養のある料理として家庭や学校に広がりました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 日本ではカレーライスのほかに、カレーうどんやカレーパンなどもある。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "カレーうどんやカレーパンなど、カレーを使った日本独自の料理がたくさんあります。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "料理教室",
+        "content": "きょうは「お好み焼き」を作ってみましょう！\n\n【材料（4人分）】\n小麦粉 2カップ、水 1カップ、卵 2個、キャベツ 1/2個、豚肉やエビなど 100g、お好み焼きソース、かつおぶし、青のり、塩 少々\n\n【作り方】\n1. 小麦粉に、水と卵と塩を入れて混ぜる。よく混ざったら、小さく刻んだキャベツを入れてもう一度さっくり混ぜる。\n2. フライパンを熱して油を薄くひき、生地を入れて丸く広げる。厚さは2センチくらいにする。厚すぎると中まで火が通らない。\n3. 豚肉やエビなど好みの具を上にきれいに載せる。\n4. 下側と周りが焼けたら、裏返す。火が強すぎると焦げやすいので注意する。\n5. 両面がしっかり焼けたら、ソースを塗り、かつおぶしと青のりをふりかけて完成！",
+        "translation": "Hôm nay chúng ta cùng vào bếp làm món bánh xèo Nhật Bản 'Okonomiyaki' nhé!\n\n[Nguyên liệu (khẩu phần 4 người)]\nBột mì 2 cốc, nước 1 cốc, trứng gà 2 quả, bắp cải 1/2 cái, thịt lợn hoặc tôm 100g, xốt okonomiyaki, cá bào katsuobushi, rong biển sợi aonori, một chút muối.\n\n[Cách làm]\n1. Cho bột mì, nước, trứng và chút muối vào âu trộn đều. Khi bột đã đều, cho bắp cải thái nhỏ vào trộn đều nhẹ tay.\n2. Làm nóng chảo, thoa một lớp dầu mỏng, trút bột vào dàn đều thành hình tròn dày khoảng 2 cm. Nếu quá dày bánh sẽ khó chín bên trong.\n3. Xếp thịt lợn hoặc tôm lên mặt trên của bánh.\n4. Khi mặt dưới và viền bánh đã chín vàng giòn thì lật mặt bánh. Chú ý lửa vừa để không bị cháy.\n5. Khi hai mặt đều chín vàng thơm, quét đều xốt okonomiyaki, rắc cá bào và rong biển lên trên rồi thưởng thức!",
+        "imageUrl": "/media/reading/reading_n4_l44_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) お好み焼きを焼くとき、生地の厚さはどのくらいが適していますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "厚すぎると中まで火が通らないため、約2センチが適しています。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "約2センチ",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "約10センチ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "紙のように薄くする",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "5ミリ以下",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 45,
+    "items": [
+      {
+        "title": "119番に電話をかける",
+        "content": "急に病気になったり、大きなけがをしたりした場合は、すぐに119番に電話をかけて救急車を呼ばなければなりません。火事のときも119番です。しかし、気が動転してうまく話せず、貴重な時間を無駄にしてしまうことがあります。\n\n消防署の方のアドバイス：\n1. 「火事ですか、救急ですか」と聞かれたら、はっきり「救急です」（または「火事です」）と答える。\n2. 住所と目標になる建物を正確に伝える。\n3. 「だれが、どうしたのか」状況を落ち着いて話す。\n4. 救急車がサイレンを鳴らして近づいてきたら、可能ならだれかが道案内に出る。\n\n万が一のときに慌てないよう、自宅の電話のそばに住所や家族のかかりつけ医のメモを貼っておくと安心です。",
+        "translation": "Khi đột ngột ngã bệnh nặng hoặc bị thương tích nghiêm trọng, cần phải gọi ngay số 119 để gọi xe cứu thương. Khi xảy ra hỏa hoạn cũng gọi số 119. Tuy nhiên nhiều người do quá hoảng loạn không nói rõ ràng được nên đã lãng phí thời gian cấp cứu quý báu.\n\nLời khuyên từ Sở Cứu Hỏa:\n1. Khi tổng đài hỏi 'Cháy hay cấp cứu?', hãy trả lời dứt khoát 'Cấp cứu' (hoặc 'Cháy').\n2. Nêu chính xác địa chỉ và các tòa nhà mốc xung quanh.\n3. Bình tĩnh thuật lại ai đang bị làm sao.\n4. Khi nghe tiếng còi hú xe cứu thương đến gần, nếu có thể hãy cử người ra đầu đường chỉ dẫn xe vào.\n\nĐể không bị lúng túng khi hữu sự, dán sẵn một mẩu giấy ghi rõ địa chỉ nhà và số điện thoại khẩn cấp gần máy điện thoại sẽ rất hữu ích.",
+        "imageUrl": "/media/reading/reading_n4_l45_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 日本で火事のときも急な病気のときも、電話番号は119番である。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "火事も救急も119番に通報します。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 119番に電話をかけたときは、まず慌てずに住所や状況を落ち着いて伝える。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "落ち着いて正確に伝えることが迅速な救助につながります。(〇)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) 非常時に備えて電話のそばに住所などのメモを貼っておくと役に立つ。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "慌てていてもメモを見ながら正確に伝えられるため有効です。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "危ない！",
+        "content": "ある日、ミラーさんは道を渡っていました。そのとき、向こう側にいた日本人の友達が「危ない！」と叫びました。ミラーさんは何が危ないのかよくわかりませんでしたが、立ち止まりました。すると車が目の前を猛スピードで通り過ぎていきました。\n\n次の日、車をバックさせて駐車場に入れようとしたとき、隣の友達が「ぶつかる！」と叫びました。ミラーさんは急ブレーキをかけ、壁に衝突せずにすみました。\n\n日本語では、緊急の危険が迫ったときに様々な言葉で警告します：\n・「危ない！」（全般的な危険）\n・「ぶつかる！」（衝突しそうなとき）\n・「落ちる！」（物が落下しそうなとき、人が転落しそうなとき）\n・「邪魔！」（通行の妨げになっているとき）\n状況に応じた咄嗟の言葉を知っておくと安全です。",
+        "translation": "Một hôm, anh Miller đang băng qua đường. Đúng lúc đó người bạn Nhật ở phía đối diện hét lên: 'Nguy hiểm quá! / Coi chừng!'. Dù chưa hiểu chuyện gì nhưng anh Miller vội dừng bước lại. Ngay sau đó một chiếc ô tô phóng vụt qua ngay trước mũi giày với tốc độ chóng mặt.\n\nHôm sau khi anh lùi xe vào bãi đỗ xe, người bạn ngồi bên cạnh bỗng hét lên: 'Đâm bây giờ!'. Anh Miller đạp phanh gấp và may mắn không bị va quệt vào bức tường phía sau.\n\nTrong tiếng Nhật, tùy vào tình huống nguy cấp mà người ta dùng các từ cảnh báo tức thì khác nhau:\n- 'Abunai!' (Coi chừng / Nguy hiểm!)\n- 'Butsukaru!' (Sắp đâm va rồi!)\n- 'Ochiru!' (Sắp rơi / ngã rồi!)\n- 'Jama!' (Vướng quá / Tránh ra nào!).\nNắm được những khẩu lệnh này sẽ giúp chúng ta phản xạ nhanh chóng và an toàn.",
+        "imageUrl": "/media/reading/reading_n4_l45_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 車がバックしていて後ろの壁に衝突しそうなとき、咄嗟にかける言葉はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "何かに衝突しそうなときは「ぶつかる！」と叫びます。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "ぶつかる！",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "落ちる！",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "折れる！",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "こぼれる！",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 46,
+    "items": [
+      {
+        "title": "いとこの長靴",
+        "content": "僕は3歳のとき、パトカーに乗ったことがある。雨の降る日、僕は年上のいとこの大きな赤い長靴をはいて、散歩に出かけた。ぶかぶかの長靴は歩きにくかったが、水たまりを踏むのが楽しくて、夢中で歩いているうちに迷子になってしまったのだ。\n\n気がついたときは知らない大通りで、泣きべそをかいていた僕を、通りかかったパトカーのお巡りさんが助けてくれた。交番へ連れて行かれ、優しいお巡りさんがクリームパンとジュースを買ってくれた。僕は泣くのをやめて、美味しそうにパンを食べていた。\n\nそこへ血相を変えた両親が駆け込んできた。警察官にお礼を言いながら、母は僕を強く抱きしめて泣いた。僕は口の周りにクリームをつけたまま、何が起こったのかよくわからずにいたが、あの赤い長靴とパトカーのサイレンの音は、今でも鮮明に覚えている。",
+        "translation": "Năm lên 3 tuổi, tôi từng được ngồi trên xe cảnh sát một lần. Vào một ngày mưa, tôi xỏ đôi ủng đỏ to đùng của người anh họ rồi ra ngoài dạo chơi. Đôi ủng rộng thùng thình bước đi thật khó, nhưng nhảy vào các vũng nước mưa thích quá nên mải mê đi một hồi tôi bị lạc lúc nào không hay.\n\nĐến khi nhận ra mình đang ở trên đại lộ xa lạ, tôi bắt đầu mếu máo khóc thì được các chú cảnh sát trên xe tuần tra đi ngang qua cứu giúp. Được đưa về bốt cảnh sát (Koban), các chú cảnh sát tốt bụng mua cho tôi một chiếc bánh mì nhân kem và hộp nước hoa quả. Tôi nín khóc và ngon lành gặm chiếc bánh mì.\n\nĐúng lúc đó, bố mẹ tôi mặt mày tái mét hớt hải chạy vào. Vừa rối rít cảm ơn các anh cảnh sát, mẹ vừa ôm chầm lấy tôi bật khóc nức nở. Tôi với miệng còn dính đầy kem trắng xóa, ngơ ngác chẳng hiểu chuyện gì lớn, nhưng đôi ủng đỏ và âm thanh còi xe tuần tra ngày ấy đến giờ tôi vẫn nhớ như in.",
+        "imageUrl": "/media/reading/reading_n4_l46_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) ぼくは3歳のとき、パトカーに乗ったことがある。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "迷子になったときパトカーに乗せてもらいました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) ぼくが迷子になった原因は何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "いとこの大きな長靴をはいて水たまりで遊んでいるうちに夢中になって道に迷いました。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "長靴をはいて夢中で歩いているうちに迷子になった",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "両親に買い物を頼まれて出かけたから",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "パトカーを追いかけて走ったから",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "友達とけんかして家出をしたから",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "俳句",
+        "content": "俳句は日本で生まれた世界でいちばん短い、17音の詩です。\n\n俳句を作るときの基本的な規則：\n1. 17音を「五・七・五」のリズムにして作る。\n2. 季節を表すことば「季語（きご）」を入れる。\n3. 気持ちを強調したりリズムを整えたりするために「や」「かな」「けり」などの切れ字を使う。\n\n【有名な日本の俳句】\n・春：菜の花や 月は東に 日は西に（与謝蕪村）\n菜の花が一面に咲く夕暮れ時、東の空に月が昇り、西の空に太陽が沈んでいく壮大な春の風景です。\n\n・夏：閑さや 岩にしみ入る 蝉の声（松尾芭蕉）\n山寺の静けさの中、蝉の鳴き声だけが岩にしみ通るように響く、深閑とした夏の情景です。\n\n・秋：名月を 取ってくれろと 泣く子かな（小林一茶）\n秋の美しい満月を見て、「あのお月様を取って！」と無心にねだる幼い子どもの愛らしい姿を詠んでいます。",
+        "translation": "Haiku là thể thơ ngắn nhất thế giới gồm 17 âm tiết, ra đời tại Nhật Bản.\n\nQuy tắc cơ bản khi làm thơ Haiku:\n1. 17 âm tiết được ngắt theo nhịp 5 - 7 - 5.\n2. Bắt buộc có 'Kigo' (từ chỉ mùa).\n3. Sử dụng từ ngắt câu như 'ya', 'kana' để nhấn mạnh cảm xúc và tạo nhịp điệu.\n\n[Những bài thơ Haiku nổi tiếng]:\n- Mùa xuân: 'Cánh đồng hoa cải vàng / Trăng lên đầu non đông / Vầng dương lặn hướng tây' (Yosa Buson).\n- Mùa hạ: 'Vắng lặng biết bao lăm / Tiếng ve ngâm rả rích / Thấm sâu vào lòng đá' (Matsuo Basho).\n- Mùa thu: 'Vằng vặc ánh trăng rằm / Đứa bé nheo nhẻo khóc / Đòi hái vầng trăng chơi' (Kobayashi Issa).",
+        "imageUrl": "/media/reading/reading_n4_l46_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 俳句の音の数とリズムとして正しいものはどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "俳句は「五・七・五」の17音で作られます。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "五・七・五の17音",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "七・七の14音",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "五・七・五・七・七の31音",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "十・十の20音",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "2) 俳句を作るときに必ず入れなければならない季節を表すことばを何と呼びますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "季節を表すことばは「季語（きご）」と呼ばれます。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "季語（きご）",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "和歌（わか）",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "枕詞（まくらことば）",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "標語（ひょうご）",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 47,
+    "items": [
+      {
+        "title": "空を飛ぶ自動車",
+        "content": "空を飛ぶ自動車が欲しいと思ったことはありませんか。SFマンガや映画の中で見たことがある人も多いでしょう。実は、本当に空を飛べる自動車「スカイカー」の開発が世界中で進んでいます。\n\nアメリカのあるベンチャー企業が2012年に発表したスカイカーは、翼を広げると飛行機になり、翼を畳むと普通の道路を走ることができます。ただし、離陸するためには約760メートルの滑走路が必要でした。価格は約2300万円でしたが、100人以上が予約したそうです。\n\nさらに最近では、滑走路が不要でヘリコプターのように垂直に離着陸できるハイブリッド型スカイカー（eVTOL）も開発されています。これが実用化されれば、交通渋滞を避けて都市間を高速で移動できるようになり、離島や山間部への移動も格段に便利になると期待されています。",
+        "translation": "Bạn đã bao giờ ao ước có một chiếc ô tô bay trên bầu trời chưa? Chắc hẳn nhiều người từng thấy phương tiện này trong truyện tranh hay phim viễn tưởng. Thực ra, dự án phát triển ô tô bay 'Sky car' đang được tiến hành rầm rộ khắp nơi trên thế giới.\n\nMột công ty khởi nghiệp ở Mỹ vào năm 2012 đã giới thiệu mẫu Sky car khi giương cánh thì biến thành máy bay, còn khi gập cánh lại có thể chạy trên làn đường ô tô bình thường. Tuy nhiên khi cất cánh cần đường băng dài khoảng 760 mét. Mức giá khoảng 23 triệu Yên nhưng đã có hơn 100 người đặt trước.\n\nGần đây hơn, các mẫu ô tô bay cất hạ cánh thẳng đứng (eVTOL) không cần đường băng như trực thăng đang được hoàn thiện. Khi được đưa vào thương mại hóa, con người có thể tránh được nạn tắc đường, di chuyển giữa các thành phố với tốc độ cao, đồng thời việc đi lại tới các hải đảo và vùng núi hẻo lánh sẽ thuận tiện vượt bậc.",
+        "imageUrl": "/media/reading/reading_n4_l47_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 2012年に発表されたスカイカーは、渋滞した道路からその場ですぐ垂直に空へ飛び立つことができた。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "2012年のスカイカーは離陸に約760mの滑走路が必要でした。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) スカイカーが実用化されると、交通渋滞を避けて素早く移動できるようになる。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "空を飛ぶことで地上の渋滞に関係なく移動できます。(〇)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ほんとうにあるのは？",
+        "content": "未来の便利グッズあれこれ：\n\n1. 《元気になるズボン（歩行アシストスーツ）》\n高齢者や足の不自由な人が履くと、モーターの力で足が軽くなり、楽に歩けるようになるスーツ。→【実在する】\n\n2. 《目薬コンタクトレンズ》\n朝、目薬を1滴さすだけで一日中視力が回復し、夜目を洗えば元に戻る薬。→【実在しない・研究中】\n\n3. 《クレジットカードになる腕時計（スマートウォッチ）》\n時計を改札やレジの機械にかざすだけで支払いができる。→【実在する】\n\n4. 《折り畳み式の橋（緊急架橋車）》\n地震や台風で橋が流されたとき、わずか10分で伸びて川に架けられる頑丈な橋。→【実在する】",
+        "translation": "Những phát minh tiện ích thú vị:\n\n1. 'Quần tiếp thêm sinh lực' (Bộ đồ hỗ trợ vận động): Người già hoặc người khó khăn đi lại khi mặc vào, động cơ hỗ trợ nâng đỡ chân bước đi nhẹ nhàng thoăn thoắt. -> [Có thật]\n2. 'Thuốc nhỏ mắt kính áp tròng': Sáng nhỏ 1 giọt là mắt sáng cả ngày, tối rửa mắt là hết. -> [Chưa có thật / Đang nghiên cứu]\n3. 'Đồng hồ thanh toán thông minh': Chỉ cần đưa cổ tay chạm vào máy là thanh toán xong vé tàu hay hóa đơn mua sắm. -> [Có thật]\n4. 'Cầu gấp thông minh': Khi cầu bị sập do bão lũ động đất, xe chuyên dụng chỉ mất 10 phút là có thể bắc xong cây cầu kiên cố vượt sông. -> [Có thật]",
+        "imageUrl": "/media/reading/reading_n4_l47_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 紹介されている発明の中で、災害時に川に架けて使える折り畳み式の橋は実在しますか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "地震や水害時の緊急救援用として折り畳み式の橋は実在します。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "実在する",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "実在しない（架空のもの）",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 48,
+    "items": [
+      {
+        "title": "竹取物語",
+        "content": "昔、ある所におじいさんとおばあさんが住んでいました。おじいさんは山から竹を取ってきて、いろいろな物を作って売っていました。\n\nある日、おじいさんは根元が光り輝く不思議な竹を見つけました。切ってみると、中に三寸（約9センチ）ほどの小さな可愛い女の子がいました。子どものいない二人は大喜びで、その子に「かぐや姫」と名付けて大切に育てました。かぐや姫はわずか3か月で美しい娘に成長しました。\n\nかぐや姫の美しさは国中に知れ渡り、5人の貴公子が結婚を申し込みました。しかし、かぐや姫は「インドにある仏の石の鉢」「蓬莱の玉の枝」「火鼠の皮衣」「竜の首の珠」「燕の子安貝」という手に入らない宝物を持ってくるように頼みました。5人は誰も本物を持ってくることができませんでした。\n\nやがて帝（天皇）もかぐや姫に心を寄せましたが、かぐや姫は求婚を断りました。そして8月十五夜の満月の夜、月の使者が雲に乗って迎えに来ました。かぐや姫は帝に不死の薬と手紙を残し、羽衣を着て月の世界へ帰っていきました。",
+        "translation": "Ngày xửa ngày xưa, ở một ngôi làng nọ có hai ông bà lão nghèo sống nương tựa vào nhau. Hàng ngày ông lão lên núi đốn tre đem về đan lát bán kiếm sống.\n\nMột ngày nọ, ông lão bắt gặp một thân tre phát ra ánh sáng lung linh kỳ ảo. Khi chặt tre ra, ông kinh ngạc thấy một bé gái tí hon xinh xắn chỉ cao khoảng 9 cm nằm bên trong. Hai ông bà lão hiếm muộn vô cùng sung sướng nhận nuôi bé, đặt tên là 'Kaguya-hime' (Nàng tiên tre). Chỉ sau 3 tháng, bé gái đã lớn bổng thành một thiếu nữ tuyệt sắc giai nhân.\n\nSắc đẹp của nàng vang danh khắp cả nước. 5 vị công tử quý tộc danh giá đến cầu hôn. Nàng đưa ra thử thách yêu cầu họ tìm những bảo vật hiếm có không thể tìm thấy trên trần gian như 'Bát đá của Đức Phật ở Ấn Độ', 'Cành cây ngọc trên núi Bồng Lai', 'Áo lông chuột lửa', 'Ngọc trên cổ rồng', 'Vỏ sò sinh nở của chim nhạn'. Kết quả không ai đem về được bảo vật thật.\n\nNgay cả Nhật hoàng sau đó đem lòng si mê cầu hôn nhưng nàng cũng từ chối. Vào đêm rằm tháng 8 trăng sáng vằng vặc, những sứ giả cung trăng cưỡi mây hạ phàm đón nàng. Nàng để lại cho Nhật hoàng viên thuốc trường sinh bất tử và phong thư từ biệt, rồi khoác áo lông vũ bay về cung trăng.",
+        "imageUrl": "/media/reading/reading_n4_l48_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) おじいさんは光る竹の中からかぐや姫を見つけた。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "光る竹を切ったところ、中に小さな女の子（かぐや姫）がいました。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) かぐや姫に結婚を申し込んだ5人の貴公子は、みんな本物の宝物を持ってくることができた。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "5人は偽物を作ったり途中で諦めたりして、誰も本物を持ってこられませんでした。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "3) かぐや姫は満月の晩にどこへ帰っていきましたか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "かぐや姫は月の世界から来た者であり、月の世界へ帰っていきました。",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "月の世界",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "海の底の竜宮城",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "遠い外国",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "高い山の頂上",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 49,
+    "items": [
+      {
+        "title": "人生",
+        "content": "【披露宴でのスピーチ（1993年）】\n「新郎の宝田太郎君と新婦の花子さんのご結婚を祝福いたします。太郎君は京都大学を卒業後、アップル銀行に入行され、アメリカ留学も経験された優秀な青年です。花子さんはニューヨーク生まれで、パリやロンドンでデザインを学ばれました。お二人の輝かしい門出をお祝い申し上げます。」\n\n【金婚式でのスピーチ（2043年）】\n「結婚50周年、おめでとうございます！ 50年という長い歳月、山あり谷あり、様々なことがあったことでしょう。喧嘩をすることもあったでしょうが、いつも手を携えて仲睦まじく歩んでこられました。これからもお二人でお元気で、ダイヤモンド婚式を目指してください。」\n\n【お別れ会でのスピーチ（2060年）】\n「宝田太郎さん、90歳で天寿を全うされました。愛する花子さんと共に歩まれた人生は、本当に豊かで実り多きものでした。去年先に旅立たれた奥様と、今頃天国で再会されていることでしょう。どうぞ安らかにお眠りください。」",
+        "translation": "[Lời chúc mừng tại tiệc cưới (Năm 1993)]\n'Chúc mừng đám cưới chú rể Tairada Taro và cô dâu Hanako. Anh Taro tốt nghiệp Đại học Kyoto, công tác tại Ngân hàng Apple và từng du học tại Mỹ. Chị Hanako sinh ra tại New York, từng theo học thiết kế tại Paris và London. Xin chúc cho chặng đường mới của hai bạn tràn ngập hạnh phúc.'\n\n[Lời chúc mừng đám cưới vàng (Năm 2043)]\n'Chúc mừng kỷ niệm 50 năm ngày cưới của anh chị! Tròn nửa thế kỷ cùng đi bên nhau, chắc hẳn đã trải qua bao thăng trầm và kỷ niệm sâu sắc. Dù đôi khi có bất đồng, anh chị vẫn luôn nắm chặt tay nhau vượt qua. Chúc hai bác sống vui khỏe hướng tới kỷ niệm đám cưới kim cương.'\n\n[Lời tưởng niệm tại tang lễ (Năm 2060)]\n'Ông Tairada Taro đã hưởng thọ 90 tuổi viên mãn. Cuộc đời gắn bó cùng người vợ dấu yêu Hanako thực sự tràn ngập niềm vui và ý nghĩa. Giờ này chắc ông đã được gặp lại người bạn đời đã khuất bóng vào năm ngoái ở chốn thiên đường. Cầu mong linh hồn ông yên nghỉ thanh thản.'",
+        "imageUrl": "/media/reading/reading_n4_l49_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 太郎と花子は結婚して50周年（金婚式）を迎えることができた。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "結婚50周年のスピーチが行われています。(〇)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 太郎さんは90歳で亡くなったとき、妻の花子さんはまだ生きていた。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「去年先に旅立たれた奥様」とあり、花子さんのほうが先に亡くなっています。(✕)",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "あいさつ状",
+        "content": "日本の手紙やはがきでよく使われる季節のあいさつ状：\n\n1. 《年賀状（お正月）》\n「明けましておめでとうございます。今年もよろしくお願いいたします。」\n\n2. 《結婚祝い・招待状の返信》\n「ご結婚おめでとうございます。喜んで出席させていただきます。」\n\n3. 《暑中見舞い（夏）》\n「暑中お見舞い申し上げます。暑さ厳しき折、皆様いかがお過ごしでしょうか。どうぞお体に気をつけてお過ごしください。」\n\n4. 《秋のあいさつ》\n「紅葉が美しい季節になりました。皆様いかがお過ごしでしょうか。」",
+        "translation": "Các mẫu thiệp chào hỏi theo mùa phổ biến ở Nhật Bản:\n\n1. Thiệp chúc mừng năm mới (Nengajo): 'Chúc mừng năm mới. Năm nay cũng xin được giúp đỡ.'\n2. Hồi âm thiệp mời cưới: 'Chúc mừng hạnh phúc hai bạn. Tôi rất vui lòng và vinh dự được tham dự.'\n3. Thăm hỏi mùa hè oi bức (Shochu-mimai): 'Kính chúc quý bạn an lành giữa mùa hè oi ả. Xin hãy giữ gìn sức khỏe.'\n4. Lời chúc mùa thu lá đỏ: 'Mùa lá đỏ Momiji đã về tuyệt đẹp. Chúc quý bạn vạn sự như ý.'",
+        "imageUrl": "/media/reading/reading_n4_l49_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) 夏の暑い時期に相手の健康を気遣って送るあいさつ状はどれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "夏のあいさつ状は「暑中見舞い（しょちゅうみまい）」です。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "暑中お見舞い",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "年賀状",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "結婚招待状",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "寒中見舞い",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lessonNumber": 50,
+    "items": [
+      {
+        "title": "紫式部に聞く",
+        "content": "「タイム・マシン」のインタビュー番組。きょうのゲストは世界最古の長編小説『源氏物語』の作者、紫式部さんです。\n\n――紫式部さん、1000年以上経った今も『源氏物語』が世界中で読まれていることをご存じでしたか。\n紫式部：「いいえ、夢にも思いませんでした。今の人気に本当にびっくりしております。マンガや映画、ミュージカルにもなっているそうですね。」\n\n――ええ、英語やフランス語、チェコ語、タイ語など世界中の言語に翻訳されていますよ。\n紫式部：「それはとても光栄で嬉しいですね。でも、現代の日本人はマンガは読むけれど、本そのものをあまり読まなくなっていると聞いて、少し残念です。」\n\n――紫式部さんのプライベートについても教えていただけますか。\n紫式部：「20代の終わりに藤原宣孝と結婚し、娘が一人生まれました。しかし夫は数年で病気で亡くなってしまいました。悲しみを紛らわせるために物語を書き始めたのが『源氏物語』の始まりです。その後、一条天皇の中宮彰子様にお仕えする宮中の女房として仕えました。」",
+        "translation": "Chương trình phỏng vấn 'Cỗ máy thời gian'. Vị khách mời đặc biệt hôm nay là tác giả cuốn tiểu thuyết trường thiên lâu đời nhất thế giới 'Truyện Genji' - Nữ sĩ Murasaki Shikibu.\n\n- Thưa nữ sĩ, bà có biết rằng sau hơn 1000 năm cuốn 'Truyện Genji' vẫn được độc giả khắp thế giới say mê đọc không ạ?\nMurasaki Shikibu: 'Không, trong mơ tôi cũng chưa từng nghĩ tới. Tôi thực sự ngỡ ngàng trước sự yêu mến của thời hiện đại. Nghe nói tác phẩm còn được chuyển thể thành truyện tranh manga, phim ảnh và nhạc kịch nữa nhỉ.'\n\n- Vâng, tác phẩm đã được dịch ra tiếng Anh, Pháp, Séc, Thái Lan và rất nhiều thứ tiếng trên thế giới đấy ạ.\nMurasaki Shikibu: 'Đó thực sự là niềm vinh dự lớn. Nhưng tôi nghe nói người Nhật thời nay chăm đọc manga nhưng lại lười đọc sách văn học hơn, điều đó khiến tôi có phần hơi tiếc nuối.'\n\n- Bà có thể chia sẻ đôi nét về đời sống riêng tư được không ạ?\nMurasaki Shikibu: 'Vào cuối độ tuổi đôi mươi tôi kết hôn với ngài Fujiwara Nobutaka và sinh một con gái. Nhưng chỉ vài năm sau phu quân tôi chẳng may qua đời vì bạo bệnh. Để vơi đi nỗi cô đơn tang tóc, tôi bắt đầu cầm bút viết truyện, đó chính là khởi nguồn của Truyện Genji. Về sau tôi vào cung hầu cận Hoàng hậu Shoshi.'",
+        "imageUrl": "/media/reading/reading_n4_l50_r01.png",
+        "sortOrder": 1,
+        "questions": [
+          {
+            "question": "1) 紫式部は『源氏物語』を書いたとき、1000年後も世界中で読まれると思っていた。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "「いいえ、夢にも思いませんでした。びっくりしております」と答えています。(✕)",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "〇",
+                "correct": false,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": true,
+                "sortOrder": 2
+              }
+            ]
+          },
+          {
+            "question": "2) 『源氏物語』を書き始めたきっかけは何ですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "夫を亡くした悲しみを紛らわせるために書き始めました。",
+            "imageUrl": null,
+            "sortOrder": 2,
+            "options": [
+              {
+                "content": "夫を亡くした悲しみを紛らわせるため",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "天皇から命令されたから",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "お金持ちになりたかったから",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "海外へ旅行に行きたかったから",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          },
+          {
+            "question": "3) 『源氏物語』は現代では世界各国の言語に翻訳されている。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "英語、フランス語、タイ語など多くの言語に翻訳されています。(〇)",
+            "imageUrl": null,
+            "sortOrder": 3,
+            "options": [
+              {
+                "content": "〇",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "✕",
+                "correct": false,
+                "sortOrder": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "お会いできて、うれしいです",
+        "content": "20世紀から現代にかけて人類に大きな影響を与えた偉人たち：\n\n1. 《アルフレッド・ノーベル（スウェーデン）》\nダイナマイトを発明したが、戦争で多くの人が命を落としたことに心を痛め、遺産を平和や科学の発展に尽くした人々に贈る「ノーベル賞」を創設した。\n\n2. 《パブロ・ピカソ（スペイン）》\n20世紀を代表する画家。スペイン内戦の悲劇と平和への祈りを込めて大作『ゲルニカ』を描いた。\n\n3. 《オードリー・ヘプバーン（ベルギー／イギリス）》\n『ローマの休日』などで世界中を魅了した女優。晩年はユニセフ親善大使として世界中の恵まれない子どもたちの支援に生涯を捧げた。\n\n4. 《マザー・テレサ（北マケドニア／インド）》\nインドのコルカタで貧しい人や病気の人々の救済に生涯を捧げ、ノーベル平和賞を受賞した修道女。",
+        "translation": "Những vĩ nhân thế kỷ 20 để lại dấu ấn sâu sắc cho nhân loại:\n\n1. Alfred Nobel (Thụy Điển): Người phát minh ra thuốc nổ Dynamite, nhưng xót xa trước việc nó bị dùng trong chiến tranh, ông đã để lại toàn bộ tài sản thành lập giải thưởng Nobel vinh danh các cống hiến cho hòa bình và khoa học.\n2. Pablo Picasso (Tây Ban Nha): Danh họa thế kỷ 20, đã vẽ kiệt tác 'Guernica' phản đối chiến tranh và nguyện cầu cho hòa bình thế giới.\n3. Audrey Hepburn: Huyền thoại điện ảnh với tác phẩm 'Kỳ nghỉ ở La Mã', những năm tháng cuối đời đã cống hiến hết mình cho sứ mệnh Đại sứ Thiện chí UNICEF giúp đỡ trẻ em nghèo toàn cầu.\n4. Mẹ Teresa: Nữ tu sĩ cống hiến trọn cuộc đời cứu giúp những người nghèo khổ, bệnh tật cùng cực tại Kolkata (Ấn Độ), được trao giải Nobel Hòa bình.",
+        "imageUrl": "/media/reading/reading_n4_l50_r02.png",
+        "sortOrder": 2,
+        "questions": [
+          {
+            "question": "1) ダイナマイトを発明し、遺産でノーベル賞を創設したのはだれですか。",
+            "questionType": "MULTIPLE_CHOICE",
+            "explanation": "アルフレッド・ノーベルです。",
+            "imageUrl": null,
+            "sortOrder": 1,
+            "options": [
+              {
+                "content": "アルフレッド・ノーベル",
+                "correct": true,
+                "sortOrder": 1
+              },
+              {
+                "content": "パブロ・ピカソ",
+                "correct": false,
+                "sortOrder": 2
+              },
+              {
+                "content": "オードリー・ヘプバーン",
+                "correct": false,
+                "sortOrder": 3
+              },
+              {
+                "content": "マザー・テレサ",
+                "correct": false,
+                "sortOrder": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
