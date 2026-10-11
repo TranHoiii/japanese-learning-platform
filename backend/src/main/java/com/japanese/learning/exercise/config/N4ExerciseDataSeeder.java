@@ -100,7 +100,7 @@ public class N4ExerciseDataSeeder implements CommandLineRunner {
         int exercisesSkipped = 0;
 
         for (ExerciseSeedPayload exDto : payloadList) {
-            if (exerciseRepository.findBySortOrder(exDto.sortOrder()).isPresent()) {
+            if (exerciseRepository.findByLevelCodeAndSortOrder("N4", exDto.sortOrder()).isPresent()) {
                 exercisesSkipped++;
                 continue;
             }

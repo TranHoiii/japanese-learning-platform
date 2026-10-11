@@ -252,7 +252,7 @@ class N4ExerciseIntegrationTest {
             String exerciseType = (String) ex.get("exerciseType");
 
             assertNotNull(sortOrder);
-            assertTrue(sortOrder >= 28 && sortOrder <= 56, "N4 sort order must be between 28 and 56");
+            assertTrue(sortOrder >= 29 && sortOrder <= 57, "N4 sort order must be between 29 and 57");
             assertTrue(sortOrders.add(sortOrder), "Sort orders must be globally unique");
 
             assertNotNull(lessonNumber);
