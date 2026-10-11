@@ -1,19 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useMemo } from "react";
+import { useSearchParams } from "react-router-dom";
 import BeginnerLayout from "../components/BeginnerLayout";
 import PracticeCard from "../components/PracticeCard";
 import Badge from "../../../components/ui/Badge";
 import { PRACTICE_MODES, getPracticeQuestions } from "../data/practice";
 import { PracticeCategory } from "../types/practice";
 
+const VALID_CATEGORIES: PracticeCategory[] = [
+  "hiragana",
+  "katakana",
+  "pronunciation",
+  "numbers",
+  "mixed",
+];
+
 export const PracticePage: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<PracticeCategory>("mixed");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const modeParam = searchParams.get("mode");
+
+  const initialCategory: PracticeCategory =
+    modeParam && VALID_CATEGORIES.includes(modeParam as PracticeCategory)
+      ? (modeParam as PracticeCategory)
+      : "hiragana";
+
+  const [selectedCategory, setSelectedCategory] = useState<PracticeCategory>(initialCategory);
   const [sessionKey, setSessionKey] = useState(0);
 
-  const activeMode = PRACTICE_MODES.find((m) => m.id === selectedCategory) || PRACTICE_MODES[4];
-  const questionsForMode = getPracticeQuestions(selectedCategory);
+  // Synchronize category state if URL query param changes externally
+  useEffect(() => {
+    const currentMode = searchParams.get("mode");
+    if (currentMode && VALID_CATEGORIES.includes(currentMode as PracticeCategory)) {
+      if (currentMode !== selectedCategory) {
+        setSelectedCategory(currentMode as PracticeCategory);
+        setSessionKey((prev) => prev + 1);
+      }
+    }
+  }, [searchParams, selectedCategory]);
+
+  const activeMode =
+    PRACTICE_MODES.find((m) => m.id === selectedCategory) || PRACTICE_MODES[0];
+
+  const questionsForMode = useMemo(() => {
+    return getPracticeQuestions(selectedCategory);
+  }, [selectedCategory, sessionKey]);
 
   const handleSelectCategory = (catId: PracticeCategory) => {
     setSelectedCategory(catId);
+    setSearchParams({ mode: catId });
     setSessionKey((prev) => prev + 1);
   };
 
@@ -105,7 +138,7 @@ export const PracticePage: React.FC = () => {
           questions={questionsForMode}
           categoryTitle={activeMode.titleVi}
           onResetSession={handleResetSession}
-          onChangeMode={() => setSelectedCategory("mixed")}
+          onChangeMode={() => handleSelectCategory("mixed")}
         />
       </div>
     </BeginnerLayout>

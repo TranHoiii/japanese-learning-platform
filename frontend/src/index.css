@@ -83,6 +83,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Sticky Header Scroll Offset Compensation (Header h-16 = 64px + 16px buffer = 80px / 5rem) */
+html {
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 5rem;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -165,3 +175,24 @@ rt {
 ::-webkit-scrollbar-thumb:hover {
   background: #94A3B8;
 }
+
+/* Custom Horizontal Scrollbar (Pill-shaped thumb like the image) */
+.custom-scrollbar-x {
+  scrollbar-width: thin;
+  scrollbar-color: #94A3B8 transparent;
+}
+.custom-scrollbar-x::-webkit-scrollbar {
+  height: 6px;
+}
+.custom-scrollbar-x::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar-x::-webkit-scrollbar-thumb {
+  background-color: #94A3B8;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+.custom-scrollbar-x::-webkit-scrollbar-thumb:hover {
+  background-color: #64748B;
+}
+

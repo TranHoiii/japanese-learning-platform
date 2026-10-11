@@ -19,7 +19,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, className }) => {
   return (
     <nav
       aria-label="Breadcrumb"
-      className={cn("w-full overflow-x-auto no-scrollbar py-2 text-xs sm:text-sm", className)}
+      className={cn("w-full overflow-x-auto custom-scrollbar-x py-2 text-xs sm:text-sm", className)}
     >
       <ol className="flex items-center space-x-1.5 whitespace-nowrap text-[#64748B]">
         {items.map((item, index) => {

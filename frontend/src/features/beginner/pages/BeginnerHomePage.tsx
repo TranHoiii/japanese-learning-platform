@@ -81,7 +81,7 @@ export const BeginnerHomePage: React.FC = () => {
         </div>
 
         {/* Quick Anchor Navigation */}
-        <div className="flex items-center gap-2 overflow-x-auto pt-2 pb-1 text-xs scrollbar-none">
+        <div className="flex items-center gap-2 overflow-x-auto pt-2 pb-2.5 text-xs custom-scrollbar-x">
           <a
             href="#hiragana-section"
             className="px-3 py-1.5 rounded-full bg-white text-[#12558F] font-semibold border border-[#BBDDFF] hover:bg-[#F0F7FF] transition-colors shrink-0"
@@ -336,14 +336,19 @@ export const BeginnerHomePage: React.FC = () => {
                   </Badge>
                 </div>
                 <h3 className="text-sm font-bold text-[#0F172A]">
-                  {mode.titleVi}
+                  <Link
+                    to={`/beginner/practice?mode=${mode.id}`}
+                    className="hover:text-[#2684D9] transition-colors"
+                  >
+                    {mode.titleVi}
+                  </Link>
                 </h3>
                 <p className="text-xs text-[#64748B] leading-relaxed">
                   {mode.descriptionVi}
                 </p>
               </div>
 
-              <Link to="/beginner/practice">
+              <Link to={`/beginner/practice?mode=${mode.id}`}>
                 <Button variant="outline" size="sm" fullWidth>
                   Bắt đầu bài tập &rarr;
                 </Button>

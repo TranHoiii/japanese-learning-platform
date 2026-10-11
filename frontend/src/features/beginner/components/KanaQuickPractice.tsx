@@ -42,7 +42,7 @@ export const KanaQuickPractice: React.FC<KanaQuickPracticeProps> = ({
         options: [
           { id: "opt-a", label: pair.charA, sublabel: `Phát âm: ${pair.romajiA}`, isCorrect: true },
           { id: "opt-b", label: pair.charB, sublabel: `Phát âm: ${pair.romajiB}`, isCorrect: false },
-        ],
+        ].sort(() => 0.5 - Math.random()),
         explanationVi: `Chính xác! ${pair.charA} đọc là '${pair.romajiA}'. ${pair.memoryTipVi}`,
         audioUrl: null,
       }));

@@ -32,7 +32,7 @@ export const PronunciationOverviewPage: React.FC = () => {
       subtitle="Chuyên đề ngữ âm bản xứ • Thiết kế riêng cho người Việt"
       description="10 chuyên đề ngữ âm chuẩn xác giúp bạn thoát khỏi thói quen 'Việt hóa' tiếng Nhật, làm chủ cao độ (Pitch Accent), ngắt âm, biến âm và phát âm chuẩn Tokyo ngay từ ngày đầu."
       actions={
-        <Link to="/beginner/practice">
+        <Link to="/beginner/practice?mode=pronunciation">
           <Button variant="secondary" size="sm">
             Luyện tập phát âm &rarr;
           </Button>
@@ -40,7 +40,7 @@ export const PronunciationOverviewPage: React.FC = () => {
       }
     >
       {/* Category Filter Pills */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-[#E2E8F0] scrollbar-none text-xs">
+      <div className="flex items-center gap-2 overflow-x-auto pb-3 border-b border-[#E2E8F0] custom-scrollbar-x text-xs">
         {categories.map((cat) => (
           <button
             key={cat.id}

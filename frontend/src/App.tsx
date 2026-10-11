@@ -48,10 +48,15 @@ import AdminKanjisPage from "./pages/admin/AdminKanjisPage";
 import AdminListeningsPage from "./pages/admin/AdminListeningsPage";
 import AdminReadingsPage from "./pages/admin/AdminReadingsPage";
 import AdminExercisesPage from "./pages/admin/AdminExercisesPage";
+import ScrollToTop from "./components/ScrollToTop";
+import GlobalHorizontalScroll from "./components/GlobalHorizontalScroll";
 
 export default function App() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <GlobalHorizontalScroll />
+      <Routes>
       {/* Learner Public & Protected Routes */}
       <Route path="/" element={<HomePage />} />
       <Route path="/beginner" element={<BeginnerPage />} />
@@ -121,5 +126,6 @@ export default function App() {
 
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
+    </>
   );
 }

@@ -158,7 +158,7 @@ export default function FavoritePage() {
         {/* Filter Bar */}
         <div className="bg-white rounded-2xl border border-slate-200/80 p-4 mb-6 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
           {/* Content Type Filter Pills */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
+          <div className="flex items-center gap-1.5 overflow-x-auto custom-scrollbar-x pb-2">
             {typeTabs.map((tab) => (
               <button
                 key={tab.key}

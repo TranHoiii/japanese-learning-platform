@@ -137,7 +137,7 @@ export const CounterCalculator: React.FC<CounterCalculatorProps> = ({ className 
           </div>
 
           {/* Quick Number Buttons */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-2.5 custom-scrollbar-x text-xs">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 20].map((num) => (
               <button
                 key={num}

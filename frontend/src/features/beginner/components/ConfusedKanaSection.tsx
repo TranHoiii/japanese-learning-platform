@@ -70,7 +70,7 @@ export const ConfusedKanaSection: React.FC<ConfusedKanaSectionProps> = ({
       </div>
 
       {/* Selector pills for confused pairs */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none text-xs">
+      <div className="flex items-center gap-2 overflow-x-auto pb-2.5 custom-scrollbar-x text-xs">
         {pairs.map((p, idx) => (
           <button
             key={p.id}
