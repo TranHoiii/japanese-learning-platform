@@ -104,6 +104,106 @@ export const MINNA_LESSON_TOPICS: Record<number, LessonTopicInfo> = {
     title: "Điều kiện & Giả định (Tara)",
     desc: "Nếu... thì (たら), dù có... đi nữa (ても), hoàn tất trọn vẹn 25 bài sơ cấp N5.",
   },
+  26: {
+    title: "Giải thích lý do & Thể thông thường",
+    desc: "Mẫu câu ～んです biểu đạt thắc mắc, trình bày lý do, hoàn cảnh và yêu cầu giúp đỡ (～んですが).",
+  },
+  27: {
+    title: "Thể khả năng & Năng lực",
+    desc: "Động từ thể khả năng (可能形), diễn tả khả năng, điều kiện và sự nhận biết qua thị giác/thính giác (みえます, きこえます).",
+  },
+  28: {
+    title: "Hành động đồng thời & Thói quen",
+    desc: "Vừa làm việc này vừa làm việc kia (～ながら), thói quen duy trì (～ています) và liệt kê lý do (～し、～し).",
+  },
+  29: {
+    title: "Trạng thái sự vật & Tự tha động từ",
+    desc: "Cặp tự động từ & tha động từ, miêu tả trạng thái kết quả của sự vật hiện tượng (～ています).",
+  },
+  30: {
+    title: "Trạng thái có chủ ý & Chuẩn bị trước",
+    desc: "Mẫu câu ～てあります (kết quả do ai đó cố ý làm) và ～ておきます (chuẩn bị sẵn cho tương lai).",
+  },
+  31: {
+    title: "Thể ý chí & Dự định tương lai",
+    desc: "Động từ thể ý chí (意向形), diễn đạt dự định cá nhân (～とおもっています, ～つもりです, ～よていです).",
+  },
+  32: {
+    title: "Lời khuyên & Phỏng đoán dự đoán",
+    desc: "Khuyên nên/không nên làm gì (～ほうがいい), dự đoán thời tiết/tình huống (～でしょう, ～かもしれません).",
+  },
+  33: {
+    title: "Thể mệnh lệnh & Biển báo ký hiệu",
+    desc: "Động từ thể mệnh lệnh & cấm đoán (命令形・禁止形), đọc hiểu biển báo công cộng và trích dẫn thông điệp.",
+  },
+  34: {
+    title: "Làm theo chỉ dẫn & Thứ tự hành động",
+    desc: "Làm theo như đã thấy/nghe (～とおりに), sau khi làm gì (～あとで) và làm việc mà không làm gì khác (～ないで).",
+  },
+  35: {
+    title: "Thể điều kiện & Lời khuyên",
+    desc: "Động từ & tính từ thể điều kiện (～ば / ～なら), đưa ra lời khuyên và giả định tình huống.",
+  },
+  36: {
+    title: "Mục tiêu & Thay đổi thói quen",
+    desc: "Để có thể đạt mục tiêu (～ように), trở nên có thể làm gì (～ようになる), cố gắng duy trì thói quen (～ようにする).",
+  },
+  37: {
+    title: "Thể bị động & Hoàn cảnh tác động",
+    desc: "Động từ thể bị động (受身形), diễn tả sự phiền toái hoặc được/bị người khác tác động vào.",
+  },
+  38: {
+    title: "Danh từ hóa mệnh đề (No)",
+    desc: "Biến mệnh đề thành danh từ bằng の (～のは, ～のを, ～のが), diễn tả sở thích, việc quên và phát hiện.",
+  },
+  39: {
+    title: "Nguyên nhân & Lý do tự nhiên",
+    desc: "Thể て và nguyên nhân bất khả kháng, liên từ chỉ lý do khách quan (～ので, ～て／～で).",
+  },
+  40: {
+    title: "Câu hỏi lồng ghép & Thử nghiệm",
+    desc: "Nghi vấn từ lồng ghép trong câu (～か, ～かどうか) và hành động thử nghiệm làm gì đó (～てみます).",
+  },
+  41: {
+    title: "Cho nhận nâng cao & Kính ngữ",
+    desc: "Hành động cho nhận với người trên, bề dưới và vật nuôi (～いただきます, ～くださいます, ～やります).",
+  },
+  42: {
+    title: "Mục đích phục vụ & Đánh giá công dụng",
+    desc: "Mẫu câu chỉ mục đích cho bản thân/tổ chức (～ために) và công dụng, mức độ cần thiết (～のに).",
+  },
+  43: {
+    title: "Trông có vẻ & Sắp sửa diễn ra",
+    desc: "Phán đoán qua vẻ bề ngoài (～そうです [trông có vẻ]) và hành động đi đâu làm gì rồi quay lại (～てきます).",
+  },
+  44: {
+    title: "Quá mức & Mức độ dễ / khó",
+    desc: "Làm gì quá mức (～すぎます), sự việc dễ làm (～やすい) hoặc khó làm (～にくい).",
+  },
+  45: {
+    title: "Trường hợp giả định & Bất mãn (Noni)",
+    desc: "Trong trường hợp (～ばあいは) và nghịch lý bất ngờ / phàn nàn ngoài mong đợi (～のに [thế mà]).",
+  },
+  46: {
+    title: "Thời điểm hành động & Vừa mới làm",
+    desc: "Hành động sắp sửa / đang / vừa mới xong (～ところです) và việc vừa mới xảy ra theo cảm nhận (～ばかりです).",
+  },
+  47: {
+    title: "Nghe nói truyền đạt & Dường như",
+    desc: "Truyền đạt lại tin tức nghe được (～そうです [nghe nói]) và phán đoán theo cảm quan suy luận (～ようです).",
+  },
+  48: {
+    title: "Thể sai khiến & Cho phép bắt buộc",
+    desc: "Động từ thể sai khiến (使役形 - ～させます), yêu cầu hoặc xin phép người khác cho mình làm gì (～させてください).",
+  },
+  49: {
+    title: "Tôn kính ngữ (Sonkeigo)",
+    desc: "Kính ngữ nâng cao vị thế của người đối thoại và khách hàng, các động từ đặc biệt và dạng お～になります.",
+  },
+  50: {
+    title: "Khiêm nhường ngữ (Kenjougo)",
+    desc: "Kính ngữ hạ mình khi nói về hành động của bản thân, thể お／ご～します và hoàn tất trọn vẹn 50 bài Minnano.",
+  },
 };
 
 export function getLessonDisplayInfo(

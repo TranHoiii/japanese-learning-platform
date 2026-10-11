@@ -175,6 +175,7 @@ export default function LessonsPage() {
               const inProgress = prog > 0 && prog < 100;
               const lessonPad = lesson.lessonNumber < 10 ? `0${lesson.lessonNumber}` : lesson.lessonNumber;
               const topicInfo = getLessonDisplayInfo(lesson.lessonNumber, lesson.title, lesson.description);
+              const levelPrefix = isN4 ? "n4" : "n5";
 
               return (
                 <div
@@ -224,104 +225,55 @@ export default function LessonsPage() {
 
                   {/* Skills Pills */}
                   <div>
-                    {isN4 ? (
-                      <div className="pt-3 border-t border-slate-100 grid grid-cols-3 sm:grid-cols-6 gap-2">
-                        <Link
-                          to={`/n4/lessons/${lesson.id}/vocabulary`}
-                          className="py-2 px-1 rounded-xl bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
-                        >
-                          <span>📚</span>
-                          <span>Từ vựng</span>
-                        </Link>
-                        <Link
-                          to={`/n4/lessons/${lesson.id}/grammar`}
-                          className="py-2 px-1 rounded-xl bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
-                        >
-                          <span>⛩️</span>
-                          <span>Ngữ pháp</span>
-                        </Link>
-                        <Link
-                          to={`/n4/lessons/${lesson.id}/kanji`}
-                          className="py-2 px-1 rounded-xl bg-amber-50 hover:bg-amber-600 hover:text-white text-amber-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
-                        >
-                          <span>🈁</span>
-                          <span>Kanji</span>
-                        </Link>
-                        <Link
-                          to={`/n4/lessons/${lesson.id}/listening`}
-                          className="py-2 px-1 rounded-xl bg-purple-50 hover:bg-purple-600 hover:text-white text-purple-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
-                        >
-                          <span>🎧</span>
-                          <span>Nghe</span>
-                        </Link>
-                        <Link
-                          to={`/n4/lessons/${lesson.id}/reading`}
-                          className="py-2 px-1 rounded-xl bg-rose-50 hover:bg-rose-600 hover:text-white text-rose-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
-                        >
-                          <span>📖</span>
-                          <span>Đọc</span>
-                        </Link>
-                        <Link
-                          to={`/n4/lessons/${lesson.id}/exercise`}
-                          className="py-2 px-1 rounded-xl bg-emerald-50 hover:bg-emerald-600 hover:text-white text-emerald-700 text-center text-xs font-bold transition-all shadow-2xs flex items-center justify-center space-x-1"
-                        >
-                          <span>✏️</span>
-                          <span>Bài tập</span>
-                        </Link>
-                      </div>
-                    ) : (
-                      <>
-                        <div className="pt-3 border-t border-slate-100 grid grid-cols-3 gap-1.5 text-center text-xs font-medium">
-                          <Link
-                            to={`/n5/lessons/${lesson.id}/vocabulary`}
-                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
-                          >
-                            📚 Từ vựng
-                          </Link>
-                          <Link
-                            to={`/n5/lessons/${lesson.id}/grammar`}
-                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
-                          >
-                            ⛩️ Ngữ pháp
-                          </Link>
-                          <Link
-                            to={`/n5/lessons/${lesson.id}/kanji`}
-                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-amber-50 hover:text-amber-700 transition-colors"
-                          >
-                            🈁 Kanji
-                          </Link>
-                          <Link
-                            to={`/n5/lessons/${lesson.id}/listening`}
-                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-purple-50 hover:text-purple-700 transition-colors"
-                          >
-                            🎧 Nghe
-                          </Link>
-                          <Link
-                            to={`/n5/lessons/${lesson.id}/reading`}
-                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-rose-50 hover:text-rose-700 transition-colors"
-                          >
-                            📖 Đọc
-                          </Link>
-                          <Link
-                            to={`/n5/lessons/${lesson.id}/exercise`}
-                            className="py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
-                          >
-                            ✏️ Bài tập
-                          </Link>
-                        </div>
+                    <div className="pt-3 border-t border-slate-100 grid grid-cols-3 gap-1.5 text-center text-xs font-medium">
+                      <Link
+                        to={`/${levelPrefix}/lessons/${lesson.id}/vocabulary`}
+                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
+                      >
+                        📚 Từ vựng
+                      </Link>
+                      <Link
+                        to={`/${levelPrefix}/lessons/${lesson.id}/grammar`}
+                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
+                      >
+                        ⛩️ Ngữ pháp
+                      </Link>
+                      <Link
+                        to={`/${levelPrefix}/lessons/${lesson.id}/kanji`}
+                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-amber-50 hover:text-amber-700 transition-colors"
+                      >
+                        🈁 Kanji
+                      </Link>
+                      <Link
+                        to={`/${levelPrefix}/lessons/${lesson.id}/listening`}
+                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-purple-50 hover:text-purple-700 transition-colors"
+                      >
+                        🎧 Nghe
+                      </Link>
+                      <Link
+                        to={`/${levelPrefix}/lessons/${lesson.id}/reading`}
+                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-rose-50 hover:text-rose-700 transition-colors"
+                      >
+                        📖 Đọc
+                      </Link>
+                      <Link
+                        to={`/${levelPrefix}/lessons/${lesson.id}/exercise`}
+                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                      >
+                        ✏️ Bài tập
+                      </Link>
+                    </div>
 
-                        <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                          <span className="text-xs font-semibold text-slate-400">25 bài Minnano</span>
-                          <Link
-                            to={`/n5/lessons/${lesson.id}/vocabulary`}
-                            className="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors flex items-center space-x-1"
-                          >
-                            <span>Học ngay</span>
-                            <span>&rarr;</span>
-                          </Link>
-                        </div>
-                      </>
-                    )}
+                    <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                      <span className="text-xs font-semibold text-slate-400">25 bài Minnano</span>
+                      <Link
+                        to={`/${levelPrefix}/lessons/${lesson.id}/vocabulary`}
+                        className="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors flex items-center space-x-1"
+                      >
+                        <span>Học ngay</span>
+                        <span>&rarr;</span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               );

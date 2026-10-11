@@ -5,6 +5,7 @@ import { kanjiApi } from "../services/kanjiApi";
 import { progressApi } from "../services/progressApi";
 import Navbar from "../components/Navbar";
 import FavoriteButton from "../components/favorite/FavoriteButton";
+import StrokeOrderAnimator from "../components/kanji/StrokeOrderAnimator";
 
 export default function KanjiDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -202,25 +203,18 @@ export default function KanjiDetailPage() {
                 )}
               </div>
 
-              {/* Stroke Order Visual */}
-              {kanji.strokeOrderUrl ? (
-                <div className="bg-white/10 p-3 rounded-2xl border border-white/20 backdrop-blur-xs text-center shrink-0 self-center">
-                  <img
-                    src={kanji.strokeOrderUrl}
-                    alt={`Thứ tự nét của ${kanji.kanji}`}
-                    className="w-24 h-24 filter invert brightness-200"
-                    onError={(e) => {
-                      (e.target as HTMLElement).style.display = "none";
-                    }}
-                  />
-                  <span className="text-[10px] font-bold text-amber-300 block mt-1">THỨ TỰ NÉT VẼ</span>
-                </div>
-              ) : (
-                <div className="w-24 h-24 rounded-2xl bg-white/5 border border-white/10 flex flex-col items-center justify-center text-center p-2 self-center shrink-0">
-                  <span className="text-3xl font-japanese font-bold text-amber-300">{kanji.kanji}</span>
-                  <span className="text-[9px] font-semibold text-slate-400 mt-1">{kanji.strokeCount || 4} nét</span>
-                </div>
-              )}
+              {/* Stroke Order Visual Animator */}
+              <div className="bg-white/10 p-3 sm:p-4 rounded-3xl border border-white/20 backdrop-blur-md text-center shrink-0 self-center">
+                <span className="text-[10px] font-black text-amber-300 uppercase tracking-widest block mb-2">
+                  ✍️ Thứ tự nét vẽ
+                </span>
+                <StrokeOrderAnimator
+                  character={kanji.kanji}
+                  strokeOrderUrl={kanji.strokeOrderUrl}
+                  theme="dark"
+                  size={120}
+                />
+              </div>
             </div>
 
             {/* Content Body */}

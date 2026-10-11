@@ -138,7 +138,7 @@ export default function ListeningPage() {
               to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/kanji`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
             >
-              <span>🈯</span>
+              <span>🈁</span>
               <span>Kanji {levelCode}</span>
             </Link>
 
