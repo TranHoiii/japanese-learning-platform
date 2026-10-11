@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface LessonKanjiRepository extends JpaRepository<LessonKanji, Long> {
 
-    @EntityGraph(attributePaths = {"kanji", "kanji.compounds"})
+    @EntityGraph(attributePaths = {"kanji", "kanji.compounds", "lesson", "lesson.level"})
     List<LessonKanji> findByLessonIdOrderBySortOrderAsc(Long lessonId);
 
     boolean existsByLessonId(Long lessonId);

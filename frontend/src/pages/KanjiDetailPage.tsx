@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate, useSearchParams, Link } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { kanjiApi } from "../services/kanjiApi";
 import { progressApi } from "../services/progressApi";
@@ -9,6 +9,8 @@ import FavoriteButton from "../components/favorite/FavoriteButton";
 export default function KanjiDetailPage() {
   const { id } = useParams<{ id: string }>();
   const kanjiId = id ? parseInt(id, 10) : null;
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const queryClient = useQueryClient();
 
   const {
@@ -20,6 +22,64 @@ export default function KanjiDetailPage() {
     queryFn: () => kanjiApi.getKanjiById(kanjiId!),
     enabled: !!kanjiId,
   });
+
+  const queryLessonId = searchParams.get("lessonId") ? parseInt(searchParams.get("lessonId")!, 10) : null;
+  const currentLessonId = queryLessonId || kanji?.lessonId || null;
+
+  const { data: lessonKanjis } = useQuery({
+    queryKey: ["kanjis", currentLessonId],
+    queryFn: () => kanjiApi.getKanjisByLessonId(currentLessonId!),
+    enabled: !!currentLessonId,
+  });
+
+  const currentIndex = lessonKanjis && kanjiId
+    ? lessonKanjis.findIndex((k) => k.id === kanjiId)
+    : -1;
+  const prevKanji = currentIndex > 0 && lessonKanjis ? lessonKanjis[currentIndex - 1] : null;
+  const nextKanji =
+    currentIndex >= 0 && lessonKanjis && currentIndex < lessonKanjis.length - 1
+      ? lessonKanjis[currentIndex + 1]
+      : null;
+
+  const isN4 = kanji?.levelCode === "N4" || (kanji?.lessonNumber ? kanji.lessonNumber >= 26 : false);
+  const levelCode = isN4 ? "N4" : "N5";
+  const lessonPath = currentLessonId
+    ? `/${isN4 ? "n4" : "n5"}/lessons/${currentLessonId}/kanji`
+    : isN4 ? "/n4/lessons" : "/n5/lessons";
+
+  const handlePrev = () => {
+    if (prevKanji) {
+      navigate(`/kanjis/${prevKanji.id}${currentLessonId ? `?lessonId=${currentLessonId}` : ""}`);
+    } else {
+      navigate(lessonPath);
+    }
+  };
+
+  const handleNext = () => {
+    if (nextKanji) {
+      navigate(`/kanjis/${nextKanji.id}${currentLessonId ? `?lessonId=${currentLessonId}` : ""}`);
+    } else {
+      navigate(lessonPath);
+    }
+  };
+
+  // Keyboard navigation for smooth flashcard browsing
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return;
+      }
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        handlePrev();
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        handleNext();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [prevKanji?.id, nextKanji?.id, currentLessonId, lessonPath]);
 
   // Track kanji item completion when user views/reaches this kanji
   useEffect(() => {
@@ -49,8 +109,7 @@ export default function KanjiDetailPage() {
     }
   };
 
-  const isN4 = kanji?.levelCode === "N4" || (kanji?.lessonNumber ? kanji.lessonNumber >= 26 : false);
-  const levelCode = isN4 ? "N4" : "N5";
+  const displayKanjiNumber = kanji?.kanjiNumber ?? kanji?.id ?? id;
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
@@ -66,7 +125,15 @@ export default function KanjiDetailPage() {
             {isN4 ? "Bài học N4" : "Bài học N5"}
           </Link>
           <span>/</span>
-          <span className="font-semibold text-slate-900">Chi tiết Hán tự Kanji #{id}</span>
+          {currentLessonId && (
+            <>
+              <Link to={lessonPath} className="hover:text-slate-900 transition-colors">
+                Bài {kanji?.lessonNumber || currentLessonId}
+              </Link>
+              <span>/</span>
+            </>
+          )}
+          <span className="font-semibold text-slate-900">Chi tiết Hán tự Kanji #{displayKanjiNumber}</span>
         </div>
 
         {isLoading && (
@@ -99,7 +166,7 @@ export default function KanjiDetailPage() {
               <div>
                 <div className="flex items-center space-x-3 mb-2">
                   <span className="text-xs uppercase tracking-wider text-amber-300 font-bold">
-                    Kanji {levelCode} #{kanji.id}
+                    Kanji {levelCode} #{displayKanjiNumber}
                   </span>
                   {kanji.strokeCount && (
                     <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-500/30 text-amber-200 border border-amber-400/40">
@@ -260,13 +327,52 @@ export default function KanjiDetailPage() {
                 </div>
               )}
 
-              {/* Back Button */}
-              <div className="pt-4 border-t border-slate-100 flex justify-end">
+              {/* Bottom Navigation Buttons: Quay lại & Tiếp theo */}
+              <div className="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <button
-                  onClick={() => window.history.back()}
-                  className="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-semibold transition-colors"
+                  type="button"
+                  onClick={handlePrev}
+                  className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white rounded-2xl text-sm font-bold shadow-sm active:scale-95 transition-all cursor-pointer group"
                 >
-                  ← Quay lại
+                  <span className="text-base group-hover:-translate-x-1 transition-transform">←</span>
+                  <span>Quay lại</span>
+                  {prevKanji && (
+                    <span className="text-xs text-slate-300 font-normal ml-1">
+                      ({prevKanji.kanji} - {prevKanji.hanViet})
+                    </span>
+                  )}
+                </button>
+
+                {lessonKanjis && lessonKanjis.length > 0 && (
+                  <div className="flex flex-col items-center">
+                    <span className="text-xs font-bold text-slate-600 uppercase tracking-wider">
+                      Kanji {currentIndex >= 0 ? currentIndex + 1 : 1} / {lessonKanjis.length}
+                    </span>
+                    <Link
+                      to={lessonPath}
+                      className="text-xs text-amber-600 hover:text-amber-700 font-semibold hover:underline mt-1"
+                    >
+                      Danh sách Kanji bài học
+                    </Link>
+                  </div>
+                )}
+
+                <button
+                  type="button"
+                  onClick={handleNext}
+                  className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3 bg-amber-600 hover:bg-amber-500 active:bg-amber-700 text-white rounded-2xl text-sm font-bold shadow-md shadow-amber-600/25 active:scale-95 transition-all cursor-pointer group"
+                >
+                  <span>Tiếp theo</span>
+                  {nextKanji ? (
+                    <>
+                      <span className="text-xs text-amber-100 font-normal mr-1">
+                        ({nextKanji.kanji} - {nextKanji.hanViet})
+                      </span>
+                      <span className="text-base group-hover:translate-x-1 transition-transform">→</span>
+                    </>
+                  ) : (
+                    <span className="text-base">✓</span>
+                  )}
                 </button>
               </div>
             </div>

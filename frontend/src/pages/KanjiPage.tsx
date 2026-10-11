@@ -276,13 +276,13 @@ export default function KanjiPage() {
             {filteredKanjis.map((k, idx) => (
               <Link
                 key={k.id}
-                to={`/kanjis/${k.id}`}
+                to={`/kanjis/${k.id}?lessonId=${activeLessonId}`}
                 className="bg-white rounded-3xl border border-slate-200/80 p-6 shadow-xs hover:shadow-xl hover:border-amber-400 transition-all flex flex-col justify-between group transform hover:-translate-y-1"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="w-7 h-7 rounded-lg bg-amber-50 text-amber-700 font-extrabold text-xs flex items-center justify-center border border-amber-200/60">
-                      {idx + 1}
+                    <span className="h-7 px-2.5 rounded-lg bg-amber-50 text-amber-700 font-extrabold text-xs flex items-center justify-center border border-amber-200/60 shadow-2xs">
+                      #{k.kanjiNumber ?? (idx + 1)}
                     </span>
                     {k.strokeCount && (
                       <span className="text-xs font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">
