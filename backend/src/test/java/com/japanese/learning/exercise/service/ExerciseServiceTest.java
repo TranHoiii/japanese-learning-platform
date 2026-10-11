@@ -65,15 +65,16 @@ class ExerciseServiceTest {
                 "Bài 09", "Bài 10", "Bài 11", "Bài 12", "Bài 13", "Bài 14", "Bài 15", "Bài 16", "Bài 17",
                 "Tổng hợp Bài 09–17",
                 "Bài 18", "Bài 19", "Bài 20", "Bài 21", "Bài 22", "Bài 23", "Bài 24", "Bài 25",
-                "Tổng hợp Bài 18–25"
+                "Tổng hợp Bài 18–25",
+                "総復習 (1課〜25課)"
         };
 
-        for (int i = 0; i < 27; i++) {
+        for (int i = 0; i < 28; i++) {
             Exercise ex = new Exercise();
             ex.setId((long) (i + 100)); // DB ID does not match sort order
             ex.setSortOrder(i + 1);
             ex.setTitle(titles[i]);
-            ex.setExerciseType((i == 7 || i == 17 || i == 26) ? ExerciseType.REVIEW : ExerciseType.LESSON);
+            ex.setExerciseType((i == 7 || i == 17 || i == 26 || i == 27) ? ExerciseType.REVIEW : ExerciseType.LESSON);
 
             Lesson lesson = new Lesson();
             lesson.setId((long) (30 - i)); // Lesson ID is deliberately inverse to verify sort_order supremacy
@@ -86,10 +87,10 @@ class ExerciseServiceTest {
 
         List<ExerciseResponse> result = service.getAllExercises();
 
-        assertEquals(27, result.size());
+        assertEquals(28, result.size());
 
-        // Verify exact sort orders 1 to 27
-        for (int i = 0; i < 27; i++) {
+        // Verify exact sort orders 1 to 28
+        for (int i = 0; i < 28; i++) {
             assertEquals(i + 1, result.get(i).getSortOrder());
             assertEquals(titles[i], result.get(i).getTitle());
         }
@@ -110,6 +111,10 @@ class ExerciseServiceTest {
         assertEquals("Tổng hợp Bài 18–25", result.get(26).getTitle());
         assertEquals(27, result.get(26).getSortOrder());
         assertEquals(ExerciseType.REVIEW, result.get(26).getExerciseType());
+
+        assertEquals("総復習 (1課〜25課)", result.get(27).getTitle());
+        assertEquals(28, result.get(27).getSortOrder());
+        assertEquals(ExerciseType.REVIEW, result.get(27).getExerciseType());
     }
 
     @Test
@@ -120,7 +125,7 @@ class ExerciseServiceTest {
         assertNotNull(is, "File n5-exercise.json phải tồn tại trong resources/data");
 
         List<Map<String, Object>> seedData = mapper.readValue(is, new TypeReference<>() {});
-        assertEquals(27, seedData.size(), "Phải có đúng 27 bài tập chính thức");
+        assertEquals(28, seedData.size(), "Phải có đúng 28 bài tập chính thức");
 
         boolean hasBai01Alone = seedData.stream().anyMatch(e -> "Bài 01".equals(e.get("title")));
         boolean hasBai02Alone = seedData.stream().anyMatch(e -> "Bài 02".equals(e.get("title")));
@@ -197,18 +202,18 @@ class ExerciseServiceTest {
     }
 
     @Test
-    @DisplayName("VALIDATION TOÀN DIỆN: 27 bài tập trong n5-exercise.json tuân thủ 100% Business Rules")
+    @DisplayName("VALIDATION TOÀN DIỆN: 28 bài tập trong n5-exercise.json tuân thủ 100% Business Rules")
     void testN5ExerciseJsonIntegrity() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         InputStream is = getClass().getResourceAsStream("/data/n5-exercise.json");
         assertNotNull(is);
 
         List<Map<String, Object>> exercises = mapper.readValue(is, new TypeReference<>() {});
-        assertEquals(27, exercises.size());
+        assertEquals(28, exercises.size());
 
         Set<Integer> sortOrders = new HashSet<>();
 
-        for (int i = 0; i < 27; i++) {
+        for (int i = 0; i < 28; i++) {
             Map<String, Object> ex = exercises.get(i);
             int sortOrder = (Integer) ex.get("sortOrder");
             assertNotNull(sortOrder, "sortOrder không được null");
@@ -226,6 +231,9 @@ class ExerciseServiceTest {
                 assertEquals("REVIEW", ex.get("exerciseType"));
             } else if (sortOrder == 27) {
                 assertEquals("Tổng hợp Bài 18–25", ex.get("title"));
+                assertEquals("REVIEW", ex.get("exerciseType"));
+            } else if (sortOrder == 28) {
+                assertEquals("総復習 (1課〜25課)", ex.get("title"));
                 assertEquals("REVIEW", ex.get("exerciseType"));
             } else {
                 assertEquals("LESSON", ex.get("exerciseType"));

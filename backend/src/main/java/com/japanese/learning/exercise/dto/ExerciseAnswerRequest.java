@@ -20,4 +20,14 @@ public class ExerciseAnswerRequest {
     private Long selectedOptionId;
 
     private String answerText;
+
+    private java.util.List<BlankResponse> responses;
+
+    public ExerciseAnswerRequest(Long questionId, Long selectedOptionId, String answerText) {
+        this.questionId = questionId;
+        this.selectedOptionId = selectedOptionId;
+        this.answerText = answerText;
+    }
 }
+
+

@@ -27,17 +27,39 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor
 public class ExerciseServiceImpl implements ExerciseService {
 
     private final ExerciseRepository exerciseRepository;
     private final QuestionRepository questionRepository;
     private final ExerciseMapper exerciseMapper;
     private final QuestionMapper questionMapper;
+    private final ExerciseGradingHelper exerciseGradingHelper;
+
+    @org.springframework.beans.factory.annotation.Autowired
+    public ExerciseServiceImpl(ExerciseRepository exerciseRepository,
+                               QuestionRepository questionRepository,
+                               ExerciseMapper exerciseMapper,
+                               QuestionMapper questionMapper,
+                               ExerciseGradingHelper exerciseGradingHelper) {
+        this.exerciseRepository = exerciseRepository;
+        this.questionRepository = questionRepository;
+        this.exerciseMapper = exerciseMapper;
+        this.questionMapper = questionMapper;
+        this.exerciseGradingHelper = exerciseGradingHelper;
+    }
+
+    public ExerciseServiceImpl(ExerciseRepository exerciseRepository,
+                               QuestionRepository questionRepository,
+                               ExerciseMapper exerciseMapper,
+                               QuestionMapper questionMapper) {
+        this(exerciseRepository, questionRepository, exerciseMapper, questionMapper, new ExerciseGradingHelper());
+    }
+
 
     @Override
     @Transactional(readOnly = true)
     public List<ExerciseResponse> getAllExercises() {
+
         return exerciseRepository.findAllByOrderBySortOrderAsc().stream()
                 .map(exerciseMapper::toResponse)
                 .toList();
@@ -101,43 +123,15 @@ public class ExerciseServiceImpl implements ExerciseService {
 
         for (Question question : exercise.getQuestions()) {
             ExerciseAnswerRequest userAns = userAnswers.get(question.getId());
-            Long selectedOptionId = userAns != null ? userAns.getSelectedOptionId() : null;
-            String userText = userAns != null ? userAns.getAnswerText() : null;
+            ExerciseQuestionResultResponse qResult = exerciseGradingHelper.gradeQuestion(question, userAns);
 
-            QuestionOption correctOption = question.getOptions().stream()
-                    .filter(QuestionOption::getCorrect)
-                    .findFirst()
-                    .orElse(null);
-
-            Long correctOptionId = correctOption != null ? correctOption.getId() : null;
-            String correctAnswerText = correctOption != null ? correctOption.getOptionText() : null;
-
-            boolean isCorrect = false;
-
-            if (selectedOptionId != null && correctOptionId != null) {
-                isCorrect = selectedOptionId.equals(correctOptionId);
-            } else if (userText != null && !userText.trim().isEmpty()) {
-                if (correctAnswerText != null && !correctAnswerText.trim().isEmpty()) {
-                    isCorrect = userText.trim().equalsIgnoreCase(correctAnswerText.trim());
-                } else if (question.getExplanation() != null) {
-                    isCorrect = question.getExplanation().trim().equalsIgnoreCase(userText.trim());
-                }
-            }
-
-            if (isCorrect) {
+            if (Boolean.TRUE.equals(qResult.getIsCorrect())) {
                 correctCount++;
             }
 
-            results.add(ExerciseQuestionResultResponse.builder()
-                    .questionId(question.getId())
-                    .isCorrect(isCorrect)
-                    .selectedOptionId(selectedOptionId)
-                    .correctOptionId(correctOptionId)
-                    .answerText(userText)
-                    .correctAnswerText(correctAnswerText != null ? correctAnswerText : question.getExplanation())
-                    .explanation(question.getExplanation())
-                    .build());
+            results.add(qResult);
         }
+
 
         int totalQuestions = exercise.getQuestions().size();
         int wrongCount = totalQuestions - correctCount;

@@ -6,12 +6,12 @@ import { progressApi } from "../services/progressApi";
 import { ExerciseSubmitResponse } from "../types/exercise";
 import Navbar from "../components/Navbar";
 import { FavoriteButton } from "../components/favorite/FavoriteButton";
-
-interface IllustrationInfo {
-  src: string;
-  alt: string;
-  caption: string;
-}
+import {
+  QuestionRenderer,
+  IllustrationInfo,
+} from "../components/exercise/QuestionRenderer";
+import { ExerciseSubmitBar } from "../components/exercise/ExerciseSubmitBar";
+import { ExerciseResultSummary } from "../components/exercise/ExerciseResultSummary";
 
 const getQuestionIllustration = (
   sortOrder?: number,
@@ -138,11 +138,11 @@ export default function ExerciseDetailPage() {
   const queryClient = useQueryClient();
   const exerciseId = id ? parseInt(id, 10) : 0;
 
-  // Selected option IDs mapped by question ID
+  // Selected option IDs mapped by question ID (for multiple choice)
   const [selectedOptions, setSelectedOptions] = useState<Record<number, number>>({});
 
-  // Text answers for fill-in-the-blank questions
-  const [textAnswers, setTextAnswers] = useState<Record<number, string>>({});
+  // Blank values mapped by questionId -> { blankId: string }
+  const [blankValues, setBlankValues] = useState<Record<number, Record<string, string>>>({});
 
   // Result state after submit
   const [result, setResult] = useState<ExerciseSubmitResponse | null>(null);
@@ -163,8 +163,12 @@ export default function ExerciseDetailPage() {
 
   // 2. Submit Mutation
   const submitMutation = useMutation({
-    mutationFn: (answersPayload: { questionId: number; selectedOptionId?: number | null; answerText?: string | null }[]) =>
-      exerciseApi.submitExercise(exerciseId, { answers: answersPayload }),
+    mutationFn: (answersPayload: {
+      questionId: number;
+      selectedOptionId?: number | null;
+      answerText?: string | null;
+      responses?: { blankId: string; value: string }[];
+    }[]) => exerciseApi.submitExercise(exerciseId, { answers: answersPayload }),
     onSuccess: (data) => {
       setResult(data);
       progressApi
@@ -192,12 +196,15 @@ export default function ExerciseDetailPage() {
     }));
   };
 
-  // Handle text input change
-  const handleTextChange = (questionId: number, text: string) => {
+  // Handle blank value change
+  const handleChangeBlank = (questionId: number, blankId: string, value: string) => {
     if (result) return;
-    setTextAnswers((prev) => ({
+    setBlankValues((prev) => ({
       ...prev,
-      [questionId]: text,
+      [questionId]: {
+        ...(prev[questionId] || {}),
+        [blankId]: value,
+      },
     }));
   };
 
@@ -205,11 +212,22 @@ export default function ExerciseDetailPage() {
   const handleSubmit = () => {
     if (!exercise || !exercise.questions || exercise.questions.length === 0) return;
 
-    const answersPayload = exercise.questions.map((q) => ({
-      questionId: q.id,
-      selectedOptionId: selectedOptions[q.id] || null,
-      answerText: textAnswers[q.id] || null,
-    }));
+    const answersPayload = exercise.questions.map((q) => {
+      const qBlanks = blankValues[q.id] || {};
+      const responses = Object.entries(qBlanks)
+        .filter(([_, val]) => val.trim().length > 0)
+        .map(([blankId, value]) => ({
+          blankId,
+          value: value.trim(),
+        }));
+
+      return {
+        questionId: q.id,
+        selectedOptionId: selectedOptions[q.id] || null,
+        answerText: responses.length > 0 ? responses.map((r) => r.value).join(", ") : null,
+        responses: responses.length > 0 ? responses : undefined,
+      };
+    });
 
     submitMutation.mutate(answersPayload);
   };
@@ -218,25 +236,28 @@ export default function ExerciseDetailPage() {
   const handleRetry = () => {
     setResult(null);
     setSelectedOptions({});
-    setTextAnswers({});
+    setBlankValues({});
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const answeredCount =
-    (exercise?.questions || []).filter(
-      (q) => selectedOptions[q.id] !== undefined || (textAnswers[q.id] && textAnswers[q.id].trim().length > 0)
-    ).length;
+  const isQuestionAnswered = (questionId: number) => {
+    if (selectedOptions[questionId] !== undefined) return true;
+    const qBlanks = blankValues[questionId];
+    if (qBlanks && Object.values(qBlanks).some((v) => v.trim().length > 0)) return true;
+    return false;
+  };
 
+  const answeredCount = (exercise?.questions || []).filter((q) => isQuestionAnswered(q.id)).length;
   const totalQuestions = exercise?.questions?.length || 0;
   const isReview = exercise?.exerciseType === "REVIEW";
-  const isN4 = Boolean(exercise && exercise.sortOrder >= 28);
+  const isN4 = Boolean(exercise && (exercise.sortOrder >= 28 || (exercise.lessonId && exercise.lessonId >= 26)));
   const levelCode = isN4 ? "N4" : "N5";
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
       <Navbar />
 
-      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-28">
         {/* Navigation Breadcrumb */}
         <div className="flex items-center space-x-2 text-sm text-slate-500 mb-6">
           <Link to="/" className="hover:text-slate-900 transition-colors">
@@ -293,11 +314,13 @@ export default function ExerciseDetailPage() {
             >
               <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                 <div className="flex items-center space-x-3">
-                  <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                    isN4
-                      ? "bg-emerald-50 text-emerald-700 border border-emerald-200/60"
-                      : "bg-rose-50 text-rose-700 border border-rose-200/60"
-                  }`}>
+                  <span
+                    className={`px-3 py-1 rounded-full text-xs font-bold ${
+                      isN4
+                        ? "bg-emerald-50 text-emerald-700 border border-emerald-200/60"
+                        : "bg-rose-50 text-rose-700 border border-rose-200/60"
+                    }`}
+                  >
                     JLPT {levelCode}
                   </span>
                   <span
@@ -310,7 +333,7 @@ export default function ExerciseDetailPage() {
                     Thứ tự #{exercise.sortOrder} ({isReview ? "★ TỔNG HỢP REVIEW" : "BÀI HỌC"})
                   </span>
                   <span className="text-xs text-slate-500 font-medium">
-                    {exercise.questions?.length || 0} câu hỏi
+                    {exercise.questions?.length || 0} bài tập phần
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -336,271 +359,49 @@ export default function ExerciseDetailPage() {
 
             {/* Score & Result Banner (Show upon submit) */}
             {result && (
-              <div
-                className={`p-6 sm:p-8 rounded-3xl border shadow-xs transition-all ${
-                  result.score >= 80
-                    ? "bg-emerald-50/90 border-emerald-300 text-emerald-950"
-                    : result.score >= 50
-                    ? "bg-amber-50/90 border-amber-300 text-amber-950"
-                    : "bg-rose-50/90 border-rose-300 text-rose-950"
-                }`}
-              >
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-                  <div className="flex items-center space-x-4">
-                    <div
-                      className={`w-16 h-16 rounded-2xl flex items-center justify-center text-3xl font-black ${
-                        result.score >= 80
-                          ? "bg-emerald-500 text-white"
-                          : result.score >= 50
-                          ? "bg-amber-500 text-white"
-                          : "bg-rose-500 text-white"
-                      }`}
-                    >
-                      {result.score}%
-                    </div>
-                    <div>
-                      <h2 className="text-xl font-bold">
-                        {result.score >= 80
-                          ? "Xuất sắc! Bạn đã làm rất tốt 🎉"
-                          : result.score >= 50
-                          ? "Khá tốt! Hãy đối chiếu kỹ với đáp án chi tiết nhé 👍"
-                          : "Cố lên! Bạn hãy xem lại ngữ pháp và luyện tập thêm nhé 💪"}
-                      </h2>
-                      <p className="text-sm opacity-80 mt-1">
-                        Chính xác: {result.correctCount} / {result.totalQuestions} câu (Sai: {result.wrongCount} câu)
-                      </p>
-                    </div>
-                  </div>
-
-                  <button
-                    onClick={handleRetry}
-                    className="px-6 py-2.5 rounded-xl bg-white font-bold text-sm shadow-xs hover:bg-slate-50 transition-all border border-slate-200 cursor-pointer"
-                  >
-                    Làm lại bài này 🔄
-                  </button>
-                </div>
-              </div>
+              <ExerciseResultSummary result={result} onRetry={handleRetry} />
             )}
 
             {/* Questions Section */}
             {exercise.questions && exercise.questions.length > 0 && (
-              <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-8">
-                <div className="flex items-center justify-between pb-4 border-b border-slate-100">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-xl">✏️</span>
-                    <h2 className="text-lg font-bold text-slate-900">
-                      Danh sách bài tập ({exercise.questions.length} phần)
-                    </h2>
-                  </div>
-                  {!result && (
-                    <span className="text-xs font-semibold text-slate-500">
-                      Đã làm: {answeredCount} / {totalQuestions}
-                    </span>
-                  )}
-                </div>
+              <div className="space-y-6">
+                {exercise.questions.map((question, qIdx) => {
+                  const qResult = result?.results.find((r) => r.questionId === question.id);
+                  const illustration = getQuestionIllustration(
+                    exercise.sortOrder,
+                    exercise.lessonId,
+                    question.sortOrder
+                  );
 
-                <div className="space-y-8">
-                  {exercise.questions.map((question, qIdx) => {
-                    const qResult = result?.results.find((r) => r.questionId === question.id);
-                    const hasOptions = question.options && question.options.length > 0;
-                    const hasImageRequired = question.questionText.includes("[IMAGE_REQUIRED]");
-
-                    return (
-                      <div
-                        key={question.id}
-                        className={`p-6 rounded-2xl border transition-all ${
-                          qResult
-                            ? qResult.isCorrect
-                              ? "bg-emerald-50/40 border-emerald-200"
-                              : "bg-rose-50/40 border-rose-200"
-                            : "bg-slate-50/50 border-slate-200/70"
-                        }`}
-                      >
-                        {/* Question Header */}
-                        <div className="flex items-start justify-between gap-4 mb-4">
-                          <div className="flex items-start space-x-3">
-                            <span className="w-7 h-7 rounded-lg bg-indigo-600 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
-                              {qIdx + 1}
-                            </span>
-                            <div>
-                              <div className="flex items-center space-x-2 mb-2">
-                                <span className="text-xs font-bold px-2 py-0.5 rounded-md bg-slate-200 text-slate-700">
-                                  {question.questionType}
-                                </span>
-                              </div>
-                              <h3 className="text-base sm:text-lg font-medium text-slate-900 leading-loose whitespace-pre-line font-sans tracking-wide">
-                                {question.questionText}
-                              </h3>
-                            </div>
-                          </div>
-
-                          {/* Result status icon */}
-                          {qResult && (
-                            <span
-                              className={`shrink-0 text-xs font-bold px-2.5 py-1 rounded-full ${
-                                qResult.isCorrect
-                                  ? "bg-emerald-100 text-emerald-800"
-                                  : "bg-rose-100 text-rose-800"
-                              }`}
-                            >
-                              {qResult.isCorrect ? "✓ Đúng" : "✕ Chưa đúng"}
-                            </span>
-                          )}
-                        </div>
-
-                        {/* Illustration Image if applicable */}
-                        {(() => {
-                          const illustration = getQuestionIllustration(
-                            exercise?.sortOrder,
-                            exercise?.lessonId,
-                            question.sortOrder
-                          );
-                          if (!illustration) return null;
-                          return (
-                            <div className="mb-5 p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs group hover:border-indigo-300 transition-all">
-                              <div className="relative overflow-hidden rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center">
-                                <img
-                                  src={illustration.src}
-                                  alt={illustration.alt}
-                                  onClick={() => setModalImage(illustration)}
-                                  className="max-h-80 sm:max-h-96 w-auto object-contain cursor-zoom-in hover:scale-[1.02] transition-transform duration-200 p-2"
-                                />
-                                <button
-                                  type="button"
-                                  onClick={() => setModalImage(illustration)}
-                                  className="absolute top-2.5 right-2.5 px-2.5 py-1.5 rounded-lg bg-black/60 hover:bg-black/80 text-white text-xs font-semibold backdrop-blur-xs flex items-center space-x-1.5 transition-all cursor-pointer shadow-sm"
-                                >
-                                  <span>🔍</span>
-                                  <span>Phóng to</span>
-                                </button>
-                              </div>
-                              <p className="text-center text-xs text-slate-500 font-medium mt-2.5 flex items-center justify-center space-x-1">
-                                <span>📖</span>
-                                <span>{illustration.caption}</span>
-                              </p>
-                            </div>
-                          );
-                        })()}
-
-                        {/* Interactive Options list (if options exist) */}
-                        {hasOptions && (
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-4">
-                            {question.options.map((option) => {
-                              const isSelected = selectedOptions[question.id] === option.id;
-                              const isCorrectOption = qResult?.correctOptionId === option.id;
-                              const isUserWrongChoice =
-                                qResult && !qResult.isCorrect && qResult.selectedOptionId === option.id;
-
-                              let optionClasses =
-                                "p-3.5 rounded-xl border text-sm font-medium transition-all flex items-center justify-between cursor-pointer ";
-
-                              if (qResult) {
-                                if (isCorrectOption) {
-                                  optionClasses +=
-                                    "bg-emerald-100/90 border-emerald-400 text-emerald-950 font-bold shadow-xs";
-                                } else if (isUserWrongChoice) {
-                                  optionClasses +=
-                                    "bg-rose-100/80 border-rose-400 text-rose-950 line-through opacity-80";
-                                } else {
-                                  optionClasses += "bg-white/60 border-slate-200 text-slate-400 opacity-60";
-                                }
-                              } else {
-                                if (isSelected) {
-                                  optionClasses +=
-                                    "bg-indigo-50 border-indigo-500 text-indigo-950 ring-2 ring-indigo-500/20 shadow-xs";
-                                } else {
-                                  optionClasses +=
-                                    "bg-white border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50";
-                                }
-                              }
-
-                              return (
-                                <button
-                                  key={option.id}
-                                  type="button"
-                                  disabled={!!result}
-                                  onClick={() => handleSelectOption(question.id, option.id)}
-                                  className={optionClasses}
-                                >
-                                  <span className="flex items-center space-x-3 text-left">
-                                    <span
-                                      className={`w-5 h-5 rounded-full border flex items-center justify-center text-xs shrink-0 ${
-                                        isSelected
-                                          ? "border-indigo-600 bg-indigo-600 text-white"
-                                          : "border-slate-300 bg-white"
-                                      }`}
-                                    >
-                                      {isSelected && "●"}
-                                    </span>
-                                    <span>{option.optionText}</span>
-                                  </span>
-
-                                  {qResult && isCorrectOption && (
-                                    <span className="text-xs font-bold text-emerald-700 bg-emerald-200/70 px-2 py-0.5 rounded-md">
-                                      Đáp án đúng
-                                    </span>
-                                  )}
-                                </button>
-                              );
-                            })}
-                          </div>
-                        )}
-
-                        {/* Interactive Text input for FILL_BLANK questions without fixed options */}
-                        {!hasOptions && (
-                          <div className="mt-4">
-                            <label className="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">
-                              Nhập câu trả lời của bạn:
-                            </label>
-                            <textarea
-                              rows={3}
-                              disabled={!!result}
-                              value={textAnswers[question.id] || ""}
-                              onChange={(e) => handleTextChange(question.id, e.target.value)}
-                              placeholder="Nhập câu trả lời hoặc các đáp án bạn điền (ví dụ: 1) は 2) も ...)"
-                              className="w-full p-3 rounded-xl border border-slate-300 bg-white text-slate-900 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 shadow-xs font-mono"
-                            />
-                          </div>
-                        )}
-
-                        {/* Official explanation / solution revealed AFTER submit */}
-                        {qResult && (
-                          <div className="mt-4 p-4 rounded-xl bg-amber-50/90 border border-amber-200 text-amber-950 text-sm leading-relaxed animate-in fade-in duration-200">
-                            <div className="flex items-center space-x-1.5 font-bold mb-1 text-amber-900">
-                              <span>💡</span>
-                              <span>Đáp án chính thức (Minna no Nihongo 解答):</span>
-                            </div>
-                            <pre className="whitespace-pre-line font-sans text-slate-800 text-sm bg-white/70 p-3 rounded-lg border border-amber-200/60">
-                              {qResult.explanation || qResult.correctAnswerText || "Xem giải thích trong sách."}
-                            </pre>
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {/* Submit Action */}
-                {!result && (
-                  <div className="pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <p className="text-xs text-slate-500">
-                      Hãy hoàn thành các câu hỏi trước khi nộp bài để xem đáp án chi tiết.
-                    </p>
-
-                    <button
-                      onClick={handleSubmit}
-                      disabled={submitMutation.isPending || answeredCount === 0}
-                      className={`px-8 py-3.5 rounded-2xl font-bold text-sm text-white shadow-md transition-all cursor-pointer ${
-                        submitMutation.isPending || answeredCount === 0
-                          ? "bg-slate-300 cursor-not-allowed shadow-none"
-                          : "bg-indigo-600 hover:bg-indigo-700 shadow-indigo-600/25 active:scale-98"
-                      }`}
-                    >
-                      {submitMutation.isPending ? "Đang chấm điểm..." : "Nộp bài và xem đáp án →"}
-                    </button>
-                  </div>
-                )}
+                  return (
+                    <QuestionRenderer
+                      key={question.id}
+                      question={question}
+                      index={qIdx}
+                      illustration={illustration}
+                      selectedOptionId={selectedOptions[question.id]}
+                      blankValues={blankValues[question.id] || {}}
+                      result={qResult}
+                      disabled={!!result}
+                      onSelectOption={(optionId) => handleSelectOption(question.id, optionId)}
+                      onChangeBlank={(blankId, val) =>
+                        handleChangeBlank(question.id, blankId, val)
+                      }
+                      onOpenImageModal={(info) => setModalImage(info)}
+                    />
+                  );
+                })}
               </div>
+            )}
+
+            {/* Sticky Submit Bar before submitting */}
+            {!result && (
+              <ExerciseSubmitBar
+                totalQuestions={totalQuestions}
+                answeredQuestions={answeredCount}
+                isPending={submitMutation.isPending}
+                onSubmit={handleSubmit}
+              />
             )}
           </div>
         )}

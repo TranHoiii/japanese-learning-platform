@@ -37,14 +37,28 @@ export interface Exercise {
   questions?: ExerciseQuestion[];
 }
 
+export interface BlankResponse {
+  blankId: string;
+  value: string;
+}
+
 export interface ExerciseAnswerRequest {
   questionId: number;
   selectedOptionId?: number | null;
   answerText?: string | null;
+  responses?: BlankResponse[];
 }
 
 export interface ExerciseSubmitRequest {
   answers: ExerciseAnswerRequest[];
+}
+
+export interface BlankResult {
+  blankId: string;
+  isCorrect: boolean;
+  userAnswer?: string | null;
+  correctAnswer?: string | null;
+  autoGraded?: boolean;
 }
 
 export interface ExerciseQuestionResult {
@@ -55,6 +69,8 @@ export interface ExerciseQuestionResult {
   answerText?: string | null;
   correctAnswerText?: string | null;
   explanation?: string | null;
+  autoGraded?: boolean;
+  blankResults?: BlankResult[];
 }
 
 export interface ExerciseSubmitResponse {
@@ -64,3 +80,4 @@ export interface ExerciseSubmitResponse {
   wrongCount: number;
   results: ExerciseQuestionResult[];
 }
+
