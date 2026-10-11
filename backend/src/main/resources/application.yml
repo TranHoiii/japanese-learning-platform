@@ -28,7 +28,7 @@ app:
   jwt:
     issuer: japanese-learning-platform
     expiration-seconds: ${JWT_EXPIRATION_SECONDS:86400}
-    secret: ${JWT_SECRET:}
+    secret: ${JWT_SECRET:your-secure-random-jwt-secret-at-least-32-characters-long}
   admin:
     email: ${ADMIN_EMAIL:}
     password: ${ADMIN_PASSWORD:}

@@ -16,6 +16,8 @@ export interface ReadingQuestion {
 export interface ReadingContent {
   id: number;
   lessonId: number;
+  lessonNumber?: number;
+  levelCode?: string;
   title: string;
   content: string;
   translation?: string | null;

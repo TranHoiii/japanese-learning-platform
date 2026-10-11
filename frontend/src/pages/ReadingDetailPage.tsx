@@ -148,6 +148,14 @@ export default function ReadingDetailPage() {
     }
   };
 
+  const isN4 =
+    reading?.levelCode === "N4" ||
+    (reading?.lessonNumber !== undefined
+      ? reading.lessonNumber >= 26
+      : (reading?.lessonId ? reading.lessonId >= 26 : false));
+  const levelCode = isN4 ? "N4" : "N5";
+  const levelPrefix = isN4 ? "n4" : "n5";
+
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
       <Navbar />
@@ -160,18 +168,18 @@ export default function ReadingDetailPage() {
           </Link>
           <span>/</span>
           <Link
-            to={`/${reading?.lessonId && reading.lessonId >= 26 ? "n4" : "n5"}/lessons`}
+            to={`/${levelPrefix}/lessons`}
             className="hover:text-slate-900 transition-colors"
           >
-            Bài học {reading?.lessonId && reading.lessonId >= 26 ? "N4" : "N5"}
+            Bài học {levelCode}
           </Link>
           <span>/</span>
           {reading && (
             <Link
-              to={`/${reading.lessonId >= 26 ? "n4" : "n5"}/lessons/${reading.lessonId}/reading`}
+              to={`/${levelPrefix}/lessons/${reading.lessonId}/reading`}
               className="hover:text-slate-900 transition-colors"
             >
-              Luyện đọc Bài {reading.lessonId}
+              Luyện đọc Bài {reading.lessonNumber || reading.lessonId}
             </Link>
           )}
           <span>/</span>
@@ -216,8 +224,12 @@ export default function ReadingDetailPage() {
                   &larr;
                 </button>
                 <div>
-                  <span className="text-[11px] font-bold text-rose-600 uppercase tracking-wider block">
-                    JLPT N5 • ĐỌC HIỂU
+                  <span
+                    className={`text-[11px] font-bold uppercase tracking-wider block ${
+                      isN4 ? "text-emerald-600" : "text-rose-600"
+                    }`}
+                  >
+                    JLPT {levelCode} • ĐỌC HIỂU
                   </span>
                   <h1 className="text-base sm:text-lg font-bold text-slate-900 line-clamp-1">
                     {reading.title}

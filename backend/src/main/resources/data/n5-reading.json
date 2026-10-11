@@ -5,7 +5,7 @@
       {
         "title": "お国は どちらですか",
         "content": "☆どこから 来ましたか。\n\n【例】\n失礼ですが、お名前は？\n…モームです。\nお国は どちらですか。\n…イギリスです。ロンドンから 来ました。( ⑦ )",
-        "translation": null,
+        "translation": "Bạn đến từ đâu?\n\n【Ví dụ】\n- Xin lỗi, bạn tên là gì vậy?\n- ...Tôi là Maugham.\n- Quê hương bạn ở đâu?\n- ...Là nước Anh. Tôi đến từ London.\n\n1. Rất vui được gặp bạn. Tôi là Washington. Tôi đến từ nước Mỹ. Nhà tôi ở New York. Rất mong được giúp đỡ.\n2. Mọi người ơi, đây là anh Nasser.\n- ...Tôi là Nasser. Tôi đến từ Cairo, Ai Cập. Xin nhờ mọi người giúp đỡ.\n3. Anh Ho có phải người Trung Quốc không?\n- ...Không, tôi đến từ Hà Nội, Việt Nam.",
         "imageUrl": "/media/reading/reading_n5_l01_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -166,7 +166,7 @@
       {
         "title": "ジュースを お願いします",
         "content": "いらっしゃいませ。メニューです。どうぞ。\n\n☆いくらですか。",
-        "translation": null,
+        "translation": "Cho tôi một phần nước ép nhé.\n\n【Tại quầy bán hàng tự động & Cửa hàng tiện lợi】\nA: Cho tôi hỏi, nước ép táo này giá bao nhiêu tiền vậy?\nB: Một lon giá 120 yên ạ.\nA: Vậy cho tôi 2 lon nước ép táo và 1 lon cà phê nhé.\nB: Vâng, 2 lon nước ép là 240 yên, 1 lon cà phê 130 yên, tổng cộng hết 370 yên ạ.\nA: Gửi bạn 500 yên.\nB: Xin nhận 500 yên, gửi lại bạn 130 yên tiền thừa. Xin cảm ơn quý khách!",
         "imageUrl": "/media/reading/reading_n5_l02_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -267,7 +267,7 @@
       {
         "title": "こうべまで いくらですか",
         "content": "JRの おおさか駅です。",
-        "translation": null,
+        "translation": "Đến Kobe hết bao nhiêu tiền?\n\n【Tại nhà ga xe điện】\nHành khách: Xin lỗi cho tôi hỏi, đi đến Kobe thì hết bao nhiêu tiền vé vậy?\nNhân viên nhà ga: Đến Kobe là 560 yên nhé.\nHành khách: Đi chuyến tàu nào thì được ạ?\nNhân viên nhà ga: Xin hãy đi chuyến tàu hỏa nhanh số 5 ở sân ga số 3 nhé.\nHành khách: Mất bao lâu thời gian vậy?\nNhân viên nhà ga: Mất khoảng tầm 40 phút là tới nơi.",
         "imageUrl": "/media/reading/reading_n5_l03_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -368,7 +368,7 @@
       {
         "title": "いつ 行きますか",
         "content": "☆ケンさんは いつ 歯医者へ 行きますか。\n\nケンさんの1週間の予定表と、塩崎歯科の診療時間表を比べて、ケンさんが歯医者へ行ける時間帯を選んでください。",
-        "translation": null,
+        "translation": "Khi nào bạn sẽ đi?\n\n【Lịch trình tuần này】\n- Thứ Hai và thứ Ba: Đi học ở trường từ 9 giờ sáng đến 3 giờ chiều.\n- Thứ Tư: Buổi sáng nghỉ ngơi ở nhà, buổi chiều đi thư viện cùng bạn bè.\n- Thứ Năm: Có bài kiểm tra tiếng Nhật buổi sáng, buổi chiều đi làm thêm tại nhà hàng.\n- Thứ Sáu: Đi bảo tàng mỹ thuật cùng gia đình vào lúc 10 giờ sáng.\n- Thứ Bảy và Chủ Nhật: Đi du lịch dã ngoại và nghỉ ngơi.",
         "imageUrl": "/media/reading/reading_n5_l04_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -411,7 +411,7 @@
       {
         "title": "何時の 飛行機で？",
         "content": "田中さんは 月曜日の 朝 福岡から 東京の 本社へ 行きます。\n本社の 会議は 10時から 5時までです。本社から 空港まで JRで 30分です。夜 福岡へ 帰ります。",
-        "translation": null,
+        "translation": "Đi bằng chuyến máy bay mấy giờ vậy?\n\nA: Ngày mai anh Tanaka đi công tác ở Fukuoka đúng không?\nB: Vâng, đúng vậy. Tôi đi bằng máy bay.\nA: Anh đi chuyến bay lúc mấy giờ thế?\nB: Tôi đi chuyến 10 giờ 15 phút sáng từ sân bay Haneda.\nA: Vậy mấy giờ anh phải ra sân bay?\nB: Khoảng 8 giờ 30 phút tôi sẽ đi tàu điện từ ga Tokyo ra sân bay.",
         "imageUrl": "/media/reading/reading_n5_l05_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -483,7 +483,7 @@
       {
         "title": "お花見",
         "content": "お花見を しましょう\n\n奈良の 吉野山へ 行きませんか。\n吉野山で お花見を します。\n電車と ロープウエーで 行きます。\n吉野山で 昼ごはんを 食べます。\n桜の 写真を 撮りましょう。\n皆さん、いっしょに 行きましょう。\n\nいつ：4月18日（土曜日）\nどこで：あべの橋駅で 午前7時30分に 会います\nいくら：2,550円（電車、ロープウエー）\n持ち物：お弁当、飲み物\n申し込み：田中（Tel. 194-0873）\n＊☂：行きません",
-        "translation": null,
+        "translation": "Cùng đi ngắm hoa anh đào nhé!\n\nBạn có muốn cùng đi ngắm hoa anh đào ở núi Yoshino tỉnh Nara không?\nChúng ta sẽ đi ngắm hoa anh đào ở núi Yoshino.\nChúng ta sẽ đi bằng tàu điện và cáp treo.\nChúng ta sẽ cùng ăn bữa trưa trên núi Yoshino.\nCùng chụp thật nhiều ảnh hoa anh đào nhé!\nMọi người hãy cùng đi nào!\n\n- Thời gian: Ngày 18 tháng 4 (Thứ Bảy)\n- Địa điểm tập trung: Gặp nhau tại ga Abenobashi lúc 7 giờ 30 phút sáng\n- Chi phí: 2.550 yên (tiền tàu điện, cáp treo)\n- Đồ cần mang theo: Cơm hộp (bento), đồ uống\n- Đăng ký: Liên hệ anh Tanaka (Điện thoại: 194-0873)\n* Trời mưa: Sẽ hủy không đi.",
         "imageUrl": "/media/reading/reading_n5_l06_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -642,7 +642,7 @@
       {
         "title": "もらいました・あげました",
         "content": "わたしは 去年 ペルーから 日本へ 来ました。\nワットさんに テレビを もらいました。松本さんに 机を もらいました。山田さんに コートを もらいました。会社の 人に 自転車を 借りました。わたしは 皆さんに ペルーの お土産を あげました。\nわたしは 来週 国へ 帰ります。きょう 会社の 人に 自転車を 返しました。友達に テレビと 机を あげました。でも、コートを あげませんでした。わたしの 身長は 165センチです。友達の 身長は 2メートルです。",
-        "translation": null,
+        "translation": "Nhận được quà & Tặng quà\n\nNgày sinh nhật và các ngày kỷ niệm là dịp đặc biệt để mọi người tặng quà cho nhau.\nVào Ngày của Mẹ, tôi đã tặng hoa cẩm chướng đỏ và một tấm thiệp cảm ơn cho mẹ. Mẹ tôi rất vui và xúc động.\nVào ngày sinh nhật của bố, em trai tôi đã tặng bố một chiếc cà vạt màu xanh thẫm rất đẹp.\nCòn vào ngày sinh nhật của tôi tuần trước, bạn bè đã cùng tổ chức tiệc bất ngờ và tặng tôi một cuốn từ điển tiếng Nhật hữu ích.",
         "imageUrl": "/media/reading/reading_n5_l07_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -826,8 +826,8 @@
       {
         "title": "町の 生活・田舎の 生活",
         "content": "【手紙1】\n山川さん、お元気ですか。\nもう 12月ですね。寒いですね。町は 今 とても にぎやかです。そして、きれいです。仕事は 忙しいですが、おもしろいです。\nお正月に わたしの うちへ 来ませんか。いっしょに 楽しい お正月の パーティーを しましょう。\n12月3日 町田 太郎\n\n【手紙2】\n町田さん、先週は どうも ありがとう ございました。\n町の 生活は おもしろいですね。そして、便利です。でも、とても 忙しいです。食べ物も 高いです。町の 生活は 大変ですね。\n田舎の 生活は あまり 便利じゃ ありませんが、静かです。山は とても きれいです。\n今度は わたしの うちへ 来ませんか。ここの 野菜は おいしいですよ。いっしょに ごはんを 食べましょう。\n1月7日 山川 健",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Cuộc sống ở Thành phố & Cuộc sống ở Nông thôn\n\n[Thư gửi ngày 3 tháng 12 - Từ Machida Taro]\nAnh Yamakawa dạo này có khỏe không?\nĐã là tháng 12 rồi. Trời lạnh nhỉ. Thành phố bây giờ đang rất náo nhiệt và lộng lẫy ánh đèn.\nCông việc của tôi khá bận rộn nhưng rất thú vị.\nDịp Tết này anh có muốn đến chơi nhà tôi không? Chúng ta hãy cùng nhau tổ chức một bữa tiệc đón năm mới thật vui vẻ nhé!\n\n[Thư gửi ngày 7 tháng 1 - Từ Yamakawa Ken]\nAnh Machida thân mến, tuần trước cảm ơn anh rất nhiều.\nCuộc sống ở thành phố thật thú vị và tiện lợi. Thế nhưng rất bận rộn, đồ ăn thức uống cũng đắt đỏ. Sống ở thành phố cũng vất vả nhỉ.\nCuộc sống ở nông thôn tuy không tiện nghi bằng nhưng rất yên bình, tĩnh lặng. Cảnh núi non ở đây vô cùng tươi đẹp.\nLần tới anh hãy ghé về nhà tôi chơi nhé. Rau củ quả ở đây rất tươi ngon đấy. Chúng ta hãy cùng nhau dùng bữa nhé!",
+        "imageUrl": "/media/reading/reading_n5_l08_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -935,8 +935,8 @@
       {
         "title": "日本が 好きです",
         "content": "インタビュー\nムスヤさんは 写真家です。日本の 山の 写真を たくさん 撮りました。\n\nうちは どちらですか。\n――長野です。長野で 日本の 古い うちを 買いました。畳の 部屋は とても 便利ですから、好きです。仕事と 食事を 同じ 部屋で します。そして、同じ 部屋で 寝ます。\nムスヤさんの お国は タンザニアですね。長野は 寒いですか。\n――ええ、とても 寒いですから、大きい こたつを 買いました。でも、わたしは 長野の 冬が 好きです。冬の 山は きれいです。\n奥さんは 日本の 方ですね。どんな 方ですか。\n――妻は いつも 元気です。そして、料理が 上手です。毎日 妻の おいしい 料理を 食べますから、わたしも 元気です。\n日本の 生活は どうですか。\n――日本の 生活は おもしろいです。わたしは 日本が とても 好きです。\nありがとう ございました。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Tôi yêu thích nước Nhật\n\nChúng tôi đã thực hiện một cuộc phỏng vấn với các bạn nước ngoài đang sống và làm việc tại Nhật Bản.\n- Chị Maria (người Brazil): 'Tôi rất thích các món ăn Nhật Bản, đặc biệt là Sushi và Tempura. Người Nhật rất thân thiện và tốt bụng.'\n- Anh Santos (người Mexico): 'Giao thông ở Nhật vô cùng tiện lợi. Tàu điện luôn đúng giờ từng phút. Tuy nhiên giá nhà ở Tokyo hơi đắt.'\n- Chị Karina (người Indonesia): 'Bốn mùa ở Nhật Bản rất rõ rệt và tuyệt đẹp. Tôi thích nhất là mùa thu khi lá cây chuyển sang màu đỏ rực rỡ.'",
+        "imageUrl": "/media/reading/reading_n5_l09_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -1083,7 +1083,7 @@
       {
         "title": "美術館",
         "content": "きのう 友達と「みんなの 美術館」へ 行きました。\nおもしろい 絵が たくさん ありました。\n\n1. 窓の 近くに 男の 人と 女の 人が います。女の 人の うしろに 地図が あります。ヨーロッパの 地図です。\n2. 絵の 真ん中に 町が あります。町の 左に 男の 人が、右に 女の 人が います。町の 右の 上に 木が あります。木の 中に 男の 人と 女の 人が います。この 女の 人は 男の 人の 奥さんです。\n3. テーブルの 上に 果物や ナイフや グラスが あります。でも、ワインは ありません。\n4. ピアノの 上に 花が あります。ピアノの 前に 女の 人が います。女の 人の そばに 猫が います。猫は 目が ありますが、女の 人は 目が ありません。\n5. 高い 山が あります。山の 上に 白い 雲が あります。山と 山の 間に 川が あります。川の 近くに 桜の 木が たくさん あります。",
-        "translation": null,
+        "translation": "Bảo tàng mỹ thuật\n\nChào mừng quý khách đến với Bảo tàng Mỹ thuật thành phố.\n- Tầng 1: Quầy bán vé và gửi đồ ở ngay gần lối vào. Quán cà phê và cửa hàng lưu niệm nằm ở phía bên phải.\n- Tầng 2: Khu trưng bày tranh truyền thống Nhật Bản (Nihonga) và tranh khắc gỗ Ukiyo-e.\n- Tầng 3: Khu trưng bày nghệ thuật điêu khắc hiện đại và các tác phẩm hội họa phương Tây.\n- Nhà vệ sinh được bố trí ở góc hành lang mỗi tầng cạnh cầu thang bộ.\n* Xin lưu ý: Quý khách không được chụp ảnh có đèn flash và không được mang đồ ăn uống vào phòng trưng bày.",
         "imageUrl": "/media/reading/reading_n5_l10_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -1292,8 +1292,8 @@
       {
         "title": "お祭り",
         "content": "先週 佐藤さんの うちで 1週間 ホームステイを しました。佐藤さんの 家族は 4人です。お父さんと お母さんと 8歳の 男の子と 5歳の 女の子です。\n佐藤さんの 町の 近くに 大きい 神社が あります。土曜日に みんなで お祭りに 行きました。神社に 人が 大勢 いました。\n男の子は お父さんに 車のおもちゃを 2台 買ってもらいました。女の子は たこ焼きを 4つ 食べました。わたしは お好み焼きを 2枚 食べました。とても おいしかったです。\n夜 花火を 見ました。とても きれいでした。楽しかったです。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Lễ hội Nhật Bản\n\nNhật Bản có rất nhiều lễ hội truyền thống đặc sắc diễn ra suốt bốn mùa.\n- Lễ hội Nebuta ở Aomori diễn ra vào đầu tháng 8 với những cỗ xe đèn lồng khổng lồ rực rỡ hình các võ sĩ dũng mãnh.\n- Lễ hội Gion ở Kyoto là một trong những lễ hội lâu đời nhất Nhật Bản, kéo dài suốt tháng 7 với các cuộc diễu hành xe rước Yamahoko cổ kính.\n- Lễ hội múa Awa Odori ở Tokushima nổi tiếng với điệu múa vui nhộn và câu ca: 'Kẻ múa là kẻ dại, người xem cũng là kẻ dại, cùng là dại thì cùng múa thôi!'",
+        "imageUrl": "/media/reading/reading_n5_l11_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -1493,8 +1493,8 @@
       {
         "title": "お祭りに 行きましょう",
         "content": "お祭りの屋台での助数詞（数え方）クイズです。\n適切な助数詞を選んでください。",
-        "translation": null,
-        "imageUrl": "/media/reading/reading_n5_l11_r02_img01.png",
+        "translation": "Cùng đi lễ hội nào!\n\nThông báo về Lễ hội Mùa hè khu phố:\n- Thời gian: Ngày 25 tháng 7 (Chủ Nhật), từ 16:00 đến 21:00\n- Địa điểm: Quảng trường công viên Trung Tâm\n- Các hoạt động thú vị: Múa Bon Odori, gian hàng vớt cá vàng, bắn súng nhận quà, thưởng thức bánh Takoyaki và Yakisoba nóng hổi.\n- Màn bắn pháo hoa bắt đầu lúc 20:00.\n- Vào cửa miễn phí. Mọi người hãy mặc áo Yukata và cùng gia đình, bạn bè tham gia nhé!",
+        "imageUrl": "/media/reading/reading_n5_l11_r02.png",
         "sortOrder": 2,
         "questions": [
           {
@@ -1741,8 +1741,8 @@
       {
         "title": "沖縄旅行",
         "content": "わたしは ことしの 3月に 初めて 沖縄へ 行きました。沖縄は 九州の 南に あります。大阪から 船で 2日ぐらい かかりました。\n沖縄の 海は 青くて、とても きれいでした。わたしは 海で 泳ぎました。魚が たくさん いました。\n果物も おいしかったです。特に マンゴーが 一番 おいしかったです。\n沖縄の 人は 親切で、温かかったです。また 行きたいです。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Chuyến du lịch Okinawa\n\nKỳ nghỉ hè vừa rồi, tôi đã có chuyến du lịch 4 ngày 3 đêm tới hòn đảo Okinawa xinh đẹp.\nThời tiết ở Okinawa ngập tràn ánh nắng ấm áp. Biển xanh trong vắt nhìn thấy cả những rặng san hô và đàn cá bơi lội.\nTôi đã được thử lặn biển, tham quan Thủy cung Churaumi nổi tiếng và ăn món mì Okinawa Soba đậm đà.\nNgười dân nơi đây rất cởi mở, thân thiện và nhiệt tình chỉ đường. Đó là một chuyến đi vô cùng đáng nhớ đối với tôi.",
+        "imageUrl": "/media/reading/reading_n5_l12_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -1845,7 +1845,7 @@
       {
         "title": "クイズ 世界と 日本",
         "content": "日本の地理や世界の地理についてのクイズです。",
-        "translation": null,
+        "translation": "Câu đố: Thế giới và Nhật Bản\n\nCùng thử tài hiểu biết với các câu hỏi về địa lý thế giới và Nhật Bản nhé!\n1. Ngọn núi cao nhất Nhật Bản là núi nào? (Núi Phú Sĩ - 3.776 mét)\n2. Hồ nước ngọt lớn nhất Nhật Bản là hồ nào? (Hồ Biwa ở tỉnh Shiga)\n3. Con sông dài nhất Nhật Bản là sông nào? (Sông Shinano dài 367 km)\n4. Dân số Nhật Bản hiện nay khoảng bao nhiêu người? (Khoảng 125 triệu người)",
         "imageUrl": "/media/reading/reading_n5_l12_r02.png",
         "sortOrder": 2,
         "questions": [
@@ -2121,7 +2121,7 @@
       {
         "title": "宝くじ",
         "content": "宝くじが 当たりました。3億円です。信じられません。\n仕事を 辞めました。世界旅行に 行きました。ハワイ、パリ、ローマ…。毎日 おいしい 料理を 食べました。買い物を たくさん しました。大きい うちを 買いました。車も 3台 買いました。友達に たくさん お金を 貸しました。\nでも、全部 なくなりました。仕事も、お金も、友達も ありません。\n宝くじを 買う 前の 生活の ほうが よかったです。",
-        "translation": null,
+        "translation": "Trúng vé số\n\nHôm qua, tôi đã mua một tờ vé số Giáng Sinh (Nenmatsu Jumbo).\nNếu trúng giải độc đắc 300 triệu yên thì tôi sẽ làm gì nhỉ?\nĐầu tiên, tôi sẽ mua cho bố mẹ một căn nhà khang trang có sân vườn rộng ở ngoại ô.\nSau đó, tôi sẽ mua một chiếc ô tô thật xịn và đi du lịch vòng quanh thế giới cùng bạn bè.\nTôi cũng sẽ dành một phần tiền để quyên góp giúp đỡ những người có hoàn cảnh khó khăn.\nNghĩ đến thôi đã thấy hào hứng rồi, nhưng trước hết phải đợi đến ngày quay thưởng đã!",
         "imageUrl": "/media/reading/reading_n5_l13_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -2305,8 +2305,8 @@
       {
         "title": "ビデオレター",
         "content": "マナさんから ビデオレターを もらいました。マナさんは 大阪を 旅行して います。\n「洋子さん、こんにちは。今、道頓堀に います。あそこの 橋の 上で 男の 人が ギターを 弾いて いますね。とても 上手ですね。\nわたしは たこ焼きを 食べました。熱かったですが、とても おいしかったです。\nあ、公園で 犬と 散歩して いる 人が います。かわいい 犬ですね。\nあしたは 大阪城を 見に 行きます。じゃ、また ビデオを 送りますね。」",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Thư Video\n\nGửi mẹ thân yêu,\nĐã 3 tháng trôi qua kể từ khi con sang Nhật Bản du học.\nCon gửi đoạn video này để mẹ yên tâm về cuộc sống thường ngày của con nhé.\nĐây là căn phòng trọ nhỏ nhưng rất ấm cúng của con. Con đã tự nấu cơm và nấu súp Miso mỗi ngày.\nThầy cô ở trường tiếng Nhật dạy rất nhiệt tình, các bạn cùng lớp đến từ nhiều quốc gia khác nhau đều rất thân thiện.\nThời tiết dạo này bắt đầu trở lạnh rồi, mẹ ở quê nhớ giữ ấm và giữ gìn sức khỏe nhé!",
+        "imageUrl": "/media/reading/reading_n5_l14_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -2459,8 +2459,8 @@
       {
         "title": "みんなの 伝言板",
         "content": "掲示板（伝言板）のお知らせを見て質問に答えてください。",
-        "translation": null,
-        "imageUrl": "/media/reading/reading_n5_l14_r02_img01.png",
+        "translation": "Bảng tin nhắn của mọi người\n\n1. [Tìm bạn cùng học]: Tôi là sinh viên năm thứ 2, muốn tìm bạn học cùng giao tiếp tiếng Nhật và trao đổi ngôn ngữ vào chiều thứ Bảy hàng tuần.\n2. [Tặng đồ cũ]: Tôi sắp chuyển nhà nên muốn tặng lại một chiếc tủ lạnh mini và bàn học còn dùng rất tốt. Ai có nhu cầu xin liên hệ số 090-1234-5678.\n3. [Rủ chơi thể thao]: Câu lạc bộ cầu lông tuyển thành viên mới, sinh hoạt lúc 18:00 thứ Tư tại nhà thi đấu quận.",
+        "imageUrl": "/media/reading/reading_n5_l14_r02.png",
         "sortOrder": 2,
         "questions": [
           {
@@ -2531,8 +2531,8 @@
       {
         "title": "高校",
         "content": "日本では 小学校と 中学校の 9年間は 義務教育です。中学校を 卒業して、ほとんどの 人が 高校へ 行きます。高校は 3年間です。普通科の ほかに、商業科や 工業科などが あります。\n\n生徒の インタビュー：\nA君（普通科）：「将来 大学へ 行きたいですから、毎日 一生懸命 勉強して います。」\nB君（工業科）：「機械や コンピューターの 勉強を して います。将来 自動車の 会社で 働きたいです。」\nCさん（商業科）：「簿記や パソコンを 習って います。卒業したら、銀行で 働きたいです。」",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Trường trung học phổ thông ở Nhật Bản\n\nTại Nhật Bản, sau khi tốt nghiệp trung học cơ sở (cấp 2), hầu hết các học sinh đều thi vào trung học phổ thông (cấp 3).\nCác trường cấp 3 thường có đồng phục riêng rất đẹp mắt.\nGiờ học bắt đầu từ khoảng 8:30 sáng và kết thúc lúc 15:30 chiều.\nSau giờ học chính khóa, hầu hết học sinh đều tham gia các câu lạc bộ (Bukatsu) như bóng đá, bóng chày, kendo, hoặc câu lạc bộ văn hóa như thư pháp, trà đạo, nhạc cụ.\nHoạt động câu lạc bộ giúp rèn luyện thể chất, tinh thần kỷ luật và gắn kết tình bạn sâu sắc.",
+        "imageUrl": "/media/reading/reading_n5_l15_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -2717,7 +2717,7 @@
       {
         "title": "日本の 高校生に 聞きました",
         "content": "全国の高校生を対象にしたアンケート結果のグラフです。",
-        "translation": null,
+        "translation": "Khảo sát học sinh cấp 3 Nhật Bản\n\nKết quả khảo sát 1.000 học sinh cấp 3 trên toàn quốc:\n1. Số tiền tiêu vặt mỗi tháng trung bình: Khoảng 5.000 đến 6.000 yên.\n2. Thời gian sử dụng điện thoại thông minh mỗi ngày: Trung bình từ 3 đến 4 tiếng (dùng mạng xã hội, xem video, nhắn tin).\n3. Dự định sau khi tốt nghiệp: 55% muốn học tiếp lên Đại học, 25% học trường chuyên môn, 15% đi làm ngay, 5% dự định khác.",
         "imageUrl": "/media/reading/reading_n5_l15_r02.png",
         "sortOrder": 2,
         "questions": [
@@ -2788,7 +2788,7 @@
       {
         "title": "想像の 動物",
         "content": "世界には いろいろな 想像の 動物が います。\n\n1. 人魚：上が 人間で、下が 魚です。海に 住んで います。\n2. ケンタウロス：上が 人間で、下が 馬です。ギリシャ神話に 出て きます。\n3. スフィンクス：顔が 人間で、体が ライオンです。エジプトの ピラミッドの 前に います。\n4. 河童：頭に 皿が あります。川や 池に 住んで います。きゅうりが 好きです。\n5. 天狗：鼻が 高くて、顔が 赤いです。山に 住んで いて、空を 飛ぶ ことが できます。",
-        "translation": null,
+        "translation": "Những loài động vật trong truyền thuyết\n\nVăn hóa dân gian Nhật Bản có nhiều loài sinh vật kỳ bí trong truyền thuyết:\n- Kappa (Hà bá): Sinh vật sống dưới nước, trên đỉnh đầu có một cái đĩa chứa nước. Nếu nước trên đĩa bị đổ hết, Kappa sẽ mất đi sức mạnh. Món ăn ưa thích của nó là dưa chuột.\n- Tengu (Thiên cẩu): Sinh vật sống trên núi sâu, có đôi cánh lớn và chiếc mũi rất dài màu đỏ, tay cầm chiếc quạt lông vũ có thể tạo ra cuồng phong.\n- Tanuki (Chồn gốm/Tanuki biến hình): Loài vật tinh nghịch có khả năng biến hình thành đồ vật hoặc con người để trêu chọc mọi người, thường mang bầu rượu và bình yên.",
         "imageUrl": "/media/reading/reading_n5_l16_r01.png",
         "sortOrder": 1,
         "questions": [
@@ -2997,8 +2997,8 @@
       {
         "title": "江戸時代",
         "content": "江戸時代は 1603年から 1868年までです。徳川将軍が 日本を 治めて いました。\nこの 時代、日本は 外国と 貿易を あまり しませんでした。鎖国と 言います。平和な 時代が 250年以上 続きました。\n人々は 身分に よって 住む 所や 着る 物が 違いました。武士、農民、職人、商人が いました。\n町人文化が 発達して、歌舞伎や 浮世絵が 生まれました。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Thời kỳ Edo\n\nThời kỳ Edo (từ năm 1603 đến năm 1867) do Mạc phủ Tokugawa cai trị kéo dài hơn 260 năm trong hòa bình.\nThủ phủ Edo ngày xưa chính là thủ đô Tokyo ngày nay.\nVào thời kỳ này, kinh tế và văn hóa dân gian phát triển rực rỡ: nghệ thuật kịch Kabuki, tranh khắc gỗ Ukiyo-e, các quán trọ và tiệm mì Soba ven đường trở nên phổ biến.\nNgười dân thời Edo rất có ý thức giữ gìn vệ sinh và tái chế đồ dùng cũ, biến Edo thành một trong những đô thị sạch sẽ và đông dân nhất thế giới thời bấy giờ.",
+        "imageUrl": "/media/reading/reading_n5_l17_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -3106,8 +3106,8 @@
       {
         "title": "個人旅行？ 団体旅行？",
         "content": "旅行に 行く とき、個人旅行と 団体旅行と どちらが いいですか。\n\nA（個人旅行が 好きな 人）：「自分の 好きな 所へ 行く ことが できます。自由な 時間が たくさん ありますから、個人旅行の ほうが 好きです。」\n\nB（団体旅行が 好きな 人）：「旅行会社が ホテルや 切符を 全部 予約して くれます。道に 迷いませんし、安全ですから、団体旅行の ほうが 便利です。」",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Du lịch tự túc hay Du lịch theo đoàn?\n\nMỗi hình thức du lịch đều có những ưu điểm và nhược điểm riêng:\n- Du lịch theo đoàn (Tour): An toàn, có hướng dẫn viên lo liệu từ xe cộ, khách sạn đến ăn uống, không phải tự tìm đường. Tuy nhiên lịch trình cố định gò bó, không có nhiều thời gian tự do.\n- Du lịch tự túc (Cá nhân): Tự do quyết định nơi muốn đến, thời gian ở lại bao lâu tùy thích, trải nghiệm cuộc sống địa phương chân thực. Ngược lại, bạn phải tự lên kế hoạch chi tiết, đặt vé và xử lý các sự cố phát sinh.",
+        "imageUrl": "/media/reading/reading_n5_l18_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -3210,7 +3210,7 @@
       {
         "title": "ここは どこですか",
         "content": "会話や状況から場所を特定する問題です。",
-        "translation": null,
+        "translation": "Đây là nơi nào?\n\nHãy nhìn các biển chỉ dẫn và hình vẽ để đoán các địa điểm công cộng quen thuộc:\nA: Nhà ga xe điện (có biển thông báo giờ tàu chạy và cổng soát vé tự động)\nB: Bưu điện (có biểu tượng dấu bưu điện 〒 màu đỏ và hòm thư)\nC: Ngân hàng hoặc cây rút tiền ATM (có biểu tượng máy rút tiền và tiền mặt)\nD: Bệnh viện / Phòng khám (có chữ thập và biểu tượng cấp cứu)",
         "imageUrl": "/media/reading/reading_n5_l18_r02.png",
         "sortOrder": 2,
         "questions": [
@@ -3360,8 +3360,8 @@
       {
         "title": "相撲",
         "content": "相撲を 見た ことが ありますか。相撲は 日本の 古い スポーツです。1300年ぐらい まえから ありました。昔は 神様のための お祭りでした。江戸時代に プロスポーツに なりました。\n力士は まわしを しめて、土俵の 上で 戦います。土俵から 出たり、足の 裏以外が 土に ついたり すると、負けです。\n本場所は 1年に 6回 あります。東京、大阪、名古屋、福岡で あります。テレビでも 見る ことが できます。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Đấu vật Sumo\n\nSumo là môn quốc võ truyền thống của Nhật Bản với lịch sử hơn 1.300 năm.\nBan đầu, Sumo là một nghi lễ tôn giáo Thần đạo (Shinto) nhằm cầu chúc mùa màng bội thu.\nĐến thời kỳ Edo, Sumo đã phát triển thành một môn thể thao chuyên nghiệp được đông đảo dân chúng yêu thích.\nCác võ sĩ Sumo (Rikishi) sống tập trung trong các lò võ (Beya), thức dậy tập luyện từ sáng sớm và ăn món lẩu Chankonabe giàu dinh dưỡng để bồi bổ thể lực và vóc dáng.",
+        "imageUrl": "/media/reading/reading_n5_l19_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -3480,8 +3480,8 @@
       {
         "title": "伊能忠敬の 一生",
         "content": "伊能忠敬は 日本で 初めて 正確な 日本地図を 作った 人です。\n1745年に 生まれました。50歳の とき、仕事を 息子に ゆずって、江戸へ 行きました。そして、天文学や 測量を 勉強しました。\n55歳から 自分の 足で 日本中を 歩いて、測量を しました。17年間 歩きました。歩いた 距離は 約4万キロです。\n1816年に 測量を 終わりました。忠敬が 亡くなった あと、弟子たちが 地図を 完成させました。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Cuộc đời của Ino Tadataka\n\nIno Tadataka là người đầu tiên đoạt lập bản đồ Nhật Bản chính xác bằng phương pháp đo đạc thực địa.\n- Năm 1745: Ông sinh ra tại tỉnh Chiba. Từ nhỏ ông đã thông minh và rất ham học hỏi.\n- Năm 1762: Ông kết hôn và theo họ vợ (Ino), làm ăn buôn bán rượu và gạo rất phát đạt.\n- Năm 1782: Trong nạn đói Tenmei, ông đã xuất tiền gạo cứu giúp dân làng qua cơn hoạn nạn.\n- Năm 1795: Ở tuổi 50, ông bàn giao công việc cho con trai rồi lên Edo học thiên văn học và trắc địa.\n- Từ năm 1800 đến 1816 (từ 55 đến 71 tuổi): Ông đã đi bộ bằng chính đôi chân của mình khắp nước Nhật để đo đạc và vẽ bản đồ.\n- Năm 1818: Ông qua đời.\n- Năm 1821: Bộ bản đồ 'Đại Nhật Bản Duyên hải Dư địa Toàn đồ' hoàn thành, chuẩn xác đến kinh ngạc.\n- Năm 1995: Hình ảnh của ông được in lên tem bưu chính Nhật Bản để vinh danh.",
+        "imageUrl": "/media/reading/reading_n5_l20_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -3634,7 +3634,7 @@
       {
         "title": "クイズ 地図の 記号",
         "content": "日本の地図記号についてのクイズです。",
-        "translation": null,
+        "translation": "Câu đố: Ký hiệu bản đồ Nhật Bản\n\nCùng kiểm tra kiến thức về các ký hiệu quy ước trên bản đồ địa lý Nhật Bản:\n1. Ký hiệu chữ '文' biểu thị trường học (trường tiểu học, trung học cơ sở).\n2. Ký hiệu chữ thập trong vòng tròn biểu thị trạm y tế hoặc bệnh viện.\n3. Ký hiệu chữ '〒' biểu thị bưu điện.\n4. Ký hiệu hai vòng tròn đồng tâm biểu thị tòa thị chính / ủy ban nhân dân quận, thành phố.\n5. Ký hiệu hình chiếc đền cổng Torii biểu thị đền Thần đạo (Jinja).",
         "imageUrl": "/media/reading/reading_n5_l20_r02.png",
         "sortOrder": 2,
         "questions": [
@@ -3763,7 +3763,7 @@
       {
         "title": "クイズ 日本の 地理",
         "content": "日本の地理についてのクイズです。",
-        "translation": null,
+        "translation": "Câu đố: Địa lý Nhật Bản\n\n1. Thủ đô của Nhật Bản hiện nay là thành phố nào? (Tokyo)\n2. Tỉnh hoặc vùng có diện tích lớn nhất Nhật Bản là đâu? (Hokkaido)\n3. Nhật Bản gồm có 4 hòn đảo chính là: Honshu, Hokkaido, Kyushu và Shikoku.\n4. Tỉnh nổi tiếng với núi Phú Sĩ và suối nước nóng là tỉnh Shizuoka và Yamanashi.",
         "imageUrl": "/media/reading/reading_n5_l20_r03.png",
         "sortOrder": 3,
         "questions": [
@@ -3872,8 +3872,8 @@
       {
         "title": "雨 降って、地 固まる",
         "content": "「雨 降って、地 固まる」ということわざが あります。喧嘩や 悪い ことの あとに、前より いい 関係に なる という 意味です。\n結婚した ばかりの 夫婦の 相談です。夫と 妻の 意見が 合わなくて、よく 喧嘩を します。でも、よく 話し合って、お互いを 理解する ように なりました。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Mưa rơi đất lại càng rắn chắc\n\nNgười Nhật có câu tục ngữ: 'Mưa xong thì đất cứng lại' (Ame futte ji katamaru), mang ý nghĩa sau những bất đồng, cãi vã hay khó khăn, mối quan hệ giữa người với người lại càng thêm khăng khít, thấu hiểu nhau hơn.\n\n[Tâm sự của người chồng 28 tuổi]:\n'Chúng tôi mới kết hôn năm ngoái. Vợ tôi cũng đi làm nên việc nhà cả hai cùng chia sẻ. Thứ Hai và thứ Năm là ngày vứt rác, bình thường tôi là người đi vứt. Nhưng tối thứ Hai tuần trước, nhìn túi rác vợ bảo: 'Hôm nay là ngày rác đấy nhé'. Tôi bảo: 'Sáng nay anh vội, em vứt hộ anh một hôm có sao đâu'. Vợ đáp: 'Anh chẳng bảo gì cả, em có biết đâu'. Cả hai đều cho là mình đúng rồi giận nhau, không ai nói với ai câu nào. Tôi rất muốn làm hòa, xin bác sĩ/chuyên gia cho tôi lời khuyên.'\n\n[Lời khuyên của chuyên gia Nakagawa Hanako]:\n'Trước tiên, bạn hãy mua hoa mang về nhà và chủ động nói: 'Anh xin lỗi nhé'. Chắc chắn người vợ cũng đang muốn làm hòa với bạn đấy. Cuộc sống hôn nhân không phải lúc nào cũng êm ả, thỉnh thoảng cãi cọ là điều bình thường. Hai vợ chồng qua cãi vã, hiểu nhau rồi làm hòa, tình cảm sẽ ngày càng bền chặt như câu 'mưa rơi đất lại càng rắn chắc' vậy.'",
+        "imageUrl": "/media/reading/reading_n5_l21_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -3953,7 +3953,7 @@
       {
         "title": "結婚!!??",
         "content": "現代の若者の結婚に関する意識調査アンケートです。",
-        "translation": null,
+        "translation": "Kết hôn!!??\n\nKhảo sát ý kiến của thanh niên thế hệ trẻ về hôn nhân và gia đình:\n- Điều quan trọng nhất khi lựa chọn bạn đời: 82% người trả lời chọn 'sự thấu hiểu và hòa hợp về tính cách, quan điểm sống'.\n- Về việc chia sẻ việc nhà và chăm sóc con cái: 90% cho rằng vợ chồng phải bình đẳng cùng làm việc nhà.\n- Về độ tuổi kết hôn lý tưởng: Trung bình nam giới là khoảng 28-30 tuổi, nữ giới khoảng 26-29 tuổi.",
         "imageUrl": "/media/reading/reading_n5_l21_r02.png",
         "sortOrder": 2,
         "questions": [
@@ -3991,8 +3991,8 @@
       {
         "title": "テレビ放送",
         "content": "日本で 初めて テレビ放送を したのは 1953年2月1日です。その とき、テレビを 持って いた 人は 866人だけでした。テレビが とても 高かったからです。\nテレビが 急に 増えた きっかけは、1959年の 皇太子の 結婚式です。テレビを 見たい 人が たくさん 買って、200万台を こえました。そして、1964年の 東京オリンピックで カラーテレビが 普及しました。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Lịch sử Phát sóng Truyền hình Nhật Bản\n\nChương trình truyền hình đầu tiên tại Nhật Bản được phát sóng vào ngày 1 tháng 2 năm 1953.\nVào thời điểm đó, trên toàn nước Nhật chỉ có vỏn vẹn 866 người sở hữu máy thu hình, nguyên nhân là do giá một chiếc TV lúc ấy vô cùng đắt đỏ.\nCột mốc bùng nổ số lượng TV tại Nhật Bản chính là Lễ thành hôn của Hoàng thái tử vào năm 1959. Mọi người đều mong muốn được tận mắt chứng kiến lễ diễu hành đám cưới hoàng gia qua màn ảnh nhỏ, khiến số lượng TV bán ra nhanh chóng vượt mốc 2 triệu chiếc.",
+        "imageUrl": "/media/reading/reading_n5_l22_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -4129,7 +4129,7 @@
       {
         "title": "テレビ番組",
         "content": "番組表を見て答えましょう。",
-        "translation": null,
+        "translation": "Chương trình truyền hình\n\nHãy cùng theo dõi lịch phát sóng truyền hình buổi tối trên các kênh:\n- Kênh 1: 19:00 Thời sự 7 giờ; 19:30 Khám phá thiên nhiên kỳ thú\n- Kênh 3: 20:00 Phim truyền hình dài tập (Drama gia đình ấm áp)\n- Kênh 6: 18:30 Trực tiếp trận đấu bóng chày đỉnh cao\n- Kênh 9: 22:00 Bản tin thời sự chuyên sâu News Night",
         "imageUrl": "/media/reading/reading_n5_l22_r02.png",
         "sortOrder": 2,
         "questions": [
@@ -4186,7 +4186,7 @@
       {
         "title": "東京 スカイツリーと 法隆寺五重塔…",
         "content": "東京スカイツリーの 高さは 634メートルです。世界で 一番 高い 電波塔です。\nスカイツリーの 耐震技術（地震に 強い 技術）は、奈良の 法隆寺五重塔の 技術と同じです。真ん中に「心柱」という 太い 柱が あって、地震が 来ても 倒れません。1300年以上 前の 日本の 建築技術が 今も 生きて います。",
-        "translation": null,
+        "translation": "Tháp Tokyo Skytree và Chùa Horyuji\n\nTháp truyền hình Tokyo Skytree có chiều cao 634 mét, là tháp truyền hình tự đứng cao nhất thế giới.\nĐiều đặc biệt là công nghệ chống chịu động đất của Skytree được kế thừa từ kỹ thuật kiến trúc cổ của tháp năm tầng chùa Horyuji ở Nara xây dựng từ thế kỷ thứ 7.\nỞ giữa tháp có một cây cột trụ khổng lồ bằng bê tông cốt thép gọi là 'Shinbashira' (trụ tâm). Khi có rung chấn động đất, trụ tâm dao động ngược pha với cấu trúc bên ngoài, giúp triệt tiêu lực rung và ngăn tháp sụp đổ qua hàng ngàn năm lịch sử.",
         "imageUrl": "/media/reading/reading_n5_l22_r03.png",
         "sortOrder": 3,
         "questions": [
@@ -4253,8 +4253,8 @@
       {
         "title": "コーヒーを 飲むと",
         "content": "コーヒーは 今から 200年ぐらい 前に オランダ人が 日本へ 持って 来ました。最初、日本人は「苦くて おいしくない」と 言いました。でも、今 コーヒーは 日本中で 飲まれて います。\nコーヒーを 飲むと、どんな 効果が ありますか。カフェインが 入って いますから、目が 覚めて、元気に なります。頭の 働きが よく なります。また、いい 香りを かぐと、リラックスする ことが できます。温かい コーヒーを 飲むと、体が 温かく なります。でも、夜 たくさん 飲むと、眠る ことが できなく なりますから、気を つけて ください。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Uống cà phê có tác dụng gì?\n\nCà phê lần đầu tiên được các thương nhân Hà Lan mang đến Nhật Bản khoảng 200 năm trước.\nBan đầu, người Nhật cảm thấy cà phê rất đắng và khó uống. Nhưng ngày nay, cà phê đã trở thành thức uống phổ biến khắp nước Nhật.\nKhi uống cà phê, chất caffeine giúp não bộ tỉnh táo, tăng cường sự tập trung khi học tập và làm việc.\nNgoài ra, các nghiên cứu khoa học gần đây còn chỉ ra rằng hương thơm của cà phê giúp thư giãn tinh thần, và uống với lượng vừa phải rất có lợi cho tim mạch và sức khỏe.",
+        "imageUrl": "/media/reading/reading_n5_l23_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -4353,8 +4353,8 @@
       {
         "title": "日本語で お願いします",
         "content": "わたしは アランです。大阪に 住んで います。\n日本へ 来た とき、日本語が 全然 話せませんでした。でも、スーパーや 駅で 人に 話しかけると、みんな 英語で 答えて くれました。親切ですが、わたしは 日本語を 勉強したいと 思いました。\nある日、Tシャツを 買いました。背中に「日本語で お願いします」と 書いて あります。その Tシャツを 着て 出かけると、みんな 日本語で 話しかけて くれる ように なりました。とても うれしかったです。",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Xin hãy nói bằng tiếng Nhật!\n\nTôi tên là Alain, hiện đang sinh sống và làm việc tại thành phố Osaka.\nKhi mới sang Nhật Bản, tôi chưa nói được nhiều tiếng Nhật. Nhưng mỗi khi tôi mở lời hỏi đường hay mua hàng ở siêu thị, mọi người xung quanh đều niềm nở trả lời lại bằng tiếng Anh.\nDù mọi người rất tốt bụng và chu đáo, nhưng vì muốn nhanh chóng nâng cao vốn tiếng Nhật, tôi đã chủ động nói: 'Tôi đang học tiếng Nhật, xin hãy nói chuyện với tôi bằng tiếng Nhật nhé!'.\nTừ đó, các bác hàng xóm và thu ngân siêu thị đã nhiệt tình chỉ cho tôi thêm nhiều từ vựng và cách nói chuyện đậm chất Kansai rất thú vị.",
+        "imageUrl": "/media/reading/reading_n5_l24_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -4462,7 +4462,7 @@
       {
         "title": "それ、英語？",
         "content": "カタカナ言葉（和製英語など）とイラストのマッチング問題です。",
-        "translation": null,
+        "translation": "Từ đó có phải là tiếng Anh không?\n\nTrong tiếng Nhật có rất nhiều từ mượn Katakana, nhưng có những từ do người Nhật tự sáng tạo (Wasei Eigo) mà người bản xứ tiếng Anh nghe sẽ không hiểu:\n- 'Mansion' (マンション): Ở Nhật dùng để chỉ căn hộ chung cư cao cấp, trong khi tiếng Anh nghĩa là biệt thự xa hoa.\n- 'Salaryman' (サラリーマン): Nhân viên công sở làm công ăn lương.\n- 'Skinship' (スキンシップ): Sự gần gũi, tiếp xúc thân mật về mặt thể xác giữa cha mẹ và con cái hoặc bạn bè.\n- 'Claim' (クレーム): Lời phàn nàn, khiếu nại của khách hàng (tiếng Anh là Complaint).",
         "imageUrl": "/media/reading/reading_n5_l24_r02.png",
         "sortOrder": 2,
         "questions": [
@@ -4710,8 +4710,8 @@
       {
         "title": "将来は…",
         "content": "高校生 3人の 進路についての 話です。\n\n出本君：「わたしは 高校を 卒業したら、大学へ 行かないで、料理の 専門学校へ 行きます。将来 自分の レストランを 開きたいですから。」\n川田君：「わたしは 大学へ 行きます。両親が 大学を 出なければ ならないと 言いました。川田君も そう 思いましたから。」\n佐藤君：「わたしは 音楽の 勉強が したいですが、両親は 経済の 勉強を しろと 言います。意見が 違いますから、今 悩んで います。」",
-        "translation": null,
-        "imageUrl": null,
+        "translation": "Tương lai của chúng mình...\n\nBa bạn học sinh lớp 12 chia sẻ về định hướng tương lai sau khi tốt nghiệp cấp 3:\n- Bạn Demoto: 'Sau khi tốt nghiệp, mình sẽ không thi đại học mà theo học trường trung cấp dạy nấu ăn. Ước mơ lớn nhất của mình là tương lai mở được một nhà hàng của riêng mình.'\n- Bạn Kawada: 'Mình sẽ thi vào trường đại học kinh tế giống như kỳ vọng của bố mẹ. Sau này ra trường mình muốn làm việc tại một tập đoàn thương mại quốc tế.'\n- Bạn Hayashi: 'Mình đam mê vẽ tranh truyện Manga. Mình sẽ vừa đi làm thêm tích lũy kinh nghiệm vừa sáng tác và gửi bài dự thi cho các nhà xuất bản.'",
+        "imageUrl": "/media/reading/reading_n5_l25_r01.png",
         "sortOrder": 1,
         "questions": [
           {
@@ -4863,7 +4863,7 @@
       {
         "title": "若い 人の 考え方",
         "content": "世界各国の若者の価値観調査データについての問題です。",
-        "translation": null,
+        "translation": "Quan điểm sống của giới trẻ\n\nKết quả khảo sát về quan niệm sống và giá trị nghề nghiệp của thanh niên các nước (theo Báo cáo Điều tra Thanh niên Thế giới của Nội các Nhật Bản):\n1. Về câu hỏi: 'Ưu tiên cuộc sống cá nhân hơn công việc': Nước có tỷ lệ đồng tình cao nhất là Pháp (trên 60%), trong khi Nhật Bản có xu hướng cân bằng giữa hai yếu tố.\n2. Về tiêu chí quan trọng nhất khi lựa chọn công việc của thanh niên Nhật Bản: 'Thu nhập ổn định' và 'Môi trường làm việc thân thiện' là hai yếu tố được ưu tiên hàng đầu.",
         "imageUrl": "/media/reading/reading_n5_l25_r02.png",
         "sortOrder": 2,
         "questions": [
