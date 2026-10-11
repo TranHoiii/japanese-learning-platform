@@ -250,7 +250,7 @@ export default function ExerciseDetailPage() {
   const answeredCount = (exercise?.questions || []).filter((q) => isQuestionAnswered(q.id)).length;
   const totalQuestions = exercise?.questions?.length || 0;
   const isReview = exercise?.exerciseType === "REVIEW";
-  const isN4 = Boolean(exercise && (exercise.sortOrder >= 28 || (exercise.lessonId && exercise.lessonId >= 26)));
+  const isN4 = Boolean(exercise && (exercise.sortOrder >= 29 || (exercise.lessonId && exercise.lessonId >= 26)));
   const levelCode = isN4 ? "N4" : "N5";
 
   return (

@@ -143,8 +143,32 @@ export function parseQuestion(question: ExerciseQuestion): ParsedQuestion {
     currentSubLines = [];
   };
 
+  // Expand lines that contain multiple inline sub-question numbers like "1) ＿＿ 2) ＿＿ 3) ＿＿"
+  // or "月曜日 → 5) ＿＿ → 6) ＿＿"
+  const expandedLines: string[] = [];
   for (const line of contentLines) {
-    const subMatch = line.match(/^(\d+|[a-zA-Z])[\)\.：:]\s*(.*)$/);
+    const subSplits = Array.from(line.matchAll(/(?:^|[\s→])(\d+|[a-zA-Z])[\)\.）]\s*/g));
+    if (subSplits.length > 1) {
+      for (let idx = 0; idx < subSplits.length; idx++) {
+        const sm = subSplits[idx];
+        const subLabel = sm[1];
+        const nextStart = idx + 1 < subSplits.length ? subSplits[idx + 1].index : line.length;
+        const chunk = line.slice(sm.index! + sm[0].length, nextStart).trim();
+        expandedLines.push(`${subLabel}) ${chunk}`);
+      }
+    } else {
+      expandedLines.push(line);
+    }
+  }
+
+  for (const line of expandedLines) {
+    // Only match numeric sub-questions (e.g. "1)", "2.", "1：", "1）")
+    // or letter sub-questions with parenthesis/dot (e.g. "a)", "a.")
+    // BUT NOT letter followed by colon (e.g. "A:", "B:") which are dialogue speakers
+    const subMatch =
+      line.match(/^(\d+)[\)\.：:）]\s*(.*)$/) ||
+      line.match(/^([a-zA-Z])[\)\.）]\s*(.*)$/);
+
     if (subMatch) {
       flushCurrentSub();
       currentSubId = subMatch[1];

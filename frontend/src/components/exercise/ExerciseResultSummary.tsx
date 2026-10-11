@@ -52,7 +52,16 @@ export const ExerciseResultSummary: React.FC<ExerciseResultSummaryProps> = ({
             <p className="text-sm opacity-85 font-medium">
               Chính xác:{' '}
               <strong className="font-bold underline">{result.correctCount}</strong> /{' '}
-              {result.totalQuestions} câu hỏi (Chưa đúng: {result.wrongCount} câu)
+              {result.correctCount + result.wrongCount > 0 && result.correctCount + result.wrongCount < result.totalQuestions ? (
+                <>
+                  {result.correctCount + result.wrongCount} câu chấm tự động{' '}
+                  <span className="text-xs font-normal opacity-90">
+                    ({result.totalQuestions - (result.correctCount + result.wrongCount)} câu tự luyện tập)
+                  </span>
+                </>
+              ) : (
+                <>{result.totalQuestions} câu hỏi (Chưa đúng: {result.wrongCount} câu)</>
+              )}
             </p>
           </div>
         </div>

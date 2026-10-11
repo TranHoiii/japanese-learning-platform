@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 public class ExerciseGradingHelper {
 
     private static final Pattern SUB_QUESTION_PATTERN =
-            Pattern.compile("^([0-9]+|[a-z])[\n\\)\\.：:]\\s*(.*)$", Pattern.CASE_INSENSITIVE);
+            Pattern.compile("^([0-9]+|[a-z])[\n\\)\\.：:）]\\s*(.*)$", Pattern.CASE_INSENSITIVE);
 
     public ExerciseQuestionResultResponse gradeQuestion(Question question, ExerciseAnswerRequest userAns) {
         Long selectedOptionId = userAns != null ? userAns.getSelectedOptionId() : null;
@@ -53,6 +53,7 @@ public class ExerciseGradingHelper {
 
         // 2. Structured Blank Responses mode
         if (responses != null && !responses.isEmpty()) {
+            boolean isQuestionOpenEnded = isOpenEndedQuestion(question, explanation);
             Map<String, List<String>> parsedExplanation = parseExplanationTokens(explanation);
             List<BlankResultResponse> blankResults = new ArrayList<>();
             boolean allCorrect = true;
@@ -95,7 +96,7 @@ public class ExerciseGradingHelper {
                             matchedBlankId = (expectedTokens.size() > 1) ? subKey + "_" + tokenIdx : subKey;
                         }
 
-                        boolean isOpenEnded = isOpenEndedAnswer(rawExpected);
+                        boolean isOpenEnded = isQuestionOpenEnded || isOpenEndedAnswer(rawExpected);
                         boolean blankCorrect = false;
 
                         if (isOpenEnded) {
@@ -113,7 +114,7 @@ public class ExerciseGradingHelper {
 
                         blankResults.add(BlankResultResponse.builder()
                                 .blankId(matchedBlankId)
-                                .isCorrect(blankCorrect)
+                                .isCorrect(isOpenEnded ? null : blankCorrect)
                                 .userAnswer(userVal)
                                 .correctAnswer(cleanDisplayAnswer(rawExpected))
                                 .autoGraded(!isOpenEnded)
@@ -122,23 +123,27 @@ public class ExerciseGradingHelper {
                 }
             } else {
                 // If explanation is not split into numbered items, evaluate user responses against raw explanation
+                boolean isOpenEnded = isQuestionOpenEnded || isOpenEndedAnswer(explanation);
                 for (Map.Entry<String, String> uEntry : userResponsesMap.entrySet()) {
                     String userVal = uEntry.getValue();
-                    boolean match = (explanation != null) && checkAnswerMatch(userVal, explanation);
-                    if (!match) {
-                        allCorrect = false;
+                    boolean match = !isOpenEnded && (explanation != null) && checkAnswerMatch(userVal, explanation);
+                    if (!isOpenEnded) {
+                        anyAutoGraded = true;
+                        if (!match) {
+                            allCorrect = false;
+                        }
                     }
                     blankResults.add(BlankResultResponse.builder()
                             .blankId(uEntry.getKey())
-                            .isCorrect(match)
+                            .isCorrect(isOpenEnded ? null : match)
                             .userAnswer(userVal)
                             .correctAnswer(cleanDisplayAnswer(explanation))
-                            .autoGraded(true)
+                            .autoGraded(!isOpenEnded)
                             .build());
                 }
             }
 
-            boolean finalCorrect = anyAutoGraded ? allCorrect : true;
+            Boolean finalCorrect = anyAutoGraded ? allCorrect : null;
 
             return ExerciseQuestionResultResponse.builder()
                     .questionId(question.getId())
@@ -154,8 +159,11 @@ public class ExerciseGradingHelper {
         }
 
         // 3. Fallback / Legacy single text answer
+        boolean isQuestionOpenEnded = isOpenEndedQuestion(question, explanation);
         boolean isCorrect = false;
-        if (userText != null && !userText.trim().isEmpty()) {
+        boolean autoGraded = !isQuestionOpenEnded;
+
+        if (!isQuestionOpenEnded && userText != null && !userText.trim().isEmpty()) {
             if (correctAnswerText != null && !correctAnswerText.trim().isEmpty()) {
                 isCorrect = checkAnswerMatch(userText, correctAnswerText);
             } else if (explanation != null) {
@@ -165,15 +173,30 @@ public class ExerciseGradingHelper {
 
         return ExerciseQuestionResultResponse.builder()
                 .questionId(question.getId())
-                .isCorrect(isCorrect)
+                .isCorrect(isQuestionOpenEnded ? null : isCorrect)
                 .selectedOptionId(selectedOptionId)
                 .correctOptionId(correctOptionId)
                 .answerText(userText)
                 .correctAnswerText(correctAnswerText != null ? correctAnswerText : explanation)
                 .explanation(explanation)
-                .autoGraded(true)
+                .autoGraded(autoGraded)
                 .blankResults(Collections.emptyList())
                 .build();
+    }
+
+    public boolean isOpenEndedQuestion(Question question, String rawExplanation) {
+        if (question == null) return false;
+        String text = question.getQuestionText() != null ? question.getQuestionText().toLowerCase() : "";
+        if (text.contains("bản thân") || text.contains("cá nhân") || text.contains("về bạn") || text.contains("của bạn")) {
+            return true;
+        }
+        if (rawExplanation != null) {
+            String exp = rawExplanation.trim();
+            if (exp.contains("例:") || exp.contains("例：") || exp.contains("○○") || exp.contains("...") || exp.contains("…")) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public Map<String, List<String>> parseExplanationTokens(String explanation) {
@@ -211,6 +234,16 @@ public class ExerciseGradingHelper {
         String cleaned = content.replaceAll("[\\(（][^\\)）]*[\\)）]", "").trim();
         // Strip leading labels like "93,648: "
         cleaned = cleaned.replaceAll("^[0-9a-zA-Z,.:]+\\s*:\\s*", "").trim();
+        // Preserve numbers with commas like 2,500
+        cleaned = cleaned.replaceAll("(\\d),(\\d)", "$1$2");
+
+        // If the content is a full sentence (ends with period or is a connected compound sentence)
+        // do not split on Japanese comma inside the sentence
+        if (cleaned.endsWith("。") || cleaned.contains("ですが、") || cleaned.contains("そして、")
+                || cleaned.contains("かどうか、") || cleaned.contains("たら、") || cleaned.contains("ても、")) {
+            tokens.add(cleaned);
+            return tokens;
+        }
 
         // Split by comma: ',' or '、' or '，'
         // But do not split alternative answers with '／' or '/'
@@ -245,19 +278,29 @@ public class ExerciseGradingHelper {
             if (cleanAlt.contains("[") && cleanAlt.contains("]")) {
                 String optionWith = cleanAlt.replace("[", "").replace("]", "");
                 String optionWithout = cleanAlt.replaceAll("\\[[^\\]]*\\]", "");
-                if (userNormalized.equalsIgnoreCase(normalizeJapanese(optionWith)) ||
-                        userNormalized.equalsIgnoreCase(normalizeJapanese(optionWithout))) {
+                if (checkSingleMatch(userNormalized, optionWith) ||
+                        checkSingleMatch(userNormalized, optionWithout)) {
                     return true;
                 }
             }
 
-            String expectedNormalized = normalizeJapanese(cleanAlt);
-            if (userNormalized.equalsIgnoreCase(expectedNormalized)) {
+            if (checkSingleMatch(userNormalized, cleanAlt)) {
                 return true;
             }
         }
 
         return false;
+    }
+
+    private boolean checkSingleMatch(String userNormalized, String expectedAlt) {
+        String expectedNormalized = normalizeJapanese(expectedAlt);
+        if (userNormalized.equalsIgnoreCase(expectedNormalized)) {
+            return true;
+        }
+        // Also compare with intra-sentence Japanese punctuation (、, ，) stripped
+        String userNoPunct = userNormalized.replaceAll("[,，、]", "");
+        String expectedNoPunct = expectedNormalized.replaceAll("[,，、]", "");
+        return userNoPunct.equalsIgnoreCase(expectedNoPunct);
     }
 
     public String normalizeJapanese(String text) {

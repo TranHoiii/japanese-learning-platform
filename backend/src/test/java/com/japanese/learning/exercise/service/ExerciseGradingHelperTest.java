@@ -143,10 +143,11 @@ class ExerciseGradingHelperTest {
     }
 
     @Test
-    @DisplayName("Câu hỏi mở/tự do cá nhân không chấm điểm giả (autoGraded=false)")
+    @DisplayName("Câu hỏi mở/tự do cá nhân không chấm điểm giả (autoGraded=false, isCorrect=null)")
     void testGradeOpenEndedQuestion() {
         Question q = new Question();
         q.setId(5L);
+        q.setQuestionText("7. Trả lời câu hỏi về bản thân:");
         q.setQuestionType(QuestionType.FILL_BLANK);
         q.setExplanation("""
                 1) 例: マイク・ミラーです。
@@ -164,6 +165,7 @@ class ExerciseGradingHelperTest {
 
         ExerciseQuestionResultResponse res = grader.gradeQuestion(q, req);
         assertFalse(res.getAutoGraded(), "Câu hỏi cá nhân mở không được auto-grade điểm số giả");
+        assertNull(res.getIsCorrect(), "isCorrect phải là null để không tính điểm giả hoặc phạt sai");
         assertFalse(res.getBlankResults().get(0).getAutoGraded());
         assertFalse(res.getBlankResults().get(1).getAutoGraded());
     }
@@ -191,5 +193,50 @@ class ExerciseGradingHelperTest {
         assertFalse(res.getBlankResults().get(1).getIsCorrect());
         assertEquals("はっせんさんびゃく", res.getBlankResults().get(0).getCorrectAnswer());
         assertEquals("にまんさんぜんはっぴゃく", res.getBlankResults().get(1).getCorrectAnswer());
+    }
+
+    @Test
+    @DisplayName("Chấm câu ghép có dấu phẩy tiếng Nhật: chấp nhận cả có hoặc không có dấu phẩy")
+    void testGradeCompoundSentenceWithComma() {
+        Question q = new Question();
+        q.setId(7L);
+        q.setQuestionType(QuestionType.FILL_BLANK);
+        q.setExplanation("1) 小さいですが、有名です。");
+        q.setOptions(new ArrayList<>());
+
+        // User submits without comma
+        ExerciseAnswerRequest req1 = ExerciseAnswerRequest.builder()
+                .questionId(7L)
+                .responses(List.of(new BlankResponse("1", "小さいですが有名です")))
+                .build();
+        ExerciseQuestionResultResponse res1 = grader.gradeQuestion(q, req1);
+        assertTrue(res1.getIsCorrect());
+        assertTrue(res1.getBlankResults().get(0).getIsCorrect());
+
+        // User submits with Japanese comma and period
+        ExerciseAnswerRequest req2 = ExerciseAnswerRequest.builder()
+                .questionId(7L)
+                .responses(List.of(new BlankResponse("1", "小さいですが、有名です。")))
+                .build();
+        ExerciseQuestionResultResponse res2 = grader.gradeQuestion(q, req2);
+        assertTrue(res2.getIsCorrect());
+    }
+
+    @Test
+    @DisplayName("Chấm số có dấu phẩy phân cách hàng nghìn (2,500) không bị chia tách token")
+    void testGradeNumberWithComma() {
+        Question q = new Question();
+        q.setId(8L);
+        q.setQuestionType(QuestionType.FILL_BLANK);
+        q.setExplanation("1) 2,500円");
+        q.setOptions(new ArrayList<>());
+
+        ExerciseAnswerRequest req = ExerciseAnswerRequest.builder()
+                .questionId(8L)
+                .responses(List.of(new BlankResponse("1", "2500円")))
+                .build();
+        ExerciseQuestionResultResponse res = grader.gradeQuestion(q, req);
+        assertTrue(res.getIsCorrect());
+        assertEquals(1, res.getBlankResults().size());
     }
 }

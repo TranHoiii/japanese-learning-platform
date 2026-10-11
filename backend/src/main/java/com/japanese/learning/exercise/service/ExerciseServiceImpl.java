@@ -119,23 +119,26 @@ public class ExerciseServiceImpl implements ExerciseService {
                 : Collections.emptyMap();
 
         List<ExerciseQuestionResultResponse> results = new ArrayList<>();
+        int autoGradedCount = 0;
         int correctCount = 0;
 
         for (Question question : exercise.getQuestions()) {
             ExerciseAnswerRequest userAns = userAnswers.get(question.getId());
             ExerciseQuestionResultResponse qResult = exerciseGradingHelper.gradeQuestion(question, userAns);
 
-            if (Boolean.TRUE.equals(qResult.getIsCorrect())) {
-                correctCount++;
+            if (Boolean.TRUE.equals(qResult.getAutoGraded())) {
+                autoGradedCount++;
+                if (Boolean.TRUE.equals(qResult.getIsCorrect())) {
+                    correctCount++;
+                }
             }
 
             results.add(qResult);
         }
 
-
         int totalQuestions = exercise.getQuestions().size();
-        int wrongCount = totalQuestions - correctCount;
-        int score = totalQuestions > 0 ? (int) Math.round(((double) correctCount / totalQuestions) * 100) : 0;
+        int wrongCount = autoGradedCount - correctCount;
+        int score = autoGradedCount > 0 ? (int) Math.round(((double) correctCount / autoGradedCount) * 100) : 100;
 
         return ExerciseSubmitResponse.builder()
                 .score(score)

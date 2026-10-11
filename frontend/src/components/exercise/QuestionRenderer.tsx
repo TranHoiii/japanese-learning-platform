@@ -45,7 +45,9 @@ export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
     <div
       className={`p-5 sm:p-7 rounded-3xl border transition-all ${
         result
-          ? result.isCorrect
+          ? result.autoGraded === false
+            ? 'bg-amber-50/20 border-amber-200/90 shadow-2xs'
+            : result.isCorrect
             ? 'bg-emerald-50/30 border-emerald-200/90 shadow-2xs'
             : 'bg-rose-50/30 border-rose-200/90 shadow-2xs'
           : 'bg-white border-slate-200/80 shadow-xs'
@@ -77,16 +79,23 @@ export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
 
         {/* Result Status Badge */}
         {result && (
-          <span
-            className={`shrink-0 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 ${
-              result.isCorrect
-                ? 'bg-emerald-100 text-emerald-800'
-                : 'bg-rose-100 text-rose-800'
-            }`}
-          >
-            <span>{result.isCorrect ? '✓' : '✕'}</span>
-            <span>{result.isCorrect ? 'Đúng' : 'Chưa đúng'}</span>
-          </span>
+          result.autoGraded === false ? (
+            <span className="shrink-0 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 bg-amber-100 text-amber-900 border border-amber-200">
+              <span>📝</span>
+              <span>Tự luyện tập</span>
+            </span>
+          ) : (
+            <span
+              className={`shrink-0 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 ${
+                result.isCorrect
+                  ? 'bg-emerald-100 text-emerald-800'
+                  : 'bg-rose-100 text-rose-800'
+              }`}
+            >
+              <span>{result.isCorrect ? '✓' : '✕'}</span>
+              <span>{result.isCorrect ? 'Đúng' : 'Chưa đúng'}</span>
+            </span>
+          )
         )}
       </div>
 
