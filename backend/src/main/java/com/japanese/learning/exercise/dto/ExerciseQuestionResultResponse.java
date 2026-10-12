@@ -20,4 +20,7 @@ public class ExerciseQuestionResultResponse {
     private String answerText;
     private String correctAnswerText;
     private String explanation;
+    private Boolean autoGraded;
+    private java.util.List<BlankResultResponse> blankResults;
 }
+
