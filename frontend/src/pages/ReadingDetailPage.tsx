@@ -159,16 +159,19 @@ export default function ReadingDetailPage() {
             Trang chủ
           </Link>
           <span>/</span>
-          <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-            Bài học N5
+          <Link
+            to={`/${reading?.lessonId && reading.lessonId >= 26 ? "n4" : "n5"}/lessons`}
+            className="hover:text-slate-900 transition-colors"
+          >
+            Bài học {reading?.lessonId && reading.lessonId >= 26 ? "N4" : "N5"}
           </Link>
           <span>/</span>
           {reading && (
             <Link
-              to={`/n5/lessons/${reading.lessonId}/reading`}
+              to={`/${reading.lessonId >= 26 ? "n4" : "n5"}/lessons/${reading.lessonId}/reading`}
               className="hover:text-slate-900 transition-colors"
             >
-              Luyện đọc
+              Luyện đọc Bài {reading.lessonId}
             </Link>
           )}
           <span>/</span>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { vocabularyApi } from "../services/vocabularyApi";
 import { exerciseApi } from "../services/exerciseApi";
@@ -9,21 +9,25 @@ import { Exercise } from "../types/exercise";
 export default function ExercisePage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const [filterType, setFilterType] = useState<"ALL" | "LESSON" | "REVIEW">("ALL");
 
-  // 1. Get Level N5
+  const isN4 = location.pathname.startsWith("/n4");
+  const levelCode = isN4 ? "N4" : "N5";
+
+  // 1. Get Level
   const { data: levels } = useQuery({
     queryKey: ["levels"],
     queryFn: vocabularyApi.getLevels,
   });
 
-  const n5Level = levels?.find((l) => l.code === "N5") || levels?.[0];
+  const currentLevel = levels?.find((l) => l.code === levelCode) || levels?.[0];
 
   // 2. Get Lessons list for selector
   const { data: lessons } = useQuery({
-    queryKey: ["lessons", n5Level?.id],
-    queryFn: () => vocabularyApi.getLessonsByLevel(n5Level!.id),
-    enabled: !!n5Level,
+    queryKey: ["lessons", currentLevel?.id],
+    queryFn: () => vocabularyApi.getLessonsByLevel(currentLevel!.id),
+    enabled: !!currentLevel,
   });
 
   const activeLessonId = lessonId ? parseInt(lessonId, 10) : undefined;
@@ -31,7 +35,7 @@ export default function ExercisePage() {
 
   // 3. Get Exercises list (strictly sorted by sort_order ASC from API)
   const {
-    data: exercises,
+    data: allExercises,
     isLoading,
     error,
   } = useQuery({
@@ -42,12 +46,20 @@ export default function ExercisePage() {
         : exerciseApi.getAllExercises(),
   });
 
+  // Filter exercises according to level when viewing all
+  const exercises = activeLessonId
+    ? allExercises
+    : allExercises?.filter((ex) => {
+        if (isN4) return ex.sortOrder >= 28;
+        return ex.sortOrder < 28;
+      });
+
   const handleLessonChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const targetId = e.target.value;
     if (targetId === "all") {
-      navigate("/n5/exercises");
+      navigate(`/${isN4 ? "n4" : "n5"}/exercises`);
     } else if (targetId) {
-      navigate(`/n5/lessons/${targetId}/exercise`);
+      navigate(`/${isN4 ? "n4" : "n5"}/lessons/${targetId}/exercise`);
     }
   };
 
@@ -57,6 +69,8 @@ export default function ExercisePage() {
     if (filterType === "REVIEW") return ex.exerciseType === "REVIEW";
     return true;
   });
+
+  const defaultLessonId = activeLessonId || (lessons && lessons.length > 0 ? lessons[0].id : isN4 ? 26 : 1);
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
@@ -69,14 +83,14 @@ export default function ExercisePage() {
             Trang chủ
           </Link>
           <span>/</span>
-          <Link to="/n5/lessons" className="hover:text-slate-900 transition-colors">
-            Bài học N5
+          <Link to={`/${isN4 ? "n4" : "n5"}/lessons`} className="hover:text-slate-900 transition-colors">
+            Bài học {levelCode}
           </Link>
           <span>/</span>
           <span className="font-semibold text-slate-900">
             {currentLesson
               ? `${currentLesson.title} - Bài tập`
-              : "Danh sách bài tập N5 theo lộ trình"}
+              : `Danh sách bài tập ${levelCode} theo lộ trình`}
           </span>
         </div>
 
@@ -85,11 +99,15 @@ export default function ExercisePage() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <div className="flex items-center space-x-3 mb-2">
-                <span className="px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/60">
-                  JLPT N5
+                <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                  isN4
+                    ? "bg-emerald-50 text-emerald-700 border border-emerald-200/60"
+                    : "bg-rose-50 text-rose-700 border border-rose-200/60"
+                }`}>
+                  JLPT {levelCode}
                 </span>
                 <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">
-                  {currentLesson ? currentLesson.title : "Lộ trình chính thức (27 bài)"}
+                  {currentLesson ? currentLesson.title : isN4 ? "Lộ trình chính thức (29 bài)" : "Lộ trình chính thức (27 bài)"}
                 </span>
                 {exercises && (
                   <span className="text-xs text-slate-500 font-medium">
@@ -99,11 +117,13 @@ export default function ExercisePage() {
               </div>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 {currentLesson
-                  ? `Bài Tập N5 - ${currentLesson.title}`
-                  : "Bài Tập Chuẩn N5 (Minna no Nihongo)"}
+                  ? `Bài Tập ${levelCode} - ${currentLesson.title}`
+                  : `Bài Tập Chuẩn ${levelCode} (Minna no Nihongo)`}
               </h1>
               <p className="text-sm text-slate-500 mt-2">
-                Sắp xếp chuẩn xác theo đúng lộ trình học thực tế: Bài 01–02 gộp chung, sau Bài 08 có Tổng hợp 01–08, sau Bài 17 có Tổng hợp 09–17, sau Bài 25 có Tổng hợp 18–25.
+                {isN4
+                  ? "Sắp xếp chuẩn xác theo đúng lộ trình học thực tế: Bài 26–50 cùng các bài Ôn tập tổng hợp định kỳ từ Minna no Nihongo Chuẩn bài tập N4."
+                  : "Sắp xếp chuẩn xác theo đúng lộ trình học thực tế: Bài 01–02 gộp chung, sau Bài 08 có Tổng hợp 01–08, sau Bài 17 có Tổng hợp 09–17, sau Bài 25 có Tổng hợp 18–25."}
               </p>
             </div>
 
@@ -118,7 +138,7 @@ export default function ExercisePage() {
                   onChange={handleLessonChange}
                   className="bg-slate-50 border border-slate-300 text-slate-900 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-indigo-500 p-2.5 shadow-xs cursor-pointer min-w-[170px]"
                 >
-                  <option value="all">Tất cả bài tập (1 → 27)</option>
+                  <option value="all">Tất cả bài tập {isN4 ? "(28 → 56)" : "(1 → 27)"}</option>
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
                       {l.title} (Bài {l.lessonNumber})
@@ -132,51 +152,51 @@ export default function ExercisePage() {
           {/* Module Switcher Tabs */}
           <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-2">
             <Link
-              to={`/n5/lessons/${activeLessonId || 1}/vocabulary`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${defaultLessonId}/vocabulary`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>📚</span>
-              <span>Từ Vựng N5</span>
+              <span>Từ Vựng {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId || 1}/grammar`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${defaultLessonId}/grammar`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>⛩️</span>
-              <span>Ngữ Pháp N5</span>
+              <span>Ngữ Pháp {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId || 1}/kanji`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${defaultLessonId}/kanji`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>🈸</span>
-              <span>Kanji N5</span>
+              <span>Kanji {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId || 1}/listening`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${defaultLessonId}/listening`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>🎧</span>
-              <span>Nghe Hiểu N5</span>
+              <span>Nghe Hiểu {levelCode}</span>
             </Link>
 
             <Link
-              to={`/n5/lessons/${activeLessonId || 1}/reading`}
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${defaultLessonId}/reading`}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
             >
               <span>📖</span>
-              <span>Đọc Hiểu N5</span>
+              <span>Đọc Hiểu {levelCode}</span>
             </Link>
 
             <Link
-              to={activeLessonId ? `/n5/lessons/${activeLessonId}/exercise` : "/n5/exercises"}
+              to={activeLessonId ? `/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/exercise` : `/${isN4 ? "n4" : "n5"}/exercises`}
               className="px-5 py-2.5 rounded-xl text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 transition-all flex items-center space-x-2"
             >
               <span>✏️</span>
-              <span>Bài Tập N5</span>
+              <span>Bài Tập {levelCode}</span>
             </Link>
           </div>
 
@@ -304,7 +324,7 @@ export default function ExercisePage() {
 
                     {/* Description */}
                     <p className="text-sm text-slate-500 line-clamp-3 leading-relaxed">
-                      {exercise.description || "Luyện tập bài tập tiêu chuẩn theo Minna no Nihongo N5."}
+                      {exercise.description || `Luyện tập bài tập tiêu chuẩn theo Minna no Nihongo ${levelCode}.`}
                     </p>
                   </div>
 
