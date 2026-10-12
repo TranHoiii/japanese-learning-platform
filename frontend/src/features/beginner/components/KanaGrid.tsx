@@ -113,7 +113,7 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
   return (
     <div className={cn("space-y-4", className)}>
       {/* Controls row: Row filtering pills + Equivalent Kana Toggle */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-[#F1F5F9]">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-[#F3EEE5]">
         {showRowFilter && (
           <div className="flex-1 min-w-0 flex items-center gap-1.5 overflow-x-auto pb-2.5 custom-scrollbar-x text-xs">
             {rows.map((row) => (
@@ -124,8 +124,8 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
                 className={cn(
                   "px-3 py-1.5 rounded-full font-medium shrink-0 transition-colors cursor-pointer",
                   selectedRow === row.id
-                    ? "bg-[#2684D9] text-white shadow-xs"
-                    : "bg-white text-[#475569] border border-[#E2E8F0] hover:bg-[#F8FAFC]",
+                    ? "bg-[#2F5496] text-white shadow-xs"
+                    : "bg-white text-[#5A5246] border border-[#E7E0D2] hover:bg-[#FAF7F1]",
                 )}
               >
                 {row.label}
@@ -142,8 +142,8 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
               className={cn(
                 "px-2.5 py-1 rounded-[8px] text-xs font-semibold border transition-all flex items-center gap-1.5 cursor-pointer",
                 showEquivalent
-                  ? "bg-[#F0F7FF] text-[#12558F] border-[#BBDDFF]"
-                  : "bg-white text-[#64748B] border-[#CBD5E1] hover:bg-[#F8FAFC]",
+                  ? "bg-[#EEF3FA] text-[#213960] border-[#BDD0EC]"
+                  : "bg-white text-[#766D5E] border-[#D3CABA] hover:bg-[#FAF7F1]",
               )}
               title="Bật so sánh chữ Hiragana ↔ Katakana"
             >
@@ -160,9 +160,9 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
           {vowelColumns.map((v) => (
             <div
               key={v.col}
-              className="py-1.5 sm:py-2 px-1 rounded-[10px] bg-[#F0F7FF] border border-[#BBDDFF] text-[#12558F] font-bold text-xs sm:text-sm flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 shadow-2xs"
+              className="py-1.5 sm:py-2 px-1 rounded-[10px] bg-[#EEF3FA] border border-[#BDD0EC] text-[#213960] font-bold text-xs sm:text-sm flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 shadow-2xs"
             >
-              <span className="text-[10px] sm:text-xs text-[#2684D9] uppercase tracking-wider">Cột</span>
+              <span className="text-[10px] sm:text-xs text-[#2F5496] uppercase tracking-wider">Cột</span>
               <span className="text-xs sm:text-sm font-extrabold">{v.col}</span>
               <span className="font-japanese text-[11px] sm:text-xs opacity-80">({v.kana})</span>
             </div>
@@ -176,9 +176,9 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
           {yoonColumns.map((v) => (
             <div
               key={v.col}
-              className="py-2 px-2 rounded-[10px] bg-[#F0F7FF] border border-[#BBDDFF] text-[#12558F] font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-2xs"
+              className="py-2 px-2 rounded-[10px] bg-[#EEF3FA] border border-[#BDD0EC] text-[#213960] font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-2xs"
             >
-              <span className="text-xs text-[#2684D9] uppercase tracking-wider">Cột</span>
+              <span className="text-xs text-[#2F5496] uppercase tracking-wider">Cột</span>
               <span className="font-extrabold">{v.col}</span>
               <span className="font-japanese text-xs opacity-80">({v.sub})</span>
             </div>
@@ -202,7 +202,7 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
             ) : (
               <div
                 key={slot.key}
-                className="rounded-[14px] bg-[#F8FAFC]/60 border border-dashed border-[#E2E8F0] p-2 sm:p-3 flex flex-col items-center justify-center min-h-[105px] sm:min-h-[130px] select-none"
+                className="rounded-[14px] bg-[#FAF7F1]/60 border border-dashed border-[#E7E0D2] p-2 sm:p-3 flex flex-col items-center justify-center min-h-[105px] sm:min-h-[130px] select-none"
                 aria-hidden="true"
               >
                 <span className="text-xs font-bold text-slate-300">—</span>

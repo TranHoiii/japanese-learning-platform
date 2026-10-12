@@ -36,12 +36,12 @@ export const RelatedArticlesList: React.FC<RelatedArticlesListProps> = ({
 
   return (
     <div className={`space-y-4 ${className}`}>
-      <div className="flex items-center justify-between pb-2 border-b border-[#E2E8F0]">
-        <h3 className="text-base sm:text-lg font-bold text-[#0F172A] flex items-center gap-2">
+      <div className="flex items-center justify-between pb-2 border-b border-[#E7E0D2]">
+        <h3 className="text-base sm:text-lg font-bold text-[#1F1C18] flex items-center gap-2">
           <span>🔗</span>
           <span>Mạng lưới liên kết kiến thức (Knowledge Path)</span>
         </h3>
-        <span className="text-xs text-[#64748B] font-medium hidden sm:inline">
+        <span className="text-xs text-[#766D5E] font-medium hidden sm:inline">
           {relatedArticles.length} bài viết bổ trợ
         </span>
       </div>
@@ -52,7 +52,7 @@ export const RelatedArticlesList: React.FC<RelatedArticlesListProps> = ({
 
           return (
             <div key={catId} className="space-y-2">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-[#475569] uppercase tracking-wider">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-[#5A5246] uppercase tracking-wider">
                 <span>{catMeta?.icon || "📌"}</span>
                 <span>{catMeta?.name || catId} liên quan:</span>
               </div>
@@ -62,7 +62,7 @@ export const RelatedArticlesList: React.FC<RelatedArticlesListProps> = ({
                   <Link
                     key={idx}
                     to={`/handbook/${rel.category}/${rel.slug}`}
-                    className="group p-3.5 sm:p-4 rounded-xl bg-white border border-[#E2E8F0] hover:border-[#2563EB] hover:shadow-xs transition-all flex flex-col justify-between"
+                    className="group p-3.5 sm:p-4 rounded-xl bg-white border border-[#E7E0D2] hover:border-[#2563EB] hover:shadow-xs transition-all flex flex-col justify-between"
                   >
                     <div className="space-y-1.5">
                       <div className="flex items-center gap-1.5 text-xs text-[#2563EB] font-semibold">
@@ -70,13 +70,13 @@ export const RelatedArticlesList: React.FC<RelatedArticlesListProps> = ({
                         <span>{catMeta?.name || rel.category}</span>
                       </div>
 
-                      <h4 className="text-sm font-bold text-[#1E293B] group-hover:text-[#2563EB] transition-colors leading-snug">
+                      <h4 className="text-sm font-bold text-[#2E2A25] group-hover:text-[#2563EB] transition-colors leading-snug">
                         {rel.title}
                       </h4>
                     </div>
 
                     {rel.reason && (
-                      <p className="text-xs text-[#64748B] mt-2 pt-2 border-t border-[#F1F5F9] leading-relaxed">
+                      <p className="text-xs text-[#766D5E] mt-2 pt-2 border-t border-[#F3EEE5] leading-relaxed">
                         👉 {rel.reason}
                       </p>
                     )}

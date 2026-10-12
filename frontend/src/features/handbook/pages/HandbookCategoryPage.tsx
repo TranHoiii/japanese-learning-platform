@@ -56,12 +56,12 @@ export const HandbookCategoryPage: React.FC = () => {
         subtitle="404 - Lỗi đường dẫn"
         description="Đường dẫn chuyên mục sổ tay bạn truy cập không hợp lệ hoặc đã bị thay đổi."
       >
-        <div className="text-center py-16 px-4 bg-white rounded-2xl border border-[#E2E8F0] space-y-4">
+        <div className="text-center py-16 px-4 bg-white rounded-2xl border border-[#E7E0D2] space-y-4">
           <div className="text-5xl">📂</div>
-          <h2 className="text-xl font-bold text-[#0F172A]">
+          <h2 className="text-xl font-bold text-[#1F1C18]">
             Danh mục "{category}" không tồn tại
           </h2>
-          <p className="text-sm text-[#64748B] max-w-md mx-auto">
+          <p className="text-sm text-[#766D5E] max-w-md mx-auto">
             Sổ tay hiện hỗ trợ 5 danh mục chính: Ngữ pháp (grammar), Từ vựng (vocabulary), Hán tự (kanji), Hội thoại (conversation) và Ghi chú (notes).
           </p>
           <div className="pt-2">
@@ -90,7 +90,7 @@ export const HandbookCategoryPage: React.FC = () => {
       actions={
         <Link
           to="/handbook"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-[#475569] bg-white border border-[#CBD5E1] hover:bg-[#F8FAFC] transition-colors"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-[#5A5246] bg-white border border-[#D3CABA] hover:bg-[#FAF7F1] transition-colors"
         >
           <span>&larr;</span>
           <span>Tất cả chuyên mục</span>
@@ -102,7 +102,7 @@ export const HandbookCategoryPage: React.FC = () => {
         <HandbookCategoryNav currentCategory={categoryId} />
 
         {/* In-category Search & Filter */}
-        <div className="p-4 sm:p-5 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-3">
+        <div className="p-4 sm:p-5 rounded-2xl bg-[#FAF7F1] border border-[#E7E0D2] space-y-3">
           <HandbookSearchInput
             value={searchQuery}
             onChange={(val) => setSearchQuery(val)}
@@ -112,7 +112,7 @@ export const HandbookCategoryPage: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="font-semibold text-[#475569]">Lọc theo cấp độ:</span>
+              <span className="font-semibold text-[#5A5246]">Lọc theo cấp độ:</span>
               {(["all", "N5", "N4", "ALL"] as (HandbookLevel | "all")[]).map((lvl) => (
                 <button
                   key={lvl}
@@ -121,7 +121,7 @@ export const HandbookCategoryPage: React.FC = () => {
                   className={`px-2.5 py-1 rounded-lg font-semibold transition-colors ${
                     selectedLevel === lvl
                       ? "bg-[#2563EB] text-white shadow-2xs"
-                      : "bg-white text-[#475569] border border-[#CBD5E1] hover:bg-[#F1F5F9]"
+                      : "bg-white text-[#5A5246] border border-[#D3CABA] hover:bg-[#F3EEE5]"
                   }`}
                 >
                   {lvl === "all" ? "Tất cả" : lvl}
@@ -148,7 +148,7 @@ export const HandbookCategoryPage: React.FC = () => {
         {/* Article Cards Grid */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h2 className="text-base sm:text-lg font-bold text-[#0F172A]">
+            <h2 className="text-base sm:text-lg font-bold text-[#1F1C18]">
               Danh sách cẩm nang ({filteredArticles.length})
             </h2>
             {(searchQuery || selectedLevel !== "all" || activeTag) && (
@@ -167,12 +167,12 @@ export const HandbookCategoryPage: React.FC = () => {
           </div>
 
           {filteredArticles.length === 0 ? (
-            <div className="text-center py-12 px-4 rounded-2xl bg-white border border-[#E2E8F0] space-y-3">
+            <div className="text-center py-12 px-4 rounded-2xl bg-white border border-[#E7E0D2] space-y-3">
               <div className="text-4xl">🔍</div>
-              <h3 className="text-base font-bold text-[#0F172A]">
+              <h3 className="text-base font-bold text-[#1F1C18]">
                 Không có bài viết phù hợp trong danh mục này
               </h3>
-              <p className="text-xs sm:text-sm text-[#64748B]">
+              <p className="text-xs sm:text-sm text-[#766D5E]">
                 Hãy thử thay đổi từ khóa tìm kiếm hoặc chọn cấp độ khác.
               </p>
             </div>

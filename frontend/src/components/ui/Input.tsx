@@ -37,7 +37,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {label && (
           <label
             htmlFor={inputId}
-            className="text-xs sm:text-sm font-semibold text-[#334155] select-none"
+            className="text-xs sm:text-sm font-semibold text-[#433D34] select-none"
           >
             {label}
             {props.required && <span className="text-[#EF4444] ml-1">*</span>}
@@ -46,7 +46,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 
         <div className="relative flex items-center w-full">
           {leftIcon && (
-            <div className="absolute left-3.5 flex items-center pointer-events-none text-[#94A3B8]" aria-hidden="true">
+            <div className="absolute left-3.5 flex items-center pointer-events-none text-[#9A8F7E]" aria-hidden="true">
               {leftIcon}
             </div>
           )}
@@ -56,13 +56,13 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             id={inputId}
             disabled={disabled}
             className={cn(
-              "w-full rounded-[8px] bg-white border px-3.5 py-2 text-[#0F172A] placeholder:text-[#94A3B8] transition-colors focus:outline-none disabled:bg-[#F1F5F9] disabled:text-[#94A3B8] disabled:cursor-not-allowed",
+              "w-full rounded-[8px] bg-white border px-3.5 py-2 text-[#1F1C18] placeholder:text-[#9A8F7E] transition-colors focus:outline-none disabled:bg-[#F3EEE5] disabled:text-[#9A8F7E] disabled:cursor-not-allowed",
               heightClass,
               leftIcon ? "pl-10" : "pl-3.5",
               rightIcon ? "pr-10" : "pr-3.5",
               error
                 ? "border-[#EF4444] focus:border-[#EF4444] focus:ring-2 focus:ring-[#FEF2F2]"
-                : "border-[#CBD5E1] hover:border-[#94A3B8] focus:border-[#2684D9] focus:ring-2 focus:ring-[#DCEEFF]",
+                : "border-[#D3CABA] hover:border-[#9A8F7E] focus:border-[#2F5496] focus:ring-2 focus:ring-[#DCE7F5]",
               className,
             )}
             aria-invalid={!!error}
@@ -77,7 +77,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
           />
 
           {rightIcon && (
-            <div className="absolute right-3.5 flex items-center pointer-events-none text-[#94A3B8]" aria-hidden="true">
+            <div className="absolute right-3.5 flex items-center pointer-events-none text-[#9A8F7E]" aria-hidden="true">
               {rightIcon}
             </div>
           )}
@@ -88,7 +88,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             {error}
           </p>
         ) : helperText ? (
-          <p id={`${inputId}-helper`} className="text-xs text-[#64748B] leading-none mt-1">
+          <p id={`${inputId}-helper`} className="text-xs text-[#766D5E] leading-none mt-1">
             {helperText}
           </p>
         ) : null}

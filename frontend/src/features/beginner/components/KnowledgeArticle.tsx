@@ -20,7 +20,7 @@ export const KnowledgeArticle: React.FC<KnowledgeArticleProps> = ({
   return (
     <article className={cn("space-y-8 max-w-4xl mx-auto", className)}>
       {/* Header Overview Card */}
-      <div className="rounded-[16px] bg-gradient-to-br from-[#F0F7FF] to-white border border-[#BBDDFF] p-5 sm:p-6 shadow-xs space-y-4">
+      <div className="rounded-[16px] bg-gradient-to-br from-[#EEF3FA] to-white border border-[#BDD0EC] p-5 sm:p-6 shadow-xs space-y-4">
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2">
             <span className="text-2xl" aria-hidden="true">
@@ -34,12 +34,12 @@ export const KnowledgeArticle: React.FC<KnowledgeArticleProps> = ({
                   : "Cao độ & Ngữ điệu"}
             </Badge>
           </div>
-          <span className="text-xs text-[#64748B] font-medium">
+          <span className="text-xs text-[#766D5E] font-medium">
             ⏱️ Đọc khoảng {topic.estimatedReadMinutes} phút
           </span>
         </div>
 
-        <p className="text-sm sm:text-base text-[#104673] leading-relaxed">
+        <p className="text-sm sm:text-base text-[#213960] leading-relaxed">
           {topic.overviewVi}
         </p>
       </div>
@@ -63,14 +63,14 @@ export const KnowledgeArticle: React.FC<KnowledgeArticleProps> = ({
       {topic.sections.map((section) => (
         <section
           key={section.id}
-          className="rounded-[14px] bg-white border border-[#E2E8F0] p-5 sm:p-6 space-y-5 shadow-[0_1px_3px_rgba(15,23,42,0.04)]"
+          className="rounded-[14px] bg-white border border-[#E7E0D2] p-5 sm:p-6 space-y-5 shadow-[0_1px_3px_rgba(15,23,42,0.04)]"
         >
-          <div className="space-y-1 pb-3 border-b border-[#F1F5F9]">
-            <h3 className="text-lg font-bold text-[#0F172A]">
+          <div className="space-y-1 pb-3 border-b border-[#F3EEE5]">
+            <h3 className="text-lg font-bold text-[#1F1C18]">
               {section.titleVi}
             </h3>
             {section.contentVi && (
-              <p className="text-sm text-[#475569] leading-relaxed whitespace-pre-line">
+              <p className="text-sm text-[#5A5246] leading-relaxed whitespace-pre-line">
                 {section.contentVi}
               </p>
             )}
@@ -78,10 +78,10 @@ export const KnowledgeArticle: React.FC<KnowledgeArticleProps> = ({
 
           {/* Table if present */}
           {section.table && (
-            <div className="overflow-x-auto rounded-[10px] border border-[#E2E8F0]">
+            <div className="overflow-x-auto rounded-[10px] border border-[#E7E0D2]">
               <table className="w-full text-left text-xs sm:text-sm border-collapse">
                 <thead>
-                  <tr className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#334155]">
+                  <tr className="bg-[#FAF7F1] border-b border-[#E7E0D2] text-[#433D34]">
                     {section.table.headers.map((h, idx) => (
                       <th key={idx} className="p-3 font-semibold">
                         {h}
@@ -89,9 +89,9 @@ export const KnowledgeArticle: React.FC<KnowledgeArticleProps> = ({
                     ))}
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#F1F5F9] text-[#475569]">
+                <tbody className="divide-y divide-[#F3EEE5] text-[#5A5246]">
                   {section.table.rows.map((row, rIdx) => (
-                    <tr key={rIdx} className="hover:bg-[#F8FAFC]/80 transition-colors">
+                    <tr key={rIdx} className="hover:bg-[#FAF7F1]/80 transition-colors">
                       {row.map((cell, cIdx) => (
                         <td key={cIdx} className="p-3">
                           {cell}
@@ -110,12 +110,12 @@ export const KnowledgeArticle: React.FC<KnowledgeArticleProps> = ({
               {section.rules.map((rule) => (
                 <div
                   key={rule.id}
-                  className="rounded-[12px] bg-[#F8FAFC]/60 border border-[#E2E8F0] p-4 space-y-3"
+                  className="rounded-[12px] bg-[#FAF7F1]/60 border border-[#E7E0D2] p-4 space-y-3"
                 >
-                  <h4 className="text-sm sm:text-base font-bold text-[#12558F]">
+                  <h4 className="text-sm sm:text-base font-bold text-[#213960]">
                     {rule.titleVi}
                   </h4>
-                  <p className="text-xs sm:text-sm text-[#475569]">
+                  <p className="text-xs sm:text-sm text-[#5A5246]">
                     {rule.explanationVi}
                   </p>
 

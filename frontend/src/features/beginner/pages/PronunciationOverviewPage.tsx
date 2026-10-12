@@ -40,7 +40,7 @@ export const PronunciationOverviewPage: React.FC = () => {
       }
     >
       {/* Category Filter Pills */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-3 border-b border-[#E2E8F0] custom-scrollbar-x text-xs">
+      <div className="flex items-center gap-2 overflow-x-auto pb-3 border-b border-[#E7E0D2] custom-scrollbar-x text-xs">
         {categories.map((cat) => (
           <button
             key={cat.id}
@@ -48,8 +48,8 @@ export const PronunciationOverviewPage: React.FC = () => {
             onClick={() => setSelectedCategory(cat.id)}
             className={`px-3.5 py-2 rounded-full font-semibold shrink-0 transition-colors cursor-pointer ${
               selectedCategory === cat.id
-                ? "bg-[#2684D9] text-white shadow-xs"
-                : "bg-white text-[#475569] border border-[#E2E8F0] hover:bg-[#F8FAFC]"
+                ? "bg-[#2F5496] text-white shadow-xs"
+                : "bg-white text-[#5A5246] border border-[#E7E0D2] hover:bg-[#FAF7F1]"
             }`}
           >
             {cat.label}
@@ -76,7 +76,7 @@ export const PronunciationOverviewPage: React.FC = () => {
       </div>
 
       {/* Audio Safety Note */}
-      <div className="rounded-[12px] bg-[#F8FAFC] border border-[#CBD5E1] p-4 text-xs text-[#64748B] flex items-start gap-2.5">
+      <div className="rounded-[12px] bg-[#FAF7F1] border border-[#D3CABA] p-4 text-xs text-[#766D5E] flex items-start gap-2.5">
         <span className="text-base shrink-0 mt-0.5" aria-hidden="true">
           ℹ️
         </span>

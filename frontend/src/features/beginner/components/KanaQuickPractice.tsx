@@ -107,7 +107,7 @@ export const KanaQuickPractice: React.FC<KanaQuickPracticeProps> = ({
   return (
     <div className={cn("space-y-6", className)}>
       {/* Mode selection buttons */}
-      <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#F1F5F9]">
+      <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#F3EEE5]">
         <div className="flex items-center gap-1.5 overflow-x-auto text-xs">
           <button
             type="button"
@@ -118,8 +118,8 @@ export const KanaQuickPractice: React.FC<KanaQuickPracticeProps> = ({
             className={cn(
               "px-3 py-1.5 rounded-full font-semibold transition-all cursor-pointer",
               practiceMode === "kana-to-romaji"
-                ? "bg-[#2684D9] text-white shadow-xs"
-                : "bg-white text-[#475569] border border-[#E2E8F0] hover:bg-[#F8FAFC]",
+                ? "bg-[#2F5496] text-white shadow-xs"
+                : "bg-white text-[#5A5246] border border-[#E7E0D2] hover:bg-[#FAF7F1]",
             )}
           >
             Nhìn Chữ → Chọn Romaji
@@ -134,8 +134,8 @@ export const KanaQuickPractice: React.FC<KanaQuickPracticeProps> = ({
             className={cn(
               "px-3 py-1.5 rounded-full font-semibold transition-all cursor-pointer",
               practiceMode === "romaji-to-kana"
-                ? "bg-[#2684D9] text-white shadow-xs"
-                : "bg-white text-[#475569] border border-[#E2E8F0] hover:bg-[#F8FAFC]",
+                ? "bg-[#2F5496] text-white shadow-xs"
+                : "bg-white text-[#5A5246] border border-[#E7E0D2] hover:bg-[#FAF7F1]",
             )}
           >
             Nghe/Đọc Âm → Tìm Chữ
@@ -150,8 +150,8 @@ export const KanaQuickPractice: React.FC<KanaQuickPracticeProps> = ({
             className={cn(
               "px-3 py-1.5 rounded-full font-semibold transition-all cursor-pointer",
               practiceMode === "confused-pairs"
-                ? "bg-[#2684D9] text-white shadow-xs"
-                : "bg-white text-[#475569] border border-[#E2E8F0] hover:bg-[#F8FAFC]",
+                ? "bg-[#2F5496] text-white shadow-xs"
+                : "bg-white text-[#5A5246] border border-[#E7E0D2] hover:bg-[#FAF7F1]",
             )}
           >
             Thử Thách Chữ Dễ Nhầm

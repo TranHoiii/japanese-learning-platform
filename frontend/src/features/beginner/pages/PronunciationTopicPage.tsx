@@ -70,7 +70,7 @@ export const PronunciationTopicPage: React.FC = () => {
       <KnowledgeArticle topic={topic} />
 
       {/* Prev / Next Navigation Bar */}
-      <div className="pt-8 mt-8 border-t border-[#E2E8F0] flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="pt-8 mt-8 border-t border-[#E7E0D2] flex flex-col sm:flex-row items-center justify-between gap-4">
         {prevTopic ? (
           <Link
             to={`/beginner/pronunciation/${prevTopic.slug}`}

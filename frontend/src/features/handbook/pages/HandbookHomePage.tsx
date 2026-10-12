@@ -57,12 +57,12 @@ export const HandbookHomePage: React.FC = () => {
     >
       <div className="space-y-8">
         {/* Search & Filter Bar */}
-        <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-[#F0F7FF] to-[#E6F0FA] border border-[#CBD5E1] space-y-4">
+        <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-[#EEF3FA] to-[#E6F0FA] border border-[#D3CABA] space-y-4">
           <div className="space-y-1">
-            <h2 className="text-base sm:text-lg font-bold text-[#0F172A]">
+            <h2 className="text-base sm:text-lg font-bold text-[#1F1C18]">
               Tra cứu nhanh trong sổ tay
             </h2>
-            <p className="text-xs sm:text-sm text-[#475569]">
+            <p className="text-xs sm:text-sm text-[#5A5246]">
               Tìm kiếm theo từ khóa, trợ từ, quy tắc chuyển âm, mẫu câu hoặc thẻ phân loại.
             </p>
           </div>
@@ -76,7 +76,7 @@ export const HandbookHomePage: React.FC = () => {
           {/* Filters: Category and Level */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="text-xs font-semibold text-[#475569]">Cấp độ:</span>
+              <span className="text-xs font-semibold text-[#5A5246]">Cấp độ:</span>
               {(["all", "N5", "N4", "ALL"] as (HandbookLevel | "all")[]).map((lvl) => (
                 <button
                   key={lvl}
@@ -85,7 +85,7 @@ export const HandbookHomePage: React.FC = () => {
                   className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-colors ${
                     selectedLevel === lvl
                       ? "bg-[#2563EB] text-white shadow-2xs"
-                      : "bg-white text-[#475569] border border-[#CBD5E1] hover:bg-[#F8FAFC]"
+                      : "bg-white text-[#5A5246] border border-[#D3CABA] hover:bg-[#FAF7F1]"
                   }`}
                 >
                   {lvl === "all" ? "Tất cả cấp độ" : lvl}
@@ -113,9 +113,9 @@ export const HandbookHomePage: React.FC = () => {
         {isFiltering ? (
           <section className="space-y-4" aria-label="Kết quả tìm kiếm">
             <div className="flex items-center justify-between">
-              <h2 className="text-lg font-bold text-[#0F172A] flex items-center gap-2">
+              <h2 className="text-lg font-bold text-[#1F1C18] flex items-center gap-2">
                 <span>Kết quả tìm kiếm</span>
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#E2E8F0] text-[#334155]">
+                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#E7E0D2] text-[#433D34]">
                   {filteredArticles.length} bài viết
                 </span>
               </h2>
@@ -130,12 +130,12 @@ export const HandbookHomePage: React.FC = () => {
             </div>
 
             {filteredArticles.length === 0 ? (
-              <div className="text-center py-12 px-4 rounded-2xl bg-white border border-[#E2E8F0] space-y-3">
+              <div className="text-center py-12 px-4 rounded-2xl bg-white border border-[#E7E0D2] space-y-3">
                 <div className="text-4xl">🔍</div>
-                <h3 className="text-base font-bold text-[#0F172A]">
+                <h3 className="text-base font-bold text-[#1F1C18]">
                   Không tìm thấy bài viết phù hợp
                 </h3>
-                <p className="text-xs sm:text-sm text-[#64748B] max-w-md mx-auto">
+                <p className="text-xs sm:text-sm text-[#766D5E] max-w-md mx-auto">
                   Không có bài viết nào khớp với từ khóa "{searchQuery}". Hãy thử tìm kiếm bằng từ khóa ngắn hơn, tra cứu bằng chữ Kanji hoặc xóa bộ lọc.
                 </p>
                 <button
@@ -164,10 +164,10 @@ export const HandbookHomePage: React.FC = () => {
             <section className="space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <h2 className="text-lg sm:text-xl font-bold text-[#0F172A]">
+                  <h2 className="text-lg sm:text-xl font-bold text-[#1F1C18]">
                     5 Chuyên mục cốt lõi
                   </h2>
-                  <p className="text-xs sm:text-sm text-[#64748B]">
+                  <p className="text-xs sm:text-sm text-[#766D5E]">
                     Chọn lĩnh vực bạn muốn tra cứu và nắm bắt bản chất ngữ nghĩa
                   </p>
                 </div>
@@ -180,10 +180,10 @@ export const HandbookHomePage: React.FC = () => {
             <section className="space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <h2 className="text-lg sm:text-xl font-bold text-[#0F172A]">
+                  <h2 className="text-lg sm:text-xl font-bold text-[#1F1C18]">
                     Bài viết trọng tâm nên đọc
                   </h2>
-                  <p className="text-xs sm:text-sm text-[#64748B]">
+                  <p className="text-xs sm:text-sm text-[#766D5E]">
                     Những điểm kiến thức hay nhầm lẫn nhất được đúc kết cô đọng
                   </p>
                 </div>
@@ -204,10 +204,10 @@ export const HandbookHomePage: React.FC = () => {
             <section className="space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <h2 className="text-lg sm:text-xl font-bold text-[#0F172A]">
+                  <h2 className="text-lg sm:text-xl font-bold text-[#1F1C18]">
                     Tất cả cẩm nang ({ALL_HANDBOOK_ARTICLES.length})
                   </h2>
-                  <p className="text-xs sm:text-sm text-[#64748B]">
+                  <p className="text-xs sm:text-sm text-[#766D5E]">
                     Toàn bộ danh mục bài viết tra cứu đã sẵn sàng
                   </p>
                 </div>

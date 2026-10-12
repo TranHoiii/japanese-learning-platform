@@ -35,15 +35,15 @@ export const BeginnerSection: React.FC<BeginnerSectionProps> = ({
     <section
       id={id}
       className={cn(
-        "scroll-mt-20 rounded-[16px] bg-white border border-[#E2E8F0] p-5 sm:p-7 shadow-[0_1px_3px_rgba(15,23,42,0.06)] space-y-6 transition-all",
+        "scroll-mt-20 rounded-[16px] bg-white border border-[#E7E0D2] p-5 sm:p-7 shadow-[0_1px_3px_rgba(15,23,42,0.06)] space-y-6 transition-all",
         className,
       )}
       aria-labelledby={id ? `${id}-heading` : undefined}
     >
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-[#F1F5F9]">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-[#F3EEE5]">
         <div className="flex items-start gap-3.5">
           {icon && (
-            <div className="w-11 h-11 rounded-[10px] bg-[#F0F7FF] text-[#12558F] border border-[#BBDDFF] flex items-center justify-center text-xl shrink-0 font-japanese font-bold select-none shadow-xs">
+            <div className="w-11 h-11 rounded-[10px] bg-[#EEF3FA] text-[#213960] border border-[#BDD0EC] flex items-center justify-center text-xl shrink-0 font-japanese font-bold select-none shadow-xs">
               {icon}
             </div>
           )}
@@ -51,7 +51,7 @@ export const BeginnerSection: React.FC<BeginnerSectionProps> = ({
             <div className="flex items-center gap-2.5 flex-wrap">
               <h2
                 id={id ? `${id}-heading` : undefined}
-                className="text-lg sm:text-xl font-bold text-[#0F172A] tracking-tight"
+                className="text-lg sm:text-xl font-bold text-[#1F1C18] tracking-tight"
               >
                 {title}
               </h2>
@@ -62,12 +62,12 @@ export const BeginnerSection: React.FC<BeginnerSectionProps> = ({
               )}
             </div>
             {subtitle && (
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#12558F]">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#213960]">
                 {subtitle}
               </p>
             )}
             {description && (
-              <p className="text-sm text-[#64748B] leading-relaxed max-w-2xl">
+              <p className="text-sm text-[#766D5E] leading-relaxed max-w-2xl">
                 {description}
               </p>
             )}

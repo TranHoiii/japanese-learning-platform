@@ -1,83 +1,211 @@
 @import "tailwindcss";
 
+/*
+ * ──────────────────────────────────────────────────────────────
+ *  Design system — "Washi & Ai-iro" (和紙 × 藍色)
+ *  Warm paper neutrals · indigo-dye brand · sakura accent
+ *  Overriding the default Tailwind `slate`, `indigo`, `rose` and
+ *  `emerald` scales re-themes every page that already uses them.
+ * ──────────────────────────────────────────────────────────────
+ */
 @theme {
-  --color-primary-50: #F0F7FF;
-  --color-primary-100: #DCEEFF;
-  --color-primary-200: #BBDDFF;
-  --color-primary-300: #8CC8FF;
-  --color-primary-400: #55AAEE;
-  --color-primary-500: #2684D9;
-  --color-primary-600: #1769B0;
-  --color-primary-700: #12558F;
-  --color-primary-800: #104673;
-  --color-primary-900: #0D395D;
+  /* Brand — ai-iro (藍色, indigo dye) */
+  --color-primary-50: #EEF3FA;
+  --color-primary-100: #DCE7F5;
+  --color-primary-200: #BDD0EC;
+  --color-primary-300: #92B2DD;
+  --color-primary-400: #5F8ACB;
+  --color-primary-500: #3E69B3;
+  --color-primary-600: #2F5496;
+  --color-primary-700: #264378;
+  --color-primary-800: #213960;
+  --color-primary-900: #1D3050;
 
-  --color-sakura-50: #FFF1F2;
-  --color-sakura-100: #FFE4E6;
-  --color-sakura-200: #FECDD3;
-  --color-sakura-300: #FDA4AF;
-  --color-sakura-400: #FB7185;
-  --color-sakura-500: #F43F5E;
-  --color-sakura-600: #E11D48;
-  --color-sakura-700: #BE123C;
+  --color-indigo-50: #EEF3FA;
+  --color-indigo-100: #DCE7F5;
+  --color-indigo-200: #BDD0EC;
+  --color-indigo-300: #92B2DD;
+  --color-indigo-400: #5F8ACB;
+  --color-indigo-500: #3E69B3;
+  --color-indigo-600: #2F5496;
+  --color-indigo-700: #264378;
+  --color-indigo-800: #213960;
+  --color-indigo-900: #1D3050;
+  --color-indigo-950: #121E36;
 
-  --color-amber-50: #FFFBEB;
-  --color-amber-100: #FEF3C7;
-  --color-amber-200: #FDE68A;
-  --color-amber-400: #FBBF24;
-  --color-amber-500: #F59E0B;
-  --color-amber-600: #D97706;
-  --color-amber-700: #B45309;
+  /* Accent — sakura (桜) */
+  --color-sakura-50: #FFF1F4;
+  --color-sakura-100: #FFE3E9;
+  --color-sakura-200: #FFC9D5;
+  --color-sakura-300: #FFA3B7;
+  --color-sakura-400: #F77A99;
+  --color-sakura-500: #E8527C;
+  --color-sakura-600: #CF3565;
+  --color-sakura-700: #AB2751;
 
-  --color-gray-50: #F8FAFC;
-  --color-gray-100: #F1F5F9;
-  --color-gray-200: #E2E8F0;
-  --color-gray-300: #CBD5E1;
-  --color-gray-400: #94A3B8;
-  --color-gray-500: #64748B;
-  --color-gray-600: #475569;
-  --color-gray-700: #334155;
-  --color-gray-800: #1E293B;
-  --color-gray-900: #0F172A;
+  --color-rose-50: #FFF1F4;
+  --color-rose-100: #FFE3E9;
+  --color-rose-200: #FFC9D5;
+  --color-rose-300: #FFA3B7;
+  --color-rose-400: #F77A99;
+  --color-rose-500: #E8527C;
+  --color-rose-600: #CF3565;
+  --color-rose-700: #AB2751;
+  --color-rose-800: #8A2043;
+  --color-rose-900: #6F1B38;
 
-  --color-success-50: #F0FDF4;
-  --color-success-500: #22C55E;
-  --color-success-700: #15803D;
+  /* Success — matcha (抹茶) */
+  --color-emerald-50: #F3F8EC;
+  --color-emerald-100: #E3EDD4;
+  --color-emerald-200: #C9DDAC;
+  --color-emerald-300: #A8C77F;
+  --color-emerald-400: #88AF5A;
+  --color-emerald-500: #6C9644;
+  --color-emerald-600: #567B34;
+  --color-emerald-700: #446129;
+  --color-emerald-800: #374E23;
+  --color-emerald-900: #2D401E;
 
-  --color-warning-50: #FFFBEB;
-  --color-warning-500: #F59E0B;
-  --color-warning-700: #B45309;
+  /* Gold — kincha (金茶), used for streaks / rewards */
+  --color-amber-50: #FFFAEB;
+  --color-amber-100: #FEF0C7;
+  --color-amber-200: #FDE08A;
+  --color-amber-300: #FBCB4A;
+  --color-amber-400: #F6B722;
+  --color-amber-500: #E99A0C;
+  --color-amber-600: #C97A06;
+  --color-amber-700: #A25C0A;
+  --color-amber-800: #84490F;
+  --color-amber-900: #6C3C10;
+
+  /* Neutrals — warm sumi ink on washi paper */
+  --color-slate-50: #FAF7F1;
+  --color-slate-100: #F3EEE5;
+  --color-slate-200: #E7E0D2;
+  --color-slate-300: #D3CABA;
+  --color-slate-400: #9A8F7E;
+  --color-slate-500: #766D5E;
+  --color-slate-600: #5A5246;
+  --color-slate-700: #433D34;
+  --color-slate-800: #2E2A25;
+  --color-slate-900: #1F1C18;
+  --color-slate-950: #14120F;
+
+  --color-gray-50: #FAF7F1;
+  --color-gray-100: #F3EEE5;
+  --color-gray-200: #E7E0D2;
+  --color-gray-300: #D3CABA;
+  --color-gray-400: #9A8F7E;
+  --color-gray-500: #766D5E;
+  --color-gray-600: #5A5246;
+  --color-gray-700: #433D34;
+  --color-gray-800: #2E2A25;
+  --color-gray-900: #1F1C18;
+
+  --color-paper: #FAF7F1;
+  --color-ink: #1F1C18;
+
+  --color-success-50: #F3F8EC;
+  --color-success-500: #6C9644;
+  --color-success-700: #446129;
+
+  --color-warning-50: #FFFAEB;
+  --color-warning-500: #E99A0C;
+  --color-warning-700: #A25C0A;
 
   --color-error-50: #FEF2F2;
-  --color-error-500: #EF4444;
-  --color-error-700: #B91C1C;
+  --color-error-500: #DC4A4A;
+  --color-error-700: #B42323;
 
-  --color-info-50: #EFF6FF;
-  --color-info-500: #3B82F6;
-  --color-info-700: #1D4ED8;
+  --color-info-50: #EEF3FA;
+  --color-info-500: #3E69B3;
+  --color-info-700: #264378;
 
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Be Vietnam Pro', 'Noto Sans JP', 'Inter', system-ui, sans-serif;
   --font-japanese: 'Noto Sans JP', 'Inter', system-ui, sans-serif;
+  --font-mincho: 'Shippori Mincho', 'Noto Serif JP', 'Noto Sans JP', serif;
 
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
-  --radius-2xl: 20px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-2xl: 22px;
+  --radius-3xl: 28px;
   --radius-full: 9999px;
 
-  --shadow-card: 0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
-  --shadow-elevated: 0 4px 12px 0 rgba(15, 23, 42, 0.08);
-  --shadow-zen: 0 10px 30px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
-  --shadow-glow-sakura: 0 0 20px rgba(244, 63, 94, 0.25);
-  --shadow-glow-primary: 0 0 20px rgba(38, 132, 217, 0.25);
-  --shadow-modal: 0 20px 40px 0 rgba(15, 23, 42, 0.16);
+  --shadow-card: 0 1px 2px 0 rgba(63, 49, 28, 0.05), 0 2px 8px -2px rgba(63, 49, 28, 0.06);
+  --shadow-elevated: 0 6px 18px -4px rgba(63, 49, 28, 0.14);
+  --shadow-zen: 0 14px 36px -10px rgba(47, 37, 20, 0.18), 0 4px 12px -4px rgba(47, 37, 20, 0.08);
+  --shadow-glow-sakura: 0 0 24px rgba(232, 82, 124, 0.3);
+  --shadow-glow-primary: 0 0 24px rgba(62, 105, 179, 0.3);
+  --shadow-glow-gold: 0 0 24px rgba(233, 154, 12, 0.35);
+  --shadow-modal: 0 24px 48px -8px rgba(31, 24, 12, 0.28);
+
+  --animate-fade-up: fade-up 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-fade-in: fade-in 0.3s ease-out both;
+  --animate-pop: pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  --animate-flame: flame 1.6s ease-in-out infinite;
+  --animate-float: float 5s ease-in-out infinite;
+  --animate-shimmer: shimmer 1.6s linear infinite;
+  --animate-shake: shake 0.4s ease-in-out;
+  --animate-slide-left: slide-left 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pop {
+  0% { opacity: 0; transform: scale(0.85); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes flame {
+  0%, 100% { transform: scale(1) rotate(-2deg); filter: drop-shadow(0 0 4px rgba(233, 154, 12, 0.5)); }
+  50% { transform: scale(1.1) rotate(3deg); filter: drop-shadow(0 0 9px rgba(233, 100, 12, 0.7)); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to { background-position: 200% 0; }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+@keyframes slide-left {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+@keyframes confetti-fall {
+  0% { transform: translate3d(0, -10vh, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate3d(var(--dx, 0px), 110vh, 0) rotate(var(--rot, 720deg)); opacity: 0.9; }
+}
+@keyframes xp-float {
+  0% { opacity: 0; transform: translateY(14px) scale(0.8); }
+  15% { opacity: 1; transform: translateY(0) scale(1.05); }
+  80% { opacity: 1; transform: translateY(-8px) scale(1); }
+  100% { opacity: 0; transform: translateY(-22px) scale(0.98); }
+}
+@keyframes ring-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(233, 154, 12, 0.45); }
+  50% { box-shadow: 0 0 0 10px rgba(233, 154, 12, 0); }
 }
 
 :root {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: #0F172A;
-  background-color: #F8FAFC;
+  color: #1F1C18;
+  background-color: #FAF7F1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -97,10 +225,23 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #F8FAFC;
-  color: #0F172A;
+  background-color: #FAF7F1;
+  background-image:
+    radial-gradient(900px 480px at 100% -10%, rgba(232, 82, 124, 0.06), transparent 60%),
+    radial-gradient(800px 460px at -5% 0%, rgba(62, 105, 179, 0.07), transparent 60%);
+  background-attachment: fixed;
+  color: #1F1C18;
   font-size: 16px;
   line-height: 26px;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgba(62, 105, 179, 0.22);
 }
 
 /* Japanese Typography Utilities */
@@ -108,6 +249,10 @@ body {
 .jp-font {
   font-family: 'Noto Sans JP', 'Inter', system-ui, sans-serif;
   font-feature-settings: "palt" 1;
+}
+
+.font-mincho {
+  font-family: var(--font-mincho);
 }
 
 /* Furigana Ruby Typography & Interactive Kanji */
@@ -126,7 +271,7 @@ ruby.ruby-interactive {
 rt {
   font-size: 0.65em;
   font-weight: 600;
-  color: #4f46e5;
+  color: #2F5496;
   user-select: none;
   line-height: 1.1;
 }
@@ -156,30 +301,30 @@ rt {
 
 /* Base focus styles for accessibility */
 :focus-visible {
-  outline: 2px solid #2684D9;
+  outline: 2px solid #3E69B3;
   outline-offset: 2px;
 }
 
 /* Custom Scrollbar for smooth edtech feel */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: #D3CABA;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: #9A8F7E;
 }
 
-/* Custom Horizontal Scrollbar (Pill-shaped thumb like the image) */
+/* Custom Horizontal Scrollbar (Pill-shaped thumb) */
 .custom-scrollbar-x {
   scrollbar-width: thin;
-  scrollbar-color: #94A3B8 transparent;
+  scrollbar-color: #9A8F7E transparent;
 }
 .custom-scrollbar-x::-webkit-scrollbar {
   height: 6px;
@@ -188,11 +333,119 @@ rt {
   background: transparent;
 }
 .custom-scrollbar-x::-webkit-scrollbar-thumb {
-  background-color: #94A3B8;
+  background-color: #9A8F7E;
   border-radius: 9999px;
   transition: background-color 0.2s ease;
 }
 .custom-scrollbar-x::-webkit-scrollbar-thumb:hover {
-  background-color: #64748B;
+  background-color: #766D5E;
 }
 
+/* ──────────────────────────────────────────────────────────────
+ *  Component classes
+ * ────────────────────────────────────────────────────────────── */
+@layer components {
+  /* Legacy shim: pages used `animate-in fade-in slide-in-from-*` (tailwindcss-animate),
+     which is not installed. Provide a graceful equivalent. */
+  .animate-in {
+    animation: fade-up 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  /* Warm card surface */
+  .surface {
+    background: #fff;
+    border: 1px solid #E7E0D2;
+    border-radius: 22px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .surface-hover {
+    transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease, border-color 0.2s ease;
+  }
+  .surface-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-elevated);
+    border-color: #BDD0EC;
+  }
+
+  /* Seigaiha (青海波) wave pattern — used as a faint texture on hero panels */
+  .pattern-seigaiha {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='28' viewBox='0 0 56 28'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='1.2'%3E%3Ccircle cx='14' cy='28' r='14'/%3E%3Ccircle cx='14' cy='28' r='9'/%3E%3Ccircle cx='14' cy='28' r='4'/%3E%3Ccircle cx='42' cy='28' r='14'/%3E%3Ccircle cx='42' cy='28' r='9'/%3E%3Ccircle cx='42' cy='28' r='4'/%3E%3Ccircle cx='28' cy='14' r='14'/%3E%3Ccircle cx='28' cy='14' r='9'/%3E%3Ccircle cx='28' cy='14' r='4'/%3E%3Ccircle cx='0' cy='14' r='14'/%3E%3Ccircle cx='0' cy='14' r='9'/%3E%3Ccircle cx='0' cy='14' r='4'/%3E%3Ccircle cx='56' cy='14' r='14'/%3E%3Ccircle cx='56' cy='14' r='9'/%3E%3Ccircle cx='56' cy='14' r='4'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 56px 28px;
+  }
+
+  .hero-ink {
+    background:
+      radial-gradient(520px 260px at 90% 0%, rgba(232, 82, 124, 0.28), transparent 65%),
+      radial-gradient(480px 300px at 0% 100%, rgba(95, 138, 203, 0.28), transparent 60%),
+      linear-gradient(135deg, #1B2946 0%, #213960 55%, #2B2850 100%);
+    color: #fff;
+  }
+
+  .text-gradient-sakura {
+    background-image: linear-gradient(90deg, #FFA3B7, #FFD7A8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Tactile "press" buttons (3D bottom edge) */
+  .btn-press {
+    position: relative;
+    transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.15s ease, filter 0.15s ease;
+    box-shadow: 0 4px 0 0 var(--press-edge, #1D3050);
+  }
+  .btn-press:hover:not(:disabled) {
+    filter: brightness(1.06);
+  }
+  .btn-press:active:not(:disabled) {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 0 var(--press-edge, #1D3050);
+  }
+
+  /* Skeleton shimmer */
+  .skeleton-shimmer {
+    background: linear-gradient(90deg, #F3EEE5 25%, #FAF7F1 50%, #F3EEE5 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.6s linear infinite;
+  }
+
+  .stagger > * {
+    animation: fade-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .stagger > *:nth-child(1) { animation-delay: 0ms; }
+  .stagger > *:nth-child(2) { animation-delay: 50ms; }
+  .stagger > *:nth-child(3) { animation-delay: 100ms; }
+  .stagger > *:nth-child(4) { animation-delay: 150ms; }
+  .stagger > *:nth-child(5) { animation-delay: 200ms; }
+  .stagger > *:nth-child(6) { animation-delay: 250ms; }
+  .stagger > *:nth-child(7) { animation-delay: 300ms; }
+  .stagger > *:nth-child(8) { animation-delay: 350ms; }
+  .stagger > *:nth-child(n+9) { animation-delay: 400ms; }
+}
+
+/* Celebration overlay pieces */
+.confetti-piece {
+  position: absolute;
+  top: 0;
+  will-change: transform;
+  animation: confetti-fall var(--dur, 2.8s) cubic-bezier(0.25, 0.6, 0.35, 1) var(--delay, 0s) forwards;
+}
+
+.xp-pop {
+  animation: xp-float 1.7s ease-out both;
+}
+
+.goal-ring-glow {
+  animation: ring-glow 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .confetti-piece { display: none; }
+}

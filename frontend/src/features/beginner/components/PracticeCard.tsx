@@ -68,7 +68,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
 
   if (!activeQuestions || activeQuestions.length === 0) {
     return (
-      <div className="rounded-[14px] bg-white border border-[#E2E8F0] p-8 text-center text-[#64748B]">
+      <div className="rounded-[14px] bg-white border border-[#E7E0D2] p-8 text-center text-[#766D5E]">
         Chưa có câu hỏi luyện tập cho danh mục này.
       </div>
     );
@@ -152,7 +152,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
     return (
       <div
         className={cn(
-          "rounded-[16px] bg-white border border-[#CBD5E1] p-6 sm:p-8 space-y-6 shadow-sm max-w-2xl mx-auto",
+          "rounded-[16px] bg-white border border-[#D3CABA] p-6 sm:p-8 space-y-6 shadow-sm max-w-2xl mx-auto",
           className,
         )}
       >
@@ -169,18 +169,18 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
             {isTimeout ? "Hết thời gian 60s" : "Hoàn thành phiên luyện tập"}
           </Badge>
 
-          <h3 className="text-xl sm:text-2xl font-bold text-[#0F172A]">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#1F1C18]">
             Kết Quả Phiên: {categoryTitle}
           </h3>
 
-          <div className="text-3xl font-extrabold text-[#12558F] font-mono">
+          <div className="text-3xl font-extrabold text-[#213960] font-mono">
             {score.correct} / {total}{" "}
-            <span className="text-base font-normal text-[#64748B]">
+            <span className="text-base font-normal text-[#766D5E]">
               ({percentage}%)
             </span>
           </div>
 
-          <p className="text-xs sm:text-sm text-[#475569]">
+          <p className="text-xs sm:text-sm text-[#5A5246]">
             {percentage === 100
               ? "Xuất sắc! Bạn đã trả lời đúng toàn bộ câu hỏi trong phiên này."
               : percentage >= 70
@@ -191,7 +191,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
 
         {/* List of Wrong Questions if any */}
         {wrongRecords.length > 0 && (
-          <div className="space-y-3 pt-3 border-t border-[#F1F5F9]">
+          <div className="space-y-3 pt-3 border-t border-[#F3EEE5]">
             <h4 className="text-sm font-bold text-[#B91C1C] flex items-center gap-1.5">
               <span>⚠️</span>
               <span>Các câu cần xem lại ({wrongRecords.length} câu):</span>
@@ -203,7 +203,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
                   key={idx}
                   className="p-3.5 rounded-[12px] bg-[#FEF2F2]/60 border border-[#FCA5A5]/60 text-xs space-y-1.5"
                 >
-                  <p className="font-semibold text-[#0F172A] leading-relaxed">
+                  <p className="font-semibold text-[#1F1C18] leading-relaxed">
                     {idx + 1}. {item.question.prompt}
                   </p>
 
@@ -216,7 +216,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
                     </span>
                   </div>
 
-                  <p className="text-[#475569] bg-white p-2 rounded-[6px] border border-[#E2E8F0] leading-relaxed">
+                  <p className="text-[#5A5246] bg-white p-2 rounded-[6px] border border-[#E7E0D2] leading-relaxed">
                     💡 {item.question.explanationVi}
                   </p>
                 </div>
@@ -226,7 +226,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
         )}
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 pt-4 border-t border-[#F1F5F9]">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 pt-4 border-t border-[#F3EEE5]">
           <Button variant="primary" size="default" fullWidth onClick={handleRestartFull}>
             🔄 Luyện tập lại từ đầu
           </Button>
@@ -259,16 +259,16 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
   return (
     <div
       className={cn(
-        "rounded-[16px] bg-white border border-[#CBD5E1] p-5 sm:p-7 space-y-6 shadow-sm max-w-2xl mx-auto",
+        "rounded-[16px] bg-white border border-[#D3CABA] p-5 sm:p-7 space-y-6 shadow-sm max-w-2xl mx-auto",
         className,
       )}
     >
       {/* Session Header */}
-      <div className="flex items-center justify-between flex-wrap gap-2 text-xs pb-3 border-b border-[#F1F5F9]">
+      <div className="flex items-center justify-between flex-wrap gap-2 text-xs pb-3 border-b border-[#F3EEE5]">
         <div className="flex items-center gap-2">
-          <span className="font-bold text-[#12558F]">{categoryTitle}</span>
-          <span className="text-[#CBD5E1]">•</span>
-          <span className="font-semibold px-2 py-0.5 rounded-full bg-[#F1F5F9] text-[#475569]">
+          <span className="font-bold text-[#213960]">{categoryTitle}</span>
+          <span className="text-[#D3CABA]">•</span>
+          <span className="font-semibold px-2 py-0.5 rounded-full bg-[#F3EEE5] text-[#5A5246]">
             Câu {currentIndex + 1} / {activeQuestions.length}
           </span>
         </div>
@@ -291,7 +291,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
             <button
               type="button"
               onClick={() => handleToggleTimer("60s")}
-              className="text-[11px] text-[#64748B] hover:text-[#2684D9] cursor-pointer flex items-center gap-1 border border-[#E2E8F0] px-2 py-0.5 rounded-full hover:bg-[#F8FAFC]"
+              className="text-[11px] text-[#766D5E] hover:text-[#2F5496] cursor-pointer flex items-center gap-1 border border-[#E7E0D2] px-2 py-0.5 rounded-full hover:bg-[#FAF7F1]"
               title="Bật thử thách giới hạn 60 giây"
             >
               ⏱️ Bật hẹn giờ 60s
@@ -300,7 +300,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
 
           <div className="flex items-center gap-1.5 font-medium">
             <span className="text-[#15803D]">✓ {score.correct}</span>
-            <span className="text-[#CBD5E1]">/</span>
+            <span className="text-[#D3CABA]">/</span>
             <span className="text-[#B91C1C]">✗ {score.incorrect}</span>
           </div>
         </div>
@@ -308,14 +308,14 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
 
       {/* Question Prompt */}
       <div className="text-center space-y-3 py-2">
-        <p className="text-base sm:text-lg font-semibold text-[#0F172A] leading-relaxed">
+        <p className="text-base sm:text-lg font-semibold text-[#1F1C18] leading-relaxed">
           {currentQuestion.prompt}
         </p>
 
         {currentQuestion.promptKana && (
           <div className="flex items-center justify-center gap-3">
             <span
-              className="text-4xl sm:text-5xl font-bold font-japanese text-[#12558F]"
+              className="text-4xl sm:text-5xl font-bold font-japanese text-[#213960]"
               lang="ja"
             >
               {currentQuestion.promptKana}
@@ -331,13 +331,13 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
         )}
 
         {currentQuestion.promptRomaji && (
-          <div className="text-xl sm:text-2xl font-bold text-[#12558F] tracking-wide">
+          <div className="text-xl sm:text-2xl font-bold text-[#213960] tracking-wide">
             {currentQuestion.promptRomaji}
           </div>
         )}
 
         {currentQuestion.promptHint && (
-          <p className="text-xs text-[#64748B]">
+          <p className="text-xs text-[#766D5E]">
             💡 Gợi ý: {currentQuestion.promptHint}
           </p>
         )}
@@ -350,7 +350,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
           const letter = String.fromCharCode(65 + idx);
 
           let optionStyle =
-            "bg-white border-[#E2E8F0] text-[#334155] hover:border-[#2684D9] hover:bg-[#F0F7FF]/50";
+            "bg-white border-[#E7E0D2] text-[#433D34] hover:border-[#2F5496] hover:bg-[#EEF3FA]/50";
 
           if (isAnswered) {
             if (option.isCorrect) {
@@ -360,7 +360,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
               optionStyle =
                 "bg-[#FEF2F2] border-[#EF4444] text-[#B91C1C]";
             } else {
-              optionStyle = "bg-[#F8FAFC] border-[#E2E8F0] text-[#94A3B8] opacity-60";
+              optionStyle = "bg-[#FAF7F1] border-[#E7E0D2] text-[#9A8F7E] opacity-60";
             }
           }
 
@@ -371,7 +371,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
               disabled={isAnswered}
               onClick={() => handleSelectOption(option.id)}
               className={cn(
-                "p-3.5 rounded-[12px] border text-left flex items-start gap-3 transition-all focus-visible:outline-2 focus-visible:outline-[#2684D9] cursor-pointer disabled:cursor-default",
+                "p-3.5 rounded-[12px] border text-left flex items-start gap-3 transition-all focus-visible:outline-2 focus-visible:outline-[#2F5496] cursor-pointer disabled:cursor-default",
                 optionStyle,
               )}
               role="radio"
@@ -384,7 +384,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
                     ? "bg-[#22C55E] text-white"
                     : isAnswered && isSelected && !option.isCorrect
                       ? "bg-[#EF4444] text-white"
-                      : "bg-[#F1F5F9] text-[#64748B]",
+                      : "bg-[#F3EEE5] text-[#766D5E]",
                 )}
               >
                 {letter}
@@ -394,7 +394,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
                   {option.label}
                 </span>
                 {option.sublabel && (
-                  <span className="text-xs text-[#64748B] block mt-0.5">
+                  <span className="text-xs text-[#766D5E] block mt-0.5">
                     {option.sublabel}
                   </span>
                 )}
@@ -406,9 +406,9 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
 
       {/* Explanation and Next Button */}
       {isAnswered && (
-        <div className="pt-4 border-t border-[#F1F5F9] space-y-4 animate-in fade-in duration-200">
-          <div className="rounded-[10px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 text-xs sm:text-sm text-[#334155] leading-relaxed">
-            <span className="font-bold text-[#12558F] block mb-1">
+        <div className="pt-4 border-t border-[#F3EEE5] space-y-4 animate-in fade-in duration-200">
+          <div className="rounded-[10px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 text-xs sm:text-sm text-[#433D34] leading-relaxed">
+            <span className="font-bold text-[#213960] block mb-1">
               💡 Giải thích chi tiết:
             </span>
             {currentQuestion.explanationVi}

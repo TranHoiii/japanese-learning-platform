@@ -14,7 +14,7 @@ export const SoundChangeTable: React.FC<SoundChangeTableProps> = ({
   return (
     <div
       className={cn(
-        "rounded-[16px] bg-white border border-[#CBD5E1] p-5 sm:p-6 space-y-4 shadow-xs",
+        "rounded-[16px] bg-white border border-[#D3CABA] p-5 sm:p-6 space-y-4 shadow-xs",
         className,
       )}
     >
@@ -23,35 +23,35 @@ export const SoundChangeTable: React.FC<SoundChangeTableProps> = ({
           <span className="text-2xl" aria-hidden="true">
             ⚡
           </span>
-          <h3 className="text-base sm:text-lg font-bold text-[#0F172A]">
+          <h3 className="text-base sm:text-lg font-bold text-[#1F1C18]">
             Bảng Tổng Hợp Biến Âm Lượng Từ Kinh Điển (1, 3, 6, 8, 10)
           </h3>
         </div>
-        <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#5A5246] leading-relaxed">
           Số 1, 6, 8, 10 rất hay biến thành <strong>âm ngắt っ</strong> kết hợp âm bán đục (p); Số 3 hay kéo theo <strong>âm đục (b, g, z)</strong>. Đây là bảng tra cứu phản xạ nhanh giúp bạn không bao giờ phát âm nhầm.
         </p>
       </div>
 
-      <div className="overflow-x-auto rounded-[12px] border border-[#E2E8F0] shadow-2xs">
+      <div className="overflow-x-auto rounded-[12px] border border-[#E7E0D2] shadow-2xs">
         <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[640px]">
           <thead>
-            <tr className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#334155]">
+            <tr className="bg-[#FAF7F1] border-b border-[#E7E0D2] text-[#433D34]">
               <th className="p-3 font-semibold text-center w-16">Số</th>
-              <th className="p-3 font-semibold text-[#104673]">〜本 (hon)</th>
-              <th className="p-3 font-semibold text-[#104673]">〜匹 (hiki)</th>
-              <th className="p-3 font-semibold text-[#104673]">〜分 (fun)</th>
-              <th className="p-3 font-semibold text-[#104673]">〜個 (ko)</th>
-              <th className="p-3 font-semibold text-[#104673]">〜冊 (satsu)</th>
-              <th className="p-3 font-semibold text-[#104673]">〜階 (kai)</th>
+              <th className="p-3 font-semibold text-[#213960]">〜本 (hon)</th>
+              <th className="p-3 font-semibold text-[#213960]">〜匹 (hiki)</th>
+              <th className="p-3 font-semibold text-[#213960]">〜分 (fun)</th>
+              <th className="p-3 font-semibold text-[#213960]">〜個 (ko)</th>
+              <th className="p-3 font-semibold text-[#213960]">〜冊 (satsu)</th>
+              <th className="p-3 font-semibold text-[#213960]">〜階 (kai)</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#F1F5F9] text-[#334155]">
+          <tbody className="divide-y divide-[#F3EEE5] text-[#433D34]">
             {rows.map((row) => (
               <tr
                 key={row.number}
-                className="hover:bg-[#F8FAFC]/80 transition-colors font-japanese"
+                className="hover:bg-[#FAF7F1]/80 transition-colors font-japanese"
               >
-                <td className="p-3 font-bold text-[#0F172A] text-center font-mono bg-[#F8FAFC]/40">
+                <td className="p-3 font-bold text-[#1F1C18] text-center font-mono bg-[#FAF7F1]/40">
                   {row.label}
                 </td>
                 <td className="p-3 font-medium">

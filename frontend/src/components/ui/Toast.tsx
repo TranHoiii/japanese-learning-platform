@@ -106,39 +106,39 @@ interface ToastItemProps {
 const ToastItem: React.FC<ToastItemProps> = ({ toast, onDismiss }) => {
   const icons: Record<ToastType, React.ReactNode> = {
     success: (
-      <svg className="w-5 h-5 text-[#22C55E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg className="w-5 h-5 text-[#6C9644]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
       </svg>
     ),
     info: (
-      <svg className="w-5 h-5 text-[#3B82F6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg className="w-5 h-5 text-[#3E69B3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
     warning: (
-      <svg className="w-5 h-5 text-[#F59E0B]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg className="w-5 h-5 text-[#E99A0C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
       </svg>
     ),
     error: (
-      <svg className="w-5 h-5 text-[#EF4444]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg className="w-5 h-5 text-[#DC4A4A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
       </svg>
     ),
   };
 
   const bgStyles: Record<ToastType, string> = {
-    success: "bg-white border-[#22C55E]/40 text-[#0F172A]",
-    info: "bg-white border-[#3B82F6]/40 text-[#0F172A]",
-    warning: "bg-white border-[#F59E0B]/40 text-[#0F172A]",
-    error: "bg-white border-[#EF4444]/40 text-[#0F172A]",
+    success: "bg-white border-[#6C9644]/40 text-[#1F1C18] border-l-4 border-l-[#6C9644]",
+    info: "bg-white border-[#3E69B3]/40 text-[#1F1C18] border-l-4 border-l-[#3E69B3]",
+    warning: "bg-white border-[#E99A0C]/40 text-[#1F1C18] border-l-4 border-l-[#E99A0C]",
+    error: "bg-white border-[#DC4A4A]/40 text-[#1F1C18] border-l-4 border-l-[#DC4A4A]",
   };
 
   return (
     <div
       role={toast.type === "error" ? "alert" : "status"}
       className={cn(
-        "pointer-events-auto flex items-center justify-between p-3.5 sm:p-4 rounded-[12px] border shadow-[0_4px_12px_rgba(15,23,42,0.08)] transition-all animate-in fade-in slide-in-from-bottom-2",
+        "pointer-events-auto flex items-center justify-between p-3.5 sm:p-4 rounded-[14px] border shadow-elevated transition-all animate-fade-up",
         bgStyles[toast.type],
       )}
     >
@@ -151,7 +151,7 @@ const ToastItem: React.FC<ToastItemProps> = ({ toast, onDismiss }) => {
         type="button"
         onClick={onDismiss}
         aria-label="Đóng thông báo"
-        className="p-1 text-[#94A3B8] hover:text-[#0F172A] rounded-md transition-colors cursor-pointer shrink-0"
+        className="p-1 text-[#9A8F7E] hover:text-[#1F1C18] rounded-md transition-colors cursor-pointer shrink-0"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

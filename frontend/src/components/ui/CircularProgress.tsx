@@ -10,6 +10,8 @@ export interface CircularProgressProps {
   showText?: boolean;
   textClassName?: string;
   className?: string;
+  /** Replaces the default percentage text. */
+  children?: React.ReactNode;
 }
 
 export const CircularProgress: React.FC<CircularProgressProps> = ({
@@ -21,6 +23,7 @@ export const CircularProgress: React.FC<CircularProgressProps> = ({
   showText = true,
   textClassName,
   className,
+  children,
 }) => {
   const percentage = Math.min(Math.max(0, Math.round(value)), 100);
   const radius = (size - strokeWidth) / 2;
@@ -60,15 +63,19 @@ export const CircularProgress: React.FC<CircularProgressProps> = ({
           className={cn("transition-all duration-500 ease-out", color)}
         />
       </svg>
-      {showText && (
-        <span
-          className={cn(
-            "absolute text-xs font-bold text-slate-800 tabular-nums",
-            textClassName
-          )}
-        >
-          {percentage}
-        </span>
+      {children ? (
+        <span className="absolute inset-0 flex items-center justify-center">{children}</span>
+      ) : (
+        showText && (
+          <span
+            className={cn(
+              "absolute text-xs font-bold text-slate-800 tabular-nums",
+              textClassName
+            )}
+          >
+            {percentage}
+          </span>
+        )
       )}
     </div>
   );

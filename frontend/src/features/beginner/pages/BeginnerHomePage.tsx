@@ -27,54 +27,54 @@ export const BeginnerHomePage: React.FC = () => {
       description="Nền tảng căn bản vững chắc dành riêng cho người Việt bắt đầu học tiếng Nhật. Tra cứu bảng chữ cái, 10 quy tắc ngữ âm bản xứ, hệ thống số đếm và phòng luyện tập không áp lực thành tích."
     >
       {/* 1. Hero & Philosophy Banner */}
-      <div className="rounded-[16px] bg-gradient-to-r from-[#F0F7FF] via-[#E6F2FF] to-[#DCEEFF] border border-[#BBDDFF] p-6 sm:p-8 space-y-6 shadow-xs">
+      <div className="rounded-[16px] bg-gradient-to-r from-[#EEF3FA] via-[#E6F2FF] to-[#DCE7F5] border border-[#BDD0EC] p-6 sm:p-8 space-y-6 shadow-xs">
         <div className="space-y-3 max-w-3xl">
           <div className="flex items-center gap-2 flex-wrap">
             <Badge variant="primary" size="md">
               Mô hình Tra cứu & Luyện tập (Resource & Practice)
             </Badge>
-            <span className="text-xs text-[#12558F] font-semibold">
+            <span className="text-xs text-[#213960] font-semibold">
               Tra cứu → Học → Thực hành → Kiểm tra → Học lại
             </span>
           </div>
 
-          <h2 className="text-xl sm:text-2xl font-bold text-[#0F172A] leading-snug">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#1F1C18] leading-snug">
             Tự do học tập theo nhịp độ riêng, không áp lực điểm số
           </h2>
 
-          <p className="text-sm sm:text-base text-[#104673] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#213960] leading-relaxed">
             Phân hệ Sơ cấp được thiết kế như một thư viện số mở. Bạn có thể tra cứu ngay ký tự chưa nhớ, kiểm tra phát âm khi cần và thực hành phản xạ bất kỳ lúc nào. Toàn bộ bài tập chỉ lưu tạm trong phiên học để bạn thoả sức thử sai mà không lo ảnh hưởng đến tiến độ cá nhân.
           </p>
         </div>
 
         {/* 3 Pillars of Beginner Module */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
-          <div className="rounded-[12px] bg-white/80 backdrop-blur-xs border border-[#BBDDFF]/70 p-4 space-y-1.5 shadow-2xs">
-            <div className="flex items-center gap-2 text-sm font-bold text-[#12558F]">
+          <div className="rounded-[12px] bg-white/80 backdrop-blur-xs border border-[#BDD0EC]/70 p-4 space-y-1.5 shadow-2xs">
+            <div className="flex items-center gap-2 text-sm font-bold text-[#213960]">
               <span aria-hidden="true">📖</span>
               <span>Tra cứu tức thì</span>
             </div>
-            <p className="text-xs text-[#475569] leading-relaxed">
+            <p className="text-xs text-[#5A5246] leading-relaxed">
               Bảng chữ cái, biến âm và quy tắc ngữ âm luôn mở sẵn như một cuốn sổ tay điện tử.
             </p>
           </div>
 
-          <div className="rounded-[12px] bg-white/80 backdrop-blur-xs border border-[#BBDDFF]/70 p-4 space-y-1.5 shadow-2xs">
-            <div className="flex items-center gap-2 text-sm font-bold text-[#12558F]">
+          <div className="rounded-[12px] bg-white/80 backdrop-blur-xs border border-[#BDD0EC]/70 p-4 space-y-1.5 shadow-2xs">
+            <div className="flex items-center gap-2 text-sm font-bold text-[#213960]">
               <span aria-hidden="true">🗣️</span>
               <span>10 chuyên đề phát âm</span>
             </div>
-            <p className="text-xs text-[#475569] leading-relaxed">
+            <p className="text-xs text-[#5A5246] leading-relaxed">
               Phân tích chuyên sâu khẩu hình, cao độ (Pitch Accent) và sửa lỗi kinh điển cho người Việt.
             </p>
           </div>
 
-          <div className="rounded-[12px] bg-white/80 backdrop-blur-xs border border-[#BBDDFF]/70 p-4 space-y-1.5 shadow-2xs">
-            <div className="flex items-center gap-2 text-sm font-bold text-[#12558F]">
+          <div className="rounded-[12px] bg-white/80 backdrop-blur-xs border border-[#BDD0EC]/70 p-4 space-y-1.5 shadow-2xs">
+            <div className="flex items-center gap-2 text-sm font-bold text-[#213960]">
               <span aria-hidden="true">🎯</span>
               <span>Thực hành không áp lực</span>
             </div>
-            <p className="text-xs text-[#475569] leading-relaxed">
+            <p className="text-xs text-[#5A5246] leading-relaxed">
               Trắc nghiệm phản xạ và flashcard nhanh trong phiên học, không tính điểm XP hay phạt streak.
             </p>
           </div>
@@ -84,31 +84,31 @@ export const BeginnerHomePage: React.FC = () => {
         <div className="flex items-center gap-2 overflow-x-auto pt-2 pb-2.5 text-xs custom-scrollbar-x">
           <a
             href="#hiragana-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#12558F] font-semibold border border-[#BBDDFF] hover:bg-[#F0F7FF] transition-colors shrink-0"
+            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
           >
             あ Bảng Hiragana
           </a>
           <a
             href="#katakana-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#12558F] font-semibold border border-[#BBDDFF] hover:bg-[#F0F7FF] transition-colors shrink-0"
+            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
           >
             ア Bảng Katakana
           </a>
           <a
             href="#pronunciation-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#12558F] font-semibold border border-[#BBDDFF] hover:bg-[#F0F7FF] transition-colors shrink-0"
+            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
           >
             🗣️ Quy tắc phát âm
           </a>
           <a
             href="#numbers-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#12558F] font-semibold border border-[#BBDDFF] hover:bg-[#F0F7FF] transition-colors shrink-0"
+            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
           >
             🔢 Số đếm & Lượng từ
           </a>
           <a
             href="#practice-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#12558F] font-semibold border border-[#BBDDFF] hover:bg-[#F0F7FF] transition-colors shrink-0"
+            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
           >
             🎯 Phòng Luyện tập
           </a>
@@ -129,28 +129,28 @@ export const BeginnerHomePage: React.FC = () => {
       >
         <div className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#12558F]">Âm cơ bản (Seion)</span>
-              <p className="text-xl font-bold text-[#0F172A]">46 chữ cái</p>
-              <p className="text-xs text-[#64748B]">Hàng A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, N</p>
+            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
+              <span className="text-xs font-bold text-[#213960]">Âm cơ bản (Seion)</span>
+              <p className="text-xl font-bold text-[#1F1C18]">46 chữ cái</p>
+              <p className="text-xs text-[#766D5E]">Hàng A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, N</p>
             </div>
-            <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#12558F]">Biến âm (Dakuten)</span>
-              <p className="text-xl font-bold text-[#0F172A]">25 âm đục & bán đục</p>
-              <p className="text-xs text-[#64748B]">Ga, Za, Da, Ba (ten-ten ゛) & Pa (maru ゜)</p>
+            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
+              <span className="text-xs font-bold text-[#213960]">Biến âm (Dakuten)</span>
+              <p className="text-xl font-bold text-[#1F1C18]">25 âm đục & bán đục</p>
+              <p className="text-xs text-[#766D5E]">Ga, Za, Da, Ba (ten-ten ゛) & Pa (maru ゜)</p>
             </div>
-            <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#12558F]">Ảo âm (Yōon)</span>
-              <p className="text-xl font-bold text-[#0F172A]">33 âm ghép</p>
-              <p className="text-xs text-[#64748B]">Ghép với ゃ (ya), ゅ (yu), ょ (yo) nhỏ</p>
+            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
+              <span className="text-xs font-bold text-[#213960]">Ảo âm (Yōon)</span>
+              <p className="text-xl font-bold text-[#1F1C18]">33 âm ghép</p>
+              <p className="text-xs text-[#766D5E]">Ghép với ゃ (ya), ゅ (yu), ょ (yo) nhỏ</p>
             </div>
           </div>
 
           {/* Quick Preview of Row A */}
-          <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 space-y-2">
-            <div className="flex items-center justify-between text-xs font-semibold text-[#475569]">
+          <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-2">
+            <div className="flex items-center justify-between text-xs font-semibold text-[#5A5246]">
               <span>Mẫu hàng A cơ bản (a - i - u - e - o):</span>
-              <Link to="/beginner/hiragana" className="text-[#2684D9] hover:underline">
+              <Link to="/beginner/hiragana" className="text-[#2F5496] hover:underline">
                 Tra cứu cả bảng &rarr;
               </Link>
             </div>
@@ -158,12 +158,12 @@ export const BeginnerHomePage: React.FC = () => {
               {hiraganaSample.map((char) => (
                 <div
                   key={char.id}
-                  className="rounded-[10px] bg-white border border-[#CBD5E1]/60 p-2 sm:p-3 text-center"
+                  className="rounded-[10px] bg-white border border-[#D3CABA]/60 p-2 sm:p-3 text-center"
                 >
-                  <span className="text-2xl sm:text-3xl font-bold font-japanese text-[#0F172A] block">
+                  <span className="text-2xl sm:text-3xl font-bold font-japanese text-[#1F1C18] block">
                     {char.character}
                   </span>
-                  <span className="text-xs font-semibold text-[#12558F] block mt-0.5">
+                  <span className="text-xs font-semibold text-[#213960] block mt-0.5">
                     {char.romaji}
                   </span>
                 </div>
@@ -187,28 +187,28 @@ export const BeginnerHomePage: React.FC = () => {
       >
         <div className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#12558F]">Âm cơ bản (Seion)</span>
-              <p className="text-xl font-bold text-[#0F172A]">46 chữ cái nét thẳng</p>
-              <p className="text-xs text-[#64748B]">Góc cạnh dứt khoát, phân biệt Shi/Tsu, So/N</p>
+            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
+              <span className="text-xs font-bold text-[#213960]">Âm cơ bản (Seion)</span>
+              <p className="text-xl font-bold text-[#1F1C18]">46 chữ cái nét thẳng</p>
+              <p className="text-xs text-[#766D5E]">Góc cạnh dứt khoát, phân biệt Shi/Tsu, So/N</p>
             </div>
-            <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#12558F]">Biến âm & Âm ghép</span>
-              <p className="text-xl font-bold text-[#0F172A]">25 Dakuten & 33 Yōon</p>
-              <p className="text-xs text-[#64748B]">Trường âm Katakana luôn viết bằng dấu gạch ー</p>
+            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
+              <span className="text-xs font-bold text-[#213960]">Biến âm & Âm ghép</span>
+              <p className="text-xl font-bold text-[#1F1C18]">25 Dakuten & 33 Yōon</p>
+              <p className="text-xs text-[#766D5E]">Trường âm Katakana luôn viết bằng dấu gạch ー</p>
             </div>
-            <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#12558F]">Âm mở rộng (Tokushuon)</span>
-              <p className="text-xl font-bold text-[#0F172A]">{KATAKANA_OVERVIEW.totalExtended} âm ngoại lai</p>
-              <p className="text-xs text-[#64748B]">Ti, Di, Fa, Fi, We, V... mô phỏng từ tiếng Anh</p>
+            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
+              <span className="text-xs font-bold text-[#213960]">Âm mở rộng (Tokushuon)</span>
+              <p className="text-xl font-bold text-[#1F1C18]">{KATAKANA_OVERVIEW.totalExtended} âm ngoại lai</p>
+              <p className="text-xs text-[#766D5E]">Ti, Di, Fa, Fi, We, V... mô phỏng từ tiếng Anh</p>
             </div>
           </div>
 
           {/* Quick Preview of Row A */}
-          <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 space-y-2">
-            <div className="flex items-center justify-between text-xs font-semibold text-[#475569]">
+          <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-2">
+            <div className="flex items-center justify-between text-xs font-semibold text-[#5A5246]">
               <span>Mẫu hàng A cơ bản (a - i - u - e - o):</span>
-              <Link to="/beginner/katakana" className="text-[#2684D9] hover:underline">
+              <Link to="/beginner/katakana" className="text-[#2F5496] hover:underline">
                 Tra cứu cả bảng &rarr;
               </Link>
             </div>
@@ -216,12 +216,12 @@ export const BeginnerHomePage: React.FC = () => {
               {katakanaSample.map((char) => (
                 <div
                   key={char.id}
-                  className="rounded-[10px] bg-white border border-[#CBD5E1]/60 p-2 sm:p-3 text-center"
+                  className="rounded-[10px] bg-white border border-[#D3CABA]/60 p-2 sm:p-3 text-center"
                 >
-                  <span className="text-2xl sm:text-3xl font-bold font-japanese text-[#0F172A] block">
+                  <span className="text-2xl sm:text-3xl font-bold font-japanese text-[#1F1C18] block">
                     {char.character}
                   </span>
-                  <span className="text-xs font-semibold text-[#12558F] block mt-0.5">
+                  <span className="text-xs font-semibold text-[#213960] block mt-0.5">
                     {char.romaji}
                   </span>
                 </div>
@@ -277,28 +277,28 @@ export const BeginnerHomePage: React.FC = () => {
           {NUMBER_CATEGORIES.map((category) => (
             <div
               key={category.id}
-              className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-4 flex flex-col justify-between space-y-3 hover:bg-white hover:border-[#CBD5E1] transition-all"
+              className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 flex flex-col justify-between space-y-3 hover:bg-white hover:border-[#D3CABA] transition-all"
             >
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between">
                   <span className="text-2xl" aria-hidden="true">
                     {category.icon}
                   </span>
-                  <span className="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-white text-[#12558F] border border-[#E2E8F0]">
+                  <span className="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-white text-[#213960] border border-[#E7E0D2]">
                     {category.unitExample}
                   </span>
                 </div>
-                <h3 className="text-sm font-bold text-[#0F172A]">
+                <h3 className="text-sm font-bold text-[#1F1C18]">
                   {category.titleVi}
                 </h3>
-                <p className="text-xs text-[#64748B] leading-relaxed">
+                <p className="text-xs text-[#766D5E] leading-relaxed">
                   {category.descriptionVi}
                 </p>
               </div>
 
               <Link
                 to="/beginner/numbers"
-                className="text-xs font-semibold text-[#12558F] hover:text-[#2684D9] flex items-center gap-1 pt-1 border-t border-[#E2E8F0]/60"
+                className="text-xs font-semibold text-[#213960] hover:text-[#2F5496] flex items-center gap-1 pt-1 border-t border-[#E7E0D2]/60"
               >
                 <span>Tra cứu quy tắc</span>
                 <span aria-hidden="true">&rarr;</span>
@@ -324,26 +324,26 @@ export const BeginnerHomePage: React.FC = () => {
           {PRACTICE_MODES.map((mode) => (
             <div
               key={mode.id}
-              className="rounded-[12px] bg-white border border-[#E2E8F0] p-4 flex flex-col justify-between space-y-3 shadow-2xs hover:border-[#2684D9] transition-all"
+              className="rounded-[12px] bg-white border border-[#E7E0D2] p-4 flex flex-col justify-between space-y-3 shadow-2xs hover:border-[#2F5496] transition-all"
             >
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between">
-                  <div className="w-9 h-9 rounded-[8px] bg-[#F0F7FF] text-[#12558F] flex items-center justify-center font-japanese font-bold text-base">
+                  <div className="w-9 h-9 rounded-[8px] bg-[#EEF3FA] text-[#213960] flex items-center justify-center font-japanese font-bold text-base">
                     {mode.icon}
                   </div>
                   <Badge variant="neutral" size="sm">
                     {mode.badgeVi}
                   </Badge>
                 </div>
-                <h3 className="text-sm font-bold text-[#0F172A]">
+                <h3 className="text-sm font-bold text-[#1F1C18]">
                   <Link
                     to={`/beginner/practice?mode=${mode.id}`}
-                    className="hover:text-[#2684D9] transition-colors"
+                    className="hover:text-[#2F5496] transition-colors"
                   >
                     {mode.titleVi}
                   </Link>
                 </h3>
-                <p className="text-xs text-[#64748B] leading-relaxed">
+                <p className="text-xs text-[#766D5E] leading-relaxed">
                   {mode.descriptionVi}
                 </p>
               </div>
@@ -357,7 +357,7 @@ export const BeginnerHomePage: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-4 p-4 rounded-[12px] bg-[#F0F7FF] border border-[#BBDDFF] text-xs text-[#12558F] flex items-start gap-2.5">
+        <div className="mt-4 p-4 rounded-[12px] bg-[#EEF3FA] border border-[#BDD0EC] text-xs text-[#213960] flex items-start gap-2.5">
           <span className="text-base shrink-0 mt-0.5" aria-hidden="true">
             💡
           </span>
@@ -368,11 +368,11 @@ export const BeginnerHomePage: React.FC = () => {
       </BeginnerSection>
 
       {/* Bottom Bridge CTA to Minnano Nihongo N5 */}
-      <div className="rounded-[16px] bg-white border border-[#E2E8F0] p-6 text-center space-y-3">
-        <p className="text-sm text-[#64748B]">
+      <div className="rounded-[16px] bg-white border border-[#E7E0D2] p-6 text-center space-y-3">
+        <p className="text-sm text-[#766D5E]">
           Đã nắm vững bảng chữ cái và quy tắc phát âm cơ bản?
         </p>
-        <h3 className="text-lg font-bold text-[#0F172A]">
+        <h3 className="text-lg font-bold text-[#1F1C18]">
           Sẵn sàng bắt đầu Bài 1 giáo trình Minnano Nihongo N5
         </h3>
         <div className="pt-1 flex items-center justify-center gap-3">

@@ -12,15 +12,15 @@ export const ArticleComparisonTable: React.FC<ArticleComparisonTableProps> = ({
 }) => {
   return (
     <div
-      className={`p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-[#F8FAFC] to-[#F1F5F9] border border-[#CBD5E1] space-y-4 ${className}`}
+      className={`p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-[#FAF7F1] to-[#F3EEE5] border border-[#D3CABA] space-y-4 ${className}`}
     >
       <div className="space-y-1">
-        <h3 className="text-base sm:text-lg font-bold text-[#0F172A] flex items-center gap-2">
+        <h3 className="text-base sm:text-lg font-bold text-[#1F1C18] flex items-center gap-2">
           <span>⚖️</span>
           <span>{comparison.title}</span>
         </h3>
         {comparison.description && (
-          <p className="text-xs sm:text-sm text-[#64748B] leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#766D5E] leading-relaxed">
             {comparison.description}
           </p>
         )}
@@ -31,16 +31,16 @@ export const ArticleComparisonTable: React.FC<ArticleComparisonTableProps> = ({
         {comparison.items.map((item, idx) => (
           <div
             key={idx}
-            className="p-4 sm:p-5 rounded-xl bg-white border border-[#E2E8F0] shadow-2xs space-y-3 flex flex-col justify-between"
+            className="p-4 sm:p-5 rounded-xl bg-white border border-[#E7E0D2] shadow-2xs space-y-3 flex flex-col justify-between"
           >
             <div className="space-y-2">
-              <div className="flex items-center justify-between pb-2 border-b border-[#F1F5F9]">
-                <h4 className="text-sm sm:text-base font-bold text-[#1E293B]">
+              <div className="flex items-center justify-between pb-2 border-b border-[#F3EEE5]">
+                <h4 className="text-sm sm:text-base font-bold text-[#2E2A25]">
                   {item.subject}
                 </h4>
               </div>
 
-              <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#5A5246] leading-relaxed">
                 {item.nuance}
               </p>
 
@@ -51,12 +51,12 @@ export const ArticleComparisonTable: React.FC<ArticleComparisonTableProps> = ({
               )}
             </div>
 
-            <div className="space-y-2 pt-2 border-t border-[#F8FAFC]">
+            <div className="space-y-2 pt-2 border-t border-[#FAF7F1]">
               <div className="space-y-0.5">
-                <p lang="ja" className="text-xs sm:text-sm font-bold text-[#0F172A] font-japanese">
+                <p lang="ja" className="text-xs sm:text-sm font-bold text-[#1F1C18] font-japanese">
                   {item.example}
                 </p>
-                <p className="text-xs text-[#64748B]">
+                <p className="text-xs text-[#766D5E]">
                   👉 {item.exampleTranslation}
                 </p>
               </div>

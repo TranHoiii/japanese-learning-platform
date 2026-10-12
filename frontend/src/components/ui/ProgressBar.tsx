@@ -7,7 +7,7 @@ export interface ProgressBarProps extends React.HTMLAttributes<HTMLDivElement> {
   label?: string;
   showValueText?: boolean;
   size?: "sm" | "default" | "lg";
-  variant?: "primary" | "success" | "warning" | "error";
+  variant?: "primary" | "success" | "warning" | "error" | "gold" | "sakura";
 }
 
 export const ProgressBar: React.FC<ProgressBarProps> = ({
@@ -29,24 +29,26 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   };
 
   const fillColors = {
-    primary: "bg-[#2684D9]",
-    success: "bg-[#22C55E]",
-    warning: "bg-[#F59E0B]",
-    error: "bg-[#EF4444]",
+    primary: "bg-gradient-to-r from-[#3E69B3] to-[#2F5496]",
+    success: "bg-gradient-to-r from-[#88AF5A] to-[#6C9644]",
+    warning: "bg-gradient-to-r from-[#F6B722] to-[#E99A0C]",
+    error: "bg-gradient-to-r from-[#F77A99] to-[#DC4A4A]",
+    gold: "bg-gradient-to-r from-[#FBCB4A] to-[#E99A0C]",
+    sakura: "bg-gradient-to-r from-[#FFA3B7] to-[#E8527C]",
   };
 
   return (
     <div className={cn("w-full space-y-1.5", className)} {...props}>
       {(label || showValueText) && (
-        <div className="flex justify-between items-center text-xs font-medium text-[#475569]">
+        <div className="flex justify-between items-center text-xs font-medium text-[#5A5246]">
           {label && <span>{label}</span>}
-          {showValueText && <span className="tabular-nums font-semibold text-[#0F172A]">{percentage}%</span>}
+          {showValueText && <span className="tabular-nums font-semibold text-[#1F1C18]">{percentage}%</span>}
         </div>
       )}
 
       <div
         className={cn(
-          "w-full bg-[#E2E8F0] rounded-full overflow-hidden transition-all",
+          "w-full bg-[#F3EEE5] rounded-full overflow-hidden transition-all",
           heightClasses[size],
         )}
         role="progressbar"
@@ -56,7 +58,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
         aria-label={label || `${percentage}% hoàn thành`}
       >
         <div
-          className={cn("h-full rounded-full transition-all duration-300 ease-out", fillColors[variant])}
+          className={cn("h-full rounded-full transition-all duration-700 ease-out", fillColors[variant])}
           style={{ width: `${percentage}%` }}
         />
       </div>

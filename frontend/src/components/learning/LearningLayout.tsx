@@ -37,20 +37,20 @@ export const LearningLayout: React.FC<LearningLayoutProps> = ({
 
       {/* Header section (Title, Description, Actions) */}
       {(title || description || actions || subtitle) && (
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-[#E2E8F0]/80">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-[#E7E0D2]/80">
           <div className="space-y-1">
             {subtitle && (
-              <span className="inline-block text-xs font-semibold text-[#12558F] uppercase tracking-wider">
+              <span className="inline-block text-xs font-semibold text-[#213960] uppercase tracking-wider">
                 {subtitle}
               </span>
             )}
             {title && (
-              <h1 className="text-[26px] sm:text-[30px] font-bold text-[#0F172A] leading-tight font-japanese">
+              <h1 className="text-[26px] sm:text-[30px] font-bold text-[#1F1C18] leading-tight font-japanese">
                 {title}
               </h1>
             )}
             {description && (
-              <p className="text-sm sm:text-base text-[#64748B] leading-relaxed max-w-2xl">
+              <p className="text-sm sm:text-base text-[#766D5E] leading-relaxed max-w-2xl">
                 {description}
               </p>
             )}

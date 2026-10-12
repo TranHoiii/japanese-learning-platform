@@ -21,21 +21,21 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, className }) => {
       aria-label="Breadcrumb"
       className={cn("w-full overflow-x-auto custom-scrollbar-x py-2 text-xs sm:text-sm", className)}
     >
-      <ol className="flex items-center space-x-1.5 whitespace-nowrap text-[#64748B]">
+      <ol className="flex items-center space-x-1.5 whitespace-nowrap text-[#766D5E]">
         {items.map((item, index) => {
           const isLast = index === items.length - 1 || item.isCurrent;
 
           return (
             <li key={index} className="inline-flex items-center space-x-1.5">
               {index > 0 && (
-                <span className="text-[#CBD5E1] select-none" aria-hidden="true">
+                <span className="text-[#D3CABA] select-none" aria-hidden="true">
                   /
                 </span>
               )}
 
               {isLast ? (
                 <span
-                  className="font-semibold text-[#0F172A] truncate max-w-[200px] sm:max-w-none"
+                  className="font-semibold text-[#1F1C18] truncate max-w-[200px] sm:max-w-none"
                   aria-current="page"
                 >
                   {item.label}
@@ -43,12 +43,12 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, className }) => {
               ) : item.href ? (
                 <Link
                   to={item.href}
-                  className="text-[#64748B] hover:text-[#2684D9] transition-colors truncate max-w-[150px] sm:max-w-none focus-visible:outline-2 focus-visible:outline-[#2684D9] rounded-[4px]"
+                  className="text-[#766D5E] hover:text-[#2F5496] transition-colors truncate max-w-[150px] sm:max-w-none focus-visible:outline-2 focus-visible:outline-[#2F5496] rounded-[4px]"
                 >
                   {item.label}
                 </Link>
               ) : (
-                <span className="text-[#64748B] truncate max-w-[150px] sm:max-w-none">
+                <span className="text-[#766D5E] truncate max-w-[150px] sm:max-w-none">
                   {item.label}
                 </span>
               )}

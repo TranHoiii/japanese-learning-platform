@@ -20,9 +20,10 @@ export const AppShell: React.FC<AppShellProps> = ({
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
 
   return (
-    <div className={cn("min-h-screen bg-[#F8FAFC] text-[#0F172A] flex flex-col", className)}>
+    <div className={cn("min-h-screen text-slate-900 flex flex-col", className)}>
       {/* Header (sticky top-0, 64px) */}
       <Header
+        wide
         onOpenMobileMenu={() => setIsMobileDrawerOpen(true)}
         isMobileMenuOpen={isMobileDrawerOpen}
       />
@@ -43,7 +44,7 @@ export const AppShell: React.FC<AppShellProps> = ({
 
         <main
           id="main-content"
-          className="flex-1 min-w-0 pb-24 lg:pb-12 focus:outline-none"
+          className="flex-1 min-w-0 pb-28 lg:pb-12 focus:outline-none"
           tabIndex={-1}
         >
           {children || <Outlet />}
