@@ -10,6 +10,7 @@ public interface KanjiMapper {
 
     @Mapping(target = "levelCode", expression = "java(resolveLevelCode(entity))")
     @Mapping(target = "lessonNumber", expression = "java(resolveLessonNumber(entity))")
+    @Mapping(target = "lessonId", expression = "java(resolveLessonId(entity))")
     KanjiResponse toResponse(Kanji entity);
 
     default String resolveLevelCode(Kanji kanji) {
@@ -30,6 +31,17 @@ public interface KanjiMapper {
         LessonKanji lk = kanji.getLessonKanjis().get(0);
         if (lk.getLesson() != null) {
             return lk.getLesson().getLessonNumber();
+        }
+        return null;
+    }
+
+    default Long resolveLessonId(Kanji kanji) {
+        if (kanji == null || kanji.getLessonKanjis() == null || kanji.getLessonKanjis().isEmpty()) {
+            return null;
+        }
+        LessonKanji lk = kanji.getLessonKanjis().get(0);
+        if (lk.getLesson() != null) {
+            return lk.getLesson().getId();
         }
         return null;
     }

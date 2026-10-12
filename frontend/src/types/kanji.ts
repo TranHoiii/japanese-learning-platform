@@ -20,6 +20,8 @@ export interface Kanji {
   compounds?: KanjiCompound[];
   levelCode?: string;
   lessonNumber?: number;
+  lessonId?: number;
+  kanjiNumber?: number;
 }
 
 export interface PaginatedKanjiResponse {

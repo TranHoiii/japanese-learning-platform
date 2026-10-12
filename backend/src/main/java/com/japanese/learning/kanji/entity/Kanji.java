@@ -54,6 +54,9 @@ public class Kanji extends BaseTimeEntity {
     @Column(name = "mnemonic_image_url", length = 500)
     private String mnemonicImageUrl;
 
+    @Column(name = "kanji_number")
+    private Integer kanjiNumber;
+
     @OneToMany(
             mappedBy = "kanji",
             cascade = CascadeType.ALL,

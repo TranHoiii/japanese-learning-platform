@@ -73,21 +73,28 @@ public class N5KanjiDataSeeder implements CommandLineRunner {
         int kanjiSkipped = 0;
         int lessonKanjiInserted = 0;
 
+        java.util.Map<Integer, Integer> lessonSortOrders = new java.util.HashMap<>();
+
         for (KanjiPayload payload : payloads) {
             Kanji kanji = kanjiRepository.findByKanji(payload.kanji().trim())
                     .orElseGet(() -> {
                         Kanji newK = new Kanji();
                         newK.setKanji(payload.kanji().trim());
-                        newK.setHanViet(payload.hanViet());
-                        newK.setOnyomi(payload.onyomi());
-                        newK.setKunyomi(payload.kunyomi());
-                        newK.setMeaning(payload.meaning());
-                        newK.setStrokeCount(payload.strokeCount());
-                        newK.setStrokeOrderUrl(payload.strokeOrderUrl());
-                        newK.setMnemonic(payload.mnemonic());
-                        newK.setMnemonicImageUrl(payload.mnemonicImageUrl());
-                        return kanjiRepository.save(newK);
+                        return newK;
                     });
+
+            kanji.setHanViet(payload.hanViet());
+            kanji.setOnyomi(payload.onyomi());
+            kanji.setKunyomi(payload.kunyomi());
+            kanji.setMeaning(payload.meaning());
+            kanji.setStrokeCount(payload.strokeCount());
+            kanji.setStrokeOrderUrl(payload.strokeOrderUrl());
+            kanji.setMnemonic(payload.mnemonic());
+            kanji.setMnemonicImageUrl(payload.mnemonicImageUrl());
+            if (payload.kanjiNumber() != null) {
+                kanji.setKanjiNumber(payload.kanjiNumber());
+            }
+            kanji = kanjiRepository.save(kanji);
 
             if (kanji.getId() != null) {
                 kanjiInserted++;
@@ -108,8 +115,14 @@ public class N5KanjiDataSeeder implements CommandLineRunner {
 
             // Link to lessons via LessonKanji
             if (payload.lessons() != null) {
-                int sortOrder = 1;
-                for (Integer lessonNum : payload.lessons()) {
+                java.util.List<Integer> targetLessons = new java.util.ArrayList<>(payload.lessons());
+                if (targetLessons.contains(16) && !targetLessons.contains(21)) targetLessons.add(21);
+                if (targetLessons.contains(17) && !targetLessons.contains(22)) targetLessons.add(22);
+                if (targetLessons.contains(18) && !targetLessons.contains(23)) targetLessons.add(23);
+                if (targetLessons.contains(19) && !targetLessons.contains(24)) targetLessons.add(24);
+                if (targetLessons.contains(20) && !targetLessons.contains(25)) targetLessons.add(25);
+
+                for (Integer lessonNum : targetLessons) {
                     Lesson lesson = lessonRepository.findByLevelIdAndLessonNumber(level.getId(), lessonNum)
                             .orElseGet(() -> {
                                 Lesson newL = new Lesson();
@@ -122,11 +135,13 @@ public class N5KanjiDataSeeder implements CommandLineRunner {
                             });
 
                     if (!lessonKanjiRepository.existsByLessonIdAndKanjiId(lesson.getId(), kanji.getId())) {
+                        int currentOrder = lessonSortOrders.getOrDefault(lessonNum, 1);
                         LessonKanji lk = new LessonKanji();
                         lk.setLesson(lesson);
                         lk.setKanji(kanji);
-                        lk.setSortOrder(sortOrder++);
+                        lk.setSortOrder(currentOrder);
                         lessonKanjiRepository.save(lk);
+                        lessonSortOrders.put(lessonNum, currentOrder + 1);
                         lessonKanjiInserted++;
                     }
                 }
@@ -148,6 +163,7 @@ public class N5KanjiDataSeeder implements CommandLineRunner {
             String strokeOrderUrl,
             String mnemonic,
             String mnemonicImageUrl,
+            Integer kanjiNumber,
             List<Integer> lessons,
             List<CompoundPayload> compounds
     ) {}

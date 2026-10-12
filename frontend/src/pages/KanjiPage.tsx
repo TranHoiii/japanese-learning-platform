@@ -135,83 +135,55 @@ export default function KanjiPage() {
           </div>
 
           {/* Module Switcher Tabs */}
-          {isN4 ? (
-            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
-              <Link
-                to={`/n4/lessons/${activeLessonId}/vocabulary`}
-                className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>📚</span>
-                <span>Từ Vựng N4</span>
-              </Link>
+          <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/vocabulary`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>📚</span>
+              <span>Từ Vựng {levelCode}</span>
+            </Link>
 
-              <Link
-                to={`/n4/lessons/${activeLessonId}/grammar`}
-                className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>⛩️</span>
-                <span>Ngữ Pháp N4</span>
-              </Link>
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/grammar`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>⛩️</span>
+              <span>Ngữ Pháp {levelCode}</span>
+            </Link>
 
-              <Link
-                to={`/n4/lessons/${activeLessonId}/kanji`}
-                className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-amber-500 text-white shadow-md shadow-amber-500/20 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>🈁</span>
-                <span>Kanji N4</span>
-              </Link>
-            </div>
-          ) : (
-            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
-              <Link
-                to={`/n5/lessons/${activeLessonId}/vocabulary`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-              >
-                <span>📚</span>
-                <span>Từ Vựng N5</span>
-              </Link>
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/kanji`}
+              className="px-5 py-2.5 rounded-xl text-sm font-bold bg-amber-500 text-white shadow-md shadow-amber-500/20 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>🈁</span>
+              <span>Kanji {levelCode}</span>
+            </Link>
 
-              <Link
-                to={`/n5/lessons/${activeLessonId}/grammar`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-              >
-                <span>⛩️</span>
-                <span>Ngữ Pháp N5</span>
-              </Link>
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/listening`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>🎧</span>
+              <span>Nghe Hiểu {levelCode}</span>
+            </Link>
 
-              <Link
-                to={`/n5/lessons/${activeLessonId}/kanji`}
-                className="px-5 py-2.5 rounded-xl text-sm font-bold bg-amber-500 text-white shadow-md shadow-amber-500/20 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-              >
-                <span>🈁</span>
-                <span>Kanji N5</span>
-              </Link>
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/reading`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>📖</span>
+              <span>Đọc Hiểu {levelCode}</span>
+            </Link>
 
-              <Link
-                to={`/n5/lessons/${activeLessonId}/listening`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-              >
-                <span>🎧</span>
-                <span>Nghe Hiểu N5</span>
-              </Link>
-
-              <Link
-                to={`/n5/lessons/${activeLessonId}/reading`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-              >
-                <span>📖</span>
-                <span>Đọc Hiểu N5</span>
-              </Link>
-
-              <Link
-                to={`/n5/lessons/${activeLessonId}/exercise`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-              >
-                <span>✏️</span>
-                <span>Bài Tập N5</span>
-              </Link>
-            </div>
-          )}
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/exercise`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>✏️</span>
+              <span>Bài Tập {levelCode}</span>
+            </Link>
+          </div>
 
           {/* Search Box */}
           <div className="mt-6 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -276,13 +248,13 @@ export default function KanjiPage() {
             {filteredKanjis.map((k, idx) => (
               <Link
                 key={k.id}
-                to={`/kanjis/${k.id}`}
+                to={`/kanjis/${k.id}?lessonId=${activeLessonId}`}
                 className="bg-white rounded-3xl border border-slate-200/80 p-6 shadow-xs hover:shadow-xl hover:border-amber-400 transition-all flex flex-col justify-between group transform hover:-translate-y-1"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="w-7 h-7 rounded-lg bg-amber-50 text-amber-700 font-extrabold text-xs flex items-center justify-center border border-amber-200/60">
-                      {idx + 1}
+                    <span className="h-7 px-2.5 rounded-lg bg-amber-50 text-amber-700 font-extrabold text-xs flex items-center justify-center border border-amber-200/60 shadow-2xs">
+                      #{k.kanjiNumber ?? (idx + 1)}
                     </span>
                     {k.strokeCount && (
                       <span className="text-xs font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">

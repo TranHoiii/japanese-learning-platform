@@ -165,78 +165,52 @@ export default function VocabularyPage() {
           </div>
 
           {/* Module Switcher Tabs (Vocabulary, Grammar, Kanji, Listening, Reading, Exercise) */}
-          {!isN4 ? (
-            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
-              <Link
-                to={`/n5/lessons/${activeLessonId}/vocabulary`}
-                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>📚</span>
-                <span>Từ Vựng N5</span>
-              </Link>
+          <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
+            <span className="px-5 py-2.5 rounded-xl text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 flex items-center space-x-2 shrink-0 whitespace-nowrap">
+              <span>📚</span>
+              <span>Từ Vựng {levelCode}</span>
+            </span>
 
-              <Link
-                to={`/n5/lessons/${activeLessonId}/grammar`}
-                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>⛩️</span>
-                <span>Ngữ Pháp</span>
-              </Link>
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/grammar`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>⛩️</span>
+              <span>Ngữ Pháp {levelCode}</span>
+            </Link>
 
-              <Link
-                to={`/n5/lessons/${activeLessonId}/kanji`}
-                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>🈁</span>
-                <span>Kanji</span>
-              </Link>
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/kanji`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>🈁</span>
+              <span>Kanji {levelCode}</span>
+            </Link>
 
-              <Link
-                to={`/n5/lessons/${activeLessonId}/listening`}
-                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>🎧</span>
-                <span>Luyện Nghe</span>
-              </Link>
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/listening`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>🎧</span>
+              <span>Nghe Hiểu {levelCode}</span>
+            </Link>
 
-              <Link
-                to={`/n5/lessons/${activeLessonId}/reading`}
-                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>📖</span>
-                <span>Luyện Đọc</span>
-              </Link>
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/reading`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>📖</span>
+              <span>Đọc Hiểu {levelCode}</span>
+            </Link>
 
-              <Link
-                to={`/n5/lessons/${activeLessonId}/exercise`}
-                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>✏️</span>
-                <span>Bài Tập</span>
-              </Link>
-            </div>
-          ) : (
-            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
-              <span className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 flex items-center space-x-2 shrink-0">
-                <span>📚</span>
-                <span>Từ Vựng N4</span>
-              </span>
-              <Link
-                to={`/n4/lessons/${activeLessonId}/grammar`}
-                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>⛩️</span>
-                <span>Ngữ Pháp N4</span>
-              </Link>
-              <Link
-                to={`/n4/lessons/${activeLessonId}/kanji`}
-                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
-              >
-                <span>🈁</span>
-                <span>Kanji N4</span>
-              </Link>
-            </div>
-          )}
+            <Link
+              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/exercise`}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
+            >
+              <span>✏️</span>
+              <span>Bài Tập {levelCode}</span>
+            </Link>
+          </div>
 
           {/* Search Box & View Mode Toggle */}
           <div className="mt-6 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">

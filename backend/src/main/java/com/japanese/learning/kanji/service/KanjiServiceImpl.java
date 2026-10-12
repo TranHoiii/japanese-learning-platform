@@ -61,7 +61,17 @@ public class KanjiServiceImpl implements KanjiService {
 
         List<LessonKanji> lessonKanjis = lessonKanjiRepository.findByLessonIdOrderBySortOrderAsc(lessonId);
         return lessonKanjis.stream()
-                .map(lk -> kanjiMapper.toResponse(lk.getKanji()))
+                .map(lk -> {
+                    KanjiResponse resp = kanjiMapper.toResponse(lk.getKanji());
+                    resp.setLessonId(lessonId);
+                    if (lk.getLesson() != null) {
+                        resp.setLessonNumber(lk.getLesson().getLessonNumber());
+                        if (lk.getLesson().getLevel() != null) {
+                            resp.setLevelCode(lk.getLesson().getLevel().getCode());
+                        }
+                    }
+                    return resp;
+                })
                 .toList();
     }
 
