@@ -17,6 +17,8 @@ public class ReadingContentResponse {
 
     private Long id;
     private Long lessonId;
+    private Integer lessonNumber;
+    private String levelCode;
     private String title;
     private String content;
     private String translation;

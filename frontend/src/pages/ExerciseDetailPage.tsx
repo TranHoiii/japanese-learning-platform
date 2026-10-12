@@ -7,6 +7,131 @@ import { ExerciseSubmitResponse } from "../types/exercise";
 import Navbar from "../components/Navbar";
 import { FavoriteButton } from "../components/favorite/FavoriteButton";
 
+interface IllustrationInfo {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
+const getQuestionIllustration = (
+  sortOrder?: number,
+  lessonId?: number,
+  qSortOrder?: number
+): IllustrationInfo | null => {
+  if (!qSortOrder) return null;
+
+  // N4 Lesson 30 Question 2
+  if ((sortOrder === 33 || sortOrder === 32 || lessonId === 30) && qSortOrder === 2) {
+    return {
+      src: "/media/exercise/exercise_n4_l30_q02.png",
+      alt: "Hình minh họa bài tập Bài 30 câu 2 (N4)",
+      caption: "Minh họa Bài 30 - Câu 2: Trạng thái đồ vật Vてあります (Minna no Nihongo N4)",
+    };
+  }
+
+  // N5 Illustrations
+  if (sortOrder === 1 && qSortOrder === 1) {
+    return {
+      src: "/media/exercise/exercise_n5_l01_q01.png",
+      alt: "Hình minh họa Bài 1-2 Câu 1",
+      caption: "Minh họa Bài 01–02 - Câu 1: Nhận diện đồ vật 1〜10 (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 1 && qSortOrder === 3) {
+    return {
+      src: "/media/exercise/exercise_n5_l01_q03.png",
+      alt: "Hình minh họa Bài 1-2 Câu 3",
+      caption: "Minh họa Bài 01–02 - Câu 3: Đại từ chỉ định これ, それ, あれ (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 2 && qSortOrder === 1) {
+    return {
+      src: "/media/exercise/exercise_n5_l03_q01.png",
+      alt: "Hình minh họa Bài 3 Câu 1",
+      caption: "Minh họa Bài 03 - Câu 1: Đồ vật kèm giá tiền Yên ¥ (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 3 && qSortOrder === 2) {
+    return {
+      src: "/media/exercise/exercise_n5_l04_q02.png",
+      alt: "Hình minh họa Bài 4 Câu 2",
+      caption: "Minh họa Bài 04 - Câu 2: Lịch tháng 3 & các thứ trong tuần (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 3 && qSortOrder === 4) {
+    return {
+      src: "/media/exercise/exercise_n5_l04_q04.png",
+      alt: "Hình minh họa Bài 4 Câu 4",
+      caption: "Minh họa Bài 04 - Câu 4: Bảng thời gian làm việc ngân hàng, thư viện, bưu điện (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 5 && qSortOrder === 4) {
+    return {
+      src: "/media/exercise/exercise_n5_l06_q04.png",
+      alt: "Hình minh họa Bài 6 Câu 4",
+      caption: "Minh họa Bài 06 - Câu 4: Tranh 6 hoạt động sinh hoạt trong ngày (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 10 && qSortOrder === 3) {
+    return {
+      src: "/media/exercise/exercise_n5_l10_q03.png",
+      alt: "Hình minh họa Bài 10 Câu 3",
+      caption: "Minh họa Bài 10 - Câu 3: Tranh phòng ngủ và vị trí đồ vật (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 13 && qSortOrder === 2) {
+    return {
+      src: "/media/exercise/exercise_n5_l13_q02.png",
+      alt: "Hình minh họa Bài 13 Câu 2",
+      caption: "Minh họa Bài 13 - Câu 2: Đồ vật mong muốn sở hữu (〜が欲しいです) (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 13 && qSortOrder === 3) {
+    return {
+      src: "/media/exercise/exercise_n5_l13_q03.png",
+      alt: "Hình minh họa Bài 13 Câu 3",
+      caption: "Minh họa Bài 13 - Câu 3: Hành động mong muốn thực hiện (〜たいです) (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 14 && qSortOrder === 4) {
+    return {
+      src: "/media/exercise/exercise_n5_l14_q04.png",
+      alt: "Hình minh họa Bài 14 Câu 4",
+      caption: "Minh họa Bài 14 - Câu 4: Các hành động đang tiếp diễn thể 〜ています (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 23 && qSortOrder === 1) {
+    return {
+      src: "/media/exercise/exercise_n5_l22_q01.png",
+      alt: "Hình minh họa Bài 22 Câu 1",
+      caption: "Minh họa Bài 22 - Câu 1: Đồ vật và mệnh đề định ngữ bổ nghĩa (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 23 && qSortOrder === 4) {
+    return {
+      src: "/media/exercise/exercise_n5_l22_q04.png",
+      alt: "Hình minh họa Bài 22 Câu 4",
+      caption: "Minh họa Bài 22 - Câu 4: Tranh toàn cảnh công viên xác định nhân vật (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 24 && qSortOrder === 5) {
+    return {
+      src: "/media/exercise/exercise_n5_l23_q05.png",
+      alt: "Hình minh họa Bài 23 Câu 5",
+      caption: "Minh họa Bài 23 - Câu 5: Bản đồ chỉ đường và phương hướng tòa nhà (Minna no Nihongo N5)",
+    };
+  }
+  if (sortOrder === 25 && qSortOrder === 2) {
+    return {
+      src: "/media/exercise/exercise_n5_l24_q02.png",
+      alt: "Hình minh họa Bài 24 Câu 2",
+      caption: "Minh họa Bài 24 - Câu 2: Hành động cho nhận 〜てもらいました / 〜てくれました (Minna no Nihongo N5)",
+    };
+  }
+
+  return null;
+};
+
 export default function ExerciseDetailPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -21,6 +146,9 @@ export default function ExerciseDetailPage() {
 
   // Result state after submit
   const [result, setResult] = useState<ExerciseSubmitResponse | null>(null);
+
+  // Zoom modal image state
+  const [modalImage, setModalImage] = useState<IllustrationInfo | null>(null);
 
   // 1. Fetch Exercise Detail
   const {
@@ -320,26 +448,39 @@ export default function ExerciseDetailPage() {
                           )}
                         </div>
 
-                        {/* Image for Lesson 30 Question 2 if applicable */}
-                        {exercise?.sortOrder === 32 && question.sortOrder === 2 && (
-                          <div className="mb-4 p-3 rounded-2xl bg-white border border-slate-200 shadow-2xs text-center">
-                            <img
-                              src="/media/exercise/exercise_n4_l30_q02.png"
-                              alt="Hình minh họa bài tập Bài 30 câu 2"
-                              className="max-h-80 mx-auto object-contain rounded-xl"
-                            />
-                          </div>
-                        )}
-
-                        {/* Image required banner */}
-                        {hasImageRequired && !(exercise?.sortOrder === 32 && question.sortOrder === 2) && (
-                          <div className="mb-4 p-3.5 rounded-xl bg-amber-50 border border-amber-200/70 text-amber-800 text-xs flex items-center space-x-2">
-                            <span>📷</span>
-                            <span>
-                              <strong>Lưu ý:</strong> Câu hỏi có hình ảnh minh họa trong sách gốc Minna no Nihongo (vị trí đã được đánh dấu [IMAGE_REQUIRED]).
-                            </span>
-                          </div>
-                        )}
+                        {/* Illustration Image if applicable */}
+                        {(() => {
+                          const illustration = getQuestionIllustration(
+                            exercise?.sortOrder,
+                            exercise?.lessonId,
+                            question.sortOrder
+                          );
+                          if (!illustration) return null;
+                          return (
+                            <div className="mb-5 p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs group hover:border-indigo-300 transition-all">
+                              <div className="relative overflow-hidden rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center">
+                                <img
+                                  src={illustration.src}
+                                  alt={illustration.alt}
+                                  onClick={() => setModalImage(illustration)}
+                                  className="max-h-80 sm:max-h-96 w-auto object-contain cursor-zoom-in hover:scale-[1.02] transition-transform duration-200 p-2"
+                                />
+                                <button
+                                  type="button"
+                                  onClick={() => setModalImage(illustration)}
+                                  className="absolute top-2.5 right-2.5 px-2.5 py-1.5 rounded-lg bg-black/60 hover:bg-black/80 text-white text-xs font-semibold backdrop-blur-xs flex items-center space-x-1.5 transition-all cursor-pointer shadow-sm"
+                                >
+                                  <span>🔍</span>
+                                  <span>Phóng to</span>
+                                </button>
+                              </div>
+                              <p className="text-center text-xs text-slate-500 font-medium mt-2.5 flex items-center justify-center space-x-1">
+                                <span>📖</span>
+                                <span>{illustration.caption}</span>
+                              </p>
+                            </div>
+                          );
+                        })()}
 
                         {/* Interactive Options list (if options exist) */}
                         {hasOptions && (
@@ -461,6 +602,53 @@ export default function ExerciseDetailPage() {
                 )}
               </div>
             )}
+          </div>
+        )}
+
+        {/* Fullscreen Image Zoom Modal */}
+        {modalImage && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+            onClick={() => setModalImage(null)}
+          >
+            <div
+              className="relative max-w-4xl w-full bg-white rounded-3xl p-4 sm:p-6 shadow-2xl flex flex-col items-center max-h-[90vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="w-full flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+                <div className="flex items-center space-x-2">
+                  <span className="text-base font-bold text-slate-800">🖼️ Hình minh họa chi tiết</span>
+                  <span className="text-xs text-slate-400 font-medium">(Chuẩn Minna no Nihongo)</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setModalImage(null)}
+                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold flex items-center justify-center transition-colors cursor-pointer"
+                  title="Đóng"
+                >
+                  ✕
+                </button>
+              </div>
+
+              <div className="w-full flex items-center justify-center bg-slate-50 rounded-2xl p-2 sm:p-4 border border-slate-100">
+                <img
+                  src={modalImage.src}
+                  alt={modalImage.alt}
+                  className="max-h-[70vh] w-auto object-contain rounded-xl shadow-xs"
+                />
+              </div>
+
+              <div className="w-full mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+                <p className="font-semibold text-slate-700">{modalImage.caption}</p>
+                <button
+                  type="button"
+                  onClick={() => setModalImage(null)}
+                  className="px-4 py-2 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-colors cursor-pointer"
+                >
+                  Đóng cửa sổ
+                </button>
+              </div>
+            </div>
           </div>
         )}
       </main>

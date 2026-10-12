@@ -34,24 +34,27 @@ export default function ExercisePage() {
   const currentLesson = lessons?.find((l) => l.id === activeLessonId);
 
   // 3. Get Exercises list (strictly sorted by sort_order ASC from API)
+  // Note: Minna no Nihongo merges Lesson 1 & 2 into "Bài 01–02" (lesson_id=1).
+  const effectiveQueryLessonId = activeLessonId === 2 ? 1 : activeLessonId;
+
   const {
     data: allExercises,
     isLoading,
     error,
   } = useQuery({
-    queryKey: ["exercises", activeLessonId],
+    queryKey: ["exercises", effectiveQueryLessonId],
     queryFn: () =>
-      activeLessonId
-        ? exerciseApi.getExercisesByLesson(activeLessonId)
+      effectiveQueryLessonId
+        ? exerciseApi.getExercisesByLesson(effectiveQueryLessonId)
         : exerciseApi.getAllExercises(),
   });
 
-  // Filter exercises according to level when viewing all
+  // Filter exercises according to level when viewing all (N5: lessonId <= 25, N4: lessonId >= 26)
   const exercises = activeLessonId
     ? allExercises
     : allExercises?.filter((ex) => {
-        if (isN4) return ex.sortOrder >= 28;
-        return ex.sortOrder < 28;
+        if (isN4) return ex.lessonId >= 26;
+        return ex.lessonId <= 25;
       });
 
   const handleLessonChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -107,7 +110,7 @@ export default function ExercisePage() {
                   JLPT {levelCode}
                 </span>
                 <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">
-                  {currentLesson ? currentLesson.title : isN4 ? "Lộ trình chính thức (29 bài)" : "Lộ trình chính thức (27 bài)"}
+                  {currentLesson ? currentLesson.title : isN4 ? "Lộ trình chính thức (29 bài)" : "Lộ trình chính thức (28 bài)"}
                 </span>
                 {exercises && (
                   <span className="text-xs text-slate-500 font-medium">
@@ -123,7 +126,7 @@ export default function ExercisePage() {
               <p className="text-sm text-slate-500 mt-2">
                 {isN4
                   ? "Sắp xếp chuẩn xác theo đúng lộ trình học thực tế: Bài 26–50 cùng các bài Ôn tập tổng hợp định kỳ từ Minna no Nihongo Chuẩn bài tập N4."
-                  : "Sắp xếp chuẩn xác theo đúng lộ trình học thực tế: Bài 01–02 gộp chung, sau Bài 08 có Tổng hợp 01–08, sau Bài 17 có Tổng hợp 09–17, sau Bài 25 có Tổng hợp 18–25."}
+                  : "Sắp xếp chuẩn xác theo đúng lộ trình học thực tế: Bài 01–02 gộp chung, sau Bài 08 có Tổng hợp 01–08, sau Bài 17 có Tổng hợp 09–17, sau Bài 25 có Tổng hợp 18–25, và Bài Tổng ôn tập cuối sách 01–25."}
               </p>
             </div>
 
@@ -138,7 +141,7 @@ export default function ExercisePage() {
                   onChange={handleLessonChange}
                   className="bg-slate-50 border border-slate-300 text-slate-900 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-indigo-500 p-2.5 shadow-xs cursor-pointer min-w-[170px]"
                 >
-                  <option value="all">Tất cả bài tập {isN4 ? "(28 → 56)" : "(1 → 27)"}</option>
+                  <option value="all">Tất cả bài tập {isN4 ? "(29 bài)" : "(28 bài)"}</option>
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
                       {l.title} (Bài {l.lessonNumber})
@@ -265,6 +268,19 @@ export default function ExercisePage() {
             <p className="text-sm text-slate-500">
               Không tìm thấy bài tập nào phù hợp với bộ lọc hiện tại.
             </p>
+          </div>
+        )}
+
+        {/* Lesson 2 Notification Banner */}
+        {activeLessonId === 2 && (
+          <div className="mb-6 p-4 rounded-2xl bg-indigo-50/90 border border-indigo-200/80 text-indigo-950 flex items-start space-x-3 shadow-2xs">
+            <span className="text-xl shrink-0 mt-0.5">💡</span>
+            <div className="text-sm">
+              <p className="font-bold text-indigo-900">Lưu ý giáo trình chuẩn Minna no Nihongo:</p>
+              <p className="text-xs text-indigo-700/90 mt-1 leading-relaxed">
+                Trong sách bài tập tiêu chuẩn Minna no Nihongo Tập 1, bài tập của Bài 1 và Bài 2 được tích hợp chung thành bài <strong>"Bài 01–02"</strong>. Dưới đây là bài tập dùng chung phục vụ cho cả Bài 1 và Bài 2 để bạn ôn tập trọn vẹn ngữ pháp.
+              </p>
+            </div>
           </div>
         )}
 

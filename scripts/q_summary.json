@@ -1,0 +1,310 @@
+[
+  {
+    "ex_sortOrder": 3,
+    "lessonNumber": 4,
+    "q_sortOrder": 1,
+    "has_img_tag": true,
+    "first_line": "1. [IMAGE_REQUIRED] Nhìn đồng hồ và viết cách đọc giờ phút bằng hiragana:"
+  },
+  {
+    "ex_sortOrder": 3,
+    "lessonNumber": 4,
+    "q_sortOrder": 2,
+    "has_img_tag": false,
+    "first_line": "2. Điền thứ trong tuần bằng kanji/hiragana thích hợp:"
+  },
+  {
+    "ex_sortOrder": 3,
+    "lessonNumber": 4,
+    "q_sortOrder": 3,
+    "has_img_tag": false,
+    "first_line": "3. Điền trợ từ thích hợp (の, と, に, から, まで, は) hoặc đánh × nếu không cần trợ từ:"
+  },
+  {
+    "ex_sortOrder": 3,
+    "lessonNumber": 4,
+    "q_sortOrder": 4,
+    "has_img_tag": true,
+    "first_line": "4. [IMAGE_REQUIRED] Nhìn bảng thời gian làm việc và viết câu:"
+  },
+  {
+    "ex_sortOrder": 3,
+    "lessonNumber": 4,
+    "q_sortOrder": 5,
+    "has_img_tag": false,
+    "first_line": "5. Chia động từ thích hợp:"
+  },
+  {
+    "ex_sortOrder": 3,
+    "lessonNumber": 4,
+    "q_sortOrder": 6,
+    "has_img_tag": false,
+    "first_line": "6. Điền từ để hỏi thích hợp (何時, 何曜日, 何番):"
+  },
+  {
+    "ex_sortOrder": 3,
+    "lessonNumber": 4,
+    "q_sortOrder": 7,
+    "has_img_tag": false,
+    "first_line": "7. Trả lời câu hỏi về bản thân:"
+  },
+  {
+    "ex_sortOrder": 5,
+    "lessonNumber": 6,
+    "q_sortOrder": 1,
+    "has_img_tag": false,
+    "first_line": "1. Điền trợ từ và động từ thích hợp (買います, 見ます, 聞きます, 飲みます, 吸います, 勉強します, します, 撮ります, 会います):"
+  },
+  {
+    "ex_sortOrder": 5,
+    "lessonNumber": 6,
+    "q_sortOrder": 2,
+    "has_img_tag": false,
+    "first_line": "2. Điền trợ từ thích hợp (を, で, に, と, も, へ, の):"
+  },
+  {
+    "ex_sortOrder": 5,
+    "lessonNumber": 6,
+    "q_sortOrder": 3,
+    "has_img_tag": false,
+    "first_line": "3. Hoàn thành câu theo ngữ cảnh:"
+  },
+  {
+    "ex_sortOrder": 5,
+    "lessonNumber": 6,
+    "q_sortOrder": 4,
+    "has_img_tag": false,
+    "first_line": "4. Điền trợ từ và dạng động từ thích hợp:"
+  },
+  {
+    "ex_sortOrder": 5,
+    "lessonNumber": 6,
+    "q_sortOrder": 5,
+    "has_img_tag": false,
+    "first_line": "5. Điền từ để hỏi thích hợp (どこ, なに, なん, いつ, だれ):"
+  },
+  {
+    "ex_sortOrder": 5,
+    "lessonNumber": 6,
+    "q_sortOrder": 6,
+    "has_img_tag": false,
+    "first_line": "6. Trả lời câu hỏi về thói quen của bản thân:"
+  },
+  {
+    "ex_sortOrder": 6,
+    "lessonNumber": 7,
+    "q_sortOrder": 1,
+    "has_img_tag": false,
+    "first_line": "1. Điền trợ từ thích hợp (で, に, を, は, から, の):"
+  },
+  {
+    "ex_sortOrder": 6,
+    "lessonNumber": 7,
+    "q_sortOrder": 2,
+    "has_img_tag": true,
+    "first_line": "2. [IMAGE_REQUIRED] Nhìn hình công cụ và viết câu sử dụng công cụ đó:"
+  },
+  {
+    "ex_sortOrder": 6,
+    "lessonNumber": 7,
+    "q_sortOrder": 3,
+    "has_img_tag": false,
+    "first_line": "3. Viết lại câu theo mẫu あげます / もらいます / 貸します / 借ります:"
+  },
+  {
+    "ex_sortOrder": 6,
+    "lessonNumber": 7,
+    "q_sortOrder": 4,
+    "has_img_tag": false,
+    "first_line": "4. Điền từ để hỏi thích hợp (何, どこ, だれ, いつ):"
+  },
+  {
+    "ex_sortOrder": 6,
+    "lessonNumber": 7,
+    "q_sortOrder": 5,
+    "has_img_tag": false,
+    "first_line": "5. Điền câu trả lời hoàn chỉnh với もう / まだ:"
+  },
+  {
+    "ex_sortOrder": 6,
+    "lessonNumber": 7,
+    "q_sortOrder": 6,
+    "has_img_tag": false,
+    "first_line": "6. Trả lời câu hỏi về bản thân:"
+  },
+  {
+    "ex_sortOrder": 10,
+    "lessonNumber": 10,
+    "q_sortOrder": 1,
+    "has_img_tag": false,
+    "first_line": "1. Chọn あります hoặc います điền vào chỗ trống:"
+  },
+  {
+    "ex_sortOrder": 10,
+    "lessonNumber": 10,
+    "q_sortOrder": 2,
+    "has_img_tag": false,
+    "first_line": "2. Điền trợ từ thích hợp (に, が, は, の, も, で):"
+  },
+  {
+    "ex_sortOrder": 10,
+    "lessonNumber": 10,
+    "q_sortOrder": 3,
+    "has_img_tag": true,
+    "first_line": "3. [IMAGE_REQUIRED] Nhìn hình vẽ và trả lời đồ vật/vị trí:"
+  },
+  {
+    "ex_sortOrder": 10,
+    "lessonNumber": 10,
+    "q_sortOrder": 4,
+    "has_img_tag": false,
+    "first_line": "4. Điền câu hỏi thích hợp (どこにいますか, どこにありますか, だれがいますか):"
+  },
+  {
+    "ex_sortOrder": 10,
+    "lessonNumber": 10,
+    "q_sortOrder": 5,
+    "has_img_tag": false,
+    "first_line": "5. Điền từ chỉ vị trí thích hợp:"
+  },
+  {
+    "ex_sortOrder": 10,
+    "lessonNumber": 10,
+    "q_sortOrder": 6,
+    "has_img_tag": false,
+    "first_line": "6. Trả lời câu hỏi về xung quanh bạn:"
+  },
+  {
+    "ex_sortOrder": 13,
+    "lessonNumber": 13,
+    "q_sortOrder": 1,
+    "has_img_tag": false,
+    "first_line": "1. Điền trợ từ thích hợp (から, が, も, か, へ, に, の, で, を):"
+  },
+  {
+    "ex_sortOrder": 13,
+    "lessonNumber": 13,
+    "q_sortOrder": 2,
+    "has_img_tag": true,
+    "first_line": "2. [IMAGE_REQUIRED] Nhìn hình và viết câu mong muốn sở hữu đồ vật (〜が欲しいです):"
+  },
+  {
+    "ex_sortOrder": 13,
+    "lessonNumber": 13,
+    "q_sortOrder": 3,
+    "has_img_tag": false,
+    "first_line": "3. Viết câu diễn tả mong muốn làm gì (〜たいです):"
+  },
+  {
+    "ex_sortOrder": 13,
+    "lessonNumber": 13,
+    "q_sortOrder": 4,
+    "has_img_tag": false,
+    "first_line": "4. Chia động từ thể 〜たい / 〜たくない:"
+  },
+  {
+    "ex_sortOrder": 13,
+    "lessonNumber": 13,
+    "q_sortOrder": 5,
+    "has_img_tag": false,
+    "first_line": "5. Đặt câu mục đích di chuyển (〜へ〜に行きます/行きました):"
+  },
+  {
+    "ex_sortOrder": 13,
+    "lessonNumber": 13,
+    "q_sortOrder": 6,
+    "has_img_tag": false,
+    "first_line": "6. Viết mục đích hành động thích hợp:"
+  },
+  {
+    "ex_sortOrder": 13,
+    "lessonNumber": 13,
+    "q_sortOrder": 7,
+    "has_img_tag": false,
+    "first_line": "7. Điền từ để hỏi thích hợp (どんな, いつ, 何, だれ):"
+  },
+  {
+    "ex_sortOrder": 13,
+    "lessonNumber": 13,
+    "q_sortOrder": 8,
+    "has_img_tag": false,
+    "first_line": "8. Trả lời câu hỏi về nguyện vọng bản thân:"
+  },
+  {
+    "ex_sortOrder": 23,
+    "lessonNumber": 22,
+    "q_sortOrder": 1,
+    "has_img_tag": false,
+    "first_line": "1. Nối mệnh đề thành câu có danh từ được bổ nghĩa:"
+  },
+  {
+    "ex_sortOrder": 23,
+    "lessonNumber": 22,
+    "q_sortOrder": 2,
+    "has_img_tag": false,
+    "first_line": "2. Chia động từ thể thông thường trong mệnh đề bổ nghĩa:"
+  },
+  {
+    "ex_sortOrder": 23,
+    "lessonNumber": 22,
+    "q_sortOrder": 3,
+    "has_img_tag": false,
+    "first_line": "3. Điền từ thích hợp vào mệnh đề bổ nghĩa:"
+  },
+  {
+    "ex_sortOrder": 23,
+    "lessonNumber": 22,
+    "q_sortOrder": 4,
+    "has_img_tag": true,
+    "first_line": "4. [IMAGE_REQUIRED] Nhìn tranh và xác định người qua hành động bổ nghĩa:"
+  },
+  {
+    "ex_sortOrder": 23,
+    "lessonNumber": 22,
+    "q_sortOrder": 5,
+    "has_img_tag": false,
+    "first_line": "5. Đặt câu với thời gian / nơi chốn làm việc gì (〜時間/〜所):"
+  },
+  {
+    "ex_sortOrder": 23,
+    "lessonNumber": 22,
+    "q_sortOrder": 6,
+    "has_img_tag": false,
+    "first_line": "6. Trả lời câu hỏi:"
+  },
+  {
+    "ex_sortOrder": 25,
+    "lessonNumber": 24,
+    "q_sortOrder": 1,
+    "has_img_tag": false,
+    "first_line": "1. Chọn động từ cho nhận phù hợp (もらい／あげ／くれ):"
+  },
+  {
+    "ex_sortOrder": 25,
+    "lessonNumber": 24,
+    "q_sortOrder": 2,
+    "has_img_tag": false,
+    "first_line": "2. Viết lại câu dùng 〜てもらいました và 〜てくれました:"
+  },
+  {
+    "ex_sortOrder": 25,
+    "lessonNumber": 24,
+    "q_sortOrder": 3,
+    "has_img_tag": false,
+    "first_line": "3. Điền động từ thể 〜てもらいました hoặc 〜てくれました thích hợp:"
+  },
+  {
+    "ex_sortOrder": 25,
+    "lessonNumber": 24,
+    "q_sortOrder": 4,
+    "has_img_tag": false,
+    "first_line": "4. Điền phó từ thích hợp (ほかに, 全部, 自分で):"
+  },
+  {
+    "ex_sortOrder": 25,
+    "lessonNumber": 24,
+    "q_sortOrder": 5,
+    "has_img_tag": false,
+    "first_line": "5. Trả lời câu hỏi:"
+  }
+]

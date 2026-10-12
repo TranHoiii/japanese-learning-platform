@@ -8,5 +8,7 @@ import org.mapstruct.Mapping;
 public interface ReadingContentMapper {
 
     @Mapping(target = "lessonId", source = "lesson.id")
+    @Mapping(target = "lessonNumber", source = "lesson.lessonNumber")
+    @Mapping(target = "levelCode", source = "lesson.level.code")
     ReadingContentResponse toResponse(ReadingContent entity);
 }

@@ -21,6 +21,9 @@ public interface ExerciseRepository extends JpaRepository<Exercise, Long> {
 
     Optional<Exercise> findBySortOrder(Integer sortOrder);
 
+    @Query("SELECT e FROM Exercise e JOIN e.lesson l JOIN l.level lvl WHERE lvl.code = :levelCode AND e.sortOrder = :sortOrder")
+    Optional<Exercise> findByLevelCodeAndSortOrder(@Param("levelCode") String levelCode, @Param("sortOrder") Integer sortOrder);
+
     @EntityGraph(attributePaths = {"questions"})
     Optional<Exercise> findWithQuestionsById(Long id);
 
