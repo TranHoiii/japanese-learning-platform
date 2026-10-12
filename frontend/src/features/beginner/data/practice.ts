@@ -671,18 +671,42 @@ export const INITIAL_PRACTICE_QUESTIONS: PracticeQuestion[] = [
 ];
 
 /**
+ * Pure Fisher-Yates shuffle algorithm.
+ */
+export function shuffleArray<T>(array: readonly T[]): T[] {
+  const result = [...array];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+
+/**
  * Helper to get a curated pool of questions for a specific practice mode.
  * For "mixed", it selects a balanced subset from all 4 categories.
+ * Questions and options are shuffled dynamically so the correct answer
+ * is evenly distributed across A, B, C, D instead of always being Option A.
  */
 export function getPracticeQuestions(category: PracticeCategory): PracticeQuestion[] {
+  let selected: PracticeQuestion[] = [];
+
   if (category === "mixed") {
-    // Collect 3-4 questions from each of the 4 categories to make a 14-question mixed set
-    const h = INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === "hiragana").slice(0, 4);
-    const k = INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === "katakana").slice(0, 4);
-    const p = INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === "pronunciation").slice(0, 3);
-    const n = INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === "numbers").slice(0, 3);
-    return [...h, ...k, ...p, ...n];
+    // Collect 3-4 random questions from each of the 4 categories to make a 14-question mixed set
+    const h = shuffleArray(INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === "hiragana")).slice(0, 4);
+    const k = shuffleArray(INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === "katakana")).slice(0, 4);
+    const p = shuffleArray(INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === "pronunciation")).slice(0, 3);
+    const n = shuffleArray(INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === "numbers")).slice(0, 3);
+    selected = shuffleArray([...h, ...k, ...p, ...n]);
+  } else {
+    const filtered = INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === category);
+    selected = shuffleArray(filtered);
   }
 
-  return INITIAL_PRACTICE_QUESTIONS.filter((q) => q.category === category);
+  // Clone each question and shuffle its options so the correct answer is not always Option A
+  return selected.map((q) => ({
+    ...q,
+    options: shuffleArray(q.options),
+  }));
 }
+

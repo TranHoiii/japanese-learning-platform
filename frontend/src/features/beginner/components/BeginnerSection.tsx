@@ -35,7 +35,7 @@ export const BeginnerSection: React.FC<BeginnerSectionProps> = ({
     <section
       id={id}
       className={cn(
-        "rounded-[16px] bg-white border border-[#E2E8F0] p-5 sm:p-7 shadow-[0_1px_3px_rgba(15,23,42,0.06)] space-y-6 transition-all",
+        "scroll-mt-20 rounded-[16px] bg-white border border-[#E2E8F0] p-5 sm:p-7 shadow-[0_1px_3px_rgba(15,23,42,0.06)] space-y-6 transition-all",
         className,
       )}
       aria-labelledby={id ? `${id}-heading` : undefined}

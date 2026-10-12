@@ -136,7 +136,7 @@ export default function KanjiPage() {
 
           {/* Module Switcher Tabs */}
           {isN4 ? (
-            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto pb-2">
+            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
               <Link
                 to={`/n4/lessons/${activeLessonId}/vocabulary`}
                 className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0"
@@ -162,10 +162,10 @@ export default function KanjiPage() {
               </Link>
             </div>
           ) : (
-            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto pb-2">
+            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
               <Link
                 to={`/n5/lessons/${activeLessonId}/vocabulary`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
               >
                 <span>📚</span>
                 <span>Từ Vựng N5</span>
@@ -173,7 +173,7 @@ export default function KanjiPage() {
 
               <Link
                 to={`/n5/lessons/${activeLessonId}/grammar`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
               >
                 <span>⛩️</span>
                 <span>Ngữ Pháp N5</span>
@@ -181,7 +181,7 @@ export default function KanjiPage() {
 
               <Link
                 to={`/n5/lessons/${activeLessonId}/kanji`}
-                className="px-5 py-2.5 rounded-xl text-sm font-bold bg-amber-500 text-white shadow-md shadow-amber-500/20 transition-all flex items-center space-x-2"
+                className="px-5 py-2.5 rounded-xl text-sm font-bold bg-amber-500 text-white shadow-md shadow-amber-500/20 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
               >
                 <span>🈁</span>
                 <span>Kanji N5</span>
@@ -189,7 +189,7 @@ export default function KanjiPage() {
 
               <Link
                 to={`/n5/lessons/${activeLessonId}/listening`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
               >
                 <span>🎧</span>
                 <span>Nghe Hiểu N5</span>
@@ -197,7 +197,7 @@ export default function KanjiPage() {
 
               <Link
                 to={`/n5/lessons/${activeLessonId}/reading`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
               >
                 <span>📖</span>
                 <span>Đọc Hiểu N5</span>
@@ -205,7 +205,7 @@ export default function KanjiPage() {
 
               <Link
                 to={`/n5/lessons/${activeLessonId}/exercise`}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2"
+                className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
               >
                 <span>✏️</span>
                 <span>Bài Tập N5</span>

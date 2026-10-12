@@ -23,32 +23,99 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
   const [selectedRow, setSelectedRow] = useState<KanaRow | "all">("all");
   const [showEquivalent, setShowEquivalent] = useState(false);
 
+  const isKatakana = characters.length > 0 && characters[0].system === "katakana";
+  const groupType = characters.length > 0 ? characters[0].type : "seion";
+  const isYoon = groupType === "yoon";
+
   const rows: { id: KanaRow | "all"; label: string }[] = [
     { id: "all", label: "Tất cả" },
-    { id: "a", label: "Hàng A (あ)" },
-    { id: "ka", label: "Hàng Ka (か)" },
-    { id: "sa", label: "Hàng Sa (さ)" },
-    { id: "ta", label: "Hàng Ta (た)" },
-    { id: "na", label: "Hàng Na (な)" },
-    { id: "ha", label: "Hàng Ha (は)" },
-    { id: "ma", label: "Hàng Ma (ま)" },
-    { id: "ya", label: "Hàng Ya (や)" },
-    { id: "ra", label: "Hàng Ra (ら)" },
-    { id: "wa", label: "Hàng Wa (わ)" },
-    { id: "n", label: "Âm N (ん)" },
+    { id: "a", label: isKatakana ? "Hàng A (ア)" : "Hàng A (あ)" },
+    { id: "ka", label: isKatakana ? "Hàng Ka (カ)" : "Hàng Ka (か)" },
+    { id: "sa", label: isKatakana ? "Hàng Sa (サ)" : "Hàng Sa (さ)" },
+    { id: "ta", label: isKatakana ? "Hàng Ta (タ)" : "Hàng Ta (た)" },
+    { id: "na", label: isKatakana ? "Hàng Na (ナ)" : "Hàng Na (な)" },
+    { id: "ha", label: isKatakana ? "Hàng Ha (ハ)" : "Hàng Ha (は)" },
+    { id: "ma", label: isKatakana ? "Hàng Ma (マ)" : "Hàng Ma (ま)" },
+    { id: "ya", label: isKatakana ? "Hàng Ya (ヤ)" : "Hàng Ya (や)" },
+    { id: "ra", label: isKatakana ? "Hàng Ra (ラ)" : "Hàng Ra (ら)" },
+    { id: "wa", label: isKatakana ? "Hàng Wa (ワ)" : "Hàng Wa (わ)" },
+    { id: "n", label: isKatakana ? "Âm N (ン)" : "Âm N (ん)" },
   ];
 
-  const filtered =
-    selectedRow === "all"
-      ? characters
-      : characters.filter((c) => c.row === selectedRow);
+  // Danh sách các cột nguyên âm chuẩn 5 cột (A - I - U - E - O)
+  const vowelColumns = [
+    { col: "A", kana: isKatakana ? "ア" : "あ" },
+    { col: "I", kana: isKatakana ? "イ" : "い" },
+    { col: "U", kana: isKatakana ? "ウ" : "う" },
+    { col: "E", kana: isKatakana ? "エ" : "え" },
+    { col: "O", kana: isKatakana ? "オ" : "お" },
+  ];
+
+  // Danh sách cột cho Âm ghép Yōon (3 cột: -a, -u, -o)
+  const yoonColumns = [
+    { col: "— A", sub: isKatakana ? "ャ" : "ゃ" },
+    { col: "— U", sub: isKatakana ? "ュ" : "ゅ" },
+    { col: "— O", sub: isKatakana ? "ョ" : "ょ" },
+  ];
+
+  // Xây dựng ma trận 5 cột chuẩn xác cho Seion (Gojūon)
+  const getSeionSlots = () => {
+    const activeRows: KanaRow[] =
+      selectedRow === "all"
+        ? ["a", "ka", "sa", "ta", "na", "ha", "ma", "ya", "ra", "wa", "n"]
+        : [selectedRow];
+
+    const columns: ("a" | "i" | "u" | "e" | "o")[] = ["a", "i", "u", "e", "o"];
+    const slots: { key: string; char: KanaCharacter | null }[] = [];
+
+    activeRows.forEach((rId) => {
+      if (rId === "n") {
+        // Hàng âm N: Chữ N ở cột A, 4 cột còn lại để trống giữ chỗ
+        const nChar = characters.find((c) => c.row === "n");
+        slots.push({ key: "n-a", char: nChar || null });
+        slots.push({ key: "n-i", char: null });
+        slots.push({ key: "n-u", char: null });
+        slots.push({ key: "n-e", char: null });
+        slots.push({ key: "n-o", char: null });
+      } else if (rId === "ya") {
+        // Hàng Ya chỉ có 3 chữ: ya (cột a), yu (cột u), yo (cột o)
+        const yaChar = characters.find((c) => c.row === "ya" && c.column === "a");
+        const yuChar = characters.find((c) => c.row === "ya" && c.column === "u");
+        const yoChar = characters.find((c) => c.row === "ya" && c.column === "o");
+        slots.push({ key: "ya-a", char: yaChar || null });
+        slots.push({ key: "ya-i", char: null });
+        slots.push({ key: "ya-u", char: yuChar || null });
+        slots.push({ key: "ya-e", char: null });
+        slots.push({ key: "ya-o", char: yoChar || null });
+      } else if (rId === "wa") {
+        // Hàng Wa chỉ có 2 chữ: wa (cột a), wo (cột o)
+        const waChar = characters.find((c) => c.row === "wa" && c.column === "a");
+        const woChar = characters.find((c) => c.row === "wa" && c.column === "o");
+        slots.push({ key: "wa-a", char: waChar || null });
+        slots.push({ key: "wa-i", char: null });
+        slots.push({ key: "wa-u", char: null });
+        slots.push({ key: "wa-e", char: null });
+        slots.push({ key: "wa-o", char: woChar || null });
+      } else {
+        // Các hàng chuẩn đầy đủ 5 ký tự: a, ka, sa, ta, na, ha, ma, ra
+        columns.forEach((col) => {
+          const char = characters.find((c) => c.row === rId && c.column === col);
+          slots.push({ key: `${rId}-${col}`, char: char || null });
+        });
+      }
+    });
+
+    return slots;
+  };
+
+  const seionSlots = groupType === "seion" ? getSeionSlots() : [];
 
   return (
     <div className={cn("space-y-4", className)}>
       {/* Controls row: Row filtering pills + Equivalent Kana Toggle */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-[#F1F5F9]">
         {showRowFilter && (
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
+          <div className="flex-1 min-w-0 flex items-center gap-1.5 overflow-x-auto pb-2.5 custom-scrollbar-x text-xs">
             {rows.map((row) => (
               <button
                 key={row.id}
@@ -87,10 +154,79 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
         )}
       </div>
 
-      {/* Grid of Characters */}
-      {filtered.length > 0 ? (
-        <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3">
-          {filtered.map((char) => (
+      {/* 1. Header 5 Cột Nguyên Âm (A - I - U - E - O) chuẩn cho Seion & Dakuten */}
+      {!isYoon && groupType !== "extended" && (
+        <div className="grid grid-cols-5 gap-2 sm:gap-3.5 text-center mb-1">
+          {vowelColumns.map((v) => (
+            <div
+              key={v.col}
+              className="py-1.5 sm:py-2 px-1 rounded-[10px] bg-[#F0F7FF] border border-[#BBDDFF] text-[#12558F] font-bold text-xs sm:text-sm flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 shadow-2xs"
+            >
+              <span className="text-[10px] sm:text-xs text-[#2684D9] uppercase tracking-wider">Cột</span>
+              <span className="text-xs sm:text-sm font-extrabold">{v.col}</span>
+              <span className="font-japanese text-[11px] sm:text-xs opacity-80">({v.kana})</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* 2. Header 3 Cột dành cho Âm Ghép Yōon (-a, -u, -o) */}
+      {isYoon && (
+        <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 text-center mb-1">
+          {yoonColumns.map((v) => (
+            <div
+              key={v.col}
+              className="py-2 px-2 rounded-[10px] bg-[#F0F7FF] border border-[#BBDDFF] text-[#12558F] font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-2xs"
+            >
+              <span className="text-xs text-[#2684D9] uppercase tracking-wider">Cột</span>
+              <span className="font-extrabold">{v.col}</span>
+              <span className="font-japanese text-xs opacity-80">({v.sub})</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* 3. Lưới hiển thị các ký tự (Grid of Characters) */}
+      {groupType === "seion" ? (
+        // Seion: Sử dụng 5 cột chuẩn tuyệt đối, có ô trống giữ vị trí cho hàng Ya / Wa / N
+        <div className="grid grid-cols-5 gap-2 sm:gap-3.5">
+          {seionSlots.map((slot) =>
+            slot.char ? (
+              <KanaCard
+                key={slot.char.id}
+                kana={slot.char}
+                isSelected={selectedKanaId === slot.char.id}
+                showEquivalent={showEquivalent}
+                onSelect={onSelectKana}
+              />
+            ) : (
+              <div
+                key={slot.key}
+                className="rounded-[14px] bg-[#F8FAFC]/60 border border-dashed border-[#E2E8F0] p-2 sm:p-3 flex flex-col items-center justify-center min-h-[105px] sm:min-h-[130px] select-none"
+                aria-hidden="true"
+              >
+                <span className="text-xs font-bold text-slate-300">—</span>
+              </div>
+            )
+          )}
+        </div>
+      ) : isYoon ? (
+        // Yōon: Lưới 3 cột chuẩn cho các âm ghép (-a, -u, -o)
+        <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5">
+          {characters.map((char) => (
+            <KanaCard
+              key={char.id}
+              kana={char}
+              isSelected={selectedKanaId === char.id}
+              showEquivalent={showEquivalent}
+              onSelect={onSelectKana}
+            />
+          ))}
+        </div>
+      ) : groupType === "dakuten" ? (
+        // Dakuten: Đúng 5 cột tương ứng 5 nguyên âm a - i - u - e - o
+        <div className="grid grid-cols-5 gap-2 sm:gap-3.5">
+          {characters.map((char) => (
             <KanaCard
               key={char.id}
               kana={char}
@@ -101,8 +237,17 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
           ))}
         </div>
       ) : (
-        <div className="rounded-[12px] bg-[#F8FAFC] border border-dashed border-[#CBD5E1] p-8 text-center text-sm text-[#64748B]">
-          Không có ký tự nào trong nhóm hàng đã chọn.
+        // Âm mở rộng Tokushuon hoặc nhóm khác
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2.5 sm:gap-3.5">
+          {characters.map((char) => (
+            <KanaCard
+              key={char.id}
+              kana={char}
+              isSelected={selectedKanaId === char.id}
+              showEquivalent={showEquivalent}
+              onSelect={onSelectKana}
+            />
+          ))}
         </div>
       )}
     </div>

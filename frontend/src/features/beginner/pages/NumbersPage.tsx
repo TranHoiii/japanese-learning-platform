@@ -56,15 +56,15 @@ export const NumbersPage: React.FC = () => {
       subtitle="Thư viện tra cứu số đếm • Biến âm & Bộ tính tự động"
       description="Tra cứu đầy đủ số đếm cơ bản (0 - 99), hàng trăm, nghìn, cơ số Vạn (万), ngày tháng, giờ giấc và các lượng từ thông dụng. Tích hợp bộ tính ghép số và ma trận biến âm phản xạ nhanh."
       actions={
-        <Link to="/beginner/practice">
+        <Link to="/beginner/practice?mode=numbers">
           <Button variant="secondary" size="sm">
-            Luyện tập tổng hợp &rarr;
+            Luyện tập số đếm &rarr;
           </Button>
         </Link>
       }
     >
       {/* Quick Section Filter Pills */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-[#E2E8F0] scrollbar-none text-xs">
+      <div className="flex items-center gap-2 overflow-x-auto pb-3 border-b border-[#E2E8F0] custom-scrollbar-x text-xs">
         {sections.map((sec) => (
           <button
             key={sec.id}

@@ -134,7 +134,7 @@ export const KatakanaPage: React.FC = () => {
       {viewMode === "grid" && (
         <div className="space-y-6">
           {/* Tab Switcher: Seion / Dakuten / Yoon / Extended */}
-          <div className="flex items-center gap-2 border-b border-[#E2E8F0] pb-2 overflow-x-auto scrollbar-none">
+          <div className="flex items-center gap-2 border-b border-[#E2E8F0] overflow-x-auto pb-3 custom-scrollbar-x">
             <button
               type="button"
               onClick={() => setActiveTab("seion")}

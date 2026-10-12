@@ -84,7 +84,7 @@ export const NumberBuilder: React.FC<NumberBuilderProps> = ({ className }) => {
         </div>
 
         {/* Quick Presets */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-2.5 custom-scrollbar-x text-xs">
           <span className="text-[#64748B] font-semibold shrink-0 mr-1">
             Số mẫu:
           </span>

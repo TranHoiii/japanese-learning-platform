@@ -113,10 +113,10 @@ export default function LessonsPage() {
             />
           </div>
 
-          <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200/60 self-end sm:self-auto">
+          <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200/60 max-w-full overflow-x-auto custom-scrollbar-x self-stretch sm:self-auto">
             <button
               onClick={() => setFilterStatus("ALL")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 whitespace-nowrap ${
                 filterStatus === "ALL"
                   ? "bg-white text-indigo-700 shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
@@ -126,7 +126,7 @@ export default function LessonsPage() {
             </button>
             <button
               onClick={() => setFilterStatus("IN_PROGRESS")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 whitespace-nowrap ${
                 filterStatus === "IN_PROGRESS"
                   ? "bg-white text-indigo-700 shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
@@ -136,7 +136,7 @@ export default function LessonsPage() {
             </button>
             <button
               onClick={() => setFilterStatus("COMPLETED")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 whitespace-nowrap ${
                 filterStatus === "COMPLETED"
                   ? "bg-white text-indigo-700 shadow-xs"
                   : "text-slate-600 hover:text-slate-900"

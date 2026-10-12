@@ -166,7 +166,7 @@ export default function VocabularyPage() {
 
           {/* Module Switcher Tabs (Vocabulary, Grammar, Kanji, Listening, Reading, Exercise) */}
           {!isN4 ? (
-            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto pb-2">
+            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
               <Link
                 to={`/n5/lessons/${activeLessonId}/vocabulary`}
                 className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 transition-all flex items-center space-x-2 shrink-0"
@@ -216,7 +216,7 @@ export default function VocabularyPage() {
               </Link>
             </div>
           ) : (
-            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto pb-2">
+            <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
               <span className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 flex items-center space-x-2 shrink-0">
                 <span>📚</span>
                 <span>Từ Vựng N4</span>

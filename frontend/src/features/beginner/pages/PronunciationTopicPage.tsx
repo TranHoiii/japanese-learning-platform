@@ -94,7 +94,7 @@ export const PronunciationTopicPage: React.FC = () => {
             </Button>
           </Link>
         ) : (
-          <Link to="/beginner/practice" className="w-full sm:w-auto">
+          <Link to="/beginner/practice?mode=pronunciation" className="w-full sm:w-auto">
             <Button variant="primary" size="sm" fullWidth>
               Luyện tập phản xạ &rarr;
             </Button>

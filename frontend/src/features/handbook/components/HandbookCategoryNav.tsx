@@ -64,7 +64,7 @@ export const HandbookCategoryNav: React.FC<HandbookCategoryNavProps> = ({
   return (
     <nav
       aria-label="Danh mục sổ tay"
-      className={`flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none ${className}`}
+      className={`flex items-center gap-2 overflow-x-auto pb-3 custom-scrollbar-x ${className}`}
     >
       <Link
         to="/handbook"

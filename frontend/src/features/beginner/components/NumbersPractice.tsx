@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { cn } from "../../../utils/cn";
 import { NumberPracticeQuestion } from "../types/numbers";
 import Button from "../../../components/ui/Button";
@@ -12,15 +12,27 @@ export const NumbersPractice: React.FC<NumbersPracticeProps> = ({
   questions,
   className,
 }) => {
+  const [sessionKey, setSessionKey] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [answeredMap, setAnsweredMap] = useState<Record<number, string>>({});
 
-  if (!questions || questions.length === 0) {
+  const activeQuestions = useMemo(() => {
+    return questions.map((q) => {
+      const opts = [...q.options];
+      for (let i = opts.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [opts[i], opts[j]] = [opts[j], opts[i]];
+      }
+      return { ...q, options: opts };
+    });
+  }, [questions, sessionKey]);
+
+  if (!activeQuestions || activeQuestions.length === 0) {
     return null;
   }
 
-  const currentQ = questions[currentIndex];
+  const currentQ = activeQuestions[currentIndex];
   const answeredForCurrent = answeredMap[currentIndex] ?? null;
   const isAnswered = answeredForCurrent !== null;
   const selectedOpt = currentQ.options.find((o) => o.id === answeredForCurrent);
@@ -33,7 +45,7 @@ export const NumbersPractice: React.FC<NumbersPracticeProps> = ({
   };
 
   const handleNext = () => {
-    if (currentIndex < questions.length - 1) {
+    if (currentIndex < activeQuestions.length - 1) {
       setCurrentIndex((prev) => prev + 1);
       setSelectedOptionId(answeredMap[currentIndex + 1] ?? null);
     }
@@ -50,12 +62,13 @@ export const NumbersPractice: React.FC<NumbersPracticeProps> = ({
     setAnsweredMap({});
     setSelectedOptionId(null);
     setCurrentIndex(0);
+    setSessionKey((prev) => prev + 1);
   };
 
   const totalAnswered = Object.keys(answeredMap).length;
   const correctCount = Object.entries(answeredMap).reduce((count, [idxStr, optId]) => {
     const idx = parseInt(idxStr, 10);
-    const q = questions[idx];
+    const q = activeQuestions[idx];
     const opt = q?.options.find((o) => o.id === optId);
     return opt?.isCorrect ? count + 1 : count;
   }, 0);
@@ -85,7 +98,7 @@ export const NumbersPractice: React.FC<NumbersPracticeProps> = ({
 
         <div className="flex items-center gap-2">
           <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#F1F5F9] text-[#475569]">
-            Câu {currentIndex + 1} / {questions.length}
+            Câu {currentIndex + 1} / {activeQuestions.length}
           </span>
           {totalAnswered > 0 && (
             <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#ECFDF5] text-[#065F46] border border-[#A7F3D0]">
