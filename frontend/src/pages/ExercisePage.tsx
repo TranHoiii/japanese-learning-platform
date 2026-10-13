@@ -35,18 +35,16 @@ export default function ExercisePage() {
   const currentLesson = lessons?.find((l) => l.id === activeLessonId);
 
   // 3. Get Exercises list (strictly sorted by sort_order ASC from API)
-  // Note: Minna no Nihongo merges Lesson 1 & 2 into "Bài 01–02" (lesson_id=1).
-  const effectiveQueryLessonId = activeLessonId === 2 ? 1 : activeLessonId;
 
   const {
     data: allExercises,
     isLoading,
     error,
   } = useQuery({
-    queryKey: ["exercises", effectiveQueryLessonId],
+    queryKey: ["exercises", activeLessonId],
     queryFn: () =>
-      effectiveQueryLessonId
-        ? exerciseApi.getExercisesByLesson(effectiveQueryLessonId)
+      activeLessonId
+        ? exerciseApi.getExercisesByLesson(activeLessonId)
         : exerciseApi.getAllExercises(),
   });
 

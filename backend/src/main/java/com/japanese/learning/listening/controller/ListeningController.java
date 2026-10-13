@@ -8,6 +8,8 @@ import com.japanese.learning.listening.service.ListeningService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Positive;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -45,7 +47,11 @@ public class ListeningController {
     @PostMapping("/{id}/submit")
     public ApiResponse<ListeningSubmitResponse> submitListening(
             @PathVariable @Positive Long id,
-            @Valid @RequestBody ListeningSubmitRequest request) {
+            @Valid @RequestBody ListeningSubmitRequest request,
+            @AuthenticationPrincipal Jwt jwt) {
+        if (jwt != null) {
+            return ApiResponse.success("Nộp bài nghe thành công", listeningService.submitListening(id, request, jwt));
+        }
         return ApiResponse.success("Nộp bài nghe thành công", listeningService.submitListening(id, request));
     }
 }

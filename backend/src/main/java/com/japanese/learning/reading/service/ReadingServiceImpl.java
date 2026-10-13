@@ -1,7 +1,10 @@
 package com.japanese.learning.reading.service;
 
+import com.japanese.learning.common.enums.ContentType;
 import com.japanese.learning.common.exception.ResourceNotFoundException;
 import com.japanese.learning.lesson.repository.LessonRepository;
+import com.japanese.learning.progress.dto.UpdateContentProgressRequest;
+import com.japanese.learning.progress.service.ProgressService;
 import com.japanese.learning.reading.dto.ReadingAnswerRequest;
 import com.japanese.learning.reading.dto.ReadingContentMapper;
 import com.japanese.learning.reading.dto.ReadingContentResponse;
@@ -12,7 +15,9 @@ import com.japanese.learning.reading.entity.ReadingContent;
 import com.japanese.learning.reading.entity.ReadingOption;
 import com.japanese.learning.reading.entity.ReadingQuestion;
 import com.japanese.learning.reading.repository.ReadingContentRepository;
-import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,14 +27,34 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
-@RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class ReadingServiceImpl implements ReadingService {
 
     private final ReadingContentRepository readingContentRepository;
     private final LessonRepository lessonRepository;
     private final ReadingContentMapper readingContentMapper;
+    private final ProgressService progressService;
+
+    public ReadingServiceImpl(
+            ReadingContentRepository readingContentRepository,
+            LessonRepository lessonRepository,
+            ReadingContentMapper readingContentMapper) {
+        this(readingContentRepository, lessonRepository, readingContentMapper, null);
+    }
+
+    @Autowired
+    public ReadingServiceImpl(
+            ReadingContentRepository readingContentRepository,
+            LessonRepository lessonRepository,
+            ReadingContentMapper readingContentMapper,
+            @Autowired(required = false) ProgressService progressService) {
+        this.readingContentRepository = readingContentRepository;
+        this.lessonRepository = lessonRepository;
+        this.readingContentMapper = readingContentMapper;
+        this.progressService = progressService;
+    }
 
     @Override
     public List<ReadingContentResponse> getReadingsByLessonId(Long lessonId) {
@@ -51,7 +76,14 @@ public class ReadingServiceImpl implements ReadingService {
     }
 
     @Override
+    @Transactional
     public ReadingSubmitResponse submitReading(Long id, ReadingSubmitRequest request) {
+        return submitReading(id, request, null);
+    }
+
+    @Override
+    @Transactional
+    public ReadingSubmitResponse submitReading(Long id, ReadingSubmitRequest request, Jwt jwt) {
         ReadingContent reading = readingContentRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Không tìm thấy bài đọc với id: " + id));
 
@@ -107,6 +139,19 @@ public class ReadingServiceImpl implements ReadingService {
         int totalQuestions = reading.getQuestions().size();
         int wrongCount = totalQuestions - correctCount;
         int score = totalQuestions > 0 ? (int) Math.round(((double) correctCount / totalQuestions) * 100) : 0;
+
+        // Persist user learning progress if authenticated
+        if (jwt != null && progressService != null) {
+            try {
+                progressService.updateContentProgress(jwt, new UpdateContentProgressRequest(
+                        ContentType.READING,
+                        reading.getId(),
+                        score
+                ));
+            } catch (Exception ex) {
+                log.warn("Không thể lưu tiến độ cho bài đọc {}: {}", id, ex.getMessage());
+            }
+        }
 
         return ReadingSubmitResponse.builder()
                 .score(score)

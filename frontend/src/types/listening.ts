@@ -1,6 +1,7 @@
 export interface ListeningOption {
   id: number;
   content: string;
+  imageUrl?: string | null;
   sortOrder: number;
 }
 
@@ -9,6 +10,7 @@ export interface ListeningQuestion {
   question: string;
   questionType: 'MULTIPLE_CHOICE' | 'SINGLE_CHOICE' | 'TRUE_FALSE';
   explanation?: string | null;
+  imageUrl?: string | null;
   sortOrder: number;
   options: ListeningOption[];
 }

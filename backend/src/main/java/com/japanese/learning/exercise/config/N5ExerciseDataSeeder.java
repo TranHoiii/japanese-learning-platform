@@ -53,6 +53,7 @@ public class N5ExerciseDataSeeder implements CommandLineRunner {
             String questionText,
             QuestionType questionType,
             String explanation,
+            String imageUrl,
             Integer sortOrder,
             List<OptionSeedPayload> options
     ) {}
@@ -132,6 +133,7 @@ public class N5ExerciseDataSeeder implements CommandLineRunner {
                     question.setQuestionText(qDto.questionText());
                     question.setQuestionType(qDto.questionType() != null ? qDto.questionType() : QuestionType.FILL_BLANK);
                     question.setExplanation(qDto.explanation());
+                    question.setImageUrl(qDto.imageUrl());
                     question.setSortOrder(qDto.sortOrder());
 
                     List<QuestionOption> options = new ArrayList<>();

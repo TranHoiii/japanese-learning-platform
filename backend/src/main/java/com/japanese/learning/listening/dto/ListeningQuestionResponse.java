@@ -20,6 +20,7 @@ public class ListeningQuestionResponse {
     private String question;
     private QuestionType questionType;
     private String explanation;
+    private String imageUrl;
     private Integer sortOrder;
     private List<ListeningOptionResponse> options;
 }

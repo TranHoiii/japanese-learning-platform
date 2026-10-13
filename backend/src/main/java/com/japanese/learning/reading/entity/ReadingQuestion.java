@@ -59,5 +59,6 @@ public class ReadingQuestion {
             orphanRemoval = true
     )
     @OrderBy("sortOrder ASC")
+    @org.hibernate.annotations.BatchSize(size = 25)
     private List<ReadingOption> options = new ArrayList<>();
 }

@@ -21,6 +21,7 @@ export interface ExerciseQuestion {
   questionText: string;
   questionType: QuestionType;
   explanation?: string | null;
+  imageUrl?: string | null;
   sortOrder: number;
   options: QuestionOption[];
 }

@@ -107,6 +107,7 @@ public class N5ListeningDataSeeder implements CommandLineRunner {
                         question.setQuestion(qPayload.question() != null ? qPayload.question() : "");
                         question.setQuestionType(qPayload.questionType() != null ? QuestionType.valueOf(qPayload.questionType()) : QuestionType.MULTIPLE_CHOICE);
                         question.setExplanation(qPayload.explanation());
+                        question.setImageUrl(qPayload.imageUrl());
                         question.setSortOrder(qPayload.sortOrder() != null ? qPayload.sortOrder() : 1);
 
                         if (qPayload.options() != null) {
@@ -114,6 +115,7 @@ public class N5ListeningDataSeeder implements CommandLineRunner {
                                 ListeningOption option = new ListeningOption();
                                 option.setQuestion(question);
                                 option.setContent(oPayload.content() != null ? oPayload.content() : "");
+                                option.setImageUrl(oPayload.imageUrl());
                                 option.setCorrect(oPayload.correct() != null ? oPayload.correct() : false);
                                 option.setSortOrder(oPayload.sortOrder() != null ? oPayload.sortOrder() : 1);
 
@@ -153,6 +155,7 @@ public class N5ListeningDataSeeder implements CommandLineRunner {
             String question,
             String questionType,
             String explanation,
+            String imageUrl,
             Integer sortOrder,
             List<OptionPayload> options
     ) {}
@@ -160,6 +163,7 @@ public class N5ListeningDataSeeder implements CommandLineRunner {
     @JsonIgnoreProperties(ignoreUnknown = true)
     public record OptionPayload(
             String content,
+            String imageUrl,
             Boolean correct,
             Integer sortOrder
     ) {}

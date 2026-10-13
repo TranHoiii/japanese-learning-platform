@@ -14,11 +14,21 @@ import com.japanese.learning.exercise.entity.Question;
 import com.japanese.learning.exercise.entity.QuestionOption;
 import com.japanese.learning.exercise.repository.ExerciseRepository;
 import com.japanese.learning.exercise.repository.QuestionRepository;
-import lombok.RequiredArgsConstructor;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.japanese.learning.auth.service.AuthService;
+import com.japanese.learning.common.enums.ContentType;
+import com.japanese.learning.progress.dto.UpdateContentProgressRequest;
+import com.japanese.learning.progress.entity.UserAnswer;
+import com.japanese.learning.progress.repository.UserAnswerRepository;
+import com.japanese.learning.progress.service.ProgressService;
+import com.japanese.learning.user.entity.User;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -34,26 +44,47 @@ public class ExerciseServiceImpl implements ExerciseService {
     private final ExerciseMapper exerciseMapper;
     private final QuestionMapper questionMapper;
     private final ExerciseGradingHelper exerciseGradingHelper;
+    private final AuthService authService;
+    private final UserAnswerRepository userAnswerRepository;
+    private final ProgressService progressService;
+    private final ObjectMapper objectMapper;
 
-    @org.springframework.beans.factory.annotation.Autowired
+    @Autowired
+    public ExerciseServiceImpl(ExerciseRepository exerciseRepository,
+                               QuestionRepository questionRepository,
+                               ExerciseMapper exerciseMapper,
+                               QuestionMapper questionMapper,
+                               ExerciseGradingHelper exerciseGradingHelper,
+                               @Autowired(required = false) AuthService authService,
+                               @Autowired(required = false) UserAnswerRepository userAnswerRepository,
+                               @Autowired(required = false) ProgressService progressService,
+                               @Autowired(required = false) ObjectMapper objectMapper) {
+        this.exerciseRepository = exerciseRepository;
+        this.questionRepository = questionRepository;
+        this.exerciseMapper = exerciseMapper;
+        this.questionMapper = questionMapper;
+        this.exerciseGradingHelper = exerciseGradingHelper != null ? exerciseGradingHelper : new ExerciseGradingHelper();
+        this.authService = authService;
+        this.userAnswerRepository = userAnswerRepository;
+        this.progressService = progressService;
+        this.objectMapper = objectMapper != null ? objectMapper : new ObjectMapper();
+    }
+
     public ExerciseServiceImpl(ExerciseRepository exerciseRepository,
                                QuestionRepository questionRepository,
                                ExerciseMapper exerciseMapper,
                                QuestionMapper questionMapper,
                                ExerciseGradingHelper exerciseGradingHelper) {
-        this.exerciseRepository = exerciseRepository;
-        this.questionRepository = questionRepository;
-        this.exerciseMapper = exerciseMapper;
-        this.questionMapper = questionMapper;
-        this.exerciseGradingHelper = exerciseGradingHelper;
+        this(exerciseRepository, questionRepository, exerciseMapper, questionMapper, exerciseGradingHelper, null, null, null, null);
     }
 
     public ExerciseServiceImpl(ExerciseRepository exerciseRepository,
                                QuestionRepository questionRepository,
                                ExerciseMapper exerciseMapper,
                                QuestionMapper questionMapper) {
-        this(exerciseRepository, questionRepository, exerciseMapper, questionMapper, new ExerciseGradingHelper());
+        this(exerciseRepository, questionRepository, exerciseMapper, questionMapper, new ExerciseGradingHelper(), null, null, null, null);
     }
+
 
 
     @Override
@@ -102,6 +133,12 @@ public class ExerciseServiceImpl implements ExerciseService {
     @Override
     @Transactional
     public ExerciseSubmitResponse submitExercise(Long exerciseId, ExerciseSubmitRequest request) {
+        return submitExercise(exerciseId, request, null);
+    }
+
+    @Override
+    @Transactional
+    public ExerciseSubmitResponse submitExercise(Long exerciseId, ExerciseSubmitRequest request, Jwt jwt) {
         Exercise exercise = exerciseRepository.findWithQuestionsById(exerciseId)
                 .orElseThrow(() -> new ResourceNotFoundException("Không tìm thấy bài tập với id: " + exerciseId));
         if (exercise.getQuestions() != null) {
@@ -140,6 +177,65 @@ public class ExerciseServiceImpl implements ExerciseService {
         int wrongCount = autoGradedCount - correctCount;
         int score = autoGradedCount > 0 ? (int) Math.round(((double) correctCount / autoGradedCount) * 100) : 100;
 
+        // Persist user answers and update learning progress if authenticated
+        if (jwt != null && authService != null && userAnswerRepository != null) {
+            try {
+                User user = authService.getAuthenticatedUser(jwt);
+                if (user != null) {
+                    // Remove previous answers for this exercise attempt
+                    List<UserAnswer> priorAnswers = userAnswerRepository.findByUserIdAndExerciseId(user.getId(), exercise.getId());
+                    if (priorAnswers != null && !priorAnswers.isEmpty()) {
+                        userAnswerRepository.deleteAll(priorAnswers);
+                    }
+
+                    LocalDateTime now = LocalDateTime.now();
+                    for (int i = 0; i < exercise.getQuestions().size(); i++) {
+                        Question question = exercise.getQuestions().get(i);
+                        ExerciseAnswerRequest userAns = userAnswers.get(question.getId());
+                        ExerciseQuestionResultResponse qResult = results.get(i);
+
+                        UserAnswer ua = new UserAnswer();
+                        ua.setUser(user);
+                        ua.setQuestion(question);
+                        ua.setExercise(exercise);
+                        ua.setCorrect(Boolean.TRUE.equals(qResult.getIsCorrect()));
+                        ua.setAnsweredAt(now);
+
+                        if (userAns != null) {
+                            if (userAns.getSelectedOptionId() != null && question.getOptions() != null) {
+                                question.getOptions().stream()
+                                        .filter(opt -> opt.getId().equals(userAns.getSelectedOptionId()))
+                                        .findFirst()
+                                        .ifPresent(ua::setSelectedOption);
+                            }
+
+                            if (userAns.getResponses() != null && !userAns.getResponses().isEmpty()) {
+                                try {
+                                    ua.setAnswerText(objectMapper.writeValueAsString(userAns.getResponses()));
+                                } catch (Exception ex) {
+                                    ua.setAnswerText(userAns.getResponses().toString());
+                                }
+                            } else if (userAns.getAnswerText() != null) {
+                                ua.setAnswerText(userAns.getAnswerText());
+                            }
+                        }
+
+                        userAnswerRepository.save(ua);
+                    }
+
+                    if (progressService != null) {
+                        progressService.updateContentProgress(jwt, new UpdateContentProgressRequest(
+                                ContentType.EXERCISE,
+                                exercise.getId(),
+                                score
+                        ));
+                    }
+                }
+            } catch (Exception ex) {
+                log.warn("Không thể lưu kết quả bài làm cho bài tập {}: {}", exerciseId, ex.getMessage());
+            }
+        }
+
         return ExerciseSubmitResponse.builder()
                 .score(score)
                 .totalQuestions(totalQuestions)
@@ -149,3 +245,4 @@ public class ExerciseServiceImpl implements ExerciseService {
                 .build();
     }
 }
+

@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { readingApi } from "../services/readingApi";
-import { progressApi } from "../services/progressApi";
 import { ReadingSubmitResponse } from "../types/reading";
 import Navbar from "../components/Navbar";
 import { FuriganaText, FuriganaModeControl } from "../components/ui";
@@ -69,18 +68,9 @@ export default function ReadingDetailPage() {
       if (data.score >= 80) {
         gamification.celebrate(data.score === 100 ? "Hoàn hảo! 📖" : "Đọc rất tốt! 🌸", `Đúng ${data.correctCount}/${data.totalQuestions} câu`);
       }
-      progressApi
-        .updateContentProgress({
-          contentType: "READING",
-          contentId: readingId,
-          progressPercent: 100,
-        })
-        .then(() => {
-          queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
-          queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
-          queryClient.invalidateQueries({ queryKey: ["progress-content"] });
-        })
-        .catch(() => {});
+      queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-content"] });
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
   });
@@ -506,11 +496,12 @@ export default function ReadingDetailPage() {
 
                     {/* Question Image if present */}
                     {currentQuestion.imageUrl && (
-                      <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-50 p-2">
+                      <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-50 p-2 text-center">
                         <img
                           src={currentQuestion.imageUrl}
                           alt="Minh họa câu hỏi"
-                          className="max-h-48 w-auto mx-auto object-contain rounded-lg"
+                          className="max-h-48 w-auto mx-auto object-contain rounded-lg cursor-zoom-in"
+                          onClick={() => setZoomedImage(currentQuestion.imageUrl || null)}
                         />
                       </div>
                     )}
