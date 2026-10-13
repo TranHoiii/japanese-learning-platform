@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import "./dark.css";
 
 /*
  * ──────────────────────────────────────────────────────────────
@@ -83,27 +85,27 @@
   --color-slate-100: #F3EEE5;
   --color-slate-200: #E7E0D2;
   --color-slate-300: #D3CABA;
-  --color-slate-400: #9A8F7E;
-  --color-slate-500: #766D5E;
-  --color-slate-600: #5A5246;
-  --color-slate-700: #433D34;
-  --color-slate-800: #2E2A25;
-  --color-slate-900: #1F1C18;
-  --color-slate-950: #14120F;
+  --color-slate-400: #756A58;
+  --color-slate-500: #5C5243;
+  --color-slate-600: #453E32;
+  --color-slate-700: #322C23;
+  --color-slate-800: #221E17;
+  --color-slate-900: #14110D;
+  --color-slate-950: #0C0A08;
 
   --color-gray-50: #FAF7F1;
   --color-gray-100: #F3EEE5;
   --color-gray-200: #E7E0D2;
   --color-gray-300: #D3CABA;
-  --color-gray-400: #9A8F7E;
-  --color-gray-500: #766D5E;
-  --color-gray-600: #5A5246;
-  --color-gray-700: #433D34;
-  --color-gray-800: #2E2A25;
-  --color-gray-900: #1F1C18;
+  --color-gray-400: #756A58;
+  --color-gray-500: #5C5243;
+  --color-gray-600: #453E32;
+  --color-gray-700: #322C23;
+  --color-gray-800: #221E17;
+  --color-gray-900: #14110D;
 
   --color-paper: #FAF7F1;
-  --color-ink: #1F1C18;
+  --color-ink: #14110D;
 
   --color-success-50: #F3F8EC;
   --color-success-500: #6C9644;
@@ -204,11 +206,9 @@
 
 :root {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: #1F1C18;
+  color: #14110D;
   background-color: #FAF7F1;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Sticky Header Scroll Offset Compensation (Header h-16 = 64px + 16px buffer = 80px / 5rem) */

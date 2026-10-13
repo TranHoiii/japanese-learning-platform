@@ -62,15 +62,15 @@ export const RelatedArticlesList: React.FC<RelatedArticlesListProps> = ({
                   <Link
                     key={idx}
                     to={`/handbook/${rel.category}/${rel.slug}`}
-                    className="group p-3.5 sm:p-4 rounded-xl bg-white border border-[#E7E0D2] hover:border-[#2563EB] hover:shadow-xs transition-all flex flex-col justify-between"
+                    className="group p-3.5 sm:p-4 rounded-xl bg-white border border-[#E7E0D2] hover:border-[#2F5496] hover:shadow-xs transition-all flex flex-col justify-between"
                   >
                     <div className="space-y-1.5">
-                      <div className="flex items-center gap-1.5 text-xs text-[#2563EB] font-semibold">
+                      <div className="flex items-center gap-1.5 text-xs text-[#2F5496] font-semibold">
                         <span className="text-sm">{catMeta?.icon || "📖"}</span>
                         <span>{catMeta?.name || rel.category}</span>
                       </div>
 
-                      <h4 className="text-sm font-bold text-[#2E2A25] group-hover:text-[#2563EB] transition-colors leading-snug">
+                      <h4 className="text-sm font-bold text-[#2E2A25] group-hover:text-[#2F5496] transition-colors leading-snug">
                         {rel.title}
                       </h4>
                     </div>

@@ -20,7 +20,7 @@ export const KnowledgeArticle: React.FC<KnowledgeArticleProps> = ({
   return (
     <article className={cn("space-y-8 max-w-4xl mx-auto", className)}>
       {/* Header Overview Card */}
-      <div className="rounded-[16px] bg-gradient-to-br from-[#EEF3FA] to-white border border-[#BDD0EC] p-5 sm:p-6 shadow-xs space-y-4">
+      <div id="overview" className="rounded-2xl bg-gradient-to-br from-[#EEF3FA] to-white border border-[#BDD0EC] p-5 sm:p-6 shadow-xs space-y-4">
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2">
             <span className="text-2xl" aria-hidden="true">
@@ -46,24 +46,31 @@ export const KnowledgeArticle: React.FC<KnowledgeArticleProps> = ({
 
       {/* Visual Phonetics: Step Guide if present */}
       {topic.stepGuide && (
-        <PhoneticStepGuide guide={topic.stepGuide} />
+        <div id="step-guide">
+          <PhoneticStepGuide guide={topic.stepGuide} />
+        </div>
       )}
 
       {/* Visual Phonetics: Mora Comparisons if present */}
       {topic.moraComparisons && topic.moraComparisons.length > 0 && (
-        <MoraVisualizer comparisons={topic.moraComparisons} />
+        <div id="mora-guide">
+          <MoraVisualizer comparisons={topic.moraComparisons} />
+        </div>
       )}
 
       {/* Visual Phonetics: Pitch Contour if present */}
       {topic.pitchPatterns && topic.pitchPatterns.length > 0 && (
-        <PitchContourVisualizer patterns={topic.pitchPatterns} />
+        <div id="pitch-guide">
+          <PitchContourVisualizer patterns={topic.pitchPatterns} />
+        </div>
       )}
 
       {/* Sections and Rules */}
       {topic.sections.map((section) => (
         <section
           key={section.id}
-          className="rounded-[14px] bg-white border border-[#E7E0D2] p-5 sm:p-6 space-y-5 shadow-[0_1px_3px_rgba(15,23,42,0.04)]"
+          id={`section-${section.id}`}
+          className="surface p-5 sm:p-6 space-y-5 shadow-[0_1px_3px_rgba(15,23,42,0.04)] scroll-mt-24"
         >
           <div className="space-y-1 pb-3 border-b border-[#F3EEE5]">
             <h3 className="text-lg font-bold text-[#1F1C18]">
@@ -167,10 +174,12 @@ export const KnowledgeArticle: React.FC<KnowledgeArticleProps> = ({
 
       {/* In-Memory Mini Practice */}
       {topic.practiceQuestions && topic.practiceQuestions.length > 0 && (
-        <PronunciationMiniPractice
-          questions={topic.practiceQuestions}
-          topicTitleVi={topic.titleVi}
-        />
+        <div id="mini-practice" className="scroll-mt-24">
+          <PronunciationMiniPractice
+            questions={topic.practiceQuestions}
+            topicTitleVi={topic.titleVi}
+          />
+        </div>
       )}
     </article>
   );

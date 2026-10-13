@@ -35,7 +35,7 @@ export const BeginnerSection: React.FC<BeginnerSectionProps> = ({
     <section
       id={id}
       className={cn(
-        "scroll-mt-20 rounded-[16px] bg-white border border-[#E7E0D2] p-5 sm:p-7 shadow-[0_1px_3px_rgba(15,23,42,0.06)] space-y-6 transition-all",
+        "scroll-mt-20 surface p-5 sm:p-7 space-y-6",
         className,
       )}
       aria-labelledby={id ? `${id}-heading` : undefined}
@@ -51,7 +51,7 @@ export const BeginnerSection: React.FC<BeginnerSectionProps> = ({
             <div className="flex items-center gap-2.5 flex-wrap">
               <h2
                 id={id ? `${id}-heading` : undefined}
-                className="text-lg sm:text-xl font-bold text-[#1F1C18] tracking-tight"
+                className="font-display text-lg sm:text-xl font-extrabold text-[#1F1C18] tracking-tight"
               >
                 {title}
               </h2>

@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#213960" />
     <meta name="description" content="Website học tiếng Nhật cho người Việt" />
+    <script>
+      (function () {
+        try {
+          var s = localStorage.getItem('jlp.theme');
+          var dark = s ? s === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (dark) { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme = 'dark'; }
+        } catch (e) {}
+      })();
+    </script>
     <title>Japanese Learning Platform - Nền tảng học tiếng Nhật</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

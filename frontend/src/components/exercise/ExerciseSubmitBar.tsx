@@ -31,7 +31,7 @@ export const ExerciseSubmitBar: React.FC<ExerciseSubmitBarProps> = ({
 
   return (
     <>
-      <div className="sticky bottom-4 z-30 mt-8 p-4 sm:p-5 rounded-3xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="sticky bottom-24 lg:bottom-4 z-30 mt-8 p-4 sm:p-5 rounded-3xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-xl animate-fade-up flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3 text-sm">
           <div className="w-10 h-10 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-700 font-bold shrink-0">
             📊
@@ -55,7 +55,7 @@ export const ExerciseSubmitBar: React.FC<ExerciseSubmitBarProps> = ({
           className={`w-full sm:w-auto px-8 py-3.5 rounded-2xl font-bold text-sm text-white shadow-md transition-all cursor-pointer flex items-center justify-center gap-2 ${
             isPending || answeredQuestions === 0
               ? 'bg-slate-300 cursor-not-allowed shadow-none'
-              : 'bg-indigo-600 hover:bg-indigo-700 shadow-indigo-600/25 active:scale-98'
+              : 'btn-press bg-indigo-600 hover:bg-indigo-700 shadow-indigo-600/25 [--press-edge:#213960]'
           }`}
         >
           {isPending ? (
@@ -75,11 +75,11 @@ export const ExerciseSubmitBar: React.FC<ExerciseSubmitBarProps> = ({
       {/* Confirmation Modal when submitting incomplete exercise */}
       {showConfirmModal && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fade-in"
           onClick={() => setShowConfirmModal(false)}
         >
           <div
-            className="relative max-w-md w-full bg-white rounded-3xl p-6 sm:p-7 shadow-2xl space-y-4"
+            className="relative max-w-md w-full animate-pop bg-white rounded-3xl p-6 sm:p-7 shadow-2xl space-y-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-2xl mx-auto">

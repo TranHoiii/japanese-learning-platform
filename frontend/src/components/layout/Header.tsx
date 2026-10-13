@@ -7,6 +7,7 @@ import { useGamification } from "../../lib/gamification";
 import { setSoundMuted, useSoundMuted } from "../../lib/sound";
 import { StreakFlame } from "../gamification/GamificationWidgets";
 import StatsPopover from "../gamification/StatsPopover";
+import ThemeToggle from "./ThemeToggle";
 import { cn } from "../../utils/cn";
 
 export interface HeaderProps {
@@ -197,6 +198,8 @@ export const Header: React.FC<HeaderProps> = ({
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </Link>
+
+          <ThemeToggle />
 
           <Link
             to="/favorites"

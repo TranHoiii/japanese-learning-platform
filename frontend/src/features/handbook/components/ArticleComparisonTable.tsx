@@ -45,7 +45,7 @@ export const ArticleComparisonTable: React.FC<ArticleComparisonTableProps> = ({
               </p>
 
               {item.formula && (
-                <div className="px-3 py-1.5 rounded-lg bg-[#EFF6FF] border border-[#DBEAFE] text-xs font-mono font-semibold text-[#1E40AF]">
+                <div className="px-3 py-1.5 rounded-lg bg-[#EFF6FF] border border-[#DDE7F5] text-xs font-mono font-semibold text-[#213960]">
                   {item.formula}
                 </div>
               )}
@@ -73,7 +73,7 @@ export const ArticleComparisonTable: React.FC<ArticleComparisonTableProps> = ({
 
       {/* Summary Note */}
       {comparison.summary && (
-        <div className="p-3.5 rounded-xl bg-[#EFF6FF] border border-[#BFDBFE] text-xs sm:text-sm text-[#1E40AF] font-medium flex items-start gap-2">
+        <div className="p-3.5 rounded-xl bg-[#EFF6FF] border border-[#BFDBFE] text-xs sm:text-sm text-[#213960] font-medium flex items-start gap-2">
           <span className="shrink-0 text-base">📌</span>
           <p className="leading-relaxed">{comparison.summary}</p>
         </div>

@@ -63,7 +63,7 @@ export const HandbookSearchInput: React.FC<HandbookSearchInputProps> = ({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full pl-11 pr-20 py-3 text-sm sm:text-base bg-white border border-[#D3CABA] rounded-xl text-[#1F1C18] placeholder-[#9A8F7E] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent transition-all shadow-xs"
+        className="w-full pl-11 pr-20 py-3 text-sm sm:text-base bg-white border border-[#D3CABA] rounded-xl text-[#1F1C18] placeholder-[#9A8F7E] focus:outline-none focus:ring-2 focus:ring-[#2F5496] focus:border-transparent transition-all shadow-xs"
       />
 
       <div className="absolute inset-y-0 right-0 pr-3 flex items-center gap-2">

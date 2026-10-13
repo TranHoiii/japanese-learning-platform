@@ -78,9 +78,9 @@ export const PracticePage: React.FC = () => {
                 key={mode.id}
                 type="button"
                 onClick={() => handleSelectCategory(mode.id)}
-                className={`p-3 rounded-[12px] border text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 ${
+                className={`p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 hover:-translate-y-0.5 ${
                   isSelected
-                    ? "bg-[#2F5496] text-white border-[#1D4ED8] shadow-xs"
+                    ? "bg-[#2F5496] text-white border-[#213960] shadow-md shadow-indigo-900/20"
                     : "bg-white text-[#433D34] border-[#E7E0D2] hover:bg-[#FAF7F1] hover:border-[#9A8F7E]"
                 }`}
               >
@@ -117,7 +117,7 @@ export const PracticePage: React.FC = () => {
       </div>
 
       {/* Philosophy Callout */}
-      <div className="rounded-[12px] bg-[#F0FDF4] border border-[#22C55E]/30 p-3.5 flex items-center justify-between gap-3 text-xs text-[#15803D]">
+      <div className="rounded-2xl bg-[#F0FDF4] border border-[#22C55E]/30 p-3.5 flex items-center justify-between gap-3 text-xs text-[#15803D]">
         <div className="flex items-center gap-2">
           <span className="text-base" aria-hidden="true">
             🌱

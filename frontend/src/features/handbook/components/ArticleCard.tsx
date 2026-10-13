@@ -18,7 +18,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
 
   return (
     <article
-      className={`group flex flex-col justify-between p-5 sm:p-6 bg-white rounded-2xl border border-[#E7E0D2] hover:border-[#D3CABA] hover:shadow-md transition-all duration-200 ${className}`}
+      className={`group surface surface-hover flex flex-col justify-between p-5 sm:p-6 ${className}`}
     >
       <div className="space-y-3">
         {/* Badges: Category & Level */}
@@ -26,7 +26,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
           <div className="flex items-center gap-2">
             <Link
               to={`/handbook/${article.categoryId}`}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#EEF3FA] text-[#1D4ED8] hover:bg-[#DBEAFE] transition-colors"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#EEF3FA] text-[#213960] hover:bg-[#DDE7F5] transition-colors"
             >
               <span>{categoryMeta?.icon || "📖"}</span>
               <span>{categoryMeta?.name || article.categoryId}</span>
@@ -49,9 +49,9 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
         <div>
           <Link
             to={`/handbook/${article.categoryId}/${article.slug}`}
-            className="block group-hover:text-[#2563EB] transition-colors"
+            className="block group-hover:text-[#2F5496] transition-colors"
           >
-            <h2 className="text-base sm:text-lg font-bold text-[#1F1C18] leading-snug">
+            <h2 className="font-display text-base sm:text-lg font-bold text-[#1F1C18] leading-snug">
               {article.title}
             </h2>
           </Link>
@@ -94,7 +94,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
         <span className="text-xs text-[#9A8F7E]">Cập nhật: {article.updatedAt}</span>
         <Link
           to={`/handbook/${article.categoryId}/${article.slug}`}
-          className="inline-flex items-center gap-1 text-xs sm:text-sm font-semibold text-[#2563EB] hover:text-[#1D4ED8] transition-colors"
+          className="inline-flex items-center gap-1 text-xs sm:text-sm font-semibold text-[#2F5496] hover:text-[#213960] transition-colors"
         >
           <span>Đọc cẩm nang</span>
           <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

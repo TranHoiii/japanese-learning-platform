@@ -15,7 +15,7 @@ export interface NavItem {
   sublabel?: string;
   href: string;
   icon: string | React.ReactNode;
-  matchPattern?: (pathname: string) => boolean;
+  matchPattern?: (pathname: string, search?: string) => boolean;
 }
 
 export const navigationData: NavSection[] = [
@@ -88,7 +88,21 @@ export const navigationData: NavSection[] = [
         sublabel: "Thống kê học tập",
         href: "/progress",
         icon: "📊",
-        matchPattern: (pathname) => pathname.startsWith("/progress"),
+        matchPattern: (pathname, search) => pathname.startsWith("/progress") && (!search || !search.includes("tab=")),
+      },
+      {
+        label: "Bảng xếp hạng",
+        sublabel: "Vinh danh học viên",
+        href: "/progress?tab=leaderboard",
+        icon: "🏆",
+        matchPattern: (pathname, search) => pathname.startsWith("/progress") && (search?.includes("tab=leaderboard") ?? false),
+      },
+      {
+        label: "Huy hiệu",
+        sublabel: "Bộ sưu tập danh hiệu",
+        href: "/progress?tab=badges",
+        icon: "🎖️",
+        matchPattern: (pathname, search) => pathname.startsWith("/progress") && (search?.includes("tab=badges") ?? false),
       },
     ],
   },
@@ -121,7 +135,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
             <ul className="space-y-1" role="list">
               {section.items.map((item, iIdx) => {
                 const isActive = item.matchPattern
-                  ? item.matchPattern(location.pathname)
+                  ? item.matchPattern(location.pathname, location.search)
                   : location.pathname === item.href;
 
                 return (

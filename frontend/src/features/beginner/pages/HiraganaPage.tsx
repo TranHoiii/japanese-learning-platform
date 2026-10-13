@@ -70,7 +70,7 @@ export const HiraganaPage: React.FC = () => {
       }
     >
       {/* View Mode Bar: Grid | Confused Pairs | Practice */}
-      <div className="flex flex-wrap items-center justify-between gap-3 p-1.5 rounded-[12px] bg-[#F3EEE5] border border-[#E7E0D2]">
+      <div className="flex flex-wrap items-center justify-between gap-3 p-1.5 rounded-2xl bg-[#F3EEE5] border border-[#E7E0D2]">
         <div className="flex items-center gap-1">
           <button
             type="button"
@@ -161,13 +161,13 @@ export const HiraganaPage: React.FC = () => {
           </div>
 
           {/* Group Description Banner */}
-          <div className="rounded-[14px] bg-[#EEF3FA] border border-[#BDD0EC] p-4 sm:p-5 flex items-start gap-3.5">
+          <div className="surface p-4 sm:p-5 flex items-start gap-3.5 border-l-4 border-l-indigo-500">
             <div className="w-10 h-10 rounded-[8px] bg-white text-[#213960] font-bold text-lg flex items-center justify-center shrink-0 font-japanese border border-[#BDD0EC]">
               あ
             </div>
             <div className="space-y-1">
               <div className="flex items-center gap-2 flex-wrap">
-                <h2 className="text-base font-bold text-[#213960]">
+                <h2 className="font-display text-base font-bold text-[#213960]">
                   {currentGroup.title}
                 </h2>
                 <Badge variant="primary" size="sm">
@@ -195,7 +195,7 @@ export const HiraganaPage: React.FC = () => {
           />
 
           {/* Pedagogy Tips box for Vietnamese learners */}
-          <div className="rounded-[14px] bg-white border border-[#E7E0D2] p-5 space-y-3 shadow-2xs">
+          <div className="surface p-5 space-y-3">
             <h3 className="text-sm font-bold text-[#1F1C18] flex items-center gap-2">
               <span>💡</span>
               <span>Lưu ý sư phạm quan trọng khi học Hiragana</span>

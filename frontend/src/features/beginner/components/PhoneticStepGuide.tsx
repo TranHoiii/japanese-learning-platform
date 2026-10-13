@@ -40,7 +40,7 @@ export const PhoneticStepGuide: React.FC<PhoneticStepGuideProps> = ({
         {guide.steps.map((step) => (
           <div
             key={step.stepNumber}
-            className="rounded-[12px] bg-white border border-[#E7E0D2] p-4 flex flex-col justify-between space-y-3 shadow-xs hover:border-[#9A8F7E] transition-colors"
+            className="surface p-4 flex flex-col justify-between space-y-3 shadow-xs hover:border-[#9A8F7E] transition-colors"
           >
             <div className="space-y-2">
               <div className="flex items-center gap-2">

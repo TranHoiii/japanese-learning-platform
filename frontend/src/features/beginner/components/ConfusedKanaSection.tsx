@@ -53,7 +53,7 @@ export const ConfusedKanaSection: React.FC<ConfusedKanaSectionProps> = ({
   return (
     <div
       className={cn(
-        "rounded-[16px] bg-white border border-[#E7E0D2] p-5 sm:p-7 space-y-6 shadow-xs",
+        "surface p-5 sm:p-7 space-y-6 shadow-xs",
         className,
       )}
     >
@@ -235,7 +235,7 @@ export const ConfusedKanaSection: React.FC<ConfusedKanaSectionProps> = ({
               </div>
 
               {quizState.userAnswer !== null && (
-                <div className="space-y-2 pt-2 animate-in fade-in duration-150">
+                <div className="space-y-2 pt-2 animate-fade-in">
                   <p
                     className={cn(
                       "text-xs font-bold",

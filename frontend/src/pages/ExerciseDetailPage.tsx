@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { exerciseApi } from "../services/exerciseApi";
 import { progressApi } from "../services/progressApi";
+import { gamification } from "../lib/gamification";
 import { ExerciseSubmitResponse } from "../types/exercise";
 import Navbar from "../components/Navbar";
 import { FavoriteButton } from "../components/favorite/FavoriteButton";
@@ -171,6 +172,18 @@ export default function ExerciseDetailPage() {
     }[]) => exerciseApi.submitExercise(exerciseId, { answers: answersPayload }),
     onSuccess: (data) => {
       setResult(data);
+      {
+        const pct = Math.round(
+          data.totalQuestions > 0 ? (data.correctCount / data.totalQuestions) * 100 : 0
+        );
+        gamification.award(Math.max(5, Math.round(pct / 5)), "Bài tập");
+        if (pct >= 80) {
+          gamification.celebrate(
+            pct === 100 ? "Hoàn hảo! 🎉" : "Làm tốt lắm! 🌸",
+            `Bạn đúng ${data.correctCount}/${data.totalQuestions} câu`
+          );
+        }
+      }
       progressApi
         .updateContentProgress({
           contentType: "EXERCISE",
@@ -254,10 +267,10 @@ export default function ExerciseDetailPage() {
   const levelCode = isN4 ? "N4" : "N5";
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-28">
+      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-40 lg:pb-28">
         {/* Navigation Breadcrumb */}
         <div className="flex items-center space-x-2 text-sm text-slate-500 mb-6">
           <Link to="/" className="hover:text-slate-900 transition-colors">
@@ -279,9 +292,10 @@ export default function ExerciseDetailPage() {
 
         {/* Loading State */}
         {isLoading && (
-          <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl border border-slate-200/80 shadow-xs">
-            <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-4" />
-            <p className="text-slate-600 font-medium">Đang tải nội dung bài tập...</p>
+          <div className="space-y-4" aria-busy="true">
+            <div className="skeleton-shimmer h-40 rounded-3xl" />
+            <div className="skeleton-shimmer h-56 rounded-3xl" />
+            <div className="skeleton-shimmer h-56 rounded-3xl" />
           </div>
         )}
 
@@ -305,34 +319,22 @@ export default function ExerciseDetailPage() {
         {!isLoading && !error && exercise && (
           <div className="space-y-8">
             {/* Header Card */}
-            <div
-              className={`rounded-3xl p-6 sm:p-8 border shadow-xs ${
-                isReview
-                  ? "bg-gradient-to-r from-amber-500/10 via-amber-100/30 to-white border-amber-200"
-                  : "bg-white border-slate-200/80"
-              }`}
-            >
+            <div className="hero-ink pattern-seigaiha relative overflow-hidden rounded-3xl p-6 sm:p-8 text-white animate-fade-up">
               <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                 <div className="flex items-center space-x-3">
-                  <span
-                    className={`px-3 py-1 rounded-full text-xs font-bold ${
-                      isN4
-                        ? "bg-emerald-50 text-emerald-700 border border-emerald-200/60"
-                        : "bg-rose-50 text-rose-700 border border-rose-200/60"
-                    }`}
-                  >
+                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-white/15 text-white border border-white/20">
                     JLPT {levelCode}
                   </span>
                   <span
-                    className={`px-3 py-1 rounded-full text-xs font-bold ${
+                    className={`px-3 py-1 rounded-full text-xs font-bold border ${
                       isReview
-                        ? "bg-amber-100 text-amber-900 border border-amber-300"
-                        : "bg-indigo-50 text-indigo-700 border border-indigo-100"
+                        ? "bg-amber-400/90 text-amber-950 border-amber-300"
+                        : "bg-white/10 text-white/90 border-white/20"
                     }`}
                   >
                     Thứ tự #{exercise.sortOrder} ({isReview ? "★ TỔNG HỢP REVIEW" : "BÀI HỌC"})
                   </span>
-                  <span className="text-xs text-slate-500 font-medium">
+                  <span className="text-xs text-white/70 font-medium">
                     {exercise.questions?.length || 0} bài tập phần
                   </span>
                 </div>
@@ -340,20 +342,38 @@ export default function ExerciseDetailPage() {
                   <FavoriteButton contentType="EXERCISE" contentId={exerciseId} size="md" />
                   <Link
                     to={`/${isN4 ? "n4" : "n5"}/exercises`}
-                    className="text-sm font-semibold text-slate-500 hover:text-indigo-600 transition-colors flex items-center space-x-1"
+                    className="text-sm font-semibold text-white/80 hover:text-white transition-colors flex items-center space-x-1"
                   >
                     <span>← Danh sách bài tập</span>
                   </Link>
                 </div>
               </div>
 
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+              <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">
                 {exercise.title}
               </h1>
               {exercise.description && (
-                <p className="text-sm text-slate-600 leading-relaxed mt-2">
+                <p className="text-sm text-white/75 leading-relaxed mt-2">
                   {exercise.description}
                 </p>
+              )}
+              {totalQuestions > 0 && (
+                <div className="mt-5">
+                  <div className="flex justify-between text-xs font-semibold text-white/80 mb-1.5">
+                    <span>Đã trả lời</span>
+                    <span>
+                      {result ? totalQuestions : answeredCount}/{totalQuestions}
+                    </span>
+                  </div>
+                  <div className="h-2.5 rounded-full bg-white/15 overflow-hidden">
+                    <div
+                      className="h-full rounded-full bg-gradient-to-r from-amber-300 to-amber-500 transition-all duration-500"
+                      style={{
+                        width: `${((result ? totalQuestions : answeredCount) / totalQuestions) * 100}%`,
+                      }}
+                    />
+                  </div>
+                </div>
               )}
             </div>
 
@@ -409,11 +429,11 @@ export default function ExerciseDetailPage() {
         {/* Fullscreen Image Zoom Modal */}
         {modalImage && (
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
             onClick={() => setModalImage(null)}
           >
             <div
-              className="relative max-w-4xl w-full bg-white rounded-3xl p-4 sm:p-6 shadow-2xl flex flex-col items-center max-h-[90vh] overflow-y-auto"
+              className="relative max-w-4xl w-full animate-pop bg-white rounded-3xl p-4 sm:p-6 shadow-2xl flex flex-col items-center max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="w-full flex items-center justify-between pb-3 mb-3 border-b border-slate-100">

@@ -11,6 +11,15 @@ import { PRONUNCIATION_TOPICS } from "../data/pronunciation";
 import { NUMBER_CATEGORIES } from "../data/numbers";
 import { PRACTICE_MODES } from "../data/practice";
 
+const PATH_STEPS = [
+  { to: "/beginner/hiragana", glyph: "あ", title: "Bảng Hiragana", desc: "46 chữ cái nền tảng, kèm biến âm và âm ghép.", cta: "Học Hiragana", tone: "bg-rose-100 text-rose-700" },
+  { to: "/beginner/katakana", glyph: "ア", title: "Bảng Katakana", desc: "Chữ dùng cho từ mượn và tên riêng, phân biệt Shi/Tsu, So/N.", cta: "Học Katakana", tone: "bg-indigo-100 text-indigo-700" },
+  { to: "/beginner/pronunciation", glyph: "音", title: "10 quy tắc phát âm", desc: "Trường âm, ngắt âm, vô thanh hoá và trọng âm cao độ.", cta: "Luyện phát âm", tone: "bg-amber-100 text-amber-800" },
+  { to: "/beginner/numbers", glyph: "数", title: "Số đếm & lượng từ", desc: "Đếm người, đồ vật, ngày tháng và giờ giấc.", cta: "Mở sổ tay số đếm", tone: "bg-emerald-100 text-emerald-700" },
+  { to: "/beginner/practice", glyph: "練", title: "Phòng luyện tập", desc: "Trắc nghiệm phản xạ và flashcard nhanh, không áp lực.", cta: "Vào luyện tập", tone: "bg-sky-100 text-sky-700" },
+  { to: "/n5/lessons", glyph: "一", title: "Bài 1 Minna no Nihongo N5", desc: "Sẵn sàng rồi? Bắt đầu giáo trình chính thức.", cta: "Khám phá bài học N5", tone: "bg-gradient-to-br from-indigo-700 to-indigo-950 text-white shadow-sm" },
+];
+
 export const BeginnerHomePage: React.FC = () => {
   // Character quick sample for preview
   const hiraganaSample = HIRAGANA_GROUPS[0].characters.slice(0, 5);
@@ -26,210 +35,109 @@ export const BeginnerHomePage: React.FC = () => {
       subtitle="Kho tài nguyên & Luyện tập mở • Tra cứu tự do"
       description="Nền tảng căn bản vững chắc dành riêng cho người Việt bắt đầu học tiếng Nhật. Tra cứu bảng chữ cái, 10 quy tắc ngữ âm bản xứ, hệ thống số đếm và phòng luyện tập không áp lực thành tích."
     >
-      {/* 1. Hero & Philosophy Banner */}
-      <div className="rounded-[16px] bg-gradient-to-r from-[#EEF3FA] via-[#E6F2FF] to-[#DCE7F5] border border-[#BDD0EC] p-6 sm:p-8 space-y-6 shadow-xs">
-        <div className="space-y-3 max-w-3xl">
-          <div className="flex items-center gap-2 flex-wrap">
-            <Badge variant="primary" size="md">
-              Mô hình Tra cứu & Luyện tập (Resource & Practice)
-            </Badge>
-            <span className="text-xs text-[#213960] font-semibold">
-              Tra cứu → Học → Thực hành → Kiểm tra → Học lại
-            </span>
-          </div>
-
-          <h2 className="text-xl sm:text-2xl font-bold text-[#1F1C18] leading-snug">
-            Tự do học tập theo nhịp độ riêng, không áp lực điểm số
-          </h2>
-
-          <p className="text-sm sm:text-base text-[#213960] leading-relaxed">
-            Phân hệ Sơ cấp được thiết kế như một thư viện số mở. Bạn có thể tra cứu ngay ký tự chưa nhớ, kiểm tra phát âm khi cần và thực hành phản xạ bất kỳ lúc nào. Toàn bộ bài tập chỉ lưu tạm trong phiên học để bạn thoả sức thử sai mà không lo ảnh hưởng đến tiến độ cá nhân.
-          </p>
-        </div>
-
-        {/* 3 Pillars of Beginner Module */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
-          <div className="rounded-[12px] bg-white/80 backdrop-blur-xs border border-[#BDD0EC]/70 p-4 space-y-1.5 shadow-2xs">
-            <div className="flex items-center gap-2 text-sm font-bold text-[#213960]">
-              <span aria-hidden="true">📖</span>
-              <span>Tra cứu tức thì</span>
-            </div>
-            <p className="text-xs text-[#5A5246] leading-relaxed">
-              Bảng chữ cái, biến âm và quy tắc ngữ âm luôn mở sẵn như một cuốn sổ tay điện tử.
+      {/* 1. Learning path — the recommended order, each step is one tap */}
+      <section aria-labelledby="beginner-path-heading" className="space-y-4">
+        <div className="flex flex-wrap items-end justify-between gap-2">
+          <div>
+            <h2 id="beginner-path-heading" className="font-display text-xl sm:text-2xl font-extrabold text-slate-900">
+              Lộ trình khởi đầu
+            </h2>
+            <p className="text-sm text-slate-500 mt-0.5">
+              Đi theo thứ tự gợi ý, hoặc nhảy thẳng tới phần bạn cần tra cứu.
             </p>
           </div>
-
-          <div className="rounded-[12px] bg-white/80 backdrop-blur-xs border border-[#BDD0EC]/70 p-4 space-y-1.5 shadow-2xs">
-            <div className="flex items-center gap-2 text-sm font-bold text-[#213960]">
-              <span aria-hidden="true">🗣️</span>
-              <span>10 chuyên đề phát âm</span>
-            </div>
-            <p className="text-xs text-[#5A5246] leading-relaxed">
-              Phân tích chuyên sâu khẩu hình, cao độ (Pitch Accent) và sửa lỗi kinh điển cho người Việt.
-            </p>
-          </div>
-
-          <div className="rounded-[12px] bg-white/80 backdrop-blur-xs border border-[#BDD0EC]/70 p-4 space-y-1.5 shadow-2xs">
-            <div className="flex items-center gap-2 text-sm font-bold text-[#213960]">
-              <span aria-hidden="true">🎯</span>
-              <span>Thực hành không áp lực</span>
-            </div>
-            <p className="text-xs text-[#5A5246] leading-relaxed">
-              Trắc nghiệm phản xạ và flashcard nhanh trong phiên học, không tính điểm XP hay phạt streak.
-            </p>
-          </div>
+          <Badge variant="primary" size="sm">Không lưu điểm • Thử sai thoải mái</Badge>
         </div>
 
-        {/* Quick Anchor Navigation */}
-        <div className="flex items-center gap-2 overflow-x-auto pt-2 pb-2.5 text-xs custom-scrollbar-x">
-          <a
-            href="#hiragana-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
-          >
-            あ Bảng Hiragana
-          </a>
-          <a
-            href="#katakana-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
-          >
-            ア Bảng Katakana
-          </a>
-          <a
-            href="#pronunciation-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
-          >
-            🗣️ Quy tắc phát âm
-          </a>
-          <a
-            href="#numbers-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
-          >
-            🔢 Số đếm & Lượng từ
-          </a>
-          <a
-            href="#practice-section"
-            className="px-3 py-1.5 rounded-full bg-white text-[#213960] font-semibold border border-[#BDD0EC] hover:bg-[#EEF3FA] transition-colors shrink-0"
-          >
-            🎯 Phòng Luyện tập
-          </a>
-        </div>
-      </div>
+        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 stagger">
+          {PATH_STEPS.map((step, i) => (
+            <li key={step.to}>
+              <Link
+                to={step.to}
+                className="surface surface-hover group h-full p-5 flex flex-col gap-3 focus-visible:outline-2 focus-visible:outline-indigo-600"
+              >
+                <div className="flex items-center justify-between">
+                  <span
+                    className={`w-14 h-14 rounded-2xl flex items-center justify-center font-japanese text-3xl font-bold select-none transition-transform group-hover:scale-105 group-hover:-rotate-3 ${step.tone}`}
+                    aria-hidden="true"
+                  >
+                    {step.glyph}
+                  </span>
+                  <span className="text-xs font-extrabold text-slate-400 tabular-nums">BƯỚC {i + 1}</span>
+                </div>
+                <div className="space-y-1 flex-1">
+                  <h3 className="font-display text-base font-bold text-slate-900 group-hover:text-indigo-700 transition-colors">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{step.desc}</p>
+                </div>
+                <span className="text-xs font-bold text-indigo-700 flex items-center gap-1">
+                  {step.cta}
+                  <span className="transition-transform group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ol>
+      </section>
 
-      {/* 2. Section: Hiragana */}
-      <BeginnerSection
-        id="hiragana-section"
-        icon="あ"
-        title="Bảng chữ cái Hiragana (Chữ mềm)"
-        subtitle="Hệ thống chữ cái nền tảng nhất"
-        description={HIRAGANA_OVERVIEW.descriptionVi}
-        badge="46 ký tự + biến âm"
-        badgeVariant="primary"
-        actionLink="/beginner/hiragana"
-        actionText="Xem bảng Hiragana đầy đủ"
-      >
-        <div className="space-y-4">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#213960]">Âm cơ bản (Seion)</span>
-              <p className="text-xl font-bold text-[#1F1C18]">46 chữ cái</p>
-              <p className="text-xs text-[#766D5E]">Hàng A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, N</p>
-            </div>
-            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#213960]">Biến âm (Dakuten)</span>
-              <p className="text-xl font-bold text-[#1F1C18]">25 âm đục & bán đục</p>
-              <p className="text-xs text-[#766D5E]">Ga, Za, Da, Ba (ten-ten ゛) & Pa (maru ゜)</p>
-            </div>
-            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#213960]">Ảo âm (Yōon)</span>
-              <p className="text-xl font-bold text-[#1F1C18]">33 âm ghép</p>
-              <p className="text-xs text-[#766D5E]">Ghép với ゃ (ya), ゅ (yu), ょ (yo) nhỏ</p>
-            </div>
-          </div>
-
-          {/* Quick Preview of Row A */}
-          <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-2">
-            <div className="flex items-center justify-between text-xs font-semibold text-[#5A5246]">
-              <span>Mẫu hàng A cơ bản (a - i - u - e - o):</span>
-              <Link to="/beginner/hiragana" className="text-[#2F5496] hover:underline">
-                Tra cứu cả bảng &rarr;
+      {/* 2. Kana side by side */}
+      <section id="kana-section" aria-label="Bảng chữ cái" className="grid grid-cols-1 lg:grid-cols-2 gap-4 scroll-mt-20">
+        {[
+          {
+            id: "hiragana",
+            name: "Hiragana",
+            tag: "Chữ mềm",
+            overview: HIRAGANA_OVERVIEW.descriptionVi,
+            facts: ["46 âm cơ bản", "25 âm đục & bán đục", "33 âm ghép"],
+            sample: hiraganaSample,
+            accent: "from-rose-50 to-white",
+          },
+          {
+            id: "katakana",
+            name: "Katakana",
+            tag: "Chữ cứng • từ mượn",
+            overview: KATAKANA_OVERVIEW.descriptionVi,
+            facts: ["46 âm cơ bản", "25 Dakuten & 33 Yōon", `${KATAKANA_OVERVIEW.totalExtended} âm mở rộng`],
+            sample: katakanaSample,
+            accent: "from-indigo-50 to-white",
+          },
+        ].map((kana) => (
+          <article key={kana.id} className={`surface p-5 sm:p-6 space-y-4 bg-gradient-to-br ${kana.accent}`}>
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <h2 className="font-display text-lg font-extrabold text-slate-900">{kana.name}</h2>
+                <p className="text-xs font-bold uppercase tracking-wider text-indigo-700">{kana.tag}</p>
+              </div>
+              <Link to={`/beginner/${kana.id}`}>
+                <Button variant="secondary" size="sm">Xem đủ bảng &rarr;</Button>
               </Link>
             </div>
+            <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">{kana.overview}</p>
             <div className="grid grid-cols-5 gap-2 sm:gap-3">
-              {hiraganaSample.map((char) => (
+              {kana.sample.map((char) => (
                 <div
                   key={char.id}
-                  className="rounded-[10px] bg-white border border-[#D3CABA]/60 p-2 sm:p-3 text-center"
+                  className="rounded-2xl bg-white border border-slate-200 py-2.5 text-center shadow-xs"
                 >
-                  <span className="text-2xl sm:text-3xl font-bold font-japanese text-[#1F1C18] block">
+                  <span className="text-2xl sm:text-3xl font-bold font-japanese text-slate-900 block">
                     {char.character}
                   </span>
-                  <span className="text-xs font-semibold text-[#213960] block mt-0.5">
-                    {char.romaji}
-                  </span>
+                  <span className="text-xs font-semibold text-indigo-700 block mt-0.5">{char.romaji}</span>
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </BeginnerSection>
-
-      {/* 3. Section: Katakana */}
-      <BeginnerSection
-        id="katakana-section"
-        icon="ア"
-        title="Bảng chữ cái Katakana (Chữ cứng)"
-        subtitle="Chữ dùng cho từ mượn ngoại lai & tên riêng"
-        description={KATAKANA_OVERVIEW.descriptionVi}
-        badge="46 ký tự + biến âm, ghép & mở rộng"
-        badgeVariant="primary"
-        actionLink="/beginner/katakana"
-        actionText="Xem bảng Katakana đầy đủ"
-      >
-        <div className="space-y-4">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#213960]">Âm cơ bản (Seion)</span>
-              <p className="text-xl font-bold text-[#1F1C18]">46 chữ cái nét thẳng</p>
-              <p className="text-xs text-[#766D5E]">Góc cạnh dứt khoát, phân biệt Shi/Tsu, So/N</p>
-            </div>
-            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#213960]">Biến âm & Âm ghép</span>
-              <p className="text-xl font-bold text-[#1F1C18]">25 Dakuten & 33 Yōon</p>
-              <p className="text-xs text-[#766D5E]">Trường âm Katakana luôn viết bằng dấu gạch ー</p>
-            </div>
-            <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-1">
-              <span className="text-xs font-bold text-[#213960]">Âm mở rộng (Tokushuon)</span>
-              <p className="text-xl font-bold text-[#1F1C18]">{KATAKANA_OVERVIEW.totalExtended} âm ngoại lai</p>
-              <p className="text-xs text-[#766D5E]">Ti, Di, Fa, Fi, We, V... mô phỏng từ tiếng Anh</p>
-            </div>
-          </div>
-
-          {/* Quick Preview of Row A */}
-          <div className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 space-y-2">
-            <div className="flex items-center justify-between text-xs font-semibold text-[#5A5246]">
-              <span>Mẫu hàng A cơ bản (a - i - u - e - o):</span>
-              <Link to="/beginner/katakana" className="text-[#2F5496] hover:underline">
-                Tra cứu cả bảng &rarr;
-              </Link>
-            </div>
-            <div className="grid grid-cols-5 gap-2 sm:gap-3">
-              {katakanaSample.map((char) => (
-                <div
-                  key={char.id}
-                  className="rounded-[10px] bg-white border border-[#D3CABA]/60 p-2 sm:p-3 text-center"
-                >
-                  <span className="text-2xl sm:text-3xl font-bold font-japanese text-[#1F1C18] block">
-                    {char.character}
-                  </span>
-                  <span className="text-xs font-semibold text-[#213960] block mt-0.5">
-                    {char.romaji}
-                  </span>
-                </div>
+            <div className="flex flex-wrap gap-1.5">
+              {kana.facts.map((f) => (
+                <span key={f} className="px-2.5 py-1 rounded-full bg-white/80 border border-slate-200 text-[11px] font-semibold text-slate-600">
+                  {f}
+                </span>
               ))}
             </div>
-          </div>
-        </div>
-      </BeginnerSection>
+          </article>
+        ))}
+      </section>
+
 
       {/* 4. Section: Pronunciation (10 Topics Grid) */}
       <BeginnerSection
@@ -277,7 +185,7 @@ export const BeginnerHomePage: React.FC = () => {
           {NUMBER_CATEGORIES.map((category) => (
             <div
               key={category.id}
-              className="rounded-[12px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 flex flex-col justify-between space-y-3 hover:bg-white hover:border-[#D3CABA] transition-all"
+              className="surface surface-hover p-4 flex flex-col justify-between space-y-3"
             >
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between">
@@ -324,7 +232,7 @@ export const BeginnerHomePage: React.FC = () => {
           {PRACTICE_MODES.map((mode) => (
             <div
               key={mode.id}
-              className="rounded-[12px] bg-white border border-[#E7E0D2] p-4 flex flex-col justify-between space-y-3 shadow-2xs hover:border-[#2F5496] transition-all"
+              className="surface surface-hover p-4 flex flex-col justify-between space-y-3"
             >
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between">
@@ -368,11 +276,11 @@ export const BeginnerHomePage: React.FC = () => {
       </BeginnerSection>
 
       {/* Bottom Bridge CTA to Minnano Nihongo N5 */}
-      <div className="rounded-[16px] bg-white border border-[#E7E0D2] p-6 text-center space-y-3">
-        <p className="text-sm text-[#766D5E]">
+      <div className="hero-ink pattern-seigaiha rounded-3xl p-6 sm:p-8 text-center space-y-3 text-white">
+        <p className="text-sm text-white/70">
           Đã nắm vững bảng chữ cái và quy tắc phát âm cơ bản?
         </p>
-        <h3 className="text-lg font-bold text-[#1F1C18]">
+        <h3 className="font-display text-lg sm:text-xl font-extrabold text-white">
           Sẵn sàng bắt đầu Bài 1 giáo trình Minnano Nihongo N5
         </h3>
         <div className="pt-1 flex items-center justify-center gap-3">

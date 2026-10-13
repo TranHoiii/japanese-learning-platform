@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import VocabularyDetailModal from "../components/VocabularyDetailModal";
 import InteractiveFlashcardSession from "../components/learning/InteractiveFlashcardSession";
 import FavoriteButton from "../components/favorite/FavoriteButton";
+import { SKILLS } from "../constants/skills";
 
 export default function VocabularyPage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
@@ -97,212 +98,179 @@ export default function VocabularyPage() {
     }
   };
 
+  const levelPrefix = isN4 ? "n4" : "n5";
+  const lessonIndex = lessons ? lessons.findIndex((l) => l.id === activeLessonId) : -1;
+  const prevLesson = lessons && lessonIndex > 0 ? lessons[lessonIndex - 1] : null;
+  const nextLesson = lessons && lessonIndex >= 0 && lessonIndex < lessons.length - 1 ? lessons[lessonIndex + 1] : null;
+  const viewModes = [
+    { key: "flashcard" as const, icon: "🎴", label: "Thẻ học" },
+    { key: "table" as const, icon: "📊", label: "Bảng" },
+    { key: "grid" as const, icon: "🗂️", label: "Lưới" },
+  ];
+
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Navigation Breadcrumb */}
-        <div className="flex items-center space-x-2 text-sm text-slate-500 mb-6">
-          <Link to="/" className="hover:text-slate-900 transition-colors">
-            Trang chủ
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-28 lg:pb-12">
+        {/* Breadcrumb */}
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-slate-500 mb-5">
+          <Link to="/" className="hover:text-slate-900 transition-colors">Trang chủ</Link>
+          <span aria-hidden="true">/</span>
+          <Link to={`/${levelPrefix}/lessons`} className="hover:text-slate-900 transition-colors">
+            Bài học {levelCode}
           </Link>
-          <span>/</span>
-          <Link to={isN4 ? "/n4/lessons" : "/n5/lessons"} className="hover:text-slate-900 transition-colors">
-            {isN4 ? "Bài học N4" : "Bài học N5"}
-          </Link>
-          <span>/</span>
-          <span className="font-semibold text-slate-900">
+          <span aria-hidden="true">/</span>
+          <span className="font-semibold text-slate-900 truncate">
             {currentLesson ? currentLesson.title : `Bài học ${activeLessonId || ""}`}
           </span>
-        </div>
+        </nav>
 
-        {/* Page Header & Lesson Controls */}
-        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-xs mb-8">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        {/* Lesson header */}
+        <section className="hero-ink pattern-seigaiha relative overflow-hidden rounded-[28px] p-6 sm:p-8 shadow-zen mb-6 animate-fade-up">
+          <span
+            aria-hidden="true"
+            className="pointer-events-none select-none absolute -right-2 -bottom-12 font-mincho font-extrabold text-[200px] leading-none text-white/[0.07]"
+          >
+            語
+          </span>
+          <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-              <div className="flex items-center space-x-3 mb-2">
-                <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                  isN4
-                    ? "bg-emerald-50 text-emerald-700 border border-emerald-200/60"
-                    : "bg-rose-50 text-rose-700 border border-rose-200/60"
-                }`}>
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                <span className="rounded-full bg-white/15 border border-white/25 px-3 py-1 text-xs font-bold">
                   JLPT {levelCode}
                 </span>
-                <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">
-                  {currentLesson ? currentLesson.title : `Bài học ${activeLessonId || ""}`}
-                </span>
+                {currentLesson && (
+                  <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/90">
+                    Bài {currentLesson.lessonNumber}
+                  </span>
+                )}
                 {vocabularies && (
-                  <span className="text-xs text-slate-500 font-medium">
-                    ({vocabularies.length} từ vựng)
+                  <span className="rounded-full bg-rose-400/25 border border-rose-300/30 px-3 py-1 text-xs font-bold text-rose-100">
+                    {vocabularies.length} từ vựng
                   </span>
                 )}
               </div>
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                {currentLesson ? `Từ vựng ${levelCode} - ${currentLesson.title}` : `Từ vựng ${levelCode}`}
+              <h1 className="font-display text-2xl sm:text-3xl font-extrabold tracking-tight">
+                {currentLesson ? `Từ vựng · ${currentLesson.title}` : `Từ vựng ${levelCode}`}
               </h1>
             </div>
 
-            {/* Lesson Selector Dropdown */}
             {lessons && (
-              <div className="flex items-center space-x-3">
-                <label className="text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap">
-                  Chọn bài học:
-                </label>
+              <div className="flex items-center gap-2">
+                <Link
+                  to={prevLesson ? `/${levelPrefix}/lessons/${prevLesson.id}/vocabulary` : "#"}
+                  aria-disabled={!prevLesson}
+                  aria-label="Bài trước"
+                  className={`w-11 h-11 rounded-xl border border-white/25 bg-white/10 flex items-center justify-center transition-colors ${prevLesson ? "hover:bg-white/20" : "opacity-40 pointer-events-none"}`}
+                >
+                  ←
+                </Link>
                 <select
                   value={activeLessonId || ""}
                   onChange={handleLessonChange}
-                  className="bg-slate-50 border border-slate-300 text-slate-900 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 p-2.5 shadow-xs cursor-pointer min-w-[160px]"
+                  aria-label="Chọn bài học"
+                  className="h-11 bg-white text-slate-900 text-sm font-semibold rounded-xl px-3 cursor-pointer min-w-[170px] focus:outline-none focus:ring-2 focus:ring-rose-300"
                 >
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
-                      {l.title} (Bài {l.lessonNumber})
+                      Bài {l.lessonNumber} · {l.title}
                     </option>
                   ))}
                 </select>
+                <Link
+                  to={nextLesson ? `/${levelPrefix}/lessons/${nextLesson.id}/vocabulary` : "#"}
+                  aria-disabled={!nextLesson}
+                  aria-label="Bài sau"
+                  className={`w-11 h-11 rounded-xl border border-white/25 bg-white/10 flex items-center justify-center transition-colors ${nextLesson ? "hover:bg-white/20" : "opacity-40 pointer-events-none"}`}
+                >
+                  →
+                </Link>
               </div>
             )}
           </div>
+        </section>
 
-          {/* Module Switcher Tabs (Vocabulary, Grammar, Kanji, Listening, Reading, Exercise) */}
-          <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
-            <span className="px-5 py-2.5 rounded-xl text-sm font-bold bg-indigo-600 text-white shadow-md shadow-indigo-600/20 flex items-center space-x-2 shrink-0 whitespace-nowrap">
-              <span>📚</span>
-              <span>Từ Vựng {levelCode}</span>
-            </span>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/grammar`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>⛩️</span>
-              <span>Ngữ Pháp {levelCode}</span>
-            </Link>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/kanji`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>🈁</span>
-              <span>Kanji {levelCode}</span>
-            </Link>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/listening`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>🎧</span>
-              <span>Nghe Hiểu {levelCode}</span>
-            </Link>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/reading`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>📖</span>
-              <span>Đọc Hiểu {levelCode}</span>
-            </Link>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/exercise`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>✏️</span>
-              <span>Bài Tập {levelCode}</span>
-            </Link>
+        {/* Skill tabs + search + view toggle */}
+        <div className="surface p-3 sm:p-4 mb-8 space-y-3">
+          <div className="flex items-center gap-1.5 overflow-x-auto custom-scrollbar-x pb-1" role="tablist" aria-label="Kỹ năng trong bài">
+            {SKILLS.map((skill) => {
+              const active = skill.key === "vocabulary";
+              const classes = `px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 shrink-0 whitespace-nowrap transition-all ${
+                active ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/25" : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+              }`;
+              const content = (
+                <>
+                  <span aria-hidden="true">{skill.emoji}</span>
+                  <span>{skill.label}</span>
+                </>
+              );
+              return active ? (
+                <span key={skill.key} role="tab" aria-selected="true" className={classes}>{content}</span>
+              ) : (
+                <Link key={skill.key} role="tab" aria-selected="false" to={`/${levelPrefix}/lessons/${activeLessonId}/${skill.path}`} className={classes}>
+                  {content}
+                </Link>
+              );
+            })}
           </div>
 
-          {/* Search Box & View Mode Toggle */}
-          <div className="mt-6 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-            {/* Search Input */}
+          <div className="pt-3 border-t border-slate-100 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
             <div className="relative w-full sm:w-96">
-              <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                🔍
-              </span>
+              <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400" aria-hidden="true">🔍</span>
               <input
-                type="text"
+                type="search"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Tìm từ vựng (Hiragana, Kanji, Hán Việt, Nghĩa)..."
-                className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all placeholder:text-slate-400"
+                placeholder="Tìm từ vựng (Hiragana, Kanji, Hán Việt, nghĩa)…"
+                aria-label="Tìm từ vựng"
+                className="w-full h-11 pl-10 pr-4 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/25 focus:border-indigo-500 transition-all placeholder:text-slate-400"
               />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center text-xs text-slate-400 hover:text-slate-600"
-                >
-                  ✕
-                </button>
-              )}
             </div>
 
-            {/* View Mode Toggle */}
-            <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200/60 self-end sm:self-auto">
-              <button
-                onClick={() => setViewMode("flashcard")}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
-                  viewMode === "flashcard"
-                    ? "bg-white text-indigo-700 shadow-xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                <span>🎴</span>
-                <span>Thẻ Học 3D</span>
-              </button>
-              <button
-                onClick={() => setViewMode("table")}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
-                  viewMode === "table"
-                    ? "bg-white text-indigo-700 shadow-xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                <span>📊</span>
-                <span>Dạng Bảng</span>
-              </button>
-              <button
-                onClick={() => setViewMode("grid")}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
-                  viewMode === "grid"
-                    ? "bg-white text-indigo-700 shadow-xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                <span>🗂️</span>
-                <span>Lưới Thẻ</span>
-              </button>
+            <div className="flex items-center bg-slate-100 p-1 rounded-xl self-end sm:self-auto" role="tablist" aria-label="Chế độ hiển thị">
+              {viewModes.map((m) => (
+                <button
+                  key={m.key}
+                  type="button"
+                  role="tab"
+                  aria-selected={viewMode === m.key}
+                  onClick={() => setViewMode(m.key)}
+                  className={`px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                    viewMode === m.key ? "bg-white text-indigo-800 shadow-sm" : "text-slate-500 hover:text-slate-900"
+                  }`}
+                >
+                  <span aria-hidden="true">{m.icon}</span>
+                  <span>{m.label}</span>
+                </button>
+              ))}
             </div>
           </div>
         </div>
 
         {/* Loading State */}
         {isLoading && (
-          <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl border border-slate-200/80 shadow-xs">
-            <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-4" />
-            <p className="text-slate-600 font-medium">Đang tải từ vựng...</p>
-          </div>
+          <div className="surface h-[460px] skeleton-shimmer" aria-busy="true" aria-live="polite" />
         )}
 
         {/* Error State */}
         {error && (
-          <div className="bg-rose-50 border border-rose-200 text-rose-700 p-8 rounded-3xl text-center max-w-lg mx-auto shadow-xs">
+          <div className="bg-rose-50 border border-rose-200 text-rose-700 p-8 rounded-3xl text-center max-w-lg mx-auto" role="alert">
             <div className="text-4xl mb-3">⚠️</div>
             <h3 className="font-bold text-lg mb-2">Không thể tải dữ liệu từ vựng</h3>
-            <p className="text-sm text-rose-600">
-              Đã xảy ra lỗi khi tải từ vựng của bài học này. Vui lòng thử lại sau.
-            </p>
+            <p className="text-sm text-rose-600">Đã xảy ra lỗi khi tải từ vựng của bài học này. Vui lòng thử lại sau.</p>
           </div>
         )}
 
         {/* Empty State */}
         {!isLoading && !error && filteredVocabularies.length === 0 && (
-          <div className="bg-white rounded-3xl p-12 text-center border border-slate-200/80 shadow-xs">
+          <div className="surface p-12 text-center">
             <div className="text-5xl mb-4">📚</div>
-            <h3 className="text-lg font-bold text-slate-800 mb-1">
+            <h3 className="font-display text-lg font-bold text-slate-800 mb-1">
               {searchQuery ? "Không tìm thấy từ vựng khớp với từ khóa" : "Chưa có từ vựng cho bài học này"}
             </h3>
             <p className="text-sm text-slate-500">
-              {searchQuery ? "Thử tìm với từ khóa khác như Hiragana, Kanji hoặc Tiếng Việt." : "Vui lòng chọn bài học khác."}
+              {searchQuery ? "Thử tìm với Hiragana, Kanji hoặc tiếng Việt." : "Vui lòng chọn bài học khác."}
             </p>
           </div>
         )}
@@ -320,7 +288,7 @@ export default function VocabularyPage() {
 
             {/* 2. TABLE VIEW */}
             {viewMode === "table" && (
-              <div className="bg-white rounded-3xl border border-slate-200/80 shadow-xs overflow-hidden">
+              <div className="surface overflow-hidden">
                 <div className="overflow-x-auto">
                   <table className="w-full text-left border-collapse min-w-[640px]">
                     <thead>
@@ -393,12 +361,12 @@ export default function VocabularyPage() {
 
             {/* 3. CARD GRID VIEW */}
             {viewMode === "grid" && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {filteredVocabularies.map((vocab, index) => (
                   <div
                     key={vocab.id}
                     onClick={() => setSelectedVocab(vocab)}
-                    className="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-xs hover:shadow-md hover:border-indigo-300 transition-all cursor-pointer group flex flex-col justify-between"
+                    className="surface surface-hover p-6 cursor-pointer group flex flex-col justify-between"
                   >
                     <div>
                       <div className="flex items-center justify-between mb-3">
@@ -419,7 +387,7 @@ export default function VocabularyPage() {
                       </div>
 
                       <div className="mb-4">
-                        <h3 className="text-2xl font-extrabold text-slate-900 jp-font group-hover:text-indigo-600 transition-colors">
+                        <h3 className="text-3xl font-mincho font-extrabold text-slate-900 group-hover:text-indigo-600 transition-colors">
                           {vocab.hiragana}
                         </h3>
                         {vocab.kanji && (

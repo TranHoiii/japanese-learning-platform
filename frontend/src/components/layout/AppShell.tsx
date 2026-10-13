@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
@@ -18,20 +18,22 @@ export const AppShell: React.FC<AppShellProps> = ({
   className,
 }) => {
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
+  const handleOpenDrawer = useCallback(() => setIsMobileDrawerOpen(true), []);
+  const handleCloseDrawer = useCallback(() => setIsMobileDrawerOpen(false), []);
 
   return (
     <div className={cn("min-h-screen text-slate-900 flex flex-col", className)}>
       {/* Header (sticky top-0, 64px) */}
       <Header
         wide
-        onOpenMobileMenu={() => setIsMobileDrawerOpen(true)}
+        onOpenMobileMenu={handleOpenDrawer}
         isMobileMenuOpen={isMobileDrawerOpen}
       />
 
       {/* Mobile Drawer (left slide-in) */}
       <MobileDrawer
         isOpen={isMobileDrawerOpen}
-        onClose={() => setIsMobileDrawerOpen(false)}
+        onClose={handleCloseDrawer}
       />
 
       {/* Main Container: Sidebar + Content */}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { cn } from "../../../utils/cn";
 import {
   PracticeQuestion,
@@ -8,6 +8,8 @@ import {
 import Button from "../../../components/ui/Button";
 import Badge from "../../../components/ui/Badge";
 import AudioButton from "./AudioButton";
+import { playSound } from "../../../lib/sound";
+import { gamification } from "../../../lib/gamification";
 
 export interface PracticeCardProps {
   questions: PracticeQuestion[];
@@ -31,6 +33,16 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
   const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   const [wrongRecords, setWrongRecords] = useState<WrongQuestionRecord[]>([]);
   const [isCompleted, setIsCompleted] = useState(false);
+  const [combo, setCombo] = useState(0);
+  const [bestCombo, setBestCombo] = useState(0);
+  const keyHandlerRef = useRef<((e: KeyboardEvent) => void) | null>(null);
+
+  // Keyboard shortcuts: A-D / 1-4 pick an option, Enter / Space goes on
+  useEffect(() => {
+    const listener = (e: KeyboardEvent) => keyHandlerRef.current?.(e);
+    window.addEventListener("keydown", listener);
+    return () => window.removeEventListener("keydown", listener);
+  }, []);
 
   // Timer state
   const [timerMode, setTimerMode] = useState<PracticeTimerMode>("unlimited");
@@ -42,7 +54,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
     setActiveQuestions(initialQuestions);
     setCurrentIndex(0);
     setSelectedOptionId(null);
-    setScore({ correct: 0, incorrect: 0 });
+    setScore({ correct: 0, incorrect: 0 }); setCombo(0); setBestCombo(0);
     setWrongRecords([]);
     setIsCompleted(false);
     setIsTimeout(false);
@@ -68,7 +80,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
 
   if (!activeQuestions || activeQuestions.length === 0) {
     return (
-      <div className="rounded-[14px] bg-white border border-[#E7E0D2] p-8 text-center text-[#766D5E]">
+      <div className="surface p-8 text-center text-[#766D5E]">
         Chưa có câu hỏi luyện tập cho danh mục này.
       </div>
     );
@@ -85,8 +97,15 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
     const correctOption = currentQuestion.options.find((o) => o.isCorrect);
 
     if (selectedOption?.isCorrect) {
+      playSound("success");
+      setCombo((c) => {
+        const next = c + 1;
+        setBestCombo((b) => Math.max(b, next));
+        return next;
+      });
       setScore((prev) => ({ ...prev, correct: prev.correct + 1 }));
     } else {
+      setCombo(0);
       setScore((prev) => ({ ...prev, incorrect: prev.incorrect + 1 }));
       setWrongRecords((prev) => [
         ...prev,
@@ -106,6 +125,10 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
       setSelectedOptionId(null);
     } else {
       setIsCompleted(true);
+      {
+        const pct = Math.round((score.correct / activeQuestions.length) * 100);
+        if (pct >= 80) gamification.celebrate(pct === 100 ? "Hoàn hảo! 🎉" : "Làm tốt lắm! 🌸", `Đúng ${score.correct}/${activeQuestions.length} câu`);
+      }
     }
   };
 
@@ -114,7 +137,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
     setActiveQuestions(initialQuestions);
     setCurrentIndex(0);
     setSelectedOptionId(null);
-    setScore({ correct: 0, incorrect: 0 });
+    setScore({ correct: 0, incorrect: 0 }); setCombo(0); setBestCombo(0);
     setWrongRecords([]);
     setIsCompleted(false);
     setIsTimeout(false);
@@ -129,11 +152,26 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
     setActiveQuestions(wrongQs);
     setCurrentIndex(0);
     setSelectedOptionId(null);
-    setScore({ correct: 0, incorrect: 0 });
+    setScore({ correct: 0, incorrect: 0 }); setCombo(0); setBestCombo(0);
     setWrongRecords([]);
     setIsCompleted(false);
     setIsTimeout(false);
     setTimeLeft(60);
+  };
+
+  keyHandlerRef.current = (e: KeyboardEvent) => {
+    if (isCompleted || !currentQuestion) return;
+    const target = e.target as HTMLElement | null;
+    if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA")) return;
+    if (!isAnswered) {
+      const idx = "abcd".indexOf(e.key.toLowerCase());
+      const num = parseInt(e.key, 10);
+      const pick = idx >= 0 ? idx : num >= 1 && num <= 4 ? num - 1 : -1;
+      if (pick >= 0 && currentQuestion.options[pick]) handleSelectOption(currentQuestion.options[pick].id);
+    } else if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      handleNext();
+    }
   };
 
   // Switch timer mode
@@ -152,14 +190,14 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
     return (
       <div
         className={cn(
-          "rounded-[16px] bg-white border border-[#D3CABA] p-6 sm:p-8 space-y-6 shadow-sm max-w-2xl mx-auto",
+          "surface p-6 sm:p-8 space-y-6 max-w-2xl mx-auto animate-pop",
           className,
         )}
       >
         {/* Banner */}
         <div className="text-center space-y-2">
           <div
-            className="w-16 h-16 rounded-full bg-[#F0FDF4] border border-[#22C55E]/30 text-3xl flex items-center justify-center mx-auto"
+            className="w-20 h-20 rounded-full bg-amber-50 border border-amber-200 text-4xl flex items-center justify-center mx-auto animate-pop"
             aria-hidden="true"
           >
             {percentage >= 80 ? "🏆" : percentage >= 50 ? "🎉" : "💪"}
@@ -169,7 +207,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
             {isTimeout ? "Hết thời gian 60s" : "Hoàn thành phiên luyện tập"}
           </Badge>
 
-          <h3 className="text-xl sm:text-2xl font-bold text-[#1F1C18]">
+          <h3 className="font-display text-xl sm:text-2xl font-extrabold text-[#1F1C18]">
             Kết Quả Phiên: {categoryTitle}
           </h3>
 
@@ -180,6 +218,9 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
             </span>
           </div>
 
+          {bestCombo >= 3 && (
+            <p className="text-sm font-bold text-amber-700">🔥 Chuỗi đúng dài nhất: {bestCombo} câu</p>
+          )}
           <p className="text-xs sm:text-sm text-[#5A5246]">
             {percentage === 100
               ? "Xuất sắc! Bạn đã trả lời đúng toàn bộ câu hỏi trong phiên này."
@@ -259,7 +300,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
   return (
     <div
       className={cn(
-        "rounded-[16px] bg-white border border-[#D3CABA] p-5 sm:p-7 space-y-6 shadow-sm max-w-2xl mx-auto",
+        "surface p-5 sm:p-7 space-y-6 max-w-2xl mx-auto",
         className,
       )}
     >
@@ -282,7 +323,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
                 "px-2.5 py-1 rounded-full font-bold font-mono text-xs border animate-pulse",
                 timeLeft <= 10
                   ? "bg-[#FEF2F2] text-[#DC2626] border-[#FCA5A5]"
-                  : "bg-[#EFF6FF] text-[#1D4ED8] border-[#93C5FD]",
+                  : "bg-[#EFF6FF] text-[#213960] border-[#93C5FD]",
               )}
             >
               ⏱️ {timeLeft}s
@@ -299,6 +340,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
           )}
 
           <div className="flex items-center gap-1.5 font-medium">
+            {combo >= 2 && <span className="text-amber-600 font-bold animate-pop">🔥 {combo}</span>}
             <span className="text-[#15803D]">✓ {score.correct}</span>
             <span className="text-[#D3CABA]">/</span>
             <span className="text-[#B91C1C]">✗ {score.incorrect}</span>
@@ -306,8 +348,12 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
         </div>
       </div>
 
+      <div className="h-2 rounded-full bg-slate-100 overflow-hidden -mt-3" role="progressbar" aria-valuemin={0} aria-valuemax={activeQuestions.length} aria-valuenow={currentIndex + (isAnswered ? 1 : 0)}>
+        <div className="h-full rounded-full bg-gradient-to-r from-indigo-400 to-indigo-600 transition-all duration-500" style={{ width: `${Math.round(((currentIndex + (isAnswered ? 1 : 0)) / activeQuestions.length) * 100)}%` }} />
+      </div>
+
       {/* Question Prompt */}
-      <div className="text-center space-y-3 py-2">
+      <div className="text-center space-y-3 py-4 rounded-2xl bg-[#FAF7F1]">
         <p className="text-base sm:text-lg font-semibold text-[#1F1C18] leading-relaxed">
           {currentQuestion.prompt}
         </p>
@@ -371,7 +417,9 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
               disabled={isAnswered}
               onClick={() => handleSelectOption(option.id)}
               className={cn(
-                "p-3.5 rounded-[12px] border text-left flex items-start gap-3 transition-all focus-visible:outline-2 focus-visible:outline-[#2F5496] cursor-pointer disabled:cursor-default",
+                "p-3.5 rounded-2xl border-2 text-left flex items-start gap-3 transition-all focus-visible:outline-2 focus-visible:outline-[#2F5496] cursor-pointer disabled:cursor-default",
+                isAnswered && option.isCorrect && "animate-pop",
+                isAnswered && isSelected && !option.isCorrect && "animate-shake",
                 optionStyle,
               )}
               role="radio"
@@ -406,7 +454,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
 
       {/* Explanation and Next Button */}
       {isAnswered && (
-        <div className="pt-4 border-t border-[#F3EEE5] space-y-4 animate-in fade-in duration-200">
+        <div className="pt-4 border-t border-[#F3EEE5] space-y-4 animate-fade-in">
           <div className="rounded-[10px] bg-[#FAF7F1] border border-[#E7E0D2] p-4 text-xs sm:text-sm text-[#433D34] leading-relaxed">
             <span className="font-bold text-[#213960] block mb-1">
               💡 Giải thích chi tiết:
@@ -415,8 +463,8 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({
           </div>
 
           <div className="flex justify-end">
-            <Button variant="primary" size="default" onClick={handleNext}>
-              {currentIndex < activeQuestions.length - 1 ? "Câu tiếp theo →" : "Xem kết quả →"}
+            <Button variant="primary" size="default" tactile onClick={handleNext}>
+              {currentIndex < activeQuestions.length - 1 ? "Câu tiếp theo →" : "Xem kết quả →"} <span className="hidden sm:inline text-[10px] opacity-70 ml-1">(Enter)</span>
             </Button>
           </div>
         </div>

@@ -32,7 +32,7 @@ export const HandbookCategoryNav: React.FC<HandbookCategoryNavProps> = ({
               to={`/handbook/${cat.id}`}
               className={`group flex flex-col p-5 rounded-2xl border transition-all duration-200 bg-white hover:shadow-md hover:-translate-y-0.5 ${
                 isCurrent
-                  ? "border-[#2563EB] ring-2 ring-[#2563EB]/20 shadow-xs"
+                  ? "border-[#2F5496] ring-2 ring-[#2F5496]/20 shadow-xs"
                   : "border-[#E7E0D2] hover:border-[#D3CABA]"
               }`}
             >
@@ -44,7 +44,7 @@ export const HandbookCategoryNav: React.FC<HandbookCategoryNavProps> = ({
                   {count} bài viết
                 </span>
               </div>
-              <h3 className="text-base font-bold text-[#1F1C18] group-hover:text-[#2563EB] transition-colors flex items-center justify-between">
+              <h3 className="text-base font-bold text-[#1F1C18] group-hover:text-[#2F5496] transition-colors flex items-center justify-between">
                 <span>{cat.name}</span>
                 <span className="text-xs font-normal text-[#9A8F7E] font-japanese" lang="ja">
                   {cat.japaneseName}
@@ -71,7 +71,7 @@ export const HandbookCategoryNav: React.FC<HandbookCategoryNavProps> = ({
         onClick={() => onSelectCategory?.("all")}
         className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 ${
           !currentCategory || currentCategory === "all" || location.pathname === "/handbook"
-            ? "bg-[#2563EB] text-white shadow-xs"
+            ? "bg-[#2F5496] text-white shadow-xs"
             : "bg-white text-[#5A5246] border border-[#E7E0D2] hover:bg-[#FAF7F1]"
         }`}
       >
@@ -90,7 +90,7 @@ export const HandbookCategoryNav: React.FC<HandbookCategoryNavProps> = ({
             onClick={() => onSelectCategory?.(cat.id)}
             className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-2 ${
               isCurrent
-                ? "bg-[#2563EB] text-white shadow-xs"
+                ? "bg-[#2F5496] text-white shadow-xs"
                 : "bg-white text-[#5A5246] border border-[#E7E0D2] hover:bg-[#FAF7F1]"
             }`}
           >

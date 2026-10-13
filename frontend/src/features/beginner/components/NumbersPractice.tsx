@@ -76,7 +76,7 @@ export const NumbersPractice: React.FC<NumbersPracticeProps> = ({
   return (
     <div
       className={cn(
-        "rounded-[16px] bg-white border border-[#D3CABA] p-5 sm:p-6 space-y-5 shadow-xs",
+        "surface p-5 sm:p-6 space-y-5 shadow-xs",
         className,
       )}
     >

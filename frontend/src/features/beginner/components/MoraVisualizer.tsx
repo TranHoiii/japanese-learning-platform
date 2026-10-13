@@ -40,7 +40,7 @@ export const MoraVisualizer: React.FC<MoraVisualizerProps> = ({
         {comparisons.map((item) => (
           <div
             key={item.id}
-            className="rounded-[12px] bg-white border border-[#E7E0D2] p-4 space-y-3 shadow-xs hover:border-[#9A8F7E] transition-colors"
+            className="surface p-4 space-y-3 shadow-xs hover:border-[#9A8F7E] transition-colors"
           >
             {/* Word Header */}
             <div className="flex items-start justify-between gap-2 border-b border-[#F3EEE5] pb-2.5">
@@ -67,7 +67,7 @@ export const MoraVisualizer: React.FC<MoraVisualizerProps> = ({
               </div>
 
               <div className="text-right shrink-0">
-                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-[#EBF5FF] text-[#1E40AF] border border-[#BFDBFE]">
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-[#EBF5FF] text-[#213960] border border-[#BFDBFE]">
                   {item.moraCount} phách (mora)
                 </span>
                 <p className="text-xs text-[#433D34] font-medium mt-0.5">
@@ -100,7 +100,7 @@ export const MoraVisualizer: React.FC<MoraVisualizerProps> = ({
                       className={cn(
                         "flex flex-col items-center justify-center min-w-[50px] px-2.5 py-2 rounded-[8px] border text-center transition-all",
                         mora.type === "yoon" &&
-                          "bg-[#EFF6FF] border-[#93C5FD] text-[#1D4ED8]",
+                          "bg-[#EFF6FF] border-[#93C5FD] text-[#213960]",
                         mora.type === "chouon" &&
                           "bg-[#FDF2F8] border-[#F472B6] text-[#BE185D]",
                         mora.type === "sokuon" &&

@@ -32,7 +32,7 @@ export const TopicCard: React.FC<TopicCardProps> = ({
     <Link
       to={to}
       className={cn(
-        "group relative flex flex-col justify-between rounded-[14px] bg-white border border-[#E7E0D2] p-5 transition-all hover:border-[#2F5496] hover:shadow-[0_4px_16px_rgba(38,132,217,0.12)] hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-[#2F5496]",
+        "group relative flex flex-col justify-between surface surface-hover p-5 focus-visible:outline-2 focus-visible:outline-[#2F5496]",
         className,
       )}
     >

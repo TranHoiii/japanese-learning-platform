@@ -44,7 +44,7 @@ export const BeginnerLayout: React.FC<BeginnerLayoutProps> = ({
         </div>
       }
     >
-      <div className="space-y-8 animate-in fade-in duration-300">
+      <div className="space-y-8 animate-fade-in">
         {children}
       </div>
     </LearningLayout>

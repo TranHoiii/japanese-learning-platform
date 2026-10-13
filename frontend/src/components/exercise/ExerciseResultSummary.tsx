@@ -15,7 +15,7 @@ export const ExerciseResultSummary: React.FC<ExerciseResultSummaryProps> = ({
 
   return (
     <div
-      className={`p-6 sm:p-8 rounded-3xl border shadow-xs transition-all animate-in fade-in duration-300 ${
+      className={`p-6 sm:p-8 rounded-3xl border shadow-xs transition-all animate-pop ${
         isHigh
           ? 'bg-gradient-to-r from-emerald-50 via-emerald-100/40 to-white border-emerald-300 text-emerald-950'
           : isMedium
@@ -26,7 +26,7 @@ export const ExerciseResultSummary: React.FC<ExerciseResultSummaryProps> = ({
       <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-5">
           <div
-            className={`w-20 h-20 rounded-3xl flex items-center justify-center text-3xl font-black shadow-sm ${
+            className={`w-20 h-20 rounded-3xl animate-pop flex items-center justify-center text-3xl font-black shadow-sm ${
               isHigh
                 ? 'bg-emerald-600 text-white'
                 : isMedium

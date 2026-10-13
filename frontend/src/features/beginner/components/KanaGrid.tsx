@@ -22,6 +22,13 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
 }) => {
   const [selectedRow, setSelectedRow] = useState<KanaRow | "all">("all");
   const [showEquivalent, setShowEquivalent] = useState(false);
+  const [selfTest, setSelfTest] = useState(false);
+  const [revealed, setRevealed] = useState<Set<string>>(new Set());
+  const revealKana = (id: string) => setRevealed((prev) => new Set(prev).add(id));
+  const toggleSelfTest = () => {
+    setSelfTest((v) => !v);
+    setRevealed(new Set());
+  };
 
   const isKatakana = characters.length > 0 && characters[0].system === "katakana";
   const groupType = characters.length > 0 ? characters[0].type : "seion";
@@ -134,6 +141,21 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
           </div>
         )}
 
+        <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
+          <button
+            type="button"
+            onClick={toggleSelfTest}
+            aria-pressed={selfTest}
+            className={cn(
+              "px-2.5 py-1 rounded-[8px] text-xs font-semibold border transition-all flex items-center gap-1.5 cursor-pointer",
+              selfTest ? "bg-amber-100 text-amber-900 border-amber-300" : "bg-white text-[#766D5E] border-[#D3CABA] hover:bg-[#FAF7F1]",
+            )}
+            title="Ẩn cách đọc, bấm vào chữ để kiểm tra trí nhớ"
+          >
+            <span aria-hidden="true">🙈</span>
+            <span>{selfTest ? "Đang tự kiểm tra" : "Tự kiểm tra"}</span>
+          </button>
+        </div>
         {showEquivalentToggle && (
           <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
             <button
@@ -197,6 +219,8 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
                 kana={slot.char}
                 isSelected={selectedKanaId === slot.char.id}
                 showEquivalent={showEquivalent}
+                concealed={selfTest && !revealed.has(slot.char.id)}
+                onReveal={revealKana}
                 onSelect={onSelectKana}
               />
             ) : (
@@ -219,6 +243,8 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
               kana={char}
               isSelected={selectedKanaId === char.id}
               showEquivalent={showEquivalent}
+              concealed={selfTest && !revealed.has(char.id)}
+              onReveal={revealKana}
               onSelect={onSelectKana}
             />
           ))}
@@ -232,6 +258,8 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
               kana={char}
               isSelected={selectedKanaId === char.id}
               showEquivalent={showEquivalent}
+              concealed={selfTest && !revealed.has(char.id)}
+              onReveal={revealKana}
               onSelect={onSelectKana}
             />
           ))}
@@ -245,6 +273,8 @@ export const KanaGrid: React.FC<KanaGridProps> = ({
               kana={char}
               isSelected={selectedKanaId === char.id}
               showEquivalent={showEquivalent}
+              concealed={selfTest && !revealed.has(char.id)}
+              onReveal={revealKana}
               onSelect={onSelectKana}
             />
           ))}

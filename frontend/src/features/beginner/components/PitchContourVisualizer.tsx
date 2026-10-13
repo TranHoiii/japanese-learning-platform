@@ -40,7 +40,7 @@ export const PitchContourVisualizer: React.FC<PitchContourVisualizerProps> = ({
         {patterns.map((item) => (
           <div
             key={item.id}
-            className="rounded-[12px] bg-white border border-[#E7E0D2] p-4 space-y-3.5 shadow-xs hover:border-[#9A8F7E] transition-colors"
+            className="surface p-4 space-y-3.5 shadow-xs hover:border-[#9A8F7E] transition-colors"
           >
             {/* Header */}
             <div className="flex items-start justify-between gap-2 border-b border-[#F3EEE5] pb-2.5">
@@ -127,7 +127,7 @@ export const PitchContourVisualizer: React.FC<PitchContourVisualizerProps> = ({
                         className={cn(
                           "w-full rounded-[6px] py-1.5 px-1 text-center font-bold font-japanese border transition-all text-xs sm:text-sm",
                           isHigh
-                            ? "bg-[#2563EB] text-white border-[#1D4ED8] translate-y-[-12px] shadow-xs"
+                            ? "bg-[#2F5496] text-white border-[#213960] translate-y-[-12px] shadow-xs"
                             : "bg-[#E7E0D2] text-[#433D34] border-[#D3CABA] translate-y-0",
                         )}
                       >

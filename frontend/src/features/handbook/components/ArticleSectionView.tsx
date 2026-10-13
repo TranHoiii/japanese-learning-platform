@@ -12,7 +12,7 @@ export const ArticleSectionView: React.FC<ArticleSectionViewProps> = ({
 }) => {
   return (
     <section className={`space-y-3 ${className}`}>
-      <h2 className="text-lg sm:text-xl font-bold text-[#1F1C18] flex items-center gap-2">
+      <h2 className="font-display text-lg sm:text-xl font-bold text-[#1F1C18] flex items-center gap-2">
         <span>{section.title}</span>
       </h2>
 

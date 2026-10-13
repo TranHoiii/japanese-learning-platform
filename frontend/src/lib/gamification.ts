@@ -1,13 +1,12 @@
 /**
- * Client-side learning gamification: XP, daily goal, streak, level.
+ * Learning gamification: XP, daily goal, streak, level, backend sync, badges & leaderboard.
  *
- * Everything here is derived from *real* learning actions that call `award()` /
- * `awardOnce()` (flashcard ratings, SRS reviews, completed content…).
- * State is persisted in localStorage per user, so it survives reloads without
- * needing backend support. It is a plain external store so non-React code (e.g.
- * API services) can award XP as well.
+ * Persisted in localStorage per user, automatically synchronized with backend API
+ * (/api/v1/gamification/*) when authenticated.
  */
 import { useSyncExternalStore } from "react";
+import { gamificationApi } from "../services/gamificationApi";
+import { BadgeItem } from "../types/gamification";
 
 export const DAILY_GOAL_OPTIONS = [20, 50, 100] as const;
 const DEFAULT_DAILY_GOAL = 50;
@@ -16,7 +15,7 @@ const MAX_DAYS_KEPT = 90;
 const MAX_CLAIMED_KEYS = 3000;
 const STREAK_MILESTONES = [3, 7, 14, 30, 50, 100, 200, 365];
 
-/** XP values for the different learning actions (single source of truth). */
+/** XP values for learning actions (single source of truth). */
 export const XP_REWARDS = {
   flashcardForgot: 2,
   flashcardMedium: 5,
@@ -139,6 +138,7 @@ let snapshot: GamificationSnapshot | null = null;
 let snapshotDay = "";
 const listeners = new Set<Listener>();
 const eventListeners = new Set<EventListener>();
+let syncTimer: ReturnType<typeof setTimeout> | null = null;
 
 const storageKey = () => `${STORAGE_PREFIX}${userKey}`;
 
@@ -157,7 +157,7 @@ function persist() {
   try {
     localStorage.setItem(storageKey(), JSON.stringify(state));
   } catch {
-    /* storage may be full or disabled — gamification is best-effort */
+    /* storage may be full or disabled — best-effort */
   }
 }
 
@@ -168,6 +168,25 @@ function invalidate() {
 
 function emit(event: GamificationEvent) {
   eventListeners.forEach((l) => l(event));
+}
+
+function scheduleBackendSync() {
+  if (userKey === "guest") return;
+  if (syncTimer) clearTimeout(syncTimer);
+  syncTimer = setTimeout(async () => {
+    try {
+      await gamificationApi.syncStats({
+        totalXp: state.totalXp,
+        streak: state.streak,
+        bestStreak: state.bestStreak,
+        dailyGoal: state.dailyGoal,
+        lastActiveDate: state.lastActive,
+        claimedBadges: state.claimed,
+      });
+    } catch {
+      // offline-resilient: best-effort sync
+    }
+  }, 1500);
 }
 
 function effectiveStreak(s: PersistedState, today: string): number {
@@ -245,13 +264,36 @@ function pruneDays() {
 /* ───────────────────────── public API ───────────────────────── */
 
 export const gamification = {
-  /** Switch to the data of another user (or "guest" when logged out). */
-  setUser(id: number | string | null | undefined) {
+  /** Switch to the data of another user (or "guest" when logged out) and sync with backend. */
+  async setUser(id: number | string | null | undefined) {
     const next = id === null || id === undefined ? "guest" : String(id);
     if (next === userKey && snapshot) return;
     userKey = next;
     state = load();
     invalidate();
+
+    if (userKey !== "guest") {
+      try {
+        const remote = await gamificationApi.getStats();
+        if (remote) {
+          let updated = false;
+          if (remote.totalXp > state.totalXp) {
+            state.totalXp = remote.totalXp;
+            updated = true;
+          }
+          if (remote.bestStreak > state.bestStreak) {
+            state.bestStreak = remote.bestStreak;
+            updated = true;
+          }
+          if (updated) {
+            persist();
+            invalidate();
+          }
+        }
+      } catch {
+        // offline fallback
+      }
+    }
   },
 
   /** Grant XP for a learning action. Returns the XP granted. */
@@ -288,6 +330,8 @@ export const gamification = {
     if (goalJustReached) emit({ type: "goal" });
     if (streakMilestone) emit({ type: "streak", days: streakMilestone });
     if (newLevel > prevLevel) emit({ type: "levelup", level: newLevel });
+
+    scheduleBackendSync();
     return amount;
   },
 
@@ -311,6 +355,7 @@ export const gamification = {
     state.dailyGoal = goal;
     persist();
     invalidate();
+    scheduleBackendSync();
   },
 
   subscribe,
@@ -325,4 +370,91 @@ export const gamification = {
 
 export function useGamification(): GamificationSnapshot {
   return useSyncExternalStore(subscribe, getSnapshot, getSnapshot);
+}
+
+/** Compute system badges based on current learning achievements */
+export function getSystemBadges(snapshot: GamificationSnapshot): BadgeItem[] {
+  const totalXp = snapshot.totalXp;
+  const streak = Math.max(snapshot.streak, snapshot.bestStreak);
+
+  return [
+    {
+      id: "badge-first-step",
+      title: "Tân Thủ Nhập Môn",
+      japaneseTitle: "初めの一歩",
+      description: "Đạt được 50 điểm XP tích lũy đầu tiên trên hệ thống.",
+      icon: "🌸",
+      tier: "BRONZE",
+      isUnlocked: totalXp >= 50,
+      unlockedAt: totalXp >= 50 ? "Đã mở khóa" : null,
+      progressPercent: Math.min(100, Math.round((totalXp / 50) * 100)),
+      target: 50,
+      current: totalXp,
+    },
+    {
+      id: "badge-streak-3",
+      title: "Ngọn Lửa Tam Nhật",
+      japaneseTitle: "三日坊主克服",
+      description: "Duy trì chuỗi học tập liên tục trong 3 ngày.",
+      icon: "🔥",
+      tier: "BRONZE",
+      isUnlocked: streak >= 3,
+      unlockedAt: streak >= 3 ? "Đã mở khóa" : null,
+      progressPercent: Math.min(100, Math.round((streak / 3) * 100)),
+      target: 3,
+      current: streak,
+    },
+    {
+      id: "badge-streak-7",
+      title: "Chiến Binh Thất Nhật",
+      japaneseTitle: "七日連続",
+      description: "Học tập chuyên cần trong suốt 7 ngày liên tiếp không ngắt quãng.",
+      icon: "⛩️",
+      tier: "SILVER",
+      isUnlocked: streak >= 7,
+      unlockedAt: streak >= 7 ? "Đã mở khóa" : null,
+      progressPercent: Math.min(100, Math.round((streak / 7) * 100)),
+      target: 7,
+      current: streak,
+    },
+    {
+      id: "badge-xp-500",
+      title: "Học Viên Chăm Chỉ",
+      japaneseTitle: "努力の結晶",
+      description: "Vượt mốc 500 điểm XP trên hành trình chinh phục tiếng Nhật.",
+      icon: "⚡",
+      tier: "SILVER",
+      isUnlocked: totalXp >= 500,
+      unlockedAt: totalXp >= 500 ? "Đã mở khóa" : null,
+      progressPercent: Math.min(100, Math.round((totalXp / 500) * 100)),
+      target: 500,
+      current: totalXp,
+    },
+    {
+      id: "badge-streak-30",
+      title: "Kỷ Luật Thép (30 Ngày)",
+      japaneseTitle: "鉄の規律",
+      description: "Duy trì chuỗi học tập kiên định trong 30 ngày liên tiếp.",
+      icon: "🛡️",
+      tier: "GOLD",
+      isUnlocked: streak >= 30,
+      unlockedAt: streak >= 30 ? "Đã mở khóa" : null,
+      progressPercent: Math.min(100, Math.round((streak / 30) * 100)),
+      target: 30,
+      current: streak,
+    },
+    {
+      id: "badge-xp-1000",
+      title: "Đại Tông Sư (Master)",
+      japaneseTitle: "達人の境地",
+      description: "Chạm mốc vinh quang 1.000 XP và trở thành tấm gương sáng.",
+      icon: "👑",
+      tier: "DIAMOND",
+      isUnlocked: totalXp >= 1000,
+      unlockedAt: totalXp >= 1000 ? "Đã mở khóa" : null,
+      progressPercent: Math.min(100, Math.round((totalXp / 1000) * 100)),
+      target: 1000,
+      current: totalXp,
+    },
+  ];
 }

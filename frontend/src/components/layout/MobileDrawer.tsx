@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navigationData } from "./Sidebar";
 import { useAuth } from "../../contexts/AuthContext";
 import { useGamification } from "../../lib/gamification";
 import { StreakFlame } from "../gamification/GamificationWidgets";
+import ThemeToggle from "./ThemeToggle";
 import { cn } from "../../utils/cn";
 
 export interface MobileDrawerProps {
@@ -15,6 +16,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) =
   const location = useLocation();
   const { currentUser } = useAuth();
   const stats = useGamification();
+  const prevPathRef = useRef(location.pathname);
 
   // Close on Escape and lock body scroll
   useEffect(() => {
@@ -36,9 +38,12 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) =
     };
   }, [isOpen, onClose]);
 
-  // Close drawer whenever route changes
+  // Close drawer ONLY when route actually changes
   useEffect(() => {
-    onClose();
+    if (prevPathRef.current !== location.pathname) {
+      prevPathRef.current = location.pathname;
+      onClose();
+    }
   }, [location.pathname, onClose]);
 
   if (!isOpen) return null;
@@ -105,7 +110,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) =
               <ul className="space-y-1" role="list">
                 {section.items.map((item, iIdx) => {
                   const isActive = item.matchPattern
-                    ? item.matchPattern(location.pathname)
+                    ? item.matchPattern(location.pathname, location.search)
                     : location.pathname === item.href;
 
                   return (
@@ -148,8 +153,9 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) =
         </div>
 
         {/* Drawer Footer */}
-        <div className="p-4 border-t border-slate-200 bg-white">
-          <p className="text-xs text-slate-500 text-center">Nền tảng học tiếng Nhật cho người Việt</p>
+        <div className="p-4 border-t border-slate-200 bg-white flex items-center justify-between">
+          <p className="text-xs text-slate-500">Nền tảng học tiếng Nhật</p>
+          <ThemeToggle className="hover:bg-slate-100" />
         </div>
       </div>
     </div>
