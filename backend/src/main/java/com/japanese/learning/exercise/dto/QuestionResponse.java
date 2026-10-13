@@ -23,6 +23,7 @@ public class QuestionResponse {
     private String questionText;
     private QuestionType questionType;
     private String explanation;
+    private String imageUrl;
     private Integer sortOrder;
     private List<QuestionOptionResponse> options;
 }

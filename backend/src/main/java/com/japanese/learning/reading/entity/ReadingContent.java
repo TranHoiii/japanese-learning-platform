@@ -57,5 +57,6 @@ public class ReadingContent extends BaseTimeEntity {
             orphanRemoval = true
     )
     @OrderBy("sortOrder ASC")
+    @org.hibernate.annotations.BatchSize(size = 25)
     private List<ReadingQuestion> questions = new ArrayList<>();
 }

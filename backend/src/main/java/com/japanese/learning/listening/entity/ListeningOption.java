@@ -31,6 +31,9 @@ public class ListeningOption {
     @Column(nullable = false, columnDefinition = "TEXT")
     private String content;
 
+    @Column(name = "image_url", length = 500)
+    private String imageUrl;
+
     @Column(name = "is_correct", nullable = false)
     private Boolean correct = false;
 

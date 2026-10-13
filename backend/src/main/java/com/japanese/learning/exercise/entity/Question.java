@@ -49,6 +49,9 @@ public class Question {
     @Column(columnDefinition = "TEXT")
     private String explanation;
 
+    @Column(name = "image_url", length = 500)
+    private String imageUrl;
+
     @Column(name = "sort_order", nullable = false)
     private Integer sortOrder;
 

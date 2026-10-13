@@ -107,6 +107,7 @@ public class N4ListeningDataSeeder implements CommandLineRunner {
                             question.setQuestionType(QuestionType.MULTIPLE_CHOICE);
                         }
                         question.setExplanation(qPayload.explanation());
+                        question.setImageUrl(qPayload.imageUrl());
                         question.setSortOrder(qPayload.sortOrder() != null ? qPayload.sortOrder() : 0);
 
                         if (qPayload.options() != null) {
@@ -114,6 +115,7 @@ public class N4ListeningDataSeeder implements CommandLineRunner {
                                 ListeningOption option = new ListeningOption();
                                 option.setQuestion(question);
                                 option.setContent(optPayload.content());
+                                option.setImageUrl(optPayload.imageUrl());
                                 option.setCorrect(optPayload.correct() != null ? optPayload.correct() : false);
                                 option.setSortOrder(optPayload.sortOrder() != null ? optPayload.sortOrder() : 0);
                                 question.getOptions().add(option);
@@ -152,6 +154,7 @@ public class N4ListeningDataSeeder implements CommandLineRunner {
             String question,
             String questionType,
             String explanation,
+            String imageUrl,
             Integer sortOrder,
             List<OptionPayload> options
     ) {}
@@ -159,6 +162,7 @@ public class N4ListeningDataSeeder implements CommandLineRunner {
     @JsonIgnoreProperties(ignoreUnknown = true)
     public record OptionPayload(
             String content,
+            String imageUrl,
             Boolean correct,
             Integer sortOrder
     ) {}

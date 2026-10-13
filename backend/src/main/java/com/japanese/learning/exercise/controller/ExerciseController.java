@@ -9,6 +9,8 @@ import com.japanese.learning.exercise.service.ExerciseService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Positive;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+
 
 @Validated
 @RestController
@@ -50,7 +53,11 @@ public class ExerciseController {
     @PostMapping("/{exerciseId}/submit")
     public ApiResponse<ExerciseSubmitResponse> submitExercise(
             @PathVariable @Positive Long exerciseId,
-            @Valid @RequestBody ExerciseSubmitRequest request) {
+            @Valid @RequestBody ExerciseSubmitRequest request,
+            @AuthenticationPrincipal Jwt jwt) {
+        if (jwt != null) {
+            return ApiResponse.success("Nộp bài tập thành công", exerciseService.submitExercise(exerciseId, request, jwt));
+        }
         return ApiResponse.success("Nộp bài tập thành công", exerciseService.submitExercise(exerciseId, request));
     }
 }

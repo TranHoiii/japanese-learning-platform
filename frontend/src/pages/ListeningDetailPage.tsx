@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { listeningApi } from "../services/listeningApi";
-import { progressApi } from "../services/progressApi";
 import { ListeningSubmitResponse } from "../types/listening";
 import Navbar from "../components/Navbar";
 import { FavoriteButton } from "../components/favorite/FavoriteButton";
@@ -29,6 +28,7 @@ export default function ListeningDetailPage() {
 
   // Transcript visibility state
   const [showTranscript, setShowTranscript] = useState(false);
+  const [zoomedImage, setZoomedImage] = useState<string | null>(null);
 
   // Result state after submit
   const [result, setResult] = useState<ListeningSubmitResponse | null>(null);
@@ -72,18 +72,9 @@ export default function ListeningDetailPage() {
       if (data.score >= 80) {
         gamification.celebrate(data.score === 100 ? "Hoàn hảo! 🎧" : "Nghe rất tốt! 🌸", `Đúng ${data.correctCount}/${data.totalQuestions} câu`);
       }
-      progressApi
-        .updateContentProgress({
-          contentType: "LISTENING",
-          contentId: listeningId,
-          progressPercent: 100,
-        })
-        .then(() => {
-          queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
-          queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
-          queryClient.invalidateQueries({ queryKey: ["progress-content"] });
-        })
-        .catch(() => {});
+      queryClient.invalidateQueries({ queryKey: ["progress-summary"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-lessons"] });
+      queryClient.invalidateQueries({ queryKey: ["progress-content"] });
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
   });
@@ -561,6 +552,18 @@ export default function ListeningDetailPage() {
                       <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                         {currentQuestion.question}
                       </h3>
+
+                      {currentQuestion.imageUrl && (
+                        <div className="mt-3 rounded-2xl overflow-hidden border border-slate-200 bg-slate-50/50 p-2 text-center">
+                          <img
+                            src={currentQuestion.imageUrl}
+                            alt={currentQuestion.question}
+                            className="max-h-[220px] w-auto mx-auto object-contain rounded-xl cursor-zoom-in hover:opacity-95 transition-opacity"
+                            onClick={() => setZoomedImage(currentQuestion.imageUrl || null)}
+                          />
+                          <p className="text-[11px] text-slate-400 mt-1">Nhấn vào hình để phóng to</p>
+                        </div>
+                      )}
                     </div>
 
                     {/* Options (A, B, C, D) */}
@@ -579,7 +582,7 @@ export default function ListeningDetailPage() {
                             key={option.id}
                             onClick={() => handleSelectOption(currentQuestion.id, option.id)}
                             className={cn(
-                              "p-4 rounded-2xl border-2 text-sm font-semibold transition-all flex items-center justify-between cursor-pointer",
+                              "p-4 rounded-2xl border-2 text-sm font-semibold transition-all flex flex-col justify-between cursor-pointer gap-2",
                               qResult
                                 ? isCorrectOption
                                   ? "bg-emerald-50 border-emerald-400 text-emerald-950 ring-2 ring-emerald-300"
@@ -591,29 +594,46 @@ export default function ListeningDetailPage() {
                                 : "bg-white border-slate-200/90 text-slate-800 hover:border-indigo-300 hover:bg-slate-50"
                             )}
                           >
-                            <div className="flex items-center space-x-3">
-                              <span
+                            <div className="flex items-start justify-between w-full">
+                              <div className="flex items-start space-x-3 flex-1 min-w-0">
+                                <span
+                                  className={cn(
+                                    "w-7 h-7 rounded-full text-xs font-extrabold flex items-center justify-center shrink-0 mt-0.5 transition-colors",
+                                    isSelected
+                                      ? "bg-indigo-600 text-white"
+                                      : "bg-slate-100 text-slate-600"
+                                  )}
+                                >
+                                  {letter}
+                                </span>
+                                <div className="flex-1 min-w-0">
+                                  <span className="break-words leading-relaxed">{option.content}</span>
+                                  {option.imageUrl && (
+                                    <div className="mt-2.5 rounded-xl overflow-hidden border border-slate-200/80 bg-white p-1.5 inline-block">
+                                      <img
+                                        src={option.imageUrl}
+                                        alt={option.content}
+                                        className="max-h-36 sm:max-h-44 w-auto object-contain rounded-lg cursor-zoom-in hover:scale-102 transition-transform"
+                                        onClick={(e) => {
+                                          e.stopPropagation();
+                                          setZoomedImage(option.imageUrl || null);
+                                        }}
+                                      />
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+
+                              <div
                                 className={cn(
-                                  "w-7 h-7 rounded-full text-xs font-extrabold flex items-center justify-center shrink-0 transition-colors",
+                                  "w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 ml-3 mt-1",
                                   isSelected
-                                    ? "bg-indigo-600 text-white"
-                                    : "bg-slate-100 text-slate-600"
+                                    ? "border-indigo-600 bg-indigo-600"
+                                    : "border-slate-300"
                                 )}
                               >
-                                {letter}
-                              </span>
-                              <span>{option.content}</span>
-                            </div>
-
-                            <div
-                              className={cn(
-                                "w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0",
-                                isSelected
-                                  ? "border-indigo-600 bg-indigo-600"
-                                  : "border-slate-300"
-                              )}
-                            >
-                              {isSelected && <div className="w-2 h-2 rounded-full bg-white" />}
+                                {isSelected && <div className="w-2 h-2 rounded-full bg-white" />}
+                              </div>
                             </div>
                           </div>
                         );
@@ -679,6 +699,25 @@ export default function ListeningDetailPage() {
           </div>
         )}
       </main>
+
+      {/* Image Zoom Modal */}
+      {zoomedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 backdrop-blur-xs cursor-pointer"
+          onClick={() => setZoomedImage(null)}
+        >
+          <div className="max-w-4xl max-h-[90vh] relative">
+            <img
+              src={zoomedImage}
+              alt="Zoomed"
+              className="max-h-[90vh] w-auto mx-auto object-contain rounded-2xl shadow-2xl"
+            />
+            <div className="absolute top-2 right-2 bg-black/60 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+              ✕
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

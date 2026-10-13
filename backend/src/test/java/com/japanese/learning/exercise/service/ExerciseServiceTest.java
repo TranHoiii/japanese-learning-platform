@@ -54,13 +54,13 @@ class ExerciseServiceTest {
     }
 
     @Test
-    @DisplayName("TEST 1 & 3: GET danh sách Exercise trả về đúng 27 bài theo Business Sort Order 1 -> 27")
+    @DisplayName("TEST 1 & 3: GET danh sách Exercise trả về đúng 29 bài theo Business Sort Order 1 -> 29")
     void testGetAllExercises_StrictBusinessSortOrder() {
         ExerciseServiceImpl service = new ExerciseServiceImpl(exerciseRepository, questionRepository, exerciseMapper, questionMapper);
 
         List<Exercise> mockExercises = new ArrayList<>();
         String[] titles = new String[]{
-                "Bài 01–02", "Bài 03", "Bài 04", "Bài 05", "Bài 06", "Bài 07", "Bài 08",
+                "Bài 01", "Bài 02", "Bài 03", "Bài 04", "Bài 05", "Bài 06", "Bài 07", "Bài 08",
                 "Tổng hợp Bài 01–08",
                 "Bài 09", "Bài 10", "Bài 11", "Bài 12", "Bài 13", "Bài 14", "Bài 15", "Bài 16", "Bài 17",
                 "Tổng hợp Bài 09–17",
@@ -69,12 +69,12 @@ class ExerciseServiceTest {
                 "総復習 (1課〜25課)"
         };
 
-        for (int i = 0; i < 28; i++) {
+        for (int i = 0; i < 29; i++) {
             Exercise ex = new Exercise();
             ex.setId((long) (i + 100)); // DB ID does not match sort order
             ex.setSortOrder(i + 1);
             ex.setTitle(titles[i]);
-            ex.setExerciseType((i == 7 || i == 17 || i == 26 || i == 27) ? ExerciseType.REVIEW : ExerciseType.LESSON);
+            ex.setExerciseType((i == 8 || i == 18 || i == 27 || i == 28) ? ExerciseType.REVIEW : ExerciseType.LESSON);
 
             Lesson lesson = new Lesson();
             lesson.setId((long) (30 - i)); // Lesson ID is deliberately inverse to verify sort_order supremacy
@@ -87,59 +87,68 @@ class ExerciseServiceTest {
 
         List<ExerciseResponse> result = service.getAllExercises();
 
-        assertEquals(28, result.size());
+        assertEquals(29, result.size());
 
-        // Verify exact sort orders 1 to 28
-        for (int i = 0; i < 28; i++) {
+        // Verify exact sort orders 1 to 29
+        for (int i = 0; i < 29; i++) {
             assertEquals(i + 1, result.get(i).getSortOrder());
             assertEquals(titles[i], result.get(i).getTitle());
         }
 
         // Test 1 & 3 checks
-        assertEquals("Bài 01–02", result.get(0).getTitle());
+        assertEquals("Bài 01", result.get(0).getTitle());
         assertEquals(1, result.get(0).getSortOrder());
         assertEquals(ExerciseType.LESSON, result.get(0).getExerciseType());
 
-        assertEquals("Tổng hợp Bài 01–08", result.get(7).getTitle());
-        assertEquals(8, result.get(7).getSortOrder());
-        assertEquals(ExerciseType.REVIEW, result.get(7).getExerciseType());
+        assertEquals("Bài 02", result.get(1).getTitle());
+        assertEquals(2, result.get(1).getSortOrder());
+        assertEquals(ExerciseType.LESSON, result.get(1).getExerciseType());
 
-        assertEquals("Tổng hợp Bài 09–17", result.get(17).getTitle());
-        assertEquals(18, result.get(17).getSortOrder());
-        assertEquals(ExerciseType.REVIEW, result.get(17).getExerciseType());
+        assertEquals("Tổng hợp Bài 01–08", result.get(8).getTitle());
+        assertEquals(9, result.get(8).getSortOrder());
+        assertEquals(ExerciseType.REVIEW, result.get(8).getExerciseType());
 
-        assertEquals("Tổng hợp Bài 18–25", result.get(26).getTitle());
-        assertEquals(27, result.get(26).getSortOrder());
-        assertEquals(ExerciseType.REVIEW, result.get(26).getExerciseType());
+        assertEquals("Tổng hợp Bài 09–17", result.get(18).getTitle());
+        assertEquals(19, result.get(18).getSortOrder());
+        assertEquals(ExerciseType.REVIEW, result.get(18).getExerciseType());
 
-        assertEquals("総復習 (1課〜25課)", result.get(27).getTitle());
+        assertEquals("Tổng hợp Bài 18–25", result.get(27).getTitle());
         assertEquals(28, result.get(27).getSortOrder());
         assertEquals(ExerciseType.REVIEW, result.get(27).getExerciseType());
+
+        assertEquals("総復習 (1課〜25課)", result.get(28).getTitle());
+        assertEquals(29, result.get(28).getSortOrder());
+        assertEquals(ExerciseType.REVIEW, result.get(28).getExerciseType());
     }
 
     @Test
-    @DisplayName("TEST 2: Kiểm tra Exercise Bài 01–02 là 1 bài duy nhất, không có Bài 01 riêng hay Bài 02 riêng")
-    void testExercise01_02IsSingleAndMerged() throws Exception {
+    @DisplayName("TEST 2: Kiểm tra Exercise Bài 01 và Bài 02 đã được tách riêng biệt chuẩn hóa")
+    void testExercise01And02AreSeparated() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         InputStream is = getClass().getResourceAsStream("/data/n5-exercise.json");
         assertNotNull(is, "File n5-exercise.json phải tồn tại trong resources/data");
 
         List<Map<String, Object>> seedData = mapper.readValue(is, new TypeReference<>() {});
-        assertEquals(28, seedData.size(), "Phải có đúng 28 bài tập chính thức");
+        assertEquals(29, seedData.size(), "Phải có đúng 29 bài tập chính thức");
 
         boolean hasBai01Alone = seedData.stream().anyMatch(e -> "Bài 01".equals(e.get("title")));
         boolean hasBai02Alone = seedData.stream().anyMatch(e -> "Bài 02".equals(e.get("title")));
         boolean hasMerged0102 = seedData.stream().anyMatch(e -> "Bài 01–02".equals(e.get("title")));
 
-        assertFalse(hasBai01Alone, "Không được có Exercise Bài 01 riêng biệt");
-        assertFalse(hasBai02Alone, "Không được có Exercise Bài 02 riêng biệt");
-        assertTrue(hasMerged0102, "Phải có Exercise Bài 01–02 gộp chung");
+        assertTrue(hasBai01Alone, "Phải có Exercise Bài 01 riêng biệt");
+        assertTrue(hasBai02Alone, "Phải có Exercise Bài 02 riêng biệt");
+        assertFalse(hasMerged0102, "Không còn Exercise Bài 01–02 gộp chung");
 
-        // Verify sortOrder of Bài 01-02 is 1
+        // Verify sortOrder of Bài 01 is 1 and Bài 02 is 2
         Map<String, Object> firstExercise = seedData.get(0);
-        assertEquals("Bài 01–02", firstExercise.get("title"));
+        assertEquals("Bài 01", firstExercise.get("title"));
         assertEquals(1, firstExercise.get("sortOrder"));
         assertEquals("LESSON", firstExercise.get("exerciseType"));
+
+        Map<String, Object> secondExercise = seedData.get(1);
+        assertEquals("Bài 02", secondExercise.get("title"));
+        assertEquals(2, secondExercise.get("sortOrder"));
+        assertEquals("LESSON", secondExercise.get("exerciseType"));
     }
 
     @Test
@@ -202,18 +211,18 @@ class ExerciseServiceTest {
     }
 
     @Test
-    @DisplayName("VALIDATION TOÀN DIỆN: 28 bài tập trong n5-exercise.json tuân thủ 100% Business Rules")
+    @DisplayName("VALIDATION TOÀN DIỆN: 29 bài tập trong n5-exercise.json tuân thủ 100% Business Rules")
     void testN5ExerciseJsonIntegrity() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         InputStream is = getClass().getResourceAsStream("/data/n5-exercise.json");
         assertNotNull(is);
 
         List<Map<String, Object>> exercises = mapper.readValue(is, new TypeReference<>() {});
-        assertEquals(28, exercises.size());
+        assertEquals(29, exercises.size());
 
         Set<Integer> sortOrders = new HashSet<>();
 
-        for (int i = 0; i < 28; i++) {
+        for (int i = 0; i < 29; i++) {
             Map<String, Object> ex = exercises.get(i);
             int sortOrder = (Integer) ex.get("sortOrder");
             assertNotNull(sortOrder, "sortOrder không được null");
@@ -223,21 +232,22 @@ class ExerciseServiceTest {
             assertEquals(i + 1, sortOrder, "Exercise tại index " + i + " phải có sortOrder = " + (i + 1));
 
             // Verify Review positions
-            if (sortOrder == 8) {
+            if (sortOrder == 9) {
                 assertEquals("Tổng hợp Bài 01–08", ex.get("title"));
                 assertEquals("REVIEW", ex.get("exerciseType"));
-            } else if (sortOrder == 18) {
+            } else if (sortOrder == 19) {
                 assertEquals("Tổng hợp Bài 09–17", ex.get("title"));
                 assertEquals("REVIEW", ex.get("exerciseType"));
-            } else if (sortOrder == 27) {
+            } else if (sortOrder == 28) {
                 assertEquals("Tổng hợp Bài 18–25", ex.get("title"));
                 assertEquals("REVIEW", ex.get("exerciseType"));
-            } else if (sortOrder == 28) {
+            } else if (sortOrder == 29) {
                 assertEquals("総復習 (1課〜25課)", ex.get("title"));
                 assertEquals("REVIEW", ex.get("exerciseType"));
             } else {
                 assertEquals("LESSON", ex.get("exerciseType"));
             }
+
 
             // Verify questions
             @SuppressWarnings("unchecked")

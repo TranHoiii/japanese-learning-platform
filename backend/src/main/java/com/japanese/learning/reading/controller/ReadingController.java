@@ -8,6 +8,8 @@ import com.japanese.learning.reading.service.ReadingService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Positive;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -45,7 +47,11 @@ public class ReadingController {
     @PostMapping("/{id}/submit")
     public ApiResponse<ReadingSubmitResponse> submitReading(
             @PathVariable @Positive Long id,
-            @Valid @RequestBody ReadingSubmitRequest request) {
+            @Valid @RequestBody ReadingSubmitRequest request,
+            @AuthenticationPrincipal Jwt jwt) {
+        if (jwt != null) {
+            return ApiResponse.success("Nộp bài đọc thành công", readingService.submitReading(id, request, jwt));
+        }
         return ApiResponse.success("Nộp bài đọc thành công", readingService.submitReading(id, request));
     }
 }

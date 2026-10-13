@@ -58,6 +58,7 @@ class ReadingControllerTest {
     void setUp() {
         mockMvc = MockMvcBuilders.standaloneSetup(readingController)
                 .setControllerAdvice(new GlobalExceptionHandler())
+                .setCustomArgumentResolvers(new org.springframework.security.web.method.annotation.AuthenticationPrincipalArgumentResolver())
                 .build();
 
         ReadingOptionResponse opt1 = ReadingOptionResponse.builder()

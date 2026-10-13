@@ -14,124 +14,7 @@ import {
 import { ExerciseSubmitBar } from "../components/exercise/ExerciseSubmitBar";
 import { ExerciseResultSummary } from "../components/exercise/ExerciseResultSummary";
 
-const getQuestionIllustration = (
-  sortOrder?: number,
-  lessonId?: number,
-  qSortOrder?: number
-): IllustrationInfo | null => {
-  if (!qSortOrder) return null;
 
-  // N4 Lesson 30 Question 2
-  if ((sortOrder === 33 || sortOrder === 32 || lessonId === 30) && qSortOrder === 2) {
-    return {
-      src: "/media/exercise/exercise_n4_l30_q02.png",
-      alt: "Hình minh họa bài tập Bài 30 câu 2 (N4)",
-      caption: "Minh họa Bài 30 - Câu 2: Trạng thái đồ vật Vてあります (Minna no Nihongo N4)",
-    };
-  }
-
-  // N5 Illustrations
-  if (sortOrder === 1 && qSortOrder === 1) {
-    return {
-      src: "/media/exercise/exercise_n5_l01_q01.png",
-      alt: "Hình minh họa Bài 1-2 Câu 1",
-      caption: "Minh họa Bài 01–02 - Câu 1: Nhận diện đồ vật 1〜10 (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 1 && qSortOrder === 3) {
-    return {
-      src: "/media/exercise/exercise_n5_l01_q03.png",
-      alt: "Hình minh họa Bài 1-2 Câu 3",
-      caption: "Minh họa Bài 01–02 - Câu 3: Đại từ chỉ định これ, それ, あれ (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 2 && qSortOrder === 1) {
-    return {
-      src: "/media/exercise/exercise_n5_l03_q01.png",
-      alt: "Hình minh họa Bài 3 Câu 1",
-      caption: "Minh họa Bài 03 - Câu 1: Đồ vật kèm giá tiền Yên ¥ (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 3 && qSortOrder === 2) {
-    return {
-      src: "/media/exercise/exercise_n5_l04_q02.png",
-      alt: "Hình minh họa Bài 4 Câu 2",
-      caption: "Minh họa Bài 04 - Câu 2: Lịch tháng 3 & các thứ trong tuần (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 3 && qSortOrder === 4) {
-    return {
-      src: "/media/exercise/exercise_n5_l04_q04.png",
-      alt: "Hình minh họa Bài 4 Câu 4",
-      caption: "Minh họa Bài 04 - Câu 4: Bảng thời gian làm việc ngân hàng, thư viện, bưu điện (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 5 && qSortOrder === 4) {
-    return {
-      src: "/media/exercise/exercise_n5_l06_q04.png",
-      alt: "Hình minh họa Bài 6 Câu 4",
-      caption: "Minh họa Bài 06 - Câu 4: Tranh 6 hoạt động sinh hoạt trong ngày (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 10 && qSortOrder === 3) {
-    return {
-      src: "/media/exercise/exercise_n5_l10_q03.png",
-      alt: "Hình minh họa Bài 10 Câu 3",
-      caption: "Minh họa Bài 10 - Câu 3: Tranh phòng ngủ và vị trí đồ vật (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 13 && qSortOrder === 2) {
-    return {
-      src: "/media/exercise/exercise_n5_l13_q02.png",
-      alt: "Hình minh họa Bài 13 Câu 2",
-      caption: "Minh họa Bài 13 - Câu 2: Đồ vật mong muốn sở hữu (〜が欲しいです) (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 13 && qSortOrder === 3) {
-    return {
-      src: "/media/exercise/exercise_n5_l13_q03.png",
-      alt: "Hình minh họa Bài 13 Câu 3",
-      caption: "Minh họa Bài 13 - Câu 3: Hành động mong muốn thực hiện (〜たいです) (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 14 && qSortOrder === 4) {
-    return {
-      src: "/media/exercise/exercise_n5_l14_q04.png",
-      alt: "Hình minh họa Bài 14 Câu 4",
-      caption: "Minh họa Bài 14 - Câu 4: Các hành động đang tiếp diễn thể 〜ています (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 23 && qSortOrder === 1) {
-    return {
-      src: "/media/exercise/exercise_n5_l22_q01.png",
-      alt: "Hình minh họa Bài 22 Câu 1",
-      caption: "Minh họa Bài 22 - Câu 1: Đồ vật và mệnh đề định ngữ bổ nghĩa (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 23 && qSortOrder === 4) {
-    return {
-      src: "/media/exercise/exercise_n5_l22_q04.png",
-      alt: "Hình minh họa Bài 22 Câu 4",
-      caption: "Minh họa Bài 22 - Câu 4: Tranh toàn cảnh công viên xác định nhân vật (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 24 && qSortOrder === 5) {
-    return {
-      src: "/media/exercise/exercise_n5_l23_q05.png",
-      alt: "Hình minh họa Bài 23 Câu 5",
-      caption: "Minh họa Bài 23 - Câu 5: Bản đồ chỉ đường và phương hướng tòa nhà (Minna no Nihongo N5)",
-    };
-  }
-  if (sortOrder === 25 && qSortOrder === 2) {
-    return {
-      src: "/media/exercise/exercise_n5_l24_q02.png",
-      alt: "Hình minh họa Bài 24 Câu 2",
-      caption: "Minh họa Bài 24 - Câu 2: Hành động cho nhận 〜てもらいました / 〜てくれました (Minna no Nihongo N5)",
-    };
-  }
-
-  return null;
-};
 
 export default function ExerciseDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -387,11 +270,13 @@ export default function ExerciseDetailPage() {
               <div className="space-y-6">
                 {exercise.questions.map((question, qIdx) => {
                   const qResult = result?.results.find((r) => r.questionId === question.id);
-                  const illustration = getQuestionIllustration(
-                    exercise.sortOrder,
-                    exercise.lessonId,
-                    question.sortOrder
-                  );
+                  const illustration: IllustrationInfo | null = question.imageUrl
+                    ? {
+                        src: question.imageUrl,
+                        alt: `Hình minh họa câu ${question.sortOrder}`,
+                        caption: `Minh họa ${exercise.title} - Câu ${question.sortOrder}`,
+                      }
+                    : null;
 
                   return (
                     <QuestionRenderer

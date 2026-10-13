@@ -1,45 +1,71 @@
 [
   {
     "sortOrder": 1,
-    "title": "Bài 01–02",
+    "title": "Bài 01",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
     "lessonNumber": 1,
-    "description": "Bài tập Minna no Nihongo N5 - Bài 01 & 02: Từ vựng đồ vật, đại từ chỉ định, trợ từ は, も, の, hỏi tuổi, hỏi danh tính",
+    "description": "Bài tập Minna no Nihongo N5 - Bài 1: Danh từ 1 は Danh từ 2 です/じゃありません/ですか, trợ từ も, の, hỏi tuổi và giới thiệu bản thân",
     "questions": [
-      {
-        "questionText": "1. Nhìn hình và viết từ tương ứng:\n例: ( 手帳 )\n1) ( )\n2) ( )\n3) ( )\n4) ( )\n5) ( )\n6) ( )\n7) ( )\n8) ( )\n9) ( )",
-        "questionType": "FILL_BLANK",
-        "explanation": "1) 時計 (とけい)\n2) カメラ\n3) いす\n4) 雑誌 (ざっし)\n5) 本 (ほん)\n6) ノート\n7) かばん\n8) コンピューター\n9) 傘 (かさ)",
-        "sortOrder": 1,
-        "options": []
-      },
       {
         "questionText": "2. Điền trợ từ thích hợp vào ngoặc ( ):\n例: あの 方 ( は ) どなたですか。\n1) A: サントスさんはブラジル人です。マリアさん ( ) ブラジル人ですか。\n   B: はい、マリアさん ( ) ブラジル人です。\n   A: ミラーさん ( ) ブラジル人ですか。\n   B: いいえ、ミラーさん ( ) ブラジル人じゃありません。\n2) グプタさんはIMC ( ) 社員です。",
         "questionType": "FILL_BLANK",
         "explanation": "1) も, も, も, は\n2) の",
-        "sortOrder": 2,
-        "options": []
-      },
-      {
-        "questionText": "3. Nhìn hình và điền từ chỉ định (これ, それ, あれ, この, その, あの):\n例: ( これ ) ( このかばん )\n1) それ ( ＿＿＿＿ )\n2) ( ＿＿＿＿ ) あの かばん",
-        "questionType": "FILL_BLANK",
-        "explanation": "1) そのかばん\n2) あれ",
-        "sortOrder": 3,
+        "sortOrder": 1,
         "options": []
       },
       {
         "questionText": "4. Hoàn thành câu trả lời:\n例: ミラーさんは会社員ですか。…はい、会社員です。\n1) カリナさんは学生ですか。…はい、＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) ワンさんも学生ですか。…いいえ、＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) あの方は＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿…山田さんです。\n4) この傘は＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿…ミラーさんのです。",
         "questionType": "FILL_BLANK",
         "explanation": "1) 学生です。\n2) 学生じゃありません。\n3) どなたですか。／だれですか。\n4) だれのですか。",
+        "sortOrder": 2,
+        "options": []
+      },
+      {
+        "questionText": "7. Viết cách đọc số tuổi bằng hiragana:\n例: グプタさんは42歳です。(よんじゅうに)\n1) イーさんは35歳です。( ＿＿＿＿ )\n2) 太郎ちゃんは8歳です。( ＿＿＿＿ )\n3) ワンさんは29歳です。( ＿＿＿＿ )\n4) カリナさんは24歳です。( ＿＿＿＿ )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) さんじゅうご\n2) はっ\n3) にじゅうきゅう\n4) にじゅうよん",
+        "sortOrder": 3,
+        "options": []
+      },
+      {
+        "questionText": "8. Trả lời các câu hỏi sau về bản thân:\n1) あなたは学生ですか。＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) お名前は？＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) おいくつですか。＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) はい、学生です。／いいえ、学生じゃありません。\n2) 例: マイク・ミラーです。\n3) 例: 23歳です。",
         "sortOrder": 4,
         "options": []
+      }
+    ]
+  },
+  {
+    "sortOrder": 2,
+    "title": "Bài 02",
+    "exerciseType": "LESSON",
+    "contentType": "EXERCISE",
+    "lessonNumber": 2,
+    "description": "Bài tập Minna no Nihongo N5 - Bài 2: Đồ vật, đại từ chỉ định これ, それ, あれ, この, その, あの, sở hữu の",
+    "questions": [
+      {
+        "questionText": "1. Nhìn hình và viết từ tương ứng:\n例: ( 手帳 )\n1) ( )\n2) ( )\n3) ( )\n4) ( )\n5) ( )\n6) ( )\n7) ( )\n8) ( )\n9) ( )",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) 時計 (とけい)\n2) カメラ\n3) いす\n4) 雑誌 (ざっし)\n5) 本 (ほん)\n6) ノート\n7) かばん\n8) コンピューター\n9) 傘 (かさ)",
+        "sortOrder": 1,
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l01_q01.png"
+      },
+      {
+        "questionText": "3. Nhìn hình và điền từ chỉ định (これ, それ, あれ, この, その, あの):\n例: ( これ ) ( このかばん )\n1) それ ( ＿＿＿＿ )\n2) ( ＿＿＿＿ ) あの かばん",
+        "questionType": "FILL_BLANK",
+        "explanation": "1) そのかばん\n2) あれ",
+        "sortOrder": 2,
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l01_q03.png"
       },
       {
         "questionText": "5. Nối câu hỏi với câu trả lời phù hợp (a - i):\n例: これは本ですか。( d )\n1) あの人はだれですか。( )\n2) これはノートですか、雑誌ですか。( )\n3) それは何の雑誌ですか。( )\n4) 山田さんはおいくつですか。( )\n5) あの人は山田さんですか。( )\n6) これはだれの時計ですか。( )\n7) ワットさんは学生ですか。( )\n\n[Lựa chọn]:\na. それはノートです。\nb. 38歳です。\nc. はい、山田さんです。\nd. はい、それは本です。\ne. 山田さんのです。\nf. 山田さんです。\ng. いいえ、先生です。\nh. 車の雑誌です。\ni. はい、わたしのです。",
         "questionType": "MATCHING",
         "explanation": "1) f\n2) a\n3) h\n4) b\n5) c\n6) e\n7) g",
-        "sortOrder": 5,
+        "sortOrder": 3,
         "options": [
           {
             "optionText": "a. それはノートです。",
@@ -92,27 +118,13 @@
         "questionText": "6. Chọn từ đúng trong ngoặc { }:\n例: {この, ○これ} は本です。\n1) それは {だれ, 何} のかばんですか。… {わたし, わたしの} です。\n2) {その, それ} は何のCDですか。…日本語のCDです。\n3) {この, これ} 傘はあなたのですか。…いいえ、{あなた, わたし} のじゃありません。\n4) これは {新聞, 何} ですか。…はい、それは新聞です。\n5) あの人は {何, だれ} ですか。…佐藤さんです。\n6) テレーザちゃんは {だれ, 何歳} ですか。…9歳です。",
         "questionType": "MULTIPLE_CHOICE",
         "explanation": "1) だれ, わたしの\n2) それ\n3) この, わたし\n4) 新聞\n5) だれ\n6) 何歳",
-        "sortOrder": 6,
-        "options": []
-      },
-      {
-        "questionText": "7. Viết cách đọc số tuổi bằng hiragana:\n例: グプタさんは42歳です。(よんじゅうに)\n1) イーさんは35歳です。( ＿＿＿＿ )\n2) 太郎ちゃんは8歳です。( ＿＿＿＿ )\n3) ワンさんは29歳です。( ＿＿＿＿ )\n4) カリナさんは24歳です。( ＿＿＿＿ )",
-        "questionType": "FILL_BLANK",
-        "explanation": "1) さんじゅうご\n2) はっ\n3) にじゅうきゅう\n4) にじゅうよん",
-        "sortOrder": 7,
-        "options": []
-      },
-      {
-        "questionText": "8. Trả lời các câu hỏi sau về bản thân:\n1) あなたは学生ですか。＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) お名前は？＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) おいくつですか。＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
-        "questionType": "FILL_BLANK",
-        "explanation": "1) はい、学生です。／いいえ、学生じゃありません。\n2) 例: マイク・ミラーです。\n3) 例: 23歳です。",
-        "sortOrder": 8,
+        "sortOrder": 4,
         "options": []
       }
     ]
   },
   {
-    "sortOrder": 2,
+    "sortOrder": 3,
     "title": "Bài 03",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -124,7 +136,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) はっせんさんびゃく\n2) にまんさんぜんはっぴゃく\n3) じゅうまんよんせん\n4) よんひゃくななじゅうまん",
         "sortOrder": 1,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l03_q01.png"
       },
       {
         "questionText": "2. Điền từ chỉ vị trí / phương hướng vào bảng tương ứng:\nこれ | この | 4) ＿＿＿＿ | こちら\n1) ＿＿＿＿ | その | 5) ＿＿＿＿ | 6) ＿＿＿＿\n2) ＿＿＿＿ | 3) ＿＿＿＿ | あそこ | 7) ＿＿＿＿",
@@ -164,7 +177,7 @@
     ]
   },
   {
-    "sortOrder": 3,
+    "sortOrder": 4,
     "title": "Bài 04",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -183,7 +196,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) ど\n2) げつ\n3) きん\n4) にち\n5) か\n6) もく",
         "sortOrder": 2,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l04_q02.png"
       },
       {
         "questionText": "3. Điền trợ từ thích hợp (の, と, に, から, まで, は) hoặc đánh × nếu không cần trợ từ:\n1) 銀行 ( ) 休みは土曜日 ( ) 日曜日です。\n2) 毎晩11時半 ( ) 寝ます。\n3) 昼休みは12時 ( ) 1時 ( ) です。\n4) きのうの晩勉強しましたか。…いいえ、きのう ( ) 勉強しませんでした。\n5) けさ何時 ( ) 起きましたか。…7時です。\n6) あした ( ) 働きますか。…いいえ、あした ( ) 働きません。\n7) 月曜日 ( ) 金曜日 ( ) 働きます。\n8) きのう ( ) 10時 ( ) 寝ました。",
@@ -197,7 +211,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) 10時から4時までです。休みは水曜日です。\n2) 9時から6時までです。休みは月曜日と金曜日です。\n3) 9時から3時までです。休みは土曜日と日曜日です。\n4) 9時半から8時半までです。休みは日曜日です。",
         "sortOrder": 4,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l04_q04.png"
       },
       {
         "questionText": "5. Chia động từ thích hợp:\n1) きのう勉強しましたか。…いいえ、( ＿＿＿＿ )。(休みます)\n2) きょうは火曜日ですか。…いいえ、( ＿＿＿＿ )。(月曜日)\n3) 日曜日働きますか。…いいえ、( ＿＿＿＿ )。(働きます)\n4) おとといの晩テレビを見ましたか。…いいえ、( ＿＿＿＿ )。(勉強します)",
@@ -223,7 +238,7 @@
     ]
   },
   {
-    "sortOrder": 4,
+    "sortOrder": 5,
     "title": "Bài 05",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -282,7 +297,7 @@
     ]
   },
   {
-    "sortOrder": 5,
+    "sortOrder": 6,
     "title": "Bài 06",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -315,7 +330,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) と, で, を, 飲みました。\n2) に, で, を, 食べます。\n3) で, を, 買いました。\n4) で, を, 読みます。\n5) で, から, まで, を, 見ます。",
         "sortOrder": 4,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l06_q04.png"
       },
       {
         "questionText": "5. Điền từ để hỏi thích hợp (どこ, なに, なん, いつ, だれ):\n1) ( ＿＿＿＿ ) で買いましたか。…スーパーです。\n2) ( ＿＿＿＿ ) を食べましたか。…魚です。\n3) ( ＿＿＿＿ ) の本ですか。…日本語の本です。\n4) ( ＿＿＿＿ ) 曜日ですか。…金曜日です。\n5) ( ＿＿＿＿ )、( ＿＿＿＿ ) と行きますか。…来週、山田さんと行きます。",
@@ -334,7 +350,7 @@
     ]
   },
   {
-    "sortOrder": 6,
+    "sortOrder": 7,
     "title": "Bài 07",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -386,7 +402,7 @@
     ]
   },
   {
-    "sortOrder": 7,
+    "sortOrder": 8,
     "title": "Bài 08",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -438,7 +454,7 @@
     ]
   },
   {
-    "sortOrder": 8,
+    "sortOrder": 9,
     "title": "Tổng hợp Bài 01–08",
     "exerciseType": "REVIEW",
     "contentType": "EXERCISE",
@@ -511,7 +527,7 @@
     ]
   },
   {
-    "sortOrder": 9,
+    "sortOrder": 10,
     "title": "Bài 09",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -570,7 +586,7 @@
     ]
   },
   {
-    "sortOrder": 10,
+    "sortOrder": 11,
     "title": "Bài 10",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -596,7 +612,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) シャツがあります。\n2) 何もありません。\n3) 机の上にあります。\n4) 箱の中にいます。",
         "sortOrder": 3,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l10_q03.png"
       },
       {
         "questionText": "4. Điền câu hỏi thích hợp (どこにいますか, どこにありますか, だれがいますか):\n1) 犬は ( ＿＿＿＿ )。…庭にいます。\n2) 郵便局は ( ＿＿＿＿ )。…駅の前にあります。\n3) 教室に ( ＿＿＿＿ )。…ワンさんがいます。\n4) 鍵は ( ＿＿＿＿ )。…かばんの中にあります。\n5) 事務所に ( ＿＿＿＿ )。…佐藤さんがいます。",
@@ -622,7 +639,7 @@
     ]
   },
   {
-    "sortOrder": 11,
+    "sortOrder": 12,
     "title": "Bài 11",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -674,7 +691,7 @@
     ]
   },
   {
-    "sortOrder": 12,
+    "sortOrder": 13,
     "title": "Bài 12",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -733,7 +750,7 @@
     ]
   },
   {
-    "sortOrder": 13,
+    "sortOrder": 14,
     "title": "Bài 13",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -752,14 +769,16 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) わたしはかばんが欲しいです。\n2) わたしはカメラが欲しいです。\n3) わたしはコンピューターが欲しいです。／わたしはパソコンが欲しいです。\n4) わたしは車が欲しいです。",
         "sortOrder": 2,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l13_q02.png"
       },
       {
         "questionText": "3. Viết câu diễn tả mong muốn làm gì (〜たいです):\n1) 水・飲みます → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n2) 本・読みます → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n3) 手紙・書きます → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n4) 写真・撮ります → ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿",
         "questionType": "FILL_BLANK",
         "explanation": "1) わたしは水を飲みたいです。\n2) わたしは本を読みたいです。\n3) わたしは手紙を書きたいです。\n4) わたしは写真を撮りたいです。",
         "sortOrder": 3,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l13_q03.png"
       },
       {
         "questionText": "4. Chia động từ thể 〜たい / 〜たくない:\n1) おなかがいっぱいですから、何も ( ＿＿＿＿ )。(食べます)\n2) のどがかわきましたから、ジュースを ( ＿＿＿＿ )。(飲みます)\n3) 母の誕生日に花を ( ＿＿＿＿ )。(あげます/送ります/買います)\n4) 疲労ですから、どこへも ( ＿＿＿＿ )。(行きます)",
@@ -799,7 +818,7 @@
     ]
   },
   {
-    "sortOrder": 14,
+    "sortOrder": 15,
     "title": "Bài 14",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -832,7 +851,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) 水を飲んでいます。\n2) たばこを吸っています。\n3) 手紙を書いています。\n4) 写真を撮っています。",
         "sortOrder": 4,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l14_q04.png"
       },
       {
         "questionText": "5. Điền phó từ thích hợp (もう, もう少し, あとで, また, ゆっくり, すぐ):\n1) ( ＿＿＿＿ ) 12時ですね。昼ごはんを食べましょう。\n2) すみませんが、( ＿＿＿＿ ) ゆっくり話してください。\n3) いま忙しいですから、( ＿＿＿＿ ) 来てください。\n4) 雨が降っていますから、( ＿＿＿＿ ) あした来ます。\n5) 日曜日はうちで ( ＿＿＿＿ ) 休みたいです。\n6) 危ないですから、( ＿＿＿＿ ) 止まってください。",
@@ -858,7 +878,7 @@
     ]
   },
   {
-    "sortOrder": 15,
+    "sortOrder": 16,
     "title": "Bài 15",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -903,7 +923,7 @@
     ]
   },
   {
-    "sortOrder": 16,
+    "sortOrder": 17,
     "title": "Bài 16",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -955,7 +975,7 @@
     ]
   },
   {
-    "sortOrder": 17,
+    "sortOrder": 18,
     "title": "Bài 17",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -1021,7 +1041,7 @@
     ]
   },
   {
-    "sortOrder": 18,
+    "sortOrder": 19,
     "title": "Tổng hợp Bài 09–17",
     "exerciseType": "REVIEW",
     "contentType": "EXERCISE",
@@ -1101,7 +1121,7 @@
     ]
   },
   {
-    "sortOrder": 19,
+    "sortOrder": 20,
     "title": "Bài 18",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -1167,7 +1187,7 @@
     ]
   },
   {
-    "sortOrder": 20,
+    "sortOrder": 21,
     "title": "Bài 19",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -1212,7 +1232,7 @@
     ]
   },
   {
-    "sortOrder": 21,
+    "sortOrder": 22,
     "title": "Bài 20",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -1250,7 +1270,7 @@
     ]
   },
   {
-    "sortOrder": 22,
+    "sortOrder": 23,
     "title": "Bài 21",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -1309,7 +1329,7 @@
     ]
   },
   {
-    "sortOrder": 23,
+    "sortOrder": 24,
     "title": "Bài 22",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -1321,7 +1341,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) イギリスで買った時計です。\n2) 友達に借りたカメラです。\n3) 山田さんにあげるシャープペンシルです。\n4) ミラーさんが作ったいすです。",
         "sortOrder": 1,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l22_q01.png"
       },
       {
         "questionText": "2. Chia động từ thể thông thường trong mệnh đề bổ nghĩa:\n1) パンを (作ります → ＿＿＿＿ ) 人\n2) 着物を (着ています → ＿＿＿＿ ) 人\n3) あした病院へ (行きます → ＿＿＿＿ ) 人\n4) 写真を (撮りました → ＿＿＿＿ ) 人\n5) 切符が (要りません → ＿＿＿＿ ) 人\n6) 花を (売っています → ＿＿＿＿ ) 店\n7) セーターを (着ます → ＿＿＿＿ ) 人\n8) たばこを (吸いません → ＿＿＿＿ ) 人\n9) 料理が (できます → ＿＿＿＿ ) 人\n10) 英語を (話します → ＿＿＿＿ ) 人",
@@ -1342,7 +1363,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) 遊んでいる, だれ, 山田さんです。\n2) どの人, [木の下で]寝ている人です。\n3) 話している, だれ, シュミットさんです。\n4) どの人, 絵をかいている人です。",
         "sortOrder": 4,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l22_q04.png"
       },
       {
         "questionText": "5. Đặt câu với thời gian / nơi chốn làm việc gì (〜時間/〜所):\n1) テレビを見ます → ＿＿＿＿\n2) 郵便局へ行きます → ＿＿＿＿\n3) 友達と買い物に行きます → ＿＿＿＿",
@@ -1361,7 +1383,7 @@
     ]
   },
   {
-    "sortOrder": 24,
+    "sortOrder": 25,
     "title": "Bài 23",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -1401,7 +1423,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) 例: 2つ目の角を左へ曲がると、右にあります。\n2) 例: 次の角を左へ曲がって、まっすぐ行くと、橋があります。橋を渡ると、右にあります。\n3) 例: 2つ目の角を右へ曲がって、50メートルぐらい行くと、左にあります。",
         "sortOrder": 5,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l23_q05.png"
       },
       {
         "questionText": "6. Hoàn thành câu theo tình huống:\n1) 寂しいとき、( ＿＿＿＿ )。\n2) 疲れたとき、( ＿＿＿＿ )。\n3) 暇なとき、( ＿＿＿＿ )。\n4) 眠いとき、( ＿＿＿＿ )。\n5) 道がわからないとき、( ＿＿＿＿ )。\n6) 引っ越しのとき、( ＿＿＿＿ )。",
@@ -1420,7 +1443,7 @@
     ]
   },
   {
-    "sortOrder": 25,
+    "sortOrder": 26,
     "title": "Bài 24",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -1439,7 +1462,8 @@
         "questionType": "FILL_BLANK",
         "explanation": "1) 母にセーターを送ってもらいました。セーターを送ってくれました。\n2) 佐藤さんに傘を貸してもらいました。傘を貸してくれました。\n3) 松本さんにすき焼きを作ってもらいました。すき焼きを作ってくれました。",
         "sortOrder": 2,
-        "options": []
+        "options": [],
+        "imageUrl": "/media/exercise/exercise_n5_l24_q02.png"
       },
       {
         "questionText": "3. Điền động từ thể 〜てもらいました hoặc 〜てくれました thích hợp:\n1) 山田さんに引越しを ( ＿＿＿＿ )。\n2) 部長が駅まで ( ＿＿＿＿ )。\n3) 友達に病院へ ( ＿＿＿＿ )。\n4) 母がおいしいケーキを ( ＿＿＿＿ )。\n5) 明日友達がうちに ( ＿＿＿＿ )。",
@@ -1465,7 +1489,7 @@
     ]
   },
   {
-    "sortOrder": 26,
+    "sortOrder": 27,
     "title": "Bài 25",
     "exerciseType": "LESSON",
     "contentType": "EXERCISE",
@@ -1517,7 +1541,7 @@
     ]
   },
   {
-    "sortOrder": 27,
+    "sortOrder": 28,
     "title": "Tổng hợp Bài 18–25",
     "exerciseType": "REVIEW",
     "contentType": "EXERCISE",
@@ -1583,7 +1607,7 @@
     ]
   },
   {
-    "sortOrder": 28,
+    "sortOrder": 29,
     "title": "総復習 (1課〜25課)",
     "exerciseType": "REVIEW",
     "contentType": "GRAMMAR",

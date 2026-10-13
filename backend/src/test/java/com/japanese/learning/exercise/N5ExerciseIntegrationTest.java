@@ -253,7 +253,7 @@ class N5ExerciseIntegrationTest {
     // =========================================================================
 
     @Test
-    @DisplayName("Verify N5 exercise JSON data integrity (exactly 28 exercises, sortOrder 1..28, clean tags)")
+    @DisplayName("Verify N5 exercise JSON data integrity (exactly 29 exercises, sortOrder 1..29, clean tags)")
     void testN5ExerciseJsonDataIntegrity() throws Exception {
         ClassPathResource resource = new ClassPathResource("data/n5-exercise.json");
         assertTrue(resource.exists(), "n5-exercise.json must exist in classpath");
@@ -264,7 +264,7 @@ class N5ExerciseIntegrationTest {
         }
 
         assertNotNull(exercises);
-        assertEquals(28, exercises.size(), "N5 Exercise must have exactly 28 exercises");
+        assertEquals(29, exercises.size(), "N5 Exercise must have exactly 29 exercises");
 
         Set<Integer> sortOrders = new HashSet<>();
         int totalQuestions = 0;
@@ -276,7 +276,7 @@ class N5ExerciseIntegrationTest {
             String exerciseType = (String) ex.get("exerciseType");
 
             assertNotNull(sortOrder);
-            assertTrue(sortOrder >= 1 && sortOrder <= 28, "N5 sort order must be between 1 and 28");
+            assertTrue(sortOrder >= 1 && sortOrder <= 29, "N5 sort order must be between 1 and 29");
             assertTrue(sortOrders.add(sortOrder), "Sort orders must be globally unique");
 
             assertNotNull(lessonNumber);
@@ -309,17 +309,17 @@ class N5ExerciseIntegrationTest {
             }
         }
 
-        assertEquals(28, sortOrders.size(), "All 28 sort orders (1..28) must be present");
+        assertEquals(29, sortOrders.size(), "All 29 sort orders (1..29) must be present");
 
-        // Verify Exercise 28 specifically (総復習 1-25)
-        Map<String, Object> lastEx = exercises.get(27);
-        assertEquals(28, lastEx.get("sortOrder"));
+        // Verify Exercise 29 specifically (総復習 1-25)
+        Map<String, Object> lastEx = exercises.get(28);
+        assertEquals(29, lastEx.get("sortOrder"));
         assertEquals("REVIEW", lastEx.get("exerciseType"));
         assertEquals("総復習 (1課〜25課)", lastEx.get("title"));
 
         @SuppressWarnings("unchecked")
-        List<Map<String, Object>> ex28Questions = (List<Map<String, Object>>) lastEx.get("questions");
-        assertEquals(7, ex28Questions.size(), "Comprehensive review must contain exactly 7 major questions");
+        List<Map<String, Object>> ex29Questions = (List<Map<String, Object>>) lastEx.get("questions");
+        assertEquals(7, ex29Questions.size(), "Comprehensive review must contain exactly 7 major questions");
     }
 
     // =========================================================================

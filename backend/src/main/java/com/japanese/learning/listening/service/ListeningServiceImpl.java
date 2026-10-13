@@ -12,7 +12,12 @@ import com.japanese.learning.listening.entity.ListeningContent;
 import com.japanese.learning.listening.entity.ListeningOption;
 import com.japanese.learning.listening.entity.ListeningQuestion;
 import com.japanese.learning.listening.repository.ListeningContentRepository;
-import lombok.RequiredArgsConstructor;
+import com.japanese.learning.common.enums.ContentType;
+import com.japanese.learning.progress.dto.UpdateContentProgressRequest;
+import com.japanese.learning.progress.service.ProgressService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,14 +27,34 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
-@RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class ListeningServiceImpl implements ListeningService {
 
     private final ListeningContentRepository listeningContentRepository;
     private final LessonRepository lessonRepository;
     private final ListeningContentMapper listeningContentMapper;
+    private final ProgressService progressService;
+
+    public ListeningServiceImpl(
+            ListeningContentRepository listeningContentRepository,
+            LessonRepository lessonRepository,
+            ListeningContentMapper listeningContentMapper) {
+        this(listeningContentRepository, lessonRepository, listeningContentMapper, null);
+    }
+
+    @Autowired
+    public ListeningServiceImpl(
+            ListeningContentRepository listeningContentRepository,
+            LessonRepository lessonRepository,
+            ListeningContentMapper listeningContentMapper,
+            @Autowired(required = false) ProgressService progressService) {
+        this.listeningContentRepository = listeningContentRepository;
+        this.lessonRepository = lessonRepository;
+        this.listeningContentMapper = listeningContentMapper;
+        this.progressService = progressService;
+    }
 
     @Override
     public List<ListeningContentResponse> getListeningsByLessonId(Long lessonId) {
@@ -51,7 +76,14 @@ public class ListeningServiceImpl implements ListeningService {
     }
 
     @Override
+    @Transactional
     public ListeningSubmitResponse submitListening(Long id, ListeningSubmitRequest request) {
+        return submitListening(id, request, null);
+    }
+
+    @Override
+    @Transactional
+    public ListeningSubmitResponse submitListening(Long id, ListeningSubmitRequest request, Jwt jwt) {
         ListeningContent listening = listeningContentRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Không tìm thấy bài nghe với id: " + id));
 
@@ -105,6 +137,19 @@ public class ListeningServiceImpl implements ListeningService {
         int totalQuestions = listening.getQuestions().size();
         int wrongCount = totalQuestions - correctCount;
         int score = totalQuestions > 0 ? (int) Math.round(((double) correctCount / totalQuestions) * 100) : 0;
+
+        // Persist user learning progress if authenticated
+        if (jwt != null && progressService != null) {
+            try {
+                progressService.updateContentProgress(jwt, new UpdateContentProgressRequest(
+                        ContentType.LISTENING,
+                        listening.getId(),
+                        score
+                ));
+            } catch (Exception ex) {
+                log.warn("Không thể lưu tiến độ cho bài nghe {}: {}", id, ex.getMessage());
+            }
+        }
 
         return ListeningSubmitResponse.builder()
                 .score(score)

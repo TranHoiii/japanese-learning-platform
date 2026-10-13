@@ -5,6 +5,8 @@ import com.japanese.learning.exercise.dto.ExerciseSubmitRequest;
 import com.japanese.learning.exercise.dto.ExerciseSubmitResponse;
 import com.japanese.learning.exercise.dto.QuestionResponse;
 
+import org.springframework.security.oauth2.jwt.Jwt;
+
 import java.util.List;
 
 public interface ExerciseService {
@@ -18,4 +20,7 @@ public interface ExerciseService {
     List<QuestionResponse> getQuestionsByExerciseId(Long exerciseId);
 
     ExerciseSubmitResponse submitExercise(Long exerciseId, ExerciseSubmitRequest request);
+
+    ExerciseSubmitResponse submitExercise(Long exerciseId, ExerciseSubmitRequest request, Jwt jwt);
 }
+

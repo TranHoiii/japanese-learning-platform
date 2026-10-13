@@ -178,14 +178,16 @@
             "sortOrder": 1,
             "options": [
               {
-                "content": "a. Giảng viên trường Fuji - /listening/lesson-01/lesson-01-listening-03-option-1a.png",
+                "content": "a. Giảng viên trường Fuji",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-01/lesson-01-listening-03-option-a.png"
               },
               {
-                "content": "b. Giảng viên trường Sakura - /listening/lesson-01/lesson-01-listening-03-option-1b.png",
+                "content": "b. Giảng viên trường Sakura",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-01/lesson-01-listening-03-option-b.png"
               }
             ]
           },
@@ -196,14 +198,16 @@
             "sortOrder": 2,
             "options": [
               {
-                "content": "a. Bác sĩ - /listening/lesson-01/lesson-01-listening-03-option-2a.png",
+                "content": "a. Bác sĩ",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-01/lesson-01-listening-03-option-1a.png"
               },
               {
-                "content": "b. Giáo viên - /listening/lesson-01/lesson-01-listening-03-option-2b.png",
+                "content": "b. Giáo viên",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-01/lesson-01-listening-03-option-1b.png"
               }
             ]
           },
@@ -214,14 +218,16 @@
             "sortOrder": 3,
             "options": [
               {
-                "content": "a. Giảng viên đại học - /listening/lesson-01/lesson-01-listening-03-option-3a.png",
+                "content": "a. Giảng viên đại học",
                 "correct": false,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-01/lesson-01-listening-03-option-2a.png"
               },
               {
-                "content": "b. Nhân viên ngân hàng - /listening/lesson-01/lesson-01-listening-03-option-3b.png",
+                "content": "b. Nhân viên ngân hàng",
                 "correct": true,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-01/lesson-01-listening-03-option-2b.png"
               }
             ]
           },
@@ -232,14 +238,16 @@
             "sortOrder": 4,
             "options": [
               {
-                "content": "a. Nhân viên công ty IMC - /listening/lesson-01/lesson-01-listening-03-option-a.png",
+                "content": "a. Nhân viên công ty IMC",
                 "correct": false,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-01/lesson-01-listening-03-option-3a.png"
               },
               {
-                "content": "b. Nhân viên công ty Điện lực Power - /listening/lesson-01/lesson-01-listening-03-option-b.png",
+                "content": "b. Nhân viên công ty Điện lực Power",
                 "correct": true,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-01/lesson-01-listening-03-option-3b.png"
               }
             ]
           }
@@ -385,14 +393,16 @@
             "sortOrder": 1,
             "options": [
               {
-                "content": "a. Chìa khóa phòng 510 - /listening/lesson-02/lesson-02-listening-01-option-1a.png",
+                "content": "a. Chìa khóa phòng 510",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-02/lesson-02-listening-01-option-0a.png"
               },
               {
-                "content": "b. Thẻ từ phòng 510 / c. Khách đưa danh thiếp - /listening/lesson-02/lesson-02-listening-01-option-1b.png",
+                "content": "b. Thẻ từ phòng 510 / c. Khách đưa danh thiếp",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-02/lesson-02-listening-01-option-0b.png"
               }
             ]
           },
@@ -403,14 +413,16 @@
             "sortOrder": 2,
             "options": [
               {
-                "content": "a. Băng đĩa/máy phát tiếng Hàn Quốc - /listening/lesson-02/lesson-02-listening-01-option-2a.png",
+                "content": "a. Băng đĩa/máy phát tiếng Hàn Quốc",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-02/lesson-02-listening-01-option-1a.png"
               },
               {
-                "content": "b. Máy phát tiếng Nhật / c. Loa thông báo tiếng Hàn - /listening/lesson-02/lesson-02-listening-01-option-2b.png",
+                "content": "b. Máy phát tiếng Nhật / c. Loa thông báo tiếng Hàn",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-02/lesson-02-listening-01-option-1b.png"
               }
             ]
           },
@@ -421,14 +433,16 @@
             "sortOrder": 3,
             "options": [
               {
-                "content": "a. Máy ảnh chụp hình - /listening/lesson-02/lesson-02-listening-01-option-3a.png",
+                "content": "a. Máy ảnh chụp hình",
                 "correct": false,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-02/lesson-02-listening-01-option-3a.png"
               },
               {
-                "content": "b. Máy radio phát nhạc / c. Nhân viên kiểm tra máy ảnh - /listening/lesson-02/lesson-02-listening-01-option-3b.png",
+                "content": "b. Máy radio phát nhạc / c. Nhân viên kiểm tra máy ảnh",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-02/lesson-02-listening-01-option-3b.png"
               }
             ]
           },
@@ -441,12 +455,14 @@
               {
                 "content": "a. Đĩa",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-02/lesson-02-listening-01-option-3a.png"
               },
               {
                 "content": "b. Hộp bánh sô cô la / c. Lọ hoa",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-02/lesson-02-listening-01-option-3b.png"
               }
             ]
           }
@@ -734,12 +750,14 @@
               {
                 "content": "a. 例) ①: b (Văn phòng)　②: a (Trung tâm nghiên cứu Châu Á)　[あそこ: Bệnh viện đại học]",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-03/lesson-03-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-03/lesson-03-listening-01-option-0b.png"
               }
             ]
           },
@@ -752,12 +770,14 @@
               {
                 "content": "a. 1) ①: 受付 (Quầy lễ tân)　②: ロビー (Sảnh chờ)　[あそこ: Nhà ăn 食堂]",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-03/lesson-03-listening-01-option-1a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-03/lesson-03-listening-01-option-1b.png"
               }
             ]
           },
@@ -770,12 +790,14 @@
               {
                 "content": "a. 2) ①: 会議室 (Phòng họp)　②: コンピューターの部屋 (Phòng máy tính)　[あそこ: Lớp học 教室]",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-03/lesson-03-listening-01-option-2a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-03/lesson-03-listening-01-option-2b.png"
               }
             ]
           },
@@ -1045,12 +1067,14 @@
               {
                 "content": "a. 例) Tokyo: 6:20",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-04/lesson-04-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-04/lesson-04-listening-01-option-0b.png"
               }
             ]
           },
@@ -1063,12 +1087,14 @@
               {
                 "content": "a. 1) Bắc Kinh (ペキン): 1:30",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-04/lesson-04-listening-01-option-1a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-04/lesson-04-listening-01-option-1b.png"
               }
             ]
           },
@@ -1473,12 +1499,14 @@
               {
                 "content": "a. 例) タワポン -> ( a. Thư viện ở Osaka )",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-05/lesson-05-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-05/lesson-05-listening-01-option-0b.png"
               }
             ]
           },
@@ -1491,12 +1519,14 @@
               {
                 "content": "a. 1) エド -> ( e. Bảo tàng mỹ thuật ở Kyoto )",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-05/lesson-05-listening-01-option-1a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-05/lesson-05-listening-01-option-1b.png"
               }
             ]
           },
@@ -1901,12 +1931,14 @@
               {
                 "content": "a. 例) Bữa sáng: Ăn bánh mì và uống sữa tươi ( a. Bánh mì + c. Sữa tươi )",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-06/lesson-06-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-06/lesson-06-listening-01-option-0b.png"
               }
             ]
           },
@@ -2230,12 +2262,14 @@
               {
                 "content": "a. 例) Cái muỗng/thìa cổ: Dùng để b. Ăn cơm (ごはんを食べました)",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-07/lesson-07-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-07/lesson-07-listening-01-option-0b.png"
               }
             ]
           },
@@ -2559,12 +2593,14 @@
               {
                 "content": "a. 例) タワポン: 食べ物: a. おいしいです (Vui vẻ, mặt cười a)",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-08/lesson-08-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-08/lesson-08-listening-01-option-0b.png"
               }
             ]
           },
@@ -2870,12 +2906,14 @@
               {
                 "content": "a. 例) Đồ ăn: a. Ăn món Ý (không thích món Nhật lắm)",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-09/lesson-09-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-09/lesson-09-listening-01-option-0b.png"
               }
             ]
           },
@@ -3199,12 +3237,14 @@
               {
                 "content": "a. 例) 韓国語の辞書 ( ○ - Tầng 3 ), タイ語の辞書 ( × )",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-10/lesson-10-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-10/lesson-10-listening-01-option-0b.png"
               }
             ]
           },
@@ -3528,12 +3568,14 @@
               {
                 "content": "a. 例) コーヒー: 1, ミルク: 1",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-11/lesson-11-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-11/lesson-11-listening-01-option-0b.png"
               }
             ]
           },
@@ -3959,12 +4001,14 @@
               {
                 "content": "a. 例) 月曜日: 試験は a. 難しかったです (vì chủ nhật không ôn bài).",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-12/lesson-12-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-12/lesson-12-listening-01-option-0b.png"
               }
             ]
           },
@@ -4288,12 +4332,14 @@
               {
                 "content": "a. 例) 小山さん: a. 休み (Vì công việc bận rộn cả thứ Bảy và Chủ nhật)",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-13/lesson-13-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-13/lesson-13-listening-01-option-0b.png"
               }
             ]
           },
@@ -4635,12 +4681,14 @@
               {
                 "content": "a. 例) Khách nhờ vác hành lý nặng: Tài xế bê vali cất vào cốp xe ( a )",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-14/lesson-14-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-14/lesson-14-listening-01-option-0b.png"
               }
             ]
           },
@@ -4986,12 +5034,14 @@
               {
                 "content": "a. 例) Chụp ảnh khu vườn đẹp: ( ○ - Được chủ vườn cho phép )",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-15/lesson-15-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-15/lesson-15-listening-01-option-0b.png"
               }
             ]
           },
@@ -5333,12 +5383,14 @@
               {
                 "content": "a. 例) 8:00 Tập trung ở ga Tokyo, lên tàu Shinkansen lúc ( 8:30 )",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-16/lesson-16-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-16/lesson-16-listening-01-option-0b.png"
               }
             ]
           },
@@ -5608,12 +5660,14 @@
               {
                 "content": "a. 例) Nhắc nhở chung: Hộ chiếu và vé cấm làm mất ( × ); Cấm tụ tập quậy phá ở phòng bạn ( × ); Buổi tối cấm đi chơi một mình ( × )",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-17/lesson-17-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-17/lesson-17-listening-01-option-0b.png"
               }
             ]
           },
@@ -5919,12 +5973,14 @@
               {
                 "content": "a. 例) Chú chó Pochi: ( b. Bơi lội 500m ngoài biển mỗi sáng )",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-18/lesson-18-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-18/lesson-18-listening-01-option-0b.png"
               }
             ]
           },
@@ -6248,12 +6304,14 @@
               {
                 "content": "a. 例) カリナ (Karina): c. Từng học trà đạo Nhật Bản 2 năm trước (お茶を習いました)",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-19/lesson-19-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-19/lesson-19-listening-01-option-0b.png"
               }
             ]
           },
@@ -6480,12 +6538,14 @@
               {
                 "content": "a. 例) Cách dùng điện thoại mới: b. 教えません (Không chỉ cho bạn gái vì bản thân cũng chưa biết máy mới, nhờ bạn Nakamura chỉ giúp).",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-20/lesson-20-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-20/lesson-20-listening-01-option-0b.png"
               }
             ]
           },
@@ -6791,12 +6851,14 @@
               {
                 "content": "a. 例) よか天気ばい -> いい天気だ (Thời tiết đẹp nhỉ) -> 熊本 (Kumamoto)",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-21/lesson-21-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-21/lesson-21-listening-01-option-0b.png"
               }
             ]
           },
@@ -7120,12 +7182,14 @@
               {
                 "content": "a. 例) Ngôi nhà của bạn: b. Ngôi nhà có cây hoa anh đào lớn ở phía sau",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-22/lesson-22-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-22/lesson-22-listening-01-option-0b.png"
               }
             ]
           },
@@ -7431,12 +7495,14 @@
               {
                 "content": "a. Khi",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-23/lesson-23-listening-01-option-0a.png"
               },
               {
                 "content": "b. Khi mệt mỏi (疲れたとき)",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-23/lesson-23-listening-01-option-0b.png"
               }
             ]
           },
@@ -7742,12 +7808,14 @@
               {
                 "content": "a. Ngày 15 tháng 10 (thứ Sáu), 23:00 nhiều mây: Ed tròn 21 tuổi, mở tiệc ở phòng.",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-24/lesson-24-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-24/lesson-24-listening-01-option-0b.png"
               }
             ]
           },
@@ -8071,12 +8139,14 @@
               {
                 "content": "a. 例) Rủ đi đánh tennis nếu ngày mai trời đẹp: Ngày mai trời mưa không đi được -> a. あしたは雨ですから、テニスはやめましょう。",
                 "correct": true,
-                "sortOrder": 1
+                "sortOrder": 1,
+                "imageUrl": "/listening/lesson-25/lesson-25-listening-01-option-0a.png"
               },
               {
                 "content": "b. Lựa chọn khác",
                 "correct": false,
-                "sortOrder": 2
+                "sortOrder": 2,
+                "imageUrl": "/listening/lesson-25/lesson-25-listening-01-option-0b.png"
               }
             ]
           },

@@ -15,5 +15,6 @@ public class ListeningOptionResponse {
 
     private Long id;
     private String content;
+    private String imageUrl;
     private Integer sortOrder;
 }

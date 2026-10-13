@@ -507,4 +507,57 @@ class ReadingServiceTest {
         assertThat(r1.isCorrect()).isFalse();
         assertThat(r1.getCorrectOptionId()).isNull();
     }
+
+    @Test
+    @DisplayName("submitReading: Có Jwt và ProgressService thì cập nhật tiến độ học tập thành công")
+    void testSubmitReading_WithJwtAndProgressService_UpdatesProgress() {
+        com.japanese.learning.progress.service.ProgressService mockProgressService = org.mockito.Mockito.mock(com.japanese.learning.progress.service.ProgressService.class);
+        ReadingServiceImpl serviceWithProgress = new ReadingServiceImpl(
+                readingContentRepository,
+                lessonRepository,
+                readingContentMapper,
+                mockProgressService
+        );
+
+        org.springframework.security.oauth2.jwt.Jwt mockJwt = org.mockito.Mockito.mock(org.springframework.security.oauth2.jwt.Jwt.class);
+
+        when(readingContentRepository.findById(1L)).thenReturn(Optional.of(sampleReading));
+
+        ReadingSubmitRequest request = new ReadingSubmitRequest(List.of(
+                new ReadingAnswerRequest(201L, 101L), // correct (100%)
+                new ReadingAnswerRequest(202L, 103L)  // correct
+        ));
+
+        ReadingSubmitResponse response = serviceWithProgress.submitReading(1L, request, mockJwt);
+
+        assertThat(response.getScore()).isEqualTo(100);
+        verify(mockProgressService).updateContentProgress(eq(mockJwt), any(com.japanese.learning.progress.dto.UpdateContentProgressRequest.class));
+    }
+
+    @Test
+    @DisplayName("submitReading: Khi cập nhật tiến độ ném lỗi thì vẫn trả về kết quả chấm điểm an toàn")
+    void testSubmitReading_WithJwtProgressServiceFails_DoesNotThrow() {
+        com.japanese.learning.progress.service.ProgressService mockProgressService = org.mockito.Mockito.mock(com.japanese.learning.progress.service.ProgressService.class);
+        org.mockito.Mockito.doThrow(new RuntimeException("DB error"))
+                .when(mockProgressService).updateContentProgress(any(), any());
+
+        ReadingServiceImpl serviceWithProgress = new ReadingServiceImpl(
+                readingContentRepository,
+                lessonRepository,
+                readingContentMapper,
+                mockProgressService
+        );
+
+        org.springframework.security.oauth2.jwt.Jwt mockJwt = org.mockito.Mockito.mock(org.springframework.security.oauth2.jwt.Jwt.class);
+        when(readingContentRepository.findById(1L)).thenReturn(Optional.of(sampleReading));
+
+        ReadingSubmitRequest request = new ReadingSubmitRequest(List.of(
+                new ReadingAnswerRequest(201L, 101L),
+                new ReadingAnswerRequest(202L, 103L)
+        ));
+
+        ReadingSubmitResponse response = serviceWithProgress.submitReading(1L, request, mockJwt);
+
+        assertThat(response.getScore()).isEqualTo(100);
+    }
 }

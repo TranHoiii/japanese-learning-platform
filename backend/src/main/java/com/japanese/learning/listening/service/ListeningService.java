@@ -4,6 +4,8 @@ import com.japanese.learning.listening.dto.ListeningContentResponse;
 import com.japanese.learning.listening.dto.ListeningSubmitRequest;
 import com.japanese.learning.listening.dto.ListeningSubmitResponse;
 
+import org.springframework.security.oauth2.jwt.Jwt;
+
 import java.util.List;
 
 public interface ListeningService {
@@ -13,4 +15,6 @@ public interface ListeningService {
     ListeningContentResponse getListeningById(Long id);
 
     ListeningSubmitResponse submitListening(Long id, ListeningSubmitRequest request);
+
+    ListeningSubmitResponse submitListening(Long id, ListeningSubmitRequest request, Jwt jwt);
 }
