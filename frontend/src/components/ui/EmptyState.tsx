@@ -18,7 +18,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
 }) => {
   const defaultIcon = (
     <svg
-      className="w-10 h-10 text-[#94A3B8]"
+      className="w-10 h-10 text-[#9A8F7E]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -36,21 +36,21 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
   return (
     <div
       className={cn(
-        "rounded-[12px] border border-dashed border-[#CBD5E1] bg-[#F8FAFC]/60 p-8 sm:p-12 text-center max-w-md mx-auto my-6 flex flex-col items-center justify-center space-y-3",
+        "rounded-[12px] border border-dashed border-[#D3CABA] bg-[#FAF7F1]/60 p-8 sm:p-12 text-center max-w-md mx-auto my-6 flex flex-col items-center justify-center space-y-3",
         className,
       )}
       {...props}
     >
-      <div className="w-14 h-14 rounded-full bg-[#F1F5F9] flex items-center justify-center text-[#64748B] shrink-0 mb-1">
+      <div className="w-14 h-14 rounded-full bg-[#F3EEE5] flex items-center justify-center text-[#766D5E] shrink-0 mb-1">
         {icon || defaultIcon}
       </div>
 
-      <h3 className="text-base sm:text-lg font-bold text-[#0F172A] leading-snug">
+      <h3 className="text-base sm:text-lg font-bold text-[#1F1C18] leading-snug">
         {title}
       </h3>
 
       {description && (
-        <p className="text-sm text-[#64748B] max-w-sm leading-relaxed">
+        <p className="text-sm text-[#766D5E] max-w-sm leading-relaxed">
           {description}
         </p>
       )}

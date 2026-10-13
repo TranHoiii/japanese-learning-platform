@@ -7,6 +7,9 @@ export interface KanaCardProps {
   kana: KanaCharacter;
   isSelected?: boolean;
   showEquivalent?: boolean;
+  /** self-test mode: romaji and example stay hidden until the card is tapped */
+  concealed?: boolean;
+  onReveal?: (id: string) => void;
   onSelect?: (kana: KanaCharacter) => void;
   className?: string;
 }
@@ -15,19 +18,25 @@ export const KanaCard: React.FC<KanaCardProps> = ({
   kana,
   isSelected = false,
   showEquivalent = false,
+  concealed = false,
+  onReveal,
   onSelect,
   className,
 }) => {
   const primaryExample = kana.examples && kana.examples.length > 0 ? kana.examples[0] : null;
 
   const handleClick = () => {
+    if (concealed) {
+      onReveal?.(kana.id);
+      return;
+    }
     onSelect?.(kana);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
-      onSelect?.(kana);
+      handleClick();
     }
   };
 
@@ -39,12 +48,12 @@ export const KanaCard: React.FC<KanaCardProps> = ({
       onKeyDown={handleKeyDown}
       aria-label={`Ký tự ${kana.character}, phát âm ${kana.romaji}`}
       className={cn(
-        "relative rounded-[14px] bg-white border p-2 sm:p-3 flex flex-col justify-between text-center transition-all cursor-pointer select-none min-h-[105px] sm:min-h-[130px]",
-        "hover:border-[#2684D9] hover:shadow-[0_4px_14px_rgba(38,132,217,0.12)] hover:-translate-y-0.5",
-        "focus-visible:outline-2 focus-visible:outline-[#2684D9]",
+        "relative surface surface-hover !rounded-2xl border p-2 sm:p-3 flex flex-col justify-between text-center cursor-pointer select-none min-h-[105px] sm:min-h-[130px]",
+        "active:scale-95",
+        "focus-visible:outline-2 focus-visible:outline-[#2F5496]",
         isSelected
-          ? "border-[#2684D9] ring-2 ring-[#2684D9]/40 bg-[#F0F7FF]/30 shadow-xs"
-          : "border-[#E2E8F0]",
+          ? "border-[#2F5496] ring-2 ring-[#2F5496]/40 bg-[#EEF3FA]/30 shadow-xs"
+          : "border-[#E7E0D2]",
         className,
       )}
     >
@@ -52,14 +61,14 @@ export const KanaCard: React.FC<KanaCardProps> = ({
       <div className="w-full flex items-center justify-between min-h-[20px] sm:min-h-[22px] gap-1">
         {showEquivalent && kana.equivalentKana ? (
           <span
-            className="text-[9px] sm:text-[10px] font-bold text-[#12558F] bg-[#F0F7FF] px-1 sm:px-1.5 py-0.5 rounded border border-[#BBDDFF] font-japanese"
+            className="text-[9px] sm:text-[10px] font-bold text-[#213960] bg-[#EEF3FA] px-1 sm:px-1.5 py-0.5 rounded border border-[#BDD0EC] font-japanese"
             title={`Chữ tương đương: ${kana.equivalentKana}`}
           >
             ↔ {kana.equivalentKana}
           </span>
         ) : kana.strokeCount ? (
           <span
-            className="text-[9px] sm:text-[10px] font-medium text-[#94A3B8] bg-[#F8FAFC] px-1 sm:px-1.5 py-0.5 rounded border border-[#E2E8F0]/70"
+            className="text-[9px] sm:text-[10px] font-medium text-[#9A8F7E] bg-[#FAF7F1] px-1 sm:px-1.5 py-0.5 rounded border border-[#E7E0D2]/70"
             title={`${kana.strokeCount} nét`}
           >
             {kana.strokeCount}n
@@ -82,23 +91,23 @@ export const KanaCard: React.FC<KanaCardProps> = ({
       {/* Main Learning Target: Giant Character & Romaji */}
       <div className="my-1 sm:my-1.5 space-y-0.5">
         <span
-          className="text-2xl sm:text-4xl font-bold font-japanese text-[#0F172A] leading-tight block tracking-tight"
+          className="text-2xl sm:text-4xl font-bold font-japanese text-[#1F1C18] leading-tight block tracking-tight"
           lang="ja"
         >
           {kana.character}
         </span>
-        <span className="text-[11px] sm:text-sm font-semibold text-[#12558F] tracking-wide block">
-          {kana.romaji}
+        <span className="text-[11px] sm:text-sm font-semibold text-[#213960] tracking-wide block">
+          {concealed ? "?" : kana.romaji}
         </span>
       </div>
 
       {/* Example Word Teaser (Clear, Not Overloaded) */}
-      {primaryExample ? (
-        <div className="pt-1 sm:pt-1.5 border-t border-[#F1F5F9] w-full text-left text-[10px] sm:text-[11px] truncate">
-          <span className="font-japanese font-semibold text-[#0F172A]">
+      {primaryExample && !concealed ? (
+        <div className="pt-1 sm:pt-1.5 border-t border-[#F3EEE5] w-full text-left text-[10px] sm:text-[11px] truncate">
+          <span className="font-japanese font-semibold text-[#1F1C18]">
             {primaryExample.word}
           </span>
-          <span className="hidden md:inline text-[#64748B] ml-1 truncate">
+          <span className="hidden md:inline text-[#766D5E] ml-1 truncate">
             {primaryExample.meaningVi}
           </span>
         </div>

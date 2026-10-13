@@ -15,34 +15,34 @@ export const PronunciationExample: React.FC<PronunciationExampleProps> = ({
   return (
     <div
       className={cn(
-        "rounded-[10px] bg-[#F8FAFC] border border-[#E2E8F0] p-3.5 flex items-center justify-between gap-3 transition-colors hover:bg-white hover:border-[#CBD5E1]",
+        "rounded-[10px] bg-[#FAF7F1] border border-[#E7E0D2] p-3.5 flex items-center justify-between gap-3 transition-colors hover:bg-white hover:border-[#D3CABA]",
         className,
       )}
     >
       <div className="space-y-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
           <span
-            className="text-base sm:text-lg font-bold font-japanese text-[#0F172A]"
+            className="text-base sm:text-lg font-bold font-japanese text-[#1F1C18]"
             lang="ja"
           >
             {example.japanese}
           </span>
           {example.highlightKana && (
-            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-[#F0F7FF] text-[#12558F] border border-[#BBDDFF]">
+            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-[#EEF3FA] text-[#213960] border border-[#BDD0EC]">
               Trọng điểm: {example.highlightKana}
             </span>
           )}
         </div>
 
-        <div className="flex items-center gap-2 text-xs sm:text-sm text-[#475569]">
-          <span className="font-japanese font-medium text-[#12558F]">
+        <div className="flex items-center gap-2 text-xs sm:text-sm text-[#5A5246]">
+          <span className="font-japanese font-medium text-[#213960]">
             {example.reading}
           </span>
-          <span className="text-[#94A3B8]">•</span>
-          <span className="italic text-[#64748B]">{example.romaji}</span>
+          <span className="text-[#9A8F7E]">•</span>
+          <span className="italic text-[#766D5E]">{example.romaji}</span>
         </div>
 
-        <p className="text-xs text-[#334155] leading-relaxed">
+        <p className="text-xs text-[#433D34] leading-relaxed">
           {example.meaningVi}
         </p>
 

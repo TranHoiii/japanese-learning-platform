@@ -50,7 +50,7 @@ export const ErrorState: React.FC<ErrorStateProps> = ({
       title: "Không tìm thấy nội dung",
       message: "Trang hoặc bài học bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển.",
       icon: (
-        <svg className="w-10 h-10 text-[#64748B]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-10 h-10 text-[#766D5E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
@@ -102,7 +102,7 @@ export const ErrorState: React.FC<ErrorStateProps> = ({
     <div
       role="alert"
       className={cn(
-        "rounded-[12px] border border-[#CBD5E1] bg-white p-6 sm:p-8 text-center max-w-md mx-auto my-6 shadow-[0_1px_3px_rgba(15,23,42,0.06)] flex flex-col items-center justify-center space-y-3",
+        "rounded-[12px] border border-[#D3CABA] bg-white p-6 sm:p-8 text-center max-w-md mx-auto my-6 shadow-[0_1px_3px_rgba(15,23,42,0.06)] flex flex-col items-center justify-center space-y-3",
         className,
       )}
       {...props}
@@ -111,11 +111,11 @@ export const ErrorState: React.FC<ErrorStateProps> = ({
         {displayIcon}
       </div>
 
-      <h3 className="text-base sm:text-lg font-bold text-[#0F172A] leading-snug">
+      <h3 className="text-base sm:text-lg font-bold text-[#1F1C18] leading-snug">
         {displayTitle}
       </h3>
 
-      <p className="text-sm text-[#64748B] max-w-sm leading-relaxed">
+      <p className="text-sm text-[#766D5E] max-w-sm leading-relaxed">
         {displayMessage}
       </p>
 

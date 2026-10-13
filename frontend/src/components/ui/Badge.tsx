@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "../../utils/cn";
 
-export type BadgeVariant = "primary" | "neutral" | "success" | "warning" | "error" | "info";
+export type BadgeVariant = "primary" | "neutral" | "success" | "warning" | "error" | "info" | "sakura" | "gold";
 export type BadgeSize = "sm" | "md";
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -23,12 +23,14 @@ export const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
     ref,
   ) => {
     const variantStyles: Record<BadgeVariant, string> = {
-      primary: "bg-[#F0F7FF] text-[#12558F] border border-[#BBDDFF]",
-      neutral: "bg-[#F1F5F9] text-[#475569] border border-[#E2E8F0]",
-      success: "bg-[#F0FDF4] text-[#15803D] border border-[#22C55E]/30",
-      warning: "bg-[#FFFBEB] text-[#B45309] border border-[#F59E0B]/30",
-      error: "bg-[#FEF2F2] text-[#B91C1C] border border-[#EF4444]/30",
-      info: "bg-[#EFF6FF] text-[#1D4ED8] border border-[#3B82F6]/30",
+      primary: "bg-[#EEF3FA] text-[#213960] border border-[#BDD0EC]",
+      neutral: "bg-[#F3EEE5] text-[#5A5246] border border-[#E7E0D2]",
+      success: "bg-[#F3F8EC] text-[#446129] border border-[#6C9644]/30",
+      warning: "bg-[#FFFAEB] text-[#A25C0A] border border-[#E99A0C]/30",
+      error: "bg-[#FEF2F2] text-[#B42323] border border-[#DC4A4A]/30",
+      info: "bg-[#EEF3FA] text-[#264378] border border-[#3E69B3]/30",
+      sakura: "bg-[#FFF1F4] text-[#AB2751] border border-[#E8527C]/30",
+      gold: "bg-[#FFFAEB] text-[#84490F] border border-[#F6B722]/50",
     };
 
     const sizeStyles: Record<BadgeSize, string> = {

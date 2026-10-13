@@ -29,7 +29,7 @@ export const LearningLayout: React.FC<LearningLayoutProps> = ({
   className,
 }) => {
   const content = (
-    <PageContainer narrow={narrow} className={cn("py-6 sm:py-8 space-y-6", className)}>
+    <PageContainer narrow={narrow} className={cn("py-6 sm:py-8 pb-28 lg:pb-12 space-y-6", className)}>
       {/* Breadcrumb */}
       {breadcrumbs && breadcrumbs.length > 0 && (
         <Breadcrumb items={breadcrumbs} className="mb-2" />
@@ -37,20 +37,20 @@ export const LearningLayout: React.FC<LearningLayoutProps> = ({
 
       {/* Header section (Title, Description, Actions) */}
       {(title || description || actions || subtitle) && (
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-[#E2E8F0]/80">
+        <div className="hero-ink pattern-seigaiha relative overflow-hidden rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-white animate-fade-up">
           <div className="space-y-1">
             {subtitle && (
-              <span className="inline-block text-xs font-semibold text-[#12558F] uppercase tracking-wider">
+              <span className="inline-block text-xs font-bold text-amber-300 uppercase tracking-wider">
                 {subtitle}
               </span>
             )}
             {title && (
-              <h1 className="text-[26px] sm:text-[30px] font-bold text-[#0F172A] leading-tight font-japanese">
+              <h1 className="text-[26px] sm:text-[32px] font-extrabold text-white leading-tight font-display">
                 {title}
               </h1>
             )}
             {description && (
-              <p className="text-sm sm:text-base text-[#64748B] leading-relaxed max-w-2xl">
+              <p className="text-sm sm:text-base text-white/75 leading-relaxed max-w-2xl">
                 {description}
               </p>
             )}

@@ -7,6 +7,7 @@ import { ListeningSubmitResponse } from "../types/listening";
 import Navbar from "../components/Navbar";
 import { FavoriteButton } from "../components/favorite/FavoriteButton";
 import { cn } from "../utils/cn";
+import { gamification } from "../lib/gamification";
 
 export default function ListeningDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -34,6 +35,7 @@ export default function ListeningDetailPage() {
 
   // Timer countdown: 15 minutes (900 seconds)
   const [timeLeft, setTimeLeft] = useState(900);
+  const [isAutoSubmitted, setIsAutoSubmitted] = useState(false);
 
   useEffect(() => {
     if (result) return;
@@ -66,6 +68,10 @@ export default function ListeningDetailPage() {
       listeningApi.submitListening(listeningId, { answers: answersPayload }),
     onSuccess: (data) => {
       setResult(data);
+      gamification.award(Math.max(5, Math.round(data.score / 5)), "Nghe hiểu");
+      if (data.score >= 80) {
+        gamification.celebrate(data.score === 100 ? "Hoàn hảo! 🎧" : "Nghe rất tốt! 🌸", `Đúng ${data.correctCount}/${data.totalQuestions} câu`);
+      }
       progressApi
         .updateContentProgress({
           contentType: "LISTENING",
@@ -167,8 +173,28 @@ export default function ListeningDetailPage() {
     submitMutation.mutate(answersPayload);
   };
 
+  // Auto-submit test when time runs out
+  useEffect(() => {
+    if (result || submitMutation.isPending) return;
+    if (timeLeft <= 0 && listening && listening.questions && listening.questions.length > 0) {
+      if (audioRef.current && isPlaying) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      }
+      setIsAutoSubmitted(true);
+      const answersPayload = listening.questions
+        .filter((q) => selectedAnswers[q.id] !== undefined)
+        .map((q) => ({
+          questionId: q.id,
+          selectedOptionId: selectedAnswers[q.id],
+        }));
+      submitMutation.mutate(answersPayload);
+    }
+  }, [timeLeft, result, submitMutation, listening, selectedAnswers, isPlaying]);
+
   const handleRetry = () => {
     setResult(null);
+    setIsAutoSubmitted(false);
     setSelectedAnswers({});
     setActiveQuestionIndex(0);
     setTimeLeft(900);
@@ -186,12 +212,33 @@ export default function ListeningDetailPage() {
   const currentQuestion = questions[activeQuestionIndex];
   const totalQuestions = questions.length;
   const isN4 = !!(listening?.audioUrl?.includes("/n4/") || (listening?.lessonId && listening.lessonId >= 26));
+  const levelCode = isN4 ? "N4" : "N5";
+  const answeredCount = questions.filter((q) => selectedAnswers[q.id] !== undefined).length;
+
+  // Keyboard: A-D choose, ←/→ move between questions, Space plays / pauses
+  const keyRef = useRef<(e: KeyboardEvent) => void>(() => {});
+  keyRef.current = (e: KeyboardEvent) => {
+    const el = e.target as HTMLElement | null;
+    if (el && (el.tagName === "INPUT" || el.tagName === "TEXTAREA" || el.tagName === "BUTTON")) return;
+    if (e.key === "ArrowRight") setActiveQuestionIndex((i) => Math.min(i + 1, Math.max(totalQuestions - 1, 0)));
+    else if (e.key === "ArrowLeft") setActiveQuestionIndex((i) => Math.max(i - 1, 0));
+    else if (e.key === " ") { e.preventDefault(); togglePlayPause(); }
+    else if (currentQuestion && !result) {
+      const idx = "abcd".indexOf(e.key.toLowerCase());
+      if (idx >= 0 && currentQuestion.options[idx]) handleSelectOption(currentQuestion.id, currentQuestion.options[idx].id);
+    }
+  };
+  useEffect(() => {
+    const l = (e: KeyboardEvent) => keyRef.current(e);
+    window.addEventListener("keydown", l);
+    return () => window.removeEventListener("keydown", l);
+  }, []);
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-28 lg:pb-12 space-y-6">
         {/* Navigation Breadcrumb */}
         <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-500">
           <Link to="/" className="hover:text-slate-900 transition-colors">
@@ -216,9 +263,9 @@ export default function ListeningDetailPage() {
 
         {/* Loading & Error States */}
         {isLoading && (
-          <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl border border-slate-200/80 shadow-xs">
+          <div className="space-y-4" aria-busy="true"><div className="skeleton-shimmer h-20 rounded-2xl" /><div className="grid grid-cols-1 lg:grid-cols-12 gap-6"><div className="skeleton-shimmer h-96 rounded-3xl lg:col-span-7" /><div className="skeleton-shimmer h-96 rounded-3xl lg:col-span-5" /></div><div className="hidden">
             <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-4" />
-            <p className="text-slate-600 font-medium">Đang chuẩn bị đề thi nghe hiểu...</p>
+            <p className="text-slate-600 font-medium">Đang chuẩn bị đề thi nghe hiểu...</p></div>
           </div>
         )}
 
@@ -238,8 +285,16 @@ export default function ListeningDetailPage() {
 
         {!isLoading && !error && listening && (
           <div className="space-y-6">
+            {/* Auto-submission alert banner */}
+            {isAutoSubmitted && (
+              <div className="p-4 rounded-2xl bg-amber-500/15 border border-amber-400 text-amber-900 dark:text-amber-200 text-xs sm:text-sm font-bold flex items-center gap-2 animate-bounce">
+                <span>⏰</span>
+                <span>Hết thời gian làm bài! Hệ thống đã tự động nộp bài luyện nghe của bạn.</span>
+              </div>
+            )}
+
             {/* Top Examination Control Bar (Mockup 3) */}
-            <div className="bg-white rounded-2xl border border-slate-200/90 p-4 sm:p-5 shadow-xs flex flex-wrap items-center justify-between gap-4">
+            <div className="surface p-4 sm:p-5 flex flex-wrap items-center justify-between gap-4 animate-fade-up">
               <div className="flex items-center space-x-3">
                 <button
                   onClick={() => navigate(-1)}
@@ -250,7 +305,7 @@ export default function ListeningDetailPage() {
                 </button>
                 <div>
                   <span className="text-[11px] font-bold text-purple-600 uppercase tracking-wider block">
-                    JLPT N5 • LUYỆN NGHE
+                    JLPT {levelCode} • LUYỆN NGHE
                   </span>
                   <h1 className="text-base sm:text-lg font-bold text-slate-900 line-clamp-1">
                     {listening.title}
@@ -294,7 +349,7 @@ export default function ListeningDetailPage() {
               {/* Right: Countdown timer & Favorite */}
               <div className="flex items-center space-x-3">
                 <FavoriteButton contentType="LISTENING" contentId={listeningId} size="md" />
-                <div className="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-slate-900 text-white text-xs font-mono font-bold shadow-xs">
+                <div className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-white text-xs font-mono font-bold shadow-xs ${timeLeft <= 60 ? "bg-rose-600 animate-pulse" : "bg-slate-900"}`}>
                   <span>⏱️</span>
                   <span>{formatTimer(timeLeft)}</span>
                 </div>
@@ -305,7 +360,7 @@ export default function ListeningDetailPage() {
             {result && (
               <div
                 className={cn(
-                  "p-6 rounded-3xl border shadow-sm transition-all flex flex-col sm:flex-row items-center justify-between gap-4",
+                  "p-6 rounded-3xl border shadow-sm transition-all flex flex-col sm:flex-row items-center justify-between gap-4 animate-pop",
                   result.score >= 80
                     ? "bg-emerald-50 border-emerald-200 text-emerald-950"
                     : result.score >= 50
@@ -348,11 +403,11 @@ export default function ListeningDetailPage() {
             {/* Split-Screen Main Exam Workspace (Bản Thiết Kế 3) */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
               {/* Left Column: Audio Waveform Player & Transcript (Col 1-7) */}
-              <div className="lg:col-span-7 bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-zen space-y-6">
+              <div className="lg:col-span-7 surface p-6 sm:p-8 space-y-6">
                 <audio ref={audioRef} src={listening.audioUrl} preload="metadata" />
 
                 {/* Modern Dark Audio Player */}
-                <div className="bg-slate-900 text-white rounded-3xl p-6 shadow-xl space-y-5">
+                <div className="hero-ink pattern-seigaiha text-white rounded-3xl p-6 shadow-xl space-y-5">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
                       <div className="w-10 h-10 rounded-2xl bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 flex items-center justify-center text-xl">
@@ -360,6 +415,11 @@ export default function ListeningDetailPage() {
                       </div>
                       <div>
                         <h4 className="font-bold text-sm text-slate-100">Bản Thu Âm Bài Nghe</h4>
+                        <div className="flex items-end gap-0.5 h-3 mt-1" aria-hidden="true">
+                          {[0, 1, 2, 3, 4, 5, 6, 7].map((b) => (
+                            <span key={b} className={cn("w-1 rounded-full bg-amber-300/80 origin-bottom", isPlaying ? "animate-pulse" : "opacity-40")} style={{ height: `${30 + ((b * 37) % 70)}%`, animationDelay: `${b * 90}ms` }} />
+                          ))}
+                        </div>
                         <p className="text-xs text-slate-400 font-mono">
                           {formatAudioTime(currentTime)} / {formatAudioTime(duration)}
                         </p>
@@ -409,7 +469,7 @@ export default function ListeningDetailPage() {
                       <button
                         type="button"
                         onClick={togglePlayPause}
-                        className="w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-xl hover:bg-indigo-500 transition-all shadow-md active:scale-95 cursor-pointer"
+                        className="w-14 h-14 rounded-full bg-amber-400 text-amber-950 flex items-center justify-center font-bold text-2xl hover:bg-amber-300 transition-all shadow-lg shadow-amber-400/30 active:scale-95 cursor-pointer"
                       >
                         {isPlaying ? "⏸" : "▶"}
                       </button>
@@ -461,7 +521,7 @@ export default function ListeningDetailPage() {
                     </button>
 
                     {showTranscript && (
-                      <div className="mt-3 p-5 bg-slate-50 rounded-2xl border border-slate-200 text-slate-800 text-xs sm:text-sm font-japanese leading-loose whitespace-pre-line animate-in fade-in">
+                      <div className="mt-3 p-5 bg-slate-50 rounded-2xl border border-slate-200 text-slate-800 text-xs sm:text-sm font-japanese leading-loose whitespace-pre-line animate-fade-in">
                         <span className="font-bold text-indigo-900 block mb-2 font-sans">
                           Kịch bản lời thoại bản xứ:
                         </span>
@@ -473,7 +533,7 @@ export default function ListeningDetailPage() {
               </div>
 
               {/* Right Column: Question Card & Options (Col 8-12) */}
-              <div className="lg:col-span-5 bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 shadow-zen flex flex-col justify-between space-y-6">
+              <div className="lg:col-span-5 surface p-6 sm:p-7 flex flex-col justify-between space-y-6 lg:sticky lg:top-24">
                 {currentQuestion ? (
                   <div className="space-y-6">
                     {/* Question Header */}
@@ -519,7 +579,7 @@ export default function ListeningDetailPage() {
                             key={option.id}
                             onClick={() => handleSelectOption(currentQuestion.id, option.id)}
                             className={cn(
-                              "p-4 rounded-2xl border text-sm font-semibold transition-all flex items-center justify-between cursor-pointer",
+                              "p-4 rounded-2xl border-2 text-sm font-semibold transition-all flex items-center justify-between cursor-pointer",
                               qResult
                                 ? isCorrectOption
                                   ? "bg-emerald-50 border-emerald-400 text-emerald-950 ring-2 ring-emerald-300"
@@ -600,9 +660,9 @@ export default function ListeningDetailPage() {
                       type="button"
                       onClick={handleSubmit}
                       disabled={submitMutation.isPending || totalQuestions === 0}
-                      className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-md shadow-indigo-600/30 transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer disabled:opacity-50"
+                      className="btn-press px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs cursor-pointer disabled:opacity-50 [--press-edge:#213960]"
                     >
-                      {submitMutation.isPending ? "Đang chấm..." : "Nộp bài thi"}
+                      {submitMutation.isPending ? "Đang chấm..." : `Nộp bài thi (${answeredCount}/${totalQuestions})`}
                     </button>
                   ) : (
                     <button

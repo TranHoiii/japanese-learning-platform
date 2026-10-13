@@ -65,28 +65,28 @@ export const PronunciationMiniPractice: React.FC<PronunciationMiniPracticeProps>
   return (
     <div
       className={cn(
-        "rounded-[16px] bg-white border border-[#CBD5E1] p-5 sm:p-6 space-y-5 shadow-xs",
+        "surface p-5 sm:p-6 space-y-5 shadow-xs",
         className,
       )}
     >
       {/* Header */}
-      <div className="flex items-center justify-between flex-wrap gap-2 pb-3 border-b border-[#F1F5F9]">
+      <div className="flex items-center justify-between flex-wrap gap-2 pb-3 border-b border-[#F3EEE5]">
         <div className="flex items-center gap-2">
           <span className="text-xl" aria-hidden="true">
             ✏️
           </span>
           <div>
-            <h4 className="text-base font-bold text-[#0F172A]">
+            <h4 className="text-base font-bold text-[#1F1C18]">
               Luyện tập củng cố tại chỗ
             </h4>
             {topicTitleVi && (
-              <p className="text-xs text-[#64748B]">{topicTitleVi}</p>
+              <p className="text-xs text-[#766D5E]">{topicTitleVi}</p>
             )}
           </div>
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#F1F5F9] text-[#475569]">
+          <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#F3EEE5] text-[#5A5246]">
             Câu {currentIndex + 1} / {questions.length}
           </span>
           {totalAnswered > 0 && (
@@ -99,7 +99,7 @@ export const PronunciationMiniPractice: React.FC<PronunciationMiniPracticeProps>
 
       {/* Question Prompt */}
       <div className="space-y-4">
-        <h5 className="text-sm sm:text-base font-semibold text-[#1E293B] leading-relaxed">
+        <h5 className="text-sm sm:text-base font-semibold text-[#2E2A25] leading-relaxed">
           {currentQ.prompt}
         </h5>
 
@@ -108,7 +108,7 @@ export const PronunciationMiniPractice: React.FC<PronunciationMiniPracticeProps>
           {currentQ.options.map((option) => {
             const isThisSelected = answeredForCurrent === option.id;
             let optionStyle =
-              "bg-white border-[#E2E8F0] text-[#334155] hover:bg-[#F8FAFC] hover:border-[#94A3B8]";
+              "bg-white border-[#E7E0D2] text-[#433D34] hover:bg-[#FAF7F1] hover:border-[#9A8F7E]";
 
             if (isAnswered) {
               if (option.isCorrect) {
@@ -118,7 +118,7 @@ export const PronunciationMiniPractice: React.FC<PronunciationMiniPracticeProps>
                 optionStyle =
                   "bg-[#FEF2F2] border-[#EF4444] text-[#991B1B]";
               } else {
-                optionStyle = "bg-[#F8FAFC] border-[#E2E8F0] text-[#94A3B8] opacity-60";
+                optionStyle = "bg-[#FAF7F1] border-[#E7E0D2] text-[#9A8F7E] opacity-60";
               }
             }
 
@@ -144,7 +144,7 @@ export const PronunciationMiniPractice: React.FC<PronunciationMiniPracticeProps>
                   )}
                 </div>
                 {option.sublabel && (
-                  <span className="text-[11px] text-[#64748B]">
+                  <span className="text-[11px] text-[#766D5E]">
                     {option.sublabel}
                   </span>
                 )}
@@ -173,12 +173,12 @@ export const PronunciationMiniPractice: React.FC<PronunciationMiniPracticeProps>
       </div>
 
       {/* Navigation Controls */}
-      <div className="flex items-center justify-between pt-2 border-t border-[#F1F5F9]">
+      <div className="flex items-center justify-between pt-2 border-t border-[#F3EEE5]">
         <button
           type="button"
           onClick={handlePrev}
           disabled={currentIndex === 0}
-          className="text-xs text-[#64748B] hover:text-[#0F172A] disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer font-medium"
+          className="text-xs text-[#766D5E] hover:text-[#1F1C18] disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer font-medium"
         >
           &larr; Câu trước
         </button>

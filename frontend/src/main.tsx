@@ -6,7 +6,9 @@ import App from "./App";
 import { AuthProvider } from "./contexts/AuthContext";
 import { ToastProvider } from "./components/ui/Toast";
 import { FuriganaProvider } from "./contexts/FuriganaContext";
+import { GamificationProvider } from "./contexts/GamificationContext";
 import "./index.css";
+import "./lib/theme";
 
 const queryClient = new QueryClient();
 
@@ -17,7 +19,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <AuthProvider>
           <ToastProvider>
             <FuriganaProvider>
-              <App />
+              <GamificationProvider>
+                <App />
+              </GamificationProvider>
             </FuriganaProvider>
           </ToastProvider>
         </AuthProvider>

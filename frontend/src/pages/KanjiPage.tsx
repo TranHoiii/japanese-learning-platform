@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { kanjiApi } from "../services/kanjiApi";
 import { vocabularyApi } from "../services/vocabularyApi";
 import Navbar from "../components/Navbar";
+import { SkillTabs } from "../components/learning/SkillTabs";
 
 export default function KanjiPage() {
   const { lessonId } = useParams<{ lessonId?: string }>();
@@ -68,10 +69,10 @@ export default function KanjiPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-28 lg:pb-12">
         {/* Navigation Breadcrumb */}
         <div className="flex items-center space-x-2 text-sm text-slate-500 mb-6">
           <Link to="/" className="hover:text-slate-900 transition-colors">
@@ -88,7 +89,7 @@ export default function KanjiPage() {
         </div>
 
         {/* Page Header & Lesson Controls */}
-        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-xs mb-8">
+        <div className="surface p-6 sm:p-8 mb-8 animate-fade-up">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <div className="flex items-center space-x-3 mb-2">
@@ -108,7 +109,7 @@ export default function KanjiPage() {
                   </span>
                 )}
               </div>
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h1 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 {currentLesson ? `Kanji ${levelCode} - ${currentLesson.title}` : `Hán tự Kanji ${levelCode}`}
               </h1>
             </div>
@@ -135,55 +136,7 @@ export default function KanjiPage() {
           </div>
 
           {/* Module Switcher Tabs */}
-          <div className="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto custom-scrollbar-x pb-3">
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/vocabulary`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>📚</span>
-              <span>Từ Vựng {levelCode}</span>
-            </Link>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/grammar`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>⛩️</span>
-              <span>Ngữ Pháp {levelCode}</span>
-            </Link>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/kanji`}
-              className="px-5 py-2.5 rounded-xl text-sm font-bold bg-amber-500 text-white shadow-md shadow-amber-500/20 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>🈁</span>
-              <span>Kanji {levelCode}</span>
-            </Link>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/listening`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>🎧</span>
-              <span>Nghe Hiểu {levelCode}</span>
-            </Link>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/reading`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>📖</span>
-              <span>Đọc Hiểu {levelCode}</span>
-            </Link>
-
-            <Link
-              to={`/${isN4 ? "n4" : "n5"}/lessons/${activeLessonId}/exercise`}
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2 shrink-0 whitespace-nowrap"
-            >
-              <span>✏️</span>
-              <span>Bài Tập {levelCode}</span>
-            </Link>
-          </div>
+          <SkillTabs active="kanji" levelPrefix={isN4 ? "n4" : "n5"} lessonId={activeLessonId} className="mt-6 pt-6 border-t border-slate-100" />
 
           {/* Search Box */}
           <div className="mt-6 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">

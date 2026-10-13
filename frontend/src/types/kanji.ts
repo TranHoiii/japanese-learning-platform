@@ -26,10 +26,17 @@ export interface Kanji {
 
 export interface PaginatedKanjiResponse {
   content: Kanji[];
-  pageable: {
+  pageable?: {
     pageNumber: number;
     pageSize: number;
   };
-  totalElements: number;
-  totalPages: number;
+  page?: {
+    size: number;
+    number: number;
+    totalElements: number;
+    totalPages: number;
+  };
+  totalElements?: number;
+  totalPages?: number;
 }
+

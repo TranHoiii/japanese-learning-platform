@@ -7,6 +7,7 @@ import {
   UpdateContentProgressRequest,
   ProgressContentType,
 } from "../types/progress";
+import { gamification, XP_REWARDS } from "../lib/gamification";
 
 export interface ApiResponse<T> {
   success: boolean;
@@ -55,6 +56,14 @@ export const progressApi = {
     data: UpdateContentProgressRequest
   ): Promise<ContentProgressResponse> => {
     const res = await api.put<ApiResponse<ContentProgressResponse>>("/progress/content", data);
-    return res.data.data;
+    const result = res.data.data;
+    if (result?.status === "COMPLETED") {
+      gamification.awardOnce(
+        `${data.contentType}:${data.contentId}`,
+        XP_REWARDS.contentCompleted,
+        "Hoàn thành nội dung",
+      );
+    }
+    return result;
   },
 };

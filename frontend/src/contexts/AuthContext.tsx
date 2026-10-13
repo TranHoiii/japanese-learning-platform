@@ -1,12 +1,17 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { AuthContextType, LoginRequest, RegisterRequest, User } from "../types/auth";
 import { authApi } from "../services/authApi";
+import { gamification } from "../lib/gamification";
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    gamification.setUser(currentUser?.id ?? null);
+  }, [currentUser]);
 
   useEffect(() => {
     const initAuth = async () => {

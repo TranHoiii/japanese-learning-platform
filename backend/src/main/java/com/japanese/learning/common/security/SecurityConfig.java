@@ -33,6 +33,8 @@ public class SecurityConfig {
             "/api/v1/listenings/**",
             "/api/v1/readings/**",
             "/api/v1/exercises/**",
+            "/api/v1/gamification/leaderboard",
+            "/api/v1/gamification/badges",
             "/audio/**",
             "/media/**",
             "/swagger-ui.html",

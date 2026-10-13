@@ -1,27 +1,33 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link, useLocation } from "react-router-dom";
 import { vocabularyApi } from "../services/vocabularyApi";
 import { progressApi } from "../services/progressApi";
 import { useAuth } from "../contexts/AuthContext";
 import Navbar from "../components/Navbar";
-import CircularProgress from "../components/ui/CircularProgress";
-import { getLessonDisplayInfo } from "../constants/lessonTopics";
+import LessonCard from "../components/learning/LessonCard";
+import { ProgressBar } from "../components/ui/ProgressBar";
+import { cn } from "../utils/cn";
+import type { LessonProgressResponse } from "../types/progress";
+
+type Filter = "ALL" | "TODO" | "IN_PROGRESS" | "COMPLETED";
 
 export default function LessonsPage() {
   const { currentUser } = useAuth();
   const location = useLocation();
   const isN4 = location.pathname.startsWith("/n4") || location.pathname.includes("n4");
+  const levelPrefix = isN4 ? "n4" : "n5";
 
   const [searchQuery, setSearchQuery] = useState("");
-  const [filterStatus, setFilterStatus] = useState<"ALL" | "IN_PROGRESS" | "COMPLETED">("ALL");
+  const [filterStatus, setFilterStatus] = useState<Filter>("ALL");
 
   const { data: levels, isLoading: isLoadingLevels, error: errorLevels } = useQuery({
     queryKey: ["levels"],
     queryFn: vocabularyApi.getLevels,
   });
 
-  const targetLevel = levels?.find((l) => l.code === (isN4 ? "N4" : "N5")) || (isN4 ? levels?.find((l) => l.code === "N4") : levels?.[0]);
+  const targetLevel =
+    levels?.find((l) => l.code === (isN4 ? "N4" : "N5")) || (isN4 ? undefined : levels?.[0]);
 
   const {
     data: lessons,
@@ -33,7 +39,6 @@ export default function LessonsPage() {
     enabled: !!targetLevel,
   });
 
-  // Fetch progress if authenticated
   const { data: lessonProgresses = [] } = useQuery({
     queryKey: ["progress-lessons"],
     queryFn: progressApi.getLessonProgresses,
@@ -41,244 +46,239 @@ export default function LessonsPage() {
   });
 
   const progressMap = useMemo(() => {
-    const map = new Map<number, number>();
-    lessonProgresses.forEach((p) => {
-      map.set(p.lessonId, p.progressPercent || 0);
-    });
+    const map = new Map<number, LessonProgressResponse>();
+    lessonProgresses.forEach((p) => map.set(p.lessonId, p));
     return map;
   }, [lessonProgresses]);
 
+  const pct = (id: number) => progressMap.get(id)?.progressPercent ?? 0;
+
+  const counts = useMemo(() => {
+    const all = lessons ?? [];
+    const completed = all.filter((l) => pct(l.id) >= 100).length;
+    const inProgress = all.filter((l) => pct(l.id) > 0 && pct(l.id) < 100).length;
+    return { all: all.length, completed, inProgress, todo: all.length - completed - inProgress };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lessons, progressMap]);
+
+  /** The lesson to highlight as "next": most recent unfinished, else first unfinished. */
+  const currentLessonId = useMemo(() => {
+    if (!currentUser || !lessons?.length) return null;
+    const touched = lessons
+      .filter((l) => pct(l.id) > 0 && pct(l.id) < 100)
+      .sort((a, b) =>
+        (progressMap.get(b.id)?.lastAccessedAt ?? "").localeCompare(progressMap.get(a.id)?.lastAccessedAt ?? ""),
+      );
+    return (touched[0] ?? lessons.find((l) => pct(l.id) < 100))?.id ?? null;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lessons, progressMap, currentUser]);
+
   const filteredLessons = useMemo(() => {
     if (!lessons) return [];
+    const q = searchQuery.toLowerCase().trim();
     return lessons.filter((l) => {
-      const q = searchQuery.toLowerCase().trim();
       const matchQuery =
         !q ||
         l.title.toLowerCase().includes(q) ||
         l.lessonNumber.toString().includes(q) ||
         (l.description && l.description.toLowerCase().includes(q));
-
-      const prog = progressMap.get(l.id) || 0;
-      const isComplete = prog >= 100;
-      const isInProgress = prog > 0 && prog < 100;
-
-      if (filterStatus === "COMPLETED") return matchQuery && isComplete;
-      if (filterStatus === "IN_PROGRESS") return matchQuery && isInProgress;
+      const p = pct(l.id);
+      if (filterStatus === "COMPLETED") return matchQuery && p >= 100;
+      if (filterStatus === "IN_PROGRESS") return matchQuery && p > 0 && p < 100;
+      if (filterStatus === "TODO") return matchQuery && p === 0;
       return matchQuery;
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lessons, searchQuery, filterStatus, progressMap]);
 
   const isLoading = isLoadingLevels || isLoadingLessons;
   const error = errorLevels || errorLessons;
+  const overallPercent = counts.all ? Math.round((counts.completed / counts.all) * 100) : 0;
+
+  const filters: { key: Filter; label: string; count: number }[] = [
+    { key: "ALL", label: "Tất cả", count: counts.all },
+    { key: "IN_PROGRESS", label: "Đang học", count: counts.inProgress },
+    { key: "TODO", label: "Chưa học", count: counts.todo },
+    { key: "COMPLETED", label: "Hoàn thành", count: counts.completed },
+  ];
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-        {/* Banner Section */}
-        <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-6 sm:p-10 text-white shadow-zen relative overflow-hidden">
-          <div className="absolute -right-10 -bottom-10 w-80 h-80 bg-rose-500/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="max-w-2xl relative z-10 space-y-3">
-            <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold ${
-              isN4
-                ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
-                : "bg-rose-500/20 text-rose-300 border border-rose-500/30"
-            }`}>
-              {isN4 ? "📗 JLPT N4 • 25 Bài học Minnano Nihongo" : "🌸 JLPT N5 • 25 Bài học Minnano Nihongo"}
-            </span>
-            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-              {isN4 ? "Lộ Trình Học Tập 25 Bài N4 (Bài 26 - 50)" : "Lộ Trình Toàn Diện 25 Bài Học N5"}
-            </h1>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              {isN4
-                ? "Tổng hợp đầy đủ 1138 từ vựng, 91 mẫu ngữ pháp, 192 chữ Hán tự, luyện nghe bản xứ, 44 bài đọc hiểu và 29 bài tập thực hành tiếng Nhật trình độ N4 chuẩn giáo trình Minnano Nihongo (Bài 26 đến Bài 50)."
-                : "Tổng hợp đầy đủ các bài học chuẩn Minnano Nihongo. Mỗi bài bao gồm Từ vựng, Ngữ pháp mẫu câu, Hán tự Kanji, Luyện nghe Audio bản xứ, Luyện đọc hiểu và Bài tập củng cố."}
-            </p>
-          </div>
-        </div>
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-28 lg:pb-12 space-y-8">
+        {/* Hero */}
+        <section className="hero-ink pattern-seigaiha relative overflow-hidden rounded-[28px] p-6 sm:p-10 shadow-zen animate-fade-up">
+          <span
+            aria-hidden="true"
+            className="pointer-events-none select-none absolute -right-2 -bottom-14 font-mincho font-extrabold text-[240px] leading-none text-white/[0.07]"
+          >
+            {isN4 ? "四" : "五"}
+          </span>
 
-        {/* Filter and Search Bar */}
-        <div className="bg-white rounded-2xl border border-slate-200/90 p-4 sm:p-5 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="relative w-full sm:w-80">
-            <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-              🔍
+          <div className="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+            <div className="max-w-2xl space-y-4">
+              <div className="inline-flex rounded-xl bg-white/10 border border-white/20 p-1 backdrop-blur" role="tablist" aria-label="Chọn cấp độ">
+                <Link
+                  to="/n5/lessons"
+                  role="tab"
+                  aria-selected={!isN4}
+                  className={cn(
+                    "px-4 py-1.5 rounded-lg text-sm font-bold transition-all",
+                    !isN4 ? "bg-white text-indigo-900 shadow" : "text-white/80 hover:text-white",
+                  )}
+                >
+                  🌸 N5
+                </Link>
+                <Link
+                  to="/n4/lessons"
+                  role="tab"
+                  aria-selected={isN4}
+                  className={cn(
+                    "px-4 py-1.5 rounded-lg text-sm font-bold transition-all",
+                    isN4 ? "bg-white text-indigo-900 shadow" : "text-white/80 hover:text-white",
+                  )}
+                >
+                  🍃 N4
+                </Link>
+              </div>
+
+              <h1 className="font-display text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight">
+                {isN4 ? "Sơ trung cấp N4 · Bài 26 – 50" : "Nền tảng N5 · Bài 1 – 25"}
+              </h1>
+              <p className="text-white/80 text-sm sm:text-base leading-relaxed">
+                {isN4
+                  ? "Mở rộng với hơn 1.100 từ vựng, 91 mẫu ngữ pháp, 192 chữ Hán, luyện nghe, đọc hiểu và bài tập chuẩn Minna no Nihongo."
+                  : "Mỗi bài gồm Từ vựng, Ngữ pháp, Hán tự, Luyện nghe, Đọc hiểu và Bài tập củng cố theo giáo trình Minna no Nihongo."}
+              </p>
+            </div>
+
+            {currentUser && counts.all > 0 && (
+              <div className="w-full lg:w-72 shrink-0 rounded-2xl bg-white/10 border border-white/20 backdrop-blur p-4">
+                <div className="flex items-end justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-white/70">Tiến độ cấp độ</span>
+                  <span className="font-display text-3xl font-extrabold tabular-nums leading-none">{overallPercent}%</span>
+                </div>
+                <div className="mt-3 h-2.5 rounded-full bg-white/15 overflow-hidden">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-rose-300 to-amber-300 transition-all duration-1000"
+                    style={{ width: `${overallPercent}%` }}
+                  />
+                </div>
+                <p className="mt-2 text-xs text-white/75">
+                  {counts.completed}/{counts.all} bài hoàn thành · {counts.inProgress} đang học
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Filters */}
+        <div className="surface p-3 sm:p-4 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+          <div className="relative w-full md:w-80">
+            <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400" aria-hidden="true">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
             </span>
             <input
-              type="text"
+              type="search"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Tìm bài học (Bài 1, chào hỏi, địa điểm)..."
-              className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all placeholder:text-slate-400"
+              placeholder="Tìm bài học (Bài 1, chào hỏi, địa điểm)…"
+              aria-label="Tìm bài học"
+              className="w-full h-11 pl-10 pr-4 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/25 focus:border-indigo-500 transition-all placeholder:text-slate-400"
             />
           </div>
 
-          <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200/60 max-w-full overflow-x-auto custom-scrollbar-x self-stretch sm:self-auto">
-            <button
-              onClick={() => setFilterStatus("ALL")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 whitespace-nowrap ${
-                filterStatus === "ALL"
-                  ? "bg-white text-indigo-700 shadow-xs"
-                  : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              Tất cả (25)
-            </button>
-            <button
-              onClick={() => setFilterStatus("IN_PROGRESS")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 whitespace-nowrap ${
-                filterStatus === "IN_PROGRESS"
-                  ? "bg-white text-indigo-700 shadow-xs"
-                  : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              Đang học
-            </button>
-            <button
-              onClick={() => setFilterStatus("COMPLETED")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 whitespace-nowrap ${
-                filterStatus === "COMPLETED"
-                  ? "bg-white text-indigo-700 shadow-xs"
-                  : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              Hoàn thành
-            </button>
-          </div>
+          {currentUser && (
+            <div className="flex items-center bg-slate-100 p-1 rounded-xl overflow-x-auto custom-scrollbar-x" role="tablist" aria-label="Lọc theo trạng thái">
+              {filters.map((f) => (
+                <button
+                  key={f.key}
+                  type="button"
+                  role="tab"
+                  aria-selected={filterStatus === f.key}
+                  onClick={() => setFilterStatus(f.key)}
+                  className={cn(
+                    "px-3.5 py-2 rounded-lg text-xs sm:text-[13px] font-bold transition-all shrink-0 whitespace-nowrap cursor-pointer",
+                    filterStatus === f.key ? "bg-white text-indigo-800 shadow-sm" : "text-slate-500 hover:text-slate-900",
+                  )}
+                >
+                  {f.label} <span className="ml-0.5 opacity-60 tabular-nums">{f.count}</span>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* Loading State */}
-        {isLoading && (
-          <div className="flex flex-col items-center justify-center py-20">
-            <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-4" />
-            <p className="text-slate-600 font-medium">Đang tải danh sách 25 bài học {isN4 ? "N4" : "N5"}...</p>
+        {!currentUser && (
+          <div className="rounded-2xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-sm text-indigo-900 flex flex-wrap items-center justify-between gap-2">
+            <span>Đăng nhập để lưu tiến độ từng bài, nhận XP và giữ chuỗi ngày học.</span>
+            <Link to="/login" className="font-bold underline underline-offset-4 hover:text-indigo-700">
+              Đăng nhập ngay →
+            </Link>
           </div>
         )}
 
-        {/* Error State */}
-        {error && (
-          <div className="bg-rose-50 border border-rose-200 text-rose-700 p-6 rounded-2xl text-center max-w-lg mx-auto">
+        {/* Loading */}
+        {isLoading && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" aria-busy="true" aria-live="polite">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div key={i} className="surface h-[320px] skeleton-shimmer" />
+            ))}
+          </div>
+        )}
+
+        {/* Error */}
+        {error && !isLoading && (
+          <div className="bg-rose-50 border border-rose-200 text-rose-700 p-6 rounded-3xl text-center max-w-lg mx-auto" role="alert">
             <div className="text-3xl mb-2">⚠️</div>
             <h3 className="font-bold text-lg mb-1">Không thể tải dữ liệu bài học</h3>
-            <p className="text-sm text-rose-600">
-              Vui lòng kiểm tra kết nối với Backend API Spring Boot.
-            </p>
+            <p className="text-sm text-rose-600">Vui lòng kiểm tra kết nối với Backend API Spring Boot.</p>
           </div>
         )}
 
-        {/* Lessons Grid */}
-        {!isLoading && !error && filteredLessons.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredLessons.map((lesson) => {
-              const prog = progressMap.get(lesson.id) || 0;
-              const isComplete = prog >= 100;
-              const inProgress = prog > 0 && prog < 100;
-              const lessonPad = lesson.lessonNumber < 10 ? `0${lesson.lessonNumber}` : lesson.lessonNumber;
-              const topicInfo = getLessonDisplayInfo(lesson.lessonNumber, lesson.title, lesson.description);
-              const levelPrefix = isN4 ? "n4" : "n5";
-
-              return (
-                <div
-                  key={lesson.id}
-                  className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs hover:shadow-lg hover:border-indigo-400 transition-all group flex flex-col justify-between"
-                >
-                  <div>
-                    {/* Header Card */}
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center space-x-3">
-                        <CircularProgress
-                          value={prog}
-                          size={46}
-                          strokeWidth={4}
-                          color={isComplete ? "text-emerald-500" : inProgress ? "text-indigo-600" : "text-slate-300"}
-                        />
-                        <div>
-                          <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">
-                            BÀI {lessonPad}
-                          </span>
-                          <span
-                            className={`text-[10px] font-bold px-2 py-0.5 rounded-full inline-block mt-0.5 ${
-                              isComplete
-                                ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
-                                : inProgress
-                                ? "bg-amber-50 text-amber-700 border border-amber-200"
-                                : "bg-slate-100 text-slate-500 border border-slate-200"
-                            }`}
-                          >
-                            {isComplete ? "Hoàn thành" : inProgress ? `${prog}% hoàn thành` : "Chưa học"}
-                          </span>
-                        </div>
-                      </div>
-
-                      <span className="w-10 h-10 rounded-2xl bg-indigo-50 text-indigo-700 font-black text-sm flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors shadow-2xs">
-                        {lesson.lessonNumber}
-                      </span>
-                    </div>
-
-                    <h2 className="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors mb-2">
-                      {topicInfo.title}
-                    </h2>
-                    <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed mb-4">
-                      {topicInfo.desc}
-                    </p>
-                  </div>
-
-                  {/* Skills Pills */}
-                  <div>
-                    <div className="pt-3 border-t border-slate-100 grid grid-cols-3 gap-1.5 text-center text-xs font-medium">
-                      <Link
-                        to={`/${levelPrefix}/lessons/${lesson.id}/vocabulary`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
-                      >
-                        📚 Từ vựng
-                      </Link>
-                      <Link
-                        to={`/${levelPrefix}/lessons/${lesson.id}/grammar`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
-                      >
-                        ⛩️ Ngữ pháp
-                      </Link>
-                      <Link
-                        to={`/${levelPrefix}/lessons/${lesson.id}/kanji`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-amber-50 hover:text-amber-700 transition-colors"
-                      >
-                        🈁 Kanji
-                      </Link>
-                      <Link
-                        to={`/${levelPrefix}/lessons/${lesson.id}/listening`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-purple-50 hover:text-purple-700 transition-colors"
-                      >
-                        🎧 Nghe
-                      </Link>
-                      <Link
-                        to={`/${levelPrefix}/lessons/${lesson.id}/reading`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-rose-50 hover:text-rose-700 transition-colors"
-                      >
-                        📖 Đọc
-                      </Link>
-                      <Link
-                        to={`/${levelPrefix}/lessons/${lesson.id}/exercise`}
-                        className="py-1.5 rounded-lg bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
-                      >
-                        ✏️ Bài tập
-                      </Link>
-                    </div>
-
-                    <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                      <span className="text-xs font-semibold text-slate-400">25 bài Minnano</span>
-                      <Link
-                        to={`/${levelPrefix}/lessons/${lesson.id}/vocabulary`}
-                        className="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors flex items-center space-x-1"
-                      >
-                        <span>Học ngay</span>
-                        <span>&rarr;</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+        {/* Empty after filtering */}
+        {!isLoading && !error && lessons && filteredLessons.length === 0 && (
+          <div className="surface p-12 text-center">
+            <p className="text-4xl mb-3">🔍</p>
+            <p className="font-display font-bold text-slate-900">Không tìm thấy bài học phù hợp</p>
+            <button
+              type="button"
+              onClick={() => {
+                setSearchQuery("");
+                setFilterStatus("ALL");
+              }}
+              className="mt-4 text-sm font-bold text-indigo-700 hover:text-indigo-900 cursor-pointer"
+            >
+              Xóa bộ lọc
+            </button>
           </div>
+        )}
+
+        {/* Lessons grid */}
+        {!isLoading && !error && filteredLessons.length > 0 && (
+          <div className="stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {filteredLessons.map((lesson) => (
+              <LessonCard
+                key={lesson.id}
+                lesson={lesson}
+                levelPrefix={levelPrefix}
+                progress={progressMap.get(lesson.id)}
+                current={lesson.id === currentLessonId}
+              />
+            ))}
+          </div>
+        )}
+
+        {currentUser && counts.all > 0 && (
+          <ProgressBar
+            className="sr-only"
+            value={counts.completed}
+            max={counts.all}
+            label={`Đã hoàn thành ${counts.completed} trên ${counts.all} bài`}
+          />
         )}
       </main>
     </div>

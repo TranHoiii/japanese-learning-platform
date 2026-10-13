@@ -77,11 +77,11 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
   };
 
   const variantClasses = {
-    primary: "bg-[#2684D9] text-white hover:bg-[#1769B0] shadow-xs",
+    primary: "bg-[#2F5496] text-white hover:bg-[#264378] shadow-xs",
     ghost:
-      "bg-transparent text-[#475569] hover:text-[#12558F] hover:bg-[#F0F7FF] active:bg-[#DCEEFF]",
+      "bg-transparent text-[#5A5246] hover:text-[#213960] hover:bg-[#EEF3FA] active:bg-[#DCE7F5]",
     outline:
-      "border border-[#CBD5E1] bg-white text-[#475569] hover:bg-[#F8FAFC] hover:text-[#12558F]",
+      "border border-[#D3CABA] bg-white text-[#5A5246] hover:bg-[#FAF7F1] hover:text-[#213960]",
   };
 
   if (!isValid) {
@@ -92,7 +92,7 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
         aria-label={label ? `Chưa có bản ghi âm cho ${label}` : "Chưa có bản ghi âm"}
         title="Chưa có tệp âm thanh"
         className={cn(
-          "inline-flex items-center justify-center rounded-full transition-colors cursor-not-allowed opacity-40 text-[#94A3B8]",
+          "inline-flex items-center justify-center rounded-full transition-colors cursor-not-allowed opacity-40 text-[#9A8F7E]",
           sizeClasses[size],
           className,
         )}
@@ -132,10 +132,10 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
       }
       title={isPlaying ? "Dừng" : "Nghe phát âm"}
       className={cn(
-        "inline-flex items-center justify-center rounded-full transition-all focus-visible:outline-2 focus-visible:outline-[#2684D9]",
+        "inline-flex items-center justify-center rounded-full transition-all focus-visible:outline-2 focus-visible:outline-[#2F5496]",
         sizeClasses[size],
         variantClasses[variant],
-        isPlaying && "ring-2 ring-[#2684D9] ring-offset-1 animate-pulse",
+        isPlaying && "ring-2 ring-[#2F5496] ring-offset-1 animate-pulse",
         hasError && "text-[#EF4444]",
         className,
       )}

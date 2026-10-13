@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
@@ -18,19 +18,22 @@ export const AppShell: React.FC<AppShellProps> = ({
   className,
 }) => {
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
+  const handleOpenDrawer = useCallback(() => setIsMobileDrawerOpen(true), []);
+  const handleCloseDrawer = useCallback(() => setIsMobileDrawerOpen(false), []);
 
   return (
-    <div className={cn("min-h-screen bg-[#F8FAFC] text-[#0F172A] flex flex-col", className)}>
+    <div className={cn("min-h-screen text-slate-900 flex flex-col", className)}>
       {/* Header (sticky top-0, 64px) */}
       <Header
-        onOpenMobileMenu={() => setIsMobileDrawerOpen(true)}
+        wide
+        onOpenMobileMenu={handleOpenDrawer}
         isMobileMenuOpen={isMobileDrawerOpen}
       />
 
       {/* Mobile Drawer (left slide-in) */}
       <MobileDrawer
         isOpen={isMobileDrawerOpen}
-        onClose={() => setIsMobileDrawerOpen(false)}
+        onClose={handleCloseDrawer}
       />
 
       {/* Main Container: Sidebar + Content */}
@@ -43,7 +46,7 @@ export const AppShell: React.FC<AppShellProps> = ({
 
         <main
           id="main-content"
-          className="flex-1 min-w-0 pb-24 lg:pb-12 focus:outline-none"
+          className="flex-1 min-w-0 pb-28 lg:pb-12 focus:outline-none"
           tabIndex={-1}
         >
           {children || <Outlet />}

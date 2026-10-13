@@ -150,9 +150,9 @@ export const StrokeOrderAnimator: React.FC<StrokeOrderAnimatorProps> = ({
 
   const gridLineColor = isDark ? "rgba(255, 255, 255, 0.12)" : "rgba(203, 213, 225, 0.7)";
   const ghostStrokeColor = isDark ? "rgba(255, 255, 255, 0.18)" : "rgba(15, 23, 42, 0.10)";
-  const finishedStrokeColor = isDark ? "#FBBF24" : "#0F172A"; // Warm Amber in dark, Deep Ink in light
+  const finishedStrokeColor = isDark ? "#FBBF24" : "#1F1C18"; // Warm Amber in dark, Deep Ink in light
   const activeStrokeColor = isDark ? "#F59E0B" : "#2563EB"; // Vibrant Amber / Royal Blue
-  const numberColor = isDark ? "rgba(252, 211, 77, 0.85)" : "#64748B";
+  const numberColor = isDark ? "rgba(252, 211, 77, 0.85)" : "#766D5E";
 
   const totalStrokes = svgData?.paths.length || 0;
   const isFinished = currentStroke >= totalStrokes;

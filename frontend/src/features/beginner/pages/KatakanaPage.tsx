@@ -82,15 +82,15 @@ export const KatakanaPage: React.FC = () => {
       }
     >
       {/* View Mode Bar: Grid | Confused Pairs | Practice */}
-      <div className="flex flex-wrap items-center justify-between gap-3 p-1.5 rounded-[12px] bg-[#F1F5F9] border border-[#E2E8F0]">
+      <div className="flex flex-wrap items-center justify-between gap-3 p-1.5 rounded-2xl bg-[#F3EEE5] border border-[#E7E0D2]">
         <div className="flex items-center gap-1">
           <button
             type="button"
             onClick={() => setViewMode("grid")}
             className={`px-4 py-2 rounded-[8px] text-xs sm:text-sm font-bold transition-all cursor-pointer ${
               viewMode === "grid"
-                ? "bg-white text-[#12558F] shadow-xs"
-                : "text-[#64748B] hover:text-[#0F172A]"
+                ? "bg-white text-[#213960] shadow-xs"
+                : "text-[#766D5E] hover:text-[#1F1C18]"
             }`}
           >
             📖 Bảng Chữ Cái & Chi Tiết
@@ -101,8 +101,8 @@ export const KatakanaPage: React.FC = () => {
             onClick={() => setViewMode("confused")}
             className={`px-4 py-2 rounded-[8px] text-xs sm:text-sm font-bold transition-all cursor-pointer ${
               viewMode === "confused"
-                ? "bg-white text-[#12558F] shadow-xs"
-                : "text-[#64748B] hover:text-[#0F172A]"
+                ? "bg-white text-[#213960] shadow-xs"
+                : "text-[#766D5E] hover:text-[#1F1C18]"
             }`}
           >
             🔍 Cặp Chữ Dễ Nhầm ({CONFUSED_KATAKANA_PAIRS.length})
@@ -113,15 +113,15 @@ export const KatakanaPage: React.FC = () => {
             onClick={() => setViewMode("practice")}
             className={`px-4 py-2 rounded-[8px] text-xs sm:text-sm font-bold transition-all cursor-pointer ${
               viewMode === "practice"
-                ? "bg-white text-[#12558F] shadow-xs"
-                : "text-[#64748B] hover:text-[#0F172A]"
+                ? "bg-white text-[#213960] shadow-xs"
+                : "text-[#766D5E] hover:text-[#1F1C18]"
             }`}
           >
             🎯 Luyện Tập Phản Xạ
           </button>
         </div>
 
-        <span className="text-xs text-[#64748B] pr-3 hidden sm:inline">
+        <span className="text-xs text-[#766D5E] pr-3 hidden sm:inline">
           {viewMode === "grid"
             ? `${allKatakana.length} ký tự hoàn chỉnh`
             : viewMode === "confused"
@@ -134,14 +134,14 @@ export const KatakanaPage: React.FC = () => {
       {viewMode === "grid" && (
         <div className="space-y-6">
           {/* Tab Switcher: Seion / Dakuten / Yoon / Extended */}
-          <div className="flex items-center gap-2 border-b border-[#E2E8F0] overflow-x-auto pb-3 custom-scrollbar-x">
+          <div className="flex items-center gap-2 border-b border-[#E7E0D2] overflow-x-auto pb-3 custom-scrollbar-x">
             <button
               type="button"
               onClick={() => setActiveTab("seion")}
               className={`px-4 py-2 rounded-[8px] text-sm font-semibold transition-colors cursor-pointer shrink-0 ${
                 activeTab === "seion"
-                  ? "bg-[#2684D9] text-white shadow-xs"
-                  : "bg-white text-[#475569] hover:bg-[#F1F5F9]"
+                  ? "bg-[#2F5496] text-white shadow-xs"
+                  : "bg-white text-[#5A5246] hover:bg-[#F3EEE5]"
               }`}
             >
               46 Âm Cơ Bản (Seion)
@@ -152,8 +152,8 @@ export const KatakanaPage: React.FC = () => {
               onClick={() => setActiveTab("dakuten")}
               className={`px-4 py-2 rounded-[8px] text-sm font-semibold transition-colors cursor-pointer shrink-0 ${
                 activeTab === "dakuten"
-                  ? "bg-[#2684D9] text-white shadow-xs"
-                  : "bg-white text-[#475569] hover:bg-[#F1F5F9]"
+                  ? "bg-[#2F5496] text-white shadow-xs"
+                  : "bg-white text-[#5A5246] hover:bg-[#F3EEE5]"
               }`}
             >
               25 Biến Âm (Dakuten & Handakuten)
@@ -164,8 +164,8 @@ export const KatakanaPage: React.FC = () => {
               onClick={() => setActiveTab("yoon")}
               className={`px-4 py-2 rounded-[8px] text-sm font-semibold transition-colors cursor-pointer shrink-0 ${
                 activeTab === "yoon"
-                  ? "bg-[#2684D9] text-white shadow-xs"
-                  : "bg-white text-[#475569] hover:bg-[#F1F5F9]"
+                  ? "bg-[#2F5496] text-white shadow-xs"
+                  : "bg-white text-[#5A5246] hover:bg-[#F3EEE5]"
               }`}
             >
               33 Âm Ghép (Yōon)
@@ -176,8 +176,8 @@ export const KatakanaPage: React.FC = () => {
               onClick={() => setActiveTab("extended")}
               className={`px-4 py-2 rounded-[8px] text-sm font-semibold transition-colors cursor-pointer shrink-0 ${
                 activeTab === "extended"
-                  ? "bg-[#2684D9] text-white shadow-xs"
-                  : "bg-white text-[#475569] hover:bg-[#F1F5F9]"
+                  ? "bg-[#2F5496] text-white shadow-xs"
+                  : "bg-white text-[#5A5246] hover:bg-[#F3EEE5]"
               }`}
             >
               16 Âm Mở Rộng (Ngoại lai)
@@ -185,27 +185,27 @@ export const KatakanaPage: React.FC = () => {
           </div>
 
           {/* Group Description Banner */}
-          <div className="rounded-[14px] bg-[#F0F7FF] border border-[#BBDDFF] p-4 sm:p-5 flex items-start gap-3.5">
-            <div className="w-10 h-10 rounded-[8px] bg-white text-[#12558F] font-bold text-lg flex items-center justify-center shrink-0 font-japanese border border-[#BBDDFF]">
+          <div className="surface p-4 sm:p-5 flex items-start gap-3.5 border-l-4 border-l-indigo-500">
+            <div className="w-10 h-10 rounded-[8px] bg-white text-[#213960] font-bold text-lg flex items-center justify-center shrink-0 font-japanese border border-[#BDD0EC]">
               ア
             </div>
             <div className="space-y-1">
               <div className="flex items-center gap-2 flex-wrap">
-                <h2 className="text-base font-bold text-[#12558F]">
+                <h2 className="font-display text-base font-bold text-[#213960]">
                   {currentGroup.title}
                 </h2>
                 <Badge variant="primary" size="sm">
                   {currentGroup.characters.length} ký tự
                 </Badge>
               </div>
-              <p className="text-xs sm:text-sm text-[#104673] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#213960] leading-relaxed">
                 {currentGroup.descriptionVi}
               </p>
             </div>
           </div>
 
           {/* Interactive Instructions */}
-          <div className="flex items-center justify-between text-xs text-[#64748B] px-1">
+          <div className="flex items-center justify-between text-xs text-[#766D5E] px-1">
             <span>💡 Nhấn vào bất kỳ ký tự nào để xem nét viết chuẩn, từ mượn tiếng Anh và chữ Hiragana đối ứng.</span>
           </div>
 
@@ -219,12 +219,12 @@ export const KatakanaPage: React.FC = () => {
           />
 
           {/* Pedagogy Tips box for Vietnamese learners */}
-          <div className="rounded-[14px] bg-white border border-[#E2E8F0] p-5 space-y-3 shadow-2xs">
-            <h3 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+          <div className="surface p-5 space-y-3">
+            <h3 className="text-sm font-bold text-[#1F1C18] flex items-center gap-2">
               <span>💡</span>
               <span>Lưu ý sư phạm quan trọng khi học Katakana</span>
             </h3>
-            <ul className="space-y-2 text-xs sm:text-sm text-[#475569] list-disc list-inside leading-relaxed">
+            <ul className="space-y-2 text-xs sm:text-sm text-[#5A5246] list-disc list-inside leading-relaxed">
               {KATAKANA_OVERVIEW.learningTipsVi.map((tip, idx) => (
                 <li key={idx}>{tip}</li>
               ))}

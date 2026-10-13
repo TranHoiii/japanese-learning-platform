@@ -65,7 +65,7 @@ export const Modal: React.FC<ModalProps> = ({
     >
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-[#0F172A]/40 backdrop-blur-xs transition-opacity"
+        className="fixed inset-0 bg-[#1F1C18]/40 backdrop-blur-xs transition-opacity"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -73,21 +73,21 @@ export const Modal: React.FC<ModalProps> = ({
       {/* Modal Dialog Card */}
       <div
         className={cn(
-          "relative w-full bg-white rounded-[16px] shadow-[0_10px_30px_rgba(15,23,42,0.16)] border border-[#E2E8F0] p-6 z-10 transition-all flex flex-col max-h-[90vh]",
+          "relative w-full bg-white rounded-[16px] shadow-[0_10px_30px_rgba(15,23,42,0.16)] border border-[#E7E0D2] p-6 z-10 transition-all flex flex-col max-h-[90vh]",
           maxWidthStyles[maxWidth],
           className,
         )}
       >
         {/* Header */}
-        <div className="flex items-start justify-between pb-4 border-b border-[#F1F5F9] shrink-0">
+        <div className="flex items-start justify-between pb-4 border-b border-[#F3EEE5] shrink-0">
           <div>
             {title && (
-              <h2 id={titleId} className="text-lg sm:text-xl font-bold text-[#0F172A]">
+              <h2 id={titleId} className="text-lg sm:text-xl font-bold text-[#1F1C18]">
                 {title}
               </h2>
             )}
             {description && (
-              <p id={descId} className="text-xs sm:text-sm text-[#64748B] mt-1">
+              <p id={descId} className="text-xs sm:text-sm text-[#766D5E] mt-1">
                 {description}
               </p>
             )}
@@ -96,7 +96,7 @@ export const Modal: React.FC<ModalProps> = ({
             type="button"
             onClick={onClose}
             aria-label="Đóng hộp thoại"
-            className="p-1.5 -mr-1.5 -mt-1.5 text-[#94A3B8] hover:text-[#0F172A] hover:bg-[#F1F5F9] rounded-lg transition-colors cursor-pointer"
+            className="p-1.5 -mr-1.5 -mt-1.5 text-[#9A8F7E] hover:text-[#1F1C18] hover:bg-[#F3EEE5] rounded-lg transition-colors cursor-pointer"
           >
             <svg
               className="w-5 h-5"
@@ -115,7 +115,7 @@ export const Modal: React.FC<ModalProps> = ({
 
         {/* Footer */}
         {footer && (
-          <div className="pt-4 border-t border-[#F1F5F9] shrink-0 flex items-center justify-end gap-3">
+          <div className="pt-4 border-t border-[#F3EEE5] shrink-0 flex items-center justify-end gap-3">
             {footer}
           </div>
         )}

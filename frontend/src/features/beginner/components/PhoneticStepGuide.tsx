@@ -18,7 +18,7 @@ export const PhoneticStepGuide: React.FC<PhoneticStepGuideProps> = ({
   return (
     <div
       className={cn(
-        "rounded-[14px] bg-[#F8FAFC] border border-[#CBD5E1] p-4 sm:p-5 space-y-4 shadow-xs",
+        "rounded-[14px] bg-[#FAF7F1] border border-[#D3CABA] p-4 sm:p-5 space-y-4 shadow-xs",
         className,
       )}
     >
@@ -27,10 +27,10 @@ export const PhoneticStepGuide: React.FC<PhoneticStepGuideProps> = ({
           <span className="text-xl" aria-hidden="true">
             🗣️
           </span>
-          <h4 className="text-base font-bold text-[#0F172A]">{guide.titleVi}</h4>
+          <h4 className="text-base font-bold text-[#1F1C18]">{guide.titleVi}</h4>
         </div>
         {guide.descriptionVi && (
-          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#5A5246] leading-relaxed">
             {guide.descriptionVi}
           </p>
         )}
@@ -40,24 +40,24 @@ export const PhoneticStepGuide: React.FC<PhoneticStepGuideProps> = ({
         {guide.steps.map((step) => (
           <div
             key={step.stepNumber}
-            className="rounded-[12px] bg-white border border-[#E2E8F0] p-4 flex flex-col justify-between space-y-3 shadow-xs hover:border-[#94A3B8] transition-colors"
+            className="surface p-4 flex flex-col justify-between space-y-3 shadow-xs hover:border-[#9A8F7E] transition-colors"
           >
             <div className="space-y-2">
               <div className="flex items-center gap-2">
-                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-[#2684D9] text-white text-xs font-bold shrink-0">
+                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-[#2F5496] text-white text-xs font-bold shrink-0">
                   {step.stepNumber}
                 </span>
-                <h5 className="text-sm font-bold text-[#0F172A]">
+                <h5 className="text-sm font-bold text-[#1F1C18]">
                   {step.titleVi}
                 </h5>
               </div>
-              <p className="text-xs text-[#475569] leading-relaxed">
+              <p className="text-xs text-[#5A5246] leading-relaxed">
                 {step.descriptionVi}
               </p>
             </div>
 
             {step.tipVi && (
-              <div className="pt-2 border-t border-[#F1F5F9]">
+              <div className="pt-2 border-t border-[#F3EEE5]">
                 <p className="text-[11px] text-[#0369A1] bg-[#F0F9FF] px-2 py-1 rounded border border-[#BAE6FD]">
                   💡 {step.tipVi}
                 </p>

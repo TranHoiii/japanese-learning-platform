@@ -45,17 +45,17 @@ export const KanaDetailModal: React.FC<KanaDetailModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs animate-fade-in"
       role="dialog"
       aria-modal="true"
       aria-labelledby="kana-detail-title"
     >
       <div
-        className="relative w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-[18px] bg-white border border-[#E2E8F0] p-6 sm:p-7 shadow-2xl space-y-6"
+        className="relative w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-[18px] bg-white border border-[#E7E0D2] p-6 sm:p-7 shadow-2xl space-y-6"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top bar: System & Type badge + Navigation + Close */}
-        <div className="flex items-center justify-between pb-3 border-b border-[#F1F5F9]">
+        <div className="flex items-center justify-between pb-3 border-b border-[#F3EEE5]">
           <div className="flex items-center gap-2">
             <Badge variant="primary" size="sm">
               {kana.system === "hiragana" ? "Bảng Hiragana" : "Bảng Katakana"}
@@ -80,7 +80,7 @@ export const KanaDetailModal: React.FC<KanaDetailModalProps> = ({
                 onClick={onPrev}
                 aria-label="Ký tự trước đó"
                 title="Ký tự trước (Phím ←)"
-                className="w-8 h-8 rounded-full border border-[#CBD5E1] bg-white hover:bg-[#F8FAFC] flex items-center justify-center text-sm font-bold text-[#475569] transition-colors cursor-pointer"
+                className="w-8 h-8 rounded-full border border-[#D3CABA] bg-white hover:bg-[#FAF7F1] flex items-center justify-center text-sm font-bold text-[#5A5246] transition-colors cursor-pointer"
               >
                 &larr;
               </button>
@@ -91,7 +91,7 @@ export const KanaDetailModal: React.FC<KanaDetailModalProps> = ({
                 onClick={onNext}
                 aria-label="Ký tự tiếp theo"
                 title="Ký tự tiếp (Phím →)"
-                className="w-8 h-8 rounded-full border border-[#CBD5E1] bg-white hover:bg-[#F8FAFC] flex items-center justify-center text-sm font-bold text-[#475569] transition-colors cursor-pointer"
+                className="w-8 h-8 rounded-full border border-[#D3CABA] bg-white hover:bg-[#FAF7F1] flex items-center justify-center text-sm font-bold text-[#5A5246] transition-colors cursor-pointer"
               >
                 &rarr;
               </button>
@@ -100,7 +100,7 @@ export const KanaDetailModal: React.FC<KanaDetailModalProps> = ({
               type="button"
               onClick={onClose}
               aria-label="Đóng cửa sổ"
-              className="w-8 h-8 rounded-full bg-[#F1F5F9] hover:bg-[#E2E8F0] flex items-center justify-center text-sm font-bold text-[#475569] transition-colors ml-1 cursor-pointer"
+              className="w-8 h-8 rounded-full bg-[#F3EEE5] hover:bg-[#E7E0D2] flex items-center justify-center text-sm font-bold text-[#5A5246] transition-colors ml-1 cursor-pointer"
             >
               ✕
             </button>
@@ -108,20 +108,20 @@ export const KanaDetailModal: React.FC<KanaDetailModalProps> = ({
         </div>
 
         {/* Center Spotlight: Giant Character & Romaji & Audio */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-4 rounded-[14px] bg-[#F0F7FF]/50 border border-[#BBDDFF]/70">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-4 rounded-[14px] bg-[#EEF3FA]/50 border border-[#BDD0EC]/70">
           <div className="flex items-center gap-4">
             <span
               id="kana-detail-title"
-              className="text-6xl sm:text-7xl font-bold font-japanese text-[#0F172A] select-none leading-none"
+              className="text-6xl sm:text-7xl font-bold font-japanese text-[#1F1C18] select-none leading-none"
               lang="ja"
             >
               {kana.character}
             </span>
             <div className="space-y-1">
-              <span className="text-2xl font-bold text-[#12558F] tracking-wide block">
+              <span className="text-2xl font-bold text-[#213960] tracking-wide block">
                 {kana.romaji}
               </span>
-              <span className="text-xs text-[#64748B] block">
+              <span className="text-xs text-[#766D5E] block">
                 {kana.strokeCount ? `${kana.strokeCount} nét viết` : ""}
               </span>
             </div>
@@ -138,18 +138,18 @@ export const KanaDetailModal: React.FC<KanaDetailModalProps> = ({
 
             {/* Hiragana ↔ Katakana Relationship Indicator */}
             {kana.equivalentKana && (
-              <div className="flex flex-col items-center p-2.5 rounded-[10px] bg-white border border-[#CBD5E1] text-center">
-                <span className="text-[10px] font-medium text-[#64748B]">
+              <div className="flex flex-col items-center p-2.5 rounded-[10px] bg-white border border-[#D3CABA] text-center">
+                <span className="text-[10px] font-medium text-[#766D5E]">
                   {kana.system === "hiragana" ? "Chữ Katakana" : "Chữ Hiragana"}
                 </span>
-                <span className="text-xl font-bold font-japanese text-[#0F172A] my-0.5">
+                <span className="text-xl font-bold font-japanese text-[#1F1C18] my-0.5">
                   {kana.equivalentKana}
                 </span>
                 {onSelectEquivalent && (
                   <button
                     type="button"
                     onClick={() => onSelectEquivalent(kana.equivalentKana!)}
-                    className="text-[10px] font-semibold text-[#2684D9] hover:underline cursor-pointer"
+                    className="text-[10px] font-semibold text-[#2F5496] hover:underline cursor-pointer"
                   >
                     Xem chi tiết &rarr;
                   </button>
@@ -180,9 +180,9 @@ export const KanaDetailModal: React.FC<KanaDetailModalProps> = ({
         {/* Example Words */}
         {kana.examples && kana.examples.length > 0 && (
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-[#0F172A] flex items-center justify-between">
+            <h4 className="text-sm font-bold text-[#1F1C18] flex items-center justify-between">
               <span>Từ vựng mẫu ứng dụng</span>
-              <span className="text-xs text-[#64748B] font-normal">
+              <span className="text-xs text-[#766D5E] font-normal">
                 {kana.examples.length} từ ví dụ
               </span>
             </h4>
@@ -191,19 +191,19 @@ export const KanaDetailModal: React.FC<KanaDetailModalProps> = ({
               {kana.examples.map((ex, idx) => (
                 <div
                   key={idx}
-                  className="rounded-[10px] bg-[#F8FAFC] border border-[#E2E8F0] p-3 flex items-center justify-between gap-2 hover:bg-white hover:border-[#CBD5E1] transition-colors"
+                  className="rounded-[10px] bg-[#FAF7F1] border border-[#E7E0D2] p-3 flex items-center justify-between gap-2 hover:bg-white hover:border-[#D3CABA] transition-colors"
                 >
                   <div className="space-y-0.5 min-w-0">
                     <div className="flex items-center gap-1.5">
-                      <span className="font-japanese font-bold text-base text-[#0F172A]">
+                      <span className="font-japanese font-bold text-base text-[#1F1C18]">
                         {ex.word}
                       </span>
-                      <span className="text-xs text-[#12558F] font-japanese">
+                      <span className="text-xs text-[#213960] font-japanese">
                         ({ex.reading})
                       </span>
                     </div>
-                    <p className="text-xs text-[#64748B] italic">{ex.romaji}</p>
-                    <p className="text-xs text-[#334155] font-medium truncate">
+                    <p className="text-xs text-[#766D5E] italic">{ex.romaji}</p>
+                    <p className="text-xs text-[#433D34] font-medium truncate">
                       {ex.meaningVi}
                     </p>
                   </div>

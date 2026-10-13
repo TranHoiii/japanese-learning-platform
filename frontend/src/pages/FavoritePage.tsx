@@ -3,9 +3,10 @@ import { Link, Navigate, useLocation } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useAuth } from "../contexts/AuthContext";
 import { favoriteApi } from "../services/favoriteApi";
-import { FavoriteContentType } from "../types/favorite";
-import Navbar from "../components/Navbar";
+import AppShell from "../components/layout/AppShell";
+import PageContainer from "../components/layout/PageContainer";
 import FavoriteItemCard from "../components/favorite/FavoriteItemCard";
+import { cn } from "../utils/cn";
 
 export default function FavoritePage() {
   const location = useLocation();
@@ -19,13 +20,12 @@ export default function FavoritePage() {
   // 1. Auth check
   if (authLoading) {
     return (
-      <div className="min-h-screen bg-slate-50 flex flex-col">
-        <Navbar />
-        <main className="flex-1 flex flex-col items-center justify-center py-20 px-4">
-          <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-4" />
+      <AppShell>
+        <PageContainer className="py-20 text-center">
+          <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
           <p className="text-slate-600 font-medium">Đang kiểm tra thông tin đăng nhập...</p>
-        </main>
-      </div>
+        </PageContainer>
+      </AppShell>
     );
   }
 
@@ -38,7 +38,6 @@ export default function FavoritePage() {
     data: favorites = [],
     isLoading,
     isError,
-    error,
     refetch,
   } = useQuery({
     queryKey: ["favorites"],
@@ -79,218 +78,202 @@ export default function FavoritePage() {
     return matchesType && matchesId;
   });
 
-  const typeTabs: { key: string; label: string; count: number }[] = [
-    { key: "ALL", label: "Tất cả", count: favorites.length },
+  const typeTabs: { key: string; label: string; icon: string; count: number }[] = [
+    { key: "ALL", label: "Tất cả", icon: "⭐", count: favorites.length },
     {
       key: "VOCABULARY",
       label: "Từ vựng",
+      icon: "📖",
       count: favorites.filter((f) => f.contentType === "VOCABULARY").length,
     },
     {
       key: "GRAMMAR",
       label: "Ngữ pháp",
+      icon: "⛩️",
       count: favorites.filter((f) => f.contentType === "GRAMMAR").length,
     },
     {
       key: "KANJI",
       label: "Kanji",
+      icon: "🈸",
       count: favorites.filter((f) => f.contentType === "KANJI").length,
     },
     {
       key: "LISTENING",
       label: "Bài nghe",
+      icon: "🎧",
       count: favorites.filter((f) => f.contentType === "LISTENING").length,
     },
     {
       key: "READING",
       label: "Bài đọc",
+      icon: "📰",
       count: favorites.filter((f) => f.contentType === "READING").length,
     },
     {
       key: "EXERCISE",
       label: "Bài tập",
+      icon: "✍️",
       count: favorites.filter((f) => f.contentType === "EXERCISE").length,
     },
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
-      <Navbar />
-
+    <AppShell>
       {/* Toast Notification */}
       {toastMessage && (
-        <div className="fixed bottom-6 right-6 z-50 bg-slate-900 text-white text-sm font-semibold px-4 py-3 rounded-xl shadow-lg border border-slate-700 animate-fade-in flex items-center gap-2">
+        <div className="fixed bottom-6 right-6 z-50 bg-slate-900 text-white text-sm font-semibold px-4 py-3 rounded-2xl shadow-xl border border-slate-700 animate-pop flex items-center gap-2">
           <span>✨</span>
           <span>{toastMessage}</span>
         </div>
       )}
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Header Banner */}
-        <div className="bg-gradient-to-r from-rose-500 via-pink-600 to-indigo-600 rounded-3xl p-6 sm:p-8 text-white shadow-md mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <span className="w-10 h-10 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center text-xl shadow-xs">
-                ❤️
+      <PageContainer className="py-6 sm:py-8 pb-28 lg:pb-12 space-y-6">
+        {/* Header Hero Banner (Washi & Ai-iro) */}
+        <div className="hero-ink pattern-seigaiha rounded-3xl p-6 sm:p-8 text-white shadow-zen flex flex-col md:flex-row md:items-center justify-between gap-6 relative overflow-hidden">
+          <div className="space-y-2 max-w-2xl">
+            <div className="flex items-center gap-3">
+              <span className="w-10 h-10 rounded-2xl bg-rose-500/20 border border-rose-400/40 text-rose-300 font-black text-xl flex items-center justify-center font-mincho shadow-md">
+                愛
               </span>
-              <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-                Nội dung yêu thích
+              <h1 className="font-display text-2xl sm:text-3xl font-extrabold tracking-tight">
+                Kho Lưu Trữ Yêu Thích (Favorites)
               </h1>
             </div>
-            <p className="text-rose-100 text-sm sm:text-base max-w-2xl font-normal leading-relaxed">
-              Lưu giữ các từ vựng, ngữ pháp, kanji và bài tập quan trọng để ôn tập bất cứ khi nào bạn cần.
+            <p className="text-white/80 text-xs sm:text-sm leading-relaxed">
+              Tất cả các từ vựng, ngữ pháp, kanji và bài tập bạn đã đánh dấu để ôn tập bất cứ lúc nào.
             </p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-5 flex items-center gap-4 self-start sm:self-auto min-w-[160px]">
-            <div>
-              <div className="text-xs uppercase tracking-wider font-bold text-rose-200">
-                Tổng yêu thích
-              </div>
-              <div className="text-2xl sm:text-3xl font-black text-white mt-0.5" id="favorite-total-count">
+          <div className="flex items-center gap-3 self-start md:self-auto shrink-0">
+            <div className="p-3.5 rounded-2xl bg-white/10 border border-white/20 text-center min-w-[110px] backdrop-blur-xs">
+              <span className="text-[10px] font-bold text-white/70 uppercase tracking-widest block">
+                Tổng số mục
+              </span>
+              <span className="text-2xl font-black text-amber-300 tabular-nums">
                 {favorites.length}
-              </div>
+              </span>
             </div>
-            <div className="text-3xl">🔖</div>
+
+            <Link
+              to="/review"
+              className="px-4 py-3 rounded-2xl font-bold text-xs sm:text-sm bg-rose-500 hover:bg-rose-600 text-white shadow-card transition-all active:translate-y-0.5 flex items-center gap-1.5"
+            >
+              <span>Ôn tập ngay</span>
+              <span aria-hidden="true">&rarr;</span>
+            </Link>
           </div>
         </div>
 
-        {/* Filter Bar */}
-        <div className="bg-white rounded-2xl border border-slate-200/80 p-4 mb-6 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
-          {/* Content Type Filter Pills */}
-          <div className="flex items-center gap-1.5 overflow-x-auto custom-scrollbar-x pb-2">
-            {typeTabs.map((tab) => (
-              <button
-                key={tab.key}
-                type="button"
-                onClick={() => setSelectedType(tab.key)}
-                id={`filter-tab-${tab.key.toLowerCase()}`}
-                className={`px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex items-center gap-1.5 ${
-                  selectedType === tab.key
-                    ? "bg-rose-500 text-white shadow-xs scale-102"
-                    : "bg-slate-100 text-slate-600 hover:bg-slate-200/80"
-                }`}
-              >
-                <span>{tab.label}</span>
-                <span
-                  className={`text-[11px] px-1.5 py-0.2 rounded-full ${
+        {/* Filter & Search Bar */}
+        <div className="surface rounded-3xl p-4 sm:p-5 border border-[#E7E0D2] shadow-zen space-y-3">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+            {/* Type tabs */}
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 custom-scrollbar-x text-xs">
+              {typeTabs.map((tab) => (
+                <button
+                  key={tab.key}
+                  type="button"
+                  onClick={() => setSelectedType(tab.key)}
+                  id={`filter-tab-${tab.key.toLowerCase()}`}
+                  className={cn(
+                    "px-3.5 py-2 rounded-2xl font-bold whitespace-nowrap transition-all cursor-pointer flex items-center gap-1.5 shrink-0",
                     selectedType === tab.key
-                      ? "bg-white/20 text-white"
-                      : "bg-slate-200 text-slate-600"
-                  }`}
+                      ? "bg-rose-500 text-white shadow-2xs"
+                      : "bg-white text-slate-700 border border-slate-200 hover:bg-slate-100",
+                  )}
                 >
-                  {tab.count}
-                </span>
-              </button>
-            ))}
-          </div>
+                  <span>{tab.icon}</span>
+                  <span>{tab.label}</span>
+                  <span
+                    className={cn(
+                      "text-[10px] px-1.5 py-0.5 rounded-full font-bold",
+                      selectedType === tab.key
+                        ? "bg-white/25 text-white"
+                        : "bg-slate-100 text-slate-600",
+                    )}
+                  >
+                    {tab.count}
+                  </span>
+                </button>
+              ))}
+            </div>
 
-          {/* Search ID filter */}
-          <div className="w-full md:w-64">
-            <div className="relative">
+            {/* Quick Filter Input */}
+            <div className="w-full md:w-56 shrink-0">
               <input
                 type="text"
                 value={searchId}
                 onChange={(e) => setSearchId(e.target.value)}
-                placeholder="Tìm theo ID nội dung..."
-                id="search-favorite-id-input"
-                className="w-full pl-9 pr-3 py-1.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all placeholder:text-slate-400"
+                placeholder="Lọc theo ID mục..."
+                className="w-full px-3.5 py-1.5 rounded-xl border border-slate-200 text-xs bg-white focus:outline-none focus:border-indigo-600"
               />
-              <svg
-                className="w-4 h-4 text-slate-400 absolute left-3 top-2.5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
             </div>
           </div>
         </div>
 
-        {/* Content Section */}
-        {isLoading ? (
-          <div className="py-20 flex flex-col items-center justify-center">
-            <div className="w-10 h-10 border-4 border-rose-500 border-t-transparent rounded-full animate-spin mb-4" />
-            <p className="text-slate-500 text-sm font-medium">Đang tải danh sách yêu thích...</p>
+        {/* Loading State */}
+        {isLoading && (
+          <div className="surface rounded-3xl p-12 text-center border border-[#E7E0D2]">
+            <div className="w-10 h-10 border-4 border-rose-500 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+            <p className="text-slate-600 text-sm font-semibold">Đang tải danh sách mục yêu thích...</p>
           </div>
-        ) : isError ? (
-          <div className="bg-rose-50 border border-rose-200 rounded-2xl p-6 text-center max-w-lg mx-auto">
-            <div className="text-3xl mb-2">⚠️</div>
-            <h3 className="text-base font-bold text-rose-800 mb-1">
-              Đã có lỗi khi tải danh sách yêu thích
-            </h3>
-            <p className="text-xs text-rose-600 mb-4">
-              {(error as any)?.response?.data?.message || "Vui lòng thử lại sau giây lát."}
-            </p>
+        )}
+
+        {/* Error State */}
+        {isError && (
+          <div className="surface rounded-3xl p-8 text-center border border-rose-200 bg-rose-50/50 space-y-3">
+            <span className="text-3xl block">⚠️</span>
+            <p className="text-sm font-bold text-rose-800">Không thể tải danh sách yêu thích.</p>
             <button
+              type="button"
               onClick={() => refetch()}
-              className="px-4 py-2 bg-rose-600 text-white rounded-xl text-xs font-bold hover:bg-rose-700 transition-colors shadow-xs"
+              className="px-4 py-2 rounded-xl text-xs font-bold bg-rose-600 text-white hover:bg-rose-700 cursor-pointer"
             >
               Thử lại
             </button>
           </div>
-        ) : favorites.length === 0 ? (
-          /* Empty state */
-          <div className="bg-white rounded-3xl border border-dashed border-slate-300 p-12 text-center max-w-xl mx-auto shadow-xs">
-            <div className="w-16 h-16 bg-rose-50 text-rose-500 rounded-3xl mx-auto flex items-center justify-center text-3xl mb-4 shadow-inner">
-              💖
+        )}
+
+        {/* Empty State */}
+        {!isLoading && !isError && filteredFavorites.length === 0 && (
+          <div className="surface rounded-3xl p-10 sm:p-14 text-center border border-[#E7E0D2] shadow-zen space-y-4">
+            <div className="w-16 h-16 rounded-full bg-rose-50 text-rose-500 text-3xl flex items-center justify-center mx-auto shadow-2xs font-mincho">
+              愛
             </div>
-            <h3 className="text-lg font-extrabold text-slate-800 mb-2">
-              Bạn chưa có nội dung yêu thích.
-            </h3>
-            <p className="text-sm text-slate-500 mb-6 leading-relaxed">
-              Trong lúc học từ vựng, ngữ pháp hay làm bài tập, hãy bấm biểu tượng trái tim để lưu lại những nội dung cần ôn nhé!
-            </p>
-            <Link
-              to="/n5/lessons"
-              id="empty-cta-link"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-rose-500 to-indigo-600 text-white text-sm font-bold shadow-md hover:shadow-lg hover:scale-102 transition-all"
-            >
-              <span>Khám phá bài học N5</span>
-              <span>→</span>
-            </Link>
+            <div className="space-y-1 max-w-md mx-auto">
+              <h3 className="font-display text-lg sm:text-xl font-bold text-slate-900">
+                Chưa có nội dung yêu thích nào
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                Khi học Từ vựng, Hán tự, Ngữ pháp hoặc Bài tập, hãy nhấn biểu tượng trái tim ❤️ để lưu lại tại đây.
+              </p>
+            </div>
+
+            <div className="flex items-center justify-center gap-2 pt-2 flex-wrap text-xs">
+              <Link to="/n5/lessons" className="px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 font-bold hover:bg-indigo-100 transition-colors">
+                Khám phá bài học N5 &rarr;
+              </Link>
+              <Link to="/beginner" className="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 font-bold hover:bg-slate-200 transition-colors">
+                Vào Tủ sách Sơ cấp &rarr;
+              </Link>
+            </div>
           </div>
-        ) : filteredFavorites.length === 0 ? (
-          /* Filtered empty state */
-          <div className="bg-white rounded-2xl border border-slate-200 p-8 text-center max-w-md mx-auto">
-            <div className="text-2xl mb-2">🔍</div>
-            <h4 className="text-sm font-bold text-slate-800 mb-1">
-              Không tìm thấy nội dung phù hợp
-            </h4>
-            <p className="text-xs text-slate-500 mb-4">
-              Thử đổi bộ lọc loại nội dung hoặc xóa từ khóa tìm kiếm ID.
-            </p>
-            <button
-              type="button"
-              onClick={() => {
-                setSelectedType("ALL");
-                setSearchId("");
-              }}
-              className="px-3.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-bold transition-colors"
-            >
-              Xóa bộ lọc
-            </button>
-          </div>
-        ) : (
-          /* Grid of cards */
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {filteredFavorites.map((fav) => (
+        )}
+
+        {/* Favorites Grid */}
+        {!isLoading && !isError && filteredFavorites.length > 0 && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredFavorites.map((item) => (
               <FavoriteItemCard
-                key={fav.id}
-                favorite={fav}
+                key={item.id}
+                item={item}
                 onDelete={handleDelete}
-                isDeleting={deleteMutation.isPending}
               />
             ))}
           </div>
         )}
-      </main>
-    </div>
+      </PageContainer>
+    </AppShell>
   );
 }

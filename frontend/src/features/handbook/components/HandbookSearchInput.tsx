@@ -37,7 +37,7 @@ export const HandbookSearchInput: React.FC<HandbookSearchInputProps> = ({
 
   return (
     <div className={`relative w-full ${className}`}>
-      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[#64748B]">
+      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[#766D5E]">
         <svg
           className="w-5 h-5"
           fill="none"
@@ -63,7 +63,7 @@ export const HandbookSearchInput: React.FC<HandbookSearchInputProps> = ({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full pl-11 pr-20 py-3 text-sm sm:text-base bg-white border border-[#CBD5E1] rounded-xl text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent transition-all shadow-xs"
+        className="w-full pl-11 pr-20 py-3 text-sm sm:text-base bg-white border border-[#D3CABA] rounded-xl text-[#1F1C18] placeholder-[#9A8F7E] focus:outline-none focus:ring-2 focus:ring-[#2F5496] focus:border-transparent transition-all shadow-xs"
       />
 
       <div className="absolute inset-y-0 right-0 pr-3 flex items-center gap-2">
@@ -76,7 +76,7 @@ export const HandbookSearchInput: React.FC<HandbookSearchInputProps> = ({
               inputRef.current?.focus();
             }}
             aria-label="Xóa nội dung tìm kiếm"
-            className="p-1 text-[#94A3B8] hover:text-[#475569] rounded-md transition-colors"
+            className="p-1 text-[#9A8F7E] hover:text-[#5A5246] rounded-md transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -85,7 +85,7 @@ export const HandbookSearchInput: React.FC<HandbookSearchInputProps> = ({
         ) : (
           <kbd
             aria-hidden="true"
-            className="hidden sm:inline-flex items-center px-2 py-0.5 text-xs font-semibold text-[#64748B] bg-[#F1F5F9] border border-[#E2E8F0] rounded"
+            className="hidden sm:inline-flex items-center px-2 py-0.5 text-xs font-semibold text-[#766D5E] bg-[#F3EEE5] border border-[#E7E0D2] rounded"
           >
             /
           </kbd>

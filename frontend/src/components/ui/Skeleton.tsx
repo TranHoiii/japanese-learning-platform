@@ -30,7 +30,7 @@ export const Skeleton: React.FC<SkeletonProps> = ({
   return (
     <div
       className={cn(
-        "animate-pulse bg-[#E2E8F0]/80 shrink-0",
+        "animate-pulse bg-[#E7E0D2]/80 shrink-0",
         variantStyles[variant],
         className,
       )}
@@ -65,7 +65,7 @@ export const SkeletonCard: React.FC<{ className?: string }> = ({ className }) =>
   return (
     <div
       className={cn(
-        "bg-white rounded-[12px] border border-[#E2E8F0] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.06)] space-y-4",
+        "bg-white rounded-[12px] border border-[#E7E0D2] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.06)] space-y-4",
         className,
       )}
       aria-busy="true"
@@ -79,7 +79,7 @@ export const SkeletonCard: React.FC<{ className?: string }> = ({ className }) =>
         <Skeleton variant="text" className="h-5 w-3/4" />
         <Skeleton variant="text" className="h-4 w-1/2" />
       </div>
-      <div className="pt-2 border-t border-[#F1F5F9] flex justify-between items-center">
+      <div className="pt-2 border-t border-[#F3EEE5] flex justify-between items-center">
         <Skeleton variant="text" className="h-3 w-1/4" />
         <Skeleton variant="rectangular" width={70} height={28} />
       </div>
@@ -98,9 +98,9 @@ export const PageLoading: React.FC<{ message?: string; className?: string }> = (
       aria-live="polite"
     >
       <div className="relative w-10 h-10 mb-3">
-        <div className="w-10 h-10 rounded-full border-3 border-[#DCEEFF] border-t-[#2684D9] animate-spin" />
+        <div className="w-10 h-10 rounded-full border-3 border-[#DCE7F5] border-t-[#2F5496] animate-spin" />
       </div>
-      <p className="text-sm font-medium text-[#475569]">{message}</p>
+      <p className="text-sm font-medium text-[#5A5246]">{message}</p>
     </div>
   );
 };

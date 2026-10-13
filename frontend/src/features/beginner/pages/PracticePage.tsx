@@ -67,7 +67,7 @@ export const PracticePage: React.FC = () => {
     >
       {/* 5 Mode Selector Buttons */}
       <div className="space-y-3">
-        <label className="text-xs font-semibold text-[#475569] block">
+        <label className="text-xs font-semibold text-[#5A5246] block">
           Chọn chế độ luyện tập:
         </label>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2.5">
@@ -78,10 +78,10 @@ export const PracticePage: React.FC = () => {
                 key={mode.id}
                 type="button"
                 onClick={() => handleSelectCategory(mode.id)}
-                className={`p-3 rounded-[12px] border text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 ${
+                className={`p-3 rounded-2xl border-2 text-left transition-all cursor-pointer flex flex-col justify-between space-y-1 hover:-translate-y-0.5 ${
                   isSelected
-                    ? "bg-[#2684D9] text-white border-[#1D4ED8] shadow-xs"
-                    : "bg-white text-[#334155] border-[#E2E8F0] hover:bg-[#F8FAFC] hover:border-[#94A3B8]"
+                    ? "bg-[#2F5496] text-white border-[#213960] shadow-md shadow-indigo-900/20"
+                    : "bg-white text-[#433D34] border-[#E7E0D2] hover:bg-[#FAF7F1] hover:border-[#9A8F7E]"
                 }`}
               >
                 <div className="flex items-center justify-between w-full">
@@ -92,7 +92,7 @@ export const PracticePage: React.FC = () => {
                     className={`text-[10px] px-1.5 py-0.5 rounded font-bold ${
                       isSelected
                         ? "bg-white/20 text-white"
-                        : "bg-[#F1F5F9] text-[#64748B]"
+                        : "bg-[#F3EEE5] text-[#766D5E]"
                     }`}
                   >
                     {mode.targetCount} câu
@@ -104,7 +104,7 @@ export const PracticePage: React.FC = () => {
                   </span>
                   <span
                     className={`text-[10px] line-clamp-1 block opacity-85 ${
-                      isSelected ? "text-white/90" : "text-[#64748B]"
+                      isSelected ? "text-white/90" : "text-[#766D5E]"
                     }`}
                   >
                     {mode.descriptionVi}
@@ -117,7 +117,7 @@ export const PracticePage: React.FC = () => {
       </div>
 
       {/* Philosophy Callout */}
-      <div className="rounded-[12px] bg-[#F0FDF4] border border-[#22C55E]/30 p-3.5 flex items-center justify-between gap-3 text-xs text-[#15803D]">
+      <div className="rounded-2xl bg-[#F0FDF4] border border-[#22C55E]/30 p-3.5 flex items-center justify-between gap-3 text-xs text-[#15803D]">
         <div className="flex items-center gap-2">
           <span className="text-base" aria-hidden="true">
             🌱

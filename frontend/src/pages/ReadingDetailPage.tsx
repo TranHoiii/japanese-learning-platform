@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar";
 import { FuriganaText, FuriganaModeControl } from "../components/ui";
 import { cn } from "../utils/cn";
 import FavoriteButton from "../components/favorite/FavoriteButton";
+import { gamification } from "../lib/gamification";
 
 export default function ReadingDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -22,6 +23,8 @@ export default function ReadingDetailPage() {
   const [showTranslation, setShowTranslation] = useState(false);
   const [result, setResult] = useState<ReadingSubmitResponse | null>(null);
   const [zoomedImage, setZoomedImage] = useState<string | null>(null);
+  const [fontStep, setFontStep] = useState(1); // 0 = small, 1 = normal, 2 = large, 3 = extra large
+  const passageSizes = ["text-base", "text-lg", "text-xl", "text-2xl"];
 
   // Audio / Speech State
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
@@ -29,6 +32,7 @@ export default function ReadingDetailPage() {
 
   // Timer: 15 minutes (900 seconds) countdown
   const [timeLeft, setTimeLeft] = useState(900);
+  const [isAutoSubmitted, setIsAutoSubmitted] = useState(false);
 
   useEffect(() => {
     if (result) return;
@@ -61,6 +65,10 @@ export default function ReadingDetailPage() {
       readingApi.submitReading(readingId, { answers: answersPayload }),
     onSuccess: (data) => {
       setResult(data);
+      gamification.award(Math.max(5, Math.round(data.score / 5)), "Đọc hiểu");
+      if (data.score >= 80) {
+        gamification.celebrate(data.score === 100 ? "Hoàn hảo! 📖" : "Đọc rất tốt! 🌸", `Đúng ${data.correctCount}/${data.totalQuestions} câu`);
+      }
       progressApi
         .updateContentProgress({
           contentType: "READING",
@@ -103,9 +111,23 @@ export default function ReadingDetailPage() {
     submitMutation.mutate(answersPayload);
   };
 
+  // Auto-submit when time runs out
+  useEffect(() => {
+    if (result || submitMutation.isPending) return;
+    if (timeLeft <= 0 && reading && questions.length > 0) {
+      setIsAutoSubmitted(true);
+      const answersPayload = questions.map((q) => ({
+        questionId: q.id,
+        selectedOptionId: selectedAnswers[q.id] || 0,
+      }));
+      submitMutation.mutate(answersPayload);
+    }
+  }, [timeLeft, result, submitMutation, reading, questions, selectedAnswers]);
+
   // Reset to retake
   const handleRetry = () => {
     setResult(null);
+    setIsAutoSubmitted(false);
     setSelectedAnswers({});
     setActiveQuestionIndex(0);
     setTimeLeft(900);
@@ -156,11 +178,29 @@ export default function ReadingDetailPage() {
   const levelCode = isN4 ? "N4" : "N5";
   const levelPrefix = isN4 ? "n4" : "n5";
 
+  // Keyboard: A-D choose, ←/→ move between questions
+  const keyRef = useRef<(e: KeyboardEvent) => void>(() => {});
+  keyRef.current = (e: KeyboardEvent) => {
+    const el = e.target as HTMLElement | null;
+    if (el && (el.tagName === "INPUT" || el.tagName === "TEXTAREA" || el.tagName === "BUTTON")) return;
+    if (e.key === "ArrowRight") setActiveQuestionIndex((i) => Math.min(i + 1, Math.max(totalQuestions - 1, 0)));
+    else if (e.key === "ArrowLeft") setActiveQuestionIndex((i) => Math.max(i - 1, 0));
+    else if (currentQuestion && !result) {
+      const idx = "abcd".indexOf(e.key.toLowerCase());
+      if (idx >= 0 && currentQuestion.options[idx]) handleSelectOption(currentQuestion.id, currentQuestion.options[idx].id);
+    }
+  };
+  useEffect(() => {
+    const l = (e: KeyboardEvent) => keyRef.current(e);
+    window.addEventListener("keydown", l);
+    return () => window.removeEventListener("keydown", l);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-28 lg:pb-12 space-y-6">
         {/* Navigation Breadcrumb */}
         <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-500">
           <Link to="/" className="hover:text-slate-900 transition-colors">
@@ -190,9 +230,9 @@ export default function ReadingDetailPage() {
 
         {/* Loading & Error States */}
         {isLoading && (
-          <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl border border-slate-200/80 shadow-xs">
+          <div className="space-y-4" aria-busy="true"><div className="skeleton-shimmer h-20 rounded-2xl" /><div className="grid grid-cols-1 lg:grid-cols-12 gap-6"><div className="skeleton-shimmer h-96 rounded-3xl lg:col-span-7" /><div className="skeleton-shimmer h-96 rounded-3xl lg:col-span-5" /></div><div className="hidden">
             <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-4" />
-            <p className="text-slate-600 font-medium">Đang chuẩn bị đề thi đọc hiểu...</p>
+            <p className="text-slate-600 font-medium">Đang chuẩn bị đề thi đọc hiểu...</p></div>
           </div>
         )}
 
@@ -212,8 +252,16 @@ export default function ReadingDetailPage() {
 
         {!isLoading && !error && reading && (
           <div className="space-y-6">
+            {/* Auto-submission alert banner */}
+            {isAutoSubmitted && (
+              <div className="p-4 rounded-2xl bg-amber-500/15 border border-amber-400 text-amber-900 dark:text-amber-200 text-xs sm:text-sm font-bold flex items-center gap-2 animate-bounce">
+                <span>⏰</span>
+                <span>Hết thời gian làm bài! Hệ thống đã tự động nộp bài đọc hiểu của bạn.</span>
+              </div>
+            )}
+
             {/* Top Examination Control Bar (Mockup 3) */}
-            <div className="bg-white rounded-2xl border border-slate-200/90 p-4 sm:p-5 shadow-xs flex flex-wrap items-center justify-between gap-4">
+            <div className="surface p-4 sm:p-5 flex flex-wrap items-center justify-between gap-4 animate-fade-up">
               {/* Left: Back button & Title */}
               <div className="flex items-center space-x-3">
                 <button
@@ -273,7 +321,7 @@ export default function ReadingDetailPage() {
               {/* Right: Live Countdown Timer Badge & Favorite */}
               <div className="flex items-center space-x-2.5">
                 <FavoriteButton contentType="READING" contentId={reading.id} size="sm" />
-                <div className="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-slate-900 text-white text-xs font-mono font-bold shadow-xs">
+                <div className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-white text-xs font-mono font-bold shadow-xs ${timeLeft <= 60 ? "bg-rose-600 animate-pulse" : "bg-slate-900"}`}>
                   <span>⏱️</span>
                   <span>{formatTimer(timeLeft)}</span>
                 </div>
@@ -284,7 +332,7 @@ export default function ReadingDetailPage() {
             {result && (
               <div
                 className={cn(
-                  "p-6 rounded-3xl border shadow-sm transition-all flex flex-col sm:flex-row items-center justify-between gap-4",
+                  "p-6 rounded-3xl border shadow-sm transition-all flex flex-col sm:flex-row items-center justify-between gap-4 animate-pop",
                   result.score >= 80
                     ? "bg-emerald-50 border-emerald-200 text-emerald-950"
                     : result.score >= 50
@@ -327,14 +375,14 @@ export default function ReadingDetailPage() {
             {/* Split-Screen Main Exam Workspace (Bản Thiết Kế 3) */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
               {/* Left Column: Audio Waveform & Reading Passage (Col 1-7) */}
-              <div className="lg:col-span-7 bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-zen space-y-6">
+              <div className="lg:col-span-7 surface p-6 sm:p-8 space-y-6">
                 {/* Audio Waveform Bar */}
-                <div className="bg-slate-800 text-white rounded-2xl p-4 flex items-center justify-between gap-3 shadow-inner">
+                <div className="hero-ink text-white rounded-2xl p-4 flex items-center justify-between gap-3">
                   <div className="flex items-center space-x-3">
                     <button
                       type="button"
                       onClick={toggleAudioSpeech}
-                      className="w-10 h-10 rounded-full bg-indigo-500 hover:bg-indigo-400 text-white flex items-center justify-center text-sm shadow-md transition-all active:scale-95"
+                      className="w-11 h-11 rounded-full bg-amber-400 hover:bg-amber-300 text-amber-950 flex items-center justify-center text-sm shadow-lg shadow-amber-400/30 transition-all active:scale-95"
                       title={isPlayingAudio ? "Tạm dừng" : "Nghe đọc bài"}
                     >
                       {isPlayingAudio ? "⏸️" : "▶️"}
@@ -347,7 +395,7 @@ export default function ReadingDetailPage() {
                           key={i}
                           className={cn(
                             "w-1 rounded-full transition-all duration-300",
-                            isPlayingAudio ? "bg-indigo-400 animate-pulse" : "bg-slate-600"
+                            isPlayingAudio ? "bg-amber-300 animate-pulse" : "bg-white/30"
                           )}
                           style={{ height: isPlayingAudio ? `${h}%` : "30%" }}
                         />
@@ -384,7 +432,7 @@ export default function ReadingDetailPage() {
                     </h2>
                   </div>
 
-                  <FuriganaModeControl />
+                  <div className="flex items-center gap-2"><div className="flex items-center bg-slate-100 rounded-xl p-0.5" role="group" aria-label="Cỡ chữ bài đọc"><button type="button" onClick={() => setFontStep((s) => Math.max(0, s - 1))} disabled={fontStep === 0} className="w-8 h-8 rounded-lg text-xs font-bold text-slate-600 hover:bg-white disabled:opacity-40 cursor-pointer" aria-label="Giảm cỡ chữ">A-</button><button type="button" onClick={() => setFontStep((s) => Math.min(3, s + 1))} disabled={fontStep === 3} className="w-8 h-8 rounded-lg text-base font-bold text-slate-600 hover:bg-white disabled:opacity-40 cursor-pointer" aria-label="Tăng cỡ chữ">A+</button></div><FuriganaModeControl /></div>
                 </div>
 
                 {/* Optional Passage Illustration */}
@@ -400,7 +448,7 @@ export default function ReadingDetailPage() {
                 )}
 
                 {/* Reading Japanese Passage */}
-                <div className="bg-slate-50/80 rounded-2xl p-6 border border-slate-100 text-slate-900 text-base sm:text-lg leading-loose font-medium whitespace-pre-line tracking-wide">
+                <div className={`${passageSizes[fontStep]} bg-[#FFFDF8] rounded-2xl p-6 sm:p-8 border border-amber-100 shadow-inner text-slate-900 leading-[2.1] font-japanese font-medium whitespace-pre-line tracking-wide`}>
                   <FuriganaText text={reading.content} />
                 </div>
 
@@ -426,7 +474,7 @@ export default function ReadingDetailPage() {
               </div>
 
               {/* Right Column: Question Card & Selectable Options (Col 8-12) */}
-              <div className="lg:col-span-5 bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 shadow-zen flex flex-col justify-between space-y-6">
+              <div className="lg:col-span-5 surface p-6 sm:p-7 flex flex-col justify-between space-y-6 lg:sticky lg:top-24">
                 {currentQuestion ? (
                   <div className="space-y-6">
                     {/* Question Header */}

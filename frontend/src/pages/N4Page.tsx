@@ -17,7 +17,7 @@ export default function N4Page() {
     >
       <EmptyState
         icon={
-          <svg className="w-10 h-10 text-[#2684D9]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-10 h-10 text-[#2F5496]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
